@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Auckland Harbor Cafe",
+    "industry": "Hospitality",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 342,
+    "description": "Premium waterfront dining experience in the heart of Auckland.",
+    "website": "https://example.com"
+  },
+  {
+    "id": 2,
+    "name": "Wellington Tech Solutions",
+    "industry": "Professional Services",
+    "city": "Wellington",
+    "rating": 4.9,
+    "reviews": 120,
+    "description": "Expert IT support and software development for local businesses.",
+    "website": "https://example.com"
+  },
+  {
+    "id": 3,
+    "name": "Christchurch Builders Ltd",
+    "industry": "Trades & Construction",
+    "city": "Christchurch",
+    "rating": 4.7,
+    "reviews": 85,
+    "description": "Reliable residential and commercial construction services.",
+    "website": "https://example.com"
+  },
+  {
+    "id": 4,
+    "name": "Queenstown Adventures",
+    "industry": "Tourism",
+    "city": "Queenstown",
+    "rating": 5.0,
+    "reviews": 890,
+    "description": "Unforgettable outdoor experiences and guided tours.",
+    "website": "https://example.com"
+  },
+  {
+    "id": 5,
+    "name": "Hamilton Electric",
+    "industry": "Trades & Construction",
+    "city": "Hamilton",
+    "rating": 4.6,
+    "reviews": 55,
+    "description": "24/7 electrical services for home and business.",
+    "website": "https://example.com"
+  }
+]
