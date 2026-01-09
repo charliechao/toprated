@@ -1,0 +1,31 @@
+# TopRated NZ
+
+TopRated NZ is a premium business directory focused on identifying and showcasing the highest-rated local businesses across New Zealand. We provide curated guides for various industries in major cities like Auckland and Wellington.
+
+## Key Information
+- **Website**: https://toprated.nz
+- **Purpose**: A discovery platform for top-rated services, dining, and professionals in Aotearoa.
+- **Goal**: Connecting New Zealanders with trusted local businesses through verified ratings and reviews.
+
+## Exploration Paths
+- [All Industries](/industries.html) - Browse businesses by category.
+- [All Cities](/cities.html) - Browse businesses by location.
+
+### Cities
+- [Auckland](/cities/auckland.html) - The City of Sails business guides.
+- [Wellington](/cities/wellington.html) - The Capital's top-rated businesses.
+
+### Popular Industry Guides
+- [Auckland Builders](/cities/auckland/builders.html) - Top-rated residential and architectural builders.
+- [Auckland Japanese Restaurants](/cities/auckland/japanese-restaurants.html) - Best sushi and Japanese dining.
+- [Auckland Chinese Restaurants](/cities/auckland/chinese-restaurants.html) - Authentic Chinese cuisine.
+- [Wellington Japanese Restaurants](/cities/wellington/japanese-restaurants.html) - Top Japanese spots in the Capital.
+
+## For Businesses
+- [List Your Business](/contact.html) - Apply to be featured on TopRated NZ.
+
+## Structure
+The site is built with a glassmorphism design system using:
+- **Typography**: Outfit (headings), Inter (body).
+- **Architecture**: Static HTML with dynamic data injection from JSON for business listings.
+- **Seo**: Optimized meta tags and semantic HTML for high search visibility.

@@ -1,0 +1,11 @@
+# AI Protocol - TopRated.co.nz
+
+## Code Style & Documentation
+- **Comment Heavily**: Every function, class, and complex logic block MUST have explanatory comments. 
+- **Human-Readable**: Write comments that explain "why" not just "what".
+- **Modular Design**: Break code into small, reusable functions and components. Avoid monolithic files.
+- **Docstrings**: Use proper docstrings for all functions and files.
+
+## Project Context
+- This is a directory website for New Zealand businesses.
+- Focus on SEO and high-performance HTML/CSS.
