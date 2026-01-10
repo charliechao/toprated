@@ -246,7 +246,7 @@ header {
 
 /* Hero Section */
 .hero {
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -254,18 +254,41 @@ header {
     position: relative;
     overflow: hidden;
     padding: 2rem;
+    color: white;
+    /* Ensure text is visible on video */
 }
 
-.hero::before {
-    content: '';
+.hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(20, 184, 166, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
     z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    display: none;
+    /* Hide the old gradient blob while video is active */
 }
 
 .hero-content h1 {
@@ -275,7 +298,7 @@ header {
 
 .hero-content p {
     font-size: 1.25rem;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.9);
     max-width: 600px;
     margin: 0 auto 2.5rem;
 }
@@ -386,7 +409,9 @@ footer {
     color: var(--color-text-main);
 }
 
-.form-input, .form-select, .form-textarea {
+.form-input,
+.form-select,
+.form-textarea {
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 8px;
@@ -397,7 +422,9 @@ footer {
     transition: all 0.3s ease;
 }
 
-.form-input:focus, .form-select:focus, .form-textarea:focus {
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
     outline: none;
     border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
@@ -418,4 +445,110 @@ footer {
     .form-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Business Listings Manager */
+.business-card-horizontal {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.business-image-container {
+    width: 350px;
+    height: 100%;
+}
+
+.business-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-info {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.business-info h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 193, 7, 0.15);
+    color: #b45309;
+    /* Darker amber */
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    width: fit-content;
+    margin-bottom: 1.5rem;
+}
+
+.business-meta {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+.business-meta span i,
+.business-meta a i {
+    margin-right: 0.5rem;
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .business-card-horizontal {
+        grid-template-columns: 1fr;
+    }
+
+    .business-image-container {
+        width: 100%;
+        height: 250px;
+    }
+
+    .business-info {
+        padding: 2rem;
+    }
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    padding: 1.5rem 0;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.breadcrumb a {
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.breadcrumb span {
+    text-transform: capitalize;
 }

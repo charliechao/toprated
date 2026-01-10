@@ -1,0 +1,47 @@
+<!-- templates/template-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- PAGE_TITLE_PLACEHOLDER --></title>
+    <meta name="description" content="<!-- PAGE_DESCRIPTION_PLACEHOLDER -->" />
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="<!-- PAGE_TITLE_PLACEHOLDER -->" />
+    <meta property="og:description" content="<!-- PAGE_DESCRIPTION_PLACEHOLDER -->" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <!-- Breadcrumb container – navigation.js will fill this -->
+    <nav id="breadcrumb" aria-label="breadcrumb"></nav>
+
+    <!-- Main content area – each page will inject its own heading and list -->
+    <main id="content">
+        <!-- PAGE_CONTENT_PLACEHOLDER -->
+    </main>
+
+    <!-- Related content block – also populated by navigation.js -->
+    <section id="related" class="container"></section>
+
+    <!-- JSON‑LD schema – navigation.js will replace the placeholder with a real script -->
+    <script type="application/ld+json" id="schema">
+    {}
+  </script>
+
+    <script src="/js/navigation.js"></script>
+</body>
+
+</html>

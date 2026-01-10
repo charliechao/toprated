@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Hospitality",
+        "slug": "hospitality",
+        "subCategories": [
+            "restaurants",
+            "cafes",
+            "hotels"
+        ]
+    },
+    {
+        "name": "Trades",
+        "slug": "trades",
+        "subCategories": [
+            "builders",
+            "electricians",
+            "plumbers",
+            "renovation-services",
+            "painters"
+        ]
+    },
+    {
+        "name": "Automotive",
+        "slug": "automotive",
+        "subCategories": []
+    },
+    {
+        "name": "Services",
+        "slug": "services",
+        "subCategories": [
+            "cleaning-services"
+        ]
+    }
+]

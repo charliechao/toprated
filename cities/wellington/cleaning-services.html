@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Builders in Auckland - TopRated NZ</title>
+    <title>Best Cleaning Services in Wellington - TopRated NZ</title>
     <meta name="description"
-        content="Discover the highest-rated builders in Auckland. From complex architectural designs to high-end residential new builds and renovations.">
+        content="Discover the highest-rated cleaning services in Wellington. From regular house cleaning to deep cleans and end-of-tenancy services in the Capital.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <style>
         .industry-hero {
             height: 50vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/industries/auckland-builders.png');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -108,20 +108,21 @@
         <section class="industry-hero">
             <div class="container">
                 <nav style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                    <a href="/">Home</a> / <a href="/cities/auckland.html">Auckland</a> / Builders
+                    <a href="/">Home</a> / <a href="/cities/wellington.html">Wellington</a> / Cleaning Services
                 </nav>
-                <h1 style="margin: 0;">Best Builders <br><span class="text-primary">in Auckland</span></h1>
-                <p style="max-width: 700px; margin: 1.5rem auto 0;">The City of Sails' most trusted construction
-                    professionals, specializing in residential and architectural Excellence.</p>
+                <h1 style="margin: 0;">Best Cleaning Services <br><span class="text-primary">in Wellington</span></h1>
+                <p style="max-width: 700px; margin: 1.5rem auto 0;">The Capital's most trusted cleaning
+                    specialists, providing residential, commercial, and meticulous deep cleaning solutions.</p>
             </div>
         </section>
 
         <section class="container section">
             <div id="business-container" class="business-list">
                 <!-- Data will be injected here -->
-                <div class="loading">Loading top-rated builders...</div>
+                <div class="loading">Loading top-rated cleaning services...</div>
             </div>
         </section>
+
         <section class="container section"
             style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 2rem;">
             <h3>Don't see your business?</h3>
@@ -143,16 +144,16 @@
                 const response = await fetch('/data/businesses.json');
                 const businesses = await response.json();
 
-                // Filter for Auckland Builders
+                // Filter for Wellington Cleaning Services
                 const filtered = businesses.filter(b =>
-                    b.city === 'Auckland' && b.industry === 'Builders'
+                    b.city === 'Wellington' && (b.industry === 'Cleaning Services' || b.pageSlug === 'cleaning-services')
                 );
 
                 const container = document.getElementById('business-container');
                 container.innerHTML = '';
 
                 if (filtered.length === 0) {
-                    container.innerHTML = '<p>No builders found in this category.</p>';
+                    container.innerHTML = '<p>No cleaning services found in this category.</p>';
                     return;
                 }
 

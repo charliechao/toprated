@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Auckland",
+    "slug": "auckland",
+    "region": "Auckland Region"
+  },
+  {
+    "name": "Wellington",
+    "slug": "wellington",
+    "region": "Wellington Region"
+  },
+  {
+    "name": "Christchurch",
+    "slug": "christchurch",
+    "region": "Canterbury"
+  },
+  {
+    "name": "Hamilton",
+    "slug": "hamilton",
+    "region": "Waikato"
+  },
+  {
+    "name": "Tauranga",
+    "slug": "tauranga",
+    "region": "Bay of Plenty"
+  }
+]

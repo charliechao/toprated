@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Japanese Restaurants in Wellington - TopRated NZ</title>
+    <title>Best Electricians in Hamilton - TopRated NZ</title>
     <meta name="description"
-        content="Discover the highest-rated Japanese restaurants in Wellington. From the authentic flavors of Tatsushi to the contemporary Omakase at Kazaguruma.">
+        content="Discover the highest-rated electricians in Hamilton. Total electrical solutions including home automation, solar, and repairs.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <style>
         .industry-hero {
             height: 50vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -108,26 +108,25 @@
         <section class="industry-hero">
             <div class="container">
                 <nav style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                    <a href="/">Home</a> / <a href="/cities/wellington.html">Wellington</a> / Japanese Restaurants
+                    <a href="/">Home</a> / <a href="/cities/hamilton.html">Hamilton</a> / Electricians
                 </nav>
-                <h1 style="margin: 0;">Best Japanese Restaurants <br><span class="text-primary">in Wellington</span>
-                </h1>
-                <p style="max-width: 700px; margin: 1.5rem auto 0;">Hand-picked and top-rated restaurants serving
-                    exquisite Japanese cuisine in the Capital.</p>
+                <h1 style="margin: 0;">Best Electricians <br><span class="text-primary">in Hamilton</span></h1>
+                <p style="max-width: 700px; margin: 1.5rem auto 0;">Hand-picked and top-rated electrical experts
+                    providing safe and reliable services across the Waikato region.</p>
             </div>
         </section>
 
         <section class="container section">
             <div id="business-container" class="business-list">
                 <!-- Data will be injected here -->
-                <div class="loading">Loading top-rated restaurants...</div>
+                <div class="loading">Loading top-rated electricians...</div>
             </div>
         </section>
         <section class="container section"
             style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 2rem;">
-            <h3>Don't see your restaurant?</h3>
-            <p class="text-muted" style="margin-bottom: 2rem;">Apply to be featured on TopRated NZ and reach more hungry
-                customers.</p>
+            <h3>Are you a top-rated electrician?</h3>
+            <p class="text-muted" style="margin-bottom: 2rem;">Apply to be featured on TopRated NZ and showcase your
+                expertise to local homeowners.</p>
             <a href="/contact.html" class="btn btn-primary">List Your Business</a>
         </section>
     </main>
@@ -144,27 +143,26 @@
                 const response = await fetch('/data/businesses.json');
                 const businesses = await response.json();
 
-                // Filter for Wellington Japanese Restaurants
+                // Filter for Hamilton Electricians
                 const filtered = businesses.filter(b =>
-                    b.city === 'Wellington' && b.industry === 'Japanese Restaurant'
+                    b.city === 'Hamilton' && b.industry === 'Electricians'
                 );
 
                 const container = document.getElementById('business-container');
                 container.innerHTML = '';
 
                 if (filtered.length === 0) {
-                    container.innerHTML = '<p>No restaurants found in this category.</p>';
+                    container.innerHTML = '<p>No electricians found in this category.</p>';
                     return;
                 }
 
-                // Sort by rating (desc) then reviews (desc)
-                filtered.sort((a, b) => b.rating - a.rating || b.reviews - a.reviews);
+                // Sort by rating desc
+                filtered.sort((a, b) => b.rating - a.rating);
 
                 filtered.forEach(b => {
                     const card = document.createElement('div');
                     card.className = 'glass-card business-card-horizontal';
-
-                    let imgPath = b.image || '/img/businesses/placeholder.jpg';
+                    const imgPath = b.image || '/img/businesses/placeholder.jpg';
 
                     card.innerHTML = `
                         <img src="${imgPath}" alt="${b.name}" class="business-image">
