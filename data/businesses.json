@@ -710,7 +710,7 @@
     "pageSlug": "plumbers"
   },
   {
-    "id": 21,
+    "id": 49,
     "name": "Grammar Electrical",
     "industry": "Electricians",
     "city": "Auckland",
@@ -725,7 +725,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 22,
+    "id": 50,
     "name": "Astral Electrical",
     "industry": "Electricians",
     "city": "Wellington",
@@ -740,7 +740,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 23,
+    "id": 51,
     "name": "Subzero Electricals",
     "industry": "Electricians",
     "city": "Christchurch",
@@ -755,7 +755,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 24,
+    "id": 52,
     "name": "Laser Electrical Hamilton",
     "industry": "Electricians",
     "city": "Hamilton",
@@ -770,7 +770,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 25,
+    "id": 53,
     "name": "Affordable Electrical",
     "industry": "Electricians",
     "city": "Tauranga",
@@ -785,7 +785,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 26,
+    "id": 54,
     "name": "Amps Electrical Ltd",
     "industry": "Electricians",
     "city": "Auckland",
@@ -800,7 +800,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 27,
+    "id": 55,
     "name": "Cableworks Electrical",
     "industry": "Electricians",
     "city": "Wellington",
@@ -815,7 +815,7 @@
     "pageSlug": "electricians"
   },
   {
-    "id": 49,
+    "id": 56,
     "name": "Superior Renovations",
     "industry": "Renovation Services",
     "city": "Auckland",
@@ -830,7 +830,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 50,
+    "id": 57,
     "name": "Build Makers",
     "industry": "Renovation Services",
     "city": "Auckland",
@@ -845,7 +845,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 51,
+    "id": 58,
     "name": "Refresh Renovations Wellington",
     "industry": "Renovation Services",
     "city": "Wellington",
@@ -860,7 +860,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 52,
+    "id": 59,
     "name": "CRD Build Solutions",
     "industry": "Renovation Services",
     "city": "Wellington",
@@ -875,7 +875,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 53,
+    "id": 60,
     "name": "Enhanced Renovations",
     "industry": "Renovation Services",
     "city": "Hamilton",
@@ -890,7 +890,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 54,
+    "id": 61,
     "name": "JCC Build",
     "industry": "Renovation Services",
     "city": "Hamilton",
@@ -905,7 +905,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 55,
+    "id": 62,
     "name": "RM Homes Canterbury",
     "industry": "Renovation Services",
     "city": "Christchurch",
@@ -920,7 +920,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 56,
+    "id": 63,
     "name": "Zen Builders",
     "industry": "Renovation Services",
     "city": "Christchurch",
@@ -935,7 +935,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 57,
+    "id": 64,
     "name": "The Thorne Group",
     "industry": "Renovation Services",
     "city": "Tauranga",
@@ -950,7 +950,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 58,
+    "id": 65,
     "name": "Straight Up Builders",
     "industry": "Renovation Services",
     "city": "Tauranga",
@@ -965,7 +965,7 @@
     "pageSlug": "renovation-services"
   },
   {
-    "id": 59,
+    "id": 66,
     "name": "Remedy Coffee",
     "industry": "Cafes",
     "city": "Auckland",
@@ -980,7 +980,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 60,
+    "id": 67,
     "name": "Allpress Espresso",
     "industry": "Cafes",
     "city": "Auckland",
@@ -995,7 +995,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 61,
+    "id": 68,
     "name": "Chuffed",
     "industry": "Cafes",
     "city": "Auckland",
@@ -1010,7 +1010,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 62,
+    "id": 69,
     "name": "Customs by Coffee Supreme",
     "industry": "Cafes",
     "city": "Wellington",
@@ -1025,7 +1025,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 63,
+    "id": 70,
     "name": "Flight Coffee Hangar",
     "industry": "Cafes",
     "city": "Wellington",
@@ -1040,7 +1040,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 64,
+    "id": 71,
     "name": "Prefab",
     "industry": "Cafes",
     "city": "Wellington",
@@ -1055,7 +1055,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 65,
+    "id": 72,
     "name": "Addington Coffee Co-op",
     "industry": "Cafes",
     "city": "Christchurch",
@@ -1070,7 +1070,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 66,
+    "id": 73,
     "name": "Unknown Chapter",
     "industry": "Cafes",
     "city": "Christchurch",
@@ -1085,7 +1085,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 67,
+    "id": 74,
     "name": "C1 Espresso",
     "industry": "Cafes",
     "city": "Christchurch",
@@ -1100,7 +1100,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 68,
+    "id": 75,
     "name": "The River Kitchen",
     "industry": "Cafes",
     "city": "Hamilton",
@@ -1115,7 +1115,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 69,
+    "id": 76,
     "name": "Grey Roasting Co.",
     "industry": "Cafes",
     "city": "Hamilton",
@@ -1130,7 +1130,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 70,
+    "id": 77,
     "name": "Synonym",
     "industry": "Cafes",
     "city": "Hamilton",
@@ -1145,7 +1145,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 71,
+    "id": 78,
     "name": "Mt Zion Coffee",
     "industry": "Cafes",
     "city": "Tauranga",
@@ -1160,7 +1160,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 72,
+    "id": 79,
     "name": "Excelso Coffee",
     "industry": "Cafes",
     "city": "Tauranga",
@@ -1175,7 +1175,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 73,
+    "id": 80,
     "name": "Love Rosie",
     "industry": "Cafes",
     "city": "Tauranga",
@@ -1190,7 +1190,7 @@
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 74,
+    "id": 81,
     "name": "Auckland City Painters",
     "industry": "Painters",
     "city": "Auckland",
@@ -1205,14 +1205,14 @@
     "image": "https://images.unsplash.com/photo-1589939705384-51834c30e386?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 75,
+    "id": 82,
     "name": "Superior Painters",
     "industry": "Painters",
     "city": "Auckland",
     "citySlug": "auckland",
     "categorySlug": "trades",
     "pageSlug": "painters",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": 124,
     "description": "Award-winning residential and commercial painters known for meticulous preparation and high-end finishes.",
     "website": "https://superiorpainters.co.nz",
@@ -1220,7 +1220,7 @@
     "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 76,
+    "id": 83,
     "name": "Complete Homes Painting",
     "industry": "Painters",
     "city": "Wellington",
@@ -1235,7 +1235,7 @@
     "image": "https://images.unsplash.com/photo-1595844730298-b960ff98fee0?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 77,
+    "id": 84,
     "name": "Wellington Decorators",
     "industry": "Painters",
     "city": "Wellington",
@@ -1250,7 +1250,7 @@
     "image": "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 78,
+    "id": 85,
     "name": "Vision Painters",
     "industry": "Painters",
     "city": "Christchurch",
@@ -1265,7 +1265,7 @@
     "image": "https://images.unsplash.com/photo-1595844730298-b960ff98fee0?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 79,
+    "id": 86,
     "name": "Dyer Decorating",
     "industry": "Painters",
     "city": "Christchurch",
@@ -1280,7 +1280,7 @@
     "image": "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 80,
+    "id": 87,
     "name": "Grant Painting Group",
     "industry": "Painters",
     "city": "Hamilton",
@@ -1295,7 +1295,7 @@
     "image": "https://images.unsplash.com/photo-1589939705384-51834c30e386?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 81,
+    "id": 88,
     "name": "Full Effects Painting",
     "industry": "Painters",
     "city": "Tauranga",
@@ -1310,7 +1310,7 @@
     "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 82,
+    "id": 89,
     "name": "PC Painting and Decorating",
     "industry": "Painters",
     "city": "Tauranga",
@@ -1325,7 +1325,7 @@
     "image": "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 83,
+    "id": 90,
     "name": "Urban Care Auckland",
     "industry": "Cleaning Services",
     "city": "Auckland",
@@ -1340,7 +1340,7 @@
     "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 84,
+    "id": 91,
     "name": "Stephen's Home Cleaning Services",
     "industry": "Cleaning Services",
     "city": "Auckland",
@@ -1355,7 +1355,7 @@
     "image": "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 85,
+    "id": 92,
     "name": "Icon Clean",
     "industry": "Cleaning Services",
     "city": "Auckland",
@@ -1370,7 +1370,7 @@
     "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 86,
+    "id": 93,
     "name": "My Maid Wellington",
     "industry": "Cleaning Services",
     "city": "Wellington",
@@ -1385,7 +1385,7 @@
     "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 87,
+    "id": 94,
     "name": "Primoclean",
     "industry": "Cleaning Services",
     "city": "Wellington",
@@ -1400,7 +1400,7 @@
     "image": "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 88,
+    "id": 95,
     "name": "Kleen Co Wellington",
     "industry": "Cleaning Services",
     "city": "Wellington",
@@ -1415,7 +1415,7 @@
     "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 89,
+    "id": 96,
     "name": "PrestigePro Cleaning",
     "industry": "Cleaning Services",
     "city": "Christchurch",
@@ -1430,7 +1430,7 @@
     "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 90,
+    "id": 97,
     "name": "Harmony Clean",
     "industry": "Cleaning Services",
     "city": "Christchurch",
@@ -1445,7 +1445,7 @@
     "image": "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 91,
+    "id": 98,
     "name": "Premium Clean Hamilton",
     "industry": "Cleaning Services",
     "city": "Hamilton",
@@ -1460,7 +1460,7 @@
     "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 92,
+    "id": 99,
     "name": "Cleaning Doctor NZ",
     "industry": "Cleaning Services",
     "city": "Hamilton",
@@ -1475,7 +1475,7 @@
     "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 93,
+    "id": 100,
     "name": "Epic Cleaning Services",
     "industry": "Cleaning Services",
     "city": "Tauranga",
@@ -1490,7 +1490,7 @@
     "image": "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": 94,
+    "id": 101,
     "name": "Katie's Elite Cleaning",
     "industry": "Cleaning Services",
     "city": "Tauranga",
@@ -1503,5 +1503,455 @@
     "website": "https://katieselcleaning.co.nz",
     "address": "Tauranga",
     "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 102,
+    "name": "Park Hyatt Auckland",
+    "industry": "Hotels",
+    "city": "Auckland",
+    "rating": 4.9,
+    "reviews": 1250,
+    "description": "Auckland's premier luxury waterfront hotel featuring stunning harbor views, world-class dining, and a rooftop pool. Located at the iconic Viaduct Harbour.",
+    "website": "https://www.hyatt.com/en-US/hotel/new-zealand/park-hyatt-auckland/aklph",
+    "address": "99 Halsey Street, Wynyard Quarter, Auckland 1010",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 103,
+    "name": "The Hotel Britomart",
+    "industry": "Hotels",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 890,
+    "description": "Boutique luxury in a heritage-listed building. Sustainability-focused design with locally curated interiors and Kingi restaurant serving the best of NZ produce.",
+    "website": "https://www.thehotelbritomart.com",
+    "address": "29 Galway Street, Britomart, Auckland 1010",
+    "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 104,
+    "name": "Sofitel Auckland Viaduct Harbour",
+    "industry": "Hotels",
+    "city": "Auckland",
+    "rating": 4.7,
+    "reviews": 1580,
+    "description": "French elegance meets New Zealand hospitality. Waterfront luxury with marina views, signature spa treatments, and refined dining at Lava Dining.",
+    "website": "https://www.sofitel-auckland.com",
+    "address": "21 Viaduct Harbour Avenue, Auckland 1010",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 105,
+    "name": "Sofitel Wellington",
+    "industry": "Hotels",
+    "city": "Wellington",
+    "rating": 4.9,
+    "reviews": 920,
+    "description": "French-inspired 5-star luxury in the heart of the capital. Designer rooms, garden oasis, and the acclaimed Hippopotamus Restaurant for fine dining.",
+    "website": "https://www.sofitel.com/wellington",
+    "address": "Roosevelt Road, Wellington 6011",
+    "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "wellington",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 106,
+    "name": "InterContinental Wellington",
+    "industry": "Hotels",
+    "city": "Wellington",
+    "rating": 4.8,
+    "reviews": 1340,
+    "description": "Elegant sophistication steps from Lambton Quay. Premium bedding, club lounge access, indoor pool, spa, and award-winning dining experiences.",
+    "website": "https://www.ihg.com/intercontinental/hotels/wellington",
+    "address": "2 Grey Street, Wellington 6011",
+    "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "wellington",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 107,
+    "name": "QT Wellington",
+    "industry": "Hotels",
+    "city": "Wellington",
+    "rating": 4.7,
+    "reviews": 780,
+    "description": "Bold, artistic boutique hotel with distinctive design and quirky interiors. Two eateries, a bustling bar, and unmistakable Wellington character.",
+    "website": "https://www.qthotels.com/wellington",
+    "address": "90 Cable Street, Te Aro, Wellington 6011",
+    "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "wellington",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 108,
+    "name": "The George",
+    "industry": "Hotels",
+    "city": "Christchurch",
+    "rating": 4.9,
+    "reviews": 1120,
+    "description": "Prestigious 5-star boutique hotel with a legendary 1:1 staff-to-guest ratio. Overlooking Hagley Park with award-winning 50 Bistro and Pescatore restaurants.",
+    "website": "https://www.thegeorge.com",
+    "address": "50 Park Terrace, Christchurch 8013",
+    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 109,
+    "name": "The Observatory Hotel",
+    "industry": "Hotels",
+    "city": "Christchurch",
+    "rating": 4.8,
+    "reviews": 650,
+    "description": "Historic grandeur meets modern luxury in this palatial heritage building. Antique-furnished rooms, buffet breakfast, and central city convenience.",
+    "website": "https://www.theobservatory.nz",
+    "address": "21 Rolleston Avenue, Christchurch 8013",
+    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 110,
+    "name": "Sudima Christchurch City",
+    "industry": "Hotels",
+    "city": "Christchurch",
+    "rating": 4.7,
+    "reviews": 890,
+    "description": "Five-star inner-city luxury with modern rooms and exceptional service. Conveniently located near Victoria Street's vibrant dining and shopping scene.",
+    "website": "https://www.sudimahotels.com/christchurch-city",
+    "address": "369 Montreal Street, Christchurch 8013",
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 111,
+    "name": "Novotel Tainui Hamilton",
+    "industry": "Hotels",
+    "city": "Hamilton",
+    "rating": 4.7,
+    "reviews": 760,
+    "description": "Premium riverside hotel with sleek, spacious rooms and stunning Waikato River views. Acclaimed buffet breakfast and modern fitness facilities.",
+    "website": "https://www.novotel.com/hamilton",
+    "address": "7 Alma Street, Hamilton 3204",
+    "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "hamilton",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 112,
+    "name": "Distinction Hamilton Hotel",
+    "industry": "Hotels",
+    "city": "Hamilton",
+    "rating": 4.6,
+    "reviews": 520,
+    "description": "Four-star accommodation with well-equipped gym and conference facilities. Popular choice for business travelers and events in the Waikato region.",
+    "website": "https://www.distinctionhotels.co.nz/hamilton",
+    "address": "100 Garnett Avenue, Hamilton 3204",
+    "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "hamilton",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 113,
+    "name": "The Narrows Landing",
+    "industry": "Hotels",
+    "city": "Hamilton",
+    "rating": 4.8,
+    "reviews": 340,
+    "description": "Charming boutique B&B with quirky stained glass features, in-room spa baths, and gourmet continental breakfasts. Perfect for romantic getaways and weddings.",
+    "website": "https://www.narrowslanding.co.nz",
+    "address": "431 Airport Road, Hamilton 3281",
+    "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "hamilton",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 114,
+    "name": "Trinity Wharf Tauranga",
+    "industry": "Hotels",
+    "city": "Tauranga",
+    "rating": 4.8,
+    "reviews": 980,
+    "description": "Upscale waterfront hotel with panoramic harbor views. Range of rooms and apartments, excellent conference facilities, and prime location for exploring the Bay.",
+    "website": "https://www.trinitywharf.co.nz",
+    "address": "51 Dive Crescent, Tauranga 3110",
+    "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "tauranga",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 115,
+    "name": "Hotel on Devonport",
+    "industry": "Hotels",
+    "city": "Tauranga",
+    "rating": 4.7,
+    "reviews": 650,
+    "description": "Stylish central Tauranga hotel with modern rooms and excellent views. Popular choice for both business and leisure travelers in the Bay of Plenty.",
+    "website": "https://www.hoteldevonport.co.nz",
+    "address": "72 Devonport Road, Tauranga 3110",
+    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "tauranga",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 116,
+    "name": "Oceanside Resort & Twin Towers",
+    "industry": "Hotels",
+    "city": "Tauranga",
+    "rating": 4.8,
+    "reviews": 1240,
+    "description": "Mount Maunganui beachfront resort with two swimming pools. Steps from Mauao and the famous beach, offering apartments with stunning ocean views.",
+    "website": "https://www.oceansideresort.co.nz",
+    "address": "1 Maunganui Road, Mount Maunganui 3116",
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "tauranga",
+    "categorySlug": "hospitality",
+    "pageSlug": "hotels"
+  },
+  {
+    "id": 117,
+    "name": "Ahi",
+    "industry": "Restaurants",
+    "city": "Auckland",
+    "rating": 4.9,
+    "reviews": 1850,
+    "description": "Award-winning 3-Hat restaurant celebrating New Zealand cuisine. Chef Ben Bayly's innovative menu features organic, locally-sourced ingredients with iconic dishes like the Scampi Corn Dog.",
+    "website": "https://www.ahirestaurant.co.nz",
+    "address": "51 Customs Street East, Auckland CBD",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 118,
+    "name": "The Grove",
+    "industry": "Restaurants",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 1420,
+    "description": "Exquisite modern New Zealand fine dining in a relaxed yet sophisticated atmosphere. Winner of multiple Metro Restaurant of the Year awards.",
+    "website": "https://www.thegroverestaurant.co.nz",
+    "address": "St Patrick's Square, Wyndham Street, Auckland CBD",
+    "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 119,
+    "name": "Cassia",
+    "industry": "Restaurants",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 1680,
+    "description": "Modern Indian fine dining with an exciting twist on traditional dishes. Plush interiors and a mouth-watering menu featuring signature roasted carrot with vindaloo.",
+    "website": "https://www.cassiarestaurant.co.nz",
+    "address": "5 Fort Lane, Auckland CBD",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 120,
+    "name": "Logan Brown",
+    "industry": "Restaurants",
+    "city": "Wellington",
+    "rating": 4.9,
+    "reviews": 2100,
+    "description": "Wellington icon since 1996, renowned for precision fine dining and the legendary pāua ravioli. Set in a stunning heritage building with impeccable service.",
+    "website": "https://www.loganbrown.co.nz",
+    "address": "192 Cuba Street, Te Aro, Wellington",
+    "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "wellington",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 121,
+    "name": "Hippopotamus",
+    "industry": "Restaurants",
+    "city": "Wellington",
+    "rating": 4.8,
+    "reviews": 1350,
+    "description": "Luxurious French fine dining at Sofitel Wellington. Classic techniques with a modern NZ twist, stunning city views, and Two Hat recognition from Cuisine Magazine.",
+    "website": "https://www.hippopotamus.co.nz",
+    "address": "Roosevelt Road, Sofitel Wellington",
+    "image": "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "wellington",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 122,
+    "name": "Graze",
+    "industry": "Restaurants",
+    "city": "Wellington",
+    "rating": 4.7,
+    "reviews": 980,
+    "description": "Outstanding Restaurant at Welly Hospo Awards 2024. Lively Kelburn spot serving produce-led small plates with sustainability at its core.",
+    "website": "https://www.grazewellington.co.nz",
+    "address": "87 Upland Road, Kelburn, Wellington",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "wellington",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 123,
+    "name": "Inati",
+    "industry": "Restaurants",
+    "city": "Christchurch",
+    "rating": 4.9,
+    "reviews": 890,
+    "description": "Canterbury's Outstanding Restaurant winner. Intimate chef's table experience with personalized tasting plates featuring premium Canterbury-sourced ingredients.",
+    "website": "https://www.inati.co.nz",
+    "address": "29 Cathedral Square, Christchurch Central",
+    "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 124,
+    "name": "Twenty Seven Steps",
+    "industry": "Restaurants",
+    "city": "Christchurch",
+    "rating": 4.8,
+    "reviews": 1120,
+    "description": "Elegant European fare in a heritage terrace setting. Bold, seasonal flavors reflecting Canterbury's micro-seasons with an intimate, romantic atmosphere.",
+    "website": "https://www.twentysevensteps.co.nz",
+    "address": "16 New Regent Street, Christchurch",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 125,
+    "name": "Bessie",
+    "industry": "Restaurants",
+    "city": "Christchurch",
+    "rating": 4.7,
+    "reviews": 760,
+    "description": "Sophisticated steakhouse specializing in high-quality dry-aged meats cooked in a charcoal oven. Open kitchen concept with a focus on exceptional cuts.",
+    "website": "https://www.bessie.co.nz",
+    "address": "162 Armagh Street, Christchurch Central",
+    "image": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 126,
+    "name": "Palate Restaurant",
+    "industry": "Restaurants",
+    "city": "Hamilton",
+    "rating": 4.8,
+    "reviews": 680,
+    "description": "Award-winning modern New Zealand cuisine at SkyCity Hamilton. Custom-built open-fire grill, locally sourced seasonal produce, and an extensive wine list.",
+    "website": "https://www.palaterestaurant.co.nz",
+    "address": "346 Victoria Street, SkyCity Hamilton",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "hamilton",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 127,
+    "name": "Chim Choo Ree",
+    "industry": "Restaurants",
+    "city": "Hamilton",
+    "rating": 4.7,
+    "reviews": 520,
+    "description": "Award-winning innovative cuisine with impeccable service. Classy indoor and outdoor seating, featuring a celebrated six-course tasting menu.",
+    "website": "https://www.chimchooree.co.nz",
+    "address": "14 Bridge Street, Hamilton CBD",
+    "image": "https://images.unsplash.com/photo-1571167530149-c1105da4c2c7?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "hamilton",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 128,
+    "name": "Gothenburg",
+    "industry": "Restaurants",
+    "city": "Hamilton",
+    "rating": 4.6,
+    "reviews": 890,
+    "description": "Global tapas with panoramic Waikato River views. Light-filled space showcasing the best of the Waikato region with options for al fresco dining.",
+    "website": "https://www.gothenburg.co.nz",
+    "address": "15 Grantham Street, Hamilton CBD",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "hamilton",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 129,
+    "name": "Harbourside",
+    "industry": "Restaurants",
+    "city": "Tauranga",
+    "rating": 4.8,
+    "reviews": 1240,
+    "description": "Stunning waterfront fine dining on The Strand. Focus on fresh seafood and local produce with panoramic harbour views. Perfect for special occasions.",
+    "website": "https://www.harboursidetauranga.co.nz",
+    "address": "150 The Strand, Tauranga",
+    "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "tauranga",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 130,
+    "name": "Fife Lane",
+    "industry": "Restaurants",
+    "city": "Tauranga",
+    "rating": 4.9,
+    "reviews": 920,
+    "description": "Sophisticated Mount Maunganui gem named among World's 101 Best Steak Restaurants 2023. Modern NZ cuisine with chic ambiance and legendary Beef Wellington.",
+    "website": "https://www.fifelane.co.nz",
+    "address": "89 Maunganui Road, Mount Maunganui",
+    "image": "https://images.unsplash.com/photo-1560624052-449f5ddf0c31?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "tauranga",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
+  },
+  {
+    "id": 131,
+    "name": "Izakai Bar & Eatery",
+    "industry": "Restaurants",
+    "city": "Tauranga",
+    "rating": 4.7,
+    "reviews": 650,
+    "description": "Innovative fusion of Māori and Japanese cuisine. Unique share plates including Creamed Paua Dumplings and Hāngī-style Pork Belly Ramen.",
+    "website": "https://www.izakai.co.nz",
+    "address": "Bayfair Shopping Centre, Mount Maunganui",
+    "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "tauranga",
+    "categorySlug": "cuisine",
+    "pageSlug": "restaurants"
   }
 ]

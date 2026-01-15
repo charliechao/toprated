@@ -71,7 +71,8 @@ async function renderHubGrid() {
         const categories = [
             { slug: 'cuisine', name: 'Food & Cuisine', icon: 'fa-bowl-food' },
             { slug: 'trades', name: 'Home Trades', icon: 'fa-hammer' },
-            { slug: 'services', name: 'Services', icon: 'fa-briefcase' }
+            { slug: 'services', name: 'Services', icon: 'fa-briefcase' },
+            { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel' }
         ];
 
         const cards = categories.map(cat => {
@@ -141,7 +142,7 @@ async function renderRelated() {
     }).join('<br>');
 
     // Load data for other categories in the same city
-    const categories = ['cuisine', 'trades', 'services'];
+    const categories = ['cuisine', 'trades', 'services', 'hospitality'];
     const otherCats = categories.filter(cat => cat !== category);
     const catLinks = otherCats.map(cat => {
         // Ensure we preserve the extension if it was present, or keep it clean

@@ -107,7 +107,7 @@ industries.forEach(ind => {
 });
 
 // 3.3 Category Hubs in Cities (index.html in subfolders)
-const categories = ['cuisine', 'trades', 'services'];
+const categories = ['cuisine', 'trades', 'services', 'hospitality'];
 cities.forEach(city => {
     categories.forEach(cat => {
         const dir = path.join('cities', city.slug, cat);
@@ -121,10 +121,12 @@ cities.forEach(city => {
 const subCatsMapping = {
     'restaurants': { cat: 'cuisine', name: 'Restaurants' },
     'cafes': { cat: 'cuisine', name: 'Cafes' },
+    'hotels': { cat: 'hospitality', name: 'Hotels' },
     'builders': { cat: 'trades', name: 'Builders' },
     'electricians': { cat: 'trades', name: 'Electricians' },
     'plumbers': { cat: 'trades', name: 'Plumbers' },
     'renovation-services': { cat: 'trades', name: 'Renovation Services' },
+    'painters': { cat: 'trades', name: 'Painters' },
     'cleaning-services': { cat: 'services', name: 'Cleaning Services' }
 };
 
