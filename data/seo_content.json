@@ -51,5 +51,124 @@
         "answer": "Eden Noodles Cafe is famous for hand-pulled Sichuan noodles and dumplings, with multiple locations across Auckland. Ghost Street in Britomart offers authentic biang biang noodles in a unique underground setting."
       }
     ]
+  },
+  "auckland/cuisine/cafes": {
+    "introText": "Auckland's café culture is thriving, with specialty coffee roasters and artisanal eateries dotting every neighborhood. From waterfront brunch spots in the Viaduct to hidden gems in Kingsland and Ponsonby, the city's cafés offer everything from expertly crafted flat whites to innovative all-day menus. Whether you're after a quick espresso or a leisurely weekend brunch, Auckland's top-rated cafés deliver exceptional quality and atmosphere.",
+    "faqs": [
+      {
+        "question": "What are the best cafés in Auckland CBD?",
+        "answer": "The CBD offers excellent options including Orphans Kitchen, Federal Delicatessen, and Little & Friday. Britomart also has a concentration of high-quality specialty coffee spots."
+      },
+      {
+        "question": "Where can I find the best brunch in Auckland?",
+        "answer": "Ponsonby Road and the Viaduct are renowned for brunch. Popular spots include Dizengof, Ortolana, and The Store, all offering innovative menus and quality coffee."
+      },
+      {
+        "question": "Which Auckland cafés roast their own coffee?",
+        "answer": "Several top cafés roast their own beans, including Allpress Espresso, Flight Coffee, and Kokako. These roasters also supply many other Auckland cafés with specialty beans."
+      }
+    ]
+  },
+  "auckland/hospitality/hotels": {
+    "introText": "Auckland offers accommodation for every style and budget, from luxury waterfront hotels to boutique properties in the inner suburbs. Whether you're visiting for business or leisure, the city's top-rated hotels provide exceptional service, prime locations, and world-class amenities. From the iconic SkyCity Grand to boutique gems in Ponsonby and Parnell, Auckland's hotel scene caters to discerning travelers seeking quality and convenience.",
+    "faqs": [
+      {
+        "question": "What is the best area to stay in Auckland?",
+        "answer": "The Auckland CBD and Viaduct are ideal for first-time visitors, offering easy access to attractions, restaurants, and harbor views. Ponsonby and Parnell are great for a more residential, boutique experience."
+      },
+      {
+        "question": "Which Auckland hotels have the best harbour views?",
+        "answer": "The Sofitel Auckland Viaduct Harbour, Hilton Auckland, and Park Hyatt Auckland all offer spectacular harbor and city views. The Park Hyatt, in particular, is renowned for its panoramic vistas."
+      },
+      {
+        "question": "Are there luxury boutique hotels in Auckland?",
+        "answer": "Yes, Auckland has several excellent boutique options including Hotel DeBrett, The Hotel Britomart, and The Convent Hotel in Ponsonby, each offering unique character and personalized service."
+      }
+    ]
+  },
+  "auckland/trades/plumbers": {
+    "introText": "Finding a reliable, skilled plumber in Auckland is essential for maintaining your home or business. The city's top-rated plumbing professionals offer everything from emergency leak repairs to complete bathroom renovations, with many providing 24/7 service across all Auckland suburbs. Whether you need urgent assistance or planned maintenance, Auckland's Master Plumbers deliver quality workmanship, transparent pricing, and exceptional customer service.",
+    "faqs": [
+      {
+        "question": "How much does a plumber cost in Auckland?",
+        "answer": "Auckland plumbers typically charge between $100-$150 per hour for standard work, with emergency callouts costing more. Many offer fixed-price quotes for specific jobs like tap replacements or hot water cylinder installations."
+      },
+      {
+        "question": "Do Auckland plumbers offer 24/7 emergency service?",
+        "answer": "Yes, many top-rated Auckland plumbers provide 24/7 emergency services for urgent issues like burst pipes, blocked drains, and hot water failures. It's worth keeping a reliable emergency plumber's number on hand."
+      },
+      {
+        "question": "What should I look for in an Auckland plumber?",
+        "answer": "Choose a registered Master Plumber with good reviews, transparent pricing, and proper insurance. Check they're licensed for the specific work (plumbing, gasfitting, drainlaying) and offer guarantees on their workmanship."
+      }
+    ]
+  },
+  "auckland/trades/builders": {
+    "introText": "Auckland's construction boom demands skilled, reliable builders who can deliver quality results on time and within budget. From heritage renovations in Ponsonby to modern new builds on the North Shore, the city's top-rated builders bring expertise in residential and commercial projects. Master Builder members, these professionals offer comprehensive services from design consultation to final completion, with 10-year guarantees on new builds.",
+    "faqs": [
+      {
+        "question": "How do I choose a good builder in Auckland?",
+        "answer": "Look for Master Builders members with proven track records, recent references, and comprehensive insurance. Verify they're licensed for your project type and ask to see examples of similar completed work."
+      },
+      {
+        "question": "What is the average cost of building in Auckland?",
+        "answer": "New builds in Auckland typically cost $2,500-$4,000+ per square meter depending on specifications and location. Renovations vary widely based on scope, but budget at least $1,500-$2,500 per square meter for quality work."
+      },
+      {
+        "question": "How long does it take to build a house in Auckland?",
+        "answer": "A standard new build in Auckland takes 6-12 months from foundation to completion, plus 2-4 months for council consents. Complex designs, weather delays, or material shortages can extend timelines."
+      }
+    ]
+  },
+  "auckland/trades/electricians": {
+    "introText": "Auckland's electrical needs require registered, experienced electricians who prioritize safety and quality. From rewiring older homes in Grey Lynn to installing heat pumps and EV chargers in new builds, the city's top electricians handle everything from minor repairs to complete electrical fit-outs. All work must comply with strict New Zealand electrical standards, making it essential to choose licensed professionals with proven expertise.",
+    "faqs": [
+      {
+        "question": "Do I need a registered electrician in Auckland?",
+        "answer": "Yes, all electrical work in New Zealand must be completed by a registered electrician. DIY electrical work is illegal and dangerous. Always verify your electrician's registration with the Electrical Workers Registration Board."
+      },
+      {
+        "question": "How much do electricians charge in Auckland?",
+        "answer": "Auckland electricians typically charge $90-$130 per hour, with call-out fees of $80-$150. Many offer fixed-price quotes for standard jobs like installing light fixtures, power points, or switchboard upgrades."
+      },
+      {
+        "question": "Can Auckland electricians install EV chargers?",
+        "answer": "Yes, many Auckland electricians are qualified to install home EV charging stations. This typically requires a dedicated circuit and may need a power upgrade depending on your existing electrical capacity."
+      }
+    ]
+  },
+  "auckland/trades/painters": {
+    "introText": "Professional painting transforms Auckland homes and businesses, protecting surfaces while adding value and aesthetic appeal. The city's top-rated painters bring expertise in both interior and exterior work, from heritage restoration in Devonport to modern commercial fit-outs in the CBD. With Auckland's variable climate, proper surface preparation and quality materials are essential for long-lasting results.",
+    "faqs": [
+      {
+        "question": "How much does house painting cost in Auckland?",
+        "answer": "Exterior house painting in Auckland typically costs $15,000-$35,000 depending on size and condition. Interior painting ranges from $25-$45 per square meter. Get multiple quotes and ensure they include all prep work and materials."
+      },
+      {
+        "question": "What's the best time to paint a house in Auckland?",
+        "answer": "Late spring through early autumn (October-April) offers the most consistent weather for exterior painting in Auckland. Interior work can be done year-round, though summer provides better ventilation and faster drying times."
+      },
+      {
+        "question": "Do painters include prep work in their quotes?",
+        "answer": "Reputable Auckland painters include surface preparation (sanding, filling, priming) in their quotes. Be wary of quotes that don't specify prep work, as this is crucial for quality results and longevity."
+      }
+    ]
+  },
+  "auckland/trades/renovation-services": {
+    "introText": "Auckland renovation specialists transform tired spaces into stunning modern homes, managing every aspect from design to completion. Whether you're updating a kitchen in Mount Eden, adding a bathroom in Remuera, or undertaking a complete house renovation, the city's top renovation companies bring expertise in project management, building consent navigation, and coordinating multiple trades for seamless results.",
+    "faqs": [
+      {
+        "question": "How much does a kitchen renovation cost in Auckland?",
+        "answer": "Auckland kitchen renovations range from $25,000 for a basic update to $80,000+ for high-end complete makeovers. Costs depend on cabinetry quality, appliances, benchtops, and structural changes required."
+      },
+      {
+        "question": "Do I need consent for renovations in Auckland?",
+        "answer": "Many renovations require building consent from Auckland Council, especially if modifying structure, plumbing, or electrical. Minor cosmetic work often doesn't need consent, but always verify specific requirements with your renovation specialist or the council."
+      },
+      {
+        "question": "How long does a typical renovation take in Auckland?",
+        "answer": "Bathroom renovations typically take 3-6 weeks, kitchens 4-8 weeks, and full house renovations 3-6 months. Factor in 6-12 weeks for council consents before work begins on projects requiring approval."
+      }
+    ]
   }
 }
