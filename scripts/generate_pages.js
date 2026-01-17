@@ -7,6 +7,7 @@ const path = require('path');
 const businesses = JSON.parse(fs.readFileSync('data/businesses.json', 'utf8'));
 const cities = JSON.parse(fs.readFileSync('data/cities.json', 'utf8'));
 const industries = JSON.parse(fs.readFileSync('data/industries.json', 'utf8'));
+const seoContent = fs.existsSync('data/seo_content.json') ? JSON.parse(fs.readFileSync('data/seo_content.json', 'utf8')) : {};
 
 // Hero Images Mapping
 const cityHeros = {
@@ -28,7 +29,8 @@ const indHeros = {
 // 2. Page Template Functions
 // ---------------------------------------------------
 
-function getBaseTemplate(title, description, content) {
+function getBaseTemplate(title, description, content, schema = null) {
+    const schemaScript = schema ? `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>` : '';
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +44,7 @@ function getBaseTemplate(title, description, content) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    ${schemaScript}
 </head>
 <body>
     <header id="site-header"></header>
@@ -53,7 +56,32 @@ function getBaseTemplate(title, description, content) {
 </html>`;
 }
 
-function generateLeafContent(titleLine) {
+function generateLeafContent(titleLine, specificSeo = null) {
+    let extraContent = '';
+
+    if (specificSeo) {
+        if (specificSeo.introText) {
+            extraContent += `<section class="container" style="margin-top: 2rem;"><p class="lead">${specificSeo.introText}</p></section>`;
+        }
+
+        // Note: Curated sections and FAQs would need more complex JS injection or static building.
+        // For now, we inject a basic FAQ section if it exists.
+        if (specificSeo.faqs) {
+            extraContent += `
+            <section class="container section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    ${specificSeo.faqs.map(faq => `
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">${faq.question}</h3>
+                            <p>${faq.answer}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </section>`;
+        }
+    }
+
     return `
     <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/auckland-hero.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
         <div class="container">
@@ -61,6 +89,7 @@ function generateLeafContent(titleLine) {
             <h1>${titleLine}</h1>
         </div>
     </section>
+    ${extraContent}
     <section class="container section">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
@@ -120,6 +149,12 @@ cities.forEach(city => {
 // 3.4 Leaf Pages (Cities)
 const subCatsMapping = {
     'restaurants': { cat: 'cuisine', name: 'Restaurants' },
+    'japanese-restaurants': { cat: 'cuisine', name: 'Japanese Restaurants' },
+    'chinese-restaurants': { cat: 'cuisine', name: 'Chinese Restaurants' },
+    'indian-restaurants': { cat: 'cuisine', name: 'Indian Restaurants' },
+    'italian-restaurants': { cat: 'cuisine', name: 'Italian Restaurants' },
+    'thai-restaurants': { cat: 'cuisine', name: 'Thai Restaurants' },
+    'french-restaurants': { cat: 'cuisine', name: 'French Restaurants' },
     'cafes': { cat: 'cuisine', name: 'Cafes' },
     'hotels': { cat: 'hospitality', name: 'Hotels' },
     'builders': { cat: 'trades', name: 'Builders' },
@@ -138,7 +173,32 @@ cities.forEach(city => {
             const dir = path.join('cities', city.slug, map.cat);
             if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-            const html = getBaseTemplate(`${map.name} in ${city.name} | TopRated NZ`, `Find the best ${map.name.toLowerCase()} in ${city.name}.`, generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`));
+            const pageKey = `${city.slug}/${map.cat}/${sc}`;
+            const specificSeo = seoContent[pageKey] || null;
+
+            // Generate FAQ Schema if applicable
+            let faqSchema = null;
+            if (specificSeo && specificSeo.faqs) {
+                faqSchema = {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": specificSeo.faqs.map(f => ({
+                        "@type": "Question",
+                        "name": f.question,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": f.answer
+                        }
+                    }))
+                };
+            }
+
+            const html = getBaseTemplate(
+                `${map.name} in ${city.name} | TopRated NZ`,
+                `Find the best ${map.name.toLowerCase()} in ${city.name}.`,
+                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo),
+                faqSchema
+            );
             fs.writeFileSync(path.join(dir, `${sc}.html`), html);
         });
     });

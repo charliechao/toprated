@@ -4,6 +4,12 @@
         "slug": "hospitality",
         "subCategories": [
             "restaurants",
+            "japanese-restaurants",
+            "chinese-restaurants",
+            "indian-restaurants",
+            "italian-restaurants",
+            "thai-restaurants",
+            "french-restaurants",
             "cafes",
             "hotels"
         ]

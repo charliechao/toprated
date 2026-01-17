@@ -146,10 +146,17 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 1540,
-    "description": "Award-winning robata-style Japanese dining in the heart of Auckland, featuring a lively atmosphere and fresh seasonal ingredients.",
+    "description": "Award-winning robata-style Japanese dining in the heart of Auckland. Chef Nic Watt's signature restaurant at SkyCity offers a contemporary take on traditional open-charcoal cooking.",
     "website": "https://skycityauckland.co.nz/restaurants/masu",
     "image": "/img/businesses/masu.jpg",
     "address": "90 Federal St, Auckland CBD",
+    "neighborhood": "CBD",
+    "tags": [
+      "Robata",
+      "Fine Dining",
+      "Sushi",
+      "CBD"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "japanese-restaurants"
@@ -161,10 +168,17 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 680,
-    "description": "Contemporary Japanese cuisine with a focus on fresh, high-quality ingredients and artful presentation. Renowned for its iconic sashimi platter.",
+    "description": "Contemporary Japanese cuisine that balances heart (cocoro) and soul. Renowned for its artful presentation and the iconic 'Signature Sashimi Platter' consisting of 25+ varieties of seafood.",
     "website": "https://cocoro.co.nz",
     "image": "/img/businesses/cocoro.jpg",
     "address": "56A Brown St, Ponsonby, Auckland",
+    "neighborhood": "Ponsonby",
+    "tags": [
+      "Fine Dining",
+      "Degustation",
+      "Sashimi",
+      "Ponsonby"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "japanese-restaurants"
@@ -176,10 +190,17 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 1120,
-    "description": "Sleek, industrial-chic space serving modern Japanese dishes that blend traditional techniques with contemporary flavors.",
+    "description": "Modern Japanese dining in a sleek, industrial-chic space. Ebisu blends traditional techniques with contemporary flavors, featuring local seafood and premium wagyu beef in Britomart.",
     "website": "https://ebisu.co.nz",
     "image": "/img/businesses/ebisu.jpg",
     "address": "116-118 Quay St, Britomart, Auckland",
+    "neighborhood": "Britomart",
+    "tags": [
+      "Contemporary",
+      "Sushi",
+      "Waterfront",
+      "Britomart"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "japanese-restaurants"
@@ -191,10 +212,17 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 950,
-    "description": "A unique fusion of Japanese and Peruvian (Nikkei) flavors, offering a vibrant and modern dining experience in Ponsonby.",
+    "description": "A vibrant fusion of Japanese and Peruvian (Nikkei) flavors. Azabu offers a modern dining experience with a hidden sake bar, specializing in ceviche, tiradito, and robata-grilled dishes.",
     "website": "https://azabu.co.nz",
     "image": "/img/businesses/azabu.jpg",
     "address": "26 Ponsonby Rd, Ponsonby, Auckland",
+    "neighborhood": "Ponsonby",
+    "tags": [
+      "Nikkei",
+      "Fusion",
+      "Izakaya",
+      "Ponsonby"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "japanese-restaurants"
@@ -206,10 +234,17 @@
     "city": "Auckland",
     "rating": 4.6,
     "reviews": 890,
-    "description": "An underground izakaya-style bar and restaurant famous for its yakitori, kushiage, and extensive sake selection.",
+    "description": "An underground izakaya institution famous for its smoky yakitori, kushiage skewers, and extensive sake selection. Established in 1994, it remains a Queen Street favorite.",
     "website": "http://tanuki.co.nz",
     "image": "/img/businesses/tanukis-cave.jpg",
     "address": "319 Queen St, Auckland CBD",
+    "neighborhood": "CBD",
+    "tags": [
+      "Izakaya",
+      "Yakitori",
+      "Sake Bar",
+      "CBD"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "japanese-restaurants"

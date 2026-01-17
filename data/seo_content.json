@@ -1,0 +1,31 @@
+{
+  "auckland/cuisine/japanese-restaurants": {
+    "introText": "Auckland's Japanese dining scene is a vibrant tapestry of traditional craftsmanship and modern innovation. From the lively izakayas of the CBD to the refined degustation menus in Ponsonby, the city offers some of the most authentic Japanese experiences in New Zealand. Whether you are craving the precision of world-class sashimi, the comfort of a steaming bowl of ramen, or the theatrical flair of teppanyaki, our curated guide highlights the highest-rated spots that define quality and authenticity.",
+    "faqs": [
+      {
+        "question": "What is the best area in Auckland for Japanese food?",
+        "answer": "The Auckland CBD, particularly the Britomart and Federal Street precincts, hosts several high-end and contemporary Japanese restaurants. Ponsonby is also a top destination for refined, chef-led Japanese dining."
+      },
+      {
+        "question": "Are there authentic Izakayas in Auckland?",
+        "answer": "Yes, Auckland has several authentic izakayas. Tanuki's Cave on Queen Street is a local institution, and Azabu in Ponsonby offers a unique Nikkei (Japanese-Peruvian) twist on the izakaya experience."
+      },
+      {
+        "question": "Where can I find the best Japanese fine dining in Auckland?",
+        "answer": "For a premium experience, MASU by Nic Watt at SkyCity and Cocoro in Ponsonby are widely considered the gold standard for Japanese fine dining and degustation in the city."
+      }
+    ],
+    "curatedSections": [
+      {
+        "title": "Top Picks for Japanese Fine Dining",
+        "description": "Experience the pinnacle of Japanese culinary art with these award-winning establishments.",
+        "businessIds": [11, 12, 13]
+      },
+      {
+        "title": "Best Authentic Izakayas",
+        "description": "Perfect for shared plates, sake, and a lively atmosphere.",
+        "businessIds": [15, 14]
+      }
+    ]
+  }
+}
