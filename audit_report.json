@@ -1,0 +1,181 @@
+{
+  "brokenLinks": [
+    {
+      "file": "/cities/auckland/cleaning-services.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/auckland/${b.website}"
+    },
+    {
+      "file": "/cities/christchurch/cleaning-services.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/christchurch/${b.website}"
+    },
+    {
+      "file": "/cities/christchurch/electricians.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/christchurch/${b.website}"
+    },
+    {
+      "file": "/cities/christchurch/plumbers.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/christchurch/${b.website}"
+    },
+    {
+      "file": "/cities/hamilton/cleaning-services.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/hamilton/${b.website}"
+    },
+    {
+      "file": "/cities/hamilton/electricians.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/hamilton/${b.website}"
+    },
+    {
+      "file": "/cities/hamilton/plumbers.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/hamilton/${b.website}"
+    },
+    {
+      "file": "/cities/tauranga/cleaning-services.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/tauranga/${b.website}"
+    },
+    {
+      "file": "/cities/tauranga/electricians.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/tauranga/${b.website}"
+    },
+    {
+      "file": "/cities/tauranga/plumbers.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/tauranga/${b.website}"
+    },
+    {
+      "file": "/cities/wellington/cleaning-services.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/wellington/${b.website}"
+    },
+    {
+      "file": "/cities/wellington/electricians.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/wellington/${b.website}"
+    },
+    {
+      "file": "/cities/wellington/plumbers.html",
+      "href": "${b.website}",
+      "targetPath": "/cities/wellington/${b.website}"
+    },
+    {
+      "file": "/industries.html",
+      "href": "/industries/construction.html",
+      "targetPath": "/industries/construction.html"
+    },
+    {
+      "file": "/industries.html",
+      "href": "/industries/retail.html",
+      "targetPath": "/industries/retail.html"
+    },
+    {
+      "file": "/industries.html",
+      "href": "/industries/healthcare.html",
+      "targetPath": "/industries/healthcare.html"
+    }
+  ],
+  "deadEndLinks": [
+    {
+      "file": "/components/footer.html",
+      "href": "#"
+    },
+    {
+      "file": "/components/footer.html",
+      "href": "#"
+    },
+    {
+      "file": "/components/footer.html",
+      "href": "#"
+    }
+  ],
+  "emptyPages": [
+    {
+      "file": "/cities/christchurch/cuisine/chinese-restaurants.html",
+      "citySlug": "christchurch",
+      "pageSlug": "chinese-restaurants"
+    },
+    {
+      "file": "/cities/christchurch/cuisine/japanese-restaurants.html",
+      "citySlug": "christchurch",
+      "pageSlug": "japanese-restaurants"
+    },
+    {
+      "file": "/cities/hamilton/cuisine/chinese-restaurants.html",
+      "citySlug": "hamilton",
+      "pageSlug": "chinese-restaurants"
+    },
+    {
+      "file": "/cities/hamilton/cuisine/french-restaurants.html",
+      "citySlug": "hamilton",
+      "pageSlug": "french-restaurants"
+    },
+    {
+      "file": "/cities/hamilton/cuisine/indian-restaurants.html",
+      "citySlug": "hamilton",
+      "pageSlug": "indian-restaurants"
+    },
+    {
+      "file": "/cities/hamilton/cuisine/italian-restaurants.html",
+      "citySlug": "hamilton",
+      "pageSlug": "italian-restaurants"
+    },
+    {
+      "file": "/cities/hamilton/cuisine/japanese-restaurants.html",
+      "citySlug": "hamilton",
+      "pageSlug": "japanese-restaurants"
+    },
+    {
+      "file": "/cities/hamilton/cuisine/thai-restaurants.html",
+      "citySlug": "hamilton",
+      "pageSlug": "thai-restaurants"
+    },
+    {
+      "file": "/cities/tauranga/cuisine/chinese-restaurants.html",
+      "citySlug": "tauranga",
+      "pageSlug": "chinese-restaurants"
+    },
+    {
+      "file": "/cities/tauranga/cuisine/french-restaurants.html",
+      "citySlug": "tauranga",
+      "pageSlug": "french-restaurants"
+    },
+    {
+      "file": "/cities/tauranga/cuisine/indian-restaurants.html",
+      "citySlug": "tauranga",
+      "pageSlug": "indian-restaurants"
+    },
+    {
+      "file": "/cities/tauranga/cuisine/italian-restaurants.html",
+      "citySlug": "tauranga",
+      "pageSlug": "italian-restaurants"
+    },
+    {
+      "file": "/cities/tauranga/cuisine/japanese-restaurants.html",
+      "citySlug": "tauranga",
+      "pageSlug": "japanese-restaurants"
+    },
+    {
+      "file": "/cities/tauranga/cuisine/thai-restaurants.html",
+      "citySlug": "tauranga",
+      "pageSlug": "thai-restaurants"
+    },
+    {
+      "file": "/cities/wellington/cuisine/chinese-restaurants.html",
+      "citySlug": "wellington",
+      "pageSlug": "chinese-restaurants"
+    }
+  ],
+  "stats": {
+    "totalFiles": 147,
+    "brokenLinksCount": 16,
+    "deadEndLinksCount": 3,
+    "emptyPagesCount": 15
+  }
+}

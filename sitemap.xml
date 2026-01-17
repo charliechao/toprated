@@ -7,12 +7,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/auckland/cleaning-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/auckland/cuisine/cafes.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -133,12 +127,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/christchurch/cleaning-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/christchurch/cuisine/cafes.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -193,12 +181,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/christchurch/electricians.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/christchurch/hospitality/hotels.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,18 +191,6 @@
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/christchurch/plumbers.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/christchurch/renovation-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://toprated.co.nz/cities/christchurch/services/cleaning-services.html</loc>
@@ -277,12 +247,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/hamilton/cleaning-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/hamilton/cuisine/cafes.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -337,12 +301,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/hamilton/electricians.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/hamilton/hospitality/hotels.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -353,18 +311,6 @@
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/hamilton/plumbers.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/hamilton/renovation-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://toprated.co.nz/cities/hamilton/services/cleaning-services.html</loc>
@@ -421,12 +367,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/tauranga/cleaning-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/tauranga/cuisine/cafes.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -481,12 +421,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/tauranga/electricians.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/tauranga/hospitality/hotels.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -497,18 +431,6 @@
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/tauranga/plumbers.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/tauranga/renovation-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://toprated.co.nz/cities/tauranga/services/cleaning-services.html</loc>
@@ -565,12 +487,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/wellington/cleaning-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/wellington/cuisine/cafes.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -625,12 +541,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.co.nz/cities/wellington/electricians.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.co.nz/cities/wellington/hospitality/hotels.html</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -641,18 +551,6 @@
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/wellington/plumbers.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.co.nz/cities/wellington/renovation-services.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://toprated.co.nz/cities/wellington/services/cleaning-services.html</loc>
