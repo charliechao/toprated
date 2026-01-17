@@ -19,12 +19,36 @@
       {
         "title": "Top Picks for Japanese Fine Dining",
         "description": "Experience the pinnacle of Japanese culinary art with these award-winning establishments.",
-        "businessIds": [11, 12, 13]
+        "businessIds": [
+          11,
+          12,
+          13
+        ]
       },
       {
         "title": "Best Authentic Izakayas",
         "description": "Perfect for shared plates, sake, and a lively atmosphere.",
-        "businessIds": [15, 14]
+        "businessIds": [
+          15,
+          14
+        ]
+      }
+    ]
+  },
+  "auckland/cuisine/chinese-restaurants": {
+    "introText": "Auckland's Chinese dining scene spans centuries of culinary tradition, from authentic Cantonese dim sum to fiery Sichuan noodles. The city's diverse Chinese restaurants reflect regional specialties across China, offering everything from elegant Peking Duck banquets to casual dumpling houses. Whether you're seeking the legendary yum cha of Grand Harbour, hand-pulled noodles at Eden Noodles, or the moody atmosphere of Ghost Street's night market-inspired fare, Auckland delivers exceptional Chinese cuisine at every level.",
+    "faqs": [
+      {
+        "question": "Where can I find the best dim sum in Auckland?",
+        "answer": "Grand Harbour at the Viaduct is the gold standard for yum cha in Auckland, offering over 80 varieties of authentic Hong Kong-style dim sum. Huami at SkyCity also offers an excellent yum cha selection in a sophisticated setting."
+      },
+      {
+        "question": "Which Auckland Chinese restaurant is best for Peking Duck?",
+        "answer": "Empress Garden in Herne Bay is renowned as Auckland's premier destination for Peking Duck. Huami at SkyCity also specializes in this signature dish with modern presentation."
+      },
+      {
+        "question": "Are there good Chinese noodle houses in Auckland?",
+        "answer": "Eden Noodles Cafe is famous for hand-pulled Sichuan noodles and dumplings, with multiple locations across Auckland. Ghost Street in Britomart offers authentic biang biang noodles in a unique underground setting."
       }
     ]
   }

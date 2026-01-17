@@ -71,10 +71,17 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 1250,
-    "description": "Famous for authentic Sichuan-style noodles and dumplings. A must-visit for spicy food lovers in Mt Eden.",
+    "description": "Beloved for hand-pulled Sichuan noodles and famous dan dan dumplings. A Mt Eden favorite with locations across Auckland, known for generous portions and customizable spice levels.",
     "website": "https://www.edennoodles.co.nz",
     "image": "/img/businesses/noodles.png",
     "address": "105 Dominion Rd, Mount Eden, Auckland",
+    "neighborhood": "Mt Eden",
+    "tags": [
+      "Sichuan",
+      "Noodles",
+      "Dumplings",
+      "Spicy"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "chinese-restaurants"
@@ -86,10 +93,17 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 850,
-    "description": "The gold standard for Yum Cha in Auckland. Authentic Cantonese dining with fresh seafood and over 80 dim sum varieties.",
+    "description": "The definitive Auckland yum cha destination for two decades. Authentic Hong Kong-style Cantonese cuisine with fresh seafood and over 80 dim sum varieties.",
     "website": "https://grandharbour.co.nz",
     "image": "/img/businesses/dim-sum.png",
     "address": "Cnr Pakenham St & Viaduct Harbour Ave, Auckland",
+    "neighborhood": "Viaduct",
+    "tags": [
+      "Cantonese",
+      "Dim Sum",
+      "Yum Cha",
+      "Seafood"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "chinese-restaurants"
@@ -101,10 +115,17 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 420,
-    "description": "Upscale Chinese dining at SkyCity. Features traditional techniques with modern presentation, specializing in Peking Duck.",
+    "description": "Sophisticated Chinese fine dining at SkyCity bridging tradition and modernity. Renowned for one of Auckland's best yum cha selections and signature Peking Duck.",
     "website": "https://skycityauckland.co.nz/restaurants/huami",
     "image": "/img/businesses/huami.png",
     "address": "87 Federal St, Auckland CBD",
+    "neighborhood": "CBD",
+    "tags": [
+      "Fine Dining",
+      "Peking Duck",
+      "Yum Cha",
+      "CBD"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "chinese-restaurants"
@@ -116,10 +137,17 @@
     "city": "Auckland",
     "rating": 4.6,
     "reviews": 310,
-    "description": "Hidden underground in Britomart, serving rustic Western Chinese dishes inspired by the night markets of Beijing.",
+    "description": "A dark, moody underground gem in Britomart serving Western Chinese street food inspired by Beijing night markets. Famous for lamb ribs and biang biang noodles.",
     "website": "https://ghoststreetauckland.nz",
     "image": "/img/businesses/ghost-street.png",
     "address": "Tuawhiti Lane, Britomart, Auckland",
+    "neighborhood": "Britomart",
+    "tags": [
+      "Street Food",
+      "Noodles",
+      "Xi'an",
+      "Britomart"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "chinese-restaurants"
@@ -131,10 +159,17 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 280,
-    "description": "A Herne Bay institution known for the best Peking Duck in the city and exceptional service.",
+    "description": "A Herne Bay institution celebrated for Auckland's finest Peking Duck and exemplary service. Traditional Cantonese cuisine in an elegant setting.",
     "website": "https://empressgardenrestaurant.co.nz",
     "image": "/img/businesses/empress-garden.png",
     "address": "227 Jervois Rd, Herne Bay, Auckland",
+    "neighborhood": "Herne Bay",
+    "tags": [
+      "Peking Duck",
+      "Cantonese",
+      "Fine Dining",
+      "Traditional"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
     "pageSlug": "chinese-restaurants"
