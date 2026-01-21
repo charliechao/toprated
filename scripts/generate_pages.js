@@ -8,6 +8,8 @@ const businesses = JSON.parse(fs.readFileSync('data/businesses.json', 'utf8'));
 const cities = JSON.parse(fs.readFileSync('data/cities.json', 'utf8'));
 const industries = JSON.parse(fs.readFileSync('data/industries.json', 'utf8'));
 const seoContent = fs.existsSync('data/seo_content.json') ? JSON.parse(fs.readFileSync('data/seo_content.json', 'utf8')) : {};
+const templatePath = path.resolve(__dirname, '..', 'templates', 'template-page.html');
+const baseTemplate = fs.readFileSync(templatePath, 'utf8');
 
 // Hero Images Mapping
 const cityHeros = {
@@ -31,29 +33,11 @@ const indHeros = {
 
 function getBaseTemplate(title, description, content, schema = null) {
     const schemaScript = schema ? `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>` : '';
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${title}</title>
-    <meta name="description" content="${description}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    ${schemaScript}
-</head>
-<body>
-    <header id="site-header"></header>
-    <main>${content}</main>
-    <footer id="site-footer"></footer>
-    <script src="/js/include.js"></script>
-    <script src="/js/navigation.js"></script>
-</body>
-</html>`;
+    return baseTemplate
+        .replace(/<!-- PAGE_TITLE_PLACEHOLDER -->/g, title)
+        .replace(/<!-- PAGE_DESCRIPTION_PLACEHOLDER -->/g, description)
+        .replace('<!-- PAGE_CONTENT_PLACEHOLDER -->', content)
+        .replace('<!-- SCHEMA_PLACEHOLDER -->', schemaScript);
 }
 
 function generateLeafContent(titleLine, specificSeo = null) {

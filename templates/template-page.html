@@ -1,9 +1,8 @@
-<!-- templates/template-page.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!--
+  <!--
     ---------------------------------------------------
     Purpose: Base HTML template for all generated pages.
     ---------------------------------------------------
@@ -12,36 +11,55 @@
     * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
     * Includes JSON‑LD schema block that can be populated with data at runtime.
   -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- PAGE_TITLE_PLACEHOLDER --></title>
-    <meta name="description" content="<!-- PAGE_DESCRIPTION_PLACEHOLDER -->" />
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="<!-- PAGE_TITLE_PLACEHOLDER -->" />
-    <meta property="og:description" content="<!-- PAGE_DESCRIPTION_PLACEHOLDER -->" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
-    <link rel="stylesheet" href="/css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><!-- PAGE_TITLE_PLACEHOLDER --></title>
+  <meta name="description" content="<!-- PAGE_DESCRIPTION_PLACEHOLDER -->" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="<!-- PAGE_TITLE_PLACEHOLDER -->" />
+  <meta property="og:description" content="<!-- PAGE_DESCRIPTION_PLACEHOLDER -->" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Schema -->
+  <!-- SCHEMA_PLACEHOLDER -->
 </head>
 
 <body>
-    <!-- Breadcrumb container – navigation.js will fill this -->
-    <nav id="breadcrumb" aria-label="breadcrumb"></nav>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
 
-    <!-- Main content area – each page will inject its own heading and list -->
-    <main id="content">
-        <!-- PAGE_CONTENT_PLACEHOLDER -->
-    </main>
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+    <!-- PAGE_CONTENT_PLACEHOLDER -->
+  </main>
 
-    <!-- Related content block – also populated by navigation.js -->
-    <section id="related" class="container"></section>
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
 
-    <!-- JSON‑LD schema – navigation.js will replace the placeholder with a real script -->
-    <script type="application/ld+json" id="schema">
-    {}
-  </script>
-
-    <script src="/js/navigation.js"></script>
+  <!-- Scripts -->
+  <script src="/js/include.js"></script>
+  <script src="/js/navigation.js"></script>
 </body>
 
 </html>
