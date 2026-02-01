@@ -170,5 +170,226 @@
         "answer": "Bathroom renovations typically take 3-6 weeks, kitchens 4-8 weeks, and full house renovations 3-6 months. Factor in 6-12 weeks for council consents before work begins on projects requiring approval."
       }
     ]
+  },
+  "wellington/trades/plumbers": {
+    "introText": "Wellington's unique topography and aging infrastructure in suburbs like Kelburn and Mount Victoria require experienced plumbers who understand local conditions. Whether it's fixing a leak in a historic villa or installing modern, energy-efficient hot water systems in Te Aro, our top-rated Wellington plumbers offer reliable, 24/7 emergency support and Master Plumber guarantees.",
+    "faqs": [
+      {
+        "question": "How much does a plumber cost in Wellington?",
+        "answer": "Standard plumbing rates in Wellington typically range from $98 to $110 per hour plus GST. Many providers charge a service fee of approximately $150 which often includes the first 30 minutes of labor."
+      },
+      {
+        "question": "Are there 24/7 emergency plumbers in Wellington?",
+        "answer": "Yes, several top-rated Wellington plumbing firms offer 24/7 emergency services. Be aware that after-hours call-outs can incur higher minimum charges, sometimes starting from $440 for the first few hours."
+      },
+      {
+        "question": "What is a Master Plumber guarantee?",
+        "answer": "Hiring a Master Plumber in Wellington provides a residential guarantee of up to $20,000 for 12 months, protecting you against substandard workmanship or advanced payments if a contractor cannot complete the job."
+      }
+    ]
+  },
+  "wellington/trades/electricians": {
+    "introText": "From the windy heights of Brooklyn to the commercial pulse of the CBD, Wellington's electrical needs are handled by registered professionals who prioritize safety and innovation. Whether you need a simple switchboard upgrade, LED lighting installation, or complex commercial fit-outs, the city's top-rated electricians ensure all work meets the highest New Zealand standards.",
+    "faqs": [
+      {
+        "question": "What is the hourly rate for an electrician in Wellington?",
+        "answer": "Registered electricians in Wellington generally charge between $90 and $125 per hour, excluding GST. Most residential jobs also include a call-out fee or a minimum first-hour charge."
+      },
+      {
+        "question": "Can I do my own electrical work in Wellington?",
+        "answer": "No, most electrical work in New Zealand must be performed by a registered electrician for safety and insurance purposes. DIY electrical work can void your house insurance and poses significant fire risks."
+      },
+      {
+        "question": "Do Wellington electricians install EV chargers?",
+        "answer": "Yes, many certified electricians in Wellington specialize in smart EV charger installations for residential garages and commercial parking spaces, ensuring your home's power capacity is sufficient."
+      }
+    ]
+  },
+  "christchurch/trades/plumbers": {
+    "introText": "From the modern rebuilds of the CBD to the established homes in Riccarton and Merivale, Christchurch's plumbing needs are diverse. Top-rated local plumbers specialize in seismic-resilient installations, heat pump water heaters, and traditional maintenance, ensuring your home's water and drainage systems are efficient and compliant with Canterbury's building standards.",
+    "faqs": [
+      {
+        "question": "How much do Christchurch plumbers charge?",
+        "answer": "Hourly rates for plumbers in Christchurch typically range from $90 to $120 per hour plus GST. Many companies have a minimum charge for the first hour that includes travel and vehicle fees."
+      },
+      {
+        "question": "Do I need a specific plumber for earthquake repairs in Christchurch?",
+        "answer": "While any registered plumber can work on your home, it's recommended to choose those with experience in EQC-related repairs and knowledge of seismic-resilient piping systems common in the region."
+      },
+      {
+        "question": "How quickly can I get an emergency plumber in Christchurch?",
+        "answer": "Most top-rated Christchurch plumbing services offer emergency response times within 60 to 90 minutes for urgent issues like burst pipes or major leaks."
+      }
+    ]
+  },
+  "christchurch/trades/builders": {
+    "introText": "Christchurch has undergone a massive transformation, and its builders remain at the forefront of innovative, earthquake-resilient construction. Whether you're planning a new architectural build in the Cashmere Hills or a sensitive renovation of a character home in Fendalton, the city's top-rated Master Builders provide the expertise, project management, and quality craftsmanship needed to bring your vision to life.",
+    "faqs": [
+      {
+        "question": "What is the current cost to build a house in Christchurch?",
+        "answer": "New build costs in Christchurch generally start from $2,800 per square meter for standard specifications and can exceed $4,500 per square meter for high-end architectural homes."
+      },
+      {
+        "question": "How long does a building project take in Christchurch?",
+        "answer": "A standard three-bedroom home typically takes 8 to 12 months to build from the foundation stage, plus several months for planning and council consents through Christchurch City Council."
+      },
+      {
+        "question": "Should I hire a Master Builder in Christchurch?",
+        "answer": "Yes, hiring a Master Builder provides access to the 10-year Master Build Guarantee, which is the most common and robust protection for homeowners in New Zealand."
+      }
+    ]
+  },
+  "hamilton/trades/plumbers": {
+    "introText": "Serving the heart of the Waikato, Hamilton's top-rated plumbers provide expert solutions for everything from rural water pump repairs to urban kitchen fit-outs. Whether you're in the growing northern suburbs of Rototuna or the established streets of Hamilton East, these professionals deliver fast, reliable service with a focus on quality and local knowledge.",
+    "faqs": [
+      {
+        "question": "What is the hourly rate for a plumber in Hamilton?",
+        "answer": "Hamilton plumbers typically charge between $85 and $115 per hour plus GST. Regional rates in the Waikato are often slightly lower than in Auckland or Wellington."
+      },
+      {
+        "question": "Can Hamilton plumbers help with rural water systems?",
+        "answer": "Yes, many plumbers in the Hamilton area specialize in both urban plumbing and rural systems, including septic tanks, water pumps, and filtration units for lifestyle blocks."
+      },
+      {
+        "question": "Is there a call-out fee for plumbers in Hamilton?",
+        "answer": "Most providers charge a call-out fee or a vehicle service charge, usually ranging from $60 to $120 depending on your distance from their base."
+      }
+    ]
+  },
+  "hamilton/services/cleaning-services": {
+    "introText": "Keeping your home or office sparkling in the Waikato's hub has never been easier. Hamilton's top-rated cleaning services offer everything from regular domestic maintenance in Rototuna to specialized commercial deep cleans in the CBD. With a focus on eco-friendly products and meticulous attention to detail, these professionals help you reclaim your time while maintaining a healthy, pristine environment.",
+    "faqs": [
+      {
+        "question": "How much does a house cleaner cost in Hamilton?",
+        "answer": "Regular cleaning services in Hamilton generally cost between $40 and $55 per hour per cleaner. One-off deep cleans or move-out cleans are usually quoted as a flat fee based on house size."
+      },
+      {
+        "question": "Is there a minimum booking time for cleaners in Hamilton?",
+        "answer": "Most professional cleaning companies in Hamilton require a minimum booking of 2 or 3 hours to ensure they can provide a thorough and high-quality service."
+      },
+      {
+        "question": "Do I need to provide cleaning supplies?",
+        "answer": "Top-rated cleaning services usually bring their own professional-grade equipment and eco-friendly supplies, though some offer a lower rate if you prefer them to use your own vacuum and products."
+      }
+    ]
+  },
+  "tauranga/trades/electricians": {
+    "introText": "As one of New Zealand's fastest-growing regions, Tauranga requires registered electricians who can handle everything from high-spec new builds in Papamoa to industrial maintenance at the Port. Our top-rated Tauranga electricians are experts in solar installations, EV charging, and smart home automation, providing safe, reliable, and energy-efficient electrical solutions for the Bay of Plenty.",
+    "faqs": [
+      {
+        "question": "What do Tauranga electricians charge per hour?",
+        "answer": "Standard hourly rates for registered electricians in Tauranga range from $80 to $115 per hour plus GST. Specialty work like solar or industrial automation may incur higher rates."
+      },
+      {
+        "question": "Are electricians in Tauranga qualified for solar panel installation?",
+        "answer": "Many top-rated electricians in the Bay of Plenty are certified solar installers. It is recommended to check for SEANZ (Sustainable Energy Association New Zealand) membership for specialized solar work."
+      },
+      {
+        "question": "Do I need an electrician for a new heat pump in Tauranga?",
+        "answer": "Yes, all heat pump installations require a registered electrician to complete the electrical connection and issue a Certificate of Compliance (CoC)."
+      }
+    ]
+  },
+  "auckland/cuisine/restaurants": {
+    "introText": "Auckland is New Zealand's undisputed culinary capital, offering a world-class dining scene that reflects its diverse multicultural identity. From the sophisticated waterfront bistros of the Viaduct to the hidden gems in the outer suburbs, the city's restaurants consistently push the boundaries of Pacific Rim cuisine. Whether you're after fresh Kaimoana (seafood), modern European flavors, or innovative Asian fusion, Auckland's top-rated eateries provide an unforgettable gastronomic experience.",
+    "faqs": [
+      {
+        "question": "What is the best area for dining in Auckland?",
+        "answer": "Ponsonby Road is famous for its vibrant mix of trendy bistros and bars. For high-end dining, the Viaduct Harbour and Britomart precincts offer premium waterfront experiences. Dominion Road is the go-to for authentic, diverse Asian eateries."
+      },
+      {
+        "question": "Do I need to book restaurants in Auckland in advance?",
+        "answer": "For popular or top-rated restaurants, especially on weekends, booking 1-2 weeks in advance is highly recommended. Many local favorites now offer easy online reservation systems."
+      },
+      {
+        "question": "What is the 'Metro Top 50'?",
+        "answer": "The Metro Top 50 is Auckland's most prestigious annual restaurant guide, highlighting the fifty best dining establishments in the city based on food quality, service, and atmosphere."
+      }
+    ]
+  },
+  "auckland/cuisine/indian-restaurants": {
+    "introText": "Auckland's Indian dining scene is a rich mosaic of regional flavors, from the spicy complexities of Southern Indian dosas to the creamy, tandoor-fired delights of the North. Whether you're seeking a casual street-food experience in Sandringham or a sophisticated fine-dining banquet in the CBD, the city's top-rated Indian restaurants offer an authentic journey through the spices of the subcontinent.",
+    "faqs": [
+      {
+        "question": "Which area in Auckland is best for authentic Indian food?",
+        "answer": "Sandringham Road is widely considered Auckland's 'Little India,' home to numerous authentic eateries like Satya and Paradise Indian Food. The CBD also hosts premium options like Cassia for modern Indian cuisine."
+      },
+      {
+        "question": "Are there good vegetarian Indian options in Auckland?",
+        "answer": "Absolutely. Most Indian restaurants in Auckland offer extensive vegetarian menus. Satya and Saravanaa Bhavan are particularly renowned for their authentic South Indian vegetarian specialties."
+      },
+      {
+        "question": "What is the best modern Indian restaurant in Auckland?",
+        "answer": "Cassia, located in SkyCity, is the gold standard for modern Indian dining in Auckland, blending traditional flavors with contemporary techniques and local New Zealand ingredients."
+      }
+    ]
+  },
+  "auckland/cuisine/italian-restaurants": {
+    "introText": "From artisanal pasta made by hand to wood-fired pizzas with perfectly charred crusts, Auckland's Italian restaurants bring the heart of Italy to the South Pacific. Whether it's a romantic dinner in a Ponsonby bistro or a lively family gathering at a Viaduct trattoria, the city's top-rated Italian spots emphasize fresh, seasonal ingredients and time-honored recipes.",
+    "faqs": [
+      {
+        "question": "Where can I find the best handmade pasta in Auckland?",
+        "answer": "Amano in Britomart and Prego on Ponsonby Road are famous for their exceptional handmade pasta. Baduzzi in Wynyard Quarter also offers exquisite pasta and Italian-inspired seafood."
+      },
+      {
+        "question": "Which Auckland Italian restaurants are best for dates?",
+        "answer": "Prego is a long-standing favorite for its romantic atmosphere and consistent quality. Non Solo Pizza in Parnell also offers a beautiful courtyard setting perfect for intimate dinners."
+      },
+      {
+        "question": "Are there authentic wood-fired pizzerias in Auckland?",
+        "answer": "Yes, Dante's Pizzeria (with multiple locations) is certified by the Associazione Verace Pizza Napoletana. That's Amore in the CBD also provides a very authentic Neapolitan pizza experience."
+      }
+    ]
+  },
+  "auckland/cuisine/thai-restaurants": {
+    "introText": "Experience the perfect balance of sweet, sour, salty, and spicy at Auckland's premier Thai restaurants. From the aromatic green curries of family-run neighborhood gems to the bold, modern flavors of trendy CBD eateries, Auckland offers an incredible diversity of Thai cuisine that stays true to its fragrant roots while embracing fresh New Zealand produce.",
+    "faqs": [
+      {
+        "question": "What are the most popular Thai restaurants in Auckland?",
+        "answer": "Saan in Ponsonby is highly rated for its Northern and Northeastern Thai street food. Kiin Thai in Mt Eden and Blue Elephant in Parnell are also local favorites for traditional flavors."
+      },
+      {
+        "question": "Where can I find 'actually spicy' Thai food in Auckland?",
+        "answer": "Many authentic spots like Zap 2 in Dominion Road or the food stalls in the Elliot Stables allow you to request 'Thai Spicy' levels for a truly fiery experience."
+      },
+      {
+        "question": "Does Auckland have Thai fusion or modern Thai dining?",
+        "answer": "Yes, Saan offers a refined, modern take on Thai cuisine, while many contemporary Asian fusion restaurants in the CBD incorporate strong Thai influences into their menus."
+      }
+    ]
+  },
+  "auckland/cuisine/french-restaurants": {
+    "introText": "Auckland's French dining scene offers a slice of Parisian elegance, ranging from cozy neighborhood bistros to high-end gastronomic destinations. Whether you're craving a buttery croissant from an artisanal patisserie, a classic steak frites, or a multi-course degustation paired with fine wines, the city's top-rated French establishments deliver sophisticated flavors and impeccable service.",
+    "faqs": [
+      {
+        "question": "What is the best French fine-dining restaurant in Auckland?",
+        "answer": "The Grove is frequently cited as one of Auckland's top fine-dining experiences with a strong French influence. Sid at The French Cafe in Eden Terrace is also a multi-award-winning institution."
+      },
+      {
+        "question": "Are there casual French bistros in Auckland?",
+        "answer": "Yes, Casita Miro on Waiheke Island (while Mediterranean) has strong French vibes, and Le Garde-Manger on Queen Street or Ponsonby Road offers a very traditional, cozy bistro experience."
+      },
+      {
+        "question": "Where can I find the best French pastries in Auckland?",
+        "answer": "Vaniyé Patisserie in Parnell and La Petite Fourchette in Wynyard Quarter or Britomart are renowned for their authentic, high-quality French cakes, tarts, and pastries."
+      }
+    ]
+  },
+  "auckland/services/cleaning-services": {
+    "introText": "Auckland's premier cleaning services provide a spotless touch for both homes and businesses across the region. From regular domestic cleaning in the leafy suburbs of Remuera to intensive commercial maintenance in the bustling CBD, our top-rated cleaners use professional techniques and eco-friendly products to ensure your environment is healthy, pristine, and perfectly maintained.",
+    "faqs": [
+      {
+        "question": "How much does a house cleaner cost in Auckland?",
+        "answer": "Residential cleaning in Auckland typically costs between $45 and $60 per hour per cleaner. Deep cleans, end-of-tenancy cleans, and specialized carpet cleaning are usually quoted as fixed price packages."
+      },
+      {
+        "question": "Do Auckland cleaners bring their own equipment?",
+        "answer": "Most professional cleaning services in Auckland come fully equipped with their own vacuums, mops, and cleaning solutions. Some offer 'eco-friendly only' options upon request."
+      },
+      {
+        "question": "How can I find a reliable office cleaner in Auckland?",
+        "answer": "Look for companies with commercial insurance, clear police-vetted staff, and strong references from other local businesses. Many top-rated Auckland cleaners specialize specifically in commercial and office environments."
+      }
+    ]
   }
 }

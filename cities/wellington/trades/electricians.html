@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the hourly rate for an electrician in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Registered electricians in Wellington generally charge between $90 and $125 per hour, excluding GST. Most residential jobs also include a call-out fee or a minimum first-hour charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I do my own electrical work in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, most electrical work in New Zealand must be performed by a registered electrician for safety and insurance purposes. DIY electrical work can void your house insurance and poses significant fire risks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Wellington electricians install EV chargers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, many certified electricians in Wellington specialize in smart EV charger installations for residential garages and commercial parking spaces, ensuring your home's power capacity is sufficient."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -52,13 +81,34 @@
   <!-- Main content area – each page will inject its own heading and list -->
   <main id="content">
     
-    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/auckland-hero.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/wellington-hero.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
         <div class="container">
             <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
             <h1>Electricians <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
+    <section class="container" style="margin-top: 2rem;"><p class="lead">From the windy heights of Brooklyn to the commercial pulse of the CBD, Wellington's electrical needs are handled by registered professionals who prioritize safety and innovation. Whether you need a simple switchboard upgrade, LED lighting installation, or complex commercial fit-outs, the city's top-rated electricians ensure all work meets the highest New Zealand standards.</p></section>
+            <section class="container section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">What is the hourly rate for an electrician in Wellington?</h3>
+                            <p>Registered electricians in Wellington generally charge between $90 and $125 per hour, excluding GST. Most residential jobs also include a call-out fee or a minimum first-hour charge.</p>
+                        </div>
+                    
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Can I do my own electrical work in Wellington?</h3>
+                            <p>No, most electrical work in New Zealand must be performed by a registered electrician for safety and insurance purposes. DIY electrical work can void your house insurance and poses significant fire risks.</p>
+                        </div>
+                    
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Do Wellington electricians install EV chargers?</h3>
+                            <p>Yes, many certified electricians in Wellington specialize in smart EV charger installations for residential garages and commercial parking spaces, ensuring your home's power capacity is sufficient.</p>
+                        </div>
+                    
+                </div>
+            </section>
     <section class="container section">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>

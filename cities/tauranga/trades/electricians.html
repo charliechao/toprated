@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do Tauranga electricians charge per hour?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard hourly rates for registered electricians in Tauranga range from $80 to $115 per hour plus GST. Specialty work like solar or industrial automation may incur higher rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are electricians in Tauranga qualified for solar panel installation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many top-rated electricians in the Bay of Plenty are certified solar installers. It is recommended to check for SEANZ (Sustainable Energy Association New Zealand) membership for specialized solar work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an electrician for a new heat pump in Tauranga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all heat pump installations require a registered electrician to complete the electrical connection and issue a Certificate of Compliance (CoC)."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -52,13 +81,34 @@
   <!-- Main content area – each page will inject its own heading and list -->
   <main id="content">
     
-    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/auckland-hero.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1594493397611-6677f24090b8?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
         <div class="container">
             <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
             <h1>Electricians <br><span class="text-primary">in Tauranga</span></h1>
         </div>
     </section>
-    
+    <section class="container" style="margin-top: 2rem;"><p class="lead">As one of New Zealand's fastest-growing regions, Tauranga requires registered electricians who can handle everything from high-spec new builds in Papamoa to industrial maintenance at the Port. Our top-rated Tauranga electricians are experts in solar installations, EV charging, and smart home automation, providing safe, reliable, and energy-efficient electrical solutions for the Bay of Plenty.</p></section>
+            <section class="container section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">What do Tauranga electricians charge per hour?</h3>
+                            <p>Standard hourly rates for registered electricians in Tauranga range from $80 to $115 per hour plus GST. Specialty work like solar or industrial automation may incur higher rates.</p>
+                        </div>
+                    
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Are electricians in Tauranga qualified for solar panel installation?</h3>
+                            <p>Many top-rated electricians in the Bay of Plenty are certified solar installers. It is recommended to check for SEANZ (Sustainable Energy Association New Zealand) membership for specialized solar work.</p>
+                        </div>
+                    
+                        <div class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Do I need an electrician for a new heat pump in Tauranga?</h3>
+                            <p>Yes, all heat pump installations require a registered electrician to complete the electrical connection and issue a Certificate of Compliance (CoC).</p>
+                        </div>
+                    
+                </div>
+            </section>
     <section class="container section">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>

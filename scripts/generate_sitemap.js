@@ -6,7 +6,7 @@ const path = require('path');
 // Scans all HTML files and generates an XML sitemap
 // ---------------------------------------------------
 
-const BASE_URL = 'https://toprated.co.nz';
+const BASE_URL = 'https://toprated.nz';
 const OUTPUT_FILE = 'sitemap.xml';
 
 // Recursively find all HTML files

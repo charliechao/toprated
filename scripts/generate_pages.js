@@ -40,7 +40,7 @@ function getBaseTemplate(title, description, content, schema = null) {
         .replace('<!-- SCHEMA_PLACEHOLDER -->', schemaScript);
 }
 
-function generateLeafContent(titleLine, specificSeo = null) {
+function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg') {
     let extraContent = '';
 
     if (specificSeo) {
@@ -67,7 +67,7 @@ function generateLeafContent(titleLine, specificSeo = null) {
     }
 
     return `
-    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/auckland-hero.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${heroImg}'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
         <div class="container">
             <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
             <h1>${titleLine}</h1>
@@ -180,7 +180,7 @@ cities.forEach(city => {
             const html = getBaseTemplate(
                 `${map.name} in ${city.name} | TopRated NZ`,
                 `Find the best ${map.name.toLowerCase()} in ${city.name}.`,
-                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo),
+                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland']),
                 faqSchema
             );
             fs.writeFileSync(path.join(dir, `${sc}.html`), html);
