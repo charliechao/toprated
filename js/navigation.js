@@ -241,6 +241,7 @@ async function renderBusinessList() {
             <div class="business-info">
                 <div class="rating-badge"><i class="fas fa-star"></i> ${b.rating} (${b.reviews} reviews)</div>
                 <h3>${b.name}</h3>
+                ${b.neighborhood ? `<div class="neighborhood-tag"><i class="fas fa-map-pin"></i> ${b.neighborhood}</div>` : ''}
                 <p class="text-muted">${b.description}</p>
                 <div class="business-meta">
                     <span><i class="fas fa-map-marker-alt"></i> ${b.address}</span>

@@ -312,7 +312,8 @@
     "address": "North Shore, Auckland",
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "builders"
+    "pageSlug": "builders",
+    "neighborhood": "North Shore"
   },
   {
     "id": 18,
@@ -372,7 +373,8 @@
     "address": "19 Edward St, Te Aro, Wellington",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 22,
@@ -387,7 +389,8 @@
     "address": "272 Cuba St, Te Aro, Wellington",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 23,
@@ -402,7 +405,8 @@
     "address": "148 Willis St, Te Aro, Wellington",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 24,
@@ -417,7 +421,8 @@
     "address": "158 Cuba St, Te Aro, Wellington",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 25,
@@ -432,7 +437,8 @@
     "address": "80 Willis St, Wellington Central",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "80 Willis St"
   },
   {
     "id": 26,
@@ -462,7 +468,8 @@
     "address": "North Shore, Auckland",
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "North Shore"
   },
   {
     "id": 28,
@@ -522,7 +529,8 @@
     "address": "Te Aro, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 32,
@@ -552,7 +560,8 @@
     "address": "Lower Hutt, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Lower Hutt"
   },
   {
     "id": 34,
@@ -567,7 +576,8 @@
     "address": "Johnsonville, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Johnsonville"
   },
   {
     "id": 35,
@@ -582,7 +592,8 @@
     "address": "Petone, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Petone"
   },
   {
     "id": 36,
@@ -612,7 +623,8 @@
     "address": "Riccarton, Christchurch",
     "citySlug": "christchurch",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Riccarton"
   },
   {
     "id": 38,
@@ -627,7 +639,8 @@
     "address": "Hornby, Christchurch",
     "citySlug": "christchurch",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Hornby"
   },
   {
     "id": 39,
@@ -657,7 +670,8 @@
     "address": "Sockburn, Christchurch",
     "citySlug": "christchurch",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Sockburn"
   },
   {
     "id": 41,
@@ -672,7 +686,8 @@
     "address": "Beerescourt, Hamilton",
     "citySlug": "hamilton",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Beerescourt"
   },
   {
     "id": 42,
@@ -687,7 +702,8 @@
     "address": "Frankton, Hamilton",
     "citySlug": "hamilton",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Frankton"
   },
   {
     "id": 43,
@@ -717,7 +733,8 @@
     "address": "Te Rapa, Hamilton",
     "citySlug": "hamilton",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Te Rapa"
   },
   {
     "id": 45,
@@ -762,7 +779,8 @@
     "address": "Mount Maunganui, Tauranga",
     "citySlug": "tauranga",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Mount Maunganui"
   },
   {
     "id": 48,
@@ -777,7 +795,8 @@
     "address": "Papamoa, Tauranga",
     "citySlug": "tauranga",
     "categorySlug": "trades",
-    "pageSlug": "plumbers"
+    "pageSlug": "plumbers",
+    "neighborhood": "Papamoa"
   },
   {
     "id": 49,
@@ -807,7 +826,8 @@
     "address": "Wellington Central",
     "citySlug": "wellington",
     "categorySlug": "trades",
-    "pageSlug": "electricians"
+    "pageSlug": "electricians",
+    "neighborhood": "North Shore"
   },
   {
     "id": 51,
@@ -867,7 +887,8 @@
     "address": "North Shore, Auckland",
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "electricians"
+    "pageSlug": "electricians",
+    "neighborhood": "North Shore"
   },
   {
     "id": 55,
@@ -882,7 +903,8 @@
     "address": "Lower Hutt, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
-    "pageSlug": "electricians"
+    "pageSlug": "electricians",
+    "neighborhood": "Lower Hutt"
   },
   {
     "id": 56,
@@ -1047,7 +1069,8 @@
     "description": "Meticulous brewing and innovative pour-over methods in the CBD.",
     "website": "https://remedycoffee.co.nz",
     "address": "1 Wellesley St W, Auckland CBD",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "CBD"
   },
   {
     "id": 67,
@@ -1062,7 +1085,8 @@
     "description": "A New Zealand institution known for full-bodied and balanced espresso.",
     "website": "https://allpressespresso.com",
     "address": "8 Drake St, Freemans Bay, Auckland",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Freemans Bay"
   },
   {
     "id": 68,
@@ -1077,7 +1101,8 @@
     "description": "A hidden oasis courtyard in the CBD with a relaxed atmosphere and great coffee.",
     "website": "https://chuffedcoffee.com",
     "address": "43 High St, Auckland CBD",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "CBD"
   },
   {
     "id": 69,
@@ -1092,7 +1117,8 @@
     "description": "Flagship joint known for its signature chili cheese melt and expertly roasted coffee.",
     "website": "https://coffeesupreme.com",
     "address": "39 Ghuznee St, Te Aro, Wellington",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 70,
@@ -1107,7 +1133,8 @@
     "description": "Dedicated specialty coffee menu with tasting flights and incredible brunch.",
     "website": "https://flightcoffee.co.nz",
     "address": "119 Dixon St, Te Aro, Wellington",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 71,
@@ -1122,7 +1149,8 @@
     "description": "Modern minimalist design and consistent quality, a Wellington favorite for brunch.",
     "website": "https://pre-fab.co.nz",
     "address": "14 Jessie St, Te Aro, Wellington",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 72,
@@ -1137,7 +1165,8 @@
     "description": "Ethical roasts and community focus in a vibrant, converted workshop setting.",
     "website": "https://addingtoncoffee.org.nz",
     "address": "297 Lincoln Rd, Addington, Christchurch",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Addington"
   },
   {
     "id": 73,
@@ -1152,7 +1181,8 @@
     "description": "Craft roasting and seasonal beans in a light-filled industrial space.",
     "website": "https://unknownchapter.nz",
     "address": "254 St Asaph St, Christchurch Central",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Central City"
   },
   {
     "id": 74,
@@ -1167,7 +1197,8 @@
     "description": "Iconic Christchurch cafe known for its vacuum tube food delivery and quirky vibe.",
     "website": "https://c1espresso.co.nz",
     "address": "150 High St, Christchurch Central",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "CBD"
   },
   {
     "id": 75,
@@ -1182,7 +1213,8 @@
     "description": "Centrally located CBD favorite known for delicious food and consistent coffee.",
     "website": "https://theriverkitchen.co.nz",
     "address": "217 Victoria St, Hamilton Central",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "217 Victoria St"
   },
   {
     "id": 76,
@@ -1227,7 +1259,8 @@
     "description": "Exceptional hospitality and coffee in the heart of the Mount.",
     "website": "https://mtzion.co.nz",
     "address": "Mount Maunganui",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Mount Maunganui"
   },
   {
     "id": 79,
@@ -1242,7 +1275,8 @@
     "description": "An original Tauranga roastery with a fantastic reputation for quality.",
     "website": "https://excelso.co.nz",
     "address": "112 Third Ave, Tauranga",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "112 Third Ave"
   },
   {
     "id": 80,
@@ -1257,7 +1291,8 @@
     "description": "Famous for its home-style baking and friendly neighborhood atmosphere.",
     "website": "https://loverosie.co.nz",
     "address": "252 Ninth Ave, Tauranga Central",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "252 Ninth Ave"
   },
   {
     "id": 81,
@@ -1287,7 +1322,8 @@
     "description": "Award-winning residential and commercial painters known for meticulous preparation and high-end finishes.",
     "website": "https://superiorpainters.co.nz",
     "address": "North Shore, Auckland",
-    "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "North Shore"
   },
   {
     "id": 83,
@@ -1587,7 +1623,8 @@
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Viaduct"
   },
   {
     "id": 103,
@@ -1602,7 +1639,8 @@
     "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Britomart"
   },
   {
     "id": 104,
@@ -1617,7 +1655,8 @@
     "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Viaduct"
   },
   {
     "id": 105,
@@ -1632,7 +1671,8 @@
     "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Thorndon"
   },
   {
     "id": 106,
@@ -1647,7 +1687,8 @@
     "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Lambton Quay"
   },
   {
     "id": 107,
@@ -1662,7 +1703,8 @@
     "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 108,
@@ -1677,7 +1719,8 @@
     "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Merivale"
   },
   {
     "id": 109,
@@ -1692,7 +1735,8 @@
     "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "21 Rolleston Avenue"
   },
   {
     "id": 110,
@@ -1707,7 +1751,8 @@
     "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "369 Montreal Street"
   },
   {
     "id": 111,
@@ -1722,7 +1767,8 @@
     "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "7 Alma Street"
   },
   {
     "id": 112,
@@ -1737,7 +1783,8 @@
     "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "100 Garnett Avenue"
   },
   {
     "id": 113,
@@ -1752,7 +1799,8 @@
     "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "431 Airport Road"
   },
   {
     "id": 114,
@@ -1767,7 +1815,8 @@
     "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "51 Dive Crescent"
   },
   {
     "id": 115,
@@ -1782,7 +1831,8 @@
     "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "72 Devonport Road"
   },
   {
     "id": 116,
@@ -1797,7 +1847,8 @@
     "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "hospitality",
-    "pageSlug": "hotels"
+    "pageSlug": "hotels",
+    "neighborhood": "Mount Maunganui"
   },
   {
     "id": 117,
@@ -1827,7 +1878,8 @@
     "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "CBD"
   },
   {
     "id": 119,
@@ -1842,7 +1894,8 @@
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "CBD"
   },
   {
     "id": 120,
@@ -1857,7 +1910,8 @@
     "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 121,
@@ -1872,7 +1926,8 @@
     "image": "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Roosevelt Road"
   },
   {
     "id": 122,
@@ -1887,7 +1942,8 @@
     "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Kelburn"
   },
   {
     "id": 123,
@@ -1902,7 +1958,8 @@
     "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Central City"
   },
   {
     "id": 124,
@@ -1917,7 +1974,8 @@
     "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Central City"
   },
   {
     "id": 125,
@@ -1932,7 +1990,8 @@
     "image": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Central City"
   },
   {
     "id": 126,
@@ -1947,7 +2006,8 @@
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "346 Victoria Street"
   },
   {
     "id": 127,
@@ -1962,7 +2022,8 @@
     "image": "https://images.unsplash.com/photo-1571167530149-c1105da4c2c7?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "14 Bridge Street"
   },
   {
     "id": 128,
@@ -1977,7 +2038,8 @@
     "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "15 Grantham Street"
   },
   {
     "id": 129,
@@ -1992,7 +2054,8 @@
     "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "150 The Strand"
   },
   {
     "id": 130,
@@ -2007,7 +2070,8 @@
     "image": "https://images.unsplash.com/photo-1560624052-449f5ddf0c31?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Mount Maunganui"
   },
   {
     "id": 131,
@@ -2022,7 +2086,8 @@
     "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "cuisine",
-    "pageSlug": "restaurants"
+    "pageSlug": "restaurants",
+    "neighborhood": "Mount Maunganui"
   },
   {
     "id": 132,
@@ -2037,7 +2102,8 @@
     "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "builders"
+    "pageSlug": "builders",
+    "neighborhood": "Coatesville"
   },
   {
     "id": 133,
@@ -2052,7 +2118,8 @@
     "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "builders"
+    "pageSlug": "builders",
+    "neighborhood": "North Shore"
   },
   {
     "id": 134,
@@ -2262,7 +2329,8 @@
     "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "indian-restaurants"
+    "pageSlug": "indian-restaurants",
+    "neighborhood": "CBD"
   },
   {
     "id": 148,
@@ -2277,7 +2345,8 @@
     "image": "https://images.unsplash.com/photo-1595908129746-f66d2b8f71e3?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "indian-restaurants"
+    "pageSlug": "indian-restaurants",
+    "neighborhood": "Sandringham"
   },
   {
     "id": 149,
@@ -2292,7 +2361,8 @@
     "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "indian-restaurants"
+    "pageSlug": "indian-restaurants",
+    "neighborhood": "Sandringham"
   },
   {
     "id": 150,
@@ -2337,7 +2407,8 @@
     "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "italian-restaurants"
+    "pageSlug": "italian-restaurants",
+    "neighborhood": "Britomart"
   },
   {
     "id": 153,
@@ -2352,7 +2423,8 @@
     "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "italian-restaurants"
+    "pageSlug": "italian-restaurants",
+    "neighborhood": "Wynyard Quarter"
   },
   {
     "id": 154,
@@ -2367,7 +2439,8 @@
     "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "italian-restaurants"
+    "pageSlug": "italian-restaurants",
+    "neighborhood": "Blair Street"
   },
   {
     "id": 155,
@@ -2382,7 +2455,8 @@
     "image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "italian-restaurants"
+    "pageSlug": "italian-restaurants",
+    "neighborhood": "Blair Street"
   },
   {
     "id": 156,
@@ -2397,7 +2471,8 @@
     "image": "https://images.unsplash.com/photo-1572441714582-c957c2e3a2d7?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "italian-restaurants"
+    "pageSlug": "italian-restaurants",
+    "neighborhood": "Central City"
   },
   {
     "id": 157,
@@ -2427,7 +2502,8 @@
     "image": "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "thai-restaurants"
+    "pageSlug": "thai-restaurants",
+    "neighborhood": "Kingsland"
   },
   {
     "id": 159,
@@ -2442,7 +2518,8 @@
     "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "thai-restaurants"
+    "pageSlug": "thai-restaurants",
+    "neighborhood": "Te Aro"
   },
   {
     "id": 160,
@@ -2457,7 +2534,8 @@
     "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "thai-restaurants"
+    "pageSlug": "thai-restaurants",
+    "neighborhood": "Central City"
   },
   {
     "id": 161,
@@ -2487,7 +2565,8 @@
     "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "french-restaurants"
+    "pageSlug": "french-restaurants",
+    "neighborhood": "Symonds Street"
   },
   {
     "id": 163,
@@ -2502,7 +2581,8 @@
     "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80",
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "french-restaurants"
+    "pageSlug": "french-restaurants",
+    "neighborhood": "Viaduct Harbour"
   },
   {
     "id": 164,
@@ -2517,7 +2597,8 @@
     "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "french-restaurants"
+    "pageSlug": "french-restaurants",
+    "neighborhood": "Thorndon"
   },
   {
     "id": 165,
@@ -2532,7 +2613,8 @@
     "image": "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "french-restaurants"
+    "pageSlug": "french-restaurants",
+    "neighborhood": "Merivale"
   },
   {
     "id": 166,
@@ -2547,7 +2629,8 @@
     "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "cuisine",
-    "pageSlug": "chinese-restaurants"
+    "pageSlug": "chinese-restaurants",
+    "neighborhood": "Victoria Street"
   },
   {
     "id": 167,
@@ -2592,7 +2675,8 @@
     "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80",
     "citySlug": "hamilton",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "Victoria Street"
   },
   {
     "id": 170,
@@ -2637,7 +2721,8 @@
     "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "cuisine",
-    "pageSlug": "chinese-restaurants"
+    "pageSlug": "chinese-restaurants",
+    "neighborhood": "The Strand"
   },
   {
     "id": 173,
@@ -2667,7 +2752,8 @@
     "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
     "citySlug": "tauranga",
     "categorySlug": "cuisine",
-    "pageSlug": "italian-restaurants"
+    "pageSlug": "italian-restaurants",
+    "neighborhood": "Mount Maunganui"
   },
   {
     "id": 175,
@@ -2727,7 +2813,8 @@
     "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
-    "pageSlug": "chinese-restaurants"
+    "pageSlug": "chinese-restaurants",
+    "neighborhood": "Courtenay Place"
   },
   {
     "id": 179,
@@ -2742,7 +2829,8 @@
     "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "chinese-restaurants"
+    "pageSlug": "chinese-restaurants",
+    "neighborhood": "Colombo Street"
   },
   {
     "id": 180,
@@ -2757,6 +2845,7 @@
     "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
-    "pageSlug": "japanese-restaurants"
+    "pageSlug": "japanese-restaurants",
+    "neighborhood": "Victoria Street"
   }
 ]
