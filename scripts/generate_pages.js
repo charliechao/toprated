@@ -178,8 +178,8 @@ cities.forEach(city => {
             }
 
             const html = getBaseTemplate(
-                `${map.name} in ${city.name} | TopRated NZ`,
-                `Find the best ${map.name.toLowerCase()} in ${city.name}.`,
+                `Top Rated ${map.name} in ${city.name} | Verified for 2026`,
+                `Compare the best ${map.name.toLowerCase()} in ${city.name}. Read reviews, view ratings, and find the top-rated ${map.name.toLowerCase()} near you in ${city.name}.`,
                 generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland']),
                 faqSchema
             );

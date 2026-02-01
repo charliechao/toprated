@@ -128,30 +128,51 @@ async function renderRelated() {
     const relatedEl = document.getElementById('related');
     if (!relatedEl) return;
     const parts = location.pathname.split('/').filter(Boolean);
-    // Expect: cities / <city> / <category> / <page>.html
     if (parts.length < 4) return;
     const [_, city, category, pageFile] = parts;
+    const cityName = city.charAt(0).toUpperCase() + city.slice(1);
     const pageName = pageFile.replace('.html', '').replace(/-/g, ' ');
 
-    // Load data for cross‑city links
+    // Cross-city links
     const citiesData = await loadJSON('/data/cities.json');
-    const otherCities = citiesData.filter(c => c.slug !== city);
-    const cityLinks = otherCities.map(c => {
-        const href = `/cities/${c.slug}/${category}/${pageFile}`;
-        return `<a href="${href}">${c.name} – ${pageName}</a>`;
-    }).join('<br>');
+    const otherCities = citiesData.filter(c => c.slug !== city).slice(0, 4);
+    const cityCards = otherCities.map(c => `
+        <a href="/cities/${c.slug}/${category}/${pageFile}" class="related-card">
+            <i class="fas fa-city"></i>
+            <div>
+                <strong>${pageName}</strong>
+                <span>in ${c.name}</span>
+            </div>
+        </a>
+    `).join('');
 
-    // Load data for other categories in the same city
-    const categories = ['cuisine', 'trades', 'services', 'hospitality'];
-    const otherCats = categories.filter(cat => cat !== category);
-    const catLinks = otherCats.map(cat => {
-        // Ensure we preserve the extension if it was present, or keep it clean
-        const hasExtension = pageFile.includes('.html');
-        const href = `/cities/${city}/${cat}/${pageFile}`;
-        return `<a href="${href}">${cat.charAt(0).toUpperCase() + cat.slice(1)} – ${pageName}</a>`;
-    }).join('<br>');
+    // Other categories in same city
+    const categories = [
+        { slug: 'cuisine', icon: 'fa-utensils' },
+        { slug: 'trades', icon: 'fa-tools' },
+        { slug: 'services', icon: 'fa-concierge-bell' },
+        { slug: 'hospitality', icon: 'fa-bed' }
+    ];
+    const otherCats = categories.filter(cat => cat.slug !== category);
+    const catCards = otherCats.map(cat => `
+        <a href="/cities/${city}/${cat.slug}/${pageFile}" class="related-card">
+            <i class="fas ${cat.icon}"></i>
+            <div>
+                <strong>Other ${cat.slug}</strong>
+                <span>in ${cityName}</span>
+            </div>
+        </a>
+    `).join('');
 
-    relatedEl.innerHTML = `<h3>Explore More</h3><div>${cityLinks}<hr>${catLinks}</div>`;
+    relatedEl.innerHTML = `
+        <div class="related-section">
+            <h3 class="section-title">Explore More ${pageName}</h3>
+            <div class="related-grid">${cityCards}</div>
+            
+            <h3 class="section-title" style="margin-top: 3rem;">Other Services in ${cityName}</h3>
+            <div class="related-grid">${catCards}</div>
+        </div>
+    `;
 }
 
 /**
@@ -233,10 +254,29 @@ async function renderBusinessList() {
     // Sort by rating desc, then reviews desc
     filtered.sort((a, b) => b.rating - a.rating || b.reviews - a.reviews);
 
-    listEl.innerHTML = filtered.map(b => `
-        <div class="glass-card business-card-horizontal">
+    // Inject Breadcrumb Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": parts.map((part, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": part.replace('.html', '').replace(/-/g, ' ').charAt(0).toUpperCase() + part.replace('.html', '').replace(/-/g, ' ').slice(1),
+            "item": `https://toprated.nz/${parts.slice(0, index + 1).join('/')}${part.endsWith('.html') ? '' : '/'}`
+        }))
+    };
+    const schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.text = JSON.stringify(breadcrumbSchema);
+    document.head.appendChild(schemaScript);
+
+    listEl.innerHTML = filtered.map(b => {
+        const isPremium = b.rating >= 4.8;
+        return `
+        <div class="glass-card business-card-horizontal ${isPremium ? 'premium-border' : ''}">
             <div class="business-image-container">
                 <img src="${b.image}" alt="${b.name}" class="business-image">
+                ${isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : ''}
             </div>
             <div class="business-info">
                 <div class="rating-badge"><i class="fas fa-star"></i> ${b.rating} (${b.reviews} reviews)</div>
@@ -249,7 +289,7 @@ async function renderBusinessList() {
                 </div>
             </div>
         </div>
-    `).join('');
+    `}).join('');
 }
 
 // Run all helpers after the DOM is ready.

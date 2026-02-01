@@ -509,6 +509,29 @@ footer {
     width: fit-content;
 }
 
+.premium-border {
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    position: relative;
+}
+
+.premium-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--color-secondary);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.business-image-container {
+    position: relative;
+}
+
 .business-meta {
     display: flex;
     gap: 2rem;
@@ -538,6 +561,70 @@ footer {
     .business-info {
         padding: 2rem;
     }
+}
+
+/* Related Section */
+.related-section {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.related-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-color: var(--color-primary);
+}
+
+.related-card i {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    background: rgba(20, 184, 166, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.related-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-card strong {
+    font-size: 1rem;
+    color: var(--color-text-main);
+    text-transform: capitalize;
+}
+
+.related-card span {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
 }
 
 /* Loading State */
