@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Rated Lawyers in Tauranga | Verified for 2026</title>
+  <meta name="description" content="Compare the best lawyers in Tauranga. Read reviews, view ratings, and find the top-rated lawyers near you in Tauranga." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Top Rated Lawyers in Tauranga | Verified for 2026" />
+  <meta property="og:description" content="Compare the best lawyers in Tauranga. Read reviews, view ratings, and find the top-rated lawyers near you in Tauranga." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Schema -->
+  
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
+
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+    
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1594493397611-6677f24090b8?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="container">
+            <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
+            <h1>Lawyers <br><span class="text-primary">in Tauranga</span></h1>
+        </div>
+    </section>
+    
+    <section class="container section">
+        <div id="business-list" class="business-list">
+            <p class="loading">Loading top-rated businesses...</p>
+        </div>
+    </section>
+    <section class="container section">
+        <div id="related"></div>
+    </section>
+    <script id="schema" type="application/ld+json"></script>
+    
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/include.js"></script>
+  <script src="/js/navigation.js"></script>
+</body>
+
+</html>

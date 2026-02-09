@@ -120,7 +120,7 @@ industries.forEach(ind => {
 });
 
 // 3.3 Category Hubs in Cities (index.html in subfolders)
-const categories = ['cuisine', 'trades', 'services', 'hospitality'];
+const categories = ['cuisine', 'trades', 'services', 'hospitality', 'automotive'];
 cities.forEach(city => {
     categories.forEach(cat => {
         const dir = path.join('cities', city.slug, cat);
@@ -141,13 +141,24 @@ const subCatsMapping = {
     'french-restaurants': { cat: 'cuisine', name: 'French Restaurants' },
     'cafes': { cat: 'cuisine', name: 'Cafes' },
     'hotels': { cat: 'hospitality', name: 'Hotels' },
+    'bars': { cat: 'hospitality', name: 'Bars' },
+    'nightclubs': { cat: 'hospitality', name: 'Nightclubs' },
     'builders': { cat: 'trades', name: 'Builders' },
     'electricians': { cat: 'trades', name: 'Electricians' },
     'plumbers': { cat: 'trades', name: 'Plumbers' },
     'renovation-services': { cat: 'trades', name: 'Renovation Services' },
     'painters': { cat: 'trades', name: 'Painters' },
-    'cleaning-services': { cat: 'services', name: 'Cleaning Services' }
+    'cleaning-services': { cat: 'services', name: 'Cleaning Services' },
+    'accountants': { cat: 'services', name: 'Accountants' },
+    'lawyers': { cat: 'services', name: 'Lawyers' },
+    'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
+    'mechanics': { cat: 'automotive', name: 'Mechanics' },
+    'car-dealers': { cat: 'automotive', name: 'Car Dealers' },
+    'panel-beaters': { cat: 'automotive', name: 'Panel Beaters' },
+    'car-wash': { cat: 'automotive', name: 'Car Wash' },
+    'tyre-shops': { cat: 'automotive', name: 'Tyre Shops' }
 };
+
 
 cities.forEach(city => {
     industries.forEach(ind => {

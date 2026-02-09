@@ -1,7 +1,7 @@
 [
     {
-        "name": "Hospitality",
-        "slug": "hospitality",
+        "name": "Cuisine",
+        "slug": "cuisine",
         "subCategories": [
             "restaurants",
             "japanese-restaurants",
@@ -10,8 +10,16 @@
             "italian-restaurants",
             "thai-restaurants",
             "french-restaurants",
-            "cafes",
-            "hotels"
+            "cafes"
+        ]
+    },
+    {
+        "name": "Hospitality",
+        "slug": "hospitality",
+        "subCategories": [
+            "hotels",
+            "bars",
+            "nightclubs"
         ]
     },
     {
@@ -28,13 +36,22 @@
     {
         "name": "Automotive",
         "slug": "automotive",
-        "subCategories": []
+        "subCategories": [
+            "mechanics",
+            "car-dealers",
+            "panel-beaters",
+            "car-wash",
+            "tyre-shops"
+        ]
     },
     {
         "name": "Services",
         "slug": "services",
         "subCategories": [
-            "cleaning-services"
+            "cleaning-services",
+            "accountants",
+            "lawyers",
+            "real-estate-agents"
         ]
     }
 ]
