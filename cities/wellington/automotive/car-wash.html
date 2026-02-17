@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a car wash cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington car wash prices range from $15–$25 for a basic exterior wash, $40–$65 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including cut and polish or ceramic coating."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I get my car detailed in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top car detailing services operate across the Wellington region including the CBD, Lower Hutt, Petone, and Porirua. Many offer mobile detailing that comes to your home or workplace for maximum convenience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I wash my car in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's coastal winds and salt air mean washing every 1–2 weeks is ideal. Regular washing prevents corrosion and protects your paint — especially important if you park near the waterfront or in exposed areas."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Car Wash <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Keep your vehicle pristine in the capital with Wellington's top-rated car wash and detailing services. From express washes in Lower Hutt to premium hand detailing in Thorndon, Wellington's best car wash operators tackle the city's unique challenges — salt air from the harbour, tree sap, and frequent rain — using professional-grade products and techniques to protect your paintwork year-round.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does a car wash cost in Wellington?</summary>
+                            <p>Wellington car wash prices range from $15–$25 for a basic exterior wash, $40–$65 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including cut and polish or ceramic coating.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where can I get my car detailed in Wellington?</summary>
+                            <p>Top car detailing services operate across the Wellington region including the CBD, Lower Hutt, Petone, and Porirua. Many offer mobile detailing that comes to your home or workplace for maximum convenience.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I wash my car in Wellington?</summary>
+                            <p>Wellington's coastal winds and salt air mean washing every 1–2 weeks is ideal. Regular washing prevents corrosion and protects your paint — especially important if you park near the waterfront or in exposed areas.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

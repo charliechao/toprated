@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are the main car dealerships in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's main dealer strips are along Hutt Road (Petone to Lower Hutt) for new and used franchises, Courtenay Place area for boutique dealers, and the Porirua/Kapiti corridor for larger independent yards with extensive stock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I negotiate car prices in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, there is usually room to negotiate, especially on used vehicles. Research market values on Trade Me and compare prices across dealers. End of month and end of financial year (March) often yield the best deals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What warranty should I expect from a Wellington car dealer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All dealers must comply with the Consumer Guarantees Act. Additionally, reputable Wellington dealers offer mechanical warranties from 3 months to 3 years. New car franchises include manufacturer warranties of 3–7 years."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Car Dealers <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's car dealers range from premium franchise showrooms on Hutt Road to trusted independent yards across the Hutt Valley and Porirua. Whether you're after a compact city car for Wellington's narrow streets, a reliable SUV for weekend escapes to the Wairarapa, or a luxury European marque, the capital's top-rated dealers offer competitive pricing, thorough pre-purchase inspections, and strong after-sales support.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where are the main car dealerships in Wellington?</summary>
+                            <p>Wellington's main dealer strips are along Hutt Road (Petone to Lower Hutt) for new and used franchises, Courtenay Place area for boutique dealers, and the Porirua/Kapiti corridor for larger independent yards with extensive stock.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Can I negotiate car prices in Wellington?</summary>
+                            <p>Yes, there is usually room to negotiate, especially on used vehicles. Research market values on Trade Me and compare prices across dealers. End of month and end of financial year (March) often yield the best deals.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What warranty should I expect from a Wellington car dealer?</summary>
+                            <p>All dealers must comply with the Consumer Guarantees Act. Additionally, reputable Wellington dealers offer mechanical warranties from 3 months to 3 years. New car franchises include manufacturer warranties of 3–7 years.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

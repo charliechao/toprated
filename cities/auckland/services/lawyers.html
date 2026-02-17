@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do lawyers charge in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auckland lawyer fees vary by specialisation: property conveyancing from $800–$2,000, simple wills from $300–$600, employment matters from $300–$500/hour, and commercial litigation from $350–$700/hour. Many firms offer free initial consultations and fixed-fee packages for standard work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose the right Auckland lawyer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for a lawyer who specialises in your specific area of law, has strong Google reviews, offers a free initial consultation, provides clear fee estimates upfront, and communicates proactively. Check they hold a current practising certificate with the NZ Law Society."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a lawyer to buy a house in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you legally need a lawyer or conveyancer to complete a property purchase in New Zealand. Auckland property lawyers handle title searches, agreement review, settlement, and ensure your interests are protected throughout the transaction."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Lawyers <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Auckland is home to New Zealand's largest legal market, from top-tier commercial firms in the CBD to specialist boutique practices across the region. Whether you need property conveyancing in the Eastern Suburbs, employment law advice for your business, family law support, or commercial litigation, Auckland's top-rated lawyers combine deep expertise with client-focused service. Our curated list features practices consistently praised for communication, results, and value.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much do lawyers charge in Auckland?</summary>
+                            <p>Auckland lawyer fees vary by specialisation: property conveyancing from $800–$2,000, simple wills from $300–$600, employment matters from $300–$500/hour, and commercial litigation from $350–$700/hour. Many firms offer free initial consultations and fixed-fee packages for standard work.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How do I choose the right Auckland lawyer?</summary>
+                            <p>Look for a lawyer who specialises in your specific area of law, has strong Google reviews, offers a free initial consultation, provides clear fee estimates upfront, and communicates proactively. Check they hold a current practising certificate with the NZ Law Society.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do I need a lawyer to buy a house in Auckland?</summary>
+                            <p>Yes, you legally need a lawyer or conveyancer to complete a property purchase in New Zealand. Auckland property lawyers handle title searches, agreement review, settlement, and ensure your interests are protected throughout the transaction.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

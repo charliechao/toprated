@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a car wash cost in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auckland car wash prices range from $15–$25 for a basic exterior wash, $35–$60 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including paint correction and ceramic coating."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Auckland car washes eco-friendly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many top-rated Auckland car washes use biodegradable cleaning products and water recycling systems to minimise environmental impact. Look for operators displaying eco-certification or green business credentials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I wash my car in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Auckland's coastal climate, it's recommended to wash your car every 1–2 weeks to prevent salt and pollution buildup. Regular washing protects your paintwork and maintains resale value."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Car Wash <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Keep your vehicle spotless with Auckland's top-rated car wash and detailing services. From express tunnel washes in Newmarket to premium hand detailing in Ponsonby, Auckland's best car wash operators use eco-friendly products, water-recycling systems, and professional techniques to protect your paintwork while delivering a showroom finish. Whether you need a quick exterior wash or a full interior valet, these trusted operators deliver consistent results across the Auckland region.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does a car wash cost in Auckland?</summary>
+                            <p>Auckland car wash prices range from $15–$25 for a basic exterior wash, $35–$60 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including paint correction and ceramic coating.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Are Auckland car washes eco-friendly?</summary>
+                            <p>Many top-rated Auckland car washes use biodegradable cleaning products and water recycling systems to minimise environmental impact. Look for operators displaying eco-certification or green business credentials.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I wash my car in Auckland?</summary>
+                            <p>In Auckland's coastal climate, it's recommended to wash your car every 1–2 weeks to prevent salt and pollution buildup. Regular washing protects your paintwork and maintains resale value.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

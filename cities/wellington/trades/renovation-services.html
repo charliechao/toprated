@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a home renovation cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington renovation costs range from $2,000–$4,000 per square metre depending on scope and site complexity. Kitchen renovations start from $25,000–$60,000, bathroom renovations from $20,000–$40,000, and full house renovations from $150,000–$500,000+. Hillside properties and earthquake strengthening add to costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need consent for renovations in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most significant renovations require building consent from Wellington City Council, especially structural changes, plumbing, drainage, and electrical work. Heritage-listed properties may also need resource consent. Your renovation company should manage the entire consent process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do renovations take in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bathroom renovations take 3–6 weeks, kitchens 4–8 weeks, and full home renovations 3–8 months. Wellington's weather can impact exterior work timelines. Allow 4–8 weeks for council consent processing before work begins."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Renovation Services <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's renovation market is driven by the capital's ageing housing stock, earthquake-strengthening needs, and homeowners looking to modernise character properties without losing their heritage charm. From villa renovations in Mount Victoria to modern kitchen and bathroom overhauls in Karori, and seismic retrofits in Thorndon, Wellington's top-rated renovation companies bring expertise in navigating council heritage overlays, managing complex hillside sites, and coordinating multiple trades for seamless project delivery.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does a home renovation cost in Wellington?</summary>
+                            <p>Wellington renovation costs range from $2,000–$4,000 per square metre depending on scope and site complexity. Kitchen renovations start from $25,000–$60,000, bathroom renovations from $20,000–$40,000, and full house renovations from $150,000–$500,000+. Hillside properties and earthquake strengthening add to costs.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do I need consent for renovations in Wellington?</summary>
+                            <p>Most significant renovations require building consent from Wellington City Council, especially structural changes, plumbing, drainage, and electrical work. Heritage-listed properties may also need resource consent. Your renovation company should manage the entire consent process.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How long do renovations take in Wellington?</summary>
+                            <p>Bathroom renovations take 3–6 weeks, kitchens 4–8 weeks, and full home renovations 3–8 months. Wellington's weather can impact exterior work timelines. Allow 4–8 weeks for council consent processing before work begins.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

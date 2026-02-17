@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do new tyres cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington tyre prices range from $80–$150 for budget brands, $150–$300 for mid-range, and $250–$500+ for premium tyres. SUV and 4WD tyres cost more. Many Wellington tyre shops offer price matching."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tyres are best for Wellington's hills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's steep streets and wet conditions demand good grip — look for tyres with high wet-weather ratings. All-season or wet-performance tyres from brands like Michelin, Continental, or Bridgestone are popular choices for Wellington drivers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I check my tyre pressure in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check tyre pressure monthly and before long trips. Wellington's temperature fluctuations can affect pressure. Correct pressure improves safety, fuel economy, and tyre life. Most Wellington tyre shops offer free pressure checks."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Tyre Shops <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Find Wellington's most trusted tyre retailers for new tyres, wheel alignments, puncture repairs, and seasonal advice. From premium performance tyre specialists in the CBD to value-focused outlets in Lower Hutt, Wellington's top-rated tyre shops stock all major brands and provide expert guidance on the best tyres for the capital's hilly terrain and wet roads.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much do new tyres cost in Wellington?</summary>
+                            <p>Wellington tyre prices range from $80–$150 for budget brands, $150–$300 for mid-range, and $250–$500+ for premium tyres. SUV and 4WD tyres cost more. Many Wellington tyre shops offer price matching.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What tyres are best for Wellington's hills?</summary>
+                            <p>Wellington's steep streets and wet conditions demand good grip — look for tyres with high wet-weather ratings. All-season or wet-performance tyres from brands like Michelin, Continental, or Bridgestone are popular choices for Wellington drivers.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I check my tyre pressure in Wellington?</summary>
+                            <p>Check tyre pressure monthly and before long trips. Wellington's temperature fluctuations can affect pressure. Correct pressure improves safety, fuel economy, and tyre life. Most Wellington tyre shops offer free pressure checks.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

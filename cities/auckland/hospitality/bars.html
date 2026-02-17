@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best bar areas in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auckland's top bar precincts include Ponsonby Road for cocktails and wine bars, Britomart and the Viaduct for waterfront drinks, Karangahape Road (K Road) for alternative and craft scenes, and Commercial Bay for upscale rooftop lounges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What time do bars close in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Auckland bars close at midnight on weeknights and 3am on Friday and Saturday nights. Some late-night venues on K Road and in the CBD hold special licences for later closing times."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Auckland bars serve food?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, many of Auckland's top-rated bars offer substantial food menus ranging from bar snacks and sharing plates to full dining menus. Some operate as bar-restaurants with separate dining areas."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Bars <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Auckland's bar scene is one of the most vibrant in the Southern Hemisphere, ranging from craft cocktail lounges in Ponsonby to rooftop bars overlooking the Viaduct Harbour. Whether you're after award-winning mixology on Karangahape Road, natural wines in Grey Lynn, or a classic Kiwi pub in Parnell, Auckland's top-rated bars combine exceptional drinks with distinctive atmospheres and welcoming hospitality. Our curated list features the city's most consistently praised establishments.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What are the best bar areas in Auckland?</summary>
+                            <p>Auckland's top bar precincts include Ponsonby Road for cocktails and wine bars, Britomart and the Viaduct for waterfront drinks, Karangahape Road (K Road) for alternative and craft scenes, and Commercial Bay for upscale rooftop lounges.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What time do bars close in Auckland?</summary>
+                            <p>Most Auckland bars close at midnight on weeknights and 3am on Friday and Saturday nights. Some late-night venues on K Road and in the CBD hold special licences for later closing times.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do Auckland bars serve food?</summary>
+                            <p>Yes, many of Auckland's top-rated bars offer substantial food menus ranging from bar snacks and sharing plates to full dining menus. Some operate as bar-restaurants with separate dining areas.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

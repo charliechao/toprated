@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do lawyers charge in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington lawyer fees vary: property conveyancing from $800–$1,800, employment law from $280–$480/hour, commercial work from $320–$650/hour, and family law from $250–$450/hour. Many offer free initial consultations and fixed-fee packages for routine matters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find a good lawyer in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for lawyers who specialise in your specific legal area, hold current NZ Law Society practising certificates, have strong reviews, and offer transparent fee structures. Wellington's tight-knit legal community means reputation matters — ask for referrals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there free legal services in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Community Law Wellington offers free legal advice for eligible individuals. Many Wellington lawyers also offer free 30-minute initial consultations, and Citizens Advice Bureau provides basic legal guidance at no cost."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Lawyers <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington is home to New Zealand's legal establishment, with top-tier national firms, specialist boutique practices, and government-focused solicitors all operating in the capital. Whether you need property conveyancing in the Hutt Valley, immigration advice, employment law for your business, or commercial contract expertise, Wellington's top-rated lawyers combine professional excellence with the personal service that the capital's legal community is known for.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much do lawyers charge in Wellington?</summary>
+                            <p>Wellington lawyer fees vary: property conveyancing from $800–$1,800, employment law from $280–$480/hour, commercial work from $320–$650/hour, and family law from $250–$450/hour. Many offer free initial consultations and fixed-fee packages for routine matters.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How do I find a good lawyer in Wellington?</summary>
+                            <p>Look for lawyers who specialise in your specific legal area, hold current NZ Law Society practising certificates, have strong reviews, and offer transparent fee structures. Wellington's tight-knit legal community means reputation matters — ask for referrals.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Are there free legal services in Wellington?</summary>
+                            <p>Yes, Community Law Wellington offers free legal advice for eligible individuals. Many Wellington lawyers also offer free 30-minute initial consultations, and Citizens Advice Bureau provides basic legal guidance at no cost.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

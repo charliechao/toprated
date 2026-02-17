@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes Wellington NZ's food capital?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington has more eateries per capita than any other NZ city, a deeply embedded food culture, multiple award-winning chefs, and proximity to premium produce regions (Wairarapa, Marlborough). The compact, walkable city centre concentrates exceptional dining within a few blocks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best restaurant areas in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Courtenay Place is the main dining strip, Cuba Street offers creative and casual options, the waterfront has upscale dining, and Thorndon provides neighbourhood charm. Don't overlook Petone — its Jackson Street strip rivals the city centre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to book restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For popular restaurants, especially on Thursday–Saturday evenings, booking is strongly recommended. Wellington's best tables fill up days in advance. Many restaurants accept online bookings via their websites or First Table for early-bird deals."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington holds the title of New Zealand's culinary capital, boasting more restaurants and cafes per capita than New York City. From Michelin-quality fine dining on the waterfront to inventive small plates on Cuba Street, the capital's top-rated restaurants showcase exceptional creativity, world-class local produce, and an unrivalled dining culture. With award-winning chefs, a thriving craft beer and natural wine scene, and a compact city centre that's entirely walkable, Wellington offers the country's most exciting dining experience.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What makes Wellington NZ's food capital?</summary>
+                            <p>Wellington has more eateries per capita than any other NZ city, a deeply embedded food culture, multiple award-winning chefs, and proximity to premium produce regions (Wairarapa, Marlborough). The compact, walkable city centre concentrates exceptional dining within a few blocks.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What are the best restaurant areas in Wellington?</summary>
+                            <p>Courtenay Place is the main dining strip, Cuba Street offers creative and casual options, the waterfront has upscale dining, and Thorndon provides neighbourhood charm. Don't overlook Petone — its Jackson Street strip rivals the city centre.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do I need to book restaurants in Wellington?</summary>
+                            <p>For popular restaurants, especially on Thursday–Saturday evenings, booking is strongly recommended. Wellington's best tables fill up days in advance. Many restaurants accept online bookings via their websites or First Table for early-bird deals.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

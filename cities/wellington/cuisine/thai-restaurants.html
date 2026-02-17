@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are the best Thai restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's Thai restaurants are spread across the CBD, Cuba Street quarter, Courtenay Place, and suburban hubs like Petone and Karori. The city centre has the highest concentration of quality Thai dining options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Thai food cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casual Thai dining in Wellington ranges from $16–$24 for mains, with premium Thai restaurants charging $28–$40. Many offer excellent value lunch specials and takeaway deals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get authentic Thai food in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely — Wellington has a thriving Thai community and several restaurants run by Thai-born chefs using imported ingredients. Look for restaurants with Thai staff and menus featuring regional specialities beyond the usual pad thai."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Thai Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's Thai restaurant scene offers everything from authentic street-food-style eateries to contemporary Thai fine dining. The capital's Thai chefs bring genuine flavours — fragrant curries, spicy salads, and aromatic stir-fries — using imported ingredients and traditional techniques. Whether you crave a quick pad thai on Cuba Street or an elegant Thai degustation, Wellington's top-rated Thai restaurants deliver consistently outstanding food.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where are the best Thai restaurants in Wellington?</summary>
+                            <p>Wellington's Thai restaurants are spread across the CBD, Cuba Street quarter, Courtenay Place, and suburban hubs like Petone and Karori. The city centre has the highest concentration of quality Thai dining options.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does Thai food cost in Wellington?</summary>
+                            <p>Casual Thai dining in Wellington ranges from $16–$24 for mains, with premium Thai restaurants charging $28–$40. Many offer excellent value lunch specials and takeaway deals.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Can I get authentic Thai food in Wellington?</summary>
+                            <p>Absolutely — Wellington has a thriving Thai community and several restaurants run by Thai-born chefs using imported ingredients. Look for restaurants with Thai staff and menus featuring regional specialities beyond the usual pad thai.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

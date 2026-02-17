@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much commission do Wellington real estate agents charge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington agent commissions typically range from 2.5% to 3.95% of the sale price, with common structures being 3.95% on the first $400,000 and 2% on the balance. Always negotiate — commission rates are not fixed by law."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the Wellington property market like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's market is characterised by limited supply and strong demand, particularly in popular suburbs like Mount Victoria, Thorndon, and Karori. The compact geography and earthquake-strengthening requirements create unique market dynamics. Median prices vary significantly by suburb."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I look for in a Wellington real estate agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for agents with proven recent sales in your target suburb, strong vendor and buyer reviews, professional marketing capability, and deep local knowledge including awareness of earthquake ratings and council requirements. Interview at least three agents."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Real Estate Agents <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's property market is one of New Zealand's most dynamic, with the capital's compact geography, earthquake considerations, and proximity to Parliament creating a unique real estate landscape. The city's top-rated agents bring deep knowledge of micro-markets — from character villas in Mount Victoria to modern townhouses in Petone, family homes in Karori, and investment properties in the Hutt Valley. Whether buying, selling, or investing, our curated list features Wellington's most trusted real estate professionals.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much commission do Wellington real estate agents charge?</summary>
+                            <p>Wellington agent commissions typically range from 2.5% to 3.95% of the sale price, with common structures being 3.95% on the first $400,000 and 2% on the balance. Always negotiate — commission rates are not fixed by law.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What's the Wellington property market like?</summary>
+                            <p>Wellington's market is characterised by limited supply and strong demand, particularly in popular suburbs like Mount Victoria, Thorndon, and Karori. The compact geography and earthquake-strengthening requirements create unique market dynamics. Median prices vary significantly by suburb.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What should I look for in a Wellington real estate agent?</summary>
+                            <p>Look for agents with proven recent sales in your target suburb, strong vendor and buyer reviews, professional marketing capability, and deep local knowledge including awareness of earthquake ratings and council requirements. Interview at least three agents.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

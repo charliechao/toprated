@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do new tyres cost in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auckland tyre prices range from $80–$150 per tyre for budget brands, $150–$300 for mid-range, and $250–$500+ for premium performance tyres. Prices vary by size — SUV and 4WD tyres typically cost more than standard passenger tyres."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I replace my tyres in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most tyres last 40,000–80,000 km depending on driving style and road conditions. In Auckland's wet climate, it's critical to replace tyres before tread depth drops below 1.5mm. The legal minimum in New Zealand is 1.5mm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Auckland tyre shops offer wheel alignments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most top-rated Auckland tyre shops offer computerised wheel alignment services from $69–$120. Regular alignments extend tyre life and improve fuel efficiency — recommended every 10,000 km or after hitting a pothole."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Tyre Shops <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Find Auckland's most trusted tyre shops for new tyres, wheel alignments, balancing, and puncture repairs. From budget-friendly options in South Auckland to premium performance tyre specialists on the North Shore, Auckland's top-rated tyre retailers stock all major brands including Bridgestone, Michelin, Continental, and Pirelli. With mobile fitting services and same-day availability, keeping your vehicle safe on Auckland's roads has never been easier.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much do new tyres cost in Auckland?</summary>
+                            <p>Auckland tyre prices range from $80–$150 per tyre for budget brands, $150–$300 for mid-range, and $250–$500+ for premium performance tyres. Prices vary by size — SUV and 4WD tyres typically cost more than standard passenger tyres.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I replace my tyres in Auckland?</summary>
+                            <p>Most tyres last 40,000–80,000 km depending on driving style and road conditions. In Auckland's wet climate, it's critical to replace tyres before tread depth drops below 1.5mm. The legal minimum in New Zealand is 1.5mm.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do Auckland tyre shops offer wheel alignments?</summary>
+                            <p>Yes, most top-rated Auckland tyre shops offer computerised wheel alignment services from $69–$120. Regular alignments extend tyre life and improve fuel efficiency — recommended every 10,000 km or after hitting a pothole.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

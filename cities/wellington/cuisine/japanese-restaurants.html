@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are the best Japanese restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's top Japanese restaurants are concentrated in the CBD around Courtenay Place, Blair Street, and Allen Street. Cuba Street has excellent casual options including izakaya and ramen shops. Several hidden gems operate in the city's famous laneways."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there good sushi in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington has exceptional sushi thanks to access to pristine New Zealand seafood. Top spots range from traditional nigiri counters to modern sushi fusion. For the freshest fish, look for restaurants that source directly from local fishmongers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Japanese dining cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casual ramen and bento boxes range from $16–$24, mid-range izakaya dining from $25–$45 per person, and premium omakase experiences from $80–$150+ per person. Many Japanese restaurants offer excellent value lunch sets."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Japanese Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's Japanese dining scene is remarkably sophisticated for a city its size, reflecting the strong cultural ties between New Zealand and Japan. From traditional omakase sushi counters in the CBD to izakaya-style bars on Courtenay Place, ramen houses on Cuba Street, and contemporary Japanese fusion on the waterfront, Wellington offers an impressive breadth of Japanese cuisine. The city's access to pristine New Zealand seafood gives its Japanese restaurants a unique advantage — fish so fresh it rivals Tokyo's best.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where are the best Japanese restaurants in Wellington?</summary>
+                            <p>Wellington's top Japanese restaurants are concentrated in the CBD around Courtenay Place, Blair Street, and Allen Street. Cuba Street has excellent casual options including izakaya and ramen shops. Several hidden gems operate in the city's famous laneways.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Is there good sushi in Wellington?</summary>
+                            <p>Wellington has exceptional sushi thanks to access to pristine New Zealand seafood. Top spots range from traditional nigiri counters to modern sushi fusion. For the freshest fish, look for restaurants that source directly from local fishmongers.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does Japanese dining cost in Wellington?</summary>
+                            <p>Casual ramen and bento boxes range from $16–$24, mid-range izakaya dining from $25–$45 per person, and premium omakase experiences from $80–$150+ per person. Many Japanese restaurants offer excellent value lunch sets.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

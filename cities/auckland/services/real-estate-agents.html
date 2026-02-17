@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much commission do Auckland real estate agents charge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auckland agent commissions typically range from 2.5% to 4% of the sale price, often structured as a higher percentage on the first $400,000–$500,000 and a lower rate on the balance. Always negotiate and compare commission structures before signing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose a real estate agent in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for agents with strong recent sales history in your specific suburb, high vendor and buyer reviews, professional marketing plans, and transparent communication. Interview at least three agents and ask for comparable recent sales data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the Auckland property market like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auckland remains New Zealand's largest and most diverse property market. Median house prices vary significantly by suburb — from $600,000 in outer areas to $2M+ in premium suburbs. Work with a local specialist who understands micro-market trends in your target area."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Real Estate Agents <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Navigating Auckland's dynamic property market requires an experienced, well-connected real estate agent who knows your local area intimately. From luxury waterfront properties on the North Shore to first-home opportunities in South Auckland, the city's top-rated agents combine deep market knowledge with exceptional negotiation skills and marketing reach. Whether you're buying, selling, or investing, our curated list features Auckland's most consistently praised real estate professionals.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much commission do Auckland real estate agents charge?</summary>
+                            <p>Auckland agent commissions typically range from 2.5% to 4% of the sale price, often structured as a higher percentage on the first $400,000–$500,000 and a lower rate on the balance. Always negotiate and compare commission structures before signing.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How do I choose a real estate agent in Auckland?</summary>
+                            <p>Look for agents with strong recent sales history in your specific suburb, high vendor and buyer reviews, professional marketing plans, and transparent communication. Interview at least three agents and ask for comparable recent sales data.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What's the Auckland property market like?</summary>
+                            <p>Auckland remains New Zealand's largest and most diverse property market. Median house prices vary significantly by suburb — from $600,000 in outer areas to $2M+ in premium suburbs. Work with a local specialist who understands micro-market trends in your target area.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

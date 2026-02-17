@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are the best Italian restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Italian dining in Wellington is found across the CBD, Cuba Quarter, Courtenay Place, and the waterfront. Mount Victoria and Thorndon also have excellent neighbourhood Italian restaurants with loyal local followings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wellington have good pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington has an outstanding pizza scene with several wood-fired pizzerias earning national recognition. Look for restaurants using imported Italian flour, San Marzano tomatoes, and high-temperature ovens for authentic Neapolitan-style results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Italian dining cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casual Italian dining ranges from $22–$32 for pasta and pizza mains, while fine dining Italian restaurants charge $35–$50+ for mains. Many offer excellent value lunch menus and BYO wine options."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Italian Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's love affair with Italian food runs deep, from neighbourhood trattorias in Mount Victoria to sleek modern Italian restaurants on the waterfront. The capital's top-rated Italian kitchens honour tradition — hand-rolling pasta daily, importing San Marzano tomatoes, and firing pizzas in wood-burning ovens — while embracing the finest New Zealand produce. Wellington's café culture, inspired by Italian espresso traditions, adds another authentic layer to the city's Italian dining scene.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where are the best Italian restaurants in Wellington?</summary>
+                            <p>Top Italian dining in Wellington is found across the CBD, Cuba Quarter, Courtenay Place, and the waterfront. Mount Victoria and Thorndon also have excellent neighbourhood Italian restaurants with loyal local followings.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Does Wellington have good pizza?</summary>
+                            <p>Wellington has an outstanding pizza scene with several wood-fired pizzerias earning national recognition. Look for restaurants using imported Italian flour, San Marzano tomatoes, and high-temperature ovens for authentic Neapolitan-style results.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does Italian dining cost in Wellington?</summary>
+                            <p>Casual Italian dining ranges from $22–$32 for pasta and pizza mains, while fine dining Italian restaurants charge $35–$50+ for mains. Many offer excellent value lunch menus and BYO wine options.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best French restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's top French-inspired restaurants are found in the CBD, Thorndon, and along the waterfront. Many of the city's most acclaimed chefs have trained in France and bring authentic techniques to seasonal New Zealand menus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does French dining cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bistro-style French dining in Wellington ranges from $30–$50 per person for mains, while fine dining tasting menus typically run $100–$180 per person excluding wine. Many offer excellent value lunch menus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to book French restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Wellington's better French restaurants are popular and intimate — booking is highly recommended, especially for Friday and Saturday evenings. Many accept online reservations through their websites."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>French Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's reputation as New Zealand's culinary capital extends to its French dining scene, where classically trained chefs interpret Gallic traditions through a distinctly Kiwi lens. From intimate bistros in Thorndon to award-winning fine dining establishments in the CBD, the capital's French restaurants showcase the best of New Zealand's produce — Wairarapa lamb, Marlborough seafood, and artisan cheeses — prepared with impeccable French technique.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What are the best French restaurants in Wellington?</summary>
+                            <p>Wellington's top French-inspired restaurants are found in the CBD, Thorndon, and along the waterfront. Many of the city's most acclaimed chefs have trained in France and bring authentic techniques to seasonal New Zealand menus.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does French dining cost in Wellington?</summary>
+                            <p>Bistro-style French dining in Wellington ranges from $30–$50 per person for mains, while fine dining tasting menus typically run $100–$180 per person excluding wine. Many offer excellent value lunch menus.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do I need to book French restaurants in Wellington?</summary>
+                            <p>Yes, Wellington's better French restaurants are popular and intimate — booking is highly recommended, especially for Friday and Saturday evenings. Many accept online reservations through their websites.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

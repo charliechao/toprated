@@ -41,29 +41,127 @@ function getBaseTemplate(title, description, content, schema = null) {
 }
 
 function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg') {
-    let extraContent = '';
+    // --- Build Table of Contents ---
+    let tocItems = [];
+    if (specificSeo) {
+        if (specificSeo.introText) tocItems.push({ id: 'overview', label: 'Overview' });
+        if (specificSeo.buyersGuide) tocItems.push({ id: 'buyers-guide', label: specificSeo.buyersGuide.title || 'How to Choose' });
+        if (specificSeo.pricingGuide) tocItems.push({ id: 'pricing-guide', label: specificSeo.pricingGuide.title || 'Pricing Guide' });
+        if (specificSeo.questionsToAsk) tocItems.push({ id: 'questions-to-ask', label: 'Questions to Ask' });
+        tocItems.push({ id: 'top-rated-listings', label: 'Top-Rated Listings' });
+        if (specificSeo.faqs) tocItems.push({ id: 'faqs', label: 'Frequently Asked Questions' });
+    }
+
+    let tocHtml = '';
+    if (tocItems.length > 2) {
+        tocHtml = `
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                ${tocItems.map((item, i) => `<li><a href="#${item.id}">${item.label}</a></li>`).join('')}
+            </ol>
+        </nav>`;
+    }
+
+    // --- Build Editorial Sections ---
+    let editorialContent = '';
 
     if (specificSeo) {
+        // Intro / Overview
         if (specificSeo.introText) {
-            extraContent += `<section class="container" style="margin-top: 2rem;"><p class="lead">${specificSeo.introText}</p></section>`;
-        }
-
-        // Note: Curated sections and FAQs would need more complex JS injection or static building.
-        // For now, we inject a basic FAQ section if it exists.
-        if (specificSeo.faqs) {
-            extraContent += `
-            <section class="container section">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-container">
-                    ${specificSeo.faqs.map(faq => `
-                        <div class="faq-item" style="margin-bottom: 1.5rem;">
-                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">${faq.question}</h3>
-                            <p>${faq.answer}</p>
-                        </div>
-                    `).join('')}
+            editorialContent += `
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">${specificSeo.introText}</p>
+                    ${specificSeo.lastUpdated ? `<p class="seo-updated"><i class="fas fa-calendar-check"></i> Last updated: ${specificSeo.lastUpdated}</p>` : ''}
                 </div>
             </section>`;
         }
+
+        // Buyer's Guide
+        if (specificSeo.buyersGuide) {
+            editorialContent += `
+            <section class="seo-section seo-section--guide" id="buyers-guide">
+                <div class="container">
+                    <h2><i class="fas fa-clipboard-check"></i> ${specificSeo.buyersGuide.title}</h2>
+                    <div class="seo-guide-content">${specificSeo.buyersGuide.content}</div>
+                </div>
+            </section>`;
+        }
+
+        // Pricing Guide
+        if (specificSeo.pricingGuide) {
+            let priceTableHtml = '';
+            if (specificSeo.pricingGuide.priceTable && specificSeo.pricingGuide.priceTable.length > 0) {
+                priceTableHtml = `
+                <div class="seo-price-table-wrap">
+                    <table class="seo-price-table">
+                        <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
+                        <tbody>
+                            ${specificSeo.pricingGuide.priceTable.map(row => `<tr><td>${row.service}</td><td><strong>${row.range}</strong></td></tr>`).join('')}
+                        </tbody>
+                    </table>
+                </div>`;
+            }
+            editorialContent += `
+            <section class="seo-section seo-section--pricing" id="pricing-guide">
+                <div class="container">
+                    <h2><i class="fas fa-dollar-sign"></i> ${specificSeo.pricingGuide.title}</h2>
+                    <div class="seo-guide-content">${specificSeo.pricingGuide.content}</div>
+                    ${priceTableHtml}
+                </div>
+            </section>`;
+        }
+
+        // Questions to Ask
+        if (specificSeo.questionsToAsk && specificSeo.questionsToAsk.length > 0) {
+            editorialContent += `
+            <section class="seo-section seo-section--questions" id="questions-to-ask">
+                <div class="container">
+                    <h2><i class="fas fa-comments"></i> Questions to Ask Before Hiring</h2>
+                    <ul class="seo-questions-list">
+                        ${specificSeo.questionsToAsk.map(q => `<li><i class="fas fa-circle-question"></i> <span>${q}</span></li>`).join('')}
+                    </ul>
+                </div>
+            </section>`;
+        }
+    }
+
+    // --- Build FAQ Section ---
+    let faqHtml = '';
+    if (specificSeo && specificSeo.faqs) {
+        faqHtml = `
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    ${specificSeo.faqs.map(faq => `
+                        <details class="seo-faq-item">
+                            <summary>${faq.question}</summary>
+                            <p>${faq.answer}</p>
+                        </details>
+                    `).join('')}
+                </div>
+            </div>
+        </section>`;
+    }
+
+    // --- Author / Trust Section ---
+    let trustHtml = '';
+    if (specificSeo && (specificSeo.author || specificSeo.lastUpdated)) {
+        trustHtml = `
+        <aside class="seo-trust-box">
+            <div class="container">
+                <div class="seo-trust-inner">
+                    <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="seo-trust-text">
+                        <strong>Why Trust TopRated?</strong>
+                        <p>Our listings are independently curated based on verified Google reviews, industry certifications, and local expertise. We are not pay-to-play — every recommendation is earned. <a href="/about.html">Learn about our methodology →</a></p>
+                        ${specificSeo.author ? `<p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: ${specificSeo.author}</p>` : ''}
+                    </div>
+                </div>
+            </div>
+        </aside>`;
     }
 
     return `
@@ -73,15 +171,20 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
             <h1>${titleLine}</h1>
         </div>
     </section>
-    ${extraContent}
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        ${tocHtml}
+        ${editorialContent}
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    ${faqHtml}
     <section class="container section">
         <div id="related"></div>
     </section>
+    ${trustHtml}
     <script id="schema" type="application/ld+json"></script>
     `;
 }
@@ -113,11 +216,12 @@ cities.forEach(city => {
     fs.writeFileSync(`cities/${city.slug}.html`, html);
 });
 
-// 3.2 Industry Hubs
-industries.forEach(ind => {
-    const html = getBaseTemplate(`Best ${ind.name} in NZ | TopRated NZ`, `Browse top-rated businesses in ${ind.name}.`, generateHubContent(ind.name, `New Zealand's leading ${ind.name.toLowerCase()} specialists.`, indHeros[ind.slug] || indHeros['hospitality']));
-    fs.writeFileSync(`industries/${ind.slug}.html`, html);
-});
+// 3.2 Industry Hubs — DISABLED (city-first architecture)
+// Industry data is still used for categorisation but no global industry pages are generated.
+// industries.forEach(ind => {
+//     const html = getBaseTemplate(`Best ${ind.name} in NZ | TopRated NZ`, `Browse top-rated businesses in ${ind.name}.`, generateHubContent(ind.name, `New Zealand's leading ${ind.name.toLowerCase()} specialists.`, indHeros[ind.slug] || indHeros['hospitality']));
+//     fs.writeFileSync(`industries/${ind.slug}.html`, html);
+// });
 
 // 3.3 Category Hubs in Cities (index.html in subfolders)
 const categories = ['cuisine', 'trades', 'services', 'hospitality', 'automotive'];
@@ -199,16 +303,17 @@ cities.forEach(city => {
     });
 });
 
-// 3.5 Global Subcategory Pages
-industries.forEach(ind => {
-    ind.subCategories.forEach(sc => {
-        const map = subCatsMapping[sc];
-        if (!map) return;
-        const dir = path.join('industries', ind.slug);
-        if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-        const html = getBaseTemplate(`Best ${sc.replace(/-/g, ' ')} in New Zealand | TopRated NZ`, `The ultimate guide to ${sc} across NZ.`, generateLeafContent(`${sc.charAt(0).toUpperCase() + sc.replace(/-/g, ' ').slice(1)} <br><span class="text-primary">in New Zealand</span>`));
-        fs.writeFileSync(path.join(dir, `${sc}.html`), html);
-    });
-});
+// 3.5 Global Subcategory Pages — DISABLED (city-first architecture)
+// industries.forEach(ind => {
+//     ind.subCategories.forEach(sc => {
+//         const map = subCatsMapping[sc];
+//         if (!map) return;
+//         const dir = path.join('industries', ind.slug);
+//         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+//         const html = getBaseTemplate(`Best ${sc.replace(/-/g, ' ')} in New Zealand | TopRated NZ`, `The ultimate guide to ${sc} across NZ.`, generateLeafContent(`${sc.charAt(0).toUpperCase() + sc.replace(/-/g, ' ').slice(1)} <br><span class="text-primary">in New Zealand</span>`));
+//         fs.writeFileSync(path.join(dir, `${sc}.html`), html);
+//     });
+// });
 
 console.log('✅ All pages generated successfully.');
+

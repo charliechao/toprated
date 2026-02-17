@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best bar areas in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Courtenay Place is the main nightlife strip, Cuba Street offers creative and craft-focused bars, the laneways (Hannah's, Leeds Street, Eva Street) hide the city's best cocktail bars, and the waterfront has upscale options. Wellington rewards exploration — the best bars are often the hardest to find."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What time do bars close in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Wellington bars close at midnight on weeknights and 2–3am on weekends. Some venues on Courtenay Place hold late licences. The city's compact size means you can easily walk between bars."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wellington good for craft beer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington is NZ's craft beer capital with multiple award-winning breweries including Garage Project, ParrotDog, and Panhead operating taprooms in the city. The annual Beervana festival is the country's largest craft beer event."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Bars <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's bar scene is widely considered the best in New Zealand — intimate, inventive, and endlessly diverse. From award-winning cocktail bars hidden down laneways to craft beer taprooms on Cuba Street, rooftop bars overlooking Te Papa, and moody speakeasies behind unmarked doors, the capital packs an extraordinary density of quality drinking establishments into its compact centre. Wellington bartenders regularly win national awards, and the city's creative culture infuses every pour.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What are the best bar areas in Wellington?</summary>
+                            <p>Courtenay Place is the main nightlife strip, Cuba Street offers creative and craft-focused bars, the laneways (Hannah's, Leeds Street, Eva Street) hide the city's best cocktail bars, and the waterfront has upscale options. Wellington rewards exploration — the best bars are often the hardest to find.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What time do bars close in Wellington?</summary>
+                            <p>Most Wellington bars close at midnight on weeknights and 2–3am on weekends. Some venues on Courtenay Place hold late licences. The city's compact size means you can easily walk between bars.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Is Wellington good for craft beer?</summary>
+                            <p>Wellington is NZ's craft beer capital with multiple award-winning breweries including Garage Project, ParrotDog, and Panhead operating taprooms in the city. The annual Beervana festival is the country's largest craft beer event.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

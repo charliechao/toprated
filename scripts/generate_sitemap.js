@@ -41,8 +41,8 @@ function pathToUrl(filePath) {
 // Get priority based on page type
 function getPriority(url) {
     if (url === `${BASE_URL}/` || url === `${BASE_URL}/index.html`) return '1.0';
-    if (url.includes('/cities.html') || url.includes('/industries.html')) return '0.9';
-    if (url.match(/\/cities\/[^/]+\.html$/) || url.match(/\/industries\/[^/]+\.html$/)) return '0.8';
+    if (url.includes('/cities.html')) return '0.9';
+    if (url.match(/\/cities\/[^/]+\.html$/)) return '0.8';
     if (url.includes('/index.html') || url.endsWith('/')) return '0.7';
     return '0.6';
 }

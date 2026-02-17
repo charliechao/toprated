@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What should I look for in an Auckland car dealer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key indicators of a reputable Auckland car dealer include Motor Trade Association (MTA) membership, transparent pricing, comprehensive pre-purchase inspections, written warranties, and strong Google review ratings. Always check the dealer's history on the Motor Vehicle Disputes Tribunal website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get finance through Auckland car dealers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most top-rated Auckland car dealers offer competitive finance packages through major lenders. Interest rates typically range from 7.9% to 12.9% depending on the vehicle age and your credit profile. Always compare dealer finance with bank rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Auckland car dealers offer warranties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reputable Auckland dealers offer Consumer Guarantees Act protection plus additional mechanical warranties ranging from 3 months to 3 years depending on the vehicle. New car franchises typically include manufacturer warranties of 3–7 years."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Car Dealers <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Auckland is New Zealand's largest automotive market, home to hundreds of new and used car dealerships across the region. From premium European franchises in Newmarket and Greenlane to trusted independent dealers on Great South Road, Auckland's top-rated car dealers offer competitive pricing, comprehensive vehicle inspections, finance options, and after-sales warranties. Whether you're looking for a family SUV, a fuel-efficient commuter, or a luxury marque, our curated list features only dealers with consistently outstanding customer reviews.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What should I look for in an Auckland car dealer?</summary>
+                            <p>Key indicators of a reputable Auckland car dealer include Motor Trade Association (MTA) membership, transparent pricing, comprehensive pre-purchase inspections, written warranties, and strong Google review ratings. Always check the dealer's history on the Motor Vehicle Disputes Tribunal website.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Can I get finance through Auckland car dealers?</summary>
+                            <p>Yes, most top-rated Auckland car dealers offer competitive finance packages through major lenders. Interest rates typically range from 7.9% to 12.9% depending on the vehicle age and your credit profile. Always compare dealer finance with bank rates.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do Auckland car dealers offer warranties?</summary>
+                            <p>Reputable Auckland dealers offer Consumer Guarantees Act protection plus additional mechanical warranties ranging from 3 months to 3 years depending on the vehicle. New car franchises typically include manufacturer warranties of 3–7 years.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

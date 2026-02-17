@@ -56,10 +56,10 @@ async function renderHubGrid() {
     const path = location.pathname;
     // City hub: /cities/auckland or /cities/auckland.html
     const cityMatch = path.match(/^\/cities\/([^\/.]+)(\.html)?$/);
-    // Industry hub: /industries/hospitality or /industries/hospitality.html
-    const industryMatch = path.match(/^\/industries\/([^\/.]+)(\.html)?$/);
+    // Industry hub: DISABLED (city-first architecture — no global industry pages)
+    // const industryMatch = path.match(/^\/industries\/([^\/\.]+)(\.html)?$/);
     // Category hub: /cities/auckland/trades/ or /cities/auckland/trades/index.html
-    const categoryHubMatch = path.match(/^\/cities\/([^\/.]+)\/([^\/.]+)\/?(index\.html)?$/);
+    const categoryHubMatch = path.match(/^\/cities\/([^\/\.]+)\/([^\/\.]+)\/?(index\.html)?$/);
 
     if (cityMatch) {
         const city = cityMatch[1];
@@ -72,7 +72,8 @@ async function renderHubGrid() {
             { slug: 'cuisine', name: 'Food & Cuisine', icon: 'fa-bowl-food' },
             { slug: 'trades', name: 'Home Trades', icon: 'fa-hammer' },
             { slug: 'services', name: 'Services', icon: 'fa-briefcase' },
-            { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel' }
+            { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel' },
+            { slug: 'automotive', name: 'Automotive', icon: 'fa-car' }
         ];
 
         const cards = categories.map(cat => {
@@ -103,19 +104,6 @@ async function renderHubGrid() {
                 </a>`;
         }).join('');
         contentEl.innerHTML = `<h2>${industry.name} in ${city.charAt(0).toUpperCase() + city.slice(1)}</h2><div class="grid-cols-3">${cards}</div>`;
-    } else if (industryMatch) {
-        const industry = industryMatch[1];
-        const data = await loadJSON('/data/industries.json');
-        const indInfo = data?.find(i => i.slug === industry);
-        if (!indInfo) return;
-        // Sub‑categories are the folder names inside the industry folder.
-        const subCats = indInfo.subCategories || [];
-        const cards = subCats.map(sc => {
-            const href = `/industries/${industry}/${sc}/`;
-            const title = sc.charAt(0).toUpperCase() + sc.slice(1);
-            return `<a class="grid-card" href="${href}"><h3>${title}</h3></a>`;
-        }).join('');
-        contentEl.innerHTML = `<h2>${indInfo.name} – Sub‑categories</h2><div class="grid">${cards}</div>`;
     }
 }
 

@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best hotel areas in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The waterfront and CBD offer the most popular hotel locations — walking distance to everything. Thorndon is quieter and close to Parliament, while Te Aro (Cuba Quarter) puts you in the heart of the café and bar scene."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do hotels cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington hotel rates range from $120–$200/night for 3-star properties, $200–$350 for 4-star, and $350–$600+ for premium boutique and 5-star hotels. Rates spike during major events like WOW, the NZ Festival, and Beervana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the best time to visit Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Summer (December–February) offers the best weather, but Wellington's arts festivals in February–March and October–November draw big crowds. Winter rates are lower but expect wind and rain. Book well ahead for any major event period."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Hotels <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's hotel scene ranges from heritage luxury in the parliamentary precinct to design-forward boutique properties in the Cuba Quarter and waterfront apartments with harbour views. The capital's compact layout means most top-rated hotels put you within walking distance of Te Papa, Courtenay Place dining, Cuba Street cafes, and the cable car. Whether you're visiting for business, a weekend getaway, or the city's famous arts festivals, Wellington's best hotels combine genuine Kiwi hospitality with world-class comfort.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What are the best hotel areas in Wellington?</summary>
+                            <p>The waterfront and CBD offer the most popular hotel locations — walking distance to everything. Thorndon is quieter and close to Parliament, while Te Aro (Cuba Quarter) puts you in the heart of the café and bar scene.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much do hotels cost in Wellington?</summary>
+                            <p>Wellington hotel rates range from $120–$200/night for 3-star properties, $200–$350 for 4-star, and $350–$600+ for premium boutique and 5-star hotels. Rates spike during major events like WOW, the NZ Festival, and Beervana.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>When is the best time to visit Wellington?</summary>
+                            <p>Summer (December–February) offers the best weather, but Wellington's arts festivals in February–March and October–November draw big crowds. Winter rates are lower but expect wind and rain. Book well ahead for any major event period.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

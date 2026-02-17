@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are the best Indian restaurants in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's Indian dining is concentrated around Courtenay Place, Cuba Street, Newtown, and the CBD. Each area offers different specialities — from fine dining in the city centre to casual BYO gems in the suburbs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Indian food cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casual Indian dining in Wellington ranges from $16–$22 for curries, while premium Indian restaurants charge $25–$38 for mains. Many offer excellent value banquet menus for groups and lunch specials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Wellington Indian restaurants cater to dietary requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Indian cuisine is naturally well-suited to vegetarian and vegan diets. Most Wellington Indian restaurants clearly mark dietary options and can adjust spice levels. Many also offer gluten-free and dairy-free alternatives."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Indian Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's Indian dining scene is vibrant and diverse, spanning authentic regional cuisines from the tandoori houses of Courtenay Place to the South Indian dosa specialists of Newtown and the modern Indian fusion restaurants of the CBD. The capital's top-rated Indian restaurants source premium spices, prepare dishes fresh to order, and cater to a wide range of dietary needs including vegetarian, vegan, and gluten-free options.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where are the best Indian restaurants in Wellington?</summary>
+                            <p>Wellington's Indian dining is concentrated around Courtenay Place, Cuba Street, Newtown, and the CBD. Each area offers different specialities — from fine dining in the city centre to casual BYO gems in the suburbs.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does Indian food cost in Wellington?</summary>
+                            <p>Casual Indian dining in Wellington ranges from $16–$22 for curries, while premium Indian restaurants charge $25–$38 for mains. Many offer excellent value banquet menus for groups and lunch specials.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do Wellington Indian restaurants cater to dietary requirements?</summary>
+                            <p>Yes, Indian cuisine is naturally well-suited to vegetarian and vegan diets. Most Wellington Indian restaurants clearly mark dietary options and can adjust spice levels. Many also offer gluten-free and dairy-free alternatives.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

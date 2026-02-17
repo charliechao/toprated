@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a car service cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A basic car service in Wellington costs $150–$250, intermediate service $250–$400, and full service $400–$600+. European vehicles typically cost more. Always ask for a detailed quote before authorising work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I get a WoF in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WoF inspections are available from VTNZ stations and authorised inspection organisations across Wellington including the CBD, Petone, Lower Hutt, Upper Hutt, and Porirua. Most top-rated mechanics also offer WoF inspections — expect to pay $50–$70."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Wellington mechanics offer courtesy cars?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many top-rated Wellington mechanics offer courtesy cars or can arrange drop-off/pick-up services, particularly for longer repair jobs. Ask when booking your appointment."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Mechanics <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's top-rated mechanics deliver expert vehicle servicing, WoF inspections, and repairs across the region. From European car specialists in Miramar to trusted general mechanics in Lower Hutt, the capital's best workshops combine modern diagnostic equipment with old-school expertise. Whether you need a routine service, cam belt replacement, or complex fault diagnosis, these AA-approved mechanics deliver honest, reliable results.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does a car service cost in Wellington?</summary>
+                            <p>A basic car service in Wellington costs $150–$250, intermediate service $250–$400, and full service $400–$600+. European vehicles typically cost more. Always ask for a detailed quote before authorising work.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where can I get a WoF in Wellington?</summary>
+                            <p>WoF inspections are available from VTNZ stations and authorised inspection organisations across Wellington including the CBD, Petone, Lower Hutt, Upper Hutt, and Porirua. Most top-rated mechanics also offer WoF inspections — expect to pay $50–$70.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do Wellington mechanics offer courtesy cars?</summary>
+                            <p>Many top-rated Wellington mechanics offer courtesy cars or can arrange drop-off/pick-up services, particularly for longer repair jobs. Ask when booking your appointment.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

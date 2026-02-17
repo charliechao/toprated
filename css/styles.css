@@ -653,3 +653,384 @@ footer {
 .breadcrumb span {
     text-transform: capitalize;
 }
+
+/* ==============================================
+   SEO Content Sections (Buyer's Guide Pages)
+   ============================================== */
+
+/* Content Wrapper */
+.seo-content-wrapper {
+    padding-top: 2rem;
+}
+
+/* Lead / Intro Text */
+.seo-lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-text-main);
+    max-width: 800px;
+}
+
+.seo-updated {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.seo-updated i {
+    color: var(--color-primary);
+    margin-right: 0.4rem;
+}
+
+/* Table of Contents */
+.seo-toc {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--color-primary);
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    max-width: 600px;
+}
+
+.seo-toc__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-main);
+}
+
+.seo-toc__title i {
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+}
+
+.seo-toc__list {
+    list-style: decimal;
+    padding-left: 1.25rem;
+    margin: 0;
+}
+
+.seo-toc__list li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.seo-toc__list li a {
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.seo-toc__list li a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+}
+
+/* Editorial Sections */
+.seo-section {
+    padding: 2.5rem 0;
+}
+
+.seo-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    color: var(--color-text-main);
+}
+
+.seo-section h2 i {
+    color: var(--color-primary);
+    margin-right: 0.6rem;
+    font-size: 0.85em;
+}
+
+/* Guide Content (HTML paragraphs) */
+.seo-guide-content {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--color-text-main);
+    max-width: 800px;
+}
+
+.seo-guide-content p {
+    margin-bottom: 1rem;
+}
+
+.seo-guide-content strong {
+    color: var(--color-text-main);
+}
+
+.seo-guide-content a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.seo-guide-content a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* Section Variants */
+.seo-section--guide {
+    background: rgba(20, 184, 166, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    margin: 0 calc(-50vw + 50%);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+}
+
+.seo-section--pricing {
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.seo-section--questions {
+    background: rgba(245, 158, 11, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    margin: 0 calc(-50vw + 50%);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+}
+
+/* Price Table */
+.seo-price-table-wrap {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+    max-width: 700px;
+}
+
+.seo-price-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.seo-price-table thead {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.seo-price-table th {
+    padding: 0.85rem 1.25rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+.seo-price-table td {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--color-text-main);
+}
+
+.seo-price-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.seo-price-table tbody tr:hover {
+    background: rgba(20, 184, 166, 0.04);
+}
+
+.seo-price-table td strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Questions List */
+.seo-questions-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+}
+
+.seo-questions-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seo-questions-list li:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.seo-questions-list li i {
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+/* FAQ Accordion */
+.seo-section--faq {
+    background: #f6f8fa;
+    padding: 3rem 0;
+    margin: 0 calc(-50vw + 50%);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+}
+
+.seo-faq-grid {
+    max-width: 800px;
+}
+
+.seo-faq-item {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.seo-faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.seo-faq-item summary {
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text-main);
+    transition: background 0.2s ease;
+}
+
+.seo-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.seo-faq-item summary::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.seo-faq-item[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.seo-faq-item[open] summary {
+    background: rgba(20, 184, 166, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.seo-faq-item p {
+    padding: 1.25rem 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--color-text-muted);
+}
+
+/* Trust / Author Box */
+.seo-trust-box {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.06), rgba(245, 158, 11, 0.04));
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2.5rem 0;
+}
+
+.seo-trust-inner {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    max-width: 700px;
+}
+
+.seo-trust-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.seo-trust-text strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.seo-trust-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.seo-trust-text a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.seo-trust-text a:hover {
+    text-decoration: underline;
+}
+
+.seo-trust-author {
+    font-size: 0.85rem !important;
+    color: var(--color-text-muted) !important;
+    font-style: italic;
+}
+
+.seo-trust-author i {
+    color: var(--color-secondary);
+    margin-right: 0.3rem;
+}
+
+/* Responsive adjustments for SEO sections */
+@media (max-width: 768px) {
+    .seo-toc {
+        max-width: 100%;
+    }
+
+    .seo-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .seo-section--guide,
+    .seo-section--questions,
+    .seo-section--faq {
+        margin: 0 -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .seo-trust-inner {
+        flex-direction: column;
+    }
+
+    .seo-price-table th,
+    .seo-price-table td {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}

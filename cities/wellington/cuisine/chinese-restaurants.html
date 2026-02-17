@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where is the best Chinese food in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's best Chinese restaurants are concentrated in the CBD around Courtenay Place, Dixon Street, and Willis Street. Petone's Jackson Street also has excellent Chinese dining options. The compact city makes it easy to explore multiple venues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there good yum cha in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, several Wellington restaurants offer yum cha (dim sum) on weekends, particularly in the CBD. Dragon Restaurant and Grand Century are popular choices. Book ahead for weekend brunch sessions as they fill up quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Wellington Chinese restaurants open late?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many Wellington Chinese restaurants stay open until 10–11pm, with some Courtenay Place venues open until midnight or later on weekends — perfect for post-theatre or late-night dining."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Chinese Restaurants <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's Chinese dining scene punches well above its weight, with authentic regional cuisines tucked into the capital's laneways and main streets. From late-night dumpling houses on Courtenay Place to traditional Cantonese restaurants in the CBD and modern Chinese fusion in Petone, Wellington offers an impressive variety of Chinese culinary traditions — all within walking distance of each other in the compact city centre.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>Where is the best Chinese food in Wellington?</summary>
+                            <p>Wellington's best Chinese restaurants are concentrated in the CBD around Courtenay Place, Dixon Street, and Willis Street. Petone's Jackson Street also has excellent Chinese dining options. The compact city makes it easy to explore multiple venues.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Is there good yum cha in Wellington?</summary>
+                            <p>Yes, several Wellington restaurants offer yum cha (dim sum) on weekends, particularly in the CBD. Dragon Restaurant and Grand Century are popular choices. Book ahead for weekend brunch sessions as they fill up quickly.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Are Wellington Chinese restaurants open late?</summary>
+                            <p>Many Wellington Chinese restaurants stay open until 10–11pm, with some Courtenay Place venues open until midnight or later on weekends — perfect for post-theatre or late-night dining.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

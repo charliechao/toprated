@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a house cleaner cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Residential cleaning in Wellington typically costs $35–$55 per hour per cleaner. Deep cleans and end-of-tenancy cleans are usually quoted as fixed-price packages ranging from $250–$600 depending on property size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Wellington cleaners bring their own supplies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most professional Wellington cleaning services provide their own equipment and eco-friendly cleaning products. Some offer the option to use your preferred products. Always confirm this when booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I book a cleaner in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weekly cleaning is most popular for busy Wellington professionals, with fortnightly being the most common budget-friendly option. Many services also offer one-off deep cleans for spring cleaning, pre-sale preparation, or move-in/move-out situations."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Cleaning Services <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's top-rated cleaning services deliver spotless results for homes and businesses across the capital region. From regular domestic cleaning in Kelburn to end-of-tenancy cleans in the Hutt Valley and commercial office maintenance in the CBD, the city's best cleaning companies use eco-friendly products, vetted staff, and efficient systems to keep Wellington's homes and workplaces sparkling clean despite the capital's challenging weather.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does a house cleaner cost in Wellington?</summary>
+                            <p>Residential cleaning in Wellington typically costs $35–$55 per hour per cleaner. Deep cleans and end-of-tenancy cleans are usually quoted as fixed-price packages ranging from $250–$600 depending on property size.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Do Wellington cleaners bring their own supplies?</summary>
+                            <p>Most professional Wellington cleaning services provide their own equipment and eco-friendly cleaning products. Some offer the option to use your preferred products. Always confirm this when booking.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I book a cleaner in Wellington?</summary>
+                            <p>Weekly cleaning is most popular for busy Wellington professionals, with fortnightly being the most common budget-friendly option. Many services also offer one-off deep cleans for spring cleaning, pre-sale preparation, or move-in/move-out situations.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

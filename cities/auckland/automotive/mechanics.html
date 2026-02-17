@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a car service cost in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A basic car service in Auckland costs $150–$250, an intermediate service $250–$400, and a full service $400–$600+. Prices vary by vehicle make — European cars typically cost more to service than Japanese models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I service my car in Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most manufacturers recommend servicing every 10,000–15,000 km or every 12 months, whichever comes first. Regular servicing is essential for maintaining your warranty and catching potential issues early."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a WoF and a service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Warrant of Fitness (WoF) is a government safety inspection checking brakes, tyres, lights, and structural integrity — it's legally required. A service is preventative maintenance including oil changes, filter replacements, and fluid top-ups to keep your car running optimally."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Mechanics <br><span class="text-primary">in Auckland</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Auckland's top-rated mechanics keep your vehicle running safely and efficiently with expert servicing, WoF inspections, and repairs. From European car specialists in Ponsonby to trusted general mechanics in East Auckland, the city's best workshops combine diagnostic expertise with honest, transparent pricing. Whether you need a routine service, brake replacement, or complex engine diagnostics, these AA-approved and MTA-affiliated mechanics deliver reliable results backed by workmanship guarantees.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does a car service cost in Auckland?</summary>
+                            <p>A basic car service in Auckland costs $150–$250, an intermediate service $250–$400, and a full service $400–$600+. Prices vary by vehicle make — European cars typically cost more to service than Japanese models.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I service my car in Auckland?</summary>
+                            <p>Most manufacturers recommend servicing every 10,000–15,000 km or every 12 months, whichever comes first. Regular servicing is essential for maintaining your warranty and catching potential issues early.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What's the difference between a WoF and a service?</summary>
+                            <p>A Warrant of Fitness (WoF) is a government safety inspection checking brakes, tyres, lights, and structural integrity — it's legally required. A service is preventative maintenance including oil changes, filter replacements, and fluid top-ups to keep your car running optimally.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>

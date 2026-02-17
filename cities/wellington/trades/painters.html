@@ -42,7 +42,36 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does house painting cost in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interior painting in Wellington costs $35–$55 per square metre, while exterior painting ranges from $45–$75 per square metre depending on access difficulty and preparation required. A full exterior repaint of an average Wellington home costs $8,000–$18,000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I repaint my house in Wellington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wellington's harsh weather means exterior repainting is needed every 7–10 years — more frequently for exposed, north-facing surfaces. Quality paint and thorough preparation extend the life of your paint job significantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What paint is best for Wellington homes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium acrylic exterior paints from brands like Dulux Weathershield, Resene Sonyx, or Wattyl Solagard are recommended for Wellington conditions. These are specifically formulated to resist UV damage, salt air, and driving rain."
+      }
+    }
+  ]
+}</script>
 </head>
 
 <body>
@@ -58,15 +87,55 @@
             <h1>Painters <br><span class="text-primary">in Wellington</span></h1>
         </div>
     </section>
-    
-    <section class="container section">
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Wellington's extreme weather — driving rain, salt air, and relentless wind — makes quality exterior house painting essential for protecting your home. The capital's top-rated painters understand these unique challenges, using premium weather-resistant paint systems and proper surface preparation to deliver finishes that last. From heritage colour schemes on Victorian villas in Thorndon to contemporary finishes on modern Petone townhouses, Wellington's best painters combine craftsmanship with practical weather knowledge.</p>
+                    
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
         <div id="business-list" class="business-list">
             <p class="loading">Loading top-rated businesses...</p>
         </div>
     </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>How much does house painting cost in Wellington?</summary>
+                            <p>Interior painting in Wellington costs $35–$55 per square metre, while exterior painting ranges from $45–$75 per square metre depending on access difficulty and preparation required. A full exterior repaint of an average Wellington home costs $8,000–$18,000.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How often should I repaint my house in Wellington?</summary>
+                            <p>Wellington's harsh weather means exterior repainting is needed every 7–10 years — more frequently for exposed, north-facing surfaces. Quality paint and thorough preparation extend the life of your paint job significantly.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>What paint is best for Wellington homes?</summary>
+                            <p>Premium acrylic exterior paints from brands like Dulux Weathershield, Resene Sonyx, or Wattyl Solagard are recommended for Wellington conditions. These are specifically formulated to resist UV damage, salt air, and driving rain.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
     <section class="container section">
         <div id="related"></div>
     </section>
+    
     <script id="schema" type="application/ld+json"></script>
     
   </main>
