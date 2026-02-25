@@ -1,0 +1,174 @@
+{
+  "cafes": [
+    {
+      "id": 66,
+      "name": "Remedy Coffee",
+      "neighborhood": "CBD",
+      "rating": 4.8,
+      "reviews": 450,
+      "description": "Meticulous brewing and innovative pour-over methods in the CBD.",
+      "address": "1 Wellesley St W, Auckland CBD"
+    },
+    {
+      "id": 67,
+      "name": "Allpress Espresso",
+      "neighborhood": "Freemans Bay",
+      "rating": 4.7,
+      "reviews": 890,
+      "description": "A New Zealand institution known for full-bodied and balanced espresso.",
+      "address": "8 Drake St, Freemans Bay, Auckland"
+    },
+    {
+      "id": 68,
+      "name": "Chuffed",
+      "neighborhood": "CBD",
+      "rating": 4.8,
+      "reviews": 520,
+      "description": "A hidden oasis courtyard in the CBD with a relaxed atmosphere and great coffee.",
+      "address": "43 High St, Auckland CBD"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 117,
+      "name": "Ahi",
+      "rating": 4.9,
+      "reviews": 1850,
+      "description": "Award-winning 3-Hat restaurant celebrating New Zealand cuisine. Chef Ben Bayly's innovative menu features organic, locally-sourced ingredients with iconic dishes like the Scampi Corn Dog.",
+      "address": "51 Customs Street East, Auckland CBD"
+    },
+    {
+      "id": 118,
+      "name": "The Grove",
+      "neighborhood": "CBD",
+      "rating": 4.8,
+      "reviews": 1420,
+      "description": "Exquisite modern New Zealand fine dining in a relaxed yet sophisticated atmosphere. Winner of multiple Metro Restaurant of the Year awards.",
+      "address": "St Patrick's Square, Wyndham Street, Auckland CBD"
+    },
+    {
+      "id": 119,
+      "name": "Cassia",
+      "neighborhood": "CBD",
+      "rating": 4.8,
+      "reviews": 1680,
+      "description": "Modern Indian fine dining with an exciting twist on traditional dishes. Plush interiors and a mouth-watering menu featuring signature roasted carrot with vindaloo.",
+      "address": "5 Fort Lane, Auckland CBD"
+    }
+  ],
+  "indian-restaurants": [
+    {
+      "id": 147,
+      "name": "1947 Eatery",
+      "neighborhood": "CBD",
+      "rating": 4.8,
+      "reviews": 420,
+      "description": "Authentic yet contemporary Indian dining with shared plates and tandoor dishes. Known for innovative flavors and modern presentation.",
+      "address": "Auckland CBD"
+    },
+    {
+      "id": 148,
+      "name": "Satya South Indian Restaurant",
+      "neighborhood": "Sandringham",
+      "rating": 4.7,
+      "reviews": 680,
+      "description": "Southern Indian specialist beyond butter chicken. Authentic Rajasthani dahi puri and special chicken curry with paratha.",
+      "address": "Multiple Auckland locations"
+    },
+    {
+      "id": 283,
+      "name": "Paradise Indian Restaurant",
+      "neighborhood": "Sandringham",
+      "rating": 4.7,
+      "reviews": 560,
+      "description": "Multi-award-winning Indian restaurant in Sandringham with over 35 years of serving authentic North and South Indian cuisine. Famous for biryanis, tandoori specials, and generous vegetarian options.",
+      "address": "Sandringham Road, Auckland"
+    }
+  ],
+  "italian-restaurants": [
+    {
+      "id": 152,
+      "name": "Amano",
+      "neighborhood": "Britomart",
+      "rating": 4.9,
+      "reviews": 1250,
+      "description": "Rustic yet elegant Italian dining in Auckland CBD. Artisan breads, fresh pastries, and handmade pasta with locally sourced ingredients.",
+      "address": "Britomart, Auckland CBD"
+    },
+    {
+      "id": 153,
+      "name": "Baduzzi",
+      "neighborhood": "Wynyard Quarter",
+      "rating": 4.8,
+      "reviews": 920,
+      "description": "Italian-inspired menu in vibrant Wynyard Quarter. Outstanding meatballs and extensive wine selection in retro-chic atmosphere.",
+      "address": "Wynyard Quarter, Auckland"
+    },
+    {
+      "id": 284,
+      "name": "Prego",
+      "neighborhood": "Ponsonby",
+      "rating": 4.8,
+      "reviews": 1680,
+      "description": "Iconic Ponsonby Road Italian restaurant and one of Auckland's longest-running dining institutions. Beloved for its buzzing atmosphere, wood-fired pizzas, handmade pasta, and exceptional wine list spanning 30+ years.",
+      "address": "226 Ponsonby Road, Ponsonby"
+    }
+  ],
+  "thai-restaurants": [
+    {
+      "id": 157,
+      "name": "Nahm",
+      "rating": 4.7,
+      "reviews": 650,
+      "description": "Traditional Thai with modern Asian twist. Sharing-style menu designed for groups and authentic flavors.",
+      "address": "Auckland CBD"
+    },
+    {
+      "id": 158,
+      "name": "@Bangkok",
+      "neighborhood": "Kingsland",
+      "rating": 4.8,
+      "reviews": 890,
+      "description": "Popular Kingsland neighborhood spot. Famous for massaman curry with 'ugly puffy roti' - a local favorite.",
+      "address": "Kingsland, Auckland"
+    },
+    {
+      "id": 285,
+      "name": "Thai Street",
+      "neighborhood": "CBD",
+      "rating": 4.7,
+      "reviews": 380,
+      "description": "Vibrant Auckland CBD Thai eatery bringing authentic Bangkok street food flavours to New Zealand. Pad see ew, green curry, and mango sticky rice prepared by Thai-born chefs using imported ingredients.",
+      "address": "Auckland CBD"
+    }
+  ],
+  "french-restaurants": [
+    {
+      "id": 162,
+      "name": "The French Café",
+      "neighborhood": "Symonds Street",
+      "rating": 4.9,
+      "reviews": 850,
+      "description": "Auckland's premier fine dining French restaurant. Contemporary French cuisine with seasonal NZ ingredients.",
+      "address": "Symonds Street, Auckland CBD"
+    },
+    {
+      "id": 163,
+      "name": "Origine",
+      "neighborhood": "Viaduct Harbour",
+      "rating": 4.8,
+      "reviews": 620,
+      "description": "Spectacular French dining on Auckland's waterfront. Classic techniques with best of NZ produce.",
+      "address": "Viaduct Harbour, Auckland"
+    },
+    {
+      "id": 286,
+      "name": "Clooney",
+      "neighborhood": "Freemans Bay",
+      "rating": 4.9,
+      "reviews": 720,
+      "description": "One of Auckland's most acclaimed fine dining restaurants blending French technique with New Zealand produce. Multi-award-winning chef-driven tasting menus, an exceptional wine programme, and sophisticated Freemans Bay setting.",
+      "address": "33 Sale Street, Freemans Bay"
+    }
+  ]
+}

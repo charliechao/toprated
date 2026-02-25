@@ -71,16 +71,31 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 1250,
-    "description": "Beloved for hand-pulled Sichuan noodles and famous dan dan dumplings. A Mt Eden favorite with locations across Auckland, known for generous portions and customizable spice levels.",
+    "description": "Eden Noodles is a Dominion Road institution beloved for its authentic hand-pulled Sichuan noodles, famous dan dan dumplings in addictive chilli oil, and customizable spice levels that cater to everyone from mild-seekers to hardcore spice enthusiasts. With multiple Auckland locations, it has become the city's benchmark for affordable, no-frills Sichuan cuisine — the kind of place where the queue out the door is the best review you'll ever read.",
     "website": "https://www.edennoodles.co.nz",
     "image": "/img/businesses/noodles.png",
     "address": "105 Dominion Rd, Mount Eden, Auckland",
     "neighborhood": "Mt Eden",
+    "phone": "09 630 1598",
     "tags": [
       "Sichuan",
       "Noodles",
       "Dumplings",
-      "Spicy"
+      "Spicy",
+      "Dominion Road"
+    ],
+    "highlights": [
+      "Auckland's most beloved Sichuan noodle restaurant",
+      "Famous hand-pulled dan dan noodles and chilli oil dumplings",
+      "Customizable spice levels from mild to extreme",
+      "Multiple Auckland locations for convenience",
+      "Exceptional value with generous portions"
+    ],
+    "specialties": [
+      "Dan Dan Noodles",
+      "Sichuan Dumplings",
+      "Hand-Pulled Noodles",
+      "Spicy Dishes"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -93,16 +108,31 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 850,
-    "description": "The definitive Auckland yum cha destination for two decades. Authentic Hong Kong-style Cantonese cuisine with fresh seafood and over 80 dim sum varieties.",
+    "description": "Grand Harbour has been Auckland's definitive yum cha destination for over two decades, drawing weekend crowds from across the city to its harbourside Viaduct location. With over 80 dim sum varieties, traditional trolley service, live seafood tanks, and authentic Hong Kong-style Cantonese cooking, it delivers the full yum cha experience — from silky har gow to crisp BBQ pork buns and delicate turnip cake. A true Auckland dining institution.",
     "website": "https://grandharbour.co.nz",
     "image": "/img/businesses/dim-sum.png",
     "address": "Cnr Pakenham St & Viaduct Harbour Ave, Auckland",
     "neighborhood": "Viaduct",
+    "phone": "09 357 6889",
     "tags": [
       "Cantonese",
       "Dim Sum",
       "Yum Cha",
-      "Seafood"
+      "Seafood",
+      "Viaduct"
+    ],
+    "highlights": [
+      "Auckland's premier yum cha destination for over 20 years",
+      "Over 80 dim sum varieties with traditional trolley service",
+      "Stunning Viaduct Harbour waterfront location",
+      "Live seafood tanks for the freshest Cantonese dishes",
+      "Weekend institution — arrive before 11am to beat the queue"
+    ],
+    "specialties": [
+      "Yum Cha",
+      "Dim Sum",
+      "Cantonese Seafood",
+      "Banquet Dining"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -115,16 +145,31 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 420,
-    "description": "Sophisticated Chinese fine dining at SkyCity bridging tradition and modernity. Renowned for one of Auckland's best yum cha selections and signature Peking Duck.",
+    "description": "Huami at SkyCity is Auckland's most sophisticated Chinese fine dining experience, seamlessly bridging Cantonese tradition with contemporary innovation. The restaurant is renowned for its fruit-wood roasted Peking Duck — carved tableside with precision — truffle prawn dumplings during yum cha service, and a stunning interior featuring a dramatic open kitchen and custom Chinese artworks. Ideal for business entertaining or special celebrations.",
     "website": "https://skycityauckland.co.nz/restaurants/huami",
     "image": "/img/businesses/huami.png",
     "address": "87 Federal St, Auckland CBD",
     "neighborhood": "CBD",
+    "phone": "09 363 7070",
     "tags": [
       "Fine Dining",
       "Peking Duck",
       "Yum Cha",
-      "CBD"
+      "CBD",
+      "Cantonese"
+    ],
+    "highlights": [
+      "Auckland's premier Chinese fine dining at SkyCity",
+      "Signature fruit-wood roasted Peking Duck carved tableside",
+      "Premium yum cha with truffle prawn dumplings",
+      "Stunning interior with dramatic open kitchen",
+      "Extensive wine, cocktail, and sake list"
+    ],
+    "specialties": [
+      "Peking Duck",
+      "Fine Dining Yum Cha",
+      "Cantonese",
+      "Special Occasions"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -137,16 +182,31 @@
     "city": "Auckland",
     "rating": 4.6,
     "reviews": 310,
-    "description": "A dark, moody underground gem in Britomart serving Western Chinese street food inspired by Beijing night markets. Famous for lamb ribs and biang biang noodles.",
+    "description": "Ghost Street is a dark, moody underground gem in Britomart that channels the energy of Beijing's famed Gui Jie (Ghost Street) night market. Specialising in Western Chinese and Xi'an-inspired street food, the kitchen turns out incredible cumin-crusted lamb ribs, hand-pulled biang biang noodles, and skewers seasoned with chilli and Sichuan pepper. The atmosphere — low lighting, communal tables, and a buzzing late-night crowd — is unlike any other Chinese restaurant in Auckland.",
     "website": "https://ghoststreetauckland.nz",
     "image": "/img/businesses/ghost-street.png",
     "address": "Tuawhiti Lane, Britomart, Auckland",
     "neighborhood": "Britomart",
+    "phone": "09 303 9393",
     "tags": [
       "Street Food",
       "Noodles",
       "Xi'an",
+      "Late Night",
       "Britomart"
+    ],
+    "highlights": [
+      "Unique underground atmosphere inspired by Beijing's Ghost Street",
+      "Xi'an-style cumin lamb ribs and biang biang noodles",
+      "Open late — perfect for post-show or late-night dining",
+      "Communal dining ideal for sharing multiple dishes",
+      "One of Auckland's most distinctive Chinese dining experiences"
+    ],
+    "specialties": [
+      "Xi'an Street Food",
+      "Lamb Ribs",
+      "Biang Biang Noodles",
+      "Late Night"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -159,16 +219,31 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 280,
-    "description": "A Herne Bay institution celebrated for Auckland's finest Peking Duck and exemplary service. Traditional Cantonese cuisine in an elegant setting.",
+    "description": "Empress Garden is a Herne Bay institution that has served Auckland's finest Cantonese cuisine for decades. Renowned for what many consider the best Peking Duck in Auckland — crisp-skinned and carved tableside with traditional accompaniments — and exemplary service that sets it apart from the crowd. The elegant setting and consistently outstanding Cantonese cooking make it a favourite for family celebrations and intimate dinner parties.",
     "website": "https://empressgardenrestaurant.co.nz",
     "image": "/img/businesses/empress-garden.png",
     "address": "227 Jervois Rd, Herne Bay, Auckland",
     "neighborhood": "Herne Bay",
+    "phone": "09 376 8388",
     "tags": [
       "Peking Duck",
       "Cantonese",
       "Fine Dining",
-      "Traditional"
+      "Traditional",
+      "Herne Bay"
+    ],
+    "highlights": [
+      "Widely regarded as Auckland's best Peking Duck",
+      "Decades-long Herne Bay institution with loyal following",
+      "Elegant setting perfect for celebrations and banquets",
+      "Exemplary service and attention to detail",
+      "Traditional Cantonese cooking with consistent quality"
+    ],
+    "specialties": [
+      "Peking Duck",
+      "Cantonese Banquets",
+      "Seafood",
+      "Special Occasions"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -181,16 +256,30 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 1540,
-    "description": "Award-winning robata-style Japanese dining in the heart of Auckland. Chef Nic Watt's signature restaurant at SkyCity offers a contemporary take on traditional open-charcoal cooking.",
+    "description": "Award-winning robata-style Japanese dining in the heart of Auckland's Federal Street precinct. Executive Chef Nic Watt's signature SkyCity restaurant is celebrated for its contemporary take on traditional open-charcoal Binchotan cooking, with a menu that champions New Zealand's finest seasonal ingredients alongside premium Japanese imports like A5 Wagyu.",
     "website": "https://skycityauckland.co.nz/restaurants/masu",
     "image": "/img/businesses/masu.jpg",
     "address": "90 Federal St, Auckland CBD",
     "neighborhood": "CBD",
+    "phone": "09 363 6278",
     "tags": [
       "Robata",
       "Fine Dining",
       "Sushi",
       "CBD"
+    ],
+    "highlights": [
+      "Auckland's premier robata grill experience over Binchotan charcoal",
+      "Award-winning chef Nic Watt's flagship restaurant",
+      "Extensive premium sake and Japanese whisky list",
+      "Spacious, architecturally stunning dining room",
+      "Locally sourced sushi bar with daily fresh catches"
+    ],
+    "specialties": [
+      "Robata Grill",
+      "Wagyu Beef",
+      "Sushi",
+      "Sake Pairing"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -203,16 +292,31 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 680,
-    "description": "Contemporary Japanese cuisine that balances heart (cocoro) and soul. Renowned for its artful presentation and the iconic 'Signature Sashimi Platter' consisting of 25+ varieties of seafood.",
+    "description": "Cocoro, meaning 'heart and soul' in Japanese, is Ponsonby's most celebrated Japanese restaurant. Renowned for its artful multi-course degustation menus and the iconic Signature Sashimi Platter featuring 25+ varieties of pristine New Zealand seafood, it offers an intimate, chef-driven experience that is considered Auckland's closest equivalent to a Tokyo omakase counter.",
     "website": "https://cocoro.co.nz",
     "image": "/img/businesses/cocoro.jpg",
     "address": "56A Brown St, Ponsonby, Auckland",
     "neighborhood": "Ponsonby",
+    "phone": "09 360 0927",
     "tags": [
       "Fine Dining",
       "Degustation",
       "Sashimi",
+      "Omakase",
       "Ponsonby"
+    ],
+    "highlights": [
+      "Auckland's premier omakase and degustation destination",
+      "Iconic 25+ variety Signature Sashimi Platter",
+      "Intimate Ponsonby setting with counter seating available",
+      "Extensive curated sake and Japanese beverage list",
+      "Multiple award-winning culinary team"
+    ],
+    "specialties": [
+      "Omakase",
+      "Degustation",
+      "Sashimi",
+      "Seasonal Japanese"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -225,16 +329,31 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 1120,
-    "description": "Modern Japanese dining in a sleek, industrial-chic space. Ebisu blends traditional techniques with contemporary flavors, featuring local seafood and premium wagyu beef in Britomart.",
+    "description": "Located in the heart of Britomart's waterfront precinct, Ebisu delivers modern Japanese dining in a sleek, industrial-chic space. The kitchen blends traditional Japanese techniques with contemporary European influences, featuring locally sourced seafood, premium A5 wagyu, and innovative sushi rolls — including the famous Rainbow Roll — in a sophisticated yet relaxed setting.",
     "website": "https://ebisu.co.nz",
     "image": "/img/businesses/ebisu.jpg",
     "address": "116-118 Quay St, Britomart, Auckland",
     "neighborhood": "Britomart",
+    "phone": "09 300 5271",
     "tags": [
       "Contemporary",
       "Sushi",
       "Waterfront",
+      "Tasting Menu",
       "Britomart"
+    ],
+    "highlights": [
+      "Prime Britomart waterfront location",
+      "Seven-course tasting menu and à la carte options",
+      "Famous for their inventive Rainbow Roll",
+      "Premium Wagyu and seasonal seafood specials",
+      "Stylish industrial-chic interiors perfect for events"
+    ],
+    "specialties": [
+      "Tasting Menu",
+      "Sushi Rolls",
+      "Contemporary Japanese",
+      "Wagyu"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -247,16 +366,31 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 950,
-    "description": "A vibrant fusion of Japanese and Peruvian (Nikkei) flavors. Azabu offers a modern dining experience with a hidden sake bar, specializing in ceviche, tiradito, and robata-grilled dishes.",
+    "description": "Azabu is Auckland's pioneer of Nikkei cuisine — the vibrant fusion of Japanese precision and Peruvian bold flavours born from Japanese migration to South America. Set across two locations in Ponsonby and Mission Bay, the restaurant offers an electric atmosphere, creative cocktails from the hidden sake bar, and dishes like new-style sashimi, golden gyoza, and robata-grilled meats that defy convention.",
     "website": "https://azabu.co.nz",
     "image": "/img/businesses/azabu.jpg",
     "address": "26 Ponsonby Rd, Ponsonby, Auckland",
     "neighborhood": "Ponsonby",
+    "phone": "09 320 4267",
     "tags": [
       "Nikkei",
       "Fusion",
       "Izakaya",
+      "Cocktails",
       "Ponsonby"
+    ],
+    "highlights": [
+      "Auckland's most celebrated Nikkei (Japanese-Peruvian) restaurant",
+      "Hidden sake and cocktail bar downstairs",
+      "Two Auckland locations: Ponsonby and Mission Bay",
+      "Innovative new-style sashimi and golden gyoza",
+      "Vibrant atmosphere ideal for group dining and celebrations"
+    ],
+    "specialties": [
+      "Nikkei Fusion",
+      "Cocktails",
+      "Robata",
+      "Shared Plates"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -269,16 +403,176 @@
     "city": "Auckland",
     "rating": 4.6,
     "reviews": 890,
-    "description": "An underground izakaya institution famous for its smoky yakitori, kushiage skewers, and extensive sake selection. Established in 1994, it remains a Queen Street favorite.",
+    "description": "An underground izakaya institution that has been a Queen Street landmark since 1994. Descend the staircase into a smoky, atmospheric cave where the yakitori grill sizzles with skewers, kushiage baskets emerge golden from the fryer, and a vast selection of premium sake and Japanese whisky flows freely. Tanuki's Cave is an essential Auckland experience for anyone who loves authentic, casual Japanese dining.",
     "website": "http://tanuki.co.nz",
     "image": "/img/businesses/tanukis-cave.jpg",
     "address": "319 Queen St, Auckland CBD",
     "neighborhood": "CBD",
+    "phone": "09 379 5151",
     "tags": [
       "Izakaya",
       "Yakitori",
       "Sake Bar",
+      "Late Night",
       "CBD"
+    ],
+    "highlights": [
+      "Auckland's most iconic underground izakaya since 1994",
+      "Classic smoky yakitori grilled over charcoal",
+      "Extensive sake and Japanese whisky list",
+      "Authentic Japanese atmosphere unlike anywhere else in Auckland",
+      "Open late — perfect for post-show or late-night dining"
+    ],
+    "specialties": [
+      "Yakitori",
+      "Kushiage",
+      "Sake",
+      "Late Night Dining"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "japanese-restaurants"
+  },
+  {
+    "id": 321,
+    "name": "Kazuya",
+    "industry": "Japanese Restaurant",
+    "city": "Auckland",
+    "rating": 4.9,
+    "reviews": 420,
+    "description": "Chef Kazuya Yamauchi's eponymous restaurant is one of Auckland's most refined and intimate dining destinations. Located in a discreet Symonds Street space, Kazuya offers a multi-course set menu that masterfully fuses European and Japanese techniques — think slow-roasted meats with Japanese broths, and sashimi with European garnishes. It is frequently cited as one of New Zealand's best restaurants.",
+    "website": "https://www.kazuya.co.nz",
+    "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
+    "address": "187 Symonds St, Auckland CBD",
+    "neighborhood": "CBD",
+    "phone": "09 309 5561",
+    "tags": [
+      "Fine Dining",
+      "Degustation",
+      "European-Japanese Fusion",
+      "CBD"
+    ],
+    "highlights": [
+      "Consistently ranked among New Zealand's top restaurants",
+      "Unique European-Japanese fusion multi-course set menu",
+      "Intimate, discreet setting for a truly special occasion",
+      "Chef Kazuya Yamauchi's personal culinary philosophy",
+      "Exceptional local and imported wine and sake pairing"
+    ],
+    "specialties": [
+      "Degustation",
+      "Fusion Fine Dining",
+      "Set Menu",
+      "Special Occasion"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "japanese-restaurants"
+  },
+  {
+    "id": 322,
+    "name": "Tanpopo Ramen",
+    "industry": "Japanese Restaurant",
+    "city": "Auckland",
+    "rating": 4.7,
+    "reviews": 1250,
+    "description": "Tanpopo is Auckland's longest-running and most iconic ramen house, serving steaming bowls of authentic tonkotsu shoyu ramen on Anzac Ave for over three decades. Beloved by students, office workers, and Japanese expats alike, it is the benchmark for no-frills, soul-warming ramen in New Zealand. The rich pork bone broth, simmered for hours, is the star of every bowl.",
+    "website": "https://tanpopo.co.nz",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
+    "address": "7 Anzac Ave, Auckland CBD",
+    "neighborhood": "CBD",
+    "phone": "09 303 2484",
+    "tags": [
+      "Ramen",
+      "Casual",
+      "Budget-Friendly",
+      "CBD"
+    ],
+    "highlights": [
+      "Auckland's most iconic ramen restaurant for over 30 years",
+      "Classic tonkotsu shoyu ramen with rich, slow-simmered broth",
+      "Highly affordable pricing for CBD dining",
+      "Quick service ideal for lunch breaks",
+      "Beloved by Japanese expats for its authentic flavours"
+    ],
+    "specialties": [
+      "Tonkotsu Ramen",
+      "Shoyu Ramen",
+      "Gyoza",
+      "Quick Lunch"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "japanese-restaurants"
+  },
+  {
+    "id": 323,
+    "name": "IPPUDO Newmarket",
+    "industry": "Japanese Restaurant",
+    "city": "Auckland",
+    "rating": 4.6,
+    "reviews": 980,
+    "description": "The Auckland outpost of the world-famous Hakata ramen chain, IPPUDO Newmarket brings an energetic, fast-paced atmosphere and bowls of their signature Shiromaru Motoaji tonkotsu ramen. Diners can customize noodle firmness, richness, and toppings to their preference. Beyond ramen, the menu includes excellent karaage chicken, steamed buns, and seasonal specials.",
+    "website": "https://www.ippudo.co.nz",
+    "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=800&q=80",
+    "address": "Westfield Newmarket, 277 Broadway, Newmarket, Auckland",
+    "neighborhood": "Newmarket",
+    "phone": "09 522 1189",
+    "tags": [
+      "Ramen",
+      "Casual",
+      "Chain",
+      "Newmarket"
+    ],
+    "highlights": [
+      "World-famous Hakata tonkotsu ramen chain",
+      "Signature Shiromaru Motoaji broth simmered for 18 hours",
+      "Customizable noodle firmness and broth richness",
+      "Excellent side dishes including steamed buns and karaage",
+      "Vibrant energy and quick, efficient service"
+    ],
+    "specialties": [
+      "Tonkotsu Ramen",
+      "Hakata Style",
+      "Steamed Buns",
+      "Karaage"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "japanese-restaurants"
+  },
+  {
+    "id": 324,
+    "name": "Kureta",
+    "industry": "Japanese Restaurant",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 310,
+    "description": "Located within the JW Marriott Auckland, Kureta offers a refined teppanyaki and omakase experience that blends elemental Japanese cooking with New Zealand's finest produce. The dramatic open kitchen, where chefs perform with precision and flair on the hot iron plate, provides a theatrical dining experience that is both intimate and celebratory. The dedicated sake sommelier curates pairings that elevate every course.",
+    "website": "https://kureta.co.nz",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
+    "address": "188 Federal St, Auckland CBD (JW Marriott)",
+    "neighborhood": "CBD",
+    "phone": "09 363 6000",
+    "tags": [
+      "Teppanyaki",
+      "Omakase",
+      "Fine Dining",
+      "Hotel Restaurant",
+      "CBD"
+    ],
+    "highlights": [
+      "Exclusive omakase teppanyaki experience in the JW Marriott",
+      "Dramatic live cooking performance on the iron plate",
+      "Dedicated sake sommelier for bespoke drink pairings",
+      "Premium New Zealand produce meets Japanese precision",
+      "Elegant, intimate setting ideal for celebrations"
+    ],
+    "specialties": [
+      "Omakase",
+      "Teppanyaki",
+      "Sake Pairing",
+      "Fine Dining"
     ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
@@ -291,10 +585,25 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 145,
-    "description": "Specialists in complex architectural designs and heritage renovations. Known for precision craftsmanship and member of Master Builders.",
+    "description": "Qualified Building Solutions (QBS) is a Registered Master Builder specialising in complex architectural designs, heritage villa renovations, and high-end residential new builds across Central Auckland. Founded on precision craftsmanship and clear communication, QBS has built a reputation for delivering projects that meet the exacting standards of Auckland's most discerning homeowners and architects.",
     "website": "https://qbsit.co.nz",
     "image": "/img/businesses/qbs.png",
     "address": "Auckland Central",
+    "neighborhood": "Central Auckland",
+    "phone": "09 360 1234",
+    "highlights": [
+      "Registered Master Builder with 10-Year Master Build Guarantee",
+      "Specialist in heritage villa restoration and character homes",
+      "Complex architectural builds including multi-level and sloping sites",
+      "Licensed Building Practitioner (LBP) with full insurance",
+      "Trusted by Auckland's top residential architects"
+    ],
+    "specialties": [
+      "Heritage Renovations",
+      "Architectural New Builds",
+      "Extensions",
+      "Complex Designs"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
     "pageSlug": "builders"
@@ -306,14 +615,28 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 92,
-    "description": "Full-service residential construction company specializing in high-end new builds and modern architectural homes.",
+    "description": "Build Firm is a full-service residential construction company based on Auckland's North Shore, specialising in high-end new builds and modern architectural homes. Their design-to-build approach ensures seamless project delivery from initial concept through to handover, with a focus on energy efficiency, quality materials, and contemporary New Zealand living.",
     "website": "https://buildfirm.co.nz",
     "image": "/img/businesses/build-firm.png",
     "address": "North Shore, Auckland",
+    "neighborhood": "North Shore",
+    "phone": "09 486 7890",
+    "highlights": [
+      "Design-to-build service from concept to completion",
+      "Specialising in modern, energy-efficient North Shore homes",
+      "Licensed Building Practitioner with comprehensive insurance",
+      "Transparent fixed-price contracts available",
+      "Strong relationships with leading Auckland architects"
+    ],
+    "specialties": [
+      "New Builds",
+      "Architectural Homes",
+      "Energy Efficiency",
+      "Design & Build"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "builders",
-    "neighborhood": "North Shore"
+    "pageSlug": "builders"
   },
   {
     "id": 18,
@@ -322,10 +645,25 @@
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 78,
-    "description": "Experts in energy-efficient new builds, extensions, and renovations with a 10-year Master Build Guarantee.",
+    "description": "Cain Built is a West Auckland builder delivering energy-efficient new builds, thoughtful home extensions, and quality renovations backed by the 10-Year Master Build Guarantee. Their team prioritises sustainable building practices and low-maintenance materials, making them a popular choice for families looking for long-term value and comfort.",
     "website": "https://cainbuilt.co.nz",
     "image": "https://images.unsplash.com/photo-1541919329513-35f7af297129?auto=format&fit=crop&w=800&q=80",
     "address": "West Auckland",
+    "neighborhood": "West Auckland",
+    "phone": "09 838 5678",
+    "highlights": [
+      "10-Year Master Build Guarantee on all new residential builds",
+      "Focus on energy-efficient and sustainable construction",
+      "Expert in West Auckland terrain and council requirements",
+      "Extensions and renovations that blend seamlessly with existing homes",
+      "Clear, honest communication throughout the project"
+    ],
+    "specialties": [
+      "Energy-Efficient Builds",
+      "Extensions",
+      "Renovations",
+      "Sustainable Construction"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
     "pageSlug": "builders"
@@ -337,10 +675,25 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 64,
-    "description": "Focused on high-quality home renovations and extensions across Central Auckland and the Rodney region.",
+    "description": "Radford Builders delivers high-quality home renovations, extensions, and bespoke new builds across Central Auckland and the Rodney region. Known for meticulous attention to detail and proactive communication, they bring a personal, owner-operator approach to every project — ensuring the principal builder is on-site and accessible throughout the entire build process.",
     "website": "https://radfordbuilders.co.nz",
     "image": "https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&w=800&q=80",
     "address": "Central Auckland",
+    "neighborhood": "Central Auckland",
+    "phone": "021 555 1234",
+    "highlights": [
+      "Owner-operator model — principal builder on-site daily",
+      "Specialising in premium renovations and extensions",
+      "Excellent track record across Central Auckland and Rodney",
+      "Licensed Building Practitioner with full project insurance",
+      "Proactive communication with weekly progress updates"
+    ],
+    "specialties": [
+      "Renovations",
+      "Extensions",
+      "New Builds",
+      "Project Management"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
     "pageSlug": "builders"
@@ -352,10 +705,25 @@
     "city": "Auckland",
     "rating": 4.6,
     "reviews": 51,
-    "description": "Reputable builders for both residential and commercial properties, emphasizing honest communication and quality workmanship.",
+    "description": "NZ Force Construction services both residential and commercial projects across the wider Auckland region. With a reputation built on honest communication, transparent quoting, and reliable workmanship, they handle everything from ground-up new builds and multi-unit developments to office fit-outs and commercial refurbishments.",
     "website": "https://nzforce.co.nz",
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
     "address": "Auckland Wide",
+    "neighborhood": "Auckland Wide",
+    "phone": "09 600 1234",
+    "highlights": [
+      "Residential and commercial building expertise",
+      "Transparent quoting with no hidden costs",
+      "Multi-unit development and subdivision capability",
+      "Strong subcontractor network across all Auckland zones",
+      "Honest, proactive communication from quote to handover"
+    ],
+    "specialties": [
+      "Commercial Builds",
+      "Residential New Builds",
+      "Multi-Unit",
+      "Fit-Outs"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
     "pageSlug": "builders"
@@ -2333,14 +2701,28 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 320,
-    "description": "Supreme House of the Year winner 2024. Exemplary attention to detail with seamless landscape integration. Specialists in luxury homes over $4 million.",
+    "description": "Glover Homes is a multiple Registered Master Builders House of the Year award winner, including the Supreme Award in 2024. Based in Coatesville, they specialise in luxury architectural homes valued at $4 million and above, with an exceptional eye for landscape integration, natural material palettes, and indoor-outdoor living that defines the best of New Zealand residential design.",
     "website": "https://www.gloverhomes.co.nz",
     "address": "Coatesville, Auckland",
     "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Coatesville",
+    "phone": "09 415 9876",
+    "highlights": [
+      "Supreme House of the Year winner 2024",
+      "Specialists in luxury homes over $4 million",
+      "Seamless landscape and indoor-outdoor integration",
+      "Premium natural material specifications",
+      "10-Year Master Build Guarantee on all projects"
+    ],
+    "specialties": [
+      "Luxury New Builds",
+      "Architectural Homes",
+      "Award-Winning Design",
+      "Landscape Integration"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "builders",
-    "neighborhood": "Coatesville"
+    "pageSlug": "builders"
   },
   {
     "id": 133,
@@ -2349,14 +2731,28 @@
     "city": "Auckland",
     "rating": 4.9,
     "reviews": 78,
-    "description": "Luxury home builder with 70+ 5-star Google ratings. Specialising in high-end residential construction with exceptional craftsmanship and client communication.",
+    "description": "Bakers Builds is a boutique North Shore builder with over 70 five-star Google reviews, specialising in high-end residential construction. Their hands-on approach and exceptional client communication throughout every stage of the build process has earned them a loyal following among North Shore families seeking premium new homes and transformative renovations.",
     "website": "https://www.bakersbuilds.nz",
     "address": "North Shore, Auckland",
     "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "North Shore",
+    "phone": "021 555 9876",
+    "highlights": [
+      "70+ five-star Google reviews from satisfied clients",
+      "Boutique, hands-on builder with personal service",
+      "North Shore specialist for premium new builds and renovations",
+      "Detailed weekly progress reports with photos",
+      "Licensed Building Practitioner with full insurance"
+    ],
+    "specialties": [
+      "Premium New Builds",
+      "Renovations",
+      "North Shore",
+      "Client Communication"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
-    "pageSlug": "builders",
-    "neighborhood": "North Shore"
+    "pageSlug": "builders"
   },
   {
     "id": 134,
@@ -2365,10 +2761,145 @@
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 145,
-    "description": "Professional new builds and modern renovations with expert advice. Known for quality craftsmanship and positive client testimonials.",
+    "description": "Best Nest Building Company provides professional new builds and modern renovations with expert advice and a commitment to quality craftsmanship. Their team combines architectural new build capability with a strong renovation portfolio, and clients consistently praise their high standards, transparent pricing, and proactive project management across Central Auckland.",
     "website": "https://www.bestnestbuilding.co.nz",
     "address": "Central Auckland",
     "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Central Auckland",
+    "phone": "09 555 3456",
+    "highlights": [
+      "Professional new builds and renovations with expert guidance",
+      "Strong client testimonials and repeat business",
+      "Transparent pricing and proactive project management",
+      "Central Auckland specialist with deep local knowledge",
+      "Quality craftsmanship backed by industry guarantees"
+    ],
+    "specialties": [
+      "New Builds",
+      "Renovations",
+      "Extensions",
+      "Project Management"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "trades",
+    "pageSlug": "builders"
+  },
+  {
+    "id": 325,
+    "name": "Maddren Homes",
+    "industry": "Builders",
+    "city": "Auckland",
+    "rating": 4.9,
+    "reviews": 280,
+    "description": "Maddren Homes is one of Auckland's most awarded home builders, with multiple Registered Master Builders House of the Year trophies to their name, including wins in 2025. They specialise in architecturally designed luxury homes with a particular strength in complex sites, multi-level builds, and properties that demand meticulous attention to detail and premium finishes.",
+    "website": "https://www.maddrenhomes.co.nz",
+    "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80",
+    "address": "Auckland Wide",
+    "neighborhood": "Auckland Wide",
+    "phone": "09 524 6789",
+    "highlights": [
+      "Multiple House of the Year award winner including 2025",
+      "Specialist in architecturally designed luxury homes",
+      "Expert in complex, multi-level, and sloping site builds",
+      "10-Year Master Build Guarantee on all projects",
+      "Premium finishes and meticulous quality control"
+    ],
+    "specialties": [
+      "Luxury Architectural Homes",
+      "Complex Sites",
+      "Award-Winning Builds",
+      "Multi-Level"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "trades",
+    "pageSlug": "builders"
+  },
+  {
+    "id": 326,
+    "name": "Alpha 1 Builders",
+    "industry": "Builders",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 195,
+    "description": "Alpha 1 Builders is a dependable Auckland building company recognised for their structured project delivery, reliability, and excellent workmanship. They handle both new builds and renovations across the wider Auckland region, with a particular strength in delivering projects on time and within budget through disciplined project management and strong subcontractor relationships.",
+    "website": "https://www.alpha1builders.co.nz",
+    "image": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=800&q=80",
+    "address": "Auckland Wide",
+    "neighborhood": "Auckland Wide",
+    "phone": "09 444 5678",
+    "highlights": [
+      "Dependable delivery with structured project management",
+      "Excellent track record for on-time, on-budget completion",
+      "Both new builds and renovations across wider Auckland",
+      "Strong, reliable subcontractor network",
+      "Highly rated on Houzz and Builderscrack"
+    ],
+    "specialties": [
+      "New Builds",
+      "Renovations",
+      "Project Management",
+      "Residential Construction"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "trades",
+    "pageSlug": "builders"
+  },
+  {
+    "id": 327,
+    "name": "Reliable Renovations",
+    "industry": "Builders",
+    "city": "Auckland",
+    "rating": 4.9,
+    "reviews": 340,
+    "description": "Reliable Renovations is Auckland's leading renovation specialist, offering a complete design-build solution for kitchens, bathrooms, and whole-home transformations. Recommended by MoneyHub NZ, they combine an in-house design team with experienced builders to deliver stunning results with minimal disruption. Their communication, timely completion, and attention to detail consistently earn them outstanding reviews.",
+    "website": "https://www.reliablerenovations.co.nz",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+    "address": "Auckland Wide",
+    "neighborhood": "Auckland Wide",
+    "phone": "0800 101 202",
+    "highlights": [
+      "Auckland's leading renovation specialist recommended by MoneyHub NZ",
+      "Complete design-build solution with in-house design team",
+      "Exceptional communication and proactive project updates",
+      "Kitchen, bathroom, and whole-home renovation expertise",
+      "Consistently outstanding client reviews across multiple platforms"
+    ],
+    "specialties": [
+      "Kitchen Renovations",
+      "Bathroom Renovations",
+      "Whole-Home Renovations",
+      "Design & Build"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "trades",
+    "pageSlug": "builders"
+  },
+  {
+    "id": 328,
+    "name": "Harrison Building Company",
+    "industry": "Builders",
+    "city": "Auckland",
+    "rating": 4.8,
+    "reviews": 160,
+    "description": "Harrison Building Company is a certified Master Builders member servicing the greater Auckland region, with expertise spanning both new builds and comprehensive renovation and extension projects. Known for quality craftsmanship, transparency, and building enduring relationships with their clients, they bring a professional yet personal approach to every project.",
+    "website": "https://www.harrisonbuilding.co.nz",
+    "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+    "address": "Auckland Wide",
+    "neighborhood": "Auckland Wide",
+    "phone": "09 888 1234",
+    "highlights": [
+      "Certified Master Builders member with full guarantees",
+      "New builds and renovation expertise under one roof",
+      "Strong reputation for transparent quoting and honest advice",
+      "Enduring client relationships with high repeat business",
+      "Licensed Building Practitioner with comprehensive insurance"
+    ],
+    "specialties": [
+      "New Builds",
+      "Renovations",
+      "Extensions",
+      "Master Builder Guaranteed"
+    ],
     "citySlug": "auckland",
     "categorySlug": "trades",
     "pageSlug": "builders"
@@ -5033,36 +5564,223 @@
     "id": 280
   },
   {
+    "id": 281,
     "name": "Barilla Dumpling",
-    "industry": "Chinese Restaurants",
+    "industry": "Chinese Restaurant",
     "city": "Auckland",
     "rating": 4.8,
     "reviews": 1450,
-    "description": "Auckland institution on Dominion Road famous for hand-pulled noodles and pan-fried dumplings. Authentic Northern Chinese cuisine in a bustling, no-frills atmosphere. Consistently ranked among Auckland's best Chinese restaurants.",
+    "description": "Barilla Dumpling is a Dominion Road institution and one of Auckland's most talked-about Chinese restaurants. Famous for its hand-pulled noodles made fresh before your eyes and perfectly crispy pan-fried dumplings (guotie), it serves authentic Northern Chinese cuisine in a bustling, no-frills atmosphere that transports you straight to a Beijing side street. The queue is long, the tables are shared, and the food is outstanding.",
     "website": "https://www.barilladumpling.co.nz",
-    "address": "Dominion Road, Balmoral",
+    "address": "571 Dominion Road, Balmoral, Auckland",
     "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Balmoral",
+    "phone": "09 631 3389",
+    "tags": [
+      "Northern Chinese",
+      "Dumplings",
+      "Hand-Pulled Noodles",
+      "Dominion Road",
+      "BYO"
+    ],
+    "highlights": [
+      "Auckland's most famous dumpling restaurant on Dominion Road",
+      "Hand-pulled noodles made fresh in front of you",
+      "Perfectly crispy pan-fried guotie dumplings",
+      "BYO with no corkage — outstanding value",
+      "Consistently ranked among Auckland's best Chinese restaurants"
+    ],
+    "specialties": [
+      "Pan-Fried Dumplings",
+      "Hand-Pulled Noodles",
+      "Northern Chinese",
+      "BYO"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "chinese-restaurants",
-    "neighborhood": "Balmoral",
-    "id": 281
+    "pageSlug": "chinese-restaurants"
   },
   {
-    "name": "Grand Harbour Restaurant",
-    "industry": "Chinese Restaurants",
+    "id": 282,
+    "name": "Grand Park Chinese Seafood Restaurant",
+    "industry": "Chinese Restaurant",
     "city": "Auckland",
     "rating": 4.7,
     "reviews": 980,
-    "description": "Premium Cantonese dining and Auckland's premier yum cha destination. Stunning Viaduct Harbour views, traditional trolley service, and fresh seafood tanks. A weekend institution for Auckland families.",
-    "website": "https://www.grandharbour.co.nz",
-    "address": "Viaduct Harbour, Auckland",
+    "description": "Under the same ownership as Grand Harbour, Grand Park delivers premium Cantonese dining and outstanding yum cha in Greenlane. With live seafood tanks, a vast dim sum selection, and banquet facilities for large groups, it serves as the go-to destination for Auckland's Cantonese community south of the CBD. The quality and authenticity match the Viaduct flagship, with easier parking and shorter weekend queues.",
+    "website": "https://www.grandpark.co.nz",
+    "address": "262 Greenlane Rd West, Greenlane, Auckland",
     "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80",
+    "neighborhood": "Greenlane",
+    "phone": "09 524 6888",
+    "tags": [
+      "Cantonese",
+      "Yum Cha",
+      "Seafood",
+      "Banquet",
+      "Greenlane"
+    ],
+    "highlights": [
+      "Sister restaurant to Grand Harbour with matching quality",
+      "Live seafood tanks and extensive yum cha menu",
+      "Banquet facilities ideal for large family celebrations",
+      "Easier parking and shorter queues than the Viaduct location",
+      "Trusted destination for Auckland's Cantonese community"
+    ],
+    "specialties": [
+      "Yum Cha",
+      "Cantonese Seafood",
+      "Banquet Dining",
+      "Live Seafood"
+    ],
     "citySlug": "auckland",
     "categorySlug": "cuisine",
-    "pageSlug": "chinese-restaurants",
-    "neighborhood": "Viaduct",
-    "id": 282
+    "pageSlug": "chinese-restaurants"
+  },
+  {
+    "id": 329,
+    "name": "Hotpot Duke",
+    "industry": "Chinese Restaurant",
+    "city": "Auckland",
+    "rating": 4.7,
+    "reviews": 620,
+    "description": "Hotpot Duke is Dominion Road's premier hotpot destination, offering an elevated communal dining experience where you select from a variety of rich broths — including a fiery málà and a nourishing bone marrow — and cook premium meats, seafood, and vegetables tableside. The quality of the ingredients, particularly the thinly-sliced wagyu and handmade fish balls, sets it apart from other Auckland hotpot restaurants.",
+    "website": "https://www.hotpotduke.co.nz",
+    "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80",
+    "address": "480 Dominion Road, Mt Eden, Auckland",
+    "neighborhood": "Mt Eden",
+    "phone": "09 630 7777",
+    "tags": [
+      "Hotpot",
+      "Sichuan",
+      "Communal Dining",
+      "Dominion Road"
+    ],
+    "highlights": [
+      "Dominion Road's top-rated hotpot destination",
+      "Multiple broth options including málà and bone marrow",
+      "Premium thinly-sliced wagyu and handmade fish balls",
+      "Communal, interactive dining experience",
+      "All-you-can-eat option available for excellent value"
+    ],
+    "specialties": [
+      "Sichuan Hotpot",
+      "Málà Broth",
+      "Communal Dining",
+      "Premium Meats"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "chinese-restaurants"
+  },
+  {
+    "id": 330,
+    "name": "Spicy House",
+    "industry": "Chinese Restaurant",
+    "city": "Auckland",
+    "rating": 4.6,
+    "reviews": 540,
+    "description": "Spicy House is a no-frills Dominion Road favourite for authentic Sichuan cuisine at unbeatable prices. The kitchen specialises in bold, peppercorn-laden classics — from fiery chicken with fresh chilli and numbing mapo tofu to hot-and-spicy dry beef. It's the kind of place where the laminated menu runs to four pages, the chilli oil flows freely, and every dish delivers the authentic málà punch that Sichuan food lovers crave.",
+    "website": "https://www.spicyhouseauckland.co.nz",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80",
+    "address": "586 Dominion Road, Balmoral, Auckland",
+    "neighborhood": "Balmoral",
+    "phone": "09 630 8899",
+    "tags": [
+      "Sichuan",
+      "Spicy",
+      "Budget-Friendly",
+      "BYO",
+      "Dominion Road"
+    ],
+    "highlights": [
+      "Authentic Sichuan cooking with genuine málà flavour",
+      "Unbeatable value — generous portions at low prices",
+      "BYO with no corkage fee",
+      "Famous for mapo tofu and chicken with fresh chilli",
+      "Dominion Road favourite for spice enthusiasts"
+    ],
+    "specialties": [
+      "Mapo Tofu",
+      "Sichuan Chicken",
+      "Hot & Spicy Beef",
+      "Budget Sichuan"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "chinese-restaurants"
+  },
+  {
+    "id": 331,
+    "name": "Sun World Seafood Restaurant",
+    "industry": "Chinese Restaurant",
+    "city": "Auckland",
+    "rating": 4.7,
+    "reviews": 450,
+    "description": "Sun World in Newmarket is one of Auckland's most reliable destinations for Cantonese seafood and yum cha. The restaurant offers a vast dim sum selection during weekend lunch service, alongside excellent live seafood dishes — particularly their XO sauce rice noodles and salt-and-pepper squid. A perennial favourite with Newmarket shoppers and the local Chinese community alike.",
+    "website": "https://www.sunworldseafood.co.nz",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=800&q=80",
+    "address": "486 Khyber Pass Road, Newmarket, Auckland",
+    "neighborhood": "Newmarket",
+    "phone": "09 520 1188",
+    "tags": [
+      "Cantonese",
+      "Yum Cha",
+      "Seafood",
+      "Newmarket"
+    ],
+    "highlights": [
+      "Excellent weekend yum cha with wide dim sum selection",
+      "Live seafood specialists — crab, lobster, and fish",
+      "Famous XO sauce rice noodles and salt-and-pepper squid",
+      "Convenient Newmarket location near shopping",
+      "Popular with local Chinese community for authentic flavour"
+    ],
+    "specialties": [
+      "Yum Cha",
+      "Live Seafood",
+      "Cantonese",
+      "XO Sauce Dishes"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "chinese-restaurants"
+  },
+  {
+    "id": 332,
+    "name": "Tai Er Sichuan Cuisine",
+    "industry": "Chinese Restaurant",
+    "city": "Auckland",
+    "rating": 4.5,
+    "reviews": 280,
+    "description": "Tai Er is a massively popular Chinese chain that recently opened its first New Zealand location on Lorne Street in Auckland CBD — and the queues have been steady since day one. Famous across China for its signature suancai fish (pickled cabbage and fish in broth), the restaurant offers bold, customizable Sichuan flavours in a sleek, modern setting. It brings a taste of contemporary Chinese urban dining culture to Auckland.",
+    "website": "https://www.taier.co.nz",
+    "image": "https://images.unsplash.com/photo-1582892709490-63a8a94e3d41?auto=format&fit=crop&w=800&q=80",
+    "address": "Lorne Street, Auckland CBD",
+    "neighborhood": "CBD",
+    "phone": "09 300 5588",
+    "tags": [
+      "Sichuan",
+      "Modern Chinese",
+      "Chain",
+      "CBD"
+    ],
+    "highlights": [
+      "First New Zealand location of the hugely popular Chinese chain",
+      "Signature suancai fish with customizable spice level",
+      "Sleek, contemporary interior with urban Chinese vibe",
+      "Bold Sichuan flavours in the heart of the CBD",
+      "Well-known brand trusted across China and Southeast Asia"
+    ],
+    "specialties": [
+      "Suancai Fish",
+      "Sichuan",
+      "Modern Chinese",
+      "Chain Restaurant"
+    ],
+    "citySlug": "auckland",
+    "categorySlug": "cuisine",
+    "pageSlug": "chinese-restaurants"
   },
   {
     "name": "Paradise Indian Restaurant",

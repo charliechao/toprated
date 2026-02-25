@@ -1,0 +1,104 @@
+{
+  "auckland/cuisine/cafes": {
+    "introText": "Auckland's café culture is thriving, with specialty coffee roasters and artisanal eateries dotting every neighborhood. From waterfront brunch spots in the Viaduct to hidden gems in Kingsland and Ponsonby, the city's cafés offer everything from expertly crafted flat whites to innovative all-day menus. Whether you're after a quick espresso or a leisurely weekend brunch, Auckland's top-rated cafés deliver exceptional quality and atmosphere.",
+    "faqs": [
+      {
+        "question": "What are the best cafés in Auckland CBD?",
+        "answer": "The CBD offers excellent options including Orphans Kitchen, Federal Delicatessen, and Little & Friday. Britomart also has a concentration of high-quality specialty coffee spots."
+      },
+      {
+        "question": "Where can I find the best brunch in Auckland?",
+        "answer": "Ponsonby Road and the Viaduct are renowned for brunch. Popular spots include Dizengof, Ortolana, and The Store, all offering innovative menus and quality coffee."
+      },
+      {
+        "question": "Which Auckland cafés roast their own coffee?",
+        "answer": "Several top cafés roast their own beans, including Allpress Espresso, Flight Coffee, and Kokako. These roasters also supply many other Auckland cafés with specialty beans."
+      }
+    ]
+  },
+  "auckland/cuisine/restaurants": {
+    "introText": "Auckland is New Zealand's undisputed culinary capital, offering a world-class dining scene that reflects its diverse multicultural identity. From the sophisticated waterfront bistros of the Viaduct to the hidden gems in the outer suburbs, the city's restaurants consistently push the boundaries of Pacific Rim cuisine. Whether you're after fresh Kaimoana (seafood), modern European flavors, or innovative Asian fusion, Auckland's top-rated eateries provide an unforgettable gastronomic experience.",
+    "faqs": [
+      {
+        "question": "What is the best area for dining in Auckland?",
+        "answer": "Ponsonby Road is famous for its vibrant mix of trendy bistros and bars. For high-end dining, the Viaduct Harbour and Britomart precincts offer premium waterfront experiences. Dominion Road is the go-to for authentic, diverse Asian eateries."
+      },
+      {
+        "question": "Do I need to book restaurants in Auckland in advance?",
+        "answer": "For popular or top-rated restaurants, especially on weekends, booking 1-2 weeks in advance is highly recommended. Many local favorites now offer easy online reservation systems."
+      },
+      {
+        "question": "What is the 'Metro Top 50'?",
+        "answer": "The Metro Top 50 is Auckland's most prestigious annual restaurant guide, highlighting the fifty best dining establishments in the city based on food quality, service, and atmosphere."
+      }
+    ]
+  },
+  "auckland/cuisine/indian-restaurants": {
+    "introText": "Auckland's Indian dining scene is a rich mosaic of regional flavors, from the spicy complexities of Southern Indian dosas to the creamy, tandoor-fired delights of the North. Whether you're seeking a casual street-food experience in Sandringham or a sophisticated fine-dining banquet in the CBD, the city's top-rated Indian restaurants offer an authentic journey through the spices of the subcontinent.",
+    "faqs": [
+      {
+        "question": "Which area in Auckland is best for authentic Indian food?",
+        "answer": "Sandringham Road is widely considered Auckland's 'Little India,' home to numerous authentic eateries like Satya and Paradise Indian Food. The CBD also hosts premium options like Cassia for modern Indian cuisine."
+      },
+      {
+        "question": "Are there good vegetarian Indian options in Auckland?",
+        "answer": "Absolutely. Most Indian restaurants in Auckland offer extensive vegetarian menus. Satya and Saravanaa Bhavan are particularly renowned for their authentic South Indian vegetarian specialties."
+      },
+      {
+        "question": "What is the best modern Indian restaurant in Auckland?",
+        "answer": "Cassia, located in SkyCity, is the gold standard for modern Indian dining in Auckland, blending traditional flavors with contemporary techniques and local New Zealand ingredients."
+      }
+    ]
+  },
+  "auckland/cuisine/italian-restaurants": {
+    "introText": "From artisanal pasta made by hand to wood-fired pizzas with perfectly charred crusts, Auckland's Italian restaurants bring the heart of Italy to the South Pacific. Whether it's a romantic dinner in a Ponsonby bistro or a lively family gathering at a Viaduct trattoria, the city's top-rated Italian spots emphasize fresh, seasonal ingredients and time-honored recipes.",
+    "faqs": [
+      {
+        "question": "Where can I find the best handmade pasta in Auckland?",
+        "answer": "Amano in Britomart and Prego on Ponsonby Road are famous for their exceptional handmade pasta. Baduzzi in Wynyard Quarter also offers exquisite pasta and Italian-inspired seafood."
+      },
+      {
+        "question": "Which Auckland Italian restaurants are best for dates?",
+        "answer": "Prego is a long-standing favorite for its romantic atmosphere and consistent quality. Non Solo Pizza in Parnell also offers a beautiful courtyard setting perfect for intimate dinners."
+      },
+      {
+        "question": "Are there authentic wood-fired pizzerias in Auckland?",
+        "answer": "Yes, Dante's Pizzeria (with multiple locations) is certified by the Associazione Verace Pizza Napoletana. That's Amore in the CBD also provides a very authentic Neapolitan pizza experience."
+      }
+    ]
+  },
+  "auckland/cuisine/thai-restaurants": {
+    "introText": "Experience the perfect balance of sweet, sour, salty, and spicy at Auckland's premier Thai restaurants. From the aromatic green curries of family-run neighborhood gems to the bold, modern flavors of trendy CBD eateries, Auckland offers an incredible diversity of Thai cuisine that stays true to its fragrant roots while embracing fresh New Zealand produce.",
+    "faqs": [
+      {
+        "question": "What are the most popular Thai restaurants in Auckland?",
+        "answer": "Saan in Ponsonby is highly rated for its Northern and Northeastern Thai street food. Kiin Thai in Mt Eden and Blue Elephant in Parnell are also local favorites for traditional flavors."
+      },
+      {
+        "question": "Where can I find 'actually spicy' Thai food in Auckland?",
+        "answer": "Many authentic spots like Zap 2 in Dominion Road or the food stalls in the Elliot Stables allow you to request 'Thai Spicy' levels for a truly fiery experience."
+      },
+      {
+        "question": "Does Auckland have Thai fusion or modern Thai dining?",
+        "answer": "Yes, Saan offers a refined, modern take on Thai cuisine, while many contemporary Asian fusion restaurants in the CBD incorporate strong Thai influences into their menus."
+      }
+    ]
+  },
+  "auckland/cuisine/french-restaurants": {
+    "introText": "Auckland's French dining scene offers a slice of Parisian elegance, ranging from cozy neighborhood bistros to high-end gastronomic destinations. Whether you're craving a buttery croissant from an artisanal patisserie, a classic steak frites, or a multi-course degustation paired with fine wines, the city's top-rated French establishments deliver sophisticated flavors and impeccable service.",
+    "faqs": [
+      {
+        "question": "What is the best French fine-dining restaurant in Auckland?",
+        "answer": "The Grove is frequently cited as one of Auckland's top fine-dining experiences with a strong French influence. Sid at The French Cafe in Eden Terrace is also a multi-award-winning institution."
+      },
+      {
+        "question": "Are there casual French bistros in Auckland?",
+        "answer": "Yes, Casita Miro on Waiheke Island (while Mediterranean) has strong French vibes, and Le Garde-Manger on Queen Street or Ponsonby Road offers a very traditional, cozy bistro experience."
+      },
+      {
+        "question": "Where can I find the best French pastries in Auckland?",
+        "answer": "Vaniyé Patisserie in Parnell and La Petite Fourchette in Wynyard Quarter or Britomart are renowned for their authentic, high-quality French cakes, tarts, and pastries."
+      }
+    ]
+  }
+}
