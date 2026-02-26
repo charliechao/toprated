@@ -117,7 +117,30 @@ For each business on the target page, enhance with:
 | `certifications` | 🟡 Optional | Industry certifications (e.g., "Master Builder", "Licensed Building Practitioner") |
 | `yearEstablished` | 🟡 Optional | Adds trust signal |
 
-### 3.2 Example Enhanced Business Entry
+### 3.2 Minimum Business Count — Search & Add if Needed
+
+**Before enhancing profiles, check the current business count for the target page:**
+
+```bash
+node -e "
+const b = require('./data/businesses.json');
+const page = b.filter(x => x.citySlug === 'auckland' && x.pageSlug === 'indian-restaurants');
+console.log('Count:', page.length);
+"
+```
+
+**If the page has fewer than 5 businesses**, research and add more until the page has **at least 8–10 listings**. Steps:
+
+1. **Search the web** for "best [service/cuisine] in [city] 2025 2026" using The Urban List, TripAdvisor, and local review sites.
+2. **Identify well-reviewed businesses** not already in the data — aim for geographic diversity (different suburbs) and style diversity (e.g., fine dining, casual, vegetarian, street food).
+3. **Add each new business** to `data/businesses.json` with all required fields:
+   - Assign a new `id` (increment from the current max ID in the file)
+   - Set the correct `citySlug`, `categorySlug`, and `pageSlug`
+   - Include `highlights` (7 bullet points), `specialties`, `neighborhood`, `description` (50–100 words)
+4. **Never fabricate businesses** — only add real, operating establishments with verifiable web presence.
+5. **Aim for 10 listings** per page (the maximum that renders well and signals content depth to Google).
+
+### 3.3 Example Enhanced Business Entry
 
 ```json
 {
