@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Bash(node -e \":*)",
+      "WebFetch(domain:www.theurbanlist.com)",
+      "WebFetch(domain:www.aucklandmagazine.com)",
+      "Bash(node -e \"const sc = require\\(''./data/seo_content.json''\\); const b = require\\(''./data/businesses.json''\\); const entry = sc[''auckland/cuisine/italian-restaurants'']; const businesses = b.filter\\(x => x.city === ''Auckland'' && x.industry === ''Italian Restaurants''\\); console.log\\(''SEO sections:'', Object.keys\\(entry\\)\\); console.log\\(''Businesses:'', businesses.length\\); businesses.forEach\\(x => console.log\\(''-'', x.name, ''|'', x.neighborhood||'''', ''| highlights:'', \\(x.highlights||[]\\).length\\)\\);\")",
+      "WebFetch(domain:www.thedenizen.co.nz)",
+      "Bash(git add .agent/workflows/toprated_seo_enhancement.md cities/auckland/cuisine/indian-restaurants.html cities/auckland/cuisine/italian-restaurants.html cities/auckland/cuisine/restaurants.html data/businesses.json data/seo_content.json)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(grep -r \"toprated.nz\\\\|github.io\" *.json *.html)",
+      "Bash(start https://charliechao.github.io/toprated/cities/auckland/cuisine/italian-restaurants.html)",
+      "Bash(start https://toprated.nz/cities/auckland/cuisine/italian-restaurants.html)",
+      "Bash(start https://toprated.nz/cities/auckland/cuisine/indian-restaurants.html)",
+      "Bash(start https://toprated.nz/cities/auckland/cuisine/restaurants.html)",
+      "WebFetch(domain:toprated.nz)",
+      "Bash(npm init -y)",
+      "Bash(npm install playwright)",
+      "Bash(npx playwright install chromium)",
+      "Bash(node -e \"const { chromium } = require\\(''playwright''\\); chromium.launch\\(\\).then\\(b => { console.log\\(''Playwright OK, browser version:'', b.version\\(\\)\\); b.close\\(\\); }\\)\")",
+      "Bash(node scripts/screenshot_pages.js /cities/auckland/cuisine/restaurants.html /cities/auckland/cuisine/indian-restaurants.html /cities/auckland/cuisine/italian-restaurants.html)",
+      "Bash(node scripts/screenshot_pages.js \"https://toprated.nz/cities/auckland/cuisine/restaurants.html\" \"https://toprated.nz/cities/auckland/cuisine/indian-restaurants.html\" \"https://toprated.nz/cities/auckland/cuisine/italian-restaurants.html\")"
+    ]
+  }
+}
