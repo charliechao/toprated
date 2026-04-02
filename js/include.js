@@ -13,9 +13,13 @@ const include = async (selector, url) => {
 
     const html = await response.text();
     element.innerHTML = html;
-    
-    // Dispatch event to signal content is loaded (useful for initializing menus)
-    document.dispatchEvent(new Event('componentLoaded'));
+
+    // Only the shared header requires follow-up UI initialization.
+    if (selector === '#site-header') {
+      document.dispatchEvent(new CustomEvent('componentLoaded', {
+        detail: { selector, url }
+      }));
+    }
     
   } catch (error) {
     console.error('Include error:', error);

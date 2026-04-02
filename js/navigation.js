@@ -20,6 +20,14 @@ async function loadJSON(path) {
     return await response.json();
 }
 
+function formatSlugLabel(value) {
+    return value
+        .replace('.html', '')
+        .split('-')
+        .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ');
+}
+
 /**
  * Build breadcrumb markup based on the current URL.
  * Example URL: /cities/auckland/cuisine/japanese-restaurants.html
@@ -119,7 +127,14 @@ async function renderRelated() {
     if (parts.length < 4) return;
     const [_, city, category, pageFile] = parts;
     const cityName = city.charAt(0).toUpperCase() + city.slice(1);
-    const pageName = pageFile.replace('.html', '').replace(/-/g, ' ');
+    const pageSlug = pageFile.replace('.html', '');
+    const pageName = formatSlugLabel(pageFile);
+
+    const industriesData = await loadJSON('/data/industries.json');
+    const activeCategory = industriesData?.find(industry => industry.slug === category);
+    if (!activeCategory || !activeCategory.subCategories.includes(pageSlug)) {
+        return;
+    }
 
     // Cross-city links
     const citiesData = await loadJSON('/data/cities.json');
@@ -134,31 +149,39 @@ async function renderRelated() {
         </a>
     `).join('');
 
-    // Other categories in same city
-    const categories = [
-        { slug: 'cuisine', icon: 'fa-utensils' },
-        { slug: 'trades', icon: 'fa-tools' },
-        { slug: 'services', icon: 'fa-concierge-bell' },
-        { slug: 'hospitality', icon: 'fa-bed' }
-    ];
-    const otherCats = categories.filter(cat => cat.slug !== category);
-    const catCards = otherCats.map(cat => `
-        <a href="/cities/${city}/${cat.slug}/${pageFile}" class="related-card">
-            <i class="fas ${cat.icon}"></i>
+    // Other subcategories in the same city and current category
+    const siblingCards = activeCategory.subCategories
+        .filter(subCategory => subCategory !== pageSlug)
+        .slice(0, 4)
+        .map(subCategory => `
+        <a href="/cities/${city}/${category}/${subCategory}.html" class="related-card">
+            <i class="fas fa-layer-group"></i>
             <div>
-                <strong>Other ${cat.slug}</strong>
+                <strong>${formatSlugLabel(subCategory)}</strong>
                 <span>in ${cityName}</span>
             </div>
         </a>
     `).join('');
 
+    if (!cityCards && !siblingCards) {
+        relatedEl.innerHTML = '';
+        return;
+    }
+
+    const crossCitySection = cityCards ? `
+            <h3 class="section-title">Explore ${pageName} in Other Cities</h3>
+            <div class="related-grid">${cityCards}</div>
+    ` : '';
+
+    const siblingSection = siblingCards ? `
+            <h3 class="section-title" style="margin-top: 3rem;">More ${activeCategory.name} in ${cityName}</h3>
+            <div class="related-grid">${siblingCards}</div>
+    ` : '';
+
     relatedEl.innerHTML = `
         <div class="related-section">
-            <h3 class="section-title">Explore More ${pageName}</h3>
-            <div class="related-grid">${cityCards}</div>
-            
-            <h3 class="section-title" style="margin-top: 3rem;">Other Services in ${cityName}</h3>
-            <div class="related-grid">${catCards}</div>
+            ${crossCitySection}
+            ${siblingSection}
         </div>
     `;
 }
