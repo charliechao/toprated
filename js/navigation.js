@@ -28,6 +28,37 @@ function formatSlugLabel(value) {
         .join(' ');
 }
 
+function renderFeaturedHubGuides(guides) {
+    if (!guides || guides.length === 0) {
+        return '';
+    }
+
+    const cards = guides.map(guide => `
+        <a class="glass-card hub-feature-card" href="${guide.href}">
+            <div class="hub-feature-card__header">
+                <span class="hub-feature-card__eyebrow">${guide.eyebrow}</span>
+                <span class="hub-feature-card__icon"><i class="fas ${guide.icon}"></i></span>
+            </div>
+            <div class="hub-feature-card__body">
+                <h3>${guide.title}</h3>
+                <p>${guide.description}</p>
+            </div>
+            <span class="hub-feature-card__cta">${guide.cta} <i class="fas fa-arrow-right"></i></span>
+        </a>
+    `).join('');
+
+    return `
+        <section class="hub-feature-wrap" aria-label="Featured guides">
+            <div class="hub-feature-intro">
+                <span class="hub-feature-intro__eyebrow">Editor's pick</span>
+                <h2>Featured Guide</h2>
+                <p>A high-intent editorial guide for Auckland business owners researching service providers.</p>
+            </div>
+            <div class="hub-feature-grid">${cards}</div>
+        </section>
+    `;
+}
+
 /**
  * Build breadcrumb markup based on the current URL.
  * Example URL: /cities/auckland/cuisine/japanese-restaurants.html
@@ -71,11 +102,12 @@ async function renderHubGrid() {
 
     if (cityMatch) {
         const city = cityMatch[1];
-        const citiesData = await loadJSON('/data/cities.json');
+        const [citiesData, featuredGuidesData] = await Promise.all([
+            loadJSON('/data/cities.json'),
+            loadJSON('/data/featured_guides.json')
+        ]);
         const cityInfo = citiesData?.find(c => c.slug === city);
         if (!cityInfo) return;
-
-        const industriesData = await loadJSON('/data/industries.json');
         const categories = [
             { slug: 'cuisine', name: 'Food & Cuisine', icon: 'fa-bowl-food' },
             { slug: 'trades', name: 'Home Trades', icon: 'fa-hammer' },
@@ -83,6 +115,7 @@ async function renderHubGrid() {
             { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel' },
             { slug: 'automotive', name: 'Automotive', icon: 'fa-car' }
         ];
+        const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}`] || []);
 
         const cards = categories.map(cat => {
             const href = `/cities/${city}/${cat.slug}/`;
@@ -93,13 +126,17 @@ async function renderHubGrid() {
                     <p class="text-muted">Top-rated services in ${cityInfo.name}.</p>
                 </a>`;
         }).join('');
-        contentEl.innerHTML = `<h2>Browse ${cityInfo.name} by Category</h2><div class="grid-cols-3">${cards}</div>`;
+        contentEl.innerHTML = `${featuredHtml}<h2>Browse ${cityInfo.name} by Category</h2><div class="grid-cols-3">${cards}</div>`;
     } else if (categoryHubMatch) {
         const city = categoryHubMatch[1];
         const categorySlug = categoryHubMatch[2];
-        const industriesData = await loadJSON('/data/industries.json');
+        const [industriesData, featuredGuidesData] = await Promise.all([
+            loadJSON('/data/industries.json'),
+            loadJSON('/data/featured_guides.json')
+        ]);
         const industry = industriesData?.find(i => i.slug === categorySlug);
         if (!industry) return;
+        const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}/${categorySlug}`] || []);
 
         const cards = industry.subCategories.map(sc => {
             const href = `/cities/${city}/${categorySlug}/${sc}.html`;
@@ -111,7 +148,7 @@ async function renderHubGrid() {
                     <p class="text-muted">Best ${title.toLowerCase()} in ${city.charAt(0).toUpperCase() + city.slice(1)}.</p>
                 </a>`;
         }).join('');
-        contentEl.innerHTML = `<h2>${industry.name} in ${city.charAt(0).toUpperCase() + city.slice(1)}</h2><div class="grid-cols-3">${cards}</div>`;
+        contentEl.innerHTML = `${featuredHtml}<h2>${industry.name} in ${city.charAt(0).toUpperCase() + city.slice(1)}</h2><div class="grid-cols-3">${cards}</div>`;
     }
 }
 

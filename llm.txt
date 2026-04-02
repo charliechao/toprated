@@ -7,25 +7,27 @@ TopRated NZ is a premium business directory focused on identifying and showcasin
 - **Purpose**: A discovery platform for top-rated services, dining, and professionals in Aotearoa.
 - **Goal**: Connecting New Zealanders with trusted local businesses through verified ratings and reviews.
 
-## Exploration Paths
-- [All Industries](/industries.html) - Browse businesses by category.
-- [All Cities](/cities.html) - Browse businesses by location.
+## Core Paths
+- [Cities Directory](/cities) - Browse the main city hubs.
+- [Auckland City Directory](/cities/auckland) - Explore Auckland by category.
+- [Auckland Services Directory](/cities/auckland/services) - Professional and business services in Auckland.
+- [Top 7 Web Design Agencies in Auckland (2026 Guide)](/cities/auckland/services/web-design-agencies) - Editorial comparison for Auckland business owners.
 
 ### Cities
-- [Auckland](/cities/auckland.html) - The City of Sails business guides.
-- [Wellington](/cities/wellington.html) - The Capital's top-rated businesses.
+- [Auckland](/cities/auckland) - The City of Sails business guides.
+- [Wellington](/cities/wellington) - The Capital's top-rated businesses.
 
-### Popular Industry Guides
-- [Auckland Builders](/cities/auckland/builders.html) - Top-rated residential and architectural builders.
-- [Auckland Japanese Restaurants](/cities/auckland/japanese-restaurants.html) - Best sushi and Japanese dining.
-- [Auckland Chinese Restaurants](/cities/auckland/chinese-restaurants.html) - Authentic Chinese cuisine.
-- [Wellington Japanese Restaurants](/cities/wellington/japanese-restaurants.html) - Top Japanese spots in the Capital.
+### Featured Auckland Guides
+- [Auckland Builders](/cities/auckland/trades/builders) - Top-rated residential and architectural builders.
+- [Auckland Japanese Restaurants](/cities/auckland/cuisine/japanese-restaurants) - Best sushi and Japanese dining.
+- [Auckland Chinese Restaurants](/cities/auckland/cuisine/chinese-restaurants) - Authentic Chinese cuisine.
+- [Auckland Accountants](/cities/auckland/services/accountants) - Top-rated accounting firms for Auckland businesses.
 
 ## For Businesses
-- [List Your Business](/contact.html) - Apply to be featured on TopRated NZ.
+- [List Your Business](/contact) - Apply to be featured on TopRated NZ.
 
 ## Structure
 The site is built with a glassmorphism design system using:
 - **Typography**: Outfit (headings), Inter (body).
-- **Architecture**: Static HTML with dynamic data injection from JSON for business listings.
-- **Seo**: Optimized meta tags and semantic HTML for high search visibility.
+- **Architecture**: Static HTML with data-driven city/category hubs plus handcrafted editorial guide pages.
+- **SEO / GEO**: Optimized meta tags, semantic HTML, and crawlable city-first guide structures.

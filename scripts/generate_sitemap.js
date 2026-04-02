@@ -30,20 +30,21 @@ function findHtmlFiles(dir, fileList = []) {
 // Convert file path to URL
 function pathToUrl(filePath) {
     const relativePath = path.relative('.', filePath).replace(/\\/g, '/');
-    // Remove index.html from the end for cleaner URLs
     let url = relativePath;
     if (url.endsWith('index.html')) {
         url = url.replace('index.html', '');
+    } else if (url.endsWith('.html')) {
+        url = url.replace('.html', '');
     }
     return `${BASE_URL}/${url}`;
 }
 
 // Get priority based on page type
 function getPriority(url) {
-    if (url === `${BASE_URL}/` || url === `${BASE_URL}/index.html`) return '1.0';
-    if (url.includes('/cities.html')) return '0.9';
-    if (url.match(/\/cities\/[^/]+\.html$/)) return '0.8';
-    if (url.includes('/index.html') || url.endsWith('/')) return '0.7';
+    if (url === `${BASE_URL}/`) return '1.0';
+    if (url === `${BASE_URL}/cities`) return '0.9';
+    if (url.match(/\/cities\/[^/]+$/)) return '0.8';
+    if (url.endsWith('/')) return '0.7';
     return '0.6';
 }
 
