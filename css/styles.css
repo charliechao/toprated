@@ -710,6 +710,66 @@ footer {
     color: var(--color-primary);
 }
 
+.hub-discovery-section {
+    padding-top: 1rem;
+}
+
+.hub-grid-shell {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.hub-grid-header {
+    max-width: 760px;
+}
+
+.hub-grid-header__eyebrow {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.hub-grid-header p {
+    color: var(--color-text-muted);
+    max-width: 640px;
+}
+
+.hub-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.hub-link-list li {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1rem 1.1rem;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+.hub-link-list li a {
+    font-weight: 700;
+    color: var(--color-text-main);
+}
+
+.hub-link-list li span {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.hub-link-list--compact li {
+    padding: 0.9rem 1rem;
+}
+
 /* Loading State */
 .loading {
     text-align: center;

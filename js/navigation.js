@@ -28,7 +28,7 @@ function formatSlugLabel(value) {
         .join(' ');
 }
 
-function renderFeaturedHubGuides(guides) {
+function renderFeaturedHubGuides(guides, intro = {}) {
     if (!guides || guides.length === 0) {
         return '';
     }
@@ -50,9 +50,9 @@ function renderFeaturedHubGuides(guides) {
     return `
         <section class="hub-feature-wrap" aria-label="Featured guides">
             <div class="hub-feature-intro">
-                <span class="hub-feature-intro__eyebrow">Editor's pick</span>
-                <h2>Featured Guide</h2>
-                <p>A high-intent editorial guide for Auckland business owners researching service providers.</p>
+                <span class="hub-feature-intro__eyebrow">${intro.eyebrow || "Editor's pick"}</span>
+                <h2>${intro.title || 'Featured Guide'}</h2>
+                <p>${intro.description || 'A high-intent editorial guide linked from this hub.'}</p>
             </div>
             <div class="hub-feature-grid">${cards}</div>
         </section>
@@ -90,8 +90,13 @@ function buildBreadcrumb() {
  * The script looks at the URL to decide which hub we are on.
  */
 async function renderHubGrid() {
+    const gridEl = document.getElementById('hub-grid');
     const contentEl = document.getElementById('content');
-    if (!contentEl) return;
+    const featuredEl = document.getElementById('hub-featured-guides');
+    const titleEl = document.getElementById('hub-grid-title');
+    const descriptionEl = document.getElementById('hub-grid-description');
+    const targetEl = gridEl || contentEl;
+    if (!targetEl) return;
     const path = location.pathname;
     // City hub: /cities/auckland or /cities/auckland.html
     const cityMatch = path.match(/^\/cities\/([^\/.]+)(\.html)?$/);
@@ -115,7 +120,10 @@ async function renderHubGrid() {
             { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel' },
             { slug: 'automotive', name: 'Automotive', icon: 'fa-car' }
         ];
-        const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}`] || []);
+        const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}`] || [], {
+            title: `Featured Guide for ${cityInfo.name}`,
+            description: `Editorial guides connected to ${cityInfo.name} and its highest-intent local categories.`
+        });
 
         const cards = categories.map(cat => {
             const href = `/cities/${city}/${cat.slug}/`;
@@ -126,7 +134,10 @@ async function renderHubGrid() {
                     <p class="text-muted">Top-rated services in ${cityInfo.name}.</p>
                 </a>`;
         }).join('');
-        contentEl.innerHTML = `${featuredHtml}<h2>Browse ${cityInfo.name} by Category</h2><div class="grid-cols-3">${cards}</div>`;
+        if (featuredEl) featuredEl.innerHTML = featuredHtml;
+        if (titleEl) titleEl.textContent = `Browse ${cityInfo.name} by Category`;
+        if (descriptionEl) descriptionEl.textContent = `Start with services and trades, then explore food, hospitality, and automotive businesses in ${cityInfo.name}.`;
+        targetEl.innerHTML = cards;
     } else if (categoryHubMatch) {
         const city = categoryHubMatch[1];
         const categorySlug = categoryHubMatch[2];
@@ -136,7 +147,10 @@ async function renderHubGrid() {
         ]);
         const industry = industriesData?.find(i => i.slug === categorySlug);
         if (!industry) return;
-        const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}/${categorySlug}`] || []);
+        const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}/${categorySlug}`] || [], {
+            title: `${industry.name} Featured Guide`,
+            description: `Editorial guides connected to ${industry.name.toLowerCase()} in ${formatSlugLabel(city)}.`
+        });
 
         const cards = industry.subCategories.map(sc => {
             const href = `/cities/${city}/${categorySlug}/${sc}.html`;
@@ -148,7 +162,10 @@ async function renderHubGrid() {
                     <p class="text-muted">Best ${title.toLowerCase()} in ${city.charAt(0).toUpperCase() + city.slice(1)}.</p>
                 </a>`;
         }).join('');
-        contentEl.innerHTML = `${featuredHtml}<h2>${industry.name} in ${city.charAt(0).toUpperCase() + city.slice(1)}</h2><div class="grid-cols-3">${cards}</div>`;
+        if (featuredEl) featuredEl.innerHTML = featuredHtml;
+        if (titleEl) titleEl.textContent = `${industry.name} in ${formatSlugLabel(city)}`;
+        if (descriptionEl) descriptionEl.textContent = `Browse the main ${industry.name.toLowerCase()} categories in ${formatSlugLabel(city)} and go deeper into the exact service page you need.`;
+        targetEl.innerHTML = cards;
     }
 }
 

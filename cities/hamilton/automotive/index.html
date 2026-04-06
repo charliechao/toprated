@@ -14,7 +14,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automotive in Hamilton | TopRated NZ</title>
-  <meta name="description" content="Top automotive services in Hamilton." />
+  <meta name="description" content="Browse automotive in Hamilton." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
 
   <!-- Open Graph for social sharing -->
   <meta property="og:title" content="Automotive in Hamilton | TopRated NZ" />
-  <meta property="og:description" content="Top automotive services in Hamilton." />
+  <meta property="og:description" content="Browse automotive in Hamilton." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
 
@@ -42,7 +42,16 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "Automotive in Hamilton | TopRated NZ",
+      "description": "Browse automotive in Hamilton."
+    }
+  ]
+}</script>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -75,15 +84,29 @@
     <section class="hero" style="min-height: 40vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1599446979644-8094602f2360?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
         <div class="hero-content">
             <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
-            <h1>Automotive <br><span class="text-primary">Directory</span></h1>
-            <p>Best in Hamilton</p>
+            <h1>Automotive <br><span class="text-primary">in Hamilton</span></h1>
+            <p>Best automotive in Hamilton</p>
         </div>
     </section>
-    <section class="container section">
-        <div id="content">
-            <p class="loading">Loading content...</p>
+    <div class="container seo-content-wrapper">
+        
+        
+    </div>
+    <section class="container section hub-discovery-section" id="hub-discovery">
+        <div id="hub-featured-guides"></div>
+        <div class="hub-grid-shell">
+            <div class="hub-grid-header">
+                <span class="hub-grid-header__eyebrow">Browse</span>
+                <h2 id="hub-grid-title">Explore this directory</h2>
+                <p id="hub-grid-description">Browse the main categories for this location.</p>
+            </div>
+            <div id="hub-grid" class="grid-cols-3">
+                <p class="loading">Loading content...</p>
+            </div>
         </div>
     </section>
+    
+    
     
   </main>
 

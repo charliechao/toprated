@@ -14,7 +14,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hospitality in Wellington | TopRated NZ</title>
-  <meta name="description" content="Top hospitality services in Wellington." />
+  <meta name="description" content="Browse hospitality in Wellington." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
 
   <!-- Open Graph for social sharing -->
   <meta property="og:title" content="Hospitality in Wellington | TopRated NZ" />
-  <meta property="og:description" content="Top hospitality services in Wellington." />
+  <meta property="og:description" content="Browse hospitality in Wellington." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
 
@@ -42,7 +42,16 @@
   <link rel="stylesheet" href="/css/styles.css" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "Hospitality in Wellington | TopRated NZ",
+      "description": "Browse hospitality in Wellington."
+    }
+  ]
+}</script>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -75,15 +84,29 @@
     <section class="hero" style="min-height: 40vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/wellington-hero.jpg'); background-size: cover; background-position: center;">
         <div class="hero-content">
             <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
-            <h1>Hospitality <br><span class="text-primary">Directory</span></h1>
-            <p>Best in Wellington</p>
+            <h1>Hospitality <br><span class="text-primary">in Wellington</span></h1>
+            <p>Best hospitality in Wellington</p>
         </div>
     </section>
-    <section class="container section">
-        <div id="content">
-            <p class="loading">Loading content...</p>
+    <div class="container seo-content-wrapper">
+        
+        
+    </div>
+    <section class="container section hub-discovery-section" id="hub-discovery">
+        <div id="hub-featured-guides"></div>
+        <div class="hub-grid-shell">
+            <div class="hub-grid-header">
+                <span class="hub-grid-header__eyebrow">Browse</span>
+                <h2 id="hub-grid-title">Explore this directory</h2>
+                <p id="hub-grid-description">Browse the main categories for this location.</p>
+            </div>
+            <div id="hub-grid" class="grid-cols-3">
+                <p class="loading">Loading content...</p>
+            </div>
         </div>
     </section>
+    
+    
     
   </main>
 
