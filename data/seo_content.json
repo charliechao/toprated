@@ -3404,5 +3404,65 @@
         "answer": "Based on Bizzy's published positioning, it operates as a marketplace that connects businesses with multiple funding providers through one application rather than acting as a single direct lender."
       }
     ]
+  },
+  "auckland/services/creative-agencies": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "April 2026",
+    "introText": "Creative work is often hired too late or too vaguely. Auckland businesses usually get better outcomes when they choose a creative partner based on the actual job to be done: brand identity, campaign design, website support, design systems, or ongoing digital direction. This page focuses on Auckland creative agencies and independent specialists who help businesses sharpen presentation, improve consistency, and support growth with stronger design execution.",
+    "buyersGuide": {
+      "title": "How to Choose a Creative Agency in Auckland",
+      "content": "<p>Creative providers can look similar on the surface, but the right fit depends on whether you need branding depth, faster design support, website execution, or a longer-term creative partner.</p><h3>1. Match the Provider to the Type of Work</h3><p>Some businesses need a strong visual identity and collateral system. Others need a refined website, ongoing design support, or a clearer digital presence. Choose the provider whose core offer matches the actual problem you are solving.</p><h3>2. Check Whether the Work Is Strategic or Production-Led</h3><p>Some creatives are strongest when defining direction, while others are best for turning existing ideas into polished assets quickly and reliably. Ask how they handle discovery, revisions, and rollout.</p><h3>3. Review Real Portfolio Breadth</h3><p>A strong portfolio should show more than one style and more than one industry. Look for evidence that the provider can adapt to different client goals without making every project feel interchangeable.</p><h3>4. Clarify Ongoing Support</h3><p>If you will need future updates, campaigns, web changes, or refreshed brand assets, ask how support works after the initial project. Continuity often matters as much as the first deliverable.</p><h3>5. Compare Communication Style</h3><p>The right creative partner should make decision-making easier. If the process feels vague, overly jargon-heavy, or hard to scope, the project usually becomes slower and more expensive than it needs to be.</p>"
+    },
+    "questionsToAsk": [
+      "What type of clients and projects do you handle most often?",
+      "Do you focus more on brand identity, website execution, or ongoing creative support?",
+      "What is your process from briefing through to revisions and final delivery?",
+      "Can you show examples that are similar in complexity or industry to my business?",
+      "How do you support future updates after the first project is delivered?"
+    ],
+    "faqs": [
+      {
+        "question": "What does a creative agency usually help with?",
+        "answer": "Depending on the provider, creative agencies may cover branding, logos, print collateral, campaigns, website design, digital assets, and ongoing design direction."
+      },
+      {
+        "question": "Should I hire a full agency or an independent creative specialist?",
+        "answer": "That depends on scope. Smaller branding and design jobs may suit an experienced independent specialist, while broader digital and ongoing support needs may suit a studio or agency structure."
+      },
+      {
+        "question": "What matters most when comparing Auckland creative providers?",
+        "answer": "Fit matters more than size. Compare portfolio relevance, communication quality, process clarity, strategic depth, and whether the provider's strongest work matches your brief."
+      }
+    ]
+  },
+  "auckland/services/broadband-providers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "April 2026",
+    "introText": "Internet plans often look similar until installation timelines, support quality, and network fit start affecting day-to-day work. For Auckland households and businesses, choosing the right broadband provider usually comes down to reliability, plan flexibility, support responsiveness, and whether the provider can match the connection type available at your address.",
+    "buyersGuide": {
+      "title": "How to Choose a Broadband Provider in Auckland",
+      "content": "<p>The cheapest plan is not always the best value if support is weak or the service does not match how your home or business actually uses the connection.</p><h3>1. Start With Connection Type</h3><p>Check whether fibre, wireless, or higher-speed options like HyperFibre are available at your address. The best provider for a Kumeu property may not be the best provider for a central Auckland office.</p><h3>2. Compare Speed Against Actual Use</h3><p>Streaming, remote work, cloud backups, gaming, VoIP, and multiple active users all place different demands on a connection. Buy enough speed for real usage, not just the lowest monthly price.</p><h3>3. Ask About Support and Provisioning</h3><p>Good broadband providers make setup, plan changes, outages, and troubleshooting easy to understand. Fast support and clearer communication can matter more than a small pricing difference.</p><h3>4. Check Contract Terms and Equipment Requirements</h3><p>Look at modem requirements, setup charges, open-term options, and whether the provider's hardware and plan structure suit your setup without hidden friction.</p><h3>5. Think About Future Demand</h3><p>If your household or business is likely to increase device usage, media quality, or cloud reliance, it can be worth choosing a provider and plan that can scale without a disruptive switch later.</p>"
+    },
+    "questionsToAsk": [
+      "What connection types are available at my address right now?",
+      "What modem or hardware do I need for this plan?",
+      "How quickly can the connection be provisioned or switched over?",
+      "Is the plan open-term, and are there any setup or exit costs?",
+      "What local support is available if service quality drops or installation is delayed?"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between fibre and wireless broadband?",
+        "answer": "Fibre typically offers stronger consistency and higher speeds where available, while wireless broadband can be a useful option in locations without fixed-line access or where faster setup matters."
+      },
+      {
+        "question": "When is HyperFibre worth paying for?",
+        "answer": "HyperFibre makes the most sense for very high-demand households or businesses with heavy concurrent usage, large transfers, advanced streaming needs, or performance-sensitive workflows."
+      },
+      {
+        "question": "What should I compare besides monthly price?",
+        "answer": "Compare upload and download speed, support quality, contract flexibility, setup friction, included hardware, and whether the provider's connection type is the right fit for your location."
+      }
+    ]
   }
 }

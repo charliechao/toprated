@@ -318,8 +318,13 @@ async function renderBusinessList() {
         return;
     }
 
-    // Sort by rating desc, then reviews desc
-    filtered.sort((a, b) => b.rating - a.rating || b.reviews - a.reviews);
+    // Sort rated listings first, then by rating desc and review volume.
+    filtered.sort((a, b) => {
+        const aHasRating = typeof a.rating === 'number' && typeof a.reviews === 'number' && a.reviews > 0;
+        const bHasRating = typeof b.rating === 'number' && typeof b.reviews === 'number' && b.reviews > 0;
+        if (aHasRating !== bHasRating) return aHasRating ? -1 : 1;
+        return (b.rating || 0) - (a.rating || 0) || (b.reviews || 0) - (a.reviews || 0);
+    });
 
     // Inject Breadcrumb Schema
     const breadcrumbSchema = {
@@ -338,7 +343,11 @@ async function renderBusinessList() {
     document.head.appendChild(schemaScript);
 
     listEl.innerHTML = filtered.map(b => {
-        const isPremium = b.rating >= 4.8;
+        const hasRating = typeof b.rating === 'number' && typeof b.reviews === 'number' && b.reviews > 0;
+        const isPremium = hasRating && b.rating >= 4.8;
+        const ratingBadge = hasRating
+            ? `<div class="rating-badge"><i class="fas fa-star"></i> ${b.rating} (${b.reviews} reviews)</div>`
+            : '<div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>';
         return `
         <div class="glass-card business-card-horizontal ${isPremium ? 'premium-border' : ''}">
             <div class="business-image-container">
@@ -346,7 +355,7 @@ async function renderBusinessList() {
                 ${isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : ''}
             </div>
             <div class="business-info">
-                <div class="rating-badge"><i class="fas fa-star"></i> ${b.rating} (${b.reviews} reviews)</div>
+                ${ratingBadge}
                 <h3>${b.name}</h3>
                 ${b.neighborhood ? `<div class="neighborhood-tag"><i class="fas fa-map-pin"></i> ${b.neighborhood}</div>` : ''}
                 <p class="text-muted">${b.description}</p>

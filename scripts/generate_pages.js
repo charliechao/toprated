@@ -65,11 +65,13 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents', 'business-loans'],
+        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents', 'business-loans', 'creative-agencies', 'broadband-providers'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
+            'broadband-providers': 'fibre, wireless, and business internet options for better connectivity',
             'cleaning-services': 'home, office, move-out, and one-off cleaning jobs',
+            'creative-agencies': 'branding, websites, design systems, and digital creative support',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance'
         }
@@ -634,6 +636,8 @@ const subCatsMapping = {
     'cleaning-services': { cat: 'services', name: 'Cleaning Services' },
     'accountants': { cat: 'services', name: 'Accountants' },
     'business-loans': { cat: 'services', name: 'Business Loans' },
+    'broadband-providers': { cat: 'services', name: 'Broadband Providers' },
+    'creative-agencies': { cat: 'services', name: 'Creative Agencies' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
     'mechanics': { cat: 'automotive', name: 'Mechanics' },
