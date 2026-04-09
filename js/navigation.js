@@ -288,7 +288,7 @@ async function renderBusinessList() {
     const path = location.pathname;
     // Handle both /cities/auckland/plumbers.html and /cities/auckland/trades/plumbers.html
     const parts = path.split('/').filter(Boolean);
-    let citySlug, industrySlug;
+    let citySlug, industrySlug, activeCategorySlug = null;
 
     if (parts.length === 3) {
         // cities / {city} / {industry}.html
@@ -297,6 +297,7 @@ async function renderBusinessList() {
     } else if (parts.length === 4) {
         // cities / {city} / {category} / {industry}.html
         citySlug = parts[1];
+        activeCategorySlug = parts[2];
         industrySlug = parts[3].replace('.html', '').replace(/-/g, ' ');
     } else {
         return;
@@ -308,6 +309,7 @@ async function renderBusinessList() {
     // Filter by citySlug and pageSlug (exact matches from data)
     const filtered = businesses.filter(b =>
         b.citySlug === citySlug &&
+        (!activeCategorySlug || b.categorySlug === activeCategorySlug) &&
         b.pageSlug === industrySlug.replace(/\s+/g, '-')
     );
 

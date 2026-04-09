@@ -65,9 +65,10 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents'],
+        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents', 'business-loans'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
+            'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
             'cleaning-services': 'home, office, move-out, and one-off cleaning jobs',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance'
@@ -632,6 +633,7 @@ const subCatsMapping = {
     'painters': { cat: 'trades', name: 'Painters' },
     'cleaning-services': { cat: 'services', name: 'Cleaning Services' },
     'accountants': { cat: 'services', name: 'Accountants' },
+    'business-loans': { cat: 'services', name: 'Business Loans' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
     'mechanics': { cat: 'automotive', name: 'Mechanics' },

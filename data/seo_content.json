@@ -3369,5 +3369,40 @@
         "answer": "Yes. Renovations regularly uncover issues behind walls, in wet areas, or around services, so a contingency buffer is one of the simplest ways to keep the project moving."
       }
     ]
+  },
+  "auckland/services/business-loans": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "April 2026",
+    "introText": "Auckland business owners usually do not need more loan options. They need a faster way to compare credible offers without repeating the same application process across multiple lenders. This page focuses on business-loan platforms and finance providers that can help SMEs compare working capital, growth funding, asset finance, and cashflow support more efficiently.",
+    "buyersGuide": {
+      "title": "How to Choose a Business Loan Provider in Auckland",
+      "content": "<p>Business finance is easy to oversimplify. The headline rate matters, but so do speed, lender fit, fees, flexibility, and how much friction the application creates for an already busy owner.</p><h3>1. Compare the Range of Funding Types</h3><p>Some providers are strongest on unsecured business loans, while others are better for invoice finance, asset-backed lending, or short-term working capital. Make sure the platform can surface options that actually match the reason you need funding.</p><h3>2. Ask How Many Lenders You Can Reach Through One Application</h3><p>The main advantage of a marketplace like Bizzy is saving time. Instead of filling out multiple lender applications separately, you should be able to compare several relevant offers through one process and narrow the shortlist faster.</p><h3>3. Check Turnaround Speed and Information Requirements</h3><p>When cashflow pressure is real, delays matter. Ask what documents are required upfront, how quickly indicative quotes can arrive, and whether the provider can keep the process moving without excessive admin.</p><h3>4. Look Beyond the Advertised Rate</h3><p>Repayment frequency, fees, personal guarantees, early repayment rules, and total borrowing cost all shape whether a funding option is truly useful. Compare structure and flexibility, not just the top-line number.</p><h3>5. Prioritise Transparency for SMEs</h3><p>Good funding platforms explain options in plain English and help owners understand the tradeoffs between speed, security, cost, and lender fit. If the process feels vague, rushed, or overly sales-led, keep comparing.</p>"
+    },
+    "questionsToAsk": [
+      "How many lenders or funding partners can you match me with from one application?",
+      "What business funding products do you support besides standard term loans?",
+      "How quickly can I expect quotes or indicative offers after applying?",
+      "Will comparing offers affect my credit score before I choose a lender?",
+      "What fees, broker costs, or lender-specific charges should I expect beyond the interest rate?",
+      "What business information and financial documents do I need to prepare upfront?"
+    ],
+    "faqs": [
+      {
+        "question": "What is a business loan marketplace?",
+        "answer": "It is a platform that helps business owners compare funding options from multiple lenders instead of approaching each provider one by one. That can reduce admin and speed up early comparison."
+      },
+      {
+        "question": "How fast can Auckland businesses get loan quotes?",
+        "answer": "That depends on the lender, the quality of your information, and the funding type, but some marketplaces and non-bank providers can return indicative options within one to two business days."
+      },
+      {
+        "question": "What should I compare besides the interest rate?",
+        "answer": "Compare fees, repayment structure, term length, collateral or guarantee requirements, flexibility, approval speed, and whether the product actually fits your cashflow needs."
+      },
+      {
+        "question": "Is Bizzy a direct lender?",
+        "answer": "Based on Bizzy's published positioning, it operates as a marketplace that connects businesses with multiple funding providers through one application rather than acting as a single direct lender."
+      }
+    ]
   }
 }
