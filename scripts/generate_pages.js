@@ -16,8 +16,8 @@ const cityHeros = {
     'auckland': '/img/auckland-hero.jpg',
     'wellington': '/img/wellington-hero.jpg',
     'christchurch': '/img/christchurch-hero.jpg',
-    'hamilton': 'https://images.unsplash.com/photo-1599446979644-8094602f2360?auto=format&fit=crop&w=1200&q=80',
-    'tauranga': 'https://images.unsplash.com/photo-1594493397611-6677f24090b8?auto=format&fit=crop&w=1200&q=80'
+    'hamilton': '/img/hamilton-hero.jpg',
+    'tauranga': '/img/tauranga-hero.jpg'
 };
 
 const indHeros = {
