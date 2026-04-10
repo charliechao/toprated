@@ -7005,5 +7005,61 @@
     "pageSlug": "creative-agencies",
     "neighborhood": "Parnell",
     "id": 368
+  },
+  {
+    "name": "One NZ Broadband",
+    "industry": "Broadband Providers",
+    "city": "Auckland",
+    "description": "One NZ Broadband offers fibre, wireless, and Hyperfibre plans for Auckland households that want flexible connectivity options, bundled services, and a major nationwide support network.",
+    "website": "https://one.nz/broadband/",
+    "address": "74 Taharoto Road, Takapuna, Auckland 0622",
+    "image": "https://vodafone.brightspotcdn.com/dims4/default/ceaba85/2147483647/strip/true/crop/1524x800+678+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fvodafone-nz-dx-brightspot.s3.amazonaws.com%2Fb4%2F08%2F12e1643e405e847bc4588e0ced6a%2Focs02604-be28-smartwifi-onestep-herobanner-desktop-1440x400-2x.png",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "broadband-providers",
+    "neighborhood": "Takapuna",
+    "id": 369
+  },
+  {
+    "name": "Slingshot Broadband",
+    "industry": "Broadband Providers",
+    "city": "Auckland",
+    "description": "Slingshot Broadband provides fibre and wireless plans for Auckland customers looking for straightforward pricing, home internet bundles, and a long-running New Zealand telco brand.",
+    "website": "https://www.slingshot.co.nz/broadband-plans",
+    "address": "PO Box 108-109, Auckland 1010",
+    "image": "https://www.slingshot.co.nz/assets/images/og-image.jpg?version=v2.10.9",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "broadband-providers",
+    "neighborhood": "Auckland Central",
+    "id": 370
+  },
+  {
+    "name": "Orcon Broadband",
+    "industry": "Broadband Providers",
+    "city": "Auckland",
+    "description": "Orcon Broadband offers fibre and wireless internet plans backed by New Zealand-based support, making it a practical option for Auckland homes that want flexible broadband choices from an established provider.",
+    "website": "https://www.orcon.net.nz/broadband",
+    "address": "P.O. Box 302362, North Harbour, Auckland",
+    "image": "https://www.orcon.net.nz/orcon-og-image.jpg",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "broadband-providers",
+    "neighborhood": "North Harbour",
+    "id": 371
+  },
+  {
+    "name": "Voyager Broadband",
+    "industry": "Broadband Providers",
+    "city": "Auckland",
+    "description": "Voyager Broadband is a New Zealand-owned provider serving Auckland with simple home internet plans, strong customer support, and communication services for households that want a locally run option.",
+    "website": "https://voyager.nz/home",
+    "address": "11B Piermark Drive, Rosedale, Auckland 0632",
+    "image": "https://voyager.nz/uploads/meta.jpg",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "broadband-providers",
+    "neighborhood": "Rosedale",
+    "id": 372
   }
 ]
