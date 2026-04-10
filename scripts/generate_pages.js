@@ -170,6 +170,22 @@ function buildHubSchema(title, description, faqs = []) {
     };
 }
 
+function buildFaqSchema(faqs = []) {
+    if (!faqs || faqs.length === 0) return null;
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+}
+
 function getCityHubSeo(city) {
     const profile = cityProfiles[city.slug] || cityProfiles['auckland'];
     return {
@@ -575,6 +591,18 @@ function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null) {
 // 3. Execution
 // ---------------------------------------------------
 
+// 3.0 Nationwide Hub
+const nationwideSeo = seoContent['new-zealand'] || null;
+const nationwideTitle = nationwideSeo?.pageTitle || 'Nationwide Businesses in New Zealand | TopRated NZ';
+const nationwideDescription = nationwideSeo?.metaDescription || 'Compare businesses serving customers across New Zealand.';
+const nationwideHtml = getBaseTemplate(
+    nationwideTitle,
+    nationwideDescription,
+    generateLeafContent(`Nationwide <br><span class="text-primary">Businesses in New Zealand</span>`, nationwideSeo, cityHeros['auckland']),
+    buildFaqSchema(nationwideSeo?.faqs || [])
+);
+fs.writeFileSync('new-zealand.html', nationwideHtml);
+
 // 3.1 City Hubs
 cities.forEach(city => {
     const hubSeo = getCityHubSeo(city);
@@ -659,28 +687,11 @@ cities.forEach(city => {
             const pageKey = `${city.slug}/${map.cat}/${sc}`;
             const specificSeo = seoContent[pageKey] || null;
 
-            // Generate FAQ Schema if applicable
-            let faqSchema = null;
-            if (specificSeo && specificSeo.faqs) {
-                faqSchema = {
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": specificSeo.faqs.map(f => ({
-                        "@type": "Question",
-                        "name": f.question,
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": f.answer
-                        }
-                    }))
-                };
-            }
-
             const html = getBaseTemplate(
                 `Top Rated ${map.name} in ${city.name} | Verified for 2026`,
                 `Compare the best ${map.name.toLowerCase()} in ${city.name}. Read reviews, view ratings, and find the top-rated ${map.name.toLowerCase()} near you in ${city.name}.`,
                 generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland']),
-                faqSchema
+                buildFaqSchema(specificSeo?.faqs || [])
             );
             fs.writeFileSync(path.join(dir, `${sc}.html`), html);
         });

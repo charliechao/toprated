@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nationwide Businesses in New Zealand | TopRated NZ</title>
+  <meta name="description" content="Browse businesses serving customers across New Zealand. Compare nationwide providers by category and shortlist NZ-wide options faster." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Nationwide Businesses in New Zealand | TopRated NZ" />
+  <meta property="og:description" content="Browse businesses serving customers across New Zealand. Compare nationwide providers by category and shortlist NZ-wide options faster." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<!-- PAGE_URL_PLACEHOLDER -->" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a nationwide business on TopRated NZ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a business that explicitly serves customers across New Zealand rather than operating as a city-only provider. These listings are kept separate from local city pages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why keep nationwide businesses off city pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "City pages are designed for local comparison intent. A separate nationwide page makes it easier to compare broader-coverage providers without diluting the purpose of local guides."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are businesses grouped on the nationwide page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are grouped by the same top-level category and subcategory taxonomy already used across the site, so buyers can compare NZ-wide providers in the right context."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will all categories have nationwide businesses listed immediately?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The page is designed to support nationwide listings over time, and categories will only appear when businesses are explicitly marked as NZ-wide."
+      }
+    }
+  ]
+}</script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1851714285531074');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.net/tr?id=1851714285531074&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
+
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+    
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/auckland-hero.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="container">
+            <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
+            <h1>Nationwide <br><span class="text-primary">Businesses in New Zealand</span></h1>
+        </div>
+    </section>
+    <div class="container seo-content-wrapper">
+        
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Compare Nationwide Businesses in New Zealand</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+        
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">This page is for businesses that serve customers across New Zealand rather than one city alone. It is designed to separate true NZ-wide providers from local directories, so buyers can compare broader-coverage options without jumping between city pages that are built for local intent.</p>
+                    <p class="seo-updated"><i class="fas fa-calendar-check"></i> Last updated: April 2026</p>
+                </div>
+            </section>
+            <section class="seo-section seo-section--guide" id="buyers-guide">
+                <div class="container">
+                    <h2><i class="fas fa-clipboard-check"></i> How to Compare Nationwide Businesses in New Zealand</h2>
+                    <div class="seo-guide-content"><p>Nationwide providers usually solve a different problem from local specialists. The right shortlist depends on coverage consistency, support quality, category fit, and whether the business can deliver the same standard of service across regions instead of only performing well in one metro.</p><h3>1. Check Real Coverage, Not Just Branding</h3><p>Some companies market nationally but still rely heavily on one region. Compare whether the provider truly supports customers across New Zealand through its delivery model, onboarding process, service footprint, or partner network.</p><h3>2. Match the Provider to the Category</h3><p>National relevance means different things in different categories. A broadband provider, loan marketplace, or digital agency can all be nationwide for different reasons, so compare them inside the right category rather than as one generic list.</p><h3>3. Compare Consistency and Support</h3><p>With NZ-wide providers, process quality matters as much as headline positioning. Look at support responsiveness, clarity, and how easy it is to get help if your needs differ by location or scale.</p><h3>4. Use Nationwide Pages Differently From City Pages</h3><p>City pages help you compare local operators. This page helps you compare providers whose value comes from broader coverage, centralised systems, or a nationwide service model. Start here when location is less important than reach.</p></div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--questions" id="questions-to-ask">
+                <div class="container">
+                    <h2><i class="fas fa-comments"></i> Questions to Ask Before Hiring</h2>
+                    <ul class="seo-questions-list">
+                        <li><i class="fas fa-circle-question"></i> <span>Do you actively serve customers throughout New Zealand, or only selected regions?</span></li><li><i class="fas fa-circle-question"></i> <span>How does service delivery differ for customers outside Auckland or the main metros?</span></li><li><i class="fas fa-circle-question"></i> <span>What support channels and response times do you offer for nationwide clients?</span></li><li><i class="fas fa-circle-question"></i> <span>Which category or use case are you strongest in compared with local specialists?</span></li><li><i class="fas fa-circle-question"></i> <span>Are there any regional limitations, extra costs, or exceptions buyers should know about?</span></li>
+                    </ul>
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
+        <div id="business-list" class="business-list">
+            <p class="loading">Loading top-rated businesses...</p>
+        </div>
+    </section>
+    
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+                    
+                        <details class="seo-faq-item">
+                            <summary>What is a nationwide business on TopRated NZ?</summary>
+                            <p>It is a business that explicitly serves customers across New Zealand rather than operating as a city-only provider. These listings are kept separate from local city pages.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Why keep nationwide businesses off city pages?</summary>
+                            <p>City pages are designed for local comparison intent. A separate nationwide page makes it easier to compare broader-coverage providers without diluting the purpose of local guides.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>How are businesses grouped on the nationwide page?</summary>
+                            <p>They are grouped by the same top-level category and subcategory taxonomy already used across the site, so buyers can compare NZ-wide providers in the right context.</p>
+                        </details>
+                    
+                        <details class="seo-faq-item">
+                            <summary>Will all categories have nationwide businesses listed immediately?</summary>
+                            <p>No. The page is designed to support nationwide listings over time, and categories will only appear when businesses are explicitly marked as NZ-wide.</p>
+                        </details>
+                    
+                </div>
+            </div>
+        </section>
+    <section class="container section">
+        <div id="related"></div>
+    </section>
+    
+        <aside class="seo-trust-box">
+            <div class="container">
+                <div class="seo-trust-inner">
+                    <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="seo-trust-text">
+                        <strong>Why Trust TopRated?</strong>
+                        <p>Our listings are independently curated based on verified Google reviews, industry certifications, and local expertise. We are not pay-to-play — every recommendation is earned. <a href="/about.html">Learn about our methodology →</a></p>
+                        <p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: TopRated Editorial Team</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    <script id="schema" type="application/ld+json"></script>
+    
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/include.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js"></script>
+</body>
+
+</html>

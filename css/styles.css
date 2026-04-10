@@ -548,6 +548,37 @@ footer {
     color: var(--color-primary);
 }
 
+.nationwide-subcategory-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: rgba(20, 184, 166, 0.12);
+    color: var(--color-primary);
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.nationwide-group {
+    margin-bottom: 4rem;
+}
+
+.nationwide-group__header {
+    margin-bottom: 1.5rem;
+}
+
+.nationwide-group__header p {
+    max-width: 720px;
+}
+
+.nationwide-group__list {
+    display: grid;
+    gap: 1.5rem;
+}
+
 @media (max-width: 900px) {
     .business-card-horizontal {
         grid-template-columns: 1fr;

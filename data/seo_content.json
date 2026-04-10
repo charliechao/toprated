@@ -3370,6 +3370,42 @@
       }
     ]
   },
+  "new-zealand": {
+    "pageTitle": "Nationwide Businesses in New Zealand | TopRated NZ",
+    "metaDescription": "Browse businesses serving customers across New Zealand. Compare nationwide providers by category and shortlist NZ-wide options faster.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "April 2026",
+    "introText": "This page is for businesses that serve customers across New Zealand rather than one city alone. It is designed to separate true NZ-wide providers from local directories, so buyers can compare broader-coverage options without jumping between city pages that are built for local intent.",
+    "buyersGuide": {
+      "title": "How to Compare Nationwide Businesses in New Zealand",
+      "content": "<p>Nationwide providers usually solve a different problem from local specialists. The right shortlist depends on coverage consistency, support quality, category fit, and whether the business can deliver the same standard of service across regions instead of only performing well in one metro.</p><h3>1. Check Real Coverage, Not Just Branding</h3><p>Some companies market nationally but still rely heavily on one region. Compare whether the provider truly supports customers across New Zealand through its delivery model, onboarding process, service footprint, or partner network.</p><h3>2. Match the Provider to the Category</h3><p>National relevance means different things in different categories. A broadband provider, loan marketplace, or digital agency can all be nationwide for different reasons, so compare them inside the right category rather than as one generic list.</p><h3>3. Compare Consistency and Support</h3><p>With NZ-wide providers, process quality matters as much as headline positioning. Look at support responsiveness, clarity, and how easy it is to get help if your needs differ by location or scale.</p><h3>4. Use Nationwide Pages Differently From City Pages</h3><p>City pages help you compare local operators. This page helps you compare providers whose value comes from broader coverage, centralised systems, or a nationwide service model. Start here when location is less important than reach.</p>"
+    },
+    "questionsToAsk": [
+      "Do you actively serve customers throughout New Zealand, or only selected regions?",
+      "How does service delivery differ for customers outside Auckland or the main metros?",
+      "What support channels and response times do you offer for nationwide clients?",
+      "Which category or use case are you strongest in compared with local specialists?",
+      "Are there any regional limitations, extra costs, or exceptions buyers should know about?"
+    ],
+    "faqs": [
+      {
+        "question": "What is a nationwide business on TopRated NZ?",
+        "answer": "It is a business that explicitly serves customers across New Zealand rather than operating as a city-only provider. These listings are kept separate from local city pages."
+      },
+      {
+        "question": "Why keep nationwide businesses off city pages?",
+        "answer": "City pages are designed for local comparison intent. A separate nationwide page makes it easier to compare broader-coverage providers without diluting the purpose of local guides."
+      },
+      {
+        "question": "How are businesses grouped on the nationwide page?",
+        "answer": "They are grouped by the same top-level category and subcategory taxonomy already used across the site, so buyers can compare NZ-wide providers in the right context."
+      },
+      {
+        "question": "Will all categories have nationwide businesses listed immediately?",
+        "answer": "No. The page is designed to support nationwide listings over time, and categories will only appear when businesses are explicitly marked as NZ-wide."
+      }
+    ]
+  },
   "auckland/services/business-loans": {
     "author": "TopRated Editorial Team",
     "lastUpdated": "April 2026",
