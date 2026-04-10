@@ -591,12 +591,18 @@ footer {
 .business-image-container {
     width: 350px;
     height: 100%;
+    background: #fff;
 }
 
 .business-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.business-image--contain {
+    object-fit: contain;
+    padding: 1rem;
 }
 
 .business-info {

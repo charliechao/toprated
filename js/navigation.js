@@ -40,6 +40,7 @@ function sortBusinessesForDisplay(items) {
 function renderBusinessCard(business, options = {}) {
     const hasRating = typeof business.rating === 'number' && typeof business.reviews === 'number' && business.reviews > 0;
     const isPremium = hasRating && business.rating >= 4.8;
+    const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
     const ratingBadge = hasRating
         ? `<div class="rating-badge"><i class="fas fa-star"></i> ${business.rating} (${business.reviews} reviews)</div>`
         : '<div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>';
@@ -50,7 +51,7 @@ function renderBusinessCard(business, options = {}) {
     return `
         <div class="glass-card business-card-horizontal ${isPremium ? 'premium-border' : ''}">
             <div class="business-image-container">
-                <img src="${business.image}" alt="${business.name}" class="business-image">
+                <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}">
                 ${isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : ''}
             </div>
             <div class="business-info">

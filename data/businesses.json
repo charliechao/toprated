@@ -6772,6 +6772,7 @@
     "website": "https://www.christchurchelectrical.co.nz/",
     "address": "53 Montreal Street, Sydenham, Christchurch 8023",
     "image": "/img/businesses/chc-elec.jpg",
+    "imageFit": "contain",
     "citySlug": "christchurch",
     "categorySlug": "trades",
     "pageSlug": "electricians",
