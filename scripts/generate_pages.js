@@ -10,6 +10,7 @@ const industries = JSON.parse(fs.readFileSync('data/industries.json', 'utf8'));
 const seoContent = fs.existsSync('data/seo_content.json') ? JSON.parse(fs.readFileSync('data/seo_content.json', 'utf8')) : {};
 const templatePath = path.resolve(__dirname, '..', 'templates', 'template-page.html');
 const baseTemplate = fs.readFileSync(templatePath, 'utf8');
+const BASE_URL = 'https://toprated.nz';
 
 // Hero Images Mapping
 const cityHeros = {
@@ -95,12 +96,39 @@ const categoryHubConfigs = {
 // 2. Page Template Functions
 // ---------------------------------------------------
 
-function getBaseTemplate(title, description, content, schema = null) {
+function toPublicPath(relativePath) {
+    let normalizedPath = relativePath.replace(/\\/g, '/');
+    if (!normalizedPath.startsWith('/')) {
+        normalizedPath = `/${normalizedPath}`;
+    }
+
+    if (normalizedPath.endsWith('/index.html')) {
+        normalizedPath = normalizedPath.replace('/index.html', '/');
+    } else if (normalizedPath.endsWith('.html')) {
+        normalizedPath = normalizedPath.replace('.html', '');
+    }
+
+    return normalizedPath.replace(/\/{2,}/g, '/');
+}
+
+function toAbsoluteUrl(relativePath) {
+    return `${BASE_URL}${toPublicPath(relativePath)}`;
+}
+
+function normalizeInternalLinks(html = '') {
+    return html
+        .replace(/href=(['"])(\/[^'"]*?)\/index\.html((?:[#?][^'"]*)?)\1/g, (_match, quote, href, suffix = '') => `href=${quote}${href}/${suffix}${quote}`)
+        .replace(/href=(['"])(\/[^'"]*?)\.html((?:[#?][^'"]*)?)\1/g, (_match, quote, href, suffix = '') => `href=${quote}${href}${suffix}${quote}`);
+}
+
+function getBaseTemplate(title, description, pagePath, content, schema = null) {
     const schemaScript = schema ? `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>` : '';
+    const pageUrl = toAbsoluteUrl(pagePath);
     return baseTemplate
         .replace(/<!-- PAGE_TITLE_PLACEHOLDER -->/g, title)
         .replace(/<!-- PAGE_DESCRIPTION_PLACEHOLDER -->/g, description)
-        .replace('<!-- PAGE_CONTENT_PLACEHOLDER -->', content)
+        .replace(/<!-- PAGE_URL_PLACEHOLDER -->/g, pageUrl)
+        .replace('<!-- PAGE_CONTENT_PLACEHOLDER -->', normalizeInternalLinks(content))
         .replace('<!-- SCHEMA_PLACEHOLDER -->', schemaScript);
 }
 
@@ -117,7 +145,7 @@ function buildHubLinkList(citySlug, categorySlug, slugs, descriptions = {}) {
     <ul class="hub-link-list">
         ${slugs.map(slug => `
             <li>
-                <a href="/cities/${citySlug}/${categorySlug}/${slug}.html">${formatSlugLabel(slug)}</a>
+                <a href="/cities/${citySlug}/${categorySlug}/${slug}">${formatSlugLabel(slug)}</a>
                 <span>${descriptions[slug] || ''}</span>
             </li>
         `).join('')}
@@ -598,6 +626,7 @@ const nationwideDescription = nationwideSeo?.metaDescription || 'Compare busines
 const nationwideHtml = getBaseTemplate(
     nationwideTitle,
     nationwideDescription,
+    '/new-zealand',
     generateLeafContent(`Nationwide <br><span class="text-primary">Businesses in New Zealand</span>`, nationwideSeo, cityHeros['auckland']),
     buildFaqSchema(nationwideSeo?.faqs || [])
 );
@@ -609,6 +638,7 @@ cities.forEach(city => {
     const html = getBaseTemplate(
         hubSeo.pageTitle,
         hubSeo.metaDescription,
+        `/cities/${city.slug}`,
         generateHubContent(hubSeo.heroTitle, hubSeo.heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo),
         buildHubSchema(hubSeo.pageTitle, hubSeo.metaDescription, hubSeo.faqs)
     );
@@ -636,6 +666,7 @@ cities.forEach(city => {
         const html = getBaseTemplate(
             pageTitle,
             metaDescription,
+            `/cities/${city.slug}/${cat}/`,
             generateHubContent(heroTitle, heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo),
             buildHubSchema(pageTitle, metaDescription, hubSeo?.faqs || [])
         );
@@ -690,6 +721,7 @@ cities.forEach(city => {
             const html = getBaseTemplate(
                 `Top Rated ${map.name} in ${city.name} | Verified for 2026`,
                 `Compare the best ${map.name.toLowerCase()} in ${city.name}. Read reviews, view ratings, and find the top-rated ${map.name.toLowerCase()} near you in ${city.name}.`,
+                `/cities/${city.slug}/${map.cat}/${sc}`,
                 generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland']),
                 buildFaqSchema(specificSeo?.faqs || [])
             );

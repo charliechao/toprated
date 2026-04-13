@@ -8,6 +8,15 @@ const path = require('path');
 
 const BASE_URL = 'https://toprated.nz';
 const OUTPUT_FILE = 'sitemap.xml';
+const TOP_LEVEL_PUBLIC_PAGES = new Set([
+    'index.html',
+    'about.html',
+    'cities.html',
+    'contact.html',
+    'new-zealand.html',
+    'privacy.html',
+    'terms.html'
+]);
 
 // Recursively find all HTML files
 function findHtmlFiles(dir, fileList = []) {
@@ -39,6 +48,20 @@ function pathToUrl(filePath) {
     return `${BASE_URL}/${url}`;
 }
 
+function isPublicHtmlFile(filePath) {
+    const relativePath = path.relative('.', filePath).replace(/\\/g, '/');
+
+    if (relativePath.startsWith('cities/')) {
+        return true;
+    }
+
+    if (relativePath.startsWith('components/') || relativePath.startsWith('templates/')) {
+        return false;
+    }
+
+    return TOP_LEVEL_PUBLIC_PAGES.has(relativePath);
+}
+
 // Get priority based on page type
 function getPriority(url) {
     if (url === `${BASE_URL}/`) return '1.0';
@@ -50,7 +73,7 @@ function getPriority(url) {
 
 // Generate sitemap XML
 function generateSitemap() {
-    const htmlFiles = findHtmlFiles('.');
+    const htmlFiles = findHtmlFiles('.').filter(isPublicHtmlFile);
     const today = new Date().toISOString().split('T')[0];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

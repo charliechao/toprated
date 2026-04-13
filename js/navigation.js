@@ -28,6 +28,18 @@ function formatSlugLabel(value) {
         .join(' ');
 }
 
+function buildSitePath(parts, endIndex) {
+    const segments = parts.slice(0, endIndex + 1);
+    let pathname = `/${segments.join('/')}`;
+
+    const isCategoryHub = parts[0] === 'cities' && endIndex === 2 && parts.length > 3;
+    if (isCategoryHub) {
+        pathname += '/';
+    }
+
+    return pathname;
+}
+
 function sortBusinessesForDisplay(items) {
     return [...items].sort((a, b) => {
         const aHasRating = typeof a.rating === 'number' && typeof a.reviews === 'number' && a.reviews > 0;
@@ -109,15 +121,13 @@ function buildBreadcrumb() {
 
     const parts = location.pathname.split('/').filter(Boolean);
     const crumbs = [];
-    let accumulated = '';
 
     parts.forEach((part, idx) => {
         const name = formatSlugLabel(part);
-        accumulated += `/${part}`;
         if (idx === parts.length - 1) {
             crumbs.push(`<span aria-current="page">${name}</span>`);
         } else {
-            crumbs.push(`<a href="${accumulated}">${name}</a>`);
+            crumbs.push(`<a href="${buildSitePath(parts, idx)}">${name}</a>`);
         }
     });
 
@@ -195,7 +205,7 @@ async function renderHubGrid() {
         const cards = industry.subCategories.map(subCategory => {
             const title = formatSlugLabel(subCategory);
             return `
-                <a class="glass-card" href="/cities/${city}/${categorySlug}/${subCategory}.html">
+                <a class="glass-card" href="/cities/${city}/${categorySlug}/${subCategory}">
                     <i class="fas fa-arrow-right text-secondary" style="font-size: 1.5rem; margin-bottom: 1rem;"></i>
                     <h3>${title}</h3>
                     <p class="text-muted">Best ${title.toLowerCase()} in ${formatSlugLabel(city)}.</p>
@@ -215,7 +225,7 @@ async function renderHubGrid() {
  */
 async function renderRelated() {
     const relatedEl = document.getElementById('related');
-    if (!relatedEl || location.pathname === '/new-zealand.html') return;
+    if (!relatedEl || location.pathname === '/new-zealand') return;
 
     const parts = location.pathname.split('/').filter(Boolean);
     if (parts.length < 4) return;
@@ -234,7 +244,7 @@ async function renderRelated() {
     const citiesData = await loadJSON('/data/cities.json');
     const otherCities = citiesData.filter(c => c.slug !== city).slice(0, 4);
     const cityCards = otherCities.map(c => `
-        <a href="/cities/${c.slug}/${category}/${pageFile}" class="related-card">
+        <a href="/cities/${c.slug}/${category}/${pageSlug}" class="related-card">
             <i class="fas fa-city"></i>
             <div>
                 <strong>${pageName}</strong>
@@ -247,7 +257,7 @@ async function renderRelated() {
         .filter(subCategory => subCategory !== pageSlug)
         .slice(0, 4)
         .map(subCategory => `
-            <a href="/cities/${city}/${category}/${subCategory}.html" class="related-card">
+            <a href="/cities/${city}/${category}/${subCategory}" class="related-card">
                 <i class="fas fa-layer-group"></i>
                 <div>
                     <strong>${formatSlugLabel(subCategory)}</strong>
@@ -289,7 +299,7 @@ async function injectSchema() {
     const businesses = await loadJSON('/data/businesses.json');
     if (!businesses) return;
 
-    if (location.pathname === '/new-zealand.html') {
+    if (location.pathname === '/new-zealand') {
         const nationwideBusinesses = businesses.filter(b => b.coverageScope === 'nationwide');
         const schema = {
             "@context": "https://schema.org",
@@ -353,7 +363,7 @@ async function renderBusinessList() {
     const businesses = await loadJSON('/data/businesses.json');
     if (!businesses) return;
 
-    if (location.pathname === '/new-zealand.html') {
+    if (location.pathname === '/new-zealand') {
         const industries = await loadJSON('/data/industries.json');
         const nationwideBusinesses = businesses.filter(b => b.coverageScope === 'nationwide');
 
@@ -451,7 +461,7 @@ async function renderBusinessList() {
             "@type": "ListItem",
             "position": index + 1,
             "name": formatSlugLabel(part),
-            "item": `https://toprated.nz/${parts.slice(0, index + 1).join('/')}${part.endsWith('.html') ? '' : '/'}`
+            "item": `https://toprated.nz${buildSitePath(parts, index)}`
         }))
     };
     const schemaScript = document.createElement('script');
