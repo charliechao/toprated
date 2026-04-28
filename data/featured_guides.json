@@ -7,6 +7,14 @@
       "href": "/cities/auckland/services/web-design-agencies",
       "cta": "Read the 2026 guide",
       "icon": "fa-laptop-code"
+    },
+    {
+      "eyebrow": "New Editorial Guide",
+      "title": "Top 5 SEO Agencies in Auckland (2026 Guide)",
+      "description": "Compare Auckland SEO agencies by local-business fit, delivery model, likely budget signal, and the type of growth support they appear best set up to deliver.",
+      "href": "/cities/auckland/services/seo-agencies",
+      "cta": "Compare the top 5",
+      "icon": "fa-magnifying-glass-chart"
     }
   ],
   "cities/auckland/services": [
@@ -17,6 +25,14 @@
       "href": "/cities/auckland/services/web-design-agencies",
       "cta": "Compare the top 7",
       "icon": "fa-window-maximize"
+    },
+    {
+      "eyebrow": "Fresh SEO Guide",
+      "title": "Top 5 SEO Agencies in Auckland",
+      "description": "Built for Auckland owners comparing local-search specialists, larger award-heavy agencies, and practical SEO partners before they request proposals.",
+      "href": "/cities/auckland/services/seo-agencies",
+      "cta": "See the SEO shortlist",
+      "icon": "fa-magnifying-glass-chart"
     }
   ]
 }
