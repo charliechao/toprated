@@ -9,12 +9,19 @@ const path = require('path');
 const BASE_URL = 'https://toprated.nz';
 const OUTPUT_FILE = 'sitemap.xml';
 const TOP_LEVEL_PUBLIC_PAGES = new Set([
+    'advertising-and-listing-policy.html',
     'index.html',
     'about.html',
+    'business-listing-guidelines.html',
     'cities.html',
     'contact.html',
+    'contact-the-editorial-team.html',
+    'corrections-policy.html',
+    'editorial-policy.html',
+    'how-toprated-works.html',
     'new-zealand.html',
     'privacy.html',
+    'review-and-ranking-methodology.html',
     'terms.html'
 ]);
 
