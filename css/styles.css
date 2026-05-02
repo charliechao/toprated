@@ -987,6 +987,33 @@ footer {
     color: var(--color-text-muted);
 }
 
+.internal-link-section {
+    padding-top: 1rem;
+}
+
+.internal-link-panel {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(20, 184, 166, 0.16);
+    border-bottom: 1px solid rgba(20, 184, 166, 0.08);
+}
+
+.internal-link-header {
+    max-width: 760px;
+}
+
+.internal-link-header p {
+    margin-top: 0.6rem;
+    line-height: 1.7;
+}
+
+.internal-link-card {
+    min-height: 118px;
+}
+
+.internal-link-card strong {
+    text-transform: none;
+}
+
 .section-title {
     font-size: 1.5rem;
     font-weight: 700;

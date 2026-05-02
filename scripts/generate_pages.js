@@ -152,6 +152,127 @@ function buildHubLinkList(citySlug, categorySlug, slugs, descriptions = {}) {
     </ul>`;
 }
 
+function getCategoryName(categorySlug) {
+    const industry = industries.find(ind => ind.slug === categorySlug);
+    return industry ? industry.name : formatSlugLabel(categorySlug);
+}
+
+function getCategorySubcategories(categorySlug) {
+    return industries.find(ind => ind.slug === categorySlug)?.subCategories || [];
+}
+
+function getFeaturedSubcategories(categorySlug) {
+    const priority = {
+        services: ['accountants', 'lawyers', 'business-loans', 'broadband-providers', 'creative-agencies', 'real-estate-agents'],
+        trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
+        automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
+        cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
+        hospitality: ['hotels', 'bars', 'nightclubs']
+    };
+    return priority[categorySlug] || getCategorySubcategories(categorySlug).slice(0, 5);
+}
+
+function buildInternalLinkCard(href, icon, title, description) {
+    return `
+        <a href="${href}" class="related-card internal-link-card">
+            <i class="fas ${icon}"></i>
+            <div>
+                <strong>${title}</strong>
+                <span>${description}</span>
+            </div>
+        </a>`;
+}
+
+function buildInternalLinkSection(context) {
+    if (!context) return '';
+
+    let cards = [];
+    let title = 'Explore Related TopRated Guides';
+    let description = 'Continue through the closest city, category, and comparison pages.';
+
+    if (context.type === 'city') {
+        const city = context.city;
+        title = `Popular ${city.name} Starting Points`;
+        description = `Move from the ${city.name} hub into the highest-intent local service and trade pages.`;
+        cards = [
+            buildInternalLinkCard(`/cities/${city.slug}/services/accountants`, 'fa-calculator', `Accountants in ${city.name}`, 'Tax, reporting, and small-business support.'),
+            buildInternalLinkCard(`/cities/${city.slug}/services/lawyers`, 'fa-scale-balanced', `Lawyers in ${city.name}`, 'Property, commercial, family, and local legal support.'),
+            buildInternalLinkCard(`/cities/${city.slug}/trades/builders`, 'fa-hammer', `Builders in ${city.name}`, 'Renovations, repairs, extensions, and project work.'),
+            buildInternalLinkCard(`/cities/${city.slug}/trades/plumbers`, 'fa-wrench', `Plumbers in ${city.name}`, 'Repairs, drainage, hot water, and renovation plumbing.'),
+            buildInternalLinkCard('/new-zealand', 'fa-earth-asia', 'Nationwide Businesses', 'NZ-wide providers that serve more than one city.')
+        ];
+    }
+
+    if (context.type === 'category') {
+        const city = context.city;
+        const categoryName = getCategoryName(context.categorySlug);
+        const subcategories = getFeaturedSubcategories(context.categorySlug);
+        title = `Related ${categoryName} Guides`;
+        description = `Compare the most useful ${categoryName.toLowerCase()} pages in ${city.name}, then check the same category in other cities.`;
+        cards = [
+            ...subcategories.slice(0, 4).map(slug => buildInternalLinkCard(
+                `/cities/${city.slug}/${context.categorySlug}/${slug}`,
+                'fa-arrow-right',
+                `${formatSlugLabel(slug)} in ${city.name}`,
+                `Open the dedicated ${formatSlugLabel(slug).toLowerCase()} comparison page.`
+            )),
+            ...cities.filter(otherCity => otherCity.slug !== city.slug).slice(0, 2).map(otherCity => buildInternalLinkCard(
+                `/cities/${otherCity.slug}/${context.categorySlug}/`,
+                'fa-city',
+                `${categoryName} in ${otherCity.name}`,
+                `Compare the same category in ${otherCity.name}.`
+            ))
+        ];
+    }
+
+    if (context.type === 'leaf') {
+        const city = context.city;
+        const categoryName = getCategoryName(context.categorySlug);
+        const siblingLinks = getCategorySubcategories(context.categorySlug)
+            .filter(slug => slug !== context.pageSlug)
+            .slice(0, 3)
+            .map(slug => buildInternalLinkCard(
+                `/cities/${city.slug}/${context.categorySlug}/${slug}`,
+                'fa-layer-group',
+                `${formatSlugLabel(slug)} in ${city.name}`,
+                `Compare another ${categoryName.toLowerCase()} shortlist in ${city.name}.`
+            ));
+        const crossCityLinks = cities
+            .filter(otherCity => otherCity.slug !== city.slug)
+            .slice(0, 3)
+            .map(otherCity => buildInternalLinkCard(
+                `/cities/${otherCity.slug}/${context.categorySlug}/${context.pageSlug}`,
+                'fa-city',
+                `${context.pageName} in ${otherCity.name}`,
+                `See the ${otherCity.name} version of this guide.`
+            ));
+
+        title = `More Ways to Compare ${context.pageName}`;
+        description = `Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.`;
+        cards = [
+            buildInternalLinkCard(`/cities/${city.slug}/${context.categorySlug}/`, 'fa-table-cells-large', `${categoryName} Hub in ${city.name}`, `Browse every ${categoryName.toLowerCase()} guide for ${city.name}.`),
+            buildInternalLinkCard(`/cities/${city.slug}`, 'fa-location-dot', `${city.name} Directory`, `Return to all TopRated categories in ${city.name}.`),
+            ...siblingLinks,
+            ...crossCityLinks
+        ];
+    }
+
+    if (cards.length === 0) return '';
+
+    return `
+    <section class="container section internal-link-section" aria-labelledby="internal-link-title">
+        <div class="related-section internal-link-panel">
+            <div class="internal-link-header">
+                <h2 id="internal-link-title" class="section-title">${title}</h2>
+                <p class="text-muted">${description}</p>
+            </div>
+            <div class="related-grid internal-link-grid">
+                ${cards.join('')}
+            </div>
+        </div>
+    </section>`;
+}
+
 function buildTrustBox(author) {
     if (!author) return '';
     return `
@@ -371,7 +492,7 @@ function getCategoryHubSeo(city, categorySlug) {
     };
 }
 
-function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg') {
+function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg', linkContext = null) {
     // --- Build Table of Contents ---
     let tocItems = [];
     if (specificSeo) {
@@ -512,6 +633,7 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
         </div>
     </section>
     ${faqHtml}
+    ${buildInternalLinkSection(linkContext)}
     <section class="container section">
         <div id="related"></div>
     </section>
@@ -520,7 +642,7 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
     `;
 }
 
-function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null) {
+function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null, linkContext = null) {
     let tocHtml = '';
     let editorialHtml = '';
     let faqHtml = '';
@@ -610,6 +732,7 @@ function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null) {
             </div>
         </div>
     </section>
+    ${buildInternalLinkSection(linkContext)}
     ${faqHtml}
     ${trustHtml}
     `;
@@ -639,7 +762,7 @@ cities.forEach(city => {
         hubSeo.pageTitle,
         hubSeo.metaDescription,
         `/cities/${city.slug}`,
-        generateHubContent(hubSeo.heroTitle, hubSeo.heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo),
+        generateHubContent(hubSeo.heroTitle, hubSeo.heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo, { type: 'city', city }),
         buildHubSchema(hubSeo.pageTitle, hubSeo.metaDescription, hubSeo.faqs)
     );
     fs.writeFileSync(`cities/${city.slug}.html`, html);
@@ -667,7 +790,7 @@ cities.forEach(city => {
             pageTitle,
             metaDescription,
             `/cities/${city.slug}/${cat}/`,
-            generateHubContent(heroTitle, heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo),
+            generateHubContent(heroTitle, heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo, { type: 'category', city, categorySlug: cat }),
             buildHubSchema(pageTitle, metaDescription, hubSeo?.faqs || [])
         );
         fs.writeFileSync(path.join(dir, 'index.html'), html);
@@ -722,7 +845,7 @@ cities.forEach(city => {
                 `Top Rated ${map.name} in ${city.name} | Verified for 2026`,
                 `Compare the best ${map.name.toLowerCase()} in ${city.name}. Read reviews, view ratings, and find the top-rated ${map.name.toLowerCase()} near you in ${city.name}.`,
                 `/cities/${city.slug}/${map.cat}/${sc}`,
-                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland']),
+                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland'], { type: 'leaf', city, categorySlug: map.cat, pageSlug: sc, pageName: map.name }),
                 buildFaqSchema(specificSeo?.faqs || [])
             );
             fs.writeFileSync(path.join(dir, `${sc}.html`), html);
