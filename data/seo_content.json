@@ -634,14 +634,38 @@
       "title": "How Much Does Dining Out Cost in Auckland? (2026 Guide)",
       "content": "<p>Auckland is not a cheap city to dine out in — but the quality at the top end is world-class, and there is outstanding value to be found if you know where to look. Here is a realistic breakdown of dining costs in 2026.</p><p>Prices below are per person, food only, unless stated. Add 15–20% for drinks at most restaurants. Most fine dining establishments add a <strong>15% surcharge on public holidays</strong>. GST (15%) is always included in displayed prices in New Zealand — there are no hidden taxes.</p>",
       "priceTable": [
-        { "service": "Casual lunch (café, food court, quick-service)", "range": "$15 – $28" },
-        { "service": "Mid-week dinner at neighbourhood bistro (BYO)", "range": "$35 – $60" },
-        { "service": "Ponsonby / Britomart dinner (à la carte, drinks extra)", "range": "$60 – $100" },
-        { "service": "Shared seafood platter (Viaduct-tier, 2 people)", "range": "$80 – $150" },
-        { "service": "Bottle of NZ wine at a mid-range restaurant", "range": "$45 – $90" },
-        { "service": "Fine dining degustation (4–6 courses, no drinks)", "range": "$120 – $185" },
-        { "service": "Fine dining with matched wine pairing (per person)", "range": "$200 – $320" },
-        { "service": "Premium omakase / chef's table experience", "range": "$180 – $320+" }
+        {
+          "service": "Casual lunch (café, food court, quick-service)",
+          "range": "$15 – $28"
+        },
+        {
+          "service": "Mid-week dinner at neighbourhood bistro (BYO)",
+          "range": "$35 – $60"
+        },
+        {
+          "service": "Ponsonby / Britomart dinner (à la carte, drinks extra)",
+          "range": "$60 – $100"
+        },
+        {
+          "service": "Shared seafood platter (Viaduct-tier, 2 people)",
+          "range": "$80 – $150"
+        },
+        {
+          "service": "Bottle of NZ wine at a mid-range restaurant",
+          "range": "$45 – $90"
+        },
+        {
+          "service": "Fine dining degustation (4–6 courses, no drinks)",
+          "range": "$120 – $185"
+        },
+        {
+          "service": "Fine dining with matched wine pairing (per person)",
+          "range": "$200 – $320"
+        },
+        {
+          "service": "Premium omakase / chef's table experience",
+          "range": "$180 – $320+"
+        }
       ]
     },
     "questionsToAsk": [
@@ -701,14 +725,38 @@
       "title": "How Much Does Indian Food Cost in Auckland? (2026 Guide)",
       "content": "<p>Indian food in Auckland spans from some of the city's most affordable meals to full fine-dining degustation experiences. Here is a realistic breakdown of what to expect to pay in 2026.</p><p>Note that many Indian restaurants in Auckland — particularly in Sandringham and suburban areas — are <strong>BYO (Bring Your Own wine)</strong>, which significantly reduces the total bill. Corkage is typically $5–$10 per bottle. All New Zealand restaurant prices are GST-inclusive — there are no hidden taxes added at the table.</p>",
       "priceTable": [
-        { "service": "Masala dosa / South Indian lunch (Satya-tier)", "range": "$14 – $20" },
-        { "service": "Takeaway curry + rice + naan (per person)", "range": "$16 – $25" },
-        { "service": "Casual sit-down dinner, Sandringham (per person)", "range": "$25 – $45" },
-        { "service": "Biryani (serves 1–2)", "range": "$22 – $38" },
-        { "service": "Mid-range shared feast (per person, BYO)", "range": "$40 – $65" },
-        { "service": "Modern Indian fine dining, à la carte (per person)", "range": "$65 – $100" },
-        { "service": "Fine dining degustation (Cassia-tier, no drinks)", "range": "$110 – $160" },
-        { "service": "Fine dining with matched wine pairing (per person)", "range": "$160 – $240" }
+        {
+          "service": "Masala dosa / South Indian lunch (Satya-tier)",
+          "range": "$14 – $20"
+        },
+        {
+          "service": "Takeaway curry + rice + naan (per person)",
+          "range": "$16 – $25"
+        },
+        {
+          "service": "Casual sit-down dinner, Sandringham (per person)",
+          "range": "$25 – $45"
+        },
+        {
+          "service": "Biryani (serves 1–2)",
+          "range": "$22 – $38"
+        },
+        {
+          "service": "Mid-range shared feast (per person, BYO)",
+          "range": "$40 – $65"
+        },
+        {
+          "service": "Modern Indian fine dining, à la carte (per person)",
+          "range": "$65 – $100"
+        },
+        {
+          "service": "Fine dining degustation (Cassia-tier, no drinks)",
+          "range": "$110 – $160"
+        },
+        {
+          "service": "Fine dining with matched wine pairing (per person)",
+          "range": "$160 – $240"
+        }
       ]
     },
     "questionsToAsk": [
@@ -768,14 +816,38 @@
       "title": "How Much Does Italian Dining Cost in Auckland? (2026 Guide)",
       "content": "<p>Italian food in Auckland spans from a $15 pasta at a casual K Road trattoria to a $150+ multi-course degustation at a Remuera ristorante. Here is a realistic breakdown of what to expect in 2026.</p><p>Many mid-range Auckland Italian restaurants are <strong>BYO</strong> — bring your own wine and pay corkage of $5–$15 per bottle, which significantly reduces the total bill. All prices are GST-inclusive in New Zealand. Most popular restaurants add a <strong>15% surcharge on public holidays</strong>.</p>",
       "priceTable": [
-        { "service": "Casual pasta or pizza (lunch, K Road / neighbourhood)", "range": "$18 – $28" },
-        { "service": "Entrée / antipasti plate (per person)", "range": "$16 – $28" },
-        { "service": "Mid-range Italian dinner, à la carte (per person, BYO)", "range": "$45 – $75" },
-        { "service": "Ponsonby / Britomart dinner (per person, licensed)", "range": "$60 – $100" },
-        { "service": "Bottle of Italian wine at a mid-range restaurant", "range": "$50 – $100" },
-        { "service": "Waterfront Italian dinner (Viaduct / Wynyard, per person)", "range": "$80 – $130" },
-        { "service": "Fine dining Italian degustation (Spiga / BOSSI-tier)", "range": "$120 – $180" },
-        { "service": "Fine dining with matched Italian wine pairing (per person)", "range": "$180 – $280" }
+        {
+          "service": "Casual pasta or pizza (lunch, K Road / neighbourhood)",
+          "range": "$18 – $28"
+        },
+        {
+          "service": "Entrée / antipasti plate (per person)",
+          "range": "$16 – $28"
+        },
+        {
+          "service": "Mid-range Italian dinner, à la carte (per person, BYO)",
+          "range": "$45 – $75"
+        },
+        {
+          "service": "Ponsonby / Britomart dinner (per person, licensed)",
+          "range": "$60 – $100"
+        },
+        {
+          "service": "Bottle of Italian wine at a mid-range restaurant",
+          "range": "$50 – $100"
+        },
+        {
+          "service": "Waterfront Italian dinner (Viaduct / Wynyard, per person)",
+          "range": "$80 – $130"
+        },
+        {
+          "service": "Fine dining Italian degustation (Spiga / BOSSI-tier)",
+          "range": "$120 – $180"
+        },
+        {
+          "service": "Fine dining with matched Italian wine pairing (per person)",
+          "range": "$180 – $280"
+        }
       ]
     },
     "questionsToAsk": [
@@ -3498,6 +3570,157 @@
       {
         "question": "What should I compare besides monthly price?",
         "answer": "Compare upload and download speed, support quality, contract flexibility, setup friction, included hardware, and whether the provider's connection type is the right fit for your location."
+      }
+    ]
+  },
+  "auckland/services/mortgage-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Auckland borrowers usually do not struggle to find mortgage options. They struggle to compare lenders, structures, and trade-offs quickly enough to move with confidence in a fast-moving property market. This page is built for Auckland buyers, refinancers, and investors who want to compare mortgage brokers based on lender access, advice quality, and how clearly they can guide the process from first conversation through to settlement.",
+    "buyersGuide": {
+      "title": "How to Choose a Mortgage Broker in Auckland",
+      "content": "<p>Auckland mortgage decisions often sit under time pressure, especially when buyers are juggling pre-approval deadlines, auction campaigns, or refinancing windows. The right broker should make the finance path clearer rather than adding another layer of confusion.</p><h3>1. Ask How Broad the Lender Panel Really Is</h3><p>Some brokers can compare a wider lender set than others. Ask which banks, non-bank lenders, and specialist finance options they can access, and whether they can explain why one path suits your situation better than another.</p><h3>2. Compare Strategy, Not Just Rate</h3><p>A strong broker should help you think about structure, fixed-versus-floating tradeoffs, cashflow pressure, offset options, and future flexibility, not just the headline interest rate.</p><h3>3. Check Experience With Your Buyer Type</h3><p>First-home buyers, refinancers, investors, and self-employed borrowers often need different kinds of support. Ask whether the broker regularly handles loans like yours in the Auckland market.</p><h3>4. Look at Communication Speed</h3><p>In Auckland, timing matters. Good brokers keep documents moving, explain lender feedback quickly, and stay proactive when a deal is under pressure.</p><h3>5. Understand How They Are Paid</h3><p>Ask whether they are paid by lenders, whether any direct fees apply, and how they handle conflicts when more than one loan option could work.</p>"
+    },
+    "questionsToAsk": [
+      "Which lenders do you regularly place Auckland home loans with?",
+      "Do you work often with first-home buyers, refinancers, or investors like me?",
+      "How do you compare loan structure, not just the interest rate?",
+      "What documents should I prepare before pre-approval or full application?",
+      "Are there any direct fees, clawback conditions, or lender limitations I should know about?",
+      "How quickly can you usually move from first meeting to lender submission?"
+    ],
+    "faqs": [
+      {
+        "question": "What does a mortgage broker do?",
+        "answer": "A mortgage broker compares home-loan options, helps package your application, and guides you through lender choice, structure, and approval steps."
+      },
+      {
+        "question": "Is a mortgage broker useful in Auckland?",
+        "answer": "Yes, especially when timing, property type, deposit structure, or lender fit are not straightforward. A good broker can reduce comparison time and help you avoid poor-fit loan structures."
+      },
+      {
+        "question": "Should I compare a broker with going direct to my bank?",
+        "answer": "Usually yes. Even if you end up with your existing bank, comparing lender options and structure advice can improve confidence and negotiation position."
+      }
+    ]
+  },
+  "wellington/services/mortgage-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Wellington borrowers often care just as much about clarity and process quality as they do about price. Whether you are buying in the city, refinancing in the suburbs, or navigating a more complex lending situation, the right mortgage broker should help you compare lender fit, explain trade-offs clearly, and keep the finance process moving without unnecessary friction.",
+    "buyersGuide": {
+      "title": "How to Choose a Mortgage Broker in Wellington",
+      "content": "<p>Wellington property decisions often involve tighter timelines, higher information needs, and a stronger emphasis on communication. The best mortgage brokers usually stand out by making the process feel more organised and less opaque.</p><h3>1. Prioritise Clarity</h3><p>Choose a broker who can explain lender choices, structure, and risk tradeoffs in plain English. If the finance process still feels vague after the first conversation, keep comparing.</p><h3>2. Check Fit for Your Scenario</h3><p>Some brokers are strongest with first-home buyers, while others are better for self-employed borrowers, property investors, or restructuring existing lending.</p><h3>3. Ask About Turnaround and Follow-Up</h3><p>A broker should be able to tell you how they manage pre-approvals, lender feedback, and missing-document issues when time matters.</p><h3>4. Compare Advice Quality</h3><p>Good brokers do more than find a rate. They help borrowers understand repayment pressure, refixing choices, and how the loan should work in real life.</p>"
+    },
+    "questionsToAsk": [
+      "Which borrower types do you help most often in Wellington?",
+      "How do you keep applicants updated when lender turnaround is slow?",
+      "What are the main loan-structure choices I should understand before applying?",
+      "Which lenders are usually strongest for my type of scenario?",
+      "What should I watch for when comparing fixed, floating, or split lending?"
+    ],
+    "faqs": [
+      {
+        "question": "Why use a mortgage broker in Wellington?",
+        "answer": "A broker can help you compare lenders, structure options, and approval strategy without relying on just one bank perspective."
+      },
+      {
+        "question": "Can a broker help with refinancing?",
+        "answer": "Yes. Mortgage brokers often assist with repricing, restructuring, and full refinancing when borrowers want better fit or better long-term flexibility."
+      },
+      {
+        "question": "What matters most besides rate?",
+        "answer": "Loan structure, flexibility, communication quality, lender fit, and how the debt will work over time all matter alongside the rate."
+      }
+    ]
+  },
+  "christchurch/services/mortgage-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Christchurch borrowers often want practical finance advice they can trust, especially when balancing family budgets, rebuild-era property considerations, investment plans, or changing life stages. This page helps compare Christchurch mortgage brokers by lender access, advice quality, and how well they support buyers from early planning through to approval and settlement.",
+    "buyersGuide": {
+      "title": "How to Choose a Mortgage Broker in Christchurch",
+      "content": "<p>The best Christchurch mortgage brokers usually make lending feel more manageable, not more sales-heavy. They should help you understand how the loan fits your property plans, repayment comfort, and future flexibility.</p><h3>1. Look for Strong Process Guidance</h3><p>Borrowers often need help organising documents, understanding lender conditions, and staying ahead of deadlines. A good broker should reduce admin stress, not create more of it.</p><h3>2. Match the Broker to the Property Plan</h3><p>First homes, investment properties, upgrades, and refinances can all require different lender strategies. Ask whether the broker regularly works on cases like yours.</p><h3>3. Compare Communication Style</h3><p>Christchurch buyers often prefer practical, direct advice. Choose a broker who answers questions clearly and explains tradeoffs without overcomplicating them.</p><h3>4. Ask About Long-Term Advice</h3><p>The best broker relationship is not only about getting approved today. It is also about helping you think through refixing, restructuring, and next-step property plans later.</p>"
+    },
+    "questionsToAsk": [
+      "What kinds of Christchurch borrowers do you help most often?",
+      "How do you package applications when a borrower is self-employed or non-standard?",
+      "What should I do now to strengthen my pre-approval position?",
+      "How do you compare lenders when two options look similar on rate?",
+      "What happens if my property purchase timeline changes mid-process?"
+    ],
+    "faqs": [
+      {
+        "question": "Can a mortgage broker help first-home buyers in Christchurch?",
+        "answer": "Yes. Brokers often help first-home buyers understand borrowing limits, document preparation, lender fit, and what to expect during approval."
+      },
+      {
+        "question": "Do mortgage brokers only work with major banks?",
+        "answer": "Not always. Many brokers also work with non-bank and specialist lenders depending on the borrower scenario."
+      },
+      {
+        "question": "Should I talk to a broker before making offers?",
+        "answer": "Usually yes. Early finance guidance can help you understand budget boundaries, lender appetite, and what conditions may matter when the property search becomes serious."
+      }
+    ]
+  },
+  "hamilton/services/mortgage-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Hamilton buyers and refinancers often want mortgage advice that is practical, clear, and grounded in real affordability rather than headline rates alone. This page is for Waikato borrowers comparing mortgage brokers based on lender choice, communication quality, and how well the broker can match a loan to the borrower's stage, budget, and plans.",
+    "buyersGuide": {
+      "title": "How to Choose a Mortgage Broker in Hamilton",
+      "content": "<p>For many Hamilton borrowers, the right mortgage broker is the one who keeps the process simple while still giving enough strategic advice to avoid poor-fit lending decisions.</p><h3>1. Start With Your Goal</h3><p>Buying a first home, moving up, refinancing, or investing all create different lender questions. A useful broker should shape the advice around your actual objective.</p><h3>2. Ask About Lender Choice</h3><p>Broker value usually increases when they can compare more than one credible path and explain the tradeoffs honestly.</p><h3>3. Compare Responsiveness</h3><p>Good communication matters when you are trying to organise pre-approval, timelines, and documents without losing momentum.</p><h3>4. Check for Real Affordability Advice</h3><p>Rate matters, but so do repayments, cashflow comfort, future flexibility, and how the loan behaves when fixed terms expire.</p>"
+    },
+    "questionsToAsk": [
+      "What lenders do you think are the strongest fit for my scenario and why?",
+      "How should I think about borrowing comfort versus maximum approval?",
+      "What documents will speed up the Hamilton pre-approval process?",
+      "How do you help borrowers compare loan flexibility as well as rate?",
+      "Do you continue helping after settlement when refixing or restructuring comes up?"
+    ],
+    "faqs": [
+      {
+        "question": "Why use a mortgage broker in Hamilton?",
+        "answer": "A broker can help Hamilton borrowers compare lender options, structure decisions, and approval strategy without relying on one bank only."
+      },
+      {
+        "question": "Can a broker help with refinance decisions?",
+        "answer": "Yes. Refinancing often benefits from broker comparison because it is not only about repricing but also structure, flexibility, and future plans."
+      },
+      {
+        "question": "Does the cheapest rate always win?",
+        "answer": "Not necessarily. A cheaper rate can still be a weaker choice if the structure, fees, flexibility, or service fit are poor."
+      }
+    ]
+  },
+  "tauranga/services/mortgage-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Tauranga borrowers often balance lifestyle goals, property timing, and affordability pressure at the same time. A good mortgage broker should help cut through lender noise, explain the real tradeoffs clearly, and guide buyers or refinancers toward a loan structure that still works after the initial approval is done.",
+    "buyersGuide": {
+      "title": "How to Choose a Mortgage Broker in Tauranga",
+      "content": "<p>In Tauranga and the wider Bay of Plenty, a mortgage broker is most useful when they combine lender access with calm, practical advice. The best ones help borrowers move with confidence rather than just passing on bank options.</p><h3>1. Compare More Than the Headline Offer</h3><p>Good mortgage advice should include repayment comfort, loan structure, fixed-term timing, and whether the debt still fits your wider lifestyle plans.</p><h3>2. Ask About Buyer Type Experience</h3><p>If you are a first-home buyer, investor, or self-employed borrower, ask whether the broker regularly works in that lane.</p><h3>3. Watch How They Explain Risk</h3><p>Strong brokers explain downside scenarios, not just best-case approvals. That includes rising repayments, tighter lender conditions, or property-timing issues.</p><h3>4. Prioritise Process Support</h3><p>When contracts, finance conditions, and lender requests start moving quickly, the broker should help you stay organised instead of feeling reactive.</p>"
+    },
+    "questionsToAsk": [
+      "Which lenders are usually most competitive for Tauranga borrowers like me?",
+      "How do you help buyers compare structure choices beyond rate?",
+      "What risks should I understand before choosing a fixed term or split loan?",
+      "What is the most common reason applications slow down, and how do you avoid it?",
+      "How involved are you once pre-approval becomes a live property purchase?"
+    ],
+    "faqs": [
+      {
+        "question": "Can a mortgage broker help with first-home buying in Tauranga?",
+        "answer": "Yes. Brokers often help first-home buyers understand borrowing readiness, lender fit, and how to move from early planning to a workable approval process."
+      },
+      {
+        "question": "Should lifestyle goals affect lender choice?",
+        "answer": "Usually yes. Loan structure, repayment comfort, and future flexibility should still fit the wider lifestyle the borrower is trying to protect."
+      },
+      {
+        "question": "What makes one mortgage broker better than another?",
+        "answer": "Usually the difference comes down to lender access, explanation quality, responsiveness, and how well the broker matches advice to the borrower scenario rather than giving generic answers."
       }
     ]
   }

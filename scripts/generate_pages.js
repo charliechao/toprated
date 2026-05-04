@@ -66,7 +66,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents', 'business-loans', 'creative-agencies', 'broadband-providers'],
+        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
@@ -74,6 +74,7 @@ const categoryHubConfigs = {
             'cleaning-services': 'home, office, move-out, and one-off cleaning jobs',
             'creative-agencies': 'branding, websites, design systems, and digital creative support',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
+            'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance'
         }
     },
@@ -163,7 +164,7 @@ function getCategorySubcategories(categorySlug) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'lawyers', 'business-loans', 'broadband-providers', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'lawyers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -821,6 +822,7 @@ const subCatsMapping = {
     'broadband-providers': { cat: 'services', name: 'Broadband Providers' },
     'creative-agencies': { cat: 'services', name: 'Creative Agencies' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
+    'mortgage-brokers': { cat: 'services', name: 'Mortgage Brokers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
     'mechanics': { cat: 'automotive', name: 'Mechanics' },
     'car-dealers': { cat: 'automotive', name: 'Car Dealers' },
