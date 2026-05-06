@@ -3723,5 +3723,156 @@
         "answer": "Usually the difference comes down to lender access, explanation quality, responsiveness, and how well the broker matches advice to the borrower scenario rather than giving generic answers."
       }
     ]
+  },
+  "auckland/services/insurance-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Auckland businesses and households usually do not need more generic insurance quotes. They need clearer advice about cover, exclusions, insurer fit, and how a policy will actually respond when something goes wrong. This page is designed for Auckland clients comparing insurance brokers based on advice quality, insurer access, risk understanding, and how well the broker can guide both placement and claims support.",
+    "buyersGuide": {
+      "title": "How to Choose an Insurance Broker in Auckland",
+      "content": "<p>Auckland insurance decisions often involve more moving parts than people expect, especially when commercial property, liability, vehicles, health, landlord cover, or complex household risks are involved. A good broker should help simplify those decisions without oversimplifying the risk itself.</p><h3>1. Ask What Types of Insurance They Handle Most Often</h3><p>Some brokers are strongest in business insurance, while others focus more on domestic, landlord, marine, construction, or personal-risk cover. Start by matching the broker to the actual risks you need help with.</p><h3>2. Compare Advice, Not Just Premium</h3><p>The cheapest premium is not always the best policy. Strong brokers help you understand excesses, exclusions, limits, reinstatement issues, and where a lower price may hide weaker cover.</p><h3>3. Check Insurer Access and Market Breadth</h3><p>Ask which insurers the broker regularly works with and whether they can explain why one policy structure or insurer is a better fit than another for your situation.</p><h3>4. Ask How Claims Support Works</h3><p>A broker's value often shows up most clearly when there is a claim. Ask how involved they are during the claims process, what support they provide, and whether they stay engaged if the insurer pushes back.</p><h3>5. Look for Clear Risk Conversations</h3><p>The best brokers ask practical questions about assets, liability exposure, revenue interruption, and replacement risk. If the advice feels rushed or policy-led instead of risk-led, keep comparing.</p>"
+    },
+    "questionsToAsk": [
+      "What types of insurance placements do you handle most often in Auckland?",
+      "Which insurers do you regularly compare for clients like me?",
+      "How do you explain differences in cover, exclusions, and excesses between policies?",
+      "What support do you provide during a claim?",
+      "Are there direct fees or commissions I should understand before proceeding?",
+      "How often should the policy or sum insured be reviewed?"
+    ],
+    "faqs": [
+      {
+        "question": "What does an insurance broker do?",
+        "answer": "An insurance broker helps compare policies, explain cover options, place insurance with suitable insurers, and often supports clients through review and claims processes."
+      },
+      {
+        "question": "Why use an insurance broker in Auckland?",
+        "answer": "A broker can help Auckland clients compare policy quality, insurer fit, exclusions, and risk structure more effectively than relying on a price-first comparison alone."
+      },
+      {
+        "question": "Can a broker help when there is a claim?",
+        "answer": "Usually yes. Many brokers support clients during the claims process, help present information clearly, and assist when policy wording or insurer response becomes difficult to interpret."
+      }
+    ]
+  },
+  "wellington/services/insurance-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Wellington clients often value clarity, responsiveness, and thoughtful risk advice as much as price. Whether you are arranging business cover, personal cover, landlord insurance, or a more specialised placement, the right insurance broker should help you compare policies in a way that makes the trade-offs easier to understand and act on.",
+    "buyersGuide": {
+      "title": "How to Choose an Insurance Broker in Wellington",
+      "content": "<p>Insurance is easier to buy than to understand properly. The strongest Wellington brokers usually stand out by making the advice clearer, the risks more visible, and the policy choices more commercially useful.</p><h3>1. Start With the Risk Profile</h3><p>Good brokers lead with the risks that matter most to you rather than starting and ending with a quote number.</p><h3>2. Ask How They Compare Policies</h3><p>Useful advice should include how cover differs between options, not just which premium is lower.</p><h3>3. Check Communication Style</h3><p>Choose a broker who can explain wording, limits, and claims implications in plain language. If the process still feels vague after the first conversation, keep comparing.</p><h3>4. Understand Their Ongoing Role</h3><p>Ask whether they support annual reviews, policy updates, and claims involvement after placement rather than disappearing once the policy is bound.</p>"
+    },
+    "questionsToAsk": [
+      "How do you identify whether my current cover is under-scoped or over-scoped?",
+      "Which insurers are usually strongest for my kind of risk profile?",
+      "How involved are you if a claim becomes disputed or slow-moving?",
+      "What should I be reviewing before renewal each year?",
+      "How do you help compare policy wording between insurers?"
+    ],
+    "faqs": [
+      {
+        "question": "Why use an insurance broker in Wellington?",
+        "answer": "A broker can help Wellington clients compare cover quality, insurer appetite, and practical risk fit without relying only on direct policy marketing."
+      },
+      {
+        "question": "What matters most besides premium?",
+        "answer": "Exclusions, claim support, limits, excesses, wording quality, and whether the policy actually fits the underlying risk all matter alongside price."
+      },
+      {
+        "question": "Do brokers only help businesses?",
+        "answer": "No. Many brokers also advise on domestic, landlord, contents, vehicle, and personal-risk cover depending on their specialisation."
+      }
+    ]
+  },
+  "christchurch/services/insurance-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Christchurch clients often want insurance advice that is practical, grounded, and easy to trust. Whether the priority is business continuity, household protection, property cover, or landlord risk, the right insurance broker should help compare insurers clearly, explain where cover differs, and stay useful if a claim ever needs to be navigated.",
+    "buyersGuide": {
+      "title": "How to Choose an Insurance Broker in Christchurch",
+      "content": "<p>The best Christchurch insurance brokers usually add value by making policy detail more understandable and helping clients avoid expensive blind spots in the wording.</p><h3>1. Match the Broker to the Cover Type</h3><p>Some brokers are stronger in business packages, property, liability, vehicles, or domestic cover. Start with the category that matters most to you.</p><h3>2. Ask How They Identify Gaps</h3><p>A strong broker should be able to point out where a policy may be underinsured, where wording is weak, or where assumptions could create claim problems later.</p><h3>3. Compare Claims Support</h3><p>Claims handling often reveals the true value of broker advice. Ask how involved they remain when something goes wrong.</p><h3>4. Review Renewal Discipline</h3><p>Insurance needs change. Good brokers usually make renewal reviews meaningful instead of treating them as a quick administrative exercise.</p>"
+    },
+    "questionsToAsk": [
+      "What kinds of Christchurch clients do you advise most often?",
+      "How do you assess whether a property or business is underinsured?",
+      "What role do you play during a complex claim?",
+      "How often should sums insured or policy structure be updated?",
+      "Which policy areas create the most misunderstanding for clients like me?"
+    ],
+    "faqs": [
+      {
+        "question": "Can an insurance broker help with both business and personal cover?",
+        "answer": "Depending on the broker, yes. Some handle a broad mix, while others specialise more heavily in commercial or personal insurance."
+      },
+      {
+        "question": "Why not just buy direct?",
+        "answer": "Direct purchasing can be fine for simple needs, but a broker can be more useful when policy wording, asset values, liability risk, or claim support require clearer advice."
+      },
+      {
+        "question": "What should I review before renewal?",
+        "answer": "Review asset values, revenue exposure, staffing changes, liability profile, recent claims, and whether the current wording still fits the real risk."
+      }
+    ]
+  },
+  "hamilton/services/insurance-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Hamilton businesses and households often want insurance advice that is straightforward, responsive, and commercially sensible. This page is for Waikato clients comparing insurance brokers based on cover guidance, insurer access, communication quality, and how well the broker helps clients make practical decisions before and after a policy is placed.",
+    "buyersGuide": {
+      "title": "How to Choose an Insurance Broker in Hamilton",
+      "content": "<p>Insurance decisions are easier when the broker can explain what matters clearly and cut through unnecessary complexity. The best Hamilton brokers usually add value by connecting risk, wording, and real-life use in a way that is easy to act on.</p><h3>1. Start With the Main Exposure</h3><p>Whether the risk is commercial property, liability, vehicles, domestic cover, or landlord risk, make sure the broker regularly works in that space.</p><h3>2. Compare Policy Quality</h3><p>Good brokers help clients understand how wording differences can matter more than a small premium saving.</p><h3>3. Ask About Claims Involvement</h3><p>Broker support is often most valuable when a claim is stressful or time-sensitive. Ask how involved they remain when the pressure is on.</p><h3>4. Keep Reviews Active</h3><p>Policies should be reviewed when assets, revenue, staffing, tenancy, or operations change, not just at automatic renewal time.</p>"
+    },
+    "questionsToAsk": [
+      "Which insurers are usually a good fit for clients with my risk profile?",
+      "How do you help compare wording, not just premium?",
+      "What should trigger a cover review before renewal?",
+      "How involved are you during claims support?",
+      "What are the most common cover gaps you see in Hamilton clients?"
+    ],
+    "faqs": [
+      {
+        "question": "Why use an insurance broker in Hamilton?",
+        "answer": "A broker can help Hamilton clients compare cover quality, exclusions, insurer fit, and claim implications more effectively than relying on a price-first purchase."
+      },
+      {
+        "question": "Does a broker help after the policy is placed?",
+        "answer": "Usually yes. Many brokers help with renewals, policy changes, and claims support after placement."
+      },
+      {
+        "question": "What matters most besides the annual premium?",
+        "answer": "Excesses, exclusions, claims service, insurer appetite, cover limits, and whether the wording matches the real risk all matter alongside cost."
+      }
+    ]
+  },
+  "tauranga/services/insurance-brokers": {
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "May 2026",
+    "introText": "Tauranga clients often want insurance advice that balances lifestyle, property, business exposure, and affordability without making the process harder than it needs to be. A strong insurance broker should help compare policies clearly, explain where cover quality changes, and stay useful when a claim or renewal decision becomes more complex.",
+    "buyersGuide": {
+      "title": "How to Choose an Insurance Broker in Tauranga",
+      "content": "<p>For many Bay of Plenty clients, the value of an insurance broker is not just finding a policy. It is getting better judgment around risk, wording, and how the cover will behave when real pressure shows up.</p><h3>1. Look for Advice That Matches the Real Risk</h3><p>Good brokers start with your assets, exposure, and practical concerns rather than defaulting to a generic package.</p><h3>2. Compare Policy Strength, Not Just Cost</h3><p>A lower premium can still be the weaker choice if exclusions, limits, or claims handling are poor.</p><h3>3. Ask What Happens During a Claim</h3><p>Claims support is one of the clearest ways to assess broker value. Ask how hands-on they remain once an insurer is involved.</p><h3>4. Review Whether the Cover Still Fits</h3><p>Properties, businesses, and personal circumstances change. A useful broker should encourage meaningful review rather than passive rollover.</p>"
+    },
+    "questionsToAsk": [
+      "How do you identify whether my current policy is leaving gaps?",
+      "Which insurers do you typically compare for clients like me?",
+      "How do you support clients when a claim becomes urgent or contested?",
+      "What changes should trigger a mid-year review of cover?",
+      "How do you explain the tradeoff between price and policy strength?"
+    ],
+    "faqs": [
+      {
+        "question": "Can an insurance broker help with both home and business cover?",
+        "answer": "Depending on the broker, yes. Some handle both domestic and commercial insurance, while others focus more heavily on one side."
+      },
+      {
+        "question": "Why does policy wording matter so much?",
+        "answer": "Because claims are decided by the actual wording, limits, and exclusions in the policy, not just by what the summary or premium looked like at purchase time."
+      },
+      {
+        "question": "When is a broker especially useful?",
+        "answer": "Brokers tend to be most useful when the risk is more complex, the assets are significant, the policy choices are not straightforward, or claims support matters."
+      }
+    ]
   }
 }
