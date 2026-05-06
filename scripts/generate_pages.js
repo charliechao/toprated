@@ -66,13 +66,14 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers'],
+        subCategories: ['accountants', 'cleaning-services', 'financial-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
             'broadband-providers': 'fibre, wireless, and business internet options for better connectivity',
             'cleaning-services': 'home, office, move-out, and one-off cleaning jobs',
             'creative-agencies': 'branding, websites, design systems, and digital creative support',
+            'financial-advisers': 'investment planning, retirement advice, risk strategy, and long-term wealth guidance',
             'insurance-brokers': 'cover comparisons, business risk advice, claims support, and policy structuring',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
@@ -165,7 +166,7 @@ function getCategorySubcategories(categorySlug) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -822,6 +823,7 @@ const subCatsMapping = {
     'business-loans': { cat: 'services', name: 'Business Loans' },
     'broadband-providers': { cat: 'services', name: 'Broadband Providers' },
     'creative-agencies': { cat: 'services', name: 'Creative Agencies' },
+    'financial-advisers': { cat: 'services', name: 'Financial Advisers' },
     'insurance-brokers': { cat: 'services', name: 'Insurance Brokers' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
     'mortgage-brokers': { cat: 'services', name: 'Mortgage Brokers' },

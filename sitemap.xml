@@ -169,6 +169,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://toprated.nz/cities/auckland/services/insurance-brokers</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://toprated.nz/cities/auckland/services/lawyers</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -391,6 +397,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://toprated.nz/cities/christchurch/services/insurance-brokers</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://toprated.nz/cities/christchurch/services/lawyers</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -599,6 +611,12 @@
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toprated.nz/cities/hamilton/services/insurance-brokers</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://toprated.nz/cities/hamilton/services/lawyers</loc>
@@ -811,6 +829,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://toprated.nz/cities/tauranga/services/insurance-brokers</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://toprated.nz/cities/tauranga/services/lawyers</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1019,6 +1043,12 @@
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toprated.nz/cities/wellington/services/insurance-brokers</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://toprated.nz/cities/wellington/services/lawyers</loc>
