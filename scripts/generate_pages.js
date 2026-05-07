@@ -66,7 +66,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'financial-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers'],
+        subCategories: ['accountants', 'cleaning-services', 'financial-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'travel-agencies'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
@@ -77,7 +77,8 @@ const categoryHubConfigs = {
             'insurance-brokers': 'cover comparisons, business risk advice, claims support, and policy structuring',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
-            'real-estate-agents': 'selling, buying, pricing, and local campaign guidance'
+            'real-estate-agents': 'selling, buying, pricing, and local campaign guidance',
+            'travel-agencies': 'flight booking, travel planning, fare comparison, and holiday support'
         }
     },
     trades: {
@@ -166,7 +167,7 @@ function getCategorySubcategories(categorySlug) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -428,7 +429,7 @@ function getCategoryHubSeo(city, categorySlug) {
             faqs: [
                 {
                     question: `What services are covered on this ${city.name} hub page?`,
-                    answer: `This hub focuses on accountants, cleaning services, lawyers, and real estate agents in ${city.name}, because those are some of the highest-intent local service categories on the site.`
+                    answer: `This hub covers core service categories in ${city.name}, including accountants, advisers, lawyers, brokers, business loans, broadband providers, travel agencies, cleaning services, creative agencies, and real estate agents.`
                 },
                 {
                     question: `Which service category should I start with?`,
@@ -828,6 +829,7 @@ const subCatsMapping = {
     'lawyers': { cat: 'services', name: 'Lawyers' },
     'mortgage-brokers': { cat: 'services', name: 'Mortgage Brokers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
+    'travel-agencies': { cat: 'services', name: 'Travel Agencies' },
     'mechanics': { cat: 'automotive', name: 'Mechanics' },
     'car-dealers': { cat: 'automotive', name: 'Car Dealers' },
     'panel-beaters': { cat: 'automotive', name: 'Panel Beaters' },
