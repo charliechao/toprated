@@ -7078,5 +7078,20 @@
     "neighborhood": "Auckland",
     "phone": "0800754002",
     "id": 373
+  },
+  {
+    "name": "AKLEastPC / AEPC",
+    "industry": "Computer Repairs",
+    "city": "Auckland",
+    "description": "AKLEastPC / AEPC is an Auckland computer repair and PC parts business in Burswood, helping customers with laptop repairs, desktop repairs, gaming PC support, tested parts, and repair accessories.",
+    "website": "https://aepc.co.nz",
+    "address": "Unit 9, 28 Torrens Road, Burswood, Auckland 2013",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "computer-repairs",
+    "neighborhood": "Burswood",
+    "phone": "027 908 8880",
+    "id": 374
   }
 ]
