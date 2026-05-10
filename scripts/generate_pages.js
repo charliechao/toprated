@@ -66,7 +66,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'financial-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies'],
+        subCategories: ['accountants', 'cleaning-services', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
@@ -76,6 +76,7 @@ const categoryHubConfigs = {
             'creative-agencies': 'branding, websites, design systems, and digital creative support',
             'financial-advisers': 'investment planning, retirement advice, risk strategy, and long-term wealth guidance',
             'insurance-brokers': 'cover comparisons, business risk advice, claims support, and policy structuring',
+            'kiwisaver-advisers': 'fund selection, contribution strategy, first-home support, and retirement planning',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance',
@@ -138,10 +139,13 @@ function getBaseTemplate(title, description, pagePath, content, schema = null) {
 }
 
 function formatSlugLabel(value) {
+    const tokenOverrides = {
+        kiwisaver: 'KiwiSaver'
+    };
     return value
         .replace('.html', '')
         .split('-')
-        .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+        .map(part => tokenOverrides[part.toLowerCase()] || (part.charAt(0).toUpperCase() + part.slice(1)))
         .join(' ');
 }
 
@@ -168,7 +172,7 @@ function getCategorySubcategories(categorySlug) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -219,7 +223,7 @@ function buildInternalLinkSection(context) {
                 `/cities/${city.slug}/${context.categorySlug}/${slug}`,
                 'fa-arrow-right',
                 `${formatSlugLabel(slug)} in ${city.name}`,
-                `Open the dedicated ${formatSlugLabel(slug).toLowerCase()} comparison page.`
+                `Open the dedicated ${formatSlugLabel(slug)} comparison page.`
             )),
             ...cities.filter(otherCity => otherCity.slug !== city.slug).slice(0, 2).map(otherCity => buildInternalLinkCard(
                 `/cities/${otherCity.slug}/${context.categorySlug}/`,
@@ -828,6 +832,7 @@ const subCatsMapping = {
     'creative-agencies': { cat: 'services', name: 'Creative Agencies' },
     'financial-advisers': { cat: 'services', name: 'Financial Advisers' },
     'insurance-brokers': { cat: 'services', name: 'Insurance Brokers' },
+    'kiwisaver-advisers': { cat: 'services', name: 'KiwiSaver Advisers' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
     'mortgage-brokers': { cat: 'services', name: 'Mortgage Brokers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
