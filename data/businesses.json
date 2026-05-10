@@ -7093,5 +7093,19 @@
     "neighborhood": "Burswood",
     "phone": "027 908 8880",
     "id": 374
+  },
+  {
+    "name": "HERMOSA CAR CARE",
+    "industry": "Car Care Products",
+    "city": "Auckland",
+    "description": "Hermosa Car Care is an Auckland online retailer for premium car care products, including interior care, leather conditioner, ceramic shampoo, and 10H graphene ceramic coating products for New Zealand car owners and detailers.",
+    "website": "https://hermosahq.co.nz",
+    "address": "23 Edwin Street, Mt Eden, Auckland 1024",
+    "image": "https://hermosahq.co.nz/cdn/shop/files/Hermosa_100ml_Sample_Dark-Photoroom-Photoroom.jpg?v=1756090026&width=1080",
+    "citySlug": "auckland",
+    "categorySlug": "automotive",
+    "pageSlug": "car-wash",
+    "neighborhood": "Mt Eden",
+    "id": 375
   }
 ]
