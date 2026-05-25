@@ -171,6 +171,28 @@ function getCategorySubcategories(categorySlug) {
     return industries.find(ind => ind.slug === categorySlug)?.subCategories || [];
 }
 
+function hasLocalBusinesses(citySlug, pageSlug, categorySlug = null) {
+    return businesses.some(b =>
+        b.citySlug === citySlug &&
+        b.pageSlug === pageSlug &&
+        (!categorySlug || b.categorySlug === categorySlug)
+    );
+}
+
+function getAvailableSubcategories(citySlug, categorySlug, slugs = getCategorySubcategories(categorySlug)) {
+    return slugs.filter(slug => hasLocalBusinesses(citySlug, slug, categorySlug));
+}
+
+function getLeafPageTitle(city, pageName, specificSeo = null) {
+    if (specificSeo?.pageTitle) return specificSeo.pageTitle;
+    return `Best ${pageName} in ${city.name} | TopRated NZ`;
+}
+
+function getLeafMetaDescription(city, pageName, specificSeo = null) {
+    if (specificSeo?.metaDescription) return specificSeo.metaDescription;
+    return `Compare ${pageName.toLowerCase()} in ${city.name}. Read reviews, check local fit, and shortlist the best ${pageName.toLowerCase()} for your next decision.`;
+}
+
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
         services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
@@ -216,7 +238,11 @@ function buildInternalLinkSection(context) {
     if (context.type === 'category') {
         const city = context.city;
         const categoryName = getCategoryName(context.categorySlug);
-        const subcategories = getFeaturedSubcategories(context.categorySlug);
+        const subcategories = getAvailableSubcategories(
+            city.slug,
+            context.categorySlug,
+            getFeaturedSubcategories(context.categorySlug)
+        );
         title = `Related ${categoryName} Guides`;
         description = `Compare the most useful ${categoryName.toLowerCase()} pages in ${city.name}, then check the same category in other cities.`;
         cards = [
@@ -240,6 +266,7 @@ function buildInternalLinkSection(context) {
         const categoryName = getCategoryName(context.categorySlug);
         const siblingLinks = getCategorySubcategories(context.categorySlug)
             .filter(slug => slug !== context.pageSlug)
+            .filter(slug => hasLocalBusinesses(city.slug, slug, context.categorySlug))
             .slice(0, 3)
             .map(slug => buildInternalLinkCard(
                 `/cities/${city.slug}/${context.categorySlug}/${slug}`,
@@ -249,6 +276,7 @@ function buildInternalLinkSection(context) {
             ));
         const crossCityLinks = cities
             .filter(otherCity => otherCity.slug !== city.slug)
+            .filter(otherCity => hasLocalBusinesses(otherCity.slug, context.pageSlug, context.categorySlug))
             .slice(0, 3)
             .map(otherCity => buildInternalLinkCard(
                 `/cities/${otherCity.slug}/${context.categorySlug}/${context.pageSlug}`,
@@ -401,7 +429,8 @@ function getCategoryHubSeo(city, categorySlug) {
     const config = categoryHubConfigs[categorySlug];
     if (!config) return null;
 
-    const linkList = buildHubLinkList(city.slug, categorySlug, config.subCategories, config.subCategoryDescriptions);
+    const availableSubcategories = getAvailableSubcategories(city.slug, categorySlug, config.subCategories);
+    const linkList = buildHubLinkList(city.slug, categorySlug, availableSubcategories, config.subCategoryDescriptions);
 
     if (categorySlug === 'services') {
         return {
@@ -854,18 +883,26 @@ cities.forEach(city => {
             if (!map) return;
             const dir = path.join('cities', city.slug, map.cat);
             if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+            const pagePath = path.join(dir, `${sc}.html`);
+
+            if (!hasLocalBusinesses(city.slug, sc, map.cat)) {
+                if (fs.existsSync(pagePath)) fs.unlinkSync(pagePath);
+                return;
+            }
 
             const pageKey = `${city.slug}/${map.cat}/${sc}`;
             const specificSeo = seoContent[pageKey] || null;
+            const pageTitle = getLeafPageTitle(city, map.name, specificSeo);
+            const metaDescription = getLeafMetaDescription(city, map.name, specificSeo);
 
             const html = getBaseTemplate(
-                `Top Rated ${map.name} in ${city.name} | Verified for 2026`,
-                `Compare the best ${map.name.toLowerCase()} in ${city.name}. Read reviews, view ratings, and find the top-rated ${map.name.toLowerCase()} near you in ${city.name}.`,
+                pageTitle,
+                metaDescription,
                 `/cities/${city.slug}/${map.cat}/${sc}`,
                 generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland'], { type: 'leaf', city, categorySlug: map.cat, pageSlug: sc, pageName: map.name }),
                 buildFaqSchema(specificSeo?.faqs || [])
             );
-            fs.writeFileSync(path.join(dir, `${sc}.html`), html);
+            fs.writeFileSync(pagePath, html);
         });
     });
 });

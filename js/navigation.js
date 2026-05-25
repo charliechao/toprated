@@ -49,6 +49,14 @@ function sortBusinessesForDisplay(items) {
     });
 }
 
+function hasLocalBusiness(businesses, citySlug, pageSlug, categorySlug = null) {
+    return businesses?.some(b =>
+        b.citySlug === citySlug &&
+        b.pageSlug === pageSlug &&
+        (!categorySlug || b.categorySlug === categorySlug)
+    );
+}
+
 function renderBusinessCard(business, options = {}) {
     const hasRating = typeof business.rating === 'number' && typeof business.reviews === 'number' && business.reviews > 0;
     const isPremium = hasRating && business.rating >= 4.8;
@@ -190,9 +198,10 @@ async function renderHubGrid() {
     if (categoryHubMatch) {
         const city = categoryHubMatch[1];
         const categorySlug = categoryHubMatch[2];
-        const [industriesData, featuredGuidesData] = await Promise.all([
+        const [industriesData, featuredGuidesData, businessesData] = await Promise.all([
             loadJSON('/data/industries.json'),
-            loadJSON('/data/featured_guides.json')
+            loadJSON('/data/featured_guides.json'),
+            loadJSON('/data/businesses.json')
         ]);
         const industry = industriesData?.find(i => i.slug === categorySlug);
         if (!industry) return;
@@ -202,7 +211,11 @@ async function renderHubGrid() {
             description: `Editorial guides connected to ${industry.name.toLowerCase()} in ${formatSlugLabel(city)}.`
         });
 
-        const cards = industry.subCategories.map(subCategory => {
+        const availableSubcategories = industry.subCategories.filter(subCategory =>
+            hasLocalBusiness(businessesData, city, subCategory, categorySlug)
+        );
+
+        const cards = availableSubcategories.map(subCategory => {
             const title = formatSlugLabel(subCategory);
             return `
                 <a class="glass-card" href="/cities/${city}/${categorySlug}/${subCategory}">
@@ -241,8 +254,14 @@ async function renderRelated() {
         return;
     }
 
-    const citiesData = await loadJSON('/data/cities.json');
-    const otherCities = citiesData.filter(c => c.slug !== city).slice(0, 4);
+    const [citiesData, businessesData] = await Promise.all([
+        loadJSON('/data/cities.json'),
+        loadJSON('/data/businesses.json')
+    ]);
+    const otherCities = citiesData
+        .filter(c => c.slug !== city)
+        .filter(c => hasLocalBusiness(businessesData, c.slug, pageSlug, category))
+        .slice(0, 4);
     const cityCards = otherCities.map(c => `
         <a href="/cities/${c.slug}/${category}/${pageSlug}" class="related-card">
             <i class="fas fa-city"></i>
@@ -255,6 +274,7 @@ async function renderRelated() {
 
     const siblingCards = activeCategory.subCategories
         .filter(subCategory => subCategory !== pageSlug)
+        .filter(subCategory => hasLocalBusiness(businessesData, city, subCategory, category))
         .slice(0, 4)
         .map(subCategory => `
             <a href="/cities/${city}/${category}/${subCategory}" class="related-card">

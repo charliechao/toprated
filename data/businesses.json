@@ -677,7 +677,7 @@
     "reviews": 64,
     "description": "Radford Builders delivers high-quality home renovations, extensions, and bespoke new builds across Central Auckland and the Rodney region. Known for meticulous attention to detail and proactive communication, they bring a personal, owner-operator approach to every project — ensuring the principal builder is on-site and accessible throughout the entire build process.",
     "website": "https://radfordbuilders.co.nz",
-    "image": "https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/builders.png",
     "address": "Central Auckland",
     "neighborhood": "Central Auckland",
     "phone": "021 555 1234",
@@ -817,7 +817,7 @@
     "reviews": 215,
     "description": "Response Plumbing Ltd is a locally owned and operated team specializing in prompt, professional plumbing solutions across the Auckland region. From 24/7 emergency leak repairs to complex bathroom renovations, they are known for their upfront pricing, high standards of workmanship, and exceptional communication. Every technician is a registered professional, ensuring your home or business is in safe hands.",
     "website": "https://responseplumbing.co.nz",
-    "image": "https://images.unsplash.com/photo-1581244276891-8bb092e00021?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Auckland Central",
     "citySlug": "auckland",
     "categorySlug": "trades",
@@ -907,7 +907,7 @@
     "reviews": 95,
     "description": "Pipe Fix Plumbing is a boutique West Auckland firm specializing in high-quality bathroom and kitchen renovations. Led by master plumbers, the team is dedicated to providing dependable workmanship, clear communication, and personalized service for homeowners across the western suburbs.",
     "website": "https://pipefix.co.nz",
-    "image": "https://images.unsplash.com/photo-1621905252507-b354bc2a196c?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "West Auckland",
     "citySlug": "auckland",
     "categorySlug": "trades",
@@ -1027,7 +1027,7 @@
     "reviews": 310,
     "description": "Call A Plumber NZ is one of Auckland's most highly-reviewed plumbing companies, specializing in high-speed service and modern leak detection technology. They offer a comprehensive 24/7 service for residential emergencies, hot water cylinder replacements, and drain unblocking, with a strong commitment to transparency and fixed-price outcomes.",
     "website": "https://callaplumber.co.nz",
-    "image": "https://images.unsplash.com/photo-1581244276891-8bb092e00021?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Central Auckland",
     "citySlug": "auckland",
     "categorySlug": "trades",
@@ -1057,7 +1057,7 @@
     "reviews": 125,
     "description": "Grace Plumbing is known for its graceful handling of both small home repairs and large commercial plumbing challenges. Based in Central Auckland, they focus on providing cost-effective, durable solutions with a high degree of transparency and professionalism. They are a top choice for apartment dwellers and property managers seeking efficient maintenance.",
     "website": "https://graceplumbing.co.nz",
-    "image": "https://images.unsplash.com/photo-1621905252507-b354bc2a196c?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Auckland CBD",
     "citySlug": "auckland",
     "categorySlug": "trades",
@@ -1087,7 +1087,7 @@
     "reviews": 410,
     "description": "Family-owned Wellington institution with 20+ years of experience. Highly rated for professional repairs and installations.",
     "website": "https://centralplumbing.co.nz",
-    "image": "https://images.unsplash.com/photo-1581244276891-8bb092e00021?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Te Aro, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
@@ -1118,7 +1118,7 @@
     "reviews": 230,
     "description": "Master Plumbers specializing in 24/7 emergency service, drainlaying, and gasfitting. Trusted for over 30 years.",
     "website": "https://gowiththeflow.co.nz",
-    "image": "https://images.unsplash.com/photo-1621905252507-b354bc2a196c?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Lower Hutt, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
@@ -1166,7 +1166,7 @@
     "reviews": 480,
     "description": "Over 90 years in business serving Christchurch. Experts in residential, commercial, and industrial plumbing.",
     "website": "https://waltonplumbing.co.nz",
-    "image": "https://images.unsplash.com/photo-1581244276891-8bb092e00021?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Christchurch Central",
     "citySlug": "christchurch",
     "categorySlug": "trades",
@@ -1197,7 +1197,7 @@
     "reviews": 85,
     "description": "Prompt, reliable, and communicative service. Known for professional workmanship and fair transparent pricing.",
     "website": "https://plumbfitz.co.nz",
-    "image": "https://images.unsplash.com/photo-1621905252507-b354bc2a196c?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Hornby, Christchurch",
     "citySlug": "christchurch",
     "categorySlug": "trades",
@@ -1244,7 +1244,7 @@
     "reviews": 110,
     "description": "Trusted Hamilton plumbers known for fast emergency response and exceptionally professional service.",
     "website": "https://sodaplumbing.co.nz",
-    "image": "https://images.unsplash.com/photo-1581244276891-8bb092e00021?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Beerescourt, Hamilton",
     "citySlug": "hamilton",
     "categorySlug": "trades",
@@ -1276,7 +1276,7 @@
     "reviews": 85,
     "description": "Established in 1951, providing reliable plumbing solutions for generations of Hamilton residents.",
     "website": "https://hamiltonplumbing.co.nz",
-    "image": "https://images.unsplash.com/photo-1621905252507-b354bc2a196c?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Hamilton Central",
     "citySlug": "hamilton",
     "categorySlug": "trades",
@@ -1307,7 +1307,7 @@
     "reviews": 115,
     "description": "Honest, professional service specializing in leak detection, gas fitting, and high-quality installations.",
     "website": "https://theplumbingcollective.co.nz",
-    "image": "https://images.unsplash.com/photo-1581244276891-8bb092e00021?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Tauranga South",
     "citySlug": "tauranga",
     "categorySlug": "trades",
@@ -1337,7 +1337,7 @@
     "reviews": 160,
     "description": "Established experts in solar water heating, gas fitting, and eco-friendly plumbing solutions.",
     "website": "https://ecoplumber.co.nz",
-    "image": "https://images.unsplash.com/photo-1621905252507-b354bc2a196c?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/plumbers.png",
     "address": "Mount Maunganui, Tauranga",
     "citySlug": "tauranga",
     "categorySlug": "trades",
@@ -1399,7 +1399,7 @@
     "reviews": 185,
     "description": "Highly reliable and efficient electrical solutions for residential and commercial projects in the Capital.",
     "website": "https://astralelectrical.co.nz",
-    "image": "https://images.unsplash.com/photo-1454165833767-027ffea9e51e?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/electricians.png",
     "address": "Wellington Central",
     "citySlug": "wellington",
     "categorySlug": "trades",
@@ -1445,7 +1445,7 @@
     "reviews": 140,
     "description": "Trusted for over 50 years, providing honest advice and quality electrical workmanship across the Bay.",
     "website": "https://affordableelectrical.co.nz",
-    "image": "https://images.unsplash.com/photo-1517646272502-78c392b44535?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/electricians.png",
     "address": "Tauranga Central",
     "citySlug": "tauranga",
     "categorySlug": "trades",
@@ -1490,7 +1490,7 @@
     "reviews": 110,
     "description": "Smart home specialists and residential experts with a Master Electricians Guarantee.",
     "website": "https://cableworks.co.nz",
-    "image": "https://images.unsplash.com/photo-1590218126027-46307185df36?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/electricians.png",
     "address": "Lower Hutt, Wellington",
     "citySlug": "wellington",
     "categorySlug": "trades",
@@ -1506,7 +1506,7 @@
     "reviews": 158,
     "description": "Full-service renovation specialists focusing on high-quality kitchen, bathroom, and full-home transformations in Auckland.",
     "website": "https://superiorrenovations.co.nz",
-    "image": "https://images.unsplash.com/photo-1556911227-4910e1507f01?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/renovation-services.png",
     "address": "Auckland Central",
     "citySlug": "auckland",
     "categorySlug": "other",
@@ -1581,7 +1581,7 @@
     "reviews": 38,
     "description": "Creative renovation specialists delivering precision quality updates from minor changes to major extensions.",
     "website": "https://jccbuild.nz",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7eaa511?auto=format&fit=crop&w=400&q=80",
+    "image": "/img/generated/renovation-services.png",
     "address": "Hamilton",
     "citySlug": "hamilton",
     "categorySlug": "other",
@@ -1912,7 +1912,7 @@
     "description": "Registered Master Painters offering premium interior and exterior painting with complimentary color consultations.",
     "website": "https://aucklandcitypainters.co.nz",
     "address": "Auckland Central",
-    "image": "https://images.unsplash.com/photo-1589939705384-51834c30e386?auto=format&fit=crop&w=800&q=80"
+    "image": "/img/generated/painters.png"
   },
   {
     "id": 82,
@@ -2003,7 +2003,7 @@
     "description": "Over 35 years of experience in residential repaints and commercial painting across the Waikato region.",
     "website": "https://grantpainting.co.nz",
     "address": "Hamilton",
-    "image": "https://images.unsplash.com/photo-1589939705384-51834c30e386?auto=format&fit=crop&w=800&q=80"
+    "image": "/img/generated/painters.png"
   },
   {
     "id": 88,
@@ -2048,7 +2048,7 @@
     "description": "Professional domestic and commercial cleaning services with a focus on reliability and high standards.",
     "website": "https://urbancare.co.nz",
     "address": "Auckland Central",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
+    "image": "/img/generated/cleaning-services.png"
   },
   {
     "id": 91,
@@ -2093,7 +2093,7 @@
     "description": "Family-owned business providing top-quality residential cleaning with eco-friendly products.",
     "website": "https://mymaid.co.nz",
     "address": "Wellington Central",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
+    "image": "/img/generated/cleaning-services.png"
   },
   {
     "id": 94,
@@ -2138,7 +2138,7 @@
     "description": "Top-rated cleaning specialists for end-of-lease, carpet, and general residential cleaning.",
     "website": "https://prestigeprocleaning.co.nz",
     "address": "Christchurch",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
+    "image": "/img/generated/cleaning-services.png"
   },
   {
     "id": 97,
@@ -2183,7 +2183,7 @@
     "description": "Comprehensive cleaning solutions including residential, commercial, and specialized car grooming.",
     "website": "https://cleaningdoctor.co.nz",
     "address": "Hamilton",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&w=800&q=80"
+    "image": "/img/generated/cleaning-services.png"
   },
   {
     "id": 100,
@@ -2467,7 +2467,12 @@
     "address": "51 Customs Street East, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Britomart",
-    "specialties": ["Modern New Zealand", "Degustation", "Seasonal Tasting Menu", "Fine Dining"],
+    "specialties": [
+      "Modern New Zealand",
+      "Degustation",
+      "Seasonal Tasting Menu",
+      "Fine Dining"
+    ],
     "highlights": [
       "Three Cuisine Good Food Awards hats — Auckland's highest fine dining accolade",
       "Chef Ben Bayly's menu champions New Zealand's best seasonal and foraged produce",
@@ -2494,7 +2499,12 @@
     "address": "St Patrick's Square, Wyndham Street, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["Modern European", "Fine Dining", "Degustation", "Heritage Setting"],
+    "specialties": [
+      "Modern European",
+      "Fine Dining",
+      "Degustation",
+      "Heritage Setting"
+    ],
     "highlights": [
       "Multiple Metro Restaurant of the Year winner — one of Auckland's most decorated restaurants",
       "Set in a stunning heritage building adjacent to St Patrick's Cathedral",
@@ -2521,7 +2531,12 @@
     "address": "5 Fort Lane, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["Modern Indian", "Contemporary Fine Dining", "NZ-Indian Fusion", "Wine Pairing"],
+    "specialties": [
+      "Modern Indian",
+      "Contemporary Fine Dining",
+      "NZ-Indian Fusion",
+      "Wine Pairing"
+    ],
     "highlights": [
       "Chef Sid Sahrawat's acclaimed modern Indian cuisine using New Zealand's finest seasonal ingredients",
       "Two Cuisine Good Food Awards hats — Auckland's best Indian fine dining restaurant",
@@ -3023,7 +3038,7 @@
     "description": "High-quality new home builds, townhouses, and design-and-build services. Known for honest advice, careful planning, and energy-efficient designs.",
     "website": "https://www.trentbuilders.co.nz",
     "address": "Canterbury Region",
-    "image": "https://images.unsplash.com/photo-1600573472591-ee6981cf81f4?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/builders.png",
     "citySlug": "christchurch",
     "categorySlug": "trades",
     "pageSlug": "builders"
@@ -3285,7 +3300,12 @@
     "address": "Auckland CBD",
     "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["Modern Indian", "Sharing Plates", "Tandoor", "Contemporary Fine Dining"],
+    "specialties": [
+      "Modern Indian",
+      "Sharing Plates",
+      "Tandoor",
+      "Contemporary Fine Dining"
+    ],
     "highlights": [
       "Contemporary sharing-plate approach to Indian cuisine — perfect for groups exploring the full menu",
       "Named after 1947 (Indian independence) — the menu celebrates the full breadth of Indian culinary tradition",
@@ -3309,9 +3329,15 @@
     "description": "Satya South Indian Restaurant is Auckland's definitive South Indian dining destination — a beloved institution that has been introducing Aucklanders to the lighter, rice-based cuisine of South India for decades. Famous for its paper-thin crispy dosas, fluffy idlis served with house-made sambar and coconut chutney, and a fully vegetarian menu that proves plant-based Indian food is as exciting as any meat dish. Multiple locations across Auckland, including Ponsonby and Manukau.",
     "website": "https://www.satya.co.nz",
     "address": "Multiple Auckland locations",
-    "image": "https://images.unsplash.com/photo-1595908129746-f66d2b8f71e3?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/indian-restaurants.png",
     "neighborhood": "Ponsonby",
-    "specialties": ["South Indian", "Dosas", "Vegetarian", "Vegan-Friendly", "Idli & Sambar"],
+    "specialties": [
+      "South Indian",
+      "Dosas",
+      "Vegetarian",
+      "Vegan-Friendly",
+      "Idli & Sambar"
+    ],
     "highlights": [
       "Auckland's most celebrated South Indian restaurant — a must-visit for dosa lovers",
       "Fully vegetarian and vegan-friendly menu with no compromise on flavour or variety",
@@ -3352,7 +3378,7 @@
     "description": "Vibrant authentic Indian street food and tapas-style dining. A unique cultural experience with bold flavors.",
     "website": "https://www.chaatstreet.co.nz",
     "address": "Wellington CBD",
-    "image": "https://images.unsplash.com/photo-1589301773859-1c8c9d8475ea?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/indian-restaurants.png",
     "citySlug": "wellington",
     "categorySlug": "cuisine",
     "pageSlug": "indian-restaurants"
@@ -3384,7 +3410,12 @@
     "address": "66 Tyler Street, Britomart, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Britomart",
-    "specialties": ["Fresh Handmade Pasta", "Artisan Bakery", "All-Day Dining", "Seasonal Italian"],
+    "specialties": [
+      "Fresh Handmade Pasta",
+      "Artisan Bakery",
+      "All-Day Dining",
+      "Seasonal Italian"
+    ],
     "highlights": [
       "Fresh pasta made daily on-site — the benchmark for Italian pasta restaurants in Auckland",
       "On-site artisan bakery producing exceptional sourdough, pastries, and bread every morning",
@@ -3411,7 +3442,12 @@
     "address": "North Wharf, Wynyard Quarter, Auckland",
     "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Wynyard Quarter",
-    "specialties": ["Meatballs", "Waterfront Dining", "Italian Wine", "Sharing Plates"],
+    "specialties": [
+      "Meatballs",
+      "Waterfront Dining",
+      "Italian Wine",
+      "Sharing Plates"
+    ],
     "highlights": [
       "Auckland's most celebrated meatball restaurant — handcrafted from Karitane crayfish, beef short rib, and seasonal proteins",
       "Waterfront North Wharf location with outdoor terrace seating overlooking the Waitemata Harbour",
@@ -3468,7 +3504,7 @@
     "description": "Top Italian spot in Christchurch. Authentic wood-fired pizzas and handmade pasta on Gloucester Street.",
     "website": "https://www.francescas.co.nz",
     "address": "Gloucester Street, Christchurch",
-    "image": "https://images.unsplash.com/photo-1572441714582-c957c2e3a2d7?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/italian-restaurants.png",
     "citySlug": "christchurch",
     "categorySlug": "cuisine",
     "pageSlug": "italian-restaurants",
@@ -4675,7 +4711,7 @@
     "description": "Trusted Auckland car dealership with decades of experience. Wide selection of quality used cars with competitive finance options and comprehensive vehicle checks.",
     "website": "https://www.johnmartinmotors.co.nz",
     "address": "Great South Road, Penrose, Auckland",
-    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0bfa?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/car-dealers.png",
     "citySlug": "auckland",
     "categorySlug": "automotive",
     "pageSlug": "car-dealers",
@@ -4707,7 +4743,7 @@
     "description": "Top 3 Rated Medium Dealership in Wellington (BuyerScore 2025). Specializing in affordable, reliable used cars with easy finance and trade-in options.",
     "website": "https://www.capitalcitycars.co.nz",
     "address": "Lower Hutt, Wellington",
-    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0bfa?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/car-dealers.png",
     "citySlug": "wellington",
     "categorySlug": "automotive",
     "pageSlug": "car-dealers",
@@ -4739,7 +4775,7 @@
     "description": "Large selection of quality Japanese imports at competitive prices. Comprehensive inspection process, warranty options, and finance available on-site.",
     "website": "https://www.valuecarswarehouse.co.nz",
     "address": "Blenheim Road, Christchurch",
-    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0bfa?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/car-dealers.png",
     "citySlug": "christchurch",
     "categorySlug": "automotive",
     "pageSlug": "car-dealers",
@@ -4771,7 +4807,7 @@
     "description": "Bay of Plenty's premier used car dealership. Quality vehicles with comprehensive mechanical inspections, warranty options, and flexible finance solutions.",
     "website": "https://www.bopcarsales.co.nz",
     "address": "Cameron Road, Tauranga",
-    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0bfa?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/car-dealers.png",
     "citySlug": "tauranga",
     "categorySlug": "automotive",
     "pageSlug": "car-dealers",
@@ -4947,7 +4983,7 @@
     "description": "Premier commercial law firm with deep expertise in capital markets, M&A, banking, and government advisory. Regularly recognised in global legal rankings.",
     "website": "https://www.chapmantripp.com",
     "address": "23 Albert Street, Auckland CBD",
-    "image": "https://images.unsplash.com/photo-1507679799987-c73b7193ad76?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/lawyers.png",
     "citySlug": "auckland",
     "categorySlug": "services",
     "pageSlug": "lawyers",
@@ -4979,7 +5015,7 @@
     "description": "Client-centric Wellington firm with broad expertise in property, family, commercial, trusts, and Māori land law. Known for accessible, jargon-free legal advice.",
     "website": "https://www.raineycollins.co.nz",
     "address": "Level 3, 19 Brandon Street, Wellington",
-    "image": "https://images.unsplash.com/photo-1507679799987-c73b7193ad76?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/lawyers.png",
     "citySlug": "wellington",
     "categorySlug": "services",
     "pageSlug": "lawyers",
@@ -5011,7 +5047,7 @@
     "description": "Recognised full-service Christchurch firm ranked by The Legal 500. Expertise in litigation, property, corporate advisory, and post-earthquake insurance claims.",
     "website": "https://www.wynnwilliams.co.nz",
     "address": "Wynn Williams House, Christchurch",
-    "image": "https://images.unsplash.com/photo-1507679799987-c73b7193ad76?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/lawyers.png",
     "citySlug": "christchurch",
     "categorySlug": "services",
     "pageSlug": "lawyers",
@@ -5043,7 +5079,7 @@
     "description": "Premier Waikato law firm recognised by The Legal 500. Full-service capabilities in commercial, property, employment, and dispute resolution across the region.",
     "website": "https://www.tompkinswake.co.nz",
     "address": "1 Alma Street, Hamilton",
-    "image": "https://images.unsplash.com/photo-1507679799987-c73b7193ad76?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/lawyers.png",
     "citySlug": "hamilton",
     "categorySlug": "services",
     "pageSlug": "lawyers",
@@ -5585,7 +5621,7 @@
     "description": "One of Auckland's most trusted tyre retailers with multiple locations. Stocking Bridgestone, Firestone, and budget brands. Wheel alignments, balancing, and fleet services available.",
     "website": "https://www.beaurepaires.co.nz",
     "address": "Greenlane, Auckland",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/tyre-shops.png",
     "citySlug": "auckland",
     "categorySlug": "automotive",
     "pageSlug": "tyre-shops",
@@ -5832,7 +5868,7 @@
     "reviews": 280,
     "description": "Tai Er is a massively popular Chinese chain that recently opened its first New Zealand location on Lorne Street in Auckland CBD — and the queues have been steady since day one. Famous across China for its signature suancai fish (pickled cabbage and fish in broth), the restaurant offers bold, customizable Sichuan flavours in a sleek, modern setting. It brings a taste of contemporary Chinese urban dining culture to Auckland.",
     "website": "https://www.taier.co.nz",
-    "image": "https://images.unsplash.com/photo-1582892709490-63a8a94e3d41?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/chinese-restaurants.png",
     "address": "Lorne Street, Auckland CBD",
     "neighborhood": "CBD",
     "phone": "09 300 5588",
@@ -5871,7 +5907,13 @@
     "address": "Sandringham Road, Auckland",
     "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Sandringham",
-    "specialties": ["North Indian", "South Indian", "Biryani", "Tandoor", "Vegetarian"],
+    "specialties": [
+      "North Indian",
+      "South Indian",
+      "Biryani",
+      "Tandoor",
+      "Vegetarian"
+    ],
     "highlights": [
       "Over 35 years serving the Auckland Indian community — one of the city's longest-standing Indian restaurants",
       "Multi-award-winning biryanis made using the authentic dum (sealed pot, slow-cooked) method",
@@ -5898,7 +5940,12 @@
     "address": "Ponsonby Road, Grey Lynn, Auckland",
     "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Grey Lynn",
-    "specialties": ["Indian Cocktail Bar", "Tandoor", "Sharing Plates", "Modern Indian Street Food"],
+    "specialties": [
+      "Indian Cocktail Bar",
+      "Tandoor",
+      "Sharing Plates",
+      "Modern Indian Street Food"
+    ],
     "highlights": [
       "Auckland's best Indian cocktail bar — an outstanding drinks programme of Indian-inspired cocktails and natural wine",
       "Tandoor-fired sharing plates including standout Amritsari prawn toast and pork belly with Goan chorizo",
@@ -5924,7 +5971,12 @@
     "address": "Parnell Road, Parnell, Auckland",
     "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Parnell",
-    "specialties": ["North Indian", "Bengali", "Traditional Curries", "BYO"],
+    "specialties": [
+      "North Indian",
+      "Bengali",
+      "Traditional Curries",
+      "BYO"
+    ],
     "highlights": [
       "One of Auckland's most trusted and long-running North Indian restaurants — a Parnell institution",
       "Celebrated chilli cheese naan — one of Auckland's most requested Indian bread dishes",
@@ -5951,7 +6003,13 @@
     "address": "Wyndham Street, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["Regional Indian", "Mangalorean", "Kashmiri", "Chettinad", "Modern Indian"],
+    "specialties": [
+      "Regional Indian",
+      "Mangalorean",
+      "Kashmiri",
+      "Chettinad",
+      "Modern Indian"
+    ],
     "highlights": [
       "One of Auckland's most adventurous Indian menus — specialising in lesser-known regional cuisines from across India",
       "Mangalorean paneer ghee roast and Kashmiri lamb ribs are landmark dishes not found elsewhere in Auckland",
@@ -5977,7 +6035,14 @@
     "address": "Hobson Street, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["South Indian", "Vegetarian", "Vegan", "Tamil Nadu", "Dosas", "Breakfast"],
+    "specialties": [
+      "South Indian",
+      "Vegetarian",
+      "Vegan",
+      "Tamil Nadu",
+      "Dosas",
+      "Breakfast"
+    ],
     "highlights": [
       "Part of the world's largest South Indian vegetarian restaurant chain — 100+ branches globally",
       "100% vegetarian and vegan-friendly menu with authentic Tamil Nadu recipes unchanged for decades",
@@ -6003,7 +6068,13 @@
     "address": "Ponsonby Road, Ponsonby, Auckland",
     "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Ponsonby",
-    "specialties": ["Mumbai Street Food", "Vada Pav", "Pav Bhaji", "Parsi Cuisine", "Casual Dining"],
+    "specialties": [
+      "Mumbai Street Food",
+      "Vada Pav",
+      "Pav Bhaji",
+      "Parsi Cuisine",
+      "Casual Dining"
+    ],
     "highlights": [
       "Auckland's best Mumbai street food restaurant — authentic vada pav, pav bhaji, and bhel puri",
       "Parsi lamb dhansak (lentil and lamb stew with brown rice) is the signature dish — unique to Mumbaiwala in Auckland",
@@ -6029,7 +6100,13 @@
     "address": "Graham Street, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["Mughlai", "North Indian", "Tandoor", "Dal Makhani", "Halal"],
+    "specialties": [
+      "Mughlai",
+      "North Indian",
+      "Tandoor",
+      "Dal Makhani",
+      "Halal"
+    ],
     "highlights": [
       "Celebrated overnight-simmered dal makhani — Auckland reviewers consistently rate it the best in the city",
       "Halal-certified and welcoming to all dietary requirements including vegetarian and gluten-free",
@@ -6055,7 +6132,13 @@
     "address": "Stoddard Road, Mount Roskill, Auckland",
     "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Mt Roskill",
-    "specialties": ["Regional Indian", "Andhra", "Punjabi", "Charcoal Paneer", "South Indian Meat Dishes"],
+    "specialties": [
+      "Regional Indian",
+      "Andhra",
+      "Punjabi",
+      "Charcoal Paneer",
+      "South Indian Meat Dishes"
+    ],
     "highlights": [
       "A must-visit for Aucklanders wanting to explore regional Indian cooking beyond the usual North Indian staples",
       "Charcoal-smoked paneer — one of Auckland's most distinctive and talked-about Indian dishes",
@@ -6081,7 +6164,12 @@
     "address": "226 Ponsonby Road, Ponsonby",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Ponsonby",
-    "specialties": ["Wood-Fired Pizza", "Handmade Pasta", "Italian Classics", "Romantic Courtyard"],
+    "specialties": [
+      "Wood-Fired Pizza",
+      "Handmade Pasta",
+      "Italian Classics",
+      "Romantic Courtyard"
+    ],
     "highlights": [
       "Auckland's most iconic Italian restaurant — open since 1986 and still one of the city's best",
       "Legendary fairy-lit courtyard dining — one of Auckland's most romantic and sought-after tables",
@@ -6108,7 +6196,12 @@
     "address": "Viaduct Harbour, Auckland CBD",
     "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Viaduct",
-    "specialties": ["Waterfront Dining", "Tableside Cheese Wheel Pasta", "Italian Classics", "Long Lunch"],
+    "specialties": [
+      "Waterfront Dining",
+      "Tableside Cheese Wheel Pasta",
+      "Italian Classics",
+      "Long Lunch"
+    ],
     "highlights": [
       "Viral tableside cacio e pepe finished inside a giant Parmigiano Reggiano wheel — Auckland's most Instagrammed Italian dish",
       "Stunning Viaduct Harbour location with outdoor terrace seating and uninterrupted water views",
@@ -6135,7 +6228,12 @@
     "address": "Remuera Road, Remuera, Auckland",
     "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Remuera",
-    "specialties": ["Authentic Italian Fine Dining", "Regional Italian", "Italian Wine Specialist", "Fresh Pasta"],
+    "specialties": [
+      "Authentic Italian Fine Dining",
+      "Regional Italian",
+      "Italian Wine Specialist",
+      "Fresh Pasta"
+    ],
     "highlights": [
       "Led by a Rome-born chef — the most authentically Italian restaurant in Auckland",
       "Beef cheek tagliatelle slow-braised for 8 hours is the signature dish and reason alone to visit",
@@ -6161,7 +6259,12 @@
     "address": "Karangahape Road, Auckland",
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Karangahape Road",
-    "specialties": ["Fresh Pasta", "Cacio e Pepe", "Trattoria", "BYO"],
+    "specialties": [
+      "Fresh Pasta",
+      "Cacio e Pepe",
+      "Trattoria",
+      "BYO"
+    ],
     "highlights": [
       "Auckland's cult pasta restaurant — the cacio e pepe is considered by many to be the best in New Zealand",
       "All pasta made fresh daily in-house — the seasonal menu changes to reflect the best available produce",
@@ -6187,7 +6290,12 @@
     "address": "Jervois Road, Herne Bay, Auckland",
     "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Herne Bay",
-    "specialties": ["Meatballs", "Neighbourhood Trattoria", "BYO", "Italian Classics"],
+    "specialties": [
+      "Meatballs",
+      "Neighbourhood Trattoria",
+      "BYO",
+      "Italian Classics"
+    ],
     "highlights": [
       "Over 30 years serving the Herne Bay community — one of Auckland's most trusted Italian institutions",
       "Legendary meatballs made from grass-fed beef or Karitane crayfish in rich house-made tomato sauce",
@@ -6214,7 +6322,12 @@
     "address": "290 Parnell Road, Parnell, Auckland",
     "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Parnell",
-    "specialties": ["Wood-Fired Pizza", "Neapolitan Pizza", "Pasta", "BYO Courtyard"],
+    "specialties": [
+      "Wood-Fired Pizza",
+      "Neapolitan Pizza",
+      "Pasta",
+      "BYO Courtyard"
+    ],
     "highlights": [
       "25+ years on Parnell Road — one of Auckland's most trusted and long-running Italian restaurants",
       "Beautiful enclosed courtyard — one of the best outdoor dining settings in Auckland for a summer evening",
@@ -6241,7 +6354,12 @@
     "address": "Karangahape Road, Auckland",
     "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "Karangahape Road",
-    "specialties": ["Italian Comfort Food", "Trattoria", "Spaghetti & Meatballs", "Affordable Italian"],
+    "specialties": [
+      "Italian Comfort Food",
+      "Trattoria",
+      "Spaghetti & Meatballs",
+      "Affordable Italian"
+    ],
     "highlights": [
       "One of K Road's most beloved restaurants — old-school Italian trattoria atmosphere at its finest",
       "Spaghetti and meatballs that have fed thousands of Aucklanders over the years — simple, perfect, generous",
@@ -6268,7 +6386,12 @@
     "address": "Auckland CBD",
     "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "neighborhood": "CBD",
-    "specialties": ["Italian Fine Dining", "House-Made Pasta", "Chef's Family Recipes", "Italian Classics"],
+    "specialties": [
+      "Italian Fine Dining",
+      "House-Made Pasta",
+      "Chef's Family Recipes",
+      "Italian Classics"
+    ],
     "highlights": [
       "Chef-owner's menu pays tribute to his late Italian Nonna — every dish carries genuine personal meaning",
       "Fried provolone starter is one of the most talked-about dishes in Auckland — blistered, salty, perfect",
@@ -6403,7 +6526,7 @@
     "description": "Wellington's independent tyre specialists stocking Michelin, Continental, Bridgestone, and budget brands. Expert advice for Wellington's hilly terrain, computerised alignments, and same-day fitting. Serving the capital for over 15 years.",
     "website": "https://www.wellingtontyres.co.nz",
     "address": "Thorndon, Wellington",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/tyre-shops.png",
     "citySlug": "wellington",
     "categorySlug": "automotive",
     "pageSlug": "tyre-shops",
@@ -6740,7 +6863,7 @@
     "description": "Pioneer Finance is a Parnell lender offering flexible business loans alongside personal and vehicle finance, with a fast application process, same-day approval positioning, and products designed to support business growth and day-to-day funding needs.",
     "website": "https://pioneerfinance.co.nz/business",
     "address": "106/100 Parnell Road, Parnell, Auckland 1052",
-    "image": "https://images.unsplash.com/photo-1554224154-26032fced8bd?auto=format&fit=crop&w=800&q=80",
+    "image": "/img/generated/business-loans.png",
     "citySlug": "auckland",
     "categorySlug": "services",
     "pageSlug": "business-loans",

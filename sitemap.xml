@@ -169,43 +169,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/auckland/services/financial-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/auckland/services/hypnotherapists</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/auckland/services/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/auckland/services/insurance-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/auckland/services/kiwisaver-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/auckland/services/lawyers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/auckland/services/mortgage-brokers</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -397,37 +367,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/christchurch/services/broadband-providers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/services/business-loans</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/christchurch/services/cleaning-services</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/services/computer-repairs</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/services/creative-agencies</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/services/financial-advisers</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -445,37 +385,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/christchurch/services/insurance-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/services/kiwisaver-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/christchurch/services/lawyers</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/christchurch/services/mortgage-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/christchurch/services/real-estate-agents</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/services/travel-agencies</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -506,12 +422,6 @@
   </url>
   <url>
     <loc>https://toprated.nz/cities/christchurch/trades/plumbers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/christchurch/trades/renovation-services</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -643,43 +553,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/hamilton/services/broadband-providers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/business-loans</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/hamilton/services/cleaning-services</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/computer-repairs</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/creative-agencies</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/financial-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/hypnotherapists</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -691,37 +565,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/hamilton/services/insurance-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/kiwisaver-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/hamilton/services/lawyers</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/hamilton/services/mortgage-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/hamilton/services/real-estate-agents</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/services/travel-agencies</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -752,12 +602,6 @@
   </url>
   <url>
     <loc>https://toprated.nz/cities/hamilton/trades/plumbers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/hamilton/trades/renovation-services</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -889,43 +733,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/tauranga/services/broadband-providers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/business-loans</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/tauranga/services/cleaning-services</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/computer-repairs</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/creative-agencies</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/financial-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/hypnotherapists</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -937,37 +745,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/tauranga/services/insurance-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/kiwisaver-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/tauranga/services/lawyers</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/tauranga/services/mortgage-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/tauranga/services/real-estate-agents</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/services/travel-agencies</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -998,12 +782,6 @@
   </url>
   <url>
     <loc>https://toprated.nz/cities/tauranga/trades/plumbers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/tauranga/trades/renovation-services</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1135,43 +913,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/wellington/services/broadband-providers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/business-loans</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/wellington/services/cleaning-services</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/computer-repairs</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/creative-agencies</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/financial-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/hypnotherapists</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1183,37 +925,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/wellington/services/insurance-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/kiwisaver-advisers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/wellington/services/lawyers</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://toprated.nz/cities/wellington/services/mortgage-brokers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://toprated.nz/cities/wellington/services/real-estate-agents</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/services/travel-agencies</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1244,12 +962,6 @@
   </url>
   <url>
     <loc>https://toprated.nz/cities/wellington/trades/plumbers</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://toprated.nz/cities/wellington/trades/renovation-services</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

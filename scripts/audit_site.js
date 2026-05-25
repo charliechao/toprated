@@ -13,10 +13,14 @@ function getAllFiles(dirPath, arrayOfFiles) {
     arrayOfFiles = arrayOfFiles || [];
 
     files.forEach(function (file) {
-        if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-            arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
+        const filePath = path.join(dirPath, file);
+        const stat = fs.statSync(filePath);
+
+        if (stat.isDirectory()) {
+            if (file.startsWith('.') || file === 'node_modules') return;
+            arrayOfFiles = getAllFiles(filePath, arrayOfFiles);
         } else {
-            arrayOfFiles.push(path.join(dirPath, "/", file));
+            arrayOfFiles.push(filePath);
         }
     });
 
@@ -49,6 +53,11 @@ allHtmlFiles.forEach(file => {
     let match;
     while ((match = linkRegex.exec(content)) !== null) {
         let href = match[1];
+
+        // Template placeholders are not real links until the generator replaces them.
+        if (href.includes('<!--') || href.includes('${')) {
+            continue;
+        }
 
         // Skip external, anchors, and mailto/tel
         if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) {
@@ -92,14 +101,16 @@ allHtmlFiles.forEach(file => {
     // Extract metadata from path or content to identify category/city
     // E.g., /cities/auckland/cuisine/japanese-restaurants.html
     const parts = relativePath.split('/').filter(Boolean);
-    if (parts[0] === 'cities' && parts.length >= 3) {
+    if (parts[0] === 'cities' && parts.length >= 4) {
         const citySlug = parts[1];
+        const categorySlug = parts[2];
         const pageFile = parts[parts.length - 1];
         const pageSlug = pageFile.replace('.html', '');
 
         // Filter by citySlug and pageSlug
         const filtered = businesses.filter(b =>
             b.citySlug === citySlug &&
+            b.categorySlug === categorySlug &&
             b.pageSlug === pageSlug
         );
 
