@@ -66,7 +66,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
@@ -75,6 +75,7 @@ const categoryHubConfigs = {
             'computer-repairs': 'laptop, desktop, gaming PC, parts, and repair support',
             'creative-agencies': 'branding, websites, design systems, and digital creative support',
             'financial-advisers': 'investment planning, retirement advice, risk strategy, and long-term wealth guidance',
+            'hypnotherapists': 'clinical hypnotherapy, NLP, anxiety support, and nervous-system reset work',
             'insurance-brokers': 'cover comparisons, business risk advice, claims support, and policy structuring',
             'kiwisaver-advisers': 'fund selection, contribution strategy, first-home support, and retirement planning',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
@@ -172,7 +173,7 @@ function getCategorySubcategories(categorySlug) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -434,7 +435,7 @@ function getCategoryHubSeo(city, categorySlug) {
             faqs: [
                 {
                     question: `What services are covered on this ${city.name} hub page?`,
-                    answer: `This hub covers core service categories in ${city.name}, including accountants, advisers, lawyers, brokers, business loans, broadband providers, computer repairs, travel agencies, cleaning services, creative agencies, and real estate agents.`
+                    answer: `This hub covers core service categories in ${city.name}, including accountants, advisers, lawyers, brokers, hypnotherapists, business loans, broadband providers, computer repairs, travel agencies, cleaning services, creative agencies, and real estate agents.`
                 },
                 {
                     question: `Which service category should I start with?`,
@@ -831,6 +832,7 @@ const subCatsMapping = {
     'computer-repairs': { cat: 'services', name: 'Computer Repairs' },
     'creative-agencies': { cat: 'services', name: 'Creative Agencies' },
     'financial-advisers': { cat: 'services', name: 'Financial Advisers' },
+    'hypnotherapists': { cat: 'services', name: 'Hypnotherapists' },
     'insurance-brokers': { cat: 'services', name: 'Insurance Brokers' },
     'kiwisaver-advisers': { cat: 'services', name: 'KiwiSaver Advisers' },
     'lawyers': { cat: 'services', name: 'Lawyers' },

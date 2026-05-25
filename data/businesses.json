@@ -7107,5 +7107,20 @@
     "pageSlug": "car-wash",
     "neighborhood": "Mt Eden",
     "id": 375
+  },
+  {
+    "name": "Koru Therapies",
+    "industry": "Hypnotherapists",
+    "city": "Christchurch",
+    "description": "Koru Therapies is a Mt Pleasant clinical hypnotherapy and NLP practice helping clients with anxiety, insomnia, chronic pain, stress patterns, body tension, and nervous-system reset support.",
+    "website": "https://www.korutherapies.co.nz/",
+    "address": "Mt Pleasant, Christchurch",
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+    "citySlug": "christchurch",
+    "categorySlug": "services",
+    "pageSlug": "hypnotherapists",
+    "neighborhood": "Mt Pleasant",
+    "phone": "0273320214",
+    "id": 376
   }
 ]
