@@ -7245,5 +7245,20 @@
     "neighborhood": "Mt Pleasant",
     "phone": "0273320214",
     "id": 376
+  },
+  {
+    "name": "Urban Care Domestic Cleaning Wellington",
+    "industry": "Cleaning Services",
+    "city": "Wellington",
+    "description": "Urban Care provides domestic and commercial cleaning services for Wellington customers, including house cleaning, deep cleaning, end-of-tenancy cleaning, carpet cleaning, and office cleaning.",
+    "website": "https://urbancare.co.nz/domestic-cleaning-wellington/",
+    "address": "Wellington",
+    "image": "/img/generated/cleaning-services.png",
+    "citySlug": "wellington",
+    "categorySlug": "services",
+    "pageSlug": "cleaning-services",
+    "neighborhood": "Wellington",
+    "phone": "09 242 0740",
+    "id": 377
   }
 ]
