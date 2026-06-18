@@ -4394,5 +4394,105 @@
         "answer": "Clear training, realistic expectations, respectful communication, transparent session structure, and appropriate referral boundaries are all good signs."
       }
     ]
+  },
+  "auckland/services/movers": {
+    "pageTitle": "Best Movers in Auckland | Compare Moving Companies | TopRated NZ",
+    "metaDescription": "Compare Auckland movers for house moves, office relocations, packing, furniture transport, and local moving services.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "June 2026",
+    "introText": "Auckland moves can involve tight access, apartment lifts, motorway timing, and long travel between suburbs. Compare movers by the work they handle, how clearly they quote, and whether packing, furniture protection, transport, and unloading are included.",
+    "buyersGuide": {
+      "title": "How to Choose Movers in Auckland",
+      "content": "<p>A reliable moving company should make the scope, timing, and likely cost clear before moving day.</p><h3>1. Match the Team to the Move</h3><p>Ask whether they regularly handle homes, apartments, offices, heavy furniture, or moves between distant Auckland suburbs.</p><h3>2. Compare Complete Quotes</h3><p>Check hourly rates, travel charges, minimum booking periods, stair or access fees, packing materials, and whether GST is included.</p><h3>3. Ask About Protection</h3><p>Confirm how furniture is wrapped, what happens if an item is damaged, and whether the company carries appropriate transit and public-liability cover.</p><h3>4. Plan Access Early</h3><p>Share parking, lift, stair, loading-zone, and narrow-driveway details before the move so the crew can arrive with the right vehicle and equipment.</p>"
+    },
+    "questionsToAsk": [
+      "Is the quote hourly or fixed, and what extra charges can apply?",
+      "Do you provide packing materials and packing services?",
+      "How do you protect furniture and fragile items?",
+      "What insurance or damage cover applies during the move?",
+      "How many movers and what size vehicle will you provide?"
+    ],
+    "faqs": [
+      {
+        "question": "How much do movers cost in Auckland?",
+        "answer": "Pricing depends on crew size, vehicle size, travel, access, volume, and whether packing is included. Ask for a written estimate that identifies likely extras."
+      },
+      {
+        "question": "Should I book Auckland movers in advance?",
+        "answer": "Booking early is sensible for weekends, month-end dates, and larger moves, when established moving teams can fill quickly."
+      },
+      {
+        "question": "Can movers pack my belongings too?",
+        "answer": "Many moving companies offer full or partial packing. Confirm whether boxes, wrapping materials, packing labour, and unpacking are included in the quote."
+      }
+    ]
+  },
+  "wellington/services/movers": {
+    "pageTitle": "Best Movers in Wellington | Compare Moving Companies | TopRated NZ",
+    "metaDescription": "Compare Wellington movers for house moves, office relocations, packing, furniture transport, and local moving services.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "June 2026",
+    "introText": "Wellington moves often involve steep streets, restricted parking, stairs, apartments, and exposed weather. Compare local movers by access planning, quote clarity, furniture protection, and experience with the kind of property you are leaving and entering.",
+    "buyersGuide": {
+      "title": "How to Choose Movers in Wellington",
+      "content": "<p>Good preparation matters when access is limited and the weather can change quickly.</p><h3>1. Explain Both Properties</h3><p>Share stair counts, parking limits, lift bookings, paths, and difficult furniture before accepting a quote.</p><h3>2. Check the Pricing Basis</h3><p>Ask about hourly minimums, depot travel, additional crew, packing materials, and delays caused by access.</p><h3>3. Confirm Furniture Protection</h3><p>Ask what blankets, wraps, straps, and weather protection the crew uses.</p><h3>4. Review Damage Cover</h3><p>Understand the mover's liability and any optional transit cover before valuable items are loaded.</p>"
+    },
+    "questionsToAsk": ["Have you handled moves with steep or restricted access?", "What charges apply beyond the advertised rate?", "How do you protect items in wet weather?", "What damage cover applies?", "Can you help with packing or dismantling furniture?"],
+    "faqs": [
+      {"question": "What should Wellington movers know before quoting?", "answer": "Give them accurate details about stairs, parking, lifts, walking distance, heavy items, and both addresses so the estimate reflects the real job."},
+      {"question": "Do moving companies supply boxes?", "answer": "Many do, either for purchase, hire, or as part of a packing service. Ask about delivery and collection terms."},
+      {"question": "What happens if moving day is wet?", "answer": "Ask how the company protects furniture and flooring and whether severe weather can affect timing or charges."}
+    ]
+  },
+  "christchurch/services/movers": {
+    "pageTitle": "Best Movers in Christchurch | Compare Moving Companies | TopRated NZ",
+    "metaDescription": "Compare Christchurch movers for local house moves, office relocations, packing, furniture transport, and Canterbury moves.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "June 2026",
+    "introText": "Christchurch moving companies serve everything from compact central-city apartments to family homes and relocations across wider Canterbury. Compare providers by vehicle capacity, crew size, quote detail, packing support, and how carefully they handle furniture and property.",
+    "buyersGuide": {
+      "title": "How to Choose Movers in Christchurch",
+      "content": "<p>The right mover should have the crew, vehicle, and process to complete the job without avoidable return trips or surprises.</p><h3>1. Estimate Volume Honestly</h3><p>Provide a room-by-room inventory and identify garages, sheds, outdoor furniture, and unusually heavy items.</p><h3>2. Check Travel Charges</h3><p>For moves around Canterbury, ask where travel time starts and ends and whether fuel or mileage is separate.</p><h3>3. Compare Packing Options</h3><p>Decide whether you need boxes only, fragile-item packing, or a complete pack-and-unpack service.</p><h3>4. Confirm Care and Cover</h3><p>Ask how items are wrapped and secured and what process applies if something is damaged.</p>"
+    },
+    "questionsToAsk": ["What truck size and crew do you recommend?", "How is travel time charged?", "Can you move heavy or oversized items?", "What packing options are available?", "What cover applies to my belongings?"],
+    "faqs": [
+      {"question": "Can Christchurch movers handle regional relocations?", "answer": "Many serve greater Canterbury as well as the city. Confirm service boundaries, mileage, and whether the move can be completed in one trip."},
+      {"question": "How can I get a more accurate moving quote?", "answer": "Provide an inventory, photos or a walkthrough, access details, dates, and a list of items needing dismantling or special handling."},
+      {"question": "Will movers dismantle beds and furniture?", "answer": "Some crews offer dismantling and reassembly. Confirm this in advance and ask whether it adds labour time or a separate fee."}
+    ]
+  },
+  "hamilton/services/movers": {
+    "pageTitle": "Best Movers in Hamilton | Compare Moving Companies | TopRated NZ",
+    "metaDescription": "Compare Hamilton movers for house moves, office relocations, packing, furniture delivery, and moves across the Waikato.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "June 2026",
+    "introText": "Hamilton movers support local relocations across the city as well as moves between Waikato towns and other main centres. Compare companies by service area, crew and truck capacity, packing options, quote transparency, and protection for belongings in transit.",
+    "buyersGuide": {
+      "title": "How to Choose Movers in Hamilton",
+      "content": "<p>A good moving quote should reflect the full route, access, volume, and level of help required.</p><h3>1. Define the Service Area</h3><p>Confirm whether the mover handles city-only, regional, and intercity jobs and how travel is priced.</p><h3>2. Check Crew and Vehicle Fit</h3><p>An undersized truck or crew can add time, so provide a realistic inventory before booking.</p><h3>3. Understand Extra Services</h3><p>Ask about packing, boxes, storage, furniture dismantling, and single-item transport where relevant.</p><h3>4. Get Cover in Writing</h3><p>Review what is covered during loading, transit, and unloading and how claims are handled.</p>"
+    },
+    "questionsToAsk": ["Do you handle regional and intercity moves?", "What is included in the quoted price?", "How many movers will attend?", "Can you provide packing or storage?", "How are damage claims handled?"],
+    "faqs": [
+      {"question": "Do Hamilton movers travel across the Waikato?", "answer": "Many do, but service areas and travel charges vary. Confirm mileage, minimum charges, and scheduling before booking."},
+      {"question": "Is a fixed quote better than an hourly rate?", "answer": "Either can work. A fixed quote offers certainty when the scope is clear, while hourly pricing may suit smaller moves with straightforward access."},
+      {"question": "What should I do before the movers arrive?", "answer": "Finish agreed packing, label boxes, separate valuables, clear access, reserve parking where possible, and confirm keys and settlement timing."}
+    ]
+  },
+  "tauranga/services/movers": {
+    "pageTitle": "Best Movers in Tauranga | Compare Moving Companies | TopRated NZ",
+    "metaDescription": "Compare Tauranga movers for house moves, office relocations, packing, furniture transport, and Bay of Plenty moves.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "June 2026",
+    "introText": "Tauranga moving companies handle local relocations around the city, Mount Maunganui, Papamoa, and the wider Bay of Plenty. Compare movers by availability, travel pricing, property access, packing support, and the care taken with furniture and fragile belongings.",
+    "buyersGuide": {
+      "title": "How to Choose Movers in Tauranga",
+      "content": "<p>Busy moving dates and travel around the Bay of Plenty make early planning worthwhile.</p><h3>1. Confirm the Route</h3><p>Check whether the company covers both addresses and how travel outside central Tauranga is charged.</p><h3>2. Describe Access Clearly</h3><p>Tell the mover about apartment rules, parking, stairs, long paths, gates, and large items.</p><h3>3. Compare the Full Service</h3><p>Look beyond the truck rate to packing, materials, dismantling, extra crew, and storage if needed.</p><h3>4. Check Item Protection</h3><p>Ask how furniture is wrapped and secured and what damage process applies.</p>"
+    },
+    "questionsToAsk": ["Which Bay of Plenty areas do you cover?", "Are travel and fuel included?", "What packing services do you offer?", "How do you protect fragile items?", "What happens if the move takes longer than estimated?"],
+    "faqs": [
+      {"question": "How early should I book Tauranga movers?", "answer": "Book as early as practical for weekends, month-end, and peak summer dates, especially for larger homes or regional moves."},
+      {"question": "Can movers transport only one large item?", "answer": "Some companies offer single-item or furniture delivery services. Ask about minimum charges and whether another job may be combined with yours."},
+      {"question": "Can a moving company store my belongings?", "answer": "Some movers offer short- or long-term storage directly or through a partner. Confirm access, security, insurance, and handling fees."}
+    ]
   }
 }

@@ -7320,5 +7320,20 @@
     "neighborhood": "Cashmere",
     "phone": "+64 27 296 5779",
     "id": 381
+  },
+  {
+    "name": "Auckland Kiwi Movers",
+    "industry": "Movers",
+    "city": "Auckland",
+    "description": "Auckland Kiwi Movers provides residential and commercial moving services across Auckland, including packing, loading, transport, unpacking, office relocations, and furniture delivery.",
+    "website": "https://aucklandkiwimovers.co.nz/",
+    "address": "Auckland, New Zealand",
+    "image": "https://aucklandkiwimovers.co.nz/wp-content/uploads/2024/03/ab-01.jpg",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "movers",
+    "neighborhood": "Auckland",
+    "phone": "022 400 5991",
+    "id": 382
   }
 ]

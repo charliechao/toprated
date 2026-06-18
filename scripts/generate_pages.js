@@ -66,7 +66,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
@@ -80,6 +80,7 @@ const categoryHubConfigs = {
             'kiwisaver-advisers': 'fund selection, contribution strategy, first-home support, and retirement planning',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
+            'movers': 'house moves, office relocations, packing, transport, and furniture delivery',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance',
             'travel-agencies': 'flight booking, travel planning, fare comparison, and holiday support'
         }
@@ -195,7 +196,7 @@ function getLeafMetaDescription(city, pageName, specificSeo = null) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -866,6 +867,7 @@ const subCatsMapping = {
     'kiwisaver-advisers': { cat: 'services', name: 'KiwiSaver Advisers' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
     'mortgage-brokers': { cat: 'services', name: 'Mortgage Brokers' },
+    'movers': { cat: 'services', name: 'Movers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
     'travel-agencies': { cat: 'services', name: 'Travel Agencies' },
     'mechanics': { cat: 'automotive', name: 'Mechanics' },
