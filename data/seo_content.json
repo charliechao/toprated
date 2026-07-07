@@ -4494,5 +4494,105 @@
       {"question": "Can movers transport only one large item?", "answer": "Some companies offer single-item or furniture delivery services. Ask about minimum charges and whether another job may be combined with yours."},
       {"question": "Can a moving company store my belongings?", "answer": "Some movers offer short- or long-term storage directly or through a partner. Confirm access, security, insurance, and handling fees."}
     ]
+  },
+  "auckland/services/air-conditioning": {
+    "pageTitle": "Best Air Conditioning in Auckland | AC & Heat Pump Services | TopRated NZ",
+    "metaDescription": "Compare Auckland air conditioning companies for commercial AC, heat pumps, installation, maintenance, servicing, and repairs.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "July 2026",
+    "introText": "Auckland air conditioning jobs can range from a single heat pump installation to complex commercial HVAC design, maintenance, and urgent repair work. Compare providers by the type of systems they handle, response times, maintenance capability, and whether they can support both installation and long-term servicing.",
+    "buyersGuide": {
+      "title": "How to Choose an Air Conditioning Company in Auckland",
+      "content": "<p>A good air conditioning provider should help you choose the right system, install it cleanly, and keep it running efficiently after the first job is complete.</p><h3>1. Match the Provider to the Site</h3><p>Commercial premises, restaurants, offices, schools, homes, and light industrial sites all have different ventilation, access, compliance, and uptime requirements.</p><h3>2. Ask About System Design</h3><p>For larger jobs, ask how load, layout, airflow, zoning, outdoor-unit placement, noise, and energy efficiency are assessed before a quote is finalised.</p><h3>3. Compare Maintenance Support</h3><p>Preventative maintenance can reduce breakdowns and power use. Ask whether filter cleaning, performance checks, refrigerant checks, and service reminders are included.</p><h3>4. Clarify Repair Response</h3><p>If your workplace depends on climate control, check callout availability, fault diagnosis process, replacement-part sourcing, and whether temporary options are available.</p>"
+    },
+    "questionsToAsk": [
+      "Do you work mainly with homes, commercial sites, or both?",
+      "Which heat pump and air conditioning brands do you install or service?",
+      "What is included in the quote besides the unit itself?",
+      "Do you offer preventative maintenance plans?",
+      "How quickly can you respond to urgent repairs?"
+    ],
+    "faqs": [
+      {
+        "question": "What does an Auckland air conditioning company usually do?",
+        "answer": "Services often include heat pump and AC installation, commercial HVAC design, repairs, maintenance, filter cleaning, performance checks, and advice on suitable systems."
+      },
+      {
+        "question": "How do I compare air conditioning quotes?",
+        "answer": "Compare the system size, brand, installation scope, electrical work, warranty, maintenance options, and any exclusions such as scaffolding, drainage, or access costs."
+      },
+      {
+        "question": "Is regular air conditioning maintenance worth it?",
+        "answer": "Yes for many homes and businesses. Maintenance helps with efficiency, indoor air quality, early fault detection, and reducing the chance of unexpected breakdowns."
+      }
+    ]
+  },
+  "wellington/services/air-conditioning": {
+    "pageTitle": "Best Air Conditioning in Wellington | AC & Heat Pump Services | TopRated NZ",
+    "metaDescription": "Compare Wellington air conditioning companies for heat pumps, AC installation, maintenance, servicing, and repairs.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "July 2026",
+    "introText": "Wellington air conditioning and heat pump work often needs careful planning around apartment access, older homes, windy sites, and commercial uptime. Compare providers by site assessment, brand support, installation detail, and ongoing servicing.",
+    "buyersGuide": {
+      "title": "How to Choose an Air Conditioning Company in Wellington",
+      "content": "<p>Choose a provider who understands both the building and the comfort problem you are trying to solve.</p><h3>1. Check Site Assessment</h3><p>Ask how they account for insulation, sun exposure, room size, outdoor-unit location, and access constraints.</p><h3>2. Understand Installation Scope</h3><p>Confirm electrical work, drainage, mounting, penetrations, and any body corporate or landlord requirements before work starts.</p><h3>3. Ask About Servicing</h3><p>Regular servicing can help systems run efficiently through both winter heating and summer cooling demand.</p>"
+    },
+    "questionsToAsk": ["Which brands do you install and service?", "Can you assess apartment or restricted-access sites?", "What is included in the installation price?", "Do you provide maintenance reminders?", "How are urgent repairs handled?"],
+    "faqs": [
+      {"question": "Can heat pumps work well in Wellington homes?", "answer": "Yes, when correctly sized and installed. Ask for a room-by-room assessment that accounts for insulation, exposure, and how the space is used."},
+      {"question": "Do I need permission for apartment air conditioning?", "answer": "Often yes. Check body corporate, landlord, or building rules before committing to an outdoor-unit location."},
+      {"question": "How often should AC be serviced?", "answer": "Many providers recommend annual servicing, with higher-use commercial systems needing a more regular schedule."}
+    ]
+  },
+  "christchurch/services/air-conditioning": {
+    "pageTitle": "Best Air Conditioning in Christchurch | AC & Heat Pump Services | TopRated NZ",
+    "metaDescription": "Compare Christchurch air conditioning companies for heat pumps, AC installation, maintenance, commercial systems, and repairs.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "July 2026",
+    "introText": "Christchurch properties often rely on heat pumps for efficient year-round heating and cooling. Compare air conditioning companies by system sizing, installation workmanship, service support, and whether they can handle residential, commercial, or multi-room requirements.",
+    "buyersGuide": {
+      "title": "How to Choose an Air Conditioning Company in Christchurch",
+      "content": "<p>The right provider should recommend a system based on the building, not just the cheapest available unit.</p><h3>1. Check Sizing and Layout</h3><p>Ask how room volume, ceiling height, insulation, glazing, and open-plan layouts influence the recommendation.</p><h3>2. Compare Brands and Warranty</h3><p>Confirm the equipment brand, warranty terms, installation warranty, and who handles future service calls.</p><h3>3. Plan Maintenance</h3><p>Filters, coils, drains, airflow, and performance checks all matter over the life of the system.</p>"
+    },
+    "questionsToAsk": ["How do you size the system?", "Do you handle both installation and servicing?", "What brands do you recommend and why?", "Can you install ducted or multi-room systems?", "What maintenance schedule do you suggest?"],
+    "faqs": [
+      {"question": "What type of heat pump suits a Christchurch home?", "answer": "It depends on room size, insulation, layout, and whether you want single-room, multi-room, or ducted comfort. A site assessment is the safest starting point."},
+      {"question": "Can one unit heat a whole home?", "answer": "Sometimes, but open-plan layout and airflow matter. Larger homes may need multi-room or ducted options."},
+      {"question": "What should be included in an installation quote?", "answer": "Look for equipment, labour, electrical scope, mounting, drainage, warranty, and exclusions such as access equipment or extra materials."}
+    ]
+  },
+  "hamilton/services/air-conditioning": {
+    "pageTitle": "Best Air Conditioning in Hamilton | AC & Heat Pump Services | TopRated NZ",
+    "metaDescription": "Compare Hamilton air conditioning companies for heat pumps, AC installation, servicing, maintenance, and repairs.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "July 2026",
+    "introText": "Hamilton air conditioning companies support homes, rentals, offices, and small businesses across the Waikato. Compare providers by practical quoting, energy-efficiency advice, installation workmanship, and whether they offer dependable servicing after installation.",
+    "buyersGuide": {
+      "title": "How to Choose an Air Conditioning Company in Hamilton",
+      "content": "<p>Good advice should balance comfort, budget, running cost, and long-term reliability.</p><h3>1. Ask for a Clear Recommendation</h3><p>Make sure the quote explains why the suggested unit or system suits the room and use case.</p><h3>2. Check Installation Details</h3><p>Confirm outdoor-unit placement, condensate drainage, electrical work, and disruption to walls or cladding.</p><h3>3. Compare Aftercare</h3><p>Ask who provides warranty support, servicing, and repairs if the system develops a fault.</p>"
+    },
+    "questionsToAsk": ["What size unit do you recommend and why?", "Is electrical work included?", "Where will the outdoor unit go?", "Do you service the systems you install?", "What are likely running costs?"],
+    "faqs": [
+      {"question": "How long does air conditioning installation take?", "answer": "A straightforward single-room heat pump installation may be completed in a day, while ducted, commercial, or complex installs can take longer."},
+      {"question": "Can air conditioning help with dampness?", "answer": "Heat pumps can help with dehumidifying and comfort, but moisture sources, ventilation, and insulation still need to be considered."},
+      {"question": "Should I choose the cheapest quote?", "answer": "Not automatically. Compare sizing, brand quality, warranty, workmanship, exclusions, and support after installation."}
+    ]
+  },
+  "tauranga/services/air-conditioning": {
+    "pageTitle": "Best Air Conditioning in Tauranga | AC & Heat Pump Services | TopRated NZ",
+    "metaDescription": "Compare Tauranga air conditioning companies for heat pumps, AC installation, servicing, maintenance, and repairs.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "July 2026",
+    "introText": "Tauranga homes and commercial spaces often need cooling, heating, and humidity control that suits coastal conditions and busy seasonal demand. Compare air conditioning providers by system choice, installation quality, maintenance options, and repair response.",
+    "buyersGuide": {
+      "title": "How to Choose an Air Conditioning Company in Tauranga",
+      "content": "<p>A reliable provider should explain the system choice clearly and support it after installation.</p><h3>1. Consider Cooling and Heating Needs</h3><p>Ask whether the recommended system suits summer cooling, winter heating, and humidity management for your space.</p><h3>2. Review Placement</h3><p>Outdoor units, drainage, airflow, and coastal exposure all affect performance and durability.</p><h3>3. Confirm Service Support</h3><p>Ask how often servicing is recommended and how repair callouts are handled during busy periods.</p>"
+    },
+    "questionsToAsk": ["Do you install and service the same brands?", "How do coastal conditions affect placement?", "What maintenance do you recommend?", "Can you help with commercial systems?", "How quickly can repairs be booked?"],
+    "faqs": [
+      {"question": "What air conditioning options suit Tauranga homes?", "answer": "Common options include high-wall heat pumps, floor consoles, multi-split systems, and ducted systems, depending on layout and budget."},
+      {"question": "Can AC improve indoor air comfort in summer?", "answer": "Yes. Correctly sized systems can cool, dehumidify, and filter air, which can improve comfort during humid periods."},
+      {"question": "What should I ask before booking installation?", "answer": "Ask about sizing, brand, warranty, electrical work, outdoor-unit location, drainage, and what future servicing will cost."}
+    ]
   }
 }
