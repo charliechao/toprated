@@ -7471,5 +7471,20 @@
     "neighborhood": "Auckland",
     "phone": "09 302 2533",
     "id": 391
+  },
+  {
+    "name": "The Conduction Company",
+    "industry": "Electricians",
+    "city": "Auckland",
+    "description": "The Conduction Company is an Auckland electrical contractor based in Onehunga, providing residential and commercial electrical work, ventilation, security and CCTV, data and AV, EV chargers, solar, maintenance, inspections, and electrical compliance services.",
+    "website": "https://www.tcco.co.nz/",
+    "address": "Onehunga, Auckland 1061",
+    "image": "https://cdn.prod.website-files.com/62a7a7fdc463e72900a5f02a/631eb07fbc22fcb0643ade79_Power%20Lighting.png",
+    "citySlug": "auckland",
+    "categorySlug": "trades",
+    "pageSlug": "electricians",
+    "neighborhood": "Onehunga",
+    "phone": "(09) 390 0525",
+    "id": 392
   }
 ]
