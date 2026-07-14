@@ -7486,5 +7486,21 @@
     "neighborhood": "Onehunga",
     "phone": "(09) 390 0525",
     "id": 392
+  },
+  {
+    "name": "DFK Orb360 O'Halloran",
+    "industry": "Accountants",
+    "city": "Wellington",
+    "description": "DFK Orb360 O'Halloran is a chartered accounting and business-advisory firm serving Wellington businesses with accounting and reporting, tax advisory, bookkeeping, payroll, GST and PAYE support, cloud accounting, compliance, and strategic planning.",
+    "website": "https://dfkorb360.co.nz/",
+    "address": "48 Richmond Street, Petone, Lower Hutt",
+    "image": "https://dfkorb360.co.nz/wp-content/uploads/2025/10/cropped-logo2.0-main.webp",
+    "imageFit": "contain",
+    "citySlug": "wellington",
+    "categorySlug": "services",
+    "pageSlug": "accountants",
+    "neighborhood": "Petone",
+    "phone": "+64 22 034 1663",
+    "id": 393
   }
 ]
