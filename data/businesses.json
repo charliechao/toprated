@@ -7532,5 +7532,63 @@
     "neighborhood": "Henderson",
     "phone": "0800 688 333",
     "id": 395
+  },
+  {
+    "name": "Elite Fitness Auckland Superstore",
+    "industry": "Fitness Equipment",
+    "city": "Auckland",
+    "description": "Elite Fitness Auckland Superstore supplies home and commercial fitness equipment, including treadmills, ellipticals, home gyms, functional training machines, servicing, and hire options.",
+    "website": "https://www.elitefitness.co.nz/",
+    "address": "28 Morrin Road, St Johns, Auckland 1072",
+    "image": "https://www.elitefitness.co.nz/cdn/shop/files/Commercial_slide3_Impulse.jpg?v=1768364079&width=1200",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "fitness-equipment",
+    "neighborhood": "St Johns",
+    "phone": "09 276 4654",
+    "id": 396
+  },
+  {
+    "name": "Gym Equip",
+    "industry": "Fitness Equipment",
+    "city": "Auckland",
+    "description": "Gym Equip is a North Shore-based supplier of premium home and commercial gym equipment, including REP Fitness cardio equipment, power racks, functional trainers, benches, weights, and custom fit-outs.",
+    "website": "https://gymequip.nz/",
+    "address": "North Shore, Auckland, New Zealand",
+    "image": "https://gymequip.nz/cdn/shop/collections/AirBike-Detail--294-Edit.jpg?v=1770420384&width=1500",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "fitness-equipment",
+    "neighborhood": "North Shore",
+    "id": 397
+  },
+  {
+    "name": "Industrial Athletic",
+    "industry": "Fitness Equipment",
+    "city": "Auckland",
+    "description": "Industrial Athletic is an Auckland manufacturer and supplier of strength, conditioning, weightlifting, cardio, gym flooring, racks, rigs, and custom gym fit-outs for home and commercial facilities.",
+    "website": "https://www.industrialathletic.com/",
+    "address": "Auckland, New Zealand",
+    "image": "https://www.industrialathletic.com/cdn/shop/files/Gym-Fit-outs-new-zealand.jpg?v=1653975510&width=2592",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "fitness-equipment",
+    "neighborhood": "Auckland",
+    "id": 398
+  },
+  {
+    "name": "Achieve Fitness",
+    "industry": "Fitness Equipment",
+    "city": "Auckland",
+    "description": "Achieve Fitness is an Auckland fitness-equipment supplier offering treadmills, bikes, rowers, strength equipment, commercial equipment, rentals, and after-sales servicing.",
+    "website": "https://www.achievefitness.co.nz/",
+    "address": "19a Orbit Drive, Albany, Auckland",
+    "image": "https://www.achievefitness.co.nz/media/Home_Banner.jpg",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "fitness-equipment",
+    "neighborhood": "Albany",
+    "phone": "0800 625 3349",
+    "id": 399
   }
 ]
