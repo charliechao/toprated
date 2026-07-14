@@ -4594,5 +4594,22 @@
       {"question": "Can AC improve indoor air comfort in summer?", "answer": "Yes. Correctly sized systems can cool, dehumidify, and filter air, which can improve comfort during humid periods."},
       {"question": "What should I ask before booking installation?", "answer": "Ask about sizing, brand, warranty, electrical work, outdoor-unit location, drainage, and what future servicing will cost."}
     ]
+  },
+  "auckland/services/fitness-equipment": {
+    "pageTitle": "Best Fitness Equipment in Auckland | Home & Commercial Gym Gear | TopRated NZ",
+    "metaDescription": "Compare Auckland fitness equipment suppliers for weights, cardio machines, strength equipment, flooring, and home-gym setups.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "July 2026",
+    "introText": "Auckland fitness-equipment buyers range from people building compact home gyms to personal trainers, schools, and commercial facilities fitting out a complete training space. Compare suppliers by product suitability, delivery options, warranty support, and whether the equipment matches your available space and training goals.",
+    "buyersGuide": {
+      "title": "How to Choose Fitness Equipment in Auckland",
+      "content": "<p>The right equipment should fit the way you train, the room you have, and the support you need after delivery.</p><h3>1. Start With Your Training Plan</h3><p>Choose core equipment around the workouts you will actually perform. A compact dumbbell, bench, and resistance setup may suit a home gym better than a large machine that is rarely used.</p><h3>2. Measure Space and Access</h3><p>Check room dimensions, ceiling height, floor loading, access routes, and the space needed to use the equipment safely. Large strength machines and treadmills need more clearance than their footprint suggests.</p><h3>3. Compare Warranty and Delivery</h3><p>Ask what is covered, whether assembly is available, and how replacement parts or after-sales support are handled. This is particularly important for higher-value cardio and commercial equipment.</p>"
+    },
+    "questionsToAsk": ["What equipment best suits my training goals and space?", "What delivery and assembly options are available?", "What warranty covers the frame, electronics, and moving parts?", "Will this equipment fit through my access points?", "Can I buy matching flooring or storage with the main equipment?"],
+    "faqs": [
+      {"question": "What equipment do I need for a basic home gym?", "answer": "A practical starter setup can include adjustable dumbbells or a barbell, a bench, resistance bands, and enough clear floor space. The ideal mix depends on your goals, budget, and room size."},
+      {"question": "Should I buy commercial or home-grade gym equipment?", "answer": "Home-grade equipment suits typical personal use, while commercial equipment is built for heavier, more frequent use. Compare expected usage, warranty, space, and budget before choosing."},
+      {"question": "Do fitness-equipment suppliers offer delivery in Auckland?", "answer": "Many suppliers offer Auckland delivery, but costs, assembly, and access requirements vary by item. Confirm these details before placing an order, especially for larger machines."}
+    ]
   }
 }
