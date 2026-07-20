@@ -66,7 +66,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'air-conditioning': 'commercial AC, heat pumps, installation, servicing, and repairs',
@@ -77,6 +77,7 @@ const categoryHubConfigs = {
             'creative-agencies': 'branding, websites, design systems, and digital creative support',
             'financial-advisers': 'investment planning, retirement advice, risk strategy, and long-term wealth guidance',
             'fitness-equipment': 'weights, cardio machines, strength equipment, and home-gym setups',
+            'gyms': '24/7 access, strength and cardio equipment, group classes, and personal training',
             'hypnotherapists': 'clinical hypnotherapy, NLP, anxiety support, and nervous-system reset work',
             'insurance-brokers': 'cover comparisons, business risk advice, claims support, and policy structuring',
             'kiwisaver-advisers': 'fund selection, contribution strategy, first-home support, and retirement planning',
@@ -198,7 +199,7 @@ function getLeafMetaDescription(city, pageName, specificSeo = null) {
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -866,6 +867,7 @@ const subCatsMapping = {
     'creative-agencies': { cat: 'services', name: 'Creative Agencies' },
     'financial-advisers': { cat: 'services', name: 'Financial Advisers' },
     'fitness-equipment': { cat: 'services', name: 'Fitness Equipment' },
+    'gyms': { cat: 'services', name: 'Gyms' },
     'hypnotherapists': { cat: 'services', name: 'Hypnotherapists' },
     'insurance-brokers': { cat: 'services', name: 'Insurance Brokers' },
     'kiwisaver-advisers': { cat: 'services', name: 'KiwiSaver Advisers' },
