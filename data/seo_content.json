@@ -572,19 +572,62 @@
     ]
   },
   "hamilton/trades/plumbers": {
-    "introText": "Serving the heart of the Waikato, Hamilton's top-rated plumbers provide expert solutions for everything from rural water pump repairs to urban kitchen fit-outs. Whether you're in the growing northern suburbs of Rototuna or the established streets of Hamilton East, these professionals deliver fast, reliable service with a focus on quality and local knowledge.",
+    "pageTitle": "4 Best Plumbers in Hamilton (2026) | TopRated NZ",
+    "metaDescription": "Compare four Hamilton plumbers for emergency repairs, gasfitting, drainage, maintenance and renovation work. Check service fit and contact details.",
+    "introText": "Need a plumber in Hamilton? This guide compares four current Hamilton and Waikato plumbing businesses for urgent repairs, maintenance, gasfitting, drainage, hot-water work and renovations. Start by matching the provider to the job: an overnight burst pipe needs an advertised emergency response, while a bathroom or kitchen project needs a clear written scope and coordination with other trades. The listings below are a practical shortlist, not a claim that one business is right for every job. We checked each business's own website for its stated services and contact details in July 2026. For connected project work, see our Hamilton guides to <a href='/cities/hamilton/trades/builders.html'>builders</a>, <a href='/cities/hamilton/trades/electricians.html'>electricians</a> and <a href='/cities/hamilton/trades/renovation-services.html'>renovation services</a>.",
+    "lastUpdated": "July 2026",
+    "author": "TopRated Editorial Team",
+    "buyersGuide": {
+      "title": "How to Choose a Plumber in Hamilton",
+      "content": "<p>The best Hamilton plumber for your job depends on the risk, the type of work and how quickly you need help. Do not begin with a star score alone. Begin with the provider's current scope, whether the work needs a licensed plumber, gasfitter or drainlayer, and what the quote actually includes.</p><h3>1. Make the urgent situation safe first</h3><p>For a burst pipe, serious leak, suspected gas issue or overflowing drain, turn off water or gas only if it is safe to do so, keep people away from the affected area, then call a provider that explicitly advertises emergency work. Ask about the likely response window and after-hours charges before confirming the booking.</p><h3>2. Match the company to the work</h3><p>Hamilton plumbing jobs range from a leaking tap to hot-water cylinders, gas appliances, drainage, new builds and bathroom fit-outs. Soda Plumbing states plumbing, gas and drainage services across the Waikato; iPlumber lists plumbing, gasfitting, repairs and maintenance; Hamilton Plumbing covers residential, commercial and gasfitting work; and Plumbway lists maintenance, renovations, hot water, new builds and drainlaying. Use that as a starting point, then confirm your specific job when you call.</p><h3>3. Check licensing and the exact scope</h3><p>Ask who will attend, whether they are licensed for the work required, and whether the job involves plumbing, gasfitting or drainlaying. This matters particularly for gas, hot-water and drainage work. A good provider will explain the scope, any required sign-off and what is outside the quote.</p><h3>4. Compare quotes like-for-like</h3><p>For non-urgent work, ask for a written scope that separates labour, materials, call-out or travel charges, disposal, after-hours loading and any likely access issues. A lower initial figure can be misleading if it excludes fittings, making good, electrical work or a second visit.</p><h3>5. Plan trade handovers for renovation work</h3><p>For kitchens and bathrooms, ask how the plumber will coordinate rough-in, waterproofing, fit-off and timing with builders, electricians, cabinetmakers and tilers. A clear sequence protects the programme and reduces expensive rework.</p><h3>6. Keep the decision evidence-based</h3><p>Check the business website, talk through the actual job and ask about availability before booking. This page does not publish ratings or review totals unless they can be verified at the time of review, so use current customer feedback as one input rather than the sole deciding factor.</p>"
+    },
+    "pricingGuide": {
+      "title": "What Do Plumbers Cost in Hamilton? (2026 Planning Guide)",
+      "content": "<p>Hamilton plumbing costs vary by urgency, access, diagnosis time, materials and whether the work includes gasfitting or drainlaying. For repairs, ask for the call-out structure, hourly rate, vehicle charge and after-hours uplift before you approve a visit. For installations or renovation work, request a written quote based on a site assessment.</p><p>The ranges below are planning figures, not quotes. Compare scope and materials as well as price, and confirm GST, disposal and any follow-up visit costs.</p>",
+      "priceTable": [
+        { "service": "Standard call-out / first hour", "range": "$120 - $240+" },
+        { "service": "Standard labour", "range": "$95 - $150+ / hour" },
+        { "service": "Leaking tap or toilet repair", "range": "$180 - $550+" },
+        { "service": "Blocked drain diagnosis and clearing", "range": "$250 - $900+" },
+        { "service": "Hot-water cylinder repair or replacement", "range": "$450 - $4,000+" },
+        { "service": "Bathroom plumbing fit-out", "range": "$2,000 - $8,000+" },
+        { "service": "After-hours emergency attendance", "range": "Usually higher; confirm before booking" }
+      ]
+    },
+    "questionsToAsk": [
+      "Do you handle this exact type of plumbing, gasfitting or drainlaying work?",
+      "What is the call-out fee, hourly rate and any after-hours surcharge?",
+      "Who will attend, and what licence or certification applies to this job?",
+      "Can you provide a written scope, including materials, exclusions and GST?",
+      "If the issue needs further diagnosis, how will you approve additional work?",
+      "For a hot-water, kitchen or bathroom project, what other trades need to be coordinated?",
+      "What response window can you realistically offer for an urgent call-out?",
+      "What documentation, warranty or product information will I receive at completion?"
+    ],
     "faqs": [
       {
-        "question": "What is the hourly rate for a plumber in Hamilton?",
-        "answer": "Hamilton plumbers typically charge between $85 and $115 per hour plus GST. Regional rates in the Waikato are often slightly lower than in Auckland or Wellington."
+        "question": "Who offers emergency plumbing in Hamilton?",
+        "answer": "Several businesses on this page advertise emergency or urgent plumbing support, including Soda Plumbing, Hamilton Plumbing and Plumbway. Availability can change, so call to confirm the response window and after-hours price before booking."
       },
       {
-        "question": "Can Hamilton plumbers help with rural water systems?",
-        "answer": "Yes, many plumbers in the Hamilton area specialize in both urban plumbing and rural systems, including septic tanks, water pumps, and filtration units for lifestyle blocks."
+        "question": "What should I ask before booking a Hamilton plumber?",
+        "answer": "Confirm that the business handles your exact job, then ask about call-out charges, hourly and after-hours rates, expected response time, licensing, the written scope and any materials or exclusions. For larger work, request a site assessment and quote."
       },
       {
-        "question": "Is there a call-out fee for plumbers in Hamilton?",
-        "answer": "Most providers charge a call-out fee or a vehicle service charge, usually ranging from $60 to $120 depending on your distance from their base."
+        "question": "Can a Hamilton plumber help with gasfitting and drainage too?",
+        "answer": "Some can, but you should confirm the exact service and qualifications before booking. Soda Plumbing, iPlumber, Hamilton Plumbing and Plumbway each describe gasfitting, drainage or both on their official sites; the relevant trade and scope depend on the job."
+      },
+      {
+        "question": "How much does a plumber cost in Hamilton?",
+        "answer": "The total depends on urgency, diagnosis time, access and materials. Ask for the call-out structure and hourly rate for repairs, and a written scope for installations or renovations. After-hours work is normally more expensive."
+      },
+      {
+        "question": "Do I need a licensed plumber for hot-water or gas work?",
+        "answer": "Plumbing, gasfitting and drainlaying are regulated trades in New Zealand. Ask the provider what licence and documentation apply to your job before the work begins, particularly for gas appliances, hot-water systems and drainage."
+      },
+      {
+        "question": "How do I compare plumbing quotes for a bathroom renovation?",
+        "answer": "Compare the written scope, not just the total. Check fixtures and materials, rough-in and fit-off stages, waterproofing and trade coordination, exclusions, GST, disposal and how variations will be approved."
       }
     ]
   },
@@ -915,19 +958,35 @@
     ]
   },
   "auckland/cuisine/french-restaurants": {
-    "introText": "Auckland's French dining scene offers a slice of Parisian elegance, ranging from cozy neighborhood bistros to high-end gastronomic destinations. Whether you're craving a buttery croissant from an artisanal patisserie, a classic steak frites, or a multi-course degustation paired with fine wines, the city's top-rated French establishments deliver sophisticated flavors and impeccable service.",
+    "pageTitle": "6 Best French Restaurants in Auckland (2026) | TopRated NZ",
+    "metaDescription": "Compare six verified French restaurants in Auckland, from tasting-menu fine dining to classic CBD bistros and waterfront brasseries. Updated July 2026.",
+    "introText": "The best French restaurants in Auckland cover several distinct experiences: refined tasting menus at <strong>Sid at The French Cafe</strong> and <strong>Paris Butter</strong>, traditional bistro cooking at <strong>Le Garde-Manger</strong>, harbour-facing brasserie dining at <strong>Origine</strong>, French-inspired seafood at <strong>La Maree</strong>, and an all-day CBD bistro at <strong>Bistro Saine</strong>. This July 2026 shortlist includes six operating venues whose current websites, Auckland locations, and dining concepts we checked directly. Use the comparison below to choose by occasion and area, then confirm the latest menu, hours, and booking availability with the restaurant. For more Auckland dining options, compare our guides to <a href='/cities/auckland/cuisine/italian-restaurants.html'>Italian restaurants</a>, <a href='/cities/auckland/cuisine/japanese-restaurants.html'>Japanese restaurants</a>, and <a href='/cities/auckland/cuisine/restaurants.html'>restaurants across Auckland</a>.",
+    "lastUpdated": "July 2026",
+    "author": "TopRated Editorial Team",
+    "buyersGuide": {
+      "title": "Which Auckland French Restaurant Should You Choose?",
+      "content": "<p>There is no single best choice for every diner. Auckland's French restaurant scene ranges from modern New Zealand fine dining grounded in French technique to casual, traditional bistro food. This quick comparison shows where each of the six venues fits.</p><div class='seo-price-table-wrap'><table class='seo-price-table'><thead><tr><th>Restaurant</th><th>Best for</th><th>Area</th><th>Dining style</th></tr></thead><tbody><tr><td><strong>Sid at The French Cafe</strong></td><td>Special occasions and polished fine dining</td><td>Eden Terrace</td><td>Seasonal New Zealand menus using modern French technique</td></tr><tr><td><strong>Paris Butter</strong></td><td>A creative chef-led tasting experience</td><td>Herne Bay</td><td>French foundations with seasonal New Zealand ingredients</td></tr><tr><td><strong>Origine</strong></td><td>Harbour views, long lunches, and group dinners</td><td>Commercial Bay</td><td>Contemporary French brasserie</td></tr><tr><td><strong>Le Garde-Manger</strong></td><td>Casual French classics</td><td>Upper Queen Street</td><td>Traditional bistro dishes, galettes, crepes, and regional favourites</td></tr><tr><td><strong>La Maree</strong></td><td>Waterfront dining and seafood</td><td>Viaduct Harbour</td><td>French-inspired hotel restaurant using New Zealand produce</td></tr><tr><td><strong>Bistro Saine</strong></td><td>CBD lunch, aperitif, or dinner</td><td>Albert Street</td><td>French and Mediterranean-influenced bistro</td></tr></tbody></table></div><h3>Choose fine dining for a special occasion</h3><p><strong>Sid at The French Cafe</strong> and <strong>Paris Butter</strong> are the clearest fits when the meal itself is the occasion. Both draw on French technique while making New Zealand produce central to the experience. Check the current menu format and dietary options before booking because tasting menus and service days can change.</p><h3>Choose a bistro for familiar French dishes</h3><p><strong>Le Garde-Manger</strong> is the most traditional option in this list, with a casual Queen Street setting and recognisable regional French dishes. <strong>Bistro Saine</strong> is a more contemporary CBD alternative, mixing French bistro ideas with Mediterranean influences and a broader all-day occasion.</p><h3>Choose the waterfront for views and flexible occasions</h3><p><strong>Origine</strong> in Commercial Bay suits a brasserie-style lunch or dinner with harbour views. <strong>La Maree</strong> is the Viaduct option for French-inspired cooking with a stronger seafood and hotel-dining focus.</p><h3>How this shortlist was verified</h3><p>TopRated checked each venue's current official website, published Auckland address, and stated dining concept on 14 July 2026. We removed a permanently closed restaurant from the old list and did not retain rating or review-count figures that could not be reliably verified. A place on this page is not a guarantee that every diner will have the same experience; menus, chefs, prices, and opening hours can change, so use the restaurant's own website as the final source before visiting.</p>"
+    },
     "faqs": [
       {
-        "question": "What is the best French fine-dining restaurant in Auckland?",
-        "answer": "The Grove is frequently cited as one of Auckland's top fine-dining experiences with a strong French influence. Sid at The French Cafe in Eden Terrace is also a multi-award-winning institution."
+        "question": "Which Auckland French restaurant is best for fine dining?",
+        "answer": "Sid at The French Cafe in Eden Terrace and Paris Butter in Herne Bay are the two strongest fine-dining fits on this shortlist. Sid offers seasonal tasting and a la carte dining built around New Zealand ingredients, while Paris Butter is known for a creative chef-led tasting experience with French foundations."
       },
       {
-        "question": "Are there casual French bistros in Auckland?",
-        "answer": "Yes, Casita Miro on Waiheke Island (while Mediterranean) has strong French vibes, and Le Garde-Manger on Queen Street or Ponsonby Road offers a very traditional, cozy bistro experience."
+        "question": "Where can I find a casual French bistro in Auckland?",
+        "answer": "Le Garde-Manger at 466 Queen Street is the most traditional casual French bistro in this guide, serving dishes such as galettes, crepes, raclette, and tartiflette. Bistro Saine on Albert Street offers a more contemporary French-and-Mediterranean bistro experience."
       },
       {
-        "question": "Where can I find the best French pastries in Auckland?",
-        "answer": "Vaniyé Patisserie in Parnell and La Petite Fourchette in Wynyard Quarter or Britomart are renowned for their authentic, high-quality French cakes, tarts, and pastries."
+        "question": "Which French restaurants in Auckland have waterfront views?",
+        "answer": "Origine overlooks the harbour from Commercial Bay, while La Maree is inside Sofitel Auckland Viaduct Harbour. Origine is the stronger brasserie choice; La Maree has a French-inspired seafood and hotel-dining focus."
+      },
+      {
+        "question": "Are all six restaurants strictly traditional French?",
+        "answer": "No. Le Garde-Manger is the most traditional French bistro in the shortlist. Origine is a contemporary French brasserie, while Sid at The French Cafe, Paris Butter, La Maree, and Bistro Saine combine French technique or influence with New Zealand produce and other culinary ideas."
+      },
+      {
+        "question": "Do I need to book French restaurants in Auckland in advance?",
+        "answer": "Booking ahead is sensible for fine dining, waterfront tables, and Friday or Saturday dinner. Tasting-menu restaurants may require reservations or advance notice for dietary needs. Check the restaurant's official booking page for current availability and cancellation terms."
       }
     ]
   },
@@ -1331,19 +1390,77 @@
     ]
   },
   "wellington/automotive/car-wash": {
-    "introText": "Keep your vehicle pristine in the capital with Wellington's top-rated car wash and detailing services. From express washes in Lower Hutt to premium hand detailing in Thorndon, Wellington's best car wash operators tackle the city's unique challenges — salt air from the harbour, tree sap, and frequent rain — using professional-grade products and techniques to protect your paintwork year-round.",
+    "pageTitle": "7 Best Car Washes in Wellington (2026) | TopRated NZ",
+    "metaDescription": "Compare seven verified Wellington car washes and detailers, including mobile, hand-wash and self-service options across the CBD, Hutt, Tawa and Porirua.",
+    "introText": "The best car wash in Wellington depends on whether you want the lowest-cost self-service wash, a convenient mobile groom, a staffed hand wash, or paint-restoration detailing. This July 2026 guide compares seven operating providers across <strong>Te Aro, Newtown, Tawa, Petone, Porirua, and the wider Wellington region</strong>. For a quick DIY wash, compare SmartWash and Porirua Car Wash. For a mobile clean at home or work, consider SelectValet, Spotless Detailing, or Clean Car Collective. Dynamic Car Grooming and Espresso Car Wash provide fixed-location hand-wash and grooming options. Published prices and service details were checked against each provider's official website, but vehicle size, condition, travel, and add-ons can change the final quote.",
+    "lastUpdated": "July 2026",
+    "author": "TopRated Editorial Team",
+    "buyersGuide": {
+      "title": "Which Wellington Car Wash Should You Choose?",
+      "content": "<p>Wellington car-wash providers solve different problems, so compare the service format before comparing price. A timed self-service bay is useful for a fast exterior rinse, while a mobile groom saves travel and a professional detail is designed for deeper interior cleaning, paint correction, or longer-term protection.</p><div class='seo-price-table-wrap'><table class='seo-price-table'><thead><tr><th>Provider</th><th>Best for</th><th>Area</th><th>Service format</th></tr></thead><tbody><tr><td><strong>Clean Car Collective</strong></td><td>Full detailing, paint correction, and flexible CBD service</td><td>Te Aro and region-wide</td><td>Studio, mobile, and drop-off</td></tr><tr><td><strong>Spotless Detailing</strong></td><td>Premium interior or exterior detailing</td><td>Newtown and wider Wellington</td><td>Studio and mobile</td></tr><tr><td><strong>SelectValet Wellington</strong></td><td>Mobile washing and grooming without visiting a workshop</td><td>Wellington region</td><td>Fully mobile</td></tr><tr><td><strong>Dynamic Car Grooming</strong></td><td>Fixed-location hand wash, vacuum, and deeper grooming</td><td>Petone</td><td>Workshop</td></tr><tr><td><strong>SmartWash</strong></td><td>Low-cost DIY washing near Wellington city</td><td>Newtown and Tawa</td><td>Timed self-service bays</td></tr><tr><td><strong>Porirua Car Wash</strong></td><td>After-hours self-service washing</td><td>Porirua</td><td>24-hour self-service</td></tr><tr><td><strong>Espresso Car Wash</strong></td><td>Staffed hand washing while visiting North City</td><td>Porirua</td><td>Shopping-centre hand wash and grooming</td></tr></tbody></table></div><h3>Choose self-service for a quick exterior clean</h3><p><strong>SmartWash</strong> has Newtown and Tawa sites with timed wash, rinse, wax, degreaser, vacuum, and deodoriser options. <strong>Porirua Car Wash</strong> is open 24 hours and suits drivers who want to control the wash process themselves. Check shared brushes before use and rinse loose grit away first if protecting delicate paint is important.</p><h3>Choose mobile grooming when convenience matters</h3><p><strong>SelectValet Wellington</strong> brings its own equipment and works at homes or workplaces. <strong>Spotless Detailing</strong> offers mobile service where power and water are available within 20 metres, with a Newtown drop-off alternative. <strong>Clean Car Collective</strong> combines mobile coverage with a Te Aro studio and CBD drop-off options.</p><h3>Choose professional detailing for stains, paint defects, or protection</h3><p>A basic wash removes surface dirt; detailing can add upholstery extraction, pet-hair removal, paint decontamination, machine polishing, or ceramic protection. Clean Car Collective and Spotless Detailing are the strongest specialist options in this shortlist, while Dynamic Car Grooming provides a broader progression from hand wash to full interior and exterior grooming in Petone.</p><h3>How this shortlist was verified</h3><p>TopRated checked each provider's official website, operating service area, current contact destination, and published service information on 16 July 2026. The three businesses previously on this page were removed because their listed websites no longer responded. We also removed unsupported rating and review-count figures. Prices below are published examples rather than guaranteed quotes; confirm the vehicle category, condition surcharge, mobile travel fee, and inclusions before booking.</p>"
+    },
+    "pricingGuide": {
+      "title": "How Much Does a Car Wash Cost in Wellington? (July 2026)",
+      "content": "<p>Published Wellington prices range from a few dollars for timed self-service equipment to several hundred dollars for deep interior work or paint correction. The examples below were visible on provider websites when this guide was checked. Larger vehicles, heavy pet hair, mould, stains, tar, and paint defects can increase the price.</p>",
+      "priceTable": [
+        {
+          "service": "Timed self-service wash",
+          "range": "SmartWash starts at $2 for 1.5 minutes; Porirua advertises washes from $6"
+        },
+        {
+          "service": "Mobile exterior wash",
+          "range": "SelectValet from $49 for a small car"
+        },
+        {
+          "service": "Mobile exterior and interior speed clean",
+          "range": "SelectValet from $79 for a small car"
+        },
+        {
+          "service": "Workshop hand wash",
+          "range": "Dynamic Car Grooming $45, or $65 with vacuum"
+        },
+        {
+          "service": "Premium exterior detail",
+          "range": "Spotless Detailing from $139"
+        },
+        {
+          "service": "Full interior and exterior detail",
+          "range": "Spotless from $279; other providers may quote by vehicle condition"
+        },
+        {
+          "service": "Paint correction or ceramic coating",
+          "range": "Usually quoted after assessing the vehicle"
+        }
+      ]
+    },
+    "questionsToAsk": [
+      "Is this a self-service wash, staffed hand wash, mobile groom, or professional detailing package?",
+      "Exactly which interior and exterior tasks are included in the advertised price?",
+      "Are there additional charges for SUVs, vans, heavy soiling, pet hair, stains, tar, or travel?",
+      "Does a mobile service bring its own water and power, or must I provide access?",
+      "How long will the service take, and do I need to leave the vehicle?",
+      "Is machine washing suitable for my paint protection film, ceramic coating, or soft-top roof?"
+    ],
     "faqs": [
       {
         "question": "How much does a car wash cost in Wellington?",
-        "answer": "Wellington car wash prices range from $15–$25 for a basic exterior wash, $40–$65 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including cut and polish or ceramic coating."
+        "answer": "Current published examples start at $2 for 1.5 minutes at SmartWash and from $6 at Porirua Car Wash. Dynamic Car Grooming lists a $45 hand wash and $65 hand wash with vacuum. SelectValet mobile services start at $49, while premium detailing can start around $139 for exterior work or $279 for a full detail."
       },
       {
-        "question": "Where can I get my car detailed in Wellington?",
-        "answer": "Top car detailing services operate across the Wellington region including the CBD, Lower Hutt, Petone, and Porirua. Many offer mobile detailing that comes to your home or workplace for maximum convenience."
+        "question": "Where are the self-service car washes in Wellington?",
+        "answer": "SmartWash operates self-service sites at 35 Constable Street in Newtown and 28 Main Road in Tawa. Porirua Car Wash at Porirua Mega Centre is another self-service option and is advertised as open 24 hours."
       },
       {
-        "question": "How often should I wash my car in Wellington?",
-        "answer": "Wellington's coastal winds and salt air mean washing every 1–2 weeks is ideal. Regular washing prevents corrosion and protects your paint — especially important if you park near the waterfront or in exposed areas."
+        "question": "Which Wellington car washes come to my home or workplace?",
+        "answer": "SelectValet is fully mobile and brings its own equipment. Spotless Detailing provides mobile service when water and power are available nearby, while Clean Car Collective offers mobile service alongside its Te Aro studio and CBD drop-off options."
+      },
+      {
+        "question": "What is the difference between a car wash and car detailing?",
+        "answer": "A car wash mainly removes surface dirt from the exterior and may include a quick vacuum. Detailing is more thorough and can include stain extraction, upholstery shampooing, pet-hair removal, paint decontamination, polishing, scratch reduction, and protective coatings."
+      },
+      {
+        "question": "Do Wellington mobile detailers need access to water and power?",
+        "answer": "It depends on the provider. SelectValet says it brings what it needs, including power and shelter. Spotless Detailing asks for water and power within 20 metres for mobile work, with a studio or drop-off option when that is not available. Confirm site requirements when booking."
       }
     ]
   },
@@ -1569,19 +1686,35 @@
     ]
   },
   "wellington/hospitality/nightclubs": {
-    "introText": "Wellington's nightclub scene is concentrated around Courtenay Place and the CBD, offering everything from underground electronic music venues to high-energy dance floors and live music clubs. The capital's compact layout means you can easily move between venues on foot, and the city's creative culture produces a nightlife experience that's more eclectic and authentic than anywhere else in New Zealand.",
+    "pageTitle": "7 Best Nightclubs in Wellington (2026) | TopRated NZ",
+    "metaDescription": "Compare seven Wellington nightclubs and late-night venues by music, events, neighbourhood, opening times and the kind of night each is best for.",
+    "introText": "Wellington nightlife is less about one standard nightclub format and more about choosing the right kind of night: a ticketed live gig at <strong>San Fran</strong>, <strong>Meow</strong>, or <strong>Valhalla</strong>; a Latin DJ-led fiesta at <strong>El Barrio</strong>; drag and cabaret at <strong>Ivy Bar</strong>; or a later Courtenay Place dance floor at <strong>The Establishment</strong>. This July 2026 shortlist compares seven operating late-night venues across <strong>Cuba Street, Vivian Street, Dixon Street, and Courtenay Place</strong>. Use the table to choose by music, event format, location, and closing pattern, then check the venue's official calendar before leaving home because Wellington's best nights are often programme-led rather than the same every week.",
+    "lastUpdated": "July 2026",
+    "author": "TopRated Editorial Team",
+    "buyersGuide": {
+      "title": "Which Wellington Nightclub or Late-Night Venue Suits Your Night?",
+      "content": "<p>Wellington's central nightlife precincts are close enough to combine, but the experience differs sharply by venue. Start with the music or event you want, then choose the part of town and the late-night finish that suit your group.</p><div class='seo-price-table-wrap'><table class='seo-price-table'><thead><tr><th>Venue</th><th>Best for</th><th>Area</th><th>Music and late-night format</th></tr></thead><tbody><tr><td><strong>El Barrio</strong></td><td>Latin music, DJs, dancing, and a dinner-to-party night</td><td>Dixon Street</td><td>Latino bar and nightclub; live music and DJs, with Friday-Saturday trading to 4am</td></tr><tr><td><strong>San Fran</strong></td><td>Ticketed live music and themed dance nights</td><td>Cuba Street</td><td>Programme varies from touring acts to emo, pop-punk, disco, and dance events</td></tr><tr><td><strong>Valhalla</strong></td><td>Alternative, metal, punk, electronic, and rave events</td><td>Vivian Street</td><td>Live gigs and DJ-led late nights; many events are ticketed and event-specific</td></tr><tr><td><strong>Meow</strong></td><td>Ticketed concerts and one-off performance nights</td><td>Edward Street</td><td>Event-led live-music venue; check the listing for door and finish times</td></tr><tr><td><strong>Ivy Bar &amp; Cabaret</strong></td><td>Drag, cabaret, queer nightlife, and cocktails</td><td>Cuba Street</td><td>Rainbow venue open Wednesday-Saturday from 8pm, with show-led nights</td></tr><tr><td><strong>The Establishment</strong></td><td>Courtenay Place DJs, karaoke, bands, and a late finish</td><td>Courtenay Place</td><td>Weekly entertainment with DJs and a licence until 4am</td></tr><tr><td><strong>S&amp;M's</strong></td><td>Cocktails plus smaller shows, gigs, and late-weekend dancing</td><td>Cuba Street</td><td>Basement and Dance events; Friday and Saturday trading until 3am</td></tr></tbody></table></div><h3>Choose your music first, not just the street</h3><p>For a specific gig or themed dance night, start with <strong>San Fran</strong>, <strong>Valhalla</strong>, or <strong>Meow</strong> and buy tickets through the venue's event listing where needed. San Fran's calendar mixes touring shows with themed dance events; Valhalla's programme ranges from heavy music to electronic and rave nights; Meow is the event-led option for concerts and special performances.</p><h3>Choose a social dance-floor night</h3><p><strong>El Barrio</strong> is the clearest choice for Latin music, cocktails, food, DJs, and a Friday-Saturday 4am finish. <strong>The Establishment</strong> suits groups who want to combine food, karaoke, bands, or familiar DJ sets on Courtenay Place. <strong>S&amp;M's</strong> is a more lounge-led Cuba Street option with events in its Basement and Dance space.</p><h3>Choose a show-led or queer nightlife venue</h3><p><strong>Ivy Bar &amp; Cabaret</strong> is the specialist pick for drag, cabaret, and queer nightlife. It is open Wednesday to Saturday from 8pm; check its social channels or event listing for the programme, entry details, and any ticket requirements.</p><h3>How this shortlist was verified</h3><p>TopRated checked each venue's current official website, published Wellington address, stated event focus, and available opening details on 16 July 2026. The old list contained a duplicate San Fran record and Red Square, whose listed website no longer responded; both issues are now removed. A venue's presence here does not guarantee a particular genre, entry price, or closing time on every night. Confirm the official event calendar, conditions of entry, ticket rules, and R18 requirements before you go.</p>"
+    },
     "faqs": [
       {
         "question": "Where are the best nightclubs in Wellington?",
-        "answer": "Courtenay Place is the main nightlife precinct with the highest concentration of late-night venues. Cuba Street offers alternative and live music venues. The city's laneways also host intimate DJ bars and underground clubs."
+        "answer": "For a late Courtenay Place dance-floor night, look at The Establishment. Cuba Street is stronger for San Fran, Ivy Bar, and S&M's, while Vivian and Edward Streets add Valhalla and Meow to the wider Te Aro circuit. El Barrio is on Dixon Street, a short walk from Courtenay Place."
       },
       {
-        "question": "What's the dress code for Wellington nightclubs?",
-        "answer": "Wellington nightclubs are generally more relaxed than Auckland — smart casual is the standard. Most venues avoid strict dress codes, though upscale Courtenay Place clubs may require neat attire. The Cuba Street scene is notably casual."
+        "question": "Where can I find live music and club nights in Wellington?",
+        "answer": "San Fran, Valhalla, and Meow are the strongest event-calendar venues in this guide. San Fran mixes live shows with themed dance nights, Valhalla covers heavy music and electronic events, and Meow hosts ticketed concerts and one-off performances. Check the specific event rather than assuming the same music every night."
       },
       {
-        "question": "How much is nightclub entry in Wellington?",
-        "answer": "Entry fees range from free to $10–$20 for standard nights and $20–$40 for special events and touring DJs. Many Wellington venues offer free entry early in the evening or on quieter nights."
+        "question": "Which Wellington nightlife venues stay open latest?",
+        "answer": "El Barrio publishes Friday and Saturday hours until 4am, and The Establishment says it holds a licence until 4am. S&M's publishes Friday and Saturday hours until 3am. Event venues such as San Fran, Valhalla, and Meow can have different finishes depending on the programme."
+      },
+      {
+        "question": "Do I need tickets for Wellington nightclubs?",
+        "answer": "For touring artists, special DJs, drag shows, and many late-night events, buying a ticket in advance is sensible. San Fran, Valhalla, Meow, and Ivy Bar all run programme-led events. For regular bar nights, venues may offer walk-ins, but entry rules and capacity can change."
+      },
+      {
+        "question": "What should I wear to a Wellington nightclub?",
+        "answer": "Check the venue or event listing first. A live gig, themed dance night, drag show, and Courtenay Place late bar can have different expectations. Wear something comfortable for the event, bring appropriate ID, and follow any conditions of entry published by the venue."
       }
     ]
   },
