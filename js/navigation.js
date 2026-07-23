@@ -42,6 +42,10 @@ function buildSitePath(parts, endIndex) {
 
 function sortBusinessesForDisplay(items) {
     return [...items].sort((a, b) => {
+        const aFeatured = a.featured === true;
+        const bFeatured = b.featured === true;
+        if (aFeatured !== bFeatured) return aFeatured ? -1 : 1;
+
         const aHasRating = typeof a.rating === 'number' && typeof a.reviews === 'number' && a.reviews > 0;
         const bHasRating = typeof b.rating === 'number' && typeof b.reviews === 'number' && b.reviews > 0;
         if (aHasRating !== bHasRating) return aHasRating ? -1 : 1;
@@ -59,6 +63,7 @@ function hasLocalBusiness(businesses, citySlug, pageSlug, categorySlug = null) {
 
 function renderBusinessCard(business, options = {}) {
     const hasRating = typeof business.rating === 'number' && typeof business.reviews === 'number' && business.reviews > 0;
+    const isFeatured = business.featured === true;
     const isPremium = hasRating && business.rating >= 4.8;
     const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
     const ratingBadge = hasRating
@@ -67,12 +72,21 @@ function renderBusinessCard(business, options = {}) {
     const subcategoryTag = options.subcategoryLabel
         ? `<div class="nationwide-subcategory-tag"><i class="fas fa-layer-group"></i> ${options.subcategoryLabel}</div>`
         : '';
+    const serviceHighlights = isFeatured && Array.isArray(business.highlightedServices) && business.highlightedServices.length
+        ? `<div class="business-services"><span>Main services</span><div class="business-service-tags">${business.highlightedServices.map(service => `<span>${service}</span>`).join('')}</div></div>`
+        : '';
+    const phoneHref = business.phone ? business.phone.replace(/[^+\d]/g, '') : '';
+    const contactLinks = [
+        `<a href="${business.website}" target="_blank" rel="noopener" class="text-primary"><i class="fas fa-external-link-alt"></i> Website</a>`,
+        business.bookingUrl ? `<a href="${business.bookingUrl}" target="_blank" rel="noopener" class="text-primary"><i class="fas fa-calendar-check"></i> Book a consultation</a>` : '',
+        business.phone ? `<a href="tel:${phoneHref}" class="text-primary"><i class="fas fa-phone"></i> ${business.phone}</a>` : ''
+    ].filter(Boolean).join('');
 
     return `
-        <div class="glass-card business-card-horizontal ${isPremium ? 'premium-border' : ''}">
+        <div class="glass-card business-card-horizontal ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}">
             <div class="business-image-container">
                 <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}">
-                ${isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : ''}
+                ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}
             </div>
             <div class="business-info">
                 ${ratingBadge}
@@ -80,9 +94,10 @@ function renderBusinessCard(business, options = {}) {
                 <h3>${business.name}</h3>
                 ${business.neighborhood ? `<div class="neighborhood-tag"><i class="fas fa-map-pin"></i> ${business.neighborhood}</div>` : ''}
                 <p class="text-muted">${business.description}</p>
+                ${serviceHighlights}
                 <div class="business-meta">
                     <span><i class="fas fa-map-marker-alt"></i> ${business.address}</span>
-                    <a href="${business.website}" target="_blank" class="text-primary"><i class="fas fa-external-link-alt"></i> Website</a>
+                    <div class="business-contact-links">${contactLinks}</div>
                 </div>
             </div>
         </div>
