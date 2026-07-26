@@ -61,6 +61,19 @@ function hasLocalBusiness(businesses, citySlug, pageSlug, categorySlug = null) {
     );
 }
 
+function getTrackedOutboundUrl(destination, business, linkType) {
+    try {
+        const url = new URL(destination);
+        url.searchParams.set('utm_source', 'toprated.nz');
+        url.searchParams.set('utm_medium', 'referral');
+        url.searchParams.set('utm_campaign', 'business_listing');
+        url.searchParams.set('utm_content', `business-${business.id}-${linkType}`);
+        return url.href;
+    } catch (error) {
+        return destination;
+    }
+}
+
 function renderBusinessCard(business, options = {}) {
     const hasRating = typeof business.rating === 'number' && typeof business.reviews === 'number' && business.reviews > 0;
     const isFeatured = business.featured === true;
@@ -77,13 +90,13 @@ function renderBusinessCard(business, options = {}) {
         : '';
     const phoneHref = business.phone ? business.phone.replace(/[^+\d]/g, '') : '';
     const contactLinks = [
-        `<a href="${business.website}" target="_blank" rel="noopener" class="text-primary"><i class="fas fa-external-link-alt"></i> Website</a>`,
-        business.bookingUrl ? `<a href="${business.bookingUrl}" target="_blank" rel="noopener" class="text-primary"><i class="fas fa-calendar-check"></i> Book a consultation</a>` : '',
-        business.phone ? `<a href="tel:${phoneHref}" class="text-primary"><i class="fas fa-phone"></i> ${business.phone}</a>` : ''
+        `<a href="${getTrackedOutboundUrl(business.website, business, 'website')}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a>`,
+        business.bookingUrl ? `<a href="${getTrackedOutboundUrl(business.bookingUrl, business, 'booking')}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="booking"><i class="fas fa-calendar-check"></i> Book a consultation</a>` : '',
+        business.phone ? `<a href="tel:${phoneHref}" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> ${business.phone}</a>` : ''
     ].filter(Boolean).join('');
 
     return `
-        <div class="glass-card business-card-horizontal ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}">
+        <div class="glass-card business-card-horizontal ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${isFeatured ? 'featured' : 'standard'}">
             <div class="business-image-container">
                 <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}">
                 ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}
@@ -102,6 +115,56 @@ function renderBusinessCard(business, options = {}) {
             </div>
         </div>
     `;
+}
+
+function getListingEventData(card) {
+    return {
+        business_id: card.dataset.businessId,
+        business_name: card.dataset.businessName,
+        city_slug: card.dataset.citySlug,
+        category_slug: card.dataset.categorySlug,
+        page_slug: card.dataset.pageSlug,
+        listing_tier: card.dataset.listingTier,
+        source_page: location.pathname
+    };
+}
+
+function trackBusinessReferralClicks() {
+    document.addEventListener('click', event => {
+        const link = event.target.closest('[data-tracked-referral]');
+        if (!link) return;
+
+        const card = link.closest('[data-listing-impression]');
+        if (!card || !window.topratedAnalytics) return;
+
+        let outboundDomain = '';
+        try {
+            outboundDomain = new URL(link.href).hostname;
+        } catch (error) {
+            // Telephone links do not have an outbound domain.
+        }
+
+        window.topratedAnalytics.track('business_referral_click', {
+            ...getListingEventData(card),
+            link_type: link.dataset.trackedReferral,
+            outbound_domain: outboundDomain
+        });
+    });
+}
+
+function trackBusinessListingImpressions(listEl) {
+    if (!window.IntersectionObserver || !window.topratedAnalytics) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const card = entry.target;
+            window.topratedAnalytics.track('business_listing_impression', getListingEventData(card));
+            observer.unobserve(card);
+        });
+    }, { threshold: 0.5 });
+
+    listEl.querySelectorAll('[data-listing-impression]').forEach(card => observer.observe(card));
 }
 
 function renderFeaturedHubGuides(guides, intro = {}) {
@@ -457,6 +520,7 @@ async function renderBusinessList() {
                 </section>
             `;
         }).join('');
+        trackBusinessListingImpressions(listEl);
         return;
     }
 
@@ -505,9 +569,11 @@ async function renderBusinessList() {
     document.head.appendChild(schemaScript);
 
     listEl.innerHTML = sorted.map(business => renderBusinessCard(business)).join('');
+    trackBusinessListingImpressions(listEl);
 }
 
 window.addEventListener('DOMContentLoaded', async () => {
+    trackBusinessReferralClicks();
     buildBreadcrumb();
     await renderHubGrid();
     await renderBusinessList();
