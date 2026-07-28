@@ -46,6 +46,10 @@ function sortBusinessesForDisplay(items) {
         const bFeatured = b.featured === true;
         if (aFeatured !== bFeatured) return aFeatured ? -1 : 1;
 
+        const aBasic = a.listingTier === 'basic';
+        const bBasic = b.listingTier === 'basic';
+        if (aBasic !== bBasic) return aBasic ? 1 : -1;
+
         const aHasRating = typeof a.rating === 'number' && typeof a.reviews === 'number' && a.reviews > 0;
         const bHasRating = typeof b.rating === 'number' && typeof b.reviews === 'number' && b.reviews > 0;
         if (aHasRating !== bHasRating) return aHasRating ? -1 : 1;
@@ -77,7 +81,22 @@ function getTrackedOutboundUrl(destination, business, linkType) {
 function renderBusinessCard(business, options = {}) {
     const hasRating = typeof business.rating === 'number' && typeof business.reviews === 'number' && business.reviews > 0;
     const isFeatured = business.featured === true;
+    const isBasic = business.listingTier === 'basic';
     const isPremium = hasRating && business.rating >= 4.8;
+    const listingTier = isFeatured ? 'featured' : (isBasic ? 'basic' : 'standard');
+
+    if (isBasic) {
+        return `
+            <div class="glass-card business-card-horizontal basic-listing-card" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${listingTier}">
+                <div class="business-info">
+                    <h3>${business.name}</h3>
+                    <div class="basic-listing-region"><i class="fas fa-map-marker-alt"></i> ${business.city}</div>
+                    <p class="text-muted">${business.description}</p>
+                </div>
+            </div>
+        `;
+    }
+
     const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
     const ratingBadge = hasRating
         ? `<div class="rating-badge"><i class="fas fa-star"></i> ${business.rating} (${business.reviews} reviews)</div>`
@@ -96,7 +115,7 @@ function renderBusinessCard(business, options = {}) {
     ].filter(Boolean).join('');
 
     return `
-        <div class="glass-card business-card-horizontal ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${isFeatured ? 'featured' : 'standard'}">
+        <div class="glass-card business-card-horizontal ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${listingTier}">
             <div class="business-image-container">
                 <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}">
                 ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}
@@ -429,23 +448,31 @@ async function injectSchema() {
         b.citySlug === city && b.categorySlug === category && b.pageSlug === pageSlug
     );
 
+    const sorted = sortBusinessesForDisplay(filtered);
     const schema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": `${city} ${category} ${pageSlug}`,
-        "itemListElement": filtered.map((biz, idx) => ({
-            "@type": "ListItem",
-            "position": idx + 1,
-            "url": biz.website || biz.url,
-            "name": biz.name,
-            "description": biz.description,
-            "rating": biz.rating,
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": biz.city,
-                "addressRegion": "NZ"
+        "itemListElement": sorted.map((biz, idx) => {
+            const item = {
+                "@type": "ListItem",
+                "position": idx + 1,
+                "name": biz.name,
+                "description": biz.description,
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": biz.city,
+                    "addressRegion": "NZ"
+                }
+            };
+
+            if (biz.listingTier !== 'basic') {
+                item.url = biz.website || biz.url;
+                if (typeof biz.rating === 'number') item.rating = biz.rating;
             }
-        }))
+
+            return item;
+        })
     };
 
     schemaEl.textContent = JSON.stringify(schema, null, 2);
