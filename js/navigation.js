@@ -65,6 +65,39 @@ function hasLocalBusiness(businesses, citySlug, pageSlug, categorySlug = null) {
     );
 }
 
+function getCategoryThumbnail(industry, subCategory = null) {
+    if (subCategory && industry?.subCategoryThumbnails?.[subCategory]) {
+        return industry.subCategoryThumbnails[subCategory];
+    }
+
+    return industry?.thumbnail || '/img/industries/retail.png';
+}
+
+function renderCategoryCard({ href, title, description, thumbnail, icon, imageAlt }) {
+    return `
+        <a class="glass-card category-card" href="${href}">
+            <div class="category-card__media">
+                <img
+                    src="${thumbnail}"
+                    alt="${imageAlt}"
+                    class="category-card__image"
+                    width="640"
+                    height="360"
+                    loading="lazy"
+                    decoding="async">
+                <span class="category-card__icon" aria-hidden="true">
+                    <i class="fas ${icon}"></i>
+                </span>
+            </div>
+            <div class="category-card__body">
+                <h3>${title}</h3>
+                <p class="text-muted">${description}</p>
+                <span class="category-card__cta">Explore category <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+        </a>
+    `;
+}
+
 function getTrackedOutboundUrl(destination, business, linkType) {
     try {
         const url = new URL(destination);
@@ -245,19 +278,20 @@ async function renderHubGrid() {
 
     if (cityMatch) {
         const city = cityMatch[1];
-        const [citiesData, featuredGuidesData] = await Promise.all([
+        const [citiesData, featuredGuidesData, industriesData] = await Promise.all([
             loadJSON('/data/cities.json'),
-            loadJSON('/data/featured_guides.json')
+            loadJSON('/data/featured_guides.json'),
+            loadJSON('/data/industries.json')
         ]);
         const cityInfo = citiesData?.find(c => c.slug === city);
         if (!cityInfo) return;
 
         const categories = [
-            { slug: 'cuisine', name: 'Food & Cuisine', icon: 'fa-bowl-food' },
-            { slug: 'trades', name: 'Home Trades', icon: 'fa-hammer' },
-            { slug: 'services', name: 'Services', icon: 'fa-briefcase' },
-            { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel' },
-            { slug: 'automotive', name: 'Automotive', icon: 'fa-car' }
+            { slug: 'cuisine', name: 'Food & Cuisine', icon: 'fa-bowl-food', description: 'Restaurants, cafes, and cuisine guides' },
+            { slug: 'trades', name: 'Home Trades', icon: 'fa-hammer', description: 'Builders, electricians, plumbers, and renovation trades' },
+            { slug: 'services', name: 'Services', icon: 'fa-briefcase', description: 'Professional, household, finance, and local services' },
+            { slug: 'hospitality', name: 'Hospitality', icon: 'fa-hotel', description: 'Hotels, bars, nightlife, and places to stay' },
+            { slug: 'automotive', name: 'Automotive', icon: 'fa-car', description: 'Mechanics, dealers, tyres, repairs, and car care' }
         ];
 
         const featuredHtml = renderFeaturedHubGuides(featuredGuidesData?.[`cities/${city}`] || [], {
@@ -265,13 +299,17 @@ async function renderHubGrid() {
             description: `Editorial guides connected to ${cityInfo.name} and its highest-intent local categories.`
         });
 
-        const cards = categories.map(cat => `
-            <a class="glass-card" href="/cities/${city}/${cat.slug}/">
-                <i class="fas ${cat.icon} text-secondary" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                <h3>${cat.name}</h3>
-                <p class="text-muted">Top-rated services in ${cityInfo.name}.</p>
-            </a>
-        `).join('');
+        const cards = categories.map(cat => {
+            const industry = industriesData?.find(item => item.slug === cat.slug);
+            return renderCategoryCard({
+                href: `/cities/${city}/${cat.slug}/`,
+                title: cat.name,
+                description: `${cat.description} in ${cityInfo.name}.`,
+                thumbnail: getCategoryThumbnail(industry),
+                icon: cat.icon,
+                imageAlt: `${cat.name} businesses in ${cityInfo.name}`
+            });
+        }).join('');
 
         if (featuredEl) featuredEl.innerHTML = featuredHtml;
         if (titleEl) titleEl.textContent = `Browse ${cityInfo.name} by Category`;
@@ -302,13 +340,15 @@ async function renderHubGrid() {
 
         const cards = availableSubcategories.map(subCategory => {
             const title = formatSlugLabel(subCategory);
-            return `
-                <a class="glass-card" href="/cities/${city}/${categorySlug}/${subCategory}">
-                    <i class="fas fa-arrow-right text-secondary" style="font-size: 1.5rem; margin-bottom: 1rem;"></i>
-                    <h3>${title}</h3>
-                    <p class="text-muted">Best ${title.toLowerCase()} in ${formatSlugLabel(city)}.</p>
-                </a>
-            `;
+            const cityName = formatSlugLabel(city);
+            return renderCategoryCard({
+                href: `/cities/${city}/${categorySlug}/${subCategory}`,
+                title,
+                description: `Compare ${title.toLowerCase()} in ${cityName}.`,
+                thumbnail: getCategoryThumbnail(industry, subCategory),
+                icon: 'fa-layer-group',
+                imageAlt: `${title} in ${cityName}`
+            });
         }).join('');
 
         if (featuredEl) featuredEl.innerHTML = featuredHtml;
