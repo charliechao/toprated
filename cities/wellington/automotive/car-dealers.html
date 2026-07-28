@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where are the main car dealerships in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington's main dealer strips are along Hutt Road (Petone to Lower Hutt) for new and used franchises, Courtenay Place area for boutique dealers, and the Porirua/Kapiti corridor for larger independent yards with extensive stock."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/automotive/car-dealers#business-list",
+      "name": "Car Dealers in Wellington",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Coventry Cars",
+            "description": "Wellington's #1 Rated Large Dealership (BuyerScore 2025). Extensive range of quality used vehicles with transparent pricing and excellent after-sales service.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "75 Hutt Road, Petone, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.coventrycars.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Wellington Motors",
+            "description": "Award-winning multi-franchise dealership on Hutt Road representing Toyota, Honda, and Mazda. New and certified pre-owned vehicles with competitive finance, comprehensive warranties, and exceptional after-sales service.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hutt Road, Petone",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.wellingtonmotors.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Capital City Cars",
+            "description": "Top 3 Rated Medium Dealership in Wellington (BuyerScore 2025). Specializing in affordable, reliable used cars with easy finance and trade-in options.",
+            "image": "/img/generated/car-dealers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lower Hutt, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.capitalcitycars.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can I negotiate car prices in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, there is usually room to negotiate, especially on used vehicles. Research market values on Trade Me and compare prices across dealers. End of month and end of financial year (March) often yield the best deals."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/wellington/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Car Dealers",
+          "item": "https://toprated.nz/cities/wellington/automotive/car-dealers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What warranty should I expect from a Wellington car dealer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All dealers must comply with the Consumer Guarantees Act. Additionally, reputable Wellington dealers offer mechanical warranties from 3 months to 3 years. New car franchises include manufacturer warranties of 3–7 years."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where are the main car dealerships in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington's main dealer strips are along Hutt Road (Petone to Lower Hutt) for new and used franchises, Courtenay Place area for boutique dealers, and the Porirua/Kapiti corridor for larger independent yards with extensive stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I negotiate car prices in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, there is usually room to negotiate, especially on used vehicles. Research market values on Trade Me and compare prices across dealers. End of month and end of financial year (March) often yield the best deals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What warranty should I expect from a Wellington car dealer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All dealers must comply with the Consumer Guarantees Act. Additionally, reputable Wellington dealers offer mechanical warranties from 3 months to 3 years. New car franchises include manufacturer warranties of 3–7 years."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's car dealers range from premium franchise showrooms on Hutt Road to trusted independent yards across the Hutt Valley and Porirua. Whether you're after a compact city car for Wellington's narrow streets, a reliable SUV for weekend escapes to the Wairarapa, or a luxury European marque, the capital's top-rated dealers offer competitive pricing, thorough pre-purchase inspections, and strong after-sales support.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="223" data-business-name="Coventry Cars" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Coventry Cars" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (490 reviews)</div>
+                <h3>Coventry Cars</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Petone</div>
+                <p class="text-muted">Wellington&#39;s #1 Rated Large Dealership (BuyerScore 2025). Extensive range of quality used vehicles with transparent pricing and excellent after-sales service.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 75 Hutt Road, Petone, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.coventrycars.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-223-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="294" data-business-name="Wellington Motors" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Wellington Motors" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (450 reviews)</div>
+                <h3>Wellington Motors</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Petone</div>
+                <p class="text-muted">Award-winning multi-franchise dealership on Hutt Road representing Toyota, Honda, and Mazda. New and certified pre-owned vehicles with competitive finance, comprehensive warranties, and exceptional after-sales service.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hutt Road, Petone</span>
+                    <div class="business-contact-links"><a href="https://www.wellingtonmotors.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-294-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="224" data-business-name="Capital City Cars" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/car-dealers.png" alt="Capital City Cars" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (380 reviews)</div>
+                <h3>Capital City Cars</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Lower Hutt</div>
+                <p class="text-muted">Top 3 Rated Medium Dealership in Wellington (BuyerScore 2025). Specializing in affordable, reliable used cars with easy finance and trade-in options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Lower Hutt, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.capitalcitycars.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-224-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where are the main car dealerships in Wellington?</summary>
                             <p>Wellington's main dealer strips are along Hutt Road (Petone to Lower Hutt) for new and used franchises, Courtenay Place area for boutique dealers, and the Porirua/Kapiti corridor for larger independent yards with extensive stock.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can I negotiate car prices in Wellington?</summary>
                             <p>Yes, there is usually room to negotiate, especially on used vehicles. Research market values on Trade Me and compare prices across dealers. End of month and end of financial year (March) often yield the best deals.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What warranty should I expect from a Wellington car dealer?</summary>
                             <p>All dealers must comply with the Consumer Guarantees Act. Additionally, reputable Wellington dealers offer mechanical warranties from 3 months to 3 years. New car franchises include manufacturer warranties of 3–7 years.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

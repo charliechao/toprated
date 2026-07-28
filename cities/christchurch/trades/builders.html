@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the current cost to build a house in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "New build costs in Christchurch generally start from $2,800 per square meter for standard specifications and can exceed $4,500 per square meter for high-end architectural homes."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/trades/builders#business-list",
+      "name": "Builders in Christchurch",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Fortified Homes",
+            "description": "Multiple MasterBuilder Gold Award winners. Family-oriented local business specialising in design and build homes with Kiwisaver-friendly options.",
+            "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch Central",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.fortifiedhomes.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "DJ Hewitt Builders",
+            "description": "Premium homes and renovations with 50+ Masterbuild Awards. National House of the Year finalists offering planning, design, consents and construction.",
+            "image": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch Metro",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.djhewittbuilders.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Trent Builders",
+            "description": "High-quality new home builds, townhouses, and design-and-build services. Known for honest advice, careful planning, and energy-efficient designs.",
+            "image": "/img/generated/builders.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Canterbury Region",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.trentbuilders.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How long does a building project take in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A standard three-bedroom home typically takes 8 to 12 months to build from the foundation stage, plus several months for planning and council consents through Christchurch City Council."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/christchurch/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Builders",
+          "item": "https://toprated.nz/cities/christchurch/trades/builders"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I hire a Master Builder in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, hiring a Master Builder provides access to the 10-year Master Build Guarantee, which is the most common and robust protection for homeowners in New Zealand."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the current cost to build a house in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "New build costs in Christchurch generally start from $2,800 per square meter for standard specifications and can exceed $4,500 per square meter for high-end architectural homes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a building project take in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard three-bedroom home typically takes 8 to 12 months to build from the foundation stage, plus several months for planning and council consents through Christchurch City Council."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I hire a Master Builder in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, hiring a Master Builder provides access to the 10-year Master Build Guarantee, which is the most common and robust protection for homeowners in New Zealand."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Christchurch has undergone a massive transformation, and its builders remain at the forefront of innovative, earthquake-resilient construction. Whether you're planning a new architectural build in the Cashmere Hills or a sensitive renovation of a character home in Fendalton, the city's top-rated Master Builders provide the expertise, project management, and quality craftsmanship needed to bring your vision to life.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="138" data-business-name="Fortified Homes" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Fortified Homes" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (195 reviews)</div>
+                <h3>Fortified Homes</h3>
+
+                <p class="text-muted">Multiple MasterBuilder Gold Award winners. Family-oriented local business specialising in design and build homes with Kiwisaver-friendly options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch Central</span>
+                    <div class="business-contact-links"><a href="https://www.fortifiedhomes.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-138-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="139" data-business-name="DJ Hewitt Builders" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="DJ Hewitt Builders" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (240 reviews)</div>
+                <h3>DJ Hewitt Builders</h3>
+
+                <p class="text-muted">Premium homes and renovations with 50+ Masterbuild Awards. National House of the Year finalists offering planning, design, consents and construction.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch Metro</span>
+                    <div class="business-contact-links"><a href="https://www.djhewittbuilders.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-139-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="140" data-business-name="Trent Builders" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/builders.png" alt="Trent Builders" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (175 reviews)</div>
+                <h3>Trent Builders</h3>
+
+                <p class="text-muted">High-quality new home builds, townhouses, and design-and-build services. Known for honest advice, careful planning, and energy-efficient designs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Canterbury Region</span>
+                    <div class="business-contact-links"><a href="https://www.trentbuilders.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-140-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the current cost to build a house in Christchurch?</summary>
                             <p>New build costs in Christchurch generally start from $2,800 per square meter for standard specifications and can exceed $4,500 per square meter for high-end architectural homes.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How long does a building project take in Christchurch?</summary>
                             <p>A standard three-bedroom home typically takes 8 to 12 months to build from the foundation stage, plus several months for planning and council consents through Christchurch City Council.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I hire a Master Builder in Christchurch?</summary>
                             <p>Yes, hiring a Master Builder provides access to the 10-year Master Build Guarantee, which is the most common and robust protection for homeowners in New Zealand.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/christchurch/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

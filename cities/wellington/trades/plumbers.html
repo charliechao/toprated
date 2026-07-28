@@ -45,31 +45,158 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a plumber cost in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Standard plumbing rates in Wellington typically range from $98 to $110 per hour plus GST. Many providers charge a service fee of approximately $150 which often includes the first 30 minutes of labor."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/trades/plumbers#business-list",
+      "name": "Plumbers in Wellington",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Central Plumbing",
+            "description": "Family-owned Wellington institution with 20+ years of experience. Highly rated for professional repairs and installations.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Te Aro, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://centralplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Renner Plumbing",
+            "description": "Highly regarded for friendly communication and meticulous plumbing installations and repairs.",
+            "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Johnsonville, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://rennerplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Go With The Flow",
+            "description": "Master Plumbers specializing in 24/7 emergency service, drainlaying, and gasfitting. Trusted for over 30 years.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lower Hutt, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://gowiththeflow.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Plumbers Supreme",
+            "description": "Professional quality work specializing in new bathroom installations and high-end residential plumbing.",
+            "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Petone, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://plumberssupreme.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Southern Plumbing & Gasfitting",
+            "description": "Full-service plumbing for emergencies and maintenance. Known for fast, reliable responses and fair pricing.",
+            "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wellington Central",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://southernplumbing.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are there 24/7 emergency plumbers in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, several top-rated Wellington plumbing firms offer 24/7 emergency services. Be aware that after-hours call-outs can incur higher minimum charges, sometimes starting from $440 for the first few hours."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/wellington/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Plumbers",
+          "item": "https://toprated.nz/cities/wellington/trades/plumbers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What is a Master Plumber guarantee?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hiring a Master Plumber in Wellington provides a residential guarantee of up to $20,000 for 12 months, protecting you against substandard workmanship or advanced payments if a contractor cannot complete the job."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a plumber cost in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard plumbing rates in Wellington typically range from $98 to $110 per hour plus GST. Many providers charge a service fee of approximately $150 which often includes the first 30 minutes of labor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there 24/7 emergency plumbers in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, several top-rated Wellington plumbing firms offer 24/7 emergency services. Be aware that after-hours call-outs can incur higher minimum charges, sometimes starting from $440 for the first few hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Master Plumber guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hiring a Master Plumber in Wellington provides a residential guarantee of up to $20,000 for 12 months, protecting you against substandard workmanship or advanced payments if a contractor cannot complete the job."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +236,135 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's unique topography and aging infrastructure in suburbs like Kelburn and Mount Victoria require experienced plumbers who understand local conditions. Whether it's fixing a leak in a historic villa or installing modern, energy-efficient hot water systems in Te Aro, our top-rated Wellington plumbers offer reliable, 24/7 emergency support and Master Plumber guarantees.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="31" data-business-name="Central Plumbing" data-city-slug="wellington" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Central Plumbing" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (410 reviews)</div>
+                <h3>Central Plumbing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Family-owned Wellington institution with 20+ years of experience. Highly rated for professional repairs and installations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Te Aro, Wellington</span>
+                    <div class="business-contact-links"><a href="https://centralplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-31-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="34" data-business-name="Renner Plumbing" data-city-slug="wellington" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Renner Plumbing" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (110 reviews)</div>
+                <h3>Renner Plumbing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Johnsonville</div>
+                <p class="text-muted">Highly regarded for friendly communication and meticulous plumbing installations and repairs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Johnsonville, Wellington</span>
+                    <div class="business-contact-links"><a href="https://rennerplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-34-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="33" data-business-name="Go With The Flow" data-city-slug="wellington" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Go With The Flow" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (230 reviews)</div>
+                <h3>Go With The Flow</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Lower Hutt</div>
+                <p class="text-muted">Master Plumbers specializing in 24/7 emergency service, drainlaying, and gasfitting. Trusted for over 30 years.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Lower Hutt, Wellington</span>
+                    <div class="business-contact-links"><a href="https://gowiththeflow.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-33-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="35" data-business-name="Plumbers Supreme" data-city-slug="wellington" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Plumbers Supreme" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (95 reviews)</div>
+                <h3>Plumbers Supreme</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Petone</div>
+                <p class="text-muted">Professional quality work specializing in new bathroom installations and high-end residential plumbing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Petone, Wellington</span>
+                    <div class="business-contact-links"><a href="https://plumberssupreme.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-35-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="32" data-business-name="Southern Plumbing &amp; Gasfitting" data-city-slug="wellington" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Southern Plumbing &amp; Gasfitting" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.5 (150 reviews)</div>
+                <h3>Southern Plumbing &amp; Gasfitting</h3>
+
+                <p class="text-muted">Full-service plumbing for emergencies and maintenance. Known for fast, reliable responses and fair pricing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wellington Central</span>
+                    <div class="business-contact-links"><a href="https://southernplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-32-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a plumber cost in Wellington?</summary>
                             <p>Standard plumbing rates in Wellington typically range from $98 to $110 per hour plus GST. Many providers charge a service fee of approximately $150 which often includes the first 30 minutes of labor.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are there 24/7 emergency plumbers in Wellington?</summary>
                             <p>Yes, several top-rated Wellington plumbing firms offer 24/7 emergency services. Be aware that after-hours call-outs can incur higher minimum charges, sometimes starting from $440 for the first few hours.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is a Master Plumber guarantee?</summary>
                             <p>Hiring a Master Plumber in Wellington provides a residential guarantee of up to $20,000 for 12 months, protecting you against substandard workmanship or advanced payments if a contractor cannot complete the job.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +372,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +435,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

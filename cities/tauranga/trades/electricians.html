@@ -45,31 +45,107 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What do Tauranga electricians charge per hour?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Standard hourly rates for registered electricians in Tauranga range from $80 to $115 per hour plus GST. Specialty work like solar or industrial automation may incur higher rates."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/trades/electricians#business-list",
+      "name": "Electricians in Tauranga",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bay Electrical Tauranga",
+            "description": "Bay of Plenty's trusted electrical team for new builds, renovations, and solar installations. Prompt, professional service.",
+            "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mount Maunganui, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bayelectrical.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Affordable Electrical",
+            "description": "Trusted for over 50 years, providing honest advice and quality electrical workmanship across the Bay.",
+            "image": "/img/generated/electricians.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga Central",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://affordableelectrical.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are electricians in Tauranga qualified for solar panel installation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many top-rated electricians in the Bay of Plenty are certified solar installers. It is recommended to check for SEANZ (Sustainable Energy Association New Zealand) membership for specialized solar work."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/tauranga/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Electricians",
+          "item": "https://toprated.nz/cities/tauranga/trades/electricians"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need an electrician for a new heat pump in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, all heat pump installations require a registered electrician to complete the electrical connection and issue a Certificate of Compliance (CoC)."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What do Tauranga electricians charge per hour?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard hourly rates for registered electricians in Tauranga range from $80 to $115 per hour plus GST. Specialty work like solar or industrial automation may incur higher rates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are electricians in Tauranga qualified for solar panel installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many top-rated electricians in the Bay of Plenty are certified solar installers. It is recommended to check for SEANZ (Sustainable Energy Association New Zealand) membership for specialized solar work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an electrician for a new heat pump in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all heat pump installations require a registered electrician to complete the electrical connection and issue a Certificate of Compliance (CoC)."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +185,84 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">As one of New Zealand's fastest-growing regions, Tauranga requires registered electricians who can handle everything from high-spec new builds in Papamoa to industrial maintenance at the Port. Our top-rated Tauranga electricians are experts in solar installations, EV charging, and smart home automation, providing safe, reliable, and energy-efficient electrical solutions for the Bay of Plenty.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="188" data-business-name="Bay Electrical Tauranga" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="electricians" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bay Electrical Tauranga" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (180 reviews)</div>
+                <h3>Bay Electrical Tauranga</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mount Maunganui</div>
+                <p class="text-muted">Bay of Plenty&#39;s trusted electrical team for new builds, renovations, and solar installations. Prompt, professional service.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Mount Maunganui, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://www.bayelectrical.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-188-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="53" data-business-name="Affordable Electrical" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="electricians" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/electricians.png" alt="Affordable Electrical" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (140 reviews)</div>
+                <h3>Affordable Electrical</h3>
+
+                <p class="text-muted">Trusted for over 50 years, providing honest advice and quality electrical workmanship across the Bay.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga Central</span>
+                    <div class="business-contact-links"><a href="https://affordableelectrical.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-53-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What do Tauranga electricians charge per hour?</summary>
                             <p>Standard hourly rates for registered electricians in Tauranga range from $80 to $115 per hour plus GST. Specialty work like solar or industrial automation may incur higher rates.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are electricians in Tauranga qualified for solar panel installation?</summary>
                             <p>Many top-rated electricians in the Bay of Plenty are certified solar installers. It is recommended to check for SEANZ (Sustainable Energy Association New Zealand) membership for specialized solar work.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need an electrician for a new heat pump in Tauranga?</summary>
                             <p>Yes, all heat pump installations require a registered electrician to complete the electrical connection and issue a Certificate of Compliance (CoC).</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +270,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/tauranga/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +333,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

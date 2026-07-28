@@ -45,63 +45,292 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where is the best area for Chinese food in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dominion Road (from Balmoral to Mt Eden) is Auckland's most famous Chinese food precinct, with dozens of authentic restaurants covering Sichuan, Northern Chinese, hotpot, and Cantonese cuisine. For premium yum cha, the Viaduct Harbour (Grand Harbour) and CBD (Huami at SkyCity) are top destinations. East Auckland — particularly Botany, Howick, and Pakuranga — also has a thriving Chinese food scene with a strong focus on Cantonese and Southeast Asian-Chinese cuisines."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/chinese-restaurants#business-list",
+      "name": "Chinese Restaurants in Auckland",
+      "numberOfItems": 11,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Eden Noodles Cafe",
+            "description": "Eden Noodles is a Dominion Road institution beloved for its authentic hand-pulled Sichuan noodles, famous dan dan dumplings in addictive chilli oil, and customizable spice levels that cater to everyone from mild-seekers to hardcore spice enthusiasts. With multiple Auckland locations, it has become the city's benchmark for affordable, no-frills Sichuan cuisine — the kind of place where the queue out the door is the best review you'll ever read.",
+            "image": "/img/businesses/noodles.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "105 Dominion Rd, Mount Eden, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.edennoodles.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Barilla Dumpling",
+            "description": "Barilla Dumpling is a Dominion Road institution and one of Auckland's most talked-about Chinese restaurants. Famous for its hand-pulled noodles made fresh before your eyes and perfectly crispy pan-fried dumplings (guotie), it serves authentic Northern Chinese cuisine in a bustling, no-frills atmosphere that transports you straight to a Beijing side street. The queue is long, the tables are shared, and the food is outstanding.",
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "571 Dominion Road, Balmoral, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.barilladumpling.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Huami",
+            "description": "Huami at SkyCity is Auckland's most sophisticated Chinese fine dining experience, seamlessly bridging Cantonese tradition with contemporary innovation. The restaurant is renowned for its fruit-wood roasted Peking Duck — carved tableside with precision — truffle prawn dumplings during yum cha service, and a stunning interior featuring a dramatic open kitchen and custom Chinese artworks. Ideal for business entertaining or special celebrations.",
+            "image": "/img/businesses/huami.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "87 Federal St, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://skycityauckland.co.nz/restaurants/huami"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Grand Park Chinese Seafood Restaurant",
+            "description": "Under the same ownership as Grand Harbour, Grand Park delivers premium Cantonese dining and outstanding yum cha in Greenlane. With live seafood tanks, a vast dim sum selection, and banquet facilities for large groups, it serves as the go-to destination for Auckland's Cantonese community south of the CBD. The quality and authenticity match the Viaduct flagship, with easier parking and shorter weekend queues.",
+            "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "262 Greenlane Rd West, Greenlane, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.grandpark.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Grand Harbour",
+            "description": "Grand Harbour has been Auckland's definitive yum cha destination for over two decades, drawing weekend crowds from across the city to its harbourside Viaduct location. With over 80 dim sum varieties, traditional trolley service, live seafood tanks, and authentic Hong Kong-style Cantonese cooking, it delivers the full yum cha experience — from silky har gow to crisp BBQ pork buns and delicate turnip cake. A true Auckland dining institution.",
+            "image": "/img/businesses/dim-sum.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Cnr Pakenham St & Viaduct Harbour Ave, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://grandharbour.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Hotpot Duke",
+            "description": "Hotpot Duke is Dominion Road's premier hotpot destination, offering an elevated communal dining experience where you select from a variety of rich broths — including a fiery málà and a nourishing bone marrow — and cook premium meats, seafood, and vegetables tableside. The quality of the ingredients, particularly the thinly-sliced wagyu and handmade fish balls, sets it apart from other Auckland hotpot restaurants.",
+            "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "480 Dominion Road, Mt Eden, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.hotpotduke.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Sun World Seafood Restaurant",
+            "description": "Sun World in Newmarket is one of Auckland's most reliable destinations for Cantonese seafood and yum cha. The restaurant offers a vast dim sum selection during weekend lunch service, alongside excellent live seafood dishes — particularly their XO sauce rice noodles and salt-and-pepper squid. A perennial favourite with Newmarket shoppers and the local Chinese community alike.",
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "486 Khyber Pass Road, Newmarket, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.sunworldseafood.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Empress Garden",
+            "description": "Empress Garden is a Herne Bay institution that has served Auckland's finest Cantonese cuisine for decades. Renowned for what many consider the best Peking Duck in Auckland — crisp-skinned and carved tableside with traditional accompaniments — and exemplary service that sets it apart from the crowd. The elegant setting and consistently outstanding Cantonese cooking make it a favourite for family celebrations and intimate dinner parties.",
+            "image": "/img/businesses/empress-garden.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "227 Jervois Rd, Herne Bay, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://empressgardenrestaurant.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Spicy House",
+            "description": "Spicy House is a no-frills Dominion Road favourite for authentic Sichuan cuisine at unbeatable prices. The kitchen specialises in bold, peppercorn-laden classics — from fiery chicken with fresh chilli and numbing mapo tofu to hot-and-spicy dry beef. It's the kind of place where the laminated menu runs to four pages, the chilli oil flows freely, and every dish delivers the authentic málà punch that Sichuan food lovers crave.",
+            "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "586 Dominion Road, Balmoral, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.spicyhouseauckland.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Ghost Street",
+            "description": "Ghost Street is a dark, moody underground gem in Britomart that channels the energy of Beijing's famed Gui Jie (Ghost Street) night market. Specialising in Western Chinese and Xi'an-inspired street food, the kitchen turns out incredible cumin-crusted lamb ribs, hand-pulled biang biang noodles, and skewers seasoned with chilli and Sichuan pepper. The atmosphere — low lighting, communal tables, and a buzzing late-night crowd — is unlike any other Chinese restaurant in Auckland.",
+            "image": "/img/businesses/ghost-street.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tuawhiti Lane, Britomart, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://ghoststreetauckland.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tai Er Sichuan Cuisine",
+            "description": "Tai Er is a massively popular Chinese chain that recently opened its first New Zealand location on Lorne Street in Auckland CBD — and the queues have been steady since day one. Famous across China for its signature suancai fish (pickled cabbage and fish in broth), the restaurant offers bold, customizable Sichuan flavours in a sleek, modern setting. It brings a taste of contemporary Chinese urban dining culture to Auckland.",
+            "image": "/img/generated/chinese-restaurants.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lorne Street, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.taier.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What is the best yum cha in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Grand Harbour at Viaduct Harbour is widely considered Auckland's definitive yum cha destination, with over 80 dim sum varieties and traditional trolley service. Huami at SkyCity offers a more refined, modern take with premium items like truffle prawn dumplings. Sun World in Newmarket and Grand Park in Greenlane are excellent alternatives. For the best experience, arrive before 11am on weekends as queues can be lengthy."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Chinese Restaurants",
+          "item": "https://toprated.nz/cities/auckland/cuisine/chinese-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where can I find authentic Sichuan food in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dominion Road is the heartland of Sichuan cuisine in Auckland. Eden Noodles (multiple locations) is beloved for dan dan noodles and chilli oil dumplings. Spicy House and Spicy Joint offer authentic mapo tofu and dishes laden with Sichuan peppercorn. The newly opened Tai Er on Lorne Street in the CBD brings a popular Chinese chain's famous suancai fish to Auckland. For Sichuan hotpot, try Hotpot Duke or Maya Hot Pot on Dominion Road."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Chinese food in Auckland good value?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chinese food in Auckland is arguably the best value dining in the city. On Dominion Road, you can enjoy a generous plate of hand-pulled noodles or a basket of dumplings for $12-$20. Many restaurants are BYO with no corkage, making group dinners exceptionally affordable. Even at premium restaurants like Huami, banquet menus offer far better value per head than equivalent fine dining in other cuisines."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I get good Peking Duck in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Huami at SkyCity serves one of Auckland's most celebrated Peking Ducks, roasted in a fruit-wood oven and carved tableside with traditional pancakes, hoisin, and accompaniments. Empress Garden in Herne Bay has been serving what many consider Auckland's finest Peking Duck for decades. Grand Harbour also offers an excellent version. Most restaurants require Peking Duck to be pre-ordered at least 24 hours in advance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best hotpot restaurant in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hotpot Duke on Dominion Road is a favourite for its quality broths and premium meat selections. Maya Hot Pot, also on Dominion Road, offers both individual and shared hotpots with a wide variety of soup bases. Special Pot in Eden Terrace is known for its authentic málà broth. For a more modern experience, Hi Sweety Hot Pot in Henderson offers over 60 ingredients. All-you-can-eat hotpot typically costs $35-$55 per person."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I find vegetarian Chinese food in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — Chinese cuisine actually has one of the richest vegetarian traditions of any world cuisine, rooted in Buddhist vegetarian cooking. Most Auckland Chinese restaurants offer plenty of vegetable dishes including mapo tofu, stir-fried greens, vegetable dumplings, and fried rice. Many Dominion Road restaurants can adapt dishes on request. For yum cha, look for steamed vegetable dumplings, spring rolls, and congee. Always mention dietary requirements when ordering, as many sauces contain oyster sauce or shrimp paste."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is the best area for Chinese food in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dominion Road (from Balmoral to Mt Eden) is Auckland's most famous Chinese food precinct, with dozens of authentic restaurants covering Sichuan, Northern Chinese, hotpot, and Cantonese cuisine. For premium yum cha, the Viaduct Harbour (Grand Harbour) and CBD (Huami at SkyCity) are top destinations. East Auckland — particularly Botany, Howick, and Pakuranga — also has a thriving Chinese food scene with a strong focus on Cantonese and Southeast Asian-Chinese cuisines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best yum cha in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grand Harbour at Viaduct Harbour is widely considered Auckland's definitive yum cha destination, with over 80 dim sum varieties and traditional trolley service. Huami at SkyCity offers a more refined, modern take with premium items like truffle prawn dumplings. Sun World in Newmarket and Grand Park in Greenlane are excellent alternatives. For the best experience, arrive before 11am on weekends as queues can be lengthy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find authentic Sichuan food in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dominion Road is the heartland of Sichuan cuisine in Auckland. Eden Noodles (multiple locations) is beloved for dan dan noodles and chilli oil dumplings. Spicy House and Spicy Joint offer authentic mapo tofu and dishes laden with Sichuan peppercorn. The newly opened Tai Er on Lorne Street in the CBD brings a popular Chinese chain's famous suancai fish to Auckland. For Sichuan hotpot, try Hotpot Duke or Maya Hot Pot on Dominion Road."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Chinese food in Auckland good value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chinese food in Auckland is arguably the best value dining in the city. On Dominion Road, you can enjoy a generous plate of hand-pulled noodles or a basket of dumplings for $12-$20. Many restaurants are BYO with no corkage, making group dinners exceptionally affordable. Even at premium restaurants like Huami, banquet menus offer far better value per head than equivalent fine dining in other cuisines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I get good Peking Duck in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Huami at SkyCity serves one of Auckland's most celebrated Peking Ducks, roasted in a fruit-wood oven and carved tableside with traditional pancakes, hoisin, and accompaniments. Empress Garden in Herne Bay has been serving what many consider Auckland's finest Peking Duck for decades. Grand Harbour also offers an excellent version. Most restaurants require Peking Duck to be pre-ordered at least 24 hours in advance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best hotpot restaurant in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotpot Duke on Dominion Road is a favourite for its quality broths and premium meat selections. Maya Hot Pot, also on Dominion Road, offers both individual and shared hotpots with a wide variety of soup bases. Special Pot in Eden Terrace is known for its authentic málà broth. For a more modern experience, Hi Sweety Hot Pot in Henderson offers over 60 ingredients. All-you-can-eat hotpot typically costs $35-$55 per person."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I find vegetarian Chinese food in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Chinese cuisine actually has one of the richest vegetarian traditions of any world cuisine, rooted in Buddhist vegetarian cooking. Most Auckland Chinese restaurants offer plenty of vegetable dishes including mapo tofu, stir-fried greens, vegetable dumplings, and fried rice. Many Dominion Road restaurants can adapt dishes on request. For yum cha, look for steamed vegetable dumplings, spring rolls, and congee. Always mention dietary requirements when ordering, as many sauces contain oyster sauce or shrimp paste."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -141,14 +370,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">A Local's Guide to Chinese Dining in Auckland</a></li><li><a href="#pricing-guide">How Much Does Chinese Dining Cost in Auckland? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland has the most vibrant and authentic Chinese dining scene in New Zealand, fuelled by the city's large and diverse Chinese community — from Cantonese families who arrived generations ago to recent migrants from Sichuan, Fujian, and Northern China. The result is a culinary landscape where you can experience Hong Kong-style yum cha with harbour views at the Viaduct, fiery Sichuan <strong>malatang</strong> on Dominion Road's legendary food strip, silky hand-pulled biang biang noodles in Britomart, and refined modern Cantonese with fruit-wood roasted Peking Duck in the CBD. Auckland's Chinese restaurant scene rivals Melbourne and Sydney for depth and authenticity, and this guide helps you navigate the best of it — from $12 dumpling lunches to $200+ banquet experiences. For other cuisines in Auckland, explore our guides to <a href='/cities/auckland/cuisine/japanese-restaurants'>Japanese restaurants</a>, <a href='/cities/auckland/cuisine/indian-restaurants'>Indian restaurants</a>, and <a href='/cities/auckland/cuisine/thai-restaurants'>Thai restaurants</a>.</p>
@@ -165,7 +394,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Does Chinese Dining Cost in Auckland? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Chinese dining in Auckland offers exceptional value at every tier — from some of the most affordable restaurant meals in the city to premium banquet experiences. Here is what you can expect to pay in 2026.</p><p>Many casual Chinese restaurants on Dominion Road and in East Auckland are BYO with no corkage fee, making them outstanding value for group dining.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -186,55 +415,241 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="11">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="6" data-business-name="Eden Noodles Cafe" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/noodles.png" alt="Eden Noodles Cafe" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (1250 reviews)</div>
+                <h3>Eden Noodles Cafe</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mt Eden</div>
+                <p class="text-muted">Eden Noodles is a Dominion Road institution beloved for its authentic hand-pulled Sichuan noodles, famous dan dan dumplings in addictive chilli oil, and customizable spice levels that cater to everyone from mild-seekers to hardcore spice enthusiasts. With multiple Auckland locations, it has become the city&#39;s benchmark for affordable, no-frills Sichuan cuisine — the kind of place where the queue out the door is the best review you&#39;ll ever read.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 105 Dominion Rd, Mount Eden, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.edennoodles.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-6-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:096301598" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 630 1598</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="281" data-business-name="Barilla Dumpling" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Barilla Dumpling" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (1450 reviews)</div>
+                <h3>Barilla Dumpling</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Balmoral</div>
+                <p class="text-muted">Barilla Dumpling is a Dominion Road institution and one of Auckland&#39;s most talked-about Chinese restaurants. Famous for its hand-pulled noodles made fresh before your eyes and perfectly crispy pan-fried dumplings (guotie), it serves authentic Northern Chinese cuisine in a bustling, no-frills atmosphere that transports you straight to a Beijing side street. The queue is long, the tables are shared, and the food is outstanding.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 571 Dominion Road, Balmoral, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.barilladumpling.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-281-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:096313389" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 631 3389</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="8" data-business-name="Huami" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/huami.png" alt="Huami" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (420 reviews)</div>
+                <h3>Huami</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Huami at SkyCity is Auckland&#39;s most sophisticated Chinese fine dining experience, seamlessly bridging Cantonese tradition with contemporary innovation. The restaurant is renowned for its fruit-wood roasted Peking Duck — carved tableside with precision — truffle prawn dumplings during yum cha service, and a stunning interior featuring a dramatic open kitchen and custom Chinese artworks. Ideal for business entertaining or special celebrations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 87 Federal St, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://skycityauckland.co.nz/restaurants/huami?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-8-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093637070" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 363 7070</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="282" data-business-name="Grand Park Chinese Seafood Restaurant" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Grand Park Chinese Seafood Restaurant" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (980 reviews)</div>
+                <h3>Grand Park Chinese Seafood Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Greenlane</div>
+                <p class="text-muted">Under the same ownership as Grand Harbour, Grand Park delivers premium Cantonese dining and outstanding yum cha in Greenlane. With live seafood tanks, a vast dim sum selection, and banquet facilities for large groups, it serves as the go-to destination for Auckland&#39;s Cantonese community south of the CBD. The quality and authenticity match the Viaduct flagship, with easier parking and shorter weekend queues.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 262 Greenlane Rd West, Greenlane, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.grandpark.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-282-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:095246888" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 524 6888</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="7" data-business-name="Grand Harbour" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/dim-sum.png" alt="Grand Harbour" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (850 reviews)</div>
+                <h3>Grand Harbour</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Viaduct</div>
+                <p class="text-muted">Grand Harbour has been Auckland&#39;s definitive yum cha destination for over two decades, drawing weekend crowds from across the city to its harbourside Viaduct location. With over 80 dim sum varieties, traditional trolley service, live seafood tanks, and authentic Hong Kong-style Cantonese cooking, it delivers the full yum cha experience — from silky har gow to crisp BBQ pork buns and delicate turnip cake. A true Auckland dining institution.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Cnr Pakenham St &amp; Viaduct Harbour Ave, Auckland</span>
+                    <div class="business-contact-links"><a href="https://grandharbour.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-7-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093576889" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 357 6889</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="329" data-business-name="Hotpot Duke" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hotpot Duke" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (620 reviews)</div>
+                <h3>Hotpot Duke</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mt Eden</div>
+                <p class="text-muted">Hotpot Duke is Dominion Road&#39;s premier hotpot destination, offering an elevated communal dining experience where you select from a variety of rich broths — including a fiery málà and a nourishing bone marrow — and cook premium meats, seafood, and vegetables tableside. The quality of the ingredients, particularly the thinly-sliced wagyu and handmade fish balls, sets it apart from other Auckland hotpot restaurants.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 480 Dominion Road, Mt Eden, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.hotpotduke.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-329-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:096307777" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 630 7777</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="331" data-business-name="Sun World Seafood Restaurant" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sun World Seafood Restaurant" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (450 reviews)</div>
+                <h3>Sun World Seafood Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">Sun World in Newmarket is one of Auckland&#39;s most reliable destinations for Cantonese seafood and yum cha. The restaurant offers a vast dim sum selection during weekend lunch service, alongside excellent live seafood dishes — particularly their XO sauce rice noodles and salt-and-pepper squid. A perennial favourite with Newmarket shoppers and the local Chinese community alike.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 486 Khyber Pass Road, Newmarket, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.sunworldseafood.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-331-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:095201188" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 520 1188</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="10" data-business-name="Empress Garden" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/empress-garden.png" alt="Empress Garden" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (280 reviews)</div>
+                <h3>Empress Garden</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Herne Bay</div>
+                <p class="text-muted">Empress Garden is a Herne Bay institution that has served Auckland&#39;s finest Cantonese cuisine for decades. Renowned for what many consider the best Peking Duck in Auckland — crisp-skinned and carved tableside with traditional accompaniments — and exemplary service that sets it apart from the crowd. The elegant setting and consistently outstanding Cantonese cooking make it a favourite for family celebrations and intimate dinner parties.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 227 Jervois Rd, Herne Bay, Auckland</span>
+                    <div class="business-contact-links"><a href="https://empressgardenrestaurant.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-10-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093768388" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 376 8388</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="330" data-business-name="Spicy House" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Spicy House" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (540 reviews)</div>
+                <h3>Spicy House</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Balmoral</div>
+                <p class="text-muted">Spicy House is a no-frills Dominion Road favourite for authentic Sichuan cuisine at unbeatable prices. The kitchen specialises in bold, peppercorn-laden classics — from fiery chicken with fresh chilli and numbing mapo tofu to hot-and-spicy dry beef. It&#39;s the kind of place where the laminated menu runs to four pages, the chilli oil flows freely, and every dish delivers the authentic málà punch that Sichuan food lovers crave.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 586 Dominion Road, Balmoral, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.spicyhouseauckland.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-330-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:096308899" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 630 8899</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="9" data-business-name="Ghost Street" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/ghost-street.png" alt="Ghost Street" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (310 reviews)</div>
+                <h3>Ghost Street</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Britomart</div>
+                <p class="text-muted">Ghost Street is a dark, moody underground gem in Britomart that channels the energy of Beijing&#39;s famed Gui Jie (Ghost Street) night market. Specialising in Western Chinese and Xi&#39;an-inspired street food, the kitchen turns out incredible cumin-crusted lamb ribs, hand-pulled biang biang noodles, and skewers seasoned with chilli and Sichuan pepper. The atmosphere — low lighting, communal tables, and a buzzing late-night crowd — is unlike any other Chinese restaurant in Auckland.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tuawhiti Lane, Britomart, Auckland</span>
+                    <div class="business-contact-links"><a href="https://ghoststreetauckland.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-9-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093039393" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 303 9393</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="332" data-business-name="Tai Er Sichuan Cuisine" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/chinese-restaurants.png" alt="Tai Er Sichuan Cuisine" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.5 (280 reviews)</div>
+                <h3>Tai Er Sichuan Cuisine</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Tai Er is a massively popular Chinese chain that recently opened its first New Zealand location on Lorne Street in Auckland CBD — and the queues have been steady since day one. Famous across China for its signature suancai fish (pickled cabbage and fish in broth), the restaurant offers bold, customizable Sichuan flavours in a sleek, modern setting. It brings a taste of contemporary Chinese urban dining culture to Auckland.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Lorne Street, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.taier.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-332-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093005588" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 300 5588</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where is the best area for Chinese food in Auckland?</summary>
                             <p>Dominion Road (from Balmoral to Mt Eden) is Auckland's most famous Chinese food precinct, with dozens of authentic restaurants covering Sichuan, Northern Chinese, hotpot, and Cantonese cuisine. For premium yum cha, the Viaduct Harbour (Grand Harbour) and CBD (Huami at SkyCity) are top destinations. East Auckland — particularly Botany, Howick, and Pakuranga — also has a thriving Chinese food scene with a strong focus on Cantonese and Southeast Asian-Chinese cuisines.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best yum cha in Auckland?</summary>
                             <p>Grand Harbour at Viaduct Harbour is widely considered Auckland's definitive yum cha destination, with over 80 dim sum varieties and traditional trolley service. Huami at SkyCity offers a more refined, modern take with premium items like truffle prawn dumplings. Sun World in Newmarket and Grand Park in Greenlane are excellent alternatives. For the best experience, arrive before 11am on weekends as queues can be lengthy.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find authentic Sichuan food in Auckland?</summary>
                             <p>Dominion Road is the heartland of Sichuan cuisine in Auckland. Eden Noodles (multiple locations) is beloved for dan dan noodles and chilli oil dumplings. Spicy House and Spicy Joint offer authentic mapo tofu and dishes laden with Sichuan peppercorn. The newly opened Tai Er on Lorne Street in the CBD brings a popular Chinese chain's famous suancai fish to Auckland. For Sichuan hotpot, try Hotpot Duke or Maya Hot Pot on Dominion Road.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is Chinese food in Auckland good value?</summary>
                             <p>Chinese food in Auckland is arguably the best value dining in the city. On Dominion Road, you can enjoy a generous plate of hand-pulled noodles or a basket of dumplings for $12-$20. Many restaurants are BYO with no corkage, making group dinners exceptionally affordable. Even at premium restaurants like Huami, banquet menus offer far better value per head than equivalent fine dining in other cuisines.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I get good Peking Duck in Auckland?</summary>
                             <p>Huami at SkyCity serves one of Auckland's most celebrated Peking Ducks, roasted in a fruit-wood oven and carved tableside with traditional pancakes, hoisin, and accompaniments. Empress Garden in Herne Bay has been serving what many consider Auckland's finest Peking Duck for decades. Grand Harbour also offers an excellent version. Most restaurants require Peking Duck to be pre-ordered at least 24 hours in advance.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best hotpot restaurant in Auckland?</summary>
                             <p>Hotpot Duke on Dominion Road is a favourite for its quality broths and premium meat selections. Maya Hot Pot, also on Dominion Road, offers both individual and shared hotpots with a wide variety of soup bases. Special Pot in Eden Terrace is known for its authentic málà broth. For a more modern experience, Hi Sweety Hot Pot in Henderson offers over 60 ingredients. All-you-can-eat hotpot typically costs $35-$55 per person.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can I find vegetarian Chinese food in Auckland?</summary>
                             <p>Yes — Chinese cuisine actually has one of the richest vegetarian traditions of any world cuisine, rooted in Buddhist vegetarian cooking. Most Auckland Chinese restaurants offer plenty of vegetable dishes including mapo tofu, stir-fried greens, vegetable dumplings, and fried rice. Many Dominion Road restaurants can adapt dishes on request. For yum cha, look for steamed vegetable dumplings, spring rolls, and congee. Always mention dietary requirements when ordering, as many sauces contain oyster sauce or shrimp paste.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -242,7 +657,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -305,7 +720,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -318,8 +733,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

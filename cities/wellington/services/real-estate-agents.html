@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much commission do Wellington real estate agents charge?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington agent commissions typically range from 2.5% to 3.95% of the sale price, with common structures being 3.95% on the first $400,000 and 2% on the balance. Always negotiate — commission rates are not fixed by law."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/services/real-estate-agents#business-list",
+      "name": "Real Estate Agents in Wellington",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tommy's Real Estate",
+            "description": "Wellington's market leader with over 25 years of award-winning results. Deep local knowledge and a team of top-performing agents across the greater Wellington region.",
+            "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lower Hutt, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.tommys.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tommy's Real Estate Wellington",
+            "description": "Wellington's leading independent real estate agency with deep local knowledge across the capital region. Specialists in Mount Victoria, Thorndon, Karori, and the Hutt Valley. Award-winning marketing, proven sales results, and a trusted name for over 20 years.",
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wellington CBD",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.tommys.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Lowe & Co Realty",
+            "description": "Award-winning agency named REINZ Office of the Year two consecutive years. Employs a significant percentage of Wellington's top 10 agents with exceptional results.",
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wellington Central",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.loweandco.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What's the Wellington property market like?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington's market is characterised by limited supply and strong demand, particularly in popular suburbs like Mount Victoria, Thorndon, and Karori. The compact geography and earthquake-strengthening requirements create unique market dynamics. Median prices vary significantly by suburb."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/wellington/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Real Estate Agents",
+          "item": "https://toprated.nz/cities/wellington/services/real-estate-agents"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I look for in a Wellington real estate agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for agents with proven recent sales in your target suburb, strong vendor and buyer reviews, professional marketing capability, and deep local knowledge including awareness of earthquake ratings and council requirements. Interview at least three agents."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much commission do Wellington real estate agents charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington agent commissions typically range from 2.5% to 3.95% of the sale price, with common structures being 3.95% on the first $400,000 and 2% on the balance. Always negotiate — commission rates are not fixed by law."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the Wellington property market like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington's market is characterised by limited supply and strong demand, particularly in popular suburbs like Mount Victoria, Thorndon, and Karori. The compact geography and earthquake-strengthening requirements create unique market dynamics. Median prices vary significantly by suburb."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for in a Wellington real estate agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for agents with proven recent sales in your target suburb, strong vendor and buyer reviews, professional marketing capability, and deep local knowledge including awareness of earthquake ratings and council requirements. Interview at least three agents."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's property market is one of New Zealand's most dynamic, with the capital's compact geography, earthquake considerations, and proximity to Parliament creating a unique real estate landscape. The city's top-rated agents bring deep knowledge of micro-markets — from character villas in Mount Victoria to modern townhouses in Petone, family homes in Karori, and investment properties in the Hutt Valley. Whether buying, selling, or investing, our curated list features Wellington's most trusted real estate professionals.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="250" data-business-name="Tommy&#39;s Real Estate" data-city-slug="wellington" data-category-slug="services" data-page-slug="real-estate-agents" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tommy&#39;s Real Estate" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (620 reviews)</div>
+                <h3>Tommy&#39;s Real Estate</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Lower Hutt</div>
+                <p class="text-muted">Wellington&#39;s market leader with over 25 years of award-winning results. Deep local knowledge and a team of top-performing agents across the greater Wellington region.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Lower Hutt, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.tommys.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-250-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="308" data-business-name="Tommy&#39;s Real Estate Wellington" data-city-slug="wellington" data-category-slug="services" data-page-slug="real-estate-agents" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tommy&#39;s Real Estate Wellington" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (680 reviews)</div>
+                <h3>Tommy&#39;s Real Estate Wellington</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Wellington&#39;s leading independent real estate agency with deep local knowledge across the capital region. Specialists in Mount Victoria, Thorndon, Karori, and the Hutt Valley. Award-winning marketing, proven sales results, and a trusted name for over 20 years.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wellington CBD</span>
+                    <div class="business-contact-links"><a href="https://www.tommys.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-308-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="251" data-business-name="Lowe &amp; Co Realty" data-city-slug="wellington" data-category-slug="services" data-page-slug="real-estate-agents" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Lowe &amp; Co Realty" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (410 reviews)</div>
+                <h3>Lowe &amp; Co Realty</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Award-winning agency named REINZ Office of the Year two consecutive years. Employs a significant percentage of Wellington&#39;s top 10 agents with exceptional results.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wellington Central</span>
+                    <div class="business-contact-links"><a href="https://www.loweandco.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-251-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much commission do Wellington real estate agents charge?</summary>
                             <p>Wellington agent commissions typically range from 2.5% to 3.95% of the sale price, with common structures being 3.95% on the first $400,000 and 2% on the balance. Always negotiate — commission rates are not fixed by law.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What's the Wellington property market like?</summary>
                             <p>Wellington's market is characterised by limited supply and strong demand, particularly in popular suburbs like Mount Victoria, Thorndon, and Karori. The compact geography and earthquake-strengthening requirements create unique market dynamics. Median prices vary significantly by suburb.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I look for in a Wellington real estate agent?</summary>
                             <p>Look for agents with proven recent sales in your target suburb, strong vendor and buyer reviews, professional marketing capability, and deep local knowledge including awareness of earthquake ratings and council requirements. Interview at least three agents.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where is the best Chinese food in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington's best Chinese restaurants are concentrated in the CBD around Courtenay Place, Dixon Street, and Willis Street. Petone's Jackson Street also has excellent Chinese dining options. The compact city makes it easy to explore multiple venues."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/cuisine/chinese-restaurants#business-list",
+      "name": "Chinese Restaurants in Wellington",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "KC Café & Restaurant",
+            "description": "Modern Chinese restaurant in the CBD mixing traditional flavours with contemporary Wellington flair. Sichuan specials, hand-made dumplings, and late-night dining. Popular with the after-work crowd and theatre-goers.",
+            "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Dixon Street, Wellington CBD",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.kccafe.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Dragon Restaurant",
+            "description": "Wellington institution on Courtenay Place serving authentic Cantonese cuisine and yum cha since 1978. Famous weekend dim sum trolley service, fresh seafood, and classic Chinese banquet menus in the heart of the capital's dining precinct.",
+            "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Courtenay Place, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.dragonrestaurant.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Chinatown Wellington",
+            "description": "Authentic Chinese flavors in the capital. Dumplings, noodles, and Peking duck specialties.",
+            "image": "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Courtenay Place, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.chinatownwgtn.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is there good yum cha in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, several Wellington restaurants offer yum cha (dim sum) on weekends, particularly in the CBD. Dragon Restaurant and Grand Century are popular choices. Book ahead for weekend brunch sessions as they fill up quickly."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/wellington/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Chinese Restaurants",
+          "item": "https://toprated.nz/cities/wellington/cuisine/chinese-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are Wellington Chinese restaurants open late?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many Wellington Chinese restaurants stay open until 10–11pm, with some Courtenay Place venues open until midnight or later on weekends — perfect for post-theatre or late-night dining."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is the best Chinese food in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington's best Chinese restaurants are concentrated in the CBD around Courtenay Place, Dixon Street, and Willis Street. Petone's Jackson Street also has excellent Chinese dining options. The compact city makes it easy to explore multiple venues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there good yum cha in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, several Wellington restaurants offer yum cha (dim sum) on weekends, particularly in the CBD. Dragon Restaurant and Grand Century are popular choices. Book ahead for weekend brunch sessions as they fill up quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Wellington Chinese restaurants open late?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Wellington Chinese restaurants stay open until 10–11pm, with some Courtenay Place venues open until midnight or later on weekends — perfect for post-theatre or late-night dining."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's Chinese dining scene punches well above its weight, with authentic regional cuisines tucked into the capital's laneways and main streets. From late-night dumpling houses on Courtenay Place to traditional Cantonese restaurants in the CBD and modern Chinese fusion in Petone, Wellington offers an impressive variety of Chinese culinary traditions — all within walking distance of each other in the compact city centre.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="297" data-business-name="KC Café &amp; Restaurant" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="KC Café &amp; Restaurant" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (320 reviews)</div>
+                <h3>KC Café &amp; Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Modern Chinese restaurant in the CBD mixing traditional flavours with contemporary Wellington flair. Sichuan specials, hand-made dumplings, and late-night dining. Popular with the after-work crowd and theatre-goers.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Dixon Street, Wellington CBD</span>
+                    <div class="business-contact-links"><a href="https://www.kccafe.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-297-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="296" data-business-name="Dragon Restaurant" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dragon Restaurant" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (580 reviews)</div>
+                <h3>Dragon Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Courtenay Place</div>
+                <p class="text-muted">Wellington institution on Courtenay Place serving authentic Cantonese cuisine and yum cha since 1978. Famous weekend dim sum trolley service, fresh seafood, and classic Chinese banquet menus in the heart of the capital&#39;s dining precinct.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Courtenay Place, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.dragonrestaurant.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-296-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="178" data-business-name="Chinatown Wellington" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="chinese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chinatown Wellington" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (340 reviews)</div>
+                <h3>Chinatown Wellington</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Courtenay Place</div>
+                <p class="text-muted">Authentic Chinese flavors in the capital. Dumplings, noodles, and Peking duck specialties.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Courtenay Place, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.chinatownwgtn.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-178-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where is the best Chinese food in Wellington?</summary>
                             <p>Wellington's best Chinese restaurants are concentrated in the CBD around Courtenay Place, Dixon Street, and Willis Street. Petone's Jackson Street also has excellent Chinese dining options. The compact city makes it easy to explore multiple venues.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is there good yum cha in Wellington?</summary>
                             <p>Yes, several Wellington restaurants offer yum cha (dim sum) on weekends, particularly in the CBD. Dragon Restaurant and Grand Century are popular choices. Book ahead for weekend brunch sessions as they fill up quickly.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are Wellington Chinese restaurants open late?</summary>
                             <p>Many Wellington Chinese restaurants stay open until 10–11pm, with some Courtenay Place venues open until midnight or later on weekends — perfect for post-theatre or late-night dining.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

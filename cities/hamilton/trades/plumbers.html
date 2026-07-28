@@ -45,55 +45,165 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Who offers emergency plumbing in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Several businesses on this page advertise emergency or urgent plumbing support, including Soda Plumbing, Hamilton Plumbing and Plumbway. Availability can change, so call to confirm the response window and after-hours price before booking."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/trades/plumbers#business-list",
+      "name": "Plumbers in Hamilton",
+      "numberOfItems": 4,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Soda Plumbing",
+            "description": "Hamilton-based, family-owned plumbing, gas and drainage team serving residential and commercial customers across Hamilton and the Waikato. Their site lists emergency repairs, quotes and wider Waikato service areas.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hamilton, Waikato",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://sodaplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "iPlumber",
+            "description": "Hamilton plumbing and gasfitting team with more than 20 years of experience. The business handles repairs, maintenance, plumbing, roofing and gasfitting, and asks urgent customers to call directly.",
+            "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "8/232 Ellis Street, Frankton, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.iplumber.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Hamilton Plumbing",
+            "description": "Long-established Hamilton and Waikato plumbing, gasfitting, commercial and residential team. Its official site lists a 24-hour emergency plumber alongside office-hours enquiries.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7 Peregrine Place, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://hamiltonplumbing.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Plumbway",
+            "description": "Hamilton plumbing, gasfitting and drainlaying business serving the Waikato. Its services include maintenance, renovations, hot-water cylinders, new builds and 24/7 emergency plumbing.",
+            "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hamilton, Waikato",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.plumbway.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I ask before booking a Hamilton plumber?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Confirm that the business handles your exact job, then ask about call-out charges, hourly and after-hours rates, expected response time, licensing, the written scope and any materials or exclusions. For larger work, request a site assessment and quote."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/hamilton/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Plumbers",
+          "item": "https://toprated.nz/cities/hamilton/trades/plumbers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can a Hamilton plumber help with gasfitting and drainage too?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some can, but you should confirm the exact service and qualifications before booking. Soda Plumbing, iPlumber, Hamilton Plumbing and Plumbway each describe gasfitting, drainage or both on their official sites; the relevant trade and scope depend on the job."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does a plumber cost in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The total depends on urgency, diagnosis time, access and materials. Ask for the call-out structure and hourly rate for repairs, and a written scope for installations or renovations. After-hours work is normally more expensive."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a licensed plumber for hot-water or gas work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Plumbing, gasfitting and drainlaying are regulated trades in New Zealand. Ask the provider what licence and documentation apply to your job before the work begins, particularly for gas appliances, hot-water systems and drainage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I compare plumbing quotes for a bathroom renovation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Compare the written scope, not just the total. Check fixtures and materials, rough-in and fit-off stages, waterproofing and trade coordination, exclusions, GST, disposal and how variations will be approved."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who offers emergency plumbing in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Several businesses on this page advertise emergency or urgent plumbing support, including Soda Plumbing, Hamilton Plumbing and Plumbway. Availability can change, so call to confirm the response window and after-hours price before booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I ask before booking a Hamilton plumber?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm that the business handles your exact job, then ask about call-out charges, hourly and after-hours rates, expected response time, licensing, the written scope and any materials or exclusions. For larger work, request a site assessment and quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a Hamilton plumber help with gasfitting and drainage too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some can, but you should confirm the exact service and qualifications before booking. Soda Plumbing, iPlumber, Hamilton Plumbing and Plumbway each describe gasfitting, drainage or both on their official sites; the relevant trade and scope depend on the job."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a plumber cost in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total depends on urgency, diagnosis time, access and materials. Ask for the call-out structure and hourly rate for repairs, and a written scope for installations or renovations. After-hours work is normally more expensive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a licensed plumber for hot-water or gas work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plumbing, gasfitting and drainlaying are regulated trades in New Zealand. Ask the provider what licence and documentation apply to your job before the work begins, particularly for gas appliances, hot-water systems and drainage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I compare plumbing quotes for a bathroom renovation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare the written scope, not just the total. Check fixtures and materials, rough-in and fit-off stages, waterproofing and trade coordination, exclusions, GST, disposal and how variations will be approved."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +243,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose a Plumber in Hamilton</a></li><li><a href="#pricing-guide">What Do Plumbers Cost in Hamilton? (2026 Planning Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Need a plumber in Hamilton? This guide compares four current Hamilton and Waikato plumbing businesses for urgent repairs, maintenance, gasfitting, drainage, hot-water work and renovations. Start by matching the provider to the job: an overnight burst pipe needs an advertised emergency response, while a bathroom or kitchen project needs a clear written scope and coordination with other trades. The listings below are a practical shortlist, not a claim that one business is right for every job. We checked each business's own website for its stated services and contact details in July 2026. For connected project work, see our Hamilton guides to <a href='/cities/hamilton/trades/builders'>builders</a>, <a href='/cities/hamilton/trades/electricians'>electricians</a> and <a href='/cities/hamilton/trades/renovation-services'>renovation services</a>.</p>
@@ -157,7 +267,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> What Do Plumbers Cost in Hamilton? (2026 Planning Guide)</h2>
                     <div class="seo-guide-content"><p>Hamilton plumbing costs vary by urgency, access, diagnosis time, materials and whether the work includes gasfitting or drainlaying. For repairs, ask for the call-out structure, hourly rate, vehicle charge and after-hours uplift before you approve a visit. For installations or renovation work, request a written quote based on a site assessment.</p><p>The ranges below are planning figures, not quotes. Compare scope and materials as well as price, and confirm GST, disposal and any follow-up visit costs.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +288,117 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="4">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="41" data-business-name="Soda Plumbing" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Soda Plumbing" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Soda Plumbing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Hamilton</div>
+                <p class="text-muted">Hamilton-based, family-owned plumbing, gas and drainage team serving residential and commercial customers across Hamilton and the Waikato. Their site lists emergency repairs, quotes and wider Waikato service areas.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hamilton, Waikato</span>
+                    <div class="business-contact-links"><a href="https://sodaplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-41-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0272219060" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 027 221 9060</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="42" data-business-name="iPlumber" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="iPlumber" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>iPlumber</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Frankton</div>
+                <p class="text-muted">Hamilton plumbing and gasfitting team with more than 20 years of experience. The business handles repairs, maintenance, plumbing, roofing and gasfitting, and asks urgent customers to call directly.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 8/232 Ellis Street, Frankton, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://www.iplumber.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-42-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:078397586" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 07 839 7586</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="43" data-business-name="Hamilton Plumbing" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Hamilton Plumbing" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Hamilton Plumbing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Hamilton</div>
+                <p class="text-muted">Long-established Hamilton and Waikato plumbing, gasfitting, commercial and residential team. Its official site lists a 24-hour emergency plumber alongside office-hours enquiries.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 7 Peregrine Place, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://hamiltonplumbing.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-43-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:078470609" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 07 847 0609</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="44" data-business-name="Plumbway" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Plumbway" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Plumbway</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Hamilton</div>
+                <p class="text-muted">Hamilton plumbing, gasfitting and drainlaying business serving the Waikato. Its services include maintenance, renovations, hot-water cylinders, new builds and 24/7 emergency plumbing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hamilton, Waikato</span>
+                    <div class="business-contact-links"><a href="https://www.plumbway.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-44-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0224535783" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 022 453 5783</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Who offers emergency plumbing in Hamilton?</summary>
                             <p>Several businesses on this page advertise emergency or urgent plumbing support, including Soda Plumbing, Hamilton Plumbing and Plumbway. Availability can change, so call to confirm the response window and after-hours price before booking.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I ask before booking a Hamilton plumber?</summary>
                             <p>Confirm that the business handles your exact job, then ask about call-out charges, hourly and after-hours rates, expected response time, licensing, the written scope and any materials or exclusions. For larger work, request a site assessment and quote.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can a Hamilton plumber help with gasfitting and drainage too?</summary>
                             <p>Some can, but you should confirm the exact service and qualifications before booking. Soda Plumbing, iPlumber, Hamilton Plumbing and Plumbway each describe gasfitting, drainage or both on their official sites; the relevant trade and scope depend on the job.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a plumber cost in Hamilton?</summary>
                             <p>The total depends on urgency, diagnosis time, access and materials. Ask for the call-out structure and hourly rate for repairs, and a written scope for installations or renovations. After-hours work is normally more expensive.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a licensed plumber for hot-water or gas work?</summary>
                             <p>Plumbing, gasfitting and drainlaying are regulated trades in New Zealand. Ask the provider what licence and documentation apply to your job before the work begins, particularly for gas appliances, hot-water systems and drainage.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How do I compare plumbing quotes for a bathroom renovation?</summary>
                             <p>Compare the written scope, not just the total. Check fixtures and materials, rough-in and fit-off stages, waterproofing and trade coordination, exclusions, GST, disposal and how variations will be approved.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +406,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +469,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +482,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

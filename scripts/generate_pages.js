@@ -133,7 +133,7 @@ function normalizeInternalLinks(html = '') {
 }
 
 function getBaseTemplate(title, description, pagePath, content, schema = null) {
-    const schemaScript = schema ? `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>` : '';
+    const schemaScript = schema ? `<script type="application/ld+json">${serializeJsonLd(schema)}</script>` : '';
     const pageUrl = toAbsoluteUrl(pagePath);
     return baseTemplate
         .replace(/<!-- PAGE_TITLE_PLACEHOLDER -->/g, title)
@@ -141,6 +141,98 @@ function getBaseTemplate(title, description, pagePath, content, schema = null) {
         .replace(/<!-- PAGE_URL_PLACEHOLDER -->/g, pageUrl)
         .replace('<!-- PAGE_CONTENT_PLACEHOLDER -->', normalizeInternalLinks(content))
         .replace('<!-- SCHEMA_PLACEHOLDER -->', schemaScript);
+}
+
+function serializeJsonLd(value) {
+    return JSON.stringify(value, null, 2).replace(/</g, '\\u003c');
+}
+
+function escapeHtml(value = '') {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function getTrackedOutboundUrl(destination, business, linkType) {
+    try {
+        const url = new URL(destination);
+        url.searchParams.set('utm_source', 'toprated.nz');
+        url.searchParams.set('utm_medium', 'referral');
+        url.searchParams.set('utm_campaign', 'business_listing');
+        url.searchParams.set('utm_content', `business-${business.id}-${linkType}`);
+        return url.href;
+    } catch (error) {
+        return destination;
+    }
+}
+
+function sortBusinessesForDisplay(items) {
+    return [...items].sort((a, b) => {
+        const aFeatured = a.featured === true;
+        const bFeatured = b.featured === true;
+        if (aFeatured !== bFeatured) return aFeatured ? -1 : 1;
+
+        const aBasic = a.listingTier === 'basic';
+        const bBasic = b.listingTier === 'basic';
+        if (aBasic !== bBasic) return aBasic ? 1 : -1;
+
+        const aHasRating = typeof a.rating === 'number' && typeof a.reviews === 'number' && a.reviews > 0;
+        const bHasRating = typeof b.rating === 'number' && typeof b.reviews === 'number' && b.reviews > 0;
+        if (aHasRating !== bHasRating) return aHasRating ? -1 : 1;
+        return (b.rating || 0) - (a.rating || 0) || (b.reviews || 0) - (a.reviews || 0);
+    });
+}
+
+function getLeafBusinesses(citySlug, categorySlug, pageSlug) {
+    return sortBusinessesForDisplay(businesses.filter(business =>
+        business.citySlug === citySlug &&
+        business.categorySlug === categorySlug &&
+        business.pageSlug === pageSlug
+    ));
+}
+
+function renderBusinessCard(business) {
+    const hasRating = typeof business.rating === 'number' && typeof business.reviews === 'number' && business.reviews > 0;
+    const isFeatured = business.featured === true;
+    const isBasic = business.listingTier === 'basic';
+    const isPremium = hasRating && business.rating >= 4.8;
+    const listingTier = isFeatured ? 'featured' : (isBasic ? 'basic' : 'standard');
+    const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
+    const ratingBadge = hasRating
+        ? `<div class="rating-badge"><i class="fas fa-star"></i> ${escapeHtml(business.rating)} (${escapeHtml(business.reviews)} reviews)</div>`
+        : '<div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>';
+    const serviceHighlights = isFeatured && Array.isArray(business.highlightedServices) && business.highlightedServices.length
+        ? `<div class="business-services"><span>Main services</span><div class="business-service-tags">${business.highlightedServices.map(service => `<span>${escapeHtml(service)}</span>`).join('')}</div></div>`
+        : '';
+    const phoneHref = business.phone ? business.phone.replace(/[^+\d]/g, '') : '';
+    const contactLinks = [
+        !isBasic && business.website ? `<a href="${escapeHtml(getTrackedOutboundUrl(business.website, business, 'website'))}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a>` : '',
+        !isBasic && business.bookingUrl ? `<a href="${escapeHtml(getTrackedOutboundUrl(business.bookingUrl, business, 'booking'))}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="booking"><i class="fas fa-calendar-check"></i> Book a consultation</a>` : '',
+        !isBasic && business.phone ? `<a href="tel:${escapeHtml(phoneHref)}" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> ${escapeHtml(business.phone)}</a>` : ''
+    ].filter(Boolean).join('');
+
+    return `
+        <div class="glass-card business-card-horizontal ${isBasic ? 'basic-listing-card' : ''} ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${escapeHtml(business.id)}" data-business-name="${escapeHtml(business.name)}" data-city-slug="${escapeHtml(business.citySlug || '')}" data-category-slug="${escapeHtml(business.categorySlug || '')}" data-page-slug="${escapeHtml(business.pageSlug || '')}" data-listing-tier="${listingTier}">
+            <div class="business-image-container">
+                <img src="${escapeHtml(business.image || '/img/default-business.jpg')}" alt="${escapeHtml(business.name)}" class="business-image${imageFitClass}" loading="lazy">
+                ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}
+            </div>
+            <div class="business-info">
+                ${ratingBadge}
+                <h3>${escapeHtml(business.name)}</h3>
+                ${business.neighborhood ? `<div class="neighborhood-tag"><i class="fas fa-map-pin"></i> ${escapeHtml(business.neighborhood)}</div>` : ''}
+                <p class="text-muted">${escapeHtml(business.description)}</p>
+                ${serviceHighlights}
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> ${escapeHtml(business.address || business.city || 'New Zealand')}</span>
+                    <div class="business-contact-links">${contactLinks}</div>
+                </div>
+            </div>
+        </div>
+    `.replace(/^[ \t]+$/gm, '').trim();
 }
 
 function formatSlugLabel(value) {
@@ -377,6 +469,70 @@ function buildFaqSchema(faqs = []) {
     };
 }
 
+function buildLeafSchema(city, categorySlug, pageSlug, pageName, pageBusinesses, faqs = []) {
+    const pageUrl = toAbsoluteUrl(`/cities/${city.slug}/${categorySlug}/${pageSlug}`);
+    const itemList = {
+        "@type": "ItemList",
+        "@id": `${pageUrl}#business-list`,
+        "name": `${pageName} in ${city.name}`,
+        "numberOfItems": pageBusinesses.length,
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "itemListElement": pageBusinesses.map((business, index) => {
+            const item = {
+                "@type": "LocalBusiness",
+                "name": business.name,
+                "description": business.description,
+                "image": business.image,
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": business.address,
+                    "addressLocality": business.city || city.name,
+                    "addressCountry": "NZ"
+                }
+            };
+
+            if (business.listingTier !== 'basic' && business.website) {
+                item.url = business.website;
+            }
+
+            return {
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": item
+            };
+        })
+    };
+    const breadcrumbList = {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL },
+            { "@type": "ListItem", "position": 2, "name": city.name, "item": toAbsoluteUrl(`/cities/${city.slug}`) },
+            { "@type": "ListItem", "position": 3, "name": getCategoryName(categorySlug), "item": toAbsoluteUrl(`/cities/${city.slug}/${categorySlug}/`) },
+            { "@type": "ListItem", "position": 4, "name": pageName, "item": pageUrl }
+        ]
+    };
+    const graph = [itemList, breadcrumbList];
+
+    if (faqs.length > 0) {
+        graph.push({
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
+                }
+            }))
+        });
+    }
+
+    return {
+        "@context": "https://schema.org",
+        "@graph": graph
+    };
+}
+
 function getCityHubSeo(city) {
     const profile = cityProfiles[city.slug] || cityProfiles['auckland'];
     return {
@@ -535,7 +691,7 @@ function getCategoryHubSeo(city, categorySlug) {
     };
 }
 
-function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg', linkContext = null) {
+function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg', linkContext = null, pageBusinesses = null) {
     // --- Build Table of Contents ---
     let tocItems = [];
     if (specificSeo) {
@@ -671,8 +827,10 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
         ${editorialContent}
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list"${Array.isArray(pageBusinesses) ? ` data-rendered="static" data-business-count="${pageBusinesses.length}"` : ''}>
+            ${Array.isArray(pageBusinesses)
+                ? pageBusinesses.map(renderBusinessCard).join('\n')
+                : '<p class="loading">Loading top-rated businesses...</p>'}
         </div>
     </section>
     ${faqHtml}
@@ -681,8 +839,8 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
         <div id="related"></div>
     </section>
     ${trustHtml}
-    <script id="schema" type="application/ld+json"></script>
-    `;
+    ${Array.isArray(pageBusinesses) ? '' : '<script id="schema" type="application/ld+json"></script>'}
+    `.replace(/^[ \t]+$/gm, '');
 }
 
 function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null, linkContext = null) {
@@ -902,13 +1060,14 @@ cities.forEach(city => {
             const specificSeo = seoContent[pageKey] || null;
             const pageTitle = getLeafPageTitle(city, map.name, specificSeo);
             const metaDescription = getLeafMetaDescription(city, map.name, specificSeo);
+            const pageBusinesses = getLeafBusinesses(city.slug, map.cat, sc);
 
             const html = getBaseTemplate(
                 pageTitle,
                 metaDescription,
                 `/cities/${city.slug}/${map.cat}/${sc}`,
-                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland'], { type: 'leaf', city, categorySlug: map.cat, pageSlug: sc, pageName: map.name }),
-                buildFaqSchema(specificSeo?.faqs || [])
+                generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland'], { type: 'leaf', city, categorySlug: map.cat, pageSlug: sc, pageName: map.name }, pageBusinesses),
+                buildLeafSchema(city, map.cat, sc, map.name, pageBusinesses, specificSeo?.faqs || [])
             );
             fs.writeFileSync(pagePath, html);
         });

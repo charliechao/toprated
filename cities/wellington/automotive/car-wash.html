@@ -45,47 +45,208 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a car wash cost in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Current published examples start at $2 for 1.5 minutes at SmartWash and from $6 at Porirua Car Wash. Dynamic Car Grooming lists a $45 hand wash and $65 hand wash with vacuum. SelectValet mobile services start at $49, while premium detailing can start around $139 for exterior work or $279 for a full detail."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/automotive/car-wash#business-list",
+      "name": "Car Wash in Wellington",
+      "numberOfItems": 7,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Clean Car Collective",
+            "description": "Clean Car Collective provides professional car detailing from its Te Aro studio, with mobile service, CBD drop-off, interior and exterior detailing, paint correction, ceramic coating, and vehicle pick-up options.",
+            "image": "https://cleancarcollective.co.nz/wp-content/uploads/2025/04/Store-Front-scaled.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "8 Ebor Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://cleancarcollective.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Spotless Detailing",
+            "description": "Spotless Detailing offers mobile and Newtown studio detailing across Wellington, including interior and exterior packages, paint correction, ceramic coating, pet-hair removal, and upholstery shampooing.",
+            "image": "https://static.wixstatic.com/media/01acbc_9d3f0b468db5496f9b78697ad7cbe9a0~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85/IMG_6017_JPEG.jpeg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Newtown, Wellington, with mobile service across the wider region",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.spotlessdetailing.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "SelectValet Wellington",
+            "description": "SelectValet Wellington is a fully mobile vehicle-grooming service that comes to homes and workplaces with its own equipment, covering exterior washes, interior cleaning, full grooming, upholstery shampooing, and cut-and-polish work.",
+            "image": "https://www.selectvaletwellington.com/images/selectvalet-banner.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mobile service across Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.selectvaletwellington.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Dynamic Car Grooming",
+            "description": "Dynamic Car Grooming is a Petone hand-wash and detailing workshop offering exterior washes, vacuum packages, interior deep cleaning, upholstery shampooing, paint protection, scratch removal, and full grooming packages.",
+            "image": "https://dynamiccargrooming.co.nz/wp-content/uploads/2023/09/about-us.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "50 Gracefield Road, Petone, Lower Hutt 5010",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://dynamiccargrooming.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "SmartWash",
+            "description": "SmartWash provides self-service wash bays in Newtown and Tawa, with timed high-pressure washing, rinse and wax options, engine-bay degreaser, on-site vacuums, and card or token payment.",
+            "image": "https://smartwash.nz/assets/Uploads/Website-Banner-1080x486.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "35 Constable Street, Newtown; 28 Main Road, Tawa",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://smartwash.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Porirua Car Wash",
+            "description": "Porirua Car Wash is a 24-hour self-service facility with high-pressure soap and rinse, a foaming-brush option, pressure wax, vacuuming, and timed wash bays for cars, vans, bikes, boats, and utes.",
+            "image": "https://www.poriruacarwash.co.nz/images/carwash/social-panel.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Porirua Mega Centre, corner Tutu Place and Wi Neera Drive, Porirua 5022",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.poriruacarwash.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Espresso Car Wash - Wellington Porirua",
+            "description": "Espresso Car Wash at North City Shopping Centre provides professional hand washing and vehicle grooming, including express and classic washes, interior grooming, polishing, headlight restoration, and paint-care services.",
+            "image": "https://espressocarwash.co.nz/img/og-image.png?20260216",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "North City Shopping Centre, 2 Titahi Bay Road, Porirua 5022",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://espressocarwash.co.nz/centres/wellington-north-city-shopping-centre/"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where are the self-service car washes in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SmartWash operates self-service sites at 35 Constable Street in Newtown and 28 Main Road in Tawa. Porirua Car Wash at Porirua Mega Centre is another self-service option and is advertised as open 24 hours."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/wellington/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Car Wash",
+          "item": "https://toprated.nz/cities/wellington/automotive/car-wash"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Which Wellington car washes come to my home or workplace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SelectValet is fully mobile and brings its own equipment. Spotless Detailing provides mobile service when water and power are available nearby, while Clean Car Collective offers mobile service alongside its Te Aro studio and CBD drop-off options."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between a car wash and car detailing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A car wash mainly removes surface dirt from the exterior and may include a quick vacuum. Detailing is more thorough and can include stain extraction, upholstery shampooing, pet-hair removal, paint decontamination, polishing, scratch reduction, and protective coatings."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do Wellington mobile detailers need access to water and power?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the provider. SelectValet says it brings what it needs, including power and shelter. Spotless Detailing asks for water and power within 20 metres for mobile work, with a studio or drop-off option when that is not available. Confirm site requirements when booking."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a car wash cost in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Current published examples start at $2 for 1.5 minutes at SmartWash and from $6 at Porirua Car Wash. Dynamic Car Grooming lists a $45 hand wash and $65 hand wash with vacuum. SelectValet mobile services start at $49, while premium detailing can start around $139 for exterior work or $279 for a full detail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are the self-service car washes in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SmartWash operates self-service sites at 35 Constable Street in Newtown and 28 Main Road in Tawa. Porirua Car Wash at Porirua Mega Centre is another self-service option and is advertised as open 24 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Wellington car washes come to my home or workplace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SelectValet is fully mobile and brings its own equipment. Spotless Detailing provides mobile service when water and power are available nearby, while Clean Car Collective offers mobile service alongside its Te Aro studio and CBD drop-off options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a car wash and car detailing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A car wash mainly removes surface dirt from the exterior and may include a quick vacuum. Detailing is more thorough and can include stain extraction, upholstery shampooing, pet-hair removal, paint decontamination, polishing, scratch reduction, and protective coatings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Wellington mobile detailers need access to water and power?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the provider. SelectValet says it brings what it needs, including power and shelter. Spotless Detailing asks for water and power within 20 metres for mobile work, with a studio or drop-off option when that is not available. Confirm site requirements when booking."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -125,14 +286,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">Which Wellington Car Wash Should You Choose?</a></li><li><a href="#pricing-guide">How Much Does a Car Wash Cost in Wellington? (July 2026)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">The best car wash in Wellington depends on whether you want the lowest-cost self-service wash, a convenient mobile groom, a staffed hand wash, or paint-restoration detailing. This July 2026 guide compares seven operating providers across <strong>Te Aro, Newtown, Tawa, Petone, Porirua, and the wider Wellington region</strong>. For a quick DIY wash, compare SmartWash and Porirua Car Wash. For a mobile clean at home or work, consider SelectValet, Spotless Detailing, or Clean Car Collective. Dynamic Car Grooming and Espresso Car Wash provide fixed-location hand-wash and grooming options. Published prices and service details were checked against each provider's official website, but vehicle size, condition, travel, and add-ons can change the final quote.</p>
@@ -149,7 +310,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Does a Car Wash Cost in Wellington? (July 2026)</h2>
                     <div class="seo-guide-content"><p>Published Wellington prices range from a few dollars for timed self-service equipment to several hundred dollars for deep interior work or paint correction. The examples below were visible on provider websites when this guide was checked. Larger vehicles, heavy pet hair, mould, stains, tar, and paint defects can increase the price.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -170,45 +331,163 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="7">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="260" data-business-name="Clean Car Collective" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://cleancarcollective.co.nz/wp-content/uploads/2025/04/Store-Front-scaled.jpg" alt="Clean Car Collective" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Clean Car Collective</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Clean Car Collective provides professional car detailing from its Te Aro studio, with mobile service, CBD drop-off, interior and exterior detailing, paint correction, ceramic coating, and vehicle pick-up options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 8 Ebor Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://cleancarcollective.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-260-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800476667" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 476 667</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="288" data-business-name="Spotless Detailing" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://static.wixstatic.com/media/01acbc_9d3f0b468db5496f9b78697ad7cbe9a0~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85/IMG_6017_JPEG.jpeg" alt="Spotless Detailing" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Spotless Detailing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newtown &amp; Mobile</div>
+                <p class="text-muted">Spotless Detailing offers mobile and Newtown studio detailing across Wellington, including interior and exterior packages, paint correction, ceramic coating, pet-hair removal, and upholstery shampooing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Newtown, Wellington, with mobile service across the wider region</span>
+                    <div class="business-contact-links"><a href="https://www.spotlessdetailing.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-288-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0211876653" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 021 187 6653</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="289" data-business-name="SelectValet Wellington" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.selectvaletwellington.com/images/selectvalet-banner.jpg" alt="SelectValet Wellington" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>SelectValet Wellington</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mobile Wellington</div>
+                <p class="text-muted">SelectValet Wellington is a fully mobile vehicle-grooming service that comes to homes and workplaces with its own equipment, covering exterior washes, interior cleaning, full grooming, upholstery shampooing, and cut-and-polish work.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Mobile service across Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.selectvaletwellington.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-289-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:044782538" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 04 478 2538</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="404" data-business-name="Dynamic Car Grooming" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://dynamiccargrooming.co.nz/wp-content/uploads/2023/09/about-us.png" alt="Dynamic Car Grooming" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Dynamic Car Grooming</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Petone</div>
+                <p class="text-muted">Dynamic Car Grooming is a Petone hand-wash and detailing workshop offering exterior washes, vacuum packages, interior deep cleaning, upholstery shampooing, paint protection, scratch removal, and full grooming packages.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 50 Gracefield Road, Petone, Lower Hutt 5010</span>
+                    <div class="business-contact-links"><a href="https://dynamiccargrooming.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-404-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0275095772" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 027 509 5772</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="405" data-business-name="SmartWash" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://smartwash.nz/assets/Uploads/Website-Banner-1080x486.jpg" alt="SmartWash" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>SmartWash</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newtown &amp; Tawa</div>
+                <p class="text-muted">SmartWash provides self-service wash bays in Newtown and Tawa, with timed high-pressure washing, rinse and wax options, engine-bay degreaser, on-site vacuums, and card or token payment.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 35 Constable Street, Newtown; 28 Main Road, Tawa</span>
+                    <div class="business-contact-links"><a href="https://smartwash.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-405-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="406" data-business-name="Porirua Car Wash" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.poriruacarwash.co.nz/images/carwash/social-panel.jpg" alt="Porirua Car Wash" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Porirua Car Wash</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Porirua</div>
+                <p class="text-muted">Porirua Car Wash is a 24-hour self-service facility with high-pressure soap and rinse, a foaming-brush option, pressure wax, vacuuming, and timed wash bays for cars, vans, bikes, boats, and utes.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Porirua Mega Centre, corner Tutu Place and Wi Neera Drive, Porirua 5022</span>
+                    <div class="business-contact-links"><a href="https://www.poriruacarwash.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-406-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0276939487" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 027 693 9487</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="407" data-business-name="Espresso Car Wash - Wellington Porirua" data-city-slug="wellington" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://espressocarwash.co.nz/img/og-image.png?20260216" alt="Espresso Car Wash - Wellington Porirua" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Espresso Car Wash - Wellington Porirua</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Porirua</div>
+                <p class="text-muted">Espresso Car Wash at North City Shopping Centre provides professional hand washing and vehicle grooming, including express and classic washes, interior grooming, polishing, headlight restoration, and paint-care services.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> North City Shopping Centre, 2 Titahi Bay Road, Porirua 5022</span>
+                    <div class="business-contact-links"><a href="https://espressocarwash.co.nz/centres/wellington-north-city-shopping-centre/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-407-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:042377885" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 04 237 7885</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a car wash cost in Wellington?</summary>
                             <p>Current published examples start at $2 for 1.5 minutes at SmartWash and from $6 at Porirua Car Wash. Dynamic Car Grooming lists a $45 hand wash and $65 hand wash with vacuum. SelectValet mobile services start at $49, while premium detailing can start around $139 for exterior work or $279 for a full detail.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where are the self-service car washes in Wellington?</summary>
                             <p>SmartWash operates self-service sites at 35 Constable Street in Newtown and 28 Main Road in Tawa. Porirua Car Wash at Porirua Mega Centre is another self-service option and is advertised as open 24 hours.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Wellington car washes come to my home or workplace?</summary>
                             <p>SelectValet is fully mobile and brings its own equipment. Spotless Detailing provides mobile service when water and power are available nearby, while Clean Car Collective offers mobile service alongside its Te Aro studio and CBD drop-off options.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the difference between a car wash and car detailing?</summary>
                             <p>A car wash mainly removes surface dirt from the exterior and may include a quick vacuum. Detailing is more thorough and can include stain extraction, upholstery shampooing, pet-hair removal, paint decontamination, polishing, scratch reduction, and protective coatings.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Wellington mobile detailers need access to water and power?</summary>
                             <p>It depends on the provider. SelectValet says it brings what it needs, including power and shelter. Spotless Detailing asks for water and power within 20 metres for mobile work, with a studio or drop-off option when that is not available. Confirm site requirements when booking.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -216,7 +495,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -279,7 +558,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -292,8 +571,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

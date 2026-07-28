@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What are the best nightclub areas in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The main nightlife precincts are the Viaduct Harbour and Britomart for upscale clubs, Karangahape Road for alternative and underground venues, and Ponsonby for late-night cocktail lounges. Fort Street and Federal Street also host popular venues."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/hospitality/nightclubs#business-list",
+      "name": "Nightclubs in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Cassette Nine",
+            "description": "Eclectic multi-level venue on Vulcan Lane featuring DJs, live bands, comedy, and cabaret. Famous for teapot cocktails, quirky décor, and late nights until 4am.",
+            "image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "9 Vulcan Lane, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.cassettenine.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Ponsonby Social Club",
+            "description": "Local favourite in Ponsonby with a dark DJ booth, excellent drinks, and amazing live music every weekend. Busy bar and club with a slick, stylish interior.",
+            "image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "152 Ponsonby Road, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.ponsonbysocialclub.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Neck Of The Woods",
+            "description": "Popular nightclub on K' Road with a rotating roster of DJs and live events. Consistently fresh experience with different themed nights, great drinks, and high-energy atmosphere.",
+            "image": "https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Karangahape Road, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.neckofthewoods.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What's the dress code for Auckland nightclubs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most Auckland nightclubs enforce a smart-casual dress code — collared shirts for men, no jandals or sportswear. Upscale venues may require smart attire. Check individual venue policies before heading out."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hospitality",
+          "item": "https://toprated.nz/cities/auckland/hospitality/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Nightclubs",
+          "item": "https://toprated.nz/cities/auckland/hospitality/nightclubs"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How much is a nightclub entry fee in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Entry fees range from free (early entry or guest list) to $10–$30 for standard nights and $30–$60+ for special events and international DJ nights. Many clubs offer free entry before 10–11pm."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best nightclub areas in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The main nightlife precincts are the Viaduct Harbour and Britomart for upscale clubs, Karangahape Road for alternative and underground venues, and Ponsonby for late-night cocktail lounges. Fort Street and Federal Street also host popular venues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the dress code for Auckland nightclubs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Auckland nightclubs enforce a smart-casual dress code — collared shirts for men, no jandals or sportswear. Upscale venues may require smart attire. Check individual venue policies before heading out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is a nightclub entry fee in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entry fees range from free (early entry or guest list) to $10–$30 for standard nights and $30–$60+ for special events and international DJ nights. Many clubs offer free entry before 10–11pm."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's nightlife scene centres around the Viaduct, Britomart, and Karangahape Road precincts, offering everything from sophisticated dance clubs to high-energy late-night venues. The city's top-rated nightclubs feature international and local DJs, premium sound systems, and distinctive design. Whether you prefer electronic music, hip-hop, live bands, or Latin nights, Auckland has a thriving after-dark scene that rivals much larger cities.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="212" data-business-name="Cassette Nine" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cassette Nine" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (680 reviews)</div>
+                <h3>Cassette Nine</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Eclectic multi-level venue on Vulcan Lane featuring DJs, live bands, comedy, and cabaret. Famous for teapot cocktails, quirky décor, and late nights until 4am.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 9 Vulcan Lane, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.cassettenine.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-212-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="214" data-business-name="Ponsonby Social Club" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Ponsonby Social Club" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (520 reviews)</div>
+                <h3>Ponsonby Social Club</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Ponsonby</div>
+                <p class="text-muted">Local favourite in Ponsonby with a dark DJ booth, excellent drinks, and amazing live music every weekend. Busy bar and club with a slick, stylish interior.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 152 Ponsonby Road, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.ponsonbysocialclub.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-214-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="213" data-business-name="Neck Of The Woods" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Neck Of The Woods" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (490 reviews)</div>
+                <h3>Neck Of The Woods</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> K&#39; Road</div>
+                <p class="text-muted">Popular nightclub on K&#39; Road with a rotating roster of DJs and live events. Consistently fresh experience with different themed nights, great drinks, and high-energy atmosphere.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Karangahape Road, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.neckofthewoods.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-213-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What are the best nightclub areas in Auckland?</summary>
                             <p>The main nightlife precincts are the Viaduct Harbour and Britomart for upscale clubs, Karangahape Road for alternative and underground venues, and Ponsonby for late-night cocktail lounges. Fort Street and Federal Street also host popular venues.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What's the dress code for Auckland nightclubs?</summary>
                             <p>Most Auckland nightclubs enforce a smart-casual dress code — collared shirts for men, no jandals or sportswear. Upscale venues may require smart attire. Check individual venue policies before heading out.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much is a nightclub entry fee in Auckland?</summary>
                             <p>Entry fees range from free (early entry or guest list) to $10–$30 for standard nights and $30–$60+ for special events and international DJ nights. Many clubs offer free entry before 10–11pm.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/hospitality/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,9 +360,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

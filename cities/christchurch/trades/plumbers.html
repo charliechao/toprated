@@ -45,31 +45,158 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much do Christchurch plumbers charge?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hourly rates for plumbers in Christchurch typically range from $90 to $120 per hour plus GST. Many companies have a minimum charge for the first hour that includes travel and vehicle fees."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/trades/plumbers#business-list",
+      "name": "Plumbers in Christchurch",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "ACF Plumbing Solutions",
+            "description": "Local Christchurch specialists for all plumbing needs. Proven track record for reliability and high customer satisfaction.",
+            "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Riccarton, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://acfplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Walton Plumbing",
+            "description": "Over 90 years in business serving Christchurch. Experts in residential, commercial, and industrial plumbing.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch Central",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://waltonplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Plumbfitz",
+            "description": "Prompt, reliable, and communicative service. Known for professional workmanship and fair transparent pricing.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hornby, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://plumbfitz.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Waterworks Plumbing",
+            "description": "Fast and reliable repairs, including hot water cylinders and emergency leaks. Excellent communication.",
+            "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch East",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://waterworksplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Inline Plumbing Ltd",
+            "description": "Master Plumbers providing comprehensive services for new builds, gas fitting, and drain laying.",
+            "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sockburn, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://inlineplumbing.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a specific plumber for earthquake repairs in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While any registered plumber can work on your home, it's recommended to choose those with experience in EQC-related repairs and knowledge of seismic-resilient piping systems common in the region."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/christchurch/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Plumbers",
+          "item": "https://toprated.nz/cities/christchurch/trades/plumbers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How quickly can I get an emergency plumber in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most top-rated Christchurch plumbing services offer emergency response times within 60 to 90 minutes for urgent issues like burst pipes or major leaks."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do Christchurch plumbers charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hourly rates for plumbers in Christchurch typically range from $90 to $120 per hour plus GST. Many companies have a minimum charge for the first hour that includes travel and vehicle fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a specific plumber for earthquake repairs in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While any registered plumber can work on your home, it's recommended to choose those with experience in EQC-related repairs and knowledge of seismic-resilient piping systems common in the region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can I get an emergency plumber in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most top-rated Christchurch plumbing services offer emergency response times within 60 to 90 minutes for urgent issues like burst pipes or major leaks."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +236,135 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">From the modern rebuilds of the CBD to the established homes in Riccarton and Merivale, Christchurch's plumbing needs are diverse. Top-rated local plumbers specialize in seismic-resilient installations, heat pump water heaters, and traditional maintenance, ensuring your home's water and drainage systems are efficient and compliant with Canterbury's building standards.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="37" data-business-name="ACF Plumbing Solutions" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="ACF Plumbing Solutions" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (120 reviews)</div>
+                <h3>ACF Plumbing Solutions</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Riccarton</div>
+                <p class="text-muted">Local Christchurch specialists for all plumbing needs. Proven track record for reliability and high customer satisfaction.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Riccarton, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://acfplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-37-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="36" data-business-name="Walton Plumbing" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Walton Plumbing" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (480 reviews)</div>
+                <h3>Walton Plumbing</h3>
+
+                <p class="text-muted">Over 90 years in business serving Christchurch. Experts in residential, commercial, and industrial plumbing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch Central</span>
+                    <div class="business-contact-links"><a href="https://waltonplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-36-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="38" data-business-name="Plumbfitz" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Plumbfitz" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (85 reviews)</div>
+                <h3>Plumbfitz</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Hornby</div>
+                <p class="text-muted">Prompt, reliable, and communicative service. Known for professional workmanship and fair transparent pricing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hornby, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://plumbfitz.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-38-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="39" data-business-name="Waterworks Plumbing" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Waterworks Plumbing" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (140 reviews)</div>
+                <h3>Waterworks Plumbing</h3>
+
+                <p class="text-muted">Fast and reliable repairs, including hot water cylinders and emergency leaks. Excellent communication.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch East</span>
+                    <div class="business-contact-links"><a href="https://waterworksplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-39-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="40" data-business-name="Inline Plumbing Ltd" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Inline Plumbing Ltd" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (65 reviews)</div>
+                <h3>Inline Plumbing Ltd</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Sockburn</div>
+                <p class="text-muted">Master Plumbers providing comprehensive services for new builds, gas fitting, and drain laying.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Sockburn, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://inlineplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-40-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much do Christchurch plumbers charge?</summary>
                             <p>Hourly rates for plumbers in Christchurch typically range from $90 to $120 per hour plus GST. Many companies have a minimum charge for the first hour that includes travel and vehicle fees.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a specific plumber for earthquake repairs in Christchurch?</summary>
                             <p>While any registered plumber can work on your home, it's recommended to choose those with experience in EQC-related repairs and knowledge of seismic-resilient piping systems common in the region.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How quickly can I get an emergency plumber in Christchurch?</summary>
                             <p>Most top-rated Christchurch plumbing services offer emergency response times within 60 to 90 minutes for urgent issues like burst pipes or major leaks.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +372,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/christchurch/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +435,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

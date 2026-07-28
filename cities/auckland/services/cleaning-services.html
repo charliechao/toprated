@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a house cleaner cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Residential cleaning in Auckland typically costs between $45 and $60 per hour per cleaner. Deep cleans, end-of-tenancy cleans, and specialized carpet cleaning are usually quoted as fixed price packages."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/cleaning-services#business-list",
+      "name": "Cleaning Services in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Icon Clean",
+            "description": "Professional residential and commercial cleaners specializing in end-to-tenancy and deep cleans.",
+            "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://iconclean.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Stephen's Home Cleaning Services",
+            "description": "Personalized cleaning services known for being thorough and going above and beyond customer expectations.",
+            "image": "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://stephenscleaning.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Urban Care Auckland",
+            "description": "Professional domestic and commercial cleaning services with a focus on reliability and high standards.",
+            "image": "/img/generated/cleaning-services.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Central",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://urbancare.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Auckland cleaners bring their own equipment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most professional cleaning services in Auckland come fully equipped with their own vacuums, mops, and cleaning solutions. Some offer 'eco-friendly only' options upon request."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Cleaning Services",
+          "item": "https://toprated.nz/cities/auckland/services/cleaning-services"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How can I find a reliable office cleaner in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for companies with commercial insurance, clear police-vetted staff, and strong references from other local businesses. Many top-rated Auckland cleaners specialize specifically in commercial and office environments."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a house cleaner cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Residential cleaning in Auckland typically costs between $45 and $60 per hour per cleaner. Deep cleans, end-of-tenancy cleans, and specialized carpet cleaning are usually quoted as fixed price packages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Auckland cleaners bring their own equipment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most professional cleaning services in Auckland come fully equipped with their own vacuums, mops, and cleaning solutions. Some offer 'eco-friendly only' options upon request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I find a reliable office cleaner in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for companies with commercial insurance, clear police-vetted staff, and strong references from other local businesses. Many top-rated Auckland cleaners specialize specifically in commercial and office environments."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,14 +202,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose a Cleaning Service in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Cleaning services in Auckland are easiest to compare when you separate domestic cleaning, office cleaning, end-of-tenancy work, and one-off deep cleans. The strongest Auckland cleaners usually stand out on reliability, staff trustworthiness, suburb coverage, and whether they can quote clearly without making the process harder than it needs to be.</p>
@@ -139,35 +232,85 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="92" data-business-name="Icon Clean" data-city-slug="auckland" data-category-slug="services" data-page-slug="cleaning-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Icon Clean" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 5 (115 reviews)</div>
+                <h3>Icon Clean</h3>
+
+                <p class="text-muted">Professional residential and commercial cleaners specializing in end-to-tenancy and deep cleans.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland</span>
+                    <div class="business-contact-links"><a href="https://iconclean.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-92-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="91" data-business-name="Stephen&#39;s Home Cleaning Services" data-city-slug="auckland" data-category-slug="services" data-page-slug="cleaning-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Stephen&#39;s Home Cleaning Services" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (49 reviews)</div>
+                <h3>Stephen&#39;s Home Cleaning Services</h3>
+
+                <p class="text-muted">Personalized cleaning services known for being thorough and going above and beyond customer expectations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland</span>
+                    <div class="business-contact-links"><a href="https://stephenscleaning.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-91-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="90" data-business-name="Urban Care Auckland" data-city-slug="auckland" data-category-slug="services" data-page-slug="cleaning-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/cleaning-services.png" alt="Urban Care Auckland" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (320 reviews)</div>
+                <h3>Urban Care Auckland</h3>
+
+                <p class="text-muted">Professional domestic and commercial cleaning services with a focus on reliability and high standards.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Central</span>
+                    <div class="business-contact-links"><a href="https://urbancare.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-90-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a house cleaner cost in Auckland?</summary>
                             <p>Residential cleaning in Auckland typically costs between $45 and $60 per hour per cleaner. Deep cleans, end-of-tenancy cleans, and specialized carpet cleaning are usually quoted as fixed price packages.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Auckland cleaners bring their own equipment?</summary>
                             <p>Most professional cleaning services in Auckland come fully equipped with their own vacuums, mops, and cleaning solutions. Some offer 'eco-friendly only' options upon request.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How can I find a reliable office cleaner in Auckland?</summary>
                             <p>Look for companies with commercial insurance, clear police-vetted staff, and strong references from other local businesses. Many top-rated Auckland cleaners specialize specifically in commercial and office environments.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -175,7 +318,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -238,7 +381,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -251,8 +394,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

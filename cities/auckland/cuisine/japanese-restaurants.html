@@ -45,63 +45,258 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the best area in Auckland for Japanese food?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Auckland CBD is the epicentre, with Federal Street (home to MASU) and the Britomart precinct (home to Ebisu) hosting several premium Japanese restaurants. Ponsonby is the other major hub, home to Cocoro and Azabu. For more casual ramen and udon, Anzac Ave and Newmarket offer excellent value-for-money options."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/japanese-restaurants#business-list",
+      "name": "Japanese Restaurants in Auckland",
+      "numberOfItems": 9,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Cocoro",
+            "description": "Cocoro, meaning 'heart and soul' in Japanese, is Ponsonby's most celebrated Japanese restaurant. Renowned for its artful multi-course degustation menus and the iconic Signature Sashimi Platter featuring 25+ varieties of pristine New Zealand seafood, it offers an intimate, chef-driven experience that is considered Auckland's closest equivalent to a Tokyo omakase counter.",
+            "image": "/img/businesses/cocoro.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "56A Brown St, Ponsonby, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://cocoro.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Kazuya",
+            "description": "Chef Kazuya Yamauchi's eponymous restaurant is one of Auckland's most refined and intimate dining destinations. Located in a discreet Symonds Street space, Kazuya offers a multi-course set menu that masterfully fuses European and Japanese techniques — think slow-roasted meats with Japanese broths, and sashimi with European garnishes. It is frequently cited as one of New Zealand's best restaurants.",
+            "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "187 Symonds St, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.kazuya.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "MASU by Nic Watt",
+            "description": "Award-winning robata-style Japanese dining in the heart of Auckland's Federal Street precinct. Executive Chef Nic Watt's signature SkyCity restaurant is celebrated for its contemporary take on traditional open-charcoal Binchotan cooking, with a menu that champions New Zealand's finest seasonal ingredients alongside premium Japanese imports like A5 Wagyu.",
+            "image": "/img/businesses/masu.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "90 Federal St, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://skycityauckland.co.nz/restaurants/masu"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Azabu",
+            "description": "Azabu is Auckland's pioneer of Nikkei cuisine — the vibrant fusion of Japanese precision and Peruvian bold flavours born from Japanese migration to South America. Set across two locations in Ponsonby and Mission Bay, the restaurant offers an electric atmosphere, creative cocktails from the hidden sake bar, and dishes like new-style sashimi, golden gyoza, and robata-grilled meats that defy convention.",
+            "image": "/img/businesses/azabu.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "26 Ponsonby Rd, Ponsonby, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://azabu.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Kureta",
+            "description": "Located within the JW Marriott Auckland, Kureta offers a refined teppanyaki and omakase experience that blends elemental Japanese cooking with New Zealand's finest produce. The dramatic open kitchen, where chefs perform with precision and flair on the hot iron plate, provides a theatrical dining experience that is both intimate and celebratory. The dedicated sake sommelier curates pairings that elevate every course.",
+            "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "188 Federal St, Auckland CBD (JW Marriott)",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://kureta.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tanpopo Ramen",
+            "description": "Tanpopo is Auckland's longest-running and most iconic ramen house, serving steaming bowls of authentic tonkotsu shoyu ramen on Anzac Ave for over three decades. Beloved by students, office workers, and Japanese expats alike, it is the benchmark for no-frills, soul-warming ramen in New Zealand. The rich pork bone broth, simmered for hours, is the star of every bowl.",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7 Anzac Ave, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://tanpopo.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Ebisu",
+            "description": "Located in the heart of Britomart's waterfront precinct, Ebisu delivers modern Japanese dining in a sleek, industrial-chic space. The kitchen blends traditional Japanese techniques with contemporary European influences, featuring locally sourced seafood, premium A5 wagyu, and innovative sushi rolls — including the famous Rainbow Roll — in a sophisticated yet relaxed setting.",
+            "image": "/img/businesses/ebisu.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "116-118 Quay St, Britomart, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://ebisu.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "IPPUDO Newmarket",
+            "description": "The Auckland outpost of the world-famous Hakata ramen chain, IPPUDO Newmarket brings an energetic, fast-paced atmosphere and bowls of their signature Shiromaru Motoaji tonkotsu ramen. Diners can customize noodle firmness, richness, and toppings to their preference. Beyond ramen, the menu includes excellent karaage chicken, steamed buns, and seasonal specials.",
+            "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Westfield Newmarket, 277 Broadway, Newmarket, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.ippudo.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tanuki's Cave",
+            "description": "An underground izakaya institution that has been a Queen Street landmark since 1994. Descend the staircase into a smoky, atmospheric cave where the yakitori grill sizzles with skewers, kushiage baskets emerge golden from the fryer, and a vast selection of premium sake and Japanese whisky flows freely. Tanuki's Cave is an essential Auckland experience for anyone who loves authentic, casual Japanese dining.",
+            "image": "/img/businesses/tanukis-cave.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "319 Queen St, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "http://tanuki.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are there authentic izakayas in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Auckland has several authentic izakayas. Tanuki's Cave on Queen Street has been a local institution since 1994, offering classic yakitori, kushiage skewers, and an extensive sake list in a characterful underground setting. Azabu in Ponsonby also channels izakaya energy with its vibrant atmosphere and shared plates."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Japanese Restaurants",
+          "item": "https://toprated.nz/cities/auckland/cuisine/japanese-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where can I find the best omakase in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cocoro in Ponsonby is widely considered Auckland's premier omakase destination, with their multi-course degustation menus featuring over 25 varieties of seasonal sashimi. Kureta at the JW Marriott Auckland also offers a celebrated omakase teppanyaki experience, blending elemental Japanese cooking with fine dining service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best ramen in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland has a thriving ramen scene. Tanpopo on Anzac Ave is the undisputed veteran, serving classic tonkotsu shoyu ramen for over 30 years. IPPUDO in Newmarket is a world-famous chain known for its rich Shiromaru broth. For adventurous eaters, Chop Chop Noodle House offers creative 'mega ramen' bowls loaded with flavour."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Japanese food in Auckland expensive?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends entirely on the style. A bowl of excellent ramen costs $16-$24, making it one of the city's most affordable quality meals. An izakaya dinner with shared plates and drinks is typically $40-$70 per person. Fine dining and omakase experiences range from $150 to $350+ per person with sake pairings, placing them in the premium category."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to book Japanese restaurants in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For premium restaurants like MASU, Cocoro, Ebisu, and Azabu, booking is highly recommended, especially for Friday and Saturday dinners. Walk-ins are usually possible at casual ramen-ya and izakayas, though Tanuki's Cave can get busy after 7pm on weekends."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I get good vegetarian Japanese food in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Japanese cuisine naturally includes many plant-based elements. Most Auckland Japanese restaurants offer excellent vegetable tempura, edamame, agedashi tofu, and vegetable sushi rolls. Higher-end restaurants like Cocoro and MASU can create bespoke vegetarian degustation menus if you mention this when booking."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best area in Auckland for Japanese food?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Auckland CBD is the epicentre, with Federal Street (home to MASU) and the Britomart precinct (home to Ebisu) hosting several premium Japanese restaurants. Ponsonby is the other major hub, home to Cocoro and Azabu. For more casual ramen and udon, Anzac Ave and Newmarket offer excellent value-for-money options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there authentic izakayas in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Auckland has several authentic izakayas. Tanuki's Cave on Queen Street has been a local institution since 1994, offering classic yakitori, kushiage skewers, and an extensive sake list in a characterful underground setting. Azabu in Ponsonby also channels izakaya energy with its vibrant atmosphere and shared plates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find the best omakase in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cocoro in Ponsonby is widely considered Auckland's premier omakase destination, with their multi-course degustation menus featuring over 25 varieties of seasonal sashimi. Kureta at the JW Marriott Auckland also offers a celebrated omakase teppanyaki experience, blending elemental Japanese cooking with fine dining service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best ramen in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland has a thriving ramen scene. Tanpopo on Anzac Ave is the undisputed veteran, serving classic tonkotsu shoyu ramen for over 30 years. IPPUDO in Newmarket is a world-famous chain known for its rich Shiromaru broth. For adventurous eaters, Chop Chop Noodle House offers creative 'mega ramen' bowls loaded with flavour."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Japanese food in Auckland expensive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends entirely on the style. A bowl of excellent ramen costs $16-$24, making it one of the city's most affordable quality meals. An izakaya dinner with shared plates and drinks is typically $40-$70 per person. Fine dining and omakase experiences range from $150 to $350+ per person with sake pairings, placing them in the premium category."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to book Japanese restaurants in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For premium restaurants like MASU, Cocoro, Ebisu, and Azabu, booking is highly recommended, especially for Friday and Saturday dinners. Walk-ins are usually possible at casual ramen-ya and izakayas, though Tanuki's Cave can get busy after 7pm on weekends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get good vegetarian Japanese food in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Japanese cuisine naturally includes many plant-based elements. Most Auckland Japanese restaurants offer excellent vegetable tempura, edamame, agedashi tofu, and vegetable sushi rolls. Higher-end restaurants like Cocoro and MASU can create bespoke vegetarian degustation menus if you mention this when booking."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -141,14 +336,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">A Local's Guide to Japanese Dining in Auckland</a></li><li><a href="#pricing-guide">How Much Does Japanese Dining Cost in Auckland? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland is home to arguably the best Japanese dining scene in Australasia, rivaling Sydney and Melbourne for authenticity and innovation. The city's deep cultural connection with Japan — fuelled by decades of migration, trade, and culinary exchange — has produced a landscape where you can experience meticulous omakase in Ponsonby, world-class robata grilling on Federal Street, smoky izakayas burrowed beneath Queen Street, and soul-warming Hokkaido-style ramen in suburban food courts. What sets Auckland apart is the quality of its seafood; New Zealand's pristine waters supply <strong>Ora King Salmon</strong>, Bluff oysters, and South Island crayfish directly to the city's top kitchens, allowing chefs to create sashimi that rivals Tokyo's Tsukiji Market. Whether you are planning a special anniversary dinner, a casual Saturday ramen crawl, or seeking the perfect sake pairing, this guide to the best Japanese restaurants in Auckland is your definitive resource. For other cuisines in Auckland, explore our guides to <a href='/cities/auckland/cuisine/chinese-restaurants'>Chinese restaurants</a>, <a href='/cities/auckland/cuisine/indian-restaurants'>Indian restaurants</a>, and <a href='/cities/auckland/cuisine/thai-restaurants'>Thai restaurants</a>.</p>
@@ -165,7 +360,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Does Japanese Dining Cost in Auckland? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Japanese dining in Auckland spans a wide range, from a $15 bowl of authentic ramen to a $250+ omakase experience. Here is a breakdown of what you can expect to pay at different tiers of the Japanese dining scene in 2026.</p><p>Note that most fine dining restaurants add a <strong>15% surcharge</strong> on public holidays, and some include a service charge for groups of 6 or more. BYO is rarely available at high-end Japanese restaurants due to their curated drink lists.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -186,55 +381,207 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="9">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="12" data-business-name="Cocoro" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/cocoro.jpg" alt="Cocoro" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (680 reviews)</div>
+                <h3>Cocoro</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Ponsonby</div>
+                <p class="text-muted">Cocoro, meaning &#39;heart and soul&#39; in Japanese, is Ponsonby&#39;s most celebrated Japanese restaurant. Renowned for its artful multi-course degustation menus and the iconic Signature Sashimi Platter featuring 25+ varieties of pristine New Zealand seafood, it offers an intimate, chef-driven experience that is considered Auckland&#39;s closest equivalent to a Tokyo omakase counter.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 56A Brown St, Ponsonby, Auckland</span>
+                    <div class="business-contact-links"><a href="https://cocoro.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-12-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093600927" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 360 0927</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="321" data-business-name="Kazuya" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Kazuya" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (420 reviews)</div>
+                <h3>Kazuya</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Chef Kazuya Yamauchi&#39;s eponymous restaurant is one of Auckland&#39;s most refined and intimate dining destinations. Located in a discreet Symonds Street space, Kazuya offers a multi-course set menu that masterfully fuses European and Japanese techniques — think slow-roasted meats with Japanese broths, and sashimi with European garnishes. It is frequently cited as one of New Zealand&#39;s best restaurants.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 187 Symonds St, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.kazuya.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-321-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093095561" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 309 5561</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="11" data-business-name="MASU by Nic Watt" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/masu.jpg" alt="MASU by Nic Watt" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (1540 reviews)</div>
+                <h3>MASU by Nic Watt</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Award-winning robata-style Japanese dining in the heart of Auckland&#39;s Federal Street precinct. Executive Chef Nic Watt&#39;s signature SkyCity restaurant is celebrated for its contemporary take on traditional open-charcoal Binchotan cooking, with a menu that champions New Zealand&#39;s finest seasonal ingredients alongside premium Japanese imports like A5 Wagyu.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 90 Federal St, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://skycityauckland.co.nz/restaurants/masu?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-11-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093636278" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 363 6278</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="14" data-business-name="Azabu" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/azabu.jpg" alt="Azabu" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (950 reviews)</div>
+                <h3>Azabu</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Ponsonby</div>
+                <p class="text-muted">Azabu is Auckland&#39;s pioneer of Nikkei cuisine — the vibrant fusion of Japanese precision and Peruvian bold flavours born from Japanese migration to South America. Set across two locations in Ponsonby and Mission Bay, the restaurant offers an electric atmosphere, creative cocktails from the hidden sake bar, and dishes like new-style sashimi, golden gyoza, and robata-grilled meats that defy convention.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 26 Ponsonby Rd, Ponsonby, Auckland</span>
+                    <div class="business-contact-links"><a href="https://azabu.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-14-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093204267" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 320 4267</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="324" data-business-name="Kureta" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Kureta" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (310 reviews)</div>
+                <h3>Kureta</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Located within the JW Marriott Auckland, Kureta offers a refined teppanyaki and omakase experience that blends elemental Japanese cooking with New Zealand&#39;s finest produce. The dramatic open kitchen, where chefs perform with precision and flair on the hot iron plate, provides a theatrical dining experience that is both intimate and celebratory. The dedicated sake sommelier curates pairings that elevate every course.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 188 Federal St, Auckland CBD (JW Marriott)</span>
+                    <div class="business-contact-links"><a href="https://kureta.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-324-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093636000" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 363 6000</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="322" data-business-name="Tanpopo Ramen" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tanpopo Ramen" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (1250 reviews)</div>
+                <h3>Tanpopo Ramen</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Tanpopo is Auckland&#39;s longest-running and most iconic ramen house, serving steaming bowls of authentic tonkotsu shoyu ramen on Anzac Ave for over three decades. Beloved by students, office workers, and Japanese expats alike, it is the benchmark for no-frills, soul-warming ramen in New Zealand. The rich pork bone broth, simmered for hours, is the star of every bowl.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 7 Anzac Ave, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://tanpopo.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-322-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093032484" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 303 2484</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="13" data-business-name="Ebisu" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/ebisu.jpg" alt="Ebisu" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (1120 reviews)</div>
+                <h3>Ebisu</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Britomart</div>
+                <p class="text-muted">Located in the heart of Britomart&#39;s waterfront precinct, Ebisu delivers modern Japanese dining in a sleek, industrial-chic space. The kitchen blends traditional Japanese techniques with contemporary European influences, featuring locally sourced seafood, premium A5 wagyu, and innovative sushi rolls — including the famous Rainbow Roll — in a sophisticated yet relaxed setting.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 116-118 Quay St, Britomart, Auckland</span>
+                    <div class="business-contact-links"><a href="https://ebisu.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-13-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093005271" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 300 5271</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="323" data-business-name="IPPUDO Newmarket" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="IPPUDO Newmarket" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (980 reviews)</div>
+                <h3>IPPUDO Newmarket</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">The Auckland outpost of the world-famous Hakata ramen chain, IPPUDO Newmarket brings an energetic, fast-paced atmosphere and bowls of their signature Shiromaru Motoaji tonkotsu ramen. Diners can customize noodle firmness, richness, and toppings to their preference. Beyond ramen, the menu includes excellent karaage chicken, steamed buns, and seasonal specials.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Westfield Newmarket, 277 Broadway, Newmarket, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.ippudo.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-323-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:095221189" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 522 1189</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="15" data-business-name="Tanuki&#39;s Cave" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="japanese-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/tanukis-cave.jpg" alt="Tanuki&#39;s Cave" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (890 reviews)</div>
+                <h3>Tanuki&#39;s Cave</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">An underground izakaya institution that has been a Queen Street landmark since 1994. Descend the staircase into a smoky, atmospheric cave where the yakitori grill sizzles with skewers, kushiage baskets emerge golden from the fryer, and a vast selection of premium sake and Japanese whisky flows freely. Tanuki&#39;s Cave is an essential Auckland experience for anyone who loves authentic, casual Japanese dining.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 319 Queen St, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="http://tanuki.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-15-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093795151" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 379 5151</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best area in Auckland for Japanese food?</summary>
                             <p>The Auckland CBD is the epicentre, with Federal Street (home to MASU) and the Britomart precinct (home to Ebisu) hosting several premium Japanese restaurants. Ponsonby is the other major hub, home to Cocoro and Azabu. For more casual ramen and udon, Anzac Ave and Newmarket offer excellent value-for-money options.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are there authentic izakayas in Auckland?</summary>
                             <p>Yes, Auckland has several authentic izakayas. Tanuki's Cave on Queen Street has been a local institution since 1994, offering classic yakitori, kushiage skewers, and an extensive sake list in a characterful underground setting. Azabu in Ponsonby also channels izakaya energy with its vibrant atmosphere and shared plates.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find the best omakase in Auckland?</summary>
                             <p>Cocoro in Ponsonby is widely considered Auckland's premier omakase destination, with their multi-course degustation menus featuring over 25 varieties of seasonal sashimi. Kureta at the JW Marriott Auckland also offers a celebrated omakase teppanyaki experience, blending elemental Japanese cooking with fine dining service.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best ramen in Auckland?</summary>
                             <p>Auckland has a thriving ramen scene. Tanpopo on Anzac Ave is the undisputed veteran, serving classic tonkotsu shoyu ramen for over 30 years. IPPUDO in Newmarket is a world-famous chain known for its rich Shiromaru broth. For adventurous eaters, Chop Chop Noodle House offers creative 'mega ramen' bowls loaded with flavour.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is Japanese food in Auckland expensive?</summary>
                             <p>It depends entirely on the style. A bowl of excellent ramen costs $16-$24, making it one of the city's most affordable quality meals. An izakaya dinner with shared plates and drinks is typically $40-$70 per person. Fine dining and omakase experiences range from $150 to $350+ per person with sake pairings, placing them in the premium category.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need to book Japanese restaurants in Auckland?</summary>
                             <p>For premium restaurants like MASU, Cocoro, Ebisu, and Azabu, booking is highly recommended, especially for Friday and Saturday dinners. Walk-ins are usually possible at casual ramen-ya and izakayas, though Tanuki's Cave can get busy after 7pm on weekends.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can I get good vegetarian Japanese food in Auckland?</summary>
                             <p>Yes, Japanese cuisine naturally includes many plant-based elements. Most Auckland Japanese restaurants offer excellent vegetable tempura, edamame, agedashi tofu, and vegetable sushi rolls. Higher-end restaurants like Cocoro and MASU can create bespoke vegetarian degustation menus if you mention this when booking.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -242,7 +589,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -305,7 +652,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -318,8 +665,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

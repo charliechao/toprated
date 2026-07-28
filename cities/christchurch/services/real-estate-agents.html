@@ -45,55 +45,131 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much commission do Christchurch real estate agents charge?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It varies by agency and property type, but commission is commonly charged as a percentage of the sale price plus GST. Marketing is often additional, so compare the full selling cost."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/services/real-estate-agents#business-list",
+      "name": "Real Estate Agents in Christchurch",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Harcourts Gold",
+            "description": "Significant market share in Christchurch property sales with a large team of experienced agents. Comprehensive services including free appraisals and property management.",
+            "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Papanui Road, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.harcourts.co.nz/gold"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Whittle Knight Real Estate",
+            "description": "One of Christchurch's most established agencies with over 50 years of experience. Individualised service in property sales, valuations, and property management.",
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Riccarton Road, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.whittleknight.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I choose auction or priced sale in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the property, suburb, buyer depth, and market conditions. A strong agent should explain why a method suits your situation instead of using the same formula on every listing."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/christchurch/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Real Estate Agents",
+          "item": "https://toprated.nz/cities/christchurch/services/real-estate-agents"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What makes a good real estate agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Strong local knowledge, honest pricing advice, buyer management, negotiation skill, and consistent communication usually matter more than polished branding."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the cheapest commission always the best deal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily. A weaker strategy or poor negotiation can easily cost more than any saving on commission. Campaign quality matters."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an agent help me buy as well as sell?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, many can support both sides, but ask how they help beyond sending listings. Good agents can assist with buyer strategy, local guidance, and timing coordination."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How important is suburb-level knowledge in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Very important. Demand, pricing, buyer profile, and marketing angles can vary substantially between Christchurch suburbs, so recent local sales context matters."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much commission do Christchurch real estate agents charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies by agency and property type, but commission is commonly charged as a percentage of the sale price plus GST. Marketing is often additional, so compare the full selling cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose auction or priced sale in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the property, suburb, buyer depth, and market conditions. A strong agent should explain why a method suits your situation instead of using the same formula on every listing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes a good real estate agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Strong local knowledge, honest pricing advice, buyer management, negotiation skill, and consistent communication usually matter more than polished branding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the cheapest commission always the best deal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. A weaker strategy or poor negotiation can easily cost more than any saving on commission. Campaign quality matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an agent help me buy as well as sell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, many can support both sides, but ask how they help beyond sending listings. Good agents can assist with buyer strategy, local guidance, and timing coordination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How important is suburb-level knowledge in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Very important. Demand, pricing, buyer profile, and marketing angles can vary substantially between Christchurch suburbs, so recent local sales context matters."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +209,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Real Estate Agent in Christchurch</a></li><li><a href="#pricing-guide">How Much Do Real Estate Agents Charge in Christchurch? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Christchurch real estate agents work across a market shaped by suburb-level variation, family-home demand, investment activity, and rebuilding or renovation-influenced stock across Canterbury. The best agents do more than list homes. They price accurately, manage campaigns properly, qualify buyers well, and communicate honestly throughout the process. This guide is for Christchurch homeowners, investors, and buyers who want to compare agents on local knowledge, campaign quality, and negotiation ability. For connected decisions, also see our Christchurch guides to <a href='/cities/christchurch/services/lawyers'>lawyers</a> and <a href='/cities/christchurch/services/accountants'>accountants</a>.</p>
@@ -157,7 +233,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Real Estate Agents Charge in Christchurch? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Christchurch agent fees usually depend on property value, sale method, and agency model. Commission remains the main cost, but campaign expenses such as photography, staging, and digital advertising can materially affect the total outlay.</p><p>Use these figures as general planning ranges only. Always get a written estimate before signing an agency agreement.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +254,83 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="252" data-business-name="Harcourts Gold" data-city-slug="christchurch" data-category-slug="services" data-page-slug="real-estate-agents" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Harcourts Gold" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (780 reviews)</div>
+                <h3>Harcourts Gold</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Papanui</div>
+                <p class="text-muted">Significant market share in Christchurch property sales with a large team of experienced agents. Comprehensive services including free appraisals and property management.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Papanui Road, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://www.harcourts.co.nz/gold?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-252-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="253" data-business-name="Whittle Knight Real Estate" data-city-slug="christchurch" data-category-slug="services" data-page-slug="real-estate-agents" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Whittle Knight Real Estate" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (450 reviews)</div>
+                <h3>Whittle Knight Real Estate</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Riccarton</div>
+                <p class="text-muted">One of Christchurch&#39;s most established agencies with over 50 years of experience. Individualised service in property sales, valuations, and property management.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Riccarton Road, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://www.whittleknight.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-253-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much commission do Christchurch real estate agents charge?</summary>
                             <p>It varies by agency and property type, but commission is commonly charged as a percentage of the sale price plus GST. Marketing is often additional, so compare the full selling cost.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose auction or priced sale in Christchurch?</summary>
                             <p>It depends on the property, suburb, buyer depth, and market conditions. A strong agent should explain why a method suits your situation instead of using the same formula on every listing.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What makes a good real estate agent?</summary>
                             <p>Strong local knowledge, honest pricing advice, buyer management, negotiation skill, and consistent communication usually matter more than polished branding.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is the cheapest commission always the best deal?</summary>
                             <p>Not necessarily. A weaker strategy or poor negotiation can easily cost more than any saving on commission. Campaign quality matters.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can an agent help me buy as well as sell?</summary>
                             <p>Yes, many can support both sides, but ask how they help beyond sending listings. Good agents can assist with buyer strategy, local guidance, and timing coordination.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How important is suburb-level knowledge in Christchurch?</summary>
                             <p>Very important. Demand, pricing, buyer profile, and marketing angles can vary substantially between Christchurch suburbs, so recent local sales context matters.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +338,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/christchurch/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +401,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +414,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

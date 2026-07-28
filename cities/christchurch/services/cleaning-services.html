@@ -45,55 +45,131 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much do cleaners charge in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the size and condition of the property and whether the clean is regular, deep, or move-out related. Routine cleaning is usually more predictable than specialist work."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/services/cleaning-services#business-list",
+      "name": "Cleaning Services in Christchurch",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "PrestigePro Cleaning",
+            "description": "Top-rated cleaning specialists for end-of-lease, carpet, and general residential cleaning.",
+            "image": "/img/generated/cleaning-services.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://prestigeprocleaning.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Harmony Clean",
+            "description": "Impeccable service with a friendly team specializing in high-quality home and Airbnb cleaning.",
+            "image": "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://harmonyclean.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is an end-of-tenancy clean different from a regular clean?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. It is usually much more detailed and may include appliances, cupboards, skirting, and other areas not always covered in a regular maintenance clean."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/christchurch/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Cleaning Services",
+          "item": "https://toprated.nz/cities/christchurch/services/cleaning-services"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I choose fixed-price or hourly cleaning?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both can work. Fixed pricing gives clearer cost certainty, while hourly billing can be fairer for less predictable jobs. The key is having a clear scope."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do cleaners bring their own products?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many do, but not all. It is worth confirming before booking, especially if you have product preferences or surface-specific requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a cleaner help get a house ready for sale?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. A quality clean can improve presentation for photos, open homes, and handover. It often works best when timed with your agent and any touch-up maintenance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What usually makes a cleaning quote more expensive?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Larger homes, heavy buildup, more bathrooms, pet hair, internal windows, appliances, and tight timeframes are common reasons the cost increases."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do cleaners charge in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the size and condition of the property and whether the clean is regular, deep, or move-out related. Routine cleaning is usually more predictable than specialist work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is an end-of-tenancy clean different from a regular clean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It is usually much more detailed and may include appliances, cupboards, skirting, and other areas not always covered in a regular maintenance clean."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose fixed-price or hourly cleaning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both can work. Fixed pricing gives clearer cost certainty, while hourly billing can be fairer for less predictable jobs. The key is having a clear scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do cleaners bring their own products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many do, but not all. It is worth confirming before booking, especially if you have product preferences or surface-specific requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a cleaner help get a house ready for sale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A quality clean can improve presentation for photos, open homes, and handover. It often works best when timed with your agent and any touch-up maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What usually makes a cleaning quote more expensive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Larger homes, heavy buildup, more bathrooms, pet hair, internal windows, appliances, and tight timeframes are common reasons the cost increases."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +209,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Cleaning Service in Christchurch</a></li><li><a href="#pricing-guide">How Much Do Cleaning Services Cost in Christchurch? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Christchurch cleaning services cover regular house cleaning, office cleaning, end-of-tenancy work, post-build cleans, and one-off deep cleaning across the city. The strongest providers are not just affordable. They are consistent, organised, and clear about what is included before the job begins. This guide is for Christchurch homeowners, landlords, property managers, and businesses who want a cleaner that turns up reliably and delivers a proper standard. If the job ties into sale preparation or property handover, you may also want our Christchurch guides to <a href='/cities/christchurch/services/real-estate-agents'>real estate agents</a> and <a href='/cities/christchurch/trades/painters'>painters</a>.</p>
@@ -157,7 +233,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Cleaning Services Cost in Christchurch? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Christchurch cleaning prices depend on property size, frequency, condition, and whether the work is routine, deep-cleaning, or specialist. Ongoing maintenance cleaning is usually priced differently from tenancy or post-build work.</p><p>Use these ranges as guide figures only. Heavy buildup, tight deadlines, and specialty tasks can all raise the final quote.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +254,83 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="96" data-business-name="PrestigePro Cleaning" data-city-slug="christchurch" data-category-slug="services" data-page-slug="cleaning-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/cleaning-services.png" alt="PrestigePro Cleaning" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 5 (140 reviews)</div>
+                <h3>PrestigePro Cleaning</h3>
+
+                <p class="text-muted">Top-rated cleaning specialists for end-of-lease, carpet, and general residential cleaning.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch</span>
+                    <div class="business-contact-links"><a href="https://prestigeprocleaning.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-96-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="97" data-business-name="Harmony Clean" data-city-slug="christchurch" data-category-slug="services" data-page-slug="cleaning-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Harmony Clean" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (85 reviews)</div>
+                <h3>Harmony Clean</h3>
+
+                <p class="text-muted">Impeccable service with a friendly team specializing in high-quality home and Airbnb cleaning.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch</span>
+                    <div class="business-contact-links"><a href="https://harmonyclean.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-97-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much do cleaners charge in Christchurch?</summary>
                             <p>It depends on the size and condition of the property and whether the clean is regular, deep, or move-out related. Routine cleaning is usually more predictable than specialist work.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is an end-of-tenancy clean different from a regular clean?</summary>
                             <p>Yes. It is usually much more detailed and may include appliances, cupboards, skirting, and other areas not always covered in a regular maintenance clean.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose fixed-price or hourly cleaning?</summary>
                             <p>Both can work. Fixed pricing gives clearer cost certainty, while hourly billing can be fairer for less predictable jobs. The key is having a clear scope.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do cleaners bring their own products?</summary>
                             <p>Many do, but not all. It is worth confirming before booking, especially if you have product preferences or surface-specific requirements.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can a cleaner help get a house ready for sale?</summary>
                             <p>Yes. A quality clean can improve presentation for photos, open homes, and handover. It often works best when timed with your agent and any touch-up maintenance.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What usually makes a cleaning quote more expensive?</summary>
                             <p>Larger homes, heavy buildup, more bathrooms, pet hair, internal windows, appliances, and tight timeframes are common reasons the cost increases.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +338,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/christchurch/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +401,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +414,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -45,63 +45,309 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How long does it take to build a new house in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A standard new residential build in Auckland typically takes 8-14 months from breaking ground to handover, depending on complexity. However, you should add 2-4 months for Auckland Council building consent processing, and potentially longer if resource consent is also required. Architecturally complex designs, multi-storey builds, or projects in challenging terrain (slopes, coastal zones) can take 18 months or more."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/trades/builders#business-list",
+      "name": "Builders in Auckland",
+      "numberOfItems": 12,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Reliable Renovations",
+            "description": "Reliable Renovations is Auckland's leading renovation specialist, offering a complete design-build solution for kitchens, bathrooms, and whole-home transformations. Recommended by MoneyHub NZ, they combine an in-house design team with experienced builders to deliver stunning results with minimal disruption. Their communication, timely completion, and attention to detail consistently earn them outstanding reviews.",
+            "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Wide",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.reliablerenovations.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Glover Homes",
+            "description": "Glover Homes is a multiple Registered Master Builders House of the Year award winner, including the Supreme Award in 2024. Based in Coatesville, they specialise in luxury architectural homes valued at $4 million and above, with an exceptional eye for landscape integration, natural material palettes, and indoor-outdoor living that defines the best of New Zealand residential design.",
+            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Coatesville, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.gloverhomes.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Maddren Homes",
+            "description": "Maddren Homes is one of Auckland's most awarded home builders, with multiple Registered Master Builders House of the Year trophies to their name, including wins in 2025. They specialise in architecturally designed luxury homes with a particular strength in complex sites, multi-level builds, and properties that demand meticulous attention to detail and premium finishes.",
+            "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Wide",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.maddrenhomes.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Qualified Building Solutions (QBS)",
+            "description": "Qualified Building Solutions (QBS) is a Registered Master Builder specialising in complex architectural designs, heritage villa renovations, and high-end residential new builds across Central Auckland. Founded on precision craftsmanship and clear communication, QBS has built a reputation for delivering projects that meet the exacting standards of Auckland's most discerning homeowners and architects.",
+            "image": "/img/businesses/qbs.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Central",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://qbsit.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bakers Builds",
+            "description": "Bakers Builds is a boutique North Shore builder with over 70 five-star Google reviews, specialising in high-end residential construction. Their hands-on approach and exceptional client communication throughout every stage of the build process has earned them a loyal following among North Shore families seeking premium new homes and transformative renovations.",
+            "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "North Shore, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bakersbuilds.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Alpha 1 Builders",
+            "description": "Alpha 1 Builders is a dependable Auckland building company recognised for their structured project delivery, reliability, and excellent workmanship. They handle both new builds and renovations across the wider Auckland region, with a particular strength in delivering projects on time and within budget through disciplined project management and strong subcontractor relationships.",
+            "image": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Wide",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.alpha1builders.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Harrison Building Company",
+            "description": "Harrison Building Company is a certified Master Builders member servicing the greater Auckland region, with expertise spanning both new builds and comprehensive renovation and extension projects. Known for quality craftsmanship, transparency, and building enduring relationships with their clients, they bring a professional yet personal approach to every project.",
+            "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Wide",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.harrisonbuilding.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Best Nest Building Company",
+            "description": "Best Nest Building Company provides professional new builds and modern renovations with expert advice and a commitment to quality craftsmanship. Their team combines architectural new build capability with a strong renovation portfolio, and clients consistently praise their high standards, transparent pricing, and proactive project management across Central Auckland.",
+            "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Central Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bestnestbuilding.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Build Firm",
+            "description": "Build Firm is a full-service residential construction company based on Auckland's North Shore, specialising in high-end new builds and modern architectural homes. Their design-to-build approach ensures seamless project delivery from initial concept through to handover, with a focus on energy efficiency, quality materials, and contemporary New Zealand living.",
+            "image": "/img/businesses/build-firm.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "North Shore, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://buildfirm.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Radford Builders",
+            "description": "Radford Builders delivers high-quality home renovations, extensions, and bespoke new builds across Central Auckland and the Rodney region. Known for meticulous attention to detail and proactive communication, they bring a personal, owner-operator approach to every project — ensuring the principal builder is on-site and accessible throughout the entire build process.",
+            "image": "/img/generated/builders.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Central Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://radfordbuilders.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Cain Built",
+            "description": "Cain Built is a West Auckland builder delivering energy-efficient new builds, thoughtful home extensions, and quality renovations backed by the 10-Year Master Build Guarantee. Their team prioritises sustainable building practices and low-maintenance materials, making them a popular choice for families looking for long-term value and comfort.",
+            "image": "https://images.unsplash.com/photo-1541919329513-35f7af297129?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "West Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://cainbuilt.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "NZ Force Construction",
+            "description": "NZ Force Construction services both residential and commercial projects across the wider Auckland region. With a reputation built on honest communication, transparent quoting, and reliable workmanship, they handle everything from ground-up new builds and multi-unit developments to office fit-outs and commercial refurbishments.",
+            "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Wide",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://nzforce.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a building consent for renovations in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not all renovations require a consent. Minor work like replacing kitchen cabinets, painting, or replacing flooring is generally exempt. However, any work that is structural (removing walls, adding windows), changes the building envelope (new cladding, roofing), or involves plumbing/drainage changes will almost certainly require a building consent from Auckland Council. If in doubt, always check — building without a required consent can result in fines and issues when you sell."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/auckland/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Builders",
+          "item": "https://toprated.nz/cities/auckland/trades/builders"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What is the Master Build 10-Year Guarantee?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The 10-Year Master Build Guarantee is a warranty offered exclusively by Registered Master Builders on new residential construction. It covers defects in materials and workmanship for up to 10 years, structural defects, and — critically — provides protection if the building company becomes insolvent during or after construction. It is one of the strongest consumer protections available in New Zealand construction."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I budget for a 200m² new build in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For a mid-range 200m² new home in Auckland (excluding land), you should budget approximately $760,000 to $1,000,000 including GST in 2026. This covers construction, standard fittings, and basic landscaping. High-end architectural builds can exceed $1.2-$1.4 million for the same floor area. Remember to also budget for professional fees (architect 5-10%, engineer, surveyor) and council consent costs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are leaky building issues still a concern in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While the peak of the leaky building crisis concerned homes built between the mid-1990s and mid-2000s, remediation work is still ongoing across Auckland. If you are purchasing a property from this era — particularly those with plaster or monolithic cladding, internal gutters, or flat roofs — a pre-purchase building inspection is essential. Many Auckland builders now specialise in weathertight remediation, which involves re-cladding and repairing damage from moisture ingress."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I keep my Auckland build on budget?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The biggest budget blowouts in Auckland come from scope creep (changing your mind mid-build), unforeseen site conditions, and poor initial planning. To stay on budget: finalise your design completely before construction starts, build a 10-15% contingency into your budget, use a fixed-price contract where possible, and resist the temptation to make changes once the builder is on site. Every variation order costs time and money."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between a builder and a project manager?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A builder physically constructs the building and manages the day-to-day site work. A project manager oversees the entire process from a strategic level — coordinating the architect, builder, council, and subcontractors. Some Auckland building companies offer a combined build-and-manage service, while others work under a separate project manager appointed by the homeowner. For complex or high-value projects, having an independent project manager can provide an additional layer of quality control."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to build a new house in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard new residential build in Auckland typically takes 8-14 months from breaking ground to handover, depending on complexity. However, you should add 2-4 months for Auckland Council building consent processing, and potentially longer if resource consent is also required. Architecturally complex designs, multi-storey builds, or projects in challenging terrain (slopes, coastal zones) can take 18 months or more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a building consent for renovations in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not all renovations require a consent. Minor work like replacing kitchen cabinets, painting, or replacing flooring is generally exempt. However, any work that is structural (removing walls, adding windows), changes the building envelope (new cladding, roofing), or involves plumbing/drainage changes will almost certainly require a building consent from Auckland Council. If in doubt, always check — building without a required consent can result in fines and issues when you sell."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Master Build 10-Year Guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 10-Year Master Build Guarantee is a warranty offered exclusively by Registered Master Builders on new residential construction. It covers defects in materials and workmanship for up to 10 years, structural defects, and — critically — provides protection if the building company becomes insolvent during or after construction. It is one of the strongest consumer protections available in New Zealand construction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I budget for a 200m² new build in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a mid-range 200m² new home in Auckland (excluding land), you should budget approximately $760,000 to $1,000,000 including GST in 2026. This covers construction, standard fittings, and basic landscaping. High-end architectural builds can exceed $1.2-$1.4 million for the same floor area. Remember to also budget for professional fees (architect 5-10%, engineer, surveyor) and council consent costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are leaky building issues still a concern in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While the peak of the leaky building crisis concerned homes built between the mid-1990s and mid-2000s, remediation work is still ongoing across Auckland. If you are purchasing a property from this era — particularly those with plaster or monolithic cladding, internal gutters, or flat roofs — a pre-purchase building inspection is essential. Many Auckland builders now specialise in weathertight remediation, which involves re-cladding and repairing damage from moisture ingress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I keep my Auckland build on budget?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The biggest budget blowouts in Auckland come from scope creep (changing your mind mid-build), unforeseen site conditions, and poor initial planning. To stay on budget: finalise your design completely before construction starts, build a 10-15% contingency into your budget, use a fixed-price contract where possible, and resist the temptation to make changes once the builder is on site. Every variation order costs time and money."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a builder and a project manager?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A builder physically constructs the building and manages the day-to-day site work. A project manager oversees the entire process from a strategic level — coordinating the architect, builder, council, and subcontractors. Some Auckland building companies offer a combined build-and-manage service, while others work under a separate project manager appointed by the homeowner. For complex or high-value projects, having an independent project manager can provide an additional layer of quality control."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -141,14 +387,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Builder in Auckland</a></li><li><a href="#pricing-guide">How Much Does It Cost to Build in Auckland? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's building industry is one of the busiest in Australasia, driven by the city's relentless population growth, a chronic housing shortage, and a massive wave of earthquake strengthening and weathertight remediation projects. From architecturally designed luxury new builds in Remuera and Coatesville to sensitive heritage villa renovations in Grey Lynn and Mt Eden, the skill and reliability of your builder will determine the success of your project. Auckland's unique challenges — including complex council consent requirements, the legacy of leaky homes, and high demand for skilled labour — make choosing the right builder more critical here than anywhere else in New Zealand. Our guide features only builders who are verified <strong>Licensed Building Practitioners (LBPs)</strong> and members of industry bodies like <strong>Registered Master Builders</strong>, ensuring your investment is protected by the 10-Year Master Build Guarantee. For other essential trades for your project, see our guides to <a href='/cities/auckland/trades/plumbers'>Auckland plumbers</a>, <a href='/cities/auckland/trades/electricians'>Auckland electricians</a>, and <a href='/cities/auckland/trades/painters'>Auckland painters</a>.</p>
@@ -165,7 +411,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Does It Cost to Build in Auckland? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Auckland construction costs are among the highest in New Zealand, typically 10-20% above the national average due to higher land values, stricter council requirements, and strong demand for skilled labour. Prices have stabilised somewhat in early 2026 after several years of sharp increases, but material costs (particularly timber and steel) remain elevated.</p><p>The figures below are indicative and include GST. Your actual costs will depend on site conditions, design complexity, material specifications, and the builder's margin. Always obtain at least three detailed quotes for comparison.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -186,55 +432,258 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="12">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="327" data-business-name="Reliable Renovations" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Reliable Renovations" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (340 reviews)</div>
+                <h3>Reliable Renovations</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Wide</div>
+                <p class="text-muted">Reliable Renovations is Auckland&#39;s leading renovation specialist, offering a complete design-build solution for kitchens, bathrooms, and whole-home transformations. Recommended by MoneyHub NZ, they combine an in-house design team with experienced builders to deliver stunning results with minimal disruption. Their communication, timely completion, and attention to detail consistently earn them outstanding reviews.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Wide</span>
+                    <div class="business-contact-links"><a href="https://www.reliablerenovations.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-327-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800101202" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 101 202</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="132" data-business-name="Glover Homes" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Glover Homes" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (320 reviews)</div>
+                <h3>Glover Homes</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Coatesville</div>
+                <p class="text-muted">Glover Homes is a multiple Registered Master Builders House of the Year award winner, including the Supreme Award in 2024. Based in Coatesville, they specialise in luxury architectural homes valued at $4 million and above, with an exceptional eye for landscape integration, natural material palettes, and indoor-outdoor living that defines the best of New Zealand residential design.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Coatesville, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.gloverhomes.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-132-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:094159876" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 415 9876</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="325" data-business-name="Maddren Homes" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Maddren Homes" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (280 reviews)</div>
+                <h3>Maddren Homes</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Wide</div>
+                <p class="text-muted">Maddren Homes is one of Auckland&#39;s most awarded home builders, with multiple Registered Master Builders House of the Year trophies to their name, including wins in 2025. They specialise in architecturally designed luxury homes with a particular strength in complex sites, multi-level builds, and properties that demand meticulous attention to detail and premium finishes.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Wide</span>
+                    <div class="business-contact-links"><a href="https://www.maddrenhomes.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-325-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:095246789" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 524 6789</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="16" data-business-name="Qualified Building Solutions (QBS)" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/qbs.png" alt="Qualified Building Solutions (QBS)" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (145 reviews)</div>
+                <h3>Qualified Building Solutions (QBS)</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Central Auckland</div>
+                <p class="text-muted">Qualified Building Solutions (QBS) is a Registered Master Builder specialising in complex architectural designs, heritage villa renovations, and high-end residential new builds across Central Auckland. Founded on precision craftsmanship and clear communication, QBS has built a reputation for delivering projects that meet the exacting standards of Auckland&#39;s most discerning homeowners and architects.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Central</span>
+                    <div class="business-contact-links"><a href="https://qbsit.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-16-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093601234" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 360 1234</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="133" data-business-name="Bakers Builds" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bakers Builds" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (78 reviews)</div>
+                <h3>Bakers Builds</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> North Shore</div>
+                <p class="text-muted">Bakers Builds is a boutique North Shore builder with over 70 five-star Google reviews, specialising in high-end residential construction. Their hands-on approach and exceptional client communication throughout every stage of the build process has earned them a loyal following among North Shore families seeking premium new homes and transformative renovations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> North Shore, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.bakersbuilds.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-133-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0215559876" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 021 555 9876</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="326" data-business-name="Alpha 1 Builders" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Alpha 1 Builders" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (195 reviews)</div>
+                <h3>Alpha 1 Builders</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Wide</div>
+                <p class="text-muted">Alpha 1 Builders is a dependable Auckland building company recognised for their structured project delivery, reliability, and excellent workmanship. They handle both new builds and renovations across the wider Auckland region, with a particular strength in delivering projects on time and within budget through disciplined project management and strong subcontractor relationships.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Wide</span>
+                    <div class="business-contact-links"><a href="https://www.alpha1builders.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-326-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:094445678" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 444 5678</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="328" data-business-name="Harrison Building Company" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Harrison Building Company" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (160 reviews)</div>
+                <h3>Harrison Building Company</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Wide</div>
+                <p class="text-muted">Harrison Building Company is a certified Master Builders member servicing the greater Auckland region, with expertise spanning both new builds and comprehensive renovation and extension projects. Known for quality craftsmanship, transparency, and building enduring relationships with their clients, they bring a professional yet personal approach to every project.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Wide</span>
+                    <div class="business-contact-links"><a href="https://www.harrisonbuilding.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-328-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:098881234" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 888 1234</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="134" data-business-name="Best Nest Building Company" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Best Nest Building Company" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (145 reviews)</div>
+                <h3>Best Nest Building Company</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Central Auckland</div>
+                <p class="text-muted">Best Nest Building Company provides professional new builds and modern renovations with expert advice and a commitment to quality craftsmanship. Their team combines architectural new build capability with a strong renovation portfolio, and clients consistently praise their high standards, transparent pricing, and proactive project management across Central Auckland.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Central Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.bestnestbuilding.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-134-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:095553456" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 555 3456</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="17" data-business-name="Build Firm" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/build-firm.png" alt="Build Firm" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (92 reviews)</div>
+                <h3>Build Firm</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> North Shore</div>
+                <p class="text-muted">Build Firm is a full-service residential construction company based on Auckland&#39;s North Shore, specialising in high-end new builds and modern architectural homes. Their design-to-build approach ensures seamless project delivery from initial concept through to handover, with a focus on energy efficiency, quality materials, and contemporary New Zealand living.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> North Shore, Auckland</span>
+                    <div class="business-contact-links"><a href="https://buildfirm.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-17-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:094867890" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 486 7890</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="19" data-business-name="Radford Builders" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/builders.png" alt="Radford Builders" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (64 reviews)</div>
+                <h3>Radford Builders</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Central Auckland</div>
+                <p class="text-muted">Radford Builders delivers high-quality home renovations, extensions, and bespoke new builds across Central Auckland and the Rodney region. Known for meticulous attention to detail and proactive communication, they bring a personal, owner-operator approach to every project — ensuring the principal builder is on-site and accessible throughout the entire build process.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Central Auckland</span>
+                    <div class="business-contact-links"><a href="https://radfordbuilders.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-19-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0215551234" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 021 555 1234</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="18" data-business-name="Cain Built" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1541919329513-35f7af297129?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cain Built" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (78 reviews)</div>
+                <h3>Cain Built</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> West Auckland</div>
+                <p class="text-muted">Cain Built is a West Auckland builder delivering energy-efficient new builds, thoughtful home extensions, and quality renovations backed by the 10-Year Master Build Guarantee. Their team prioritises sustainable building practices and low-maintenance materials, making them a popular choice for families looking for long-term value and comfort.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> West Auckland</span>
+                    <div class="business-contact-links"><a href="https://cainbuilt.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-18-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:098385678" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 838 5678</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="20" data-business-name="NZ Force Construction" data-city-slug="auckland" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="NZ Force Construction" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (51 reviews)</div>
+                <h3>NZ Force Construction</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Wide</div>
+                <p class="text-muted">NZ Force Construction services both residential and commercial projects across the wider Auckland region. With a reputation built on honest communication, transparent quoting, and reliable workmanship, they handle everything from ground-up new builds and multi-unit developments to office fit-outs and commercial refurbishments.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Wide</span>
+                    <div class="business-contact-links"><a href="https://nzforce.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-20-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:096001234" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 600 1234</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How long does it take to build a new house in Auckland?</summary>
                             <p>A standard new residential build in Auckland typically takes 8-14 months from breaking ground to handover, depending on complexity. However, you should add 2-4 months for Auckland Council building consent processing, and potentially longer if resource consent is also required. Architecturally complex designs, multi-storey builds, or projects in challenging terrain (slopes, coastal zones) can take 18 months or more.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a building consent for renovations in Auckland?</summary>
                             <p>Not all renovations require a consent. Minor work like replacing kitchen cabinets, painting, or replacing flooring is generally exempt. However, any work that is structural (removing walls, adding windows), changes the building envelope (new cladding, roofing), or involves plumbing/drainage changes will almost certainly require a building consent from Auckland Council. If in doubt, always check — building without a required consent can result in fines and issues when you sell.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the Master Build 10-Year Guarantee?</summary>
                             <p>The 10-Year Master Build Guarantee is a warranty offered exclusively by Registered Master Builders on new residential construction. It covers defects in materials and workmanship for up to 10 years, structural defects, and — critically — provides protection if the building company becomes insolvent during or after construction. It is one of the strongest consumer protections available in New Zealand construction.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I budget for a 200m² new build in Auckland?</summary>
                             <p>For a mid-range 200m² new home in Auckland (excluding land), you should budget approximately $760,000 to $1,000,000 including GST in 2026. This covers construction, standard fittings, and basic landscaping. High-end architectural builds can exceed $1.2-$1.4 million for the same floor area. Remember to also budget for professional fees (architect 5-10%, engineer, surveyor) and council consent costs.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are leaky building issues still a concern in Auckland?</summary>
                             <p>While the peak of the leaky building crisis concerned homes built between the mid-1990s and mid-2000s, remediation work is still ongoing across Auckland. If you are purchasing a property from this era — particularly those with plaster or monolithic cladding, internal gutters, or flat roofs — a pre-purchase building inspection is essential. Many Auckland builders now specialise in weathertight remediation, which involves re-cladding and repairing damage from moisture ingress.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How can I keep my Auckland build on budget?</summary>
                             <p>The biggest budget blowouts in Auckland come from scope creep (changing your mind mid-build), unforeseen site conditions, and poor initial planning. To stay on budget: finalise your design completely before construction starts, build a 10-15% contingency into your budget, use a fixed-price contract where possible, and resist the temptation to make changes once the builder is on site. Every variation order costs time and money.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the difference between a builder and a project manager?</summary>
                             <p>A builder physically constructs the building and manages the day-to-day site work. A project manager oversees the entire process from a strategic level — coordinating the architect, builder, council, and subcontractors. Some Auckland building companies offer a combined build-and-manage service, while others work under a separate project manager appointed by the homeowner. For complex or high-value projects, having an independent project manager can provide an additional layer of quality control.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -242,7 +691,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -305,7 +754,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -318,8 +767,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

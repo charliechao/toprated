@@ -45,55 +45,114 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much do lawyers charge in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Simple fixed-fee work like wills or standard conveyancing can be relatively predictable, while disputes, family matters, and commercial negotiations are usually billed hourly. Costs vary widely by complexity, so getting a written scope estimate early is important."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/services/lawyers#business-list",
+      "name": "Lawyers in Hamilton",
+      "numberOfItems": 1,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tompkins Wake",
+            "description": "Premier Waikato law firm recognised by The Legal 500. Full-service capabilities in commercial, property, employment, and dispute resolution across the region.",
+            "image": "/img/generated/lawyers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1 Alma Street, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.tompkinswake.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a lawyer to buy a house in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. In New Zealand you generally need a lawyer or conveyancer to complete a property purchase or sale. They review the agreement, investigate title issues, manage settlement funds, and protect your position before the transaction becomes binding."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/hamilton/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Lawyers",
+          "item": "https://toprated.nz/cities/hamilton/services/lawyers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I use a specialist lawyer or a general practice?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For standard property or private-client work, a strong general practice may be perfectly suitable. For employment disputes, family law, commercial restructuring, or litigation, specialist depth is often worth paying for because the risks and strategy are more complex."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a Hamilton lawyer help with business structures and shareholder agreements?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many commercial lawyers help with company structures, shareholder arrangements, business purchases, lease negotiations, and governance documents. For the best outcome, these matters are often handled in coordination with your accountant."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I bring to an initial legal meeting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bring the key documents, a short timeline of the issue, and any deadlines or important emails. The more clearly you can summarise the facts and your goal, the faster the lawyer can tell you whether the matter is straightforward, urgent, or likely to become expensive."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are fixed-fee legal services always better?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily. Fixed fees are great when the task is predictable, but they can become misleading if the scope is vague. The better question is whether the lawyer has defined the scope clearly and will get approval before the work moves beyond it."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do lawyers charge in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simple fixed-fee work like wills or standard conveyancing can be relatively predictable, while disputes, family matters, and commercial negotiations are usually billed hourly. Costs vary widely by complexity, so getting a written scope estimate early is important."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a lawyer to buy a house in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In New Zealand you generally need a lawyer or conveyancer to complete a property purchase or sale. They review the agreement, investigate title issues, manage settlement funds, and protect your position before the transaction becomes binding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use a specialist lawyer or a general practice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For standard property or private-client work, a strong general practice may be perfectly suitable. For employment disputes, family law, commercial restructuring, or litigation, specialist depth is often worth paying for because the risks and strategy are more complex."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a Hamilton lawyer help with business structures and shareholder agreements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many commercial lawyers help with company structures, shareholder arrangements, business purchases, lease negotiations, and governance documents. For the best outcome, these matters are often handled in coordination with your accountant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I bring to an initial legal meeting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bring the key documents, a short timeline of the issue, and any deadlines or important emails. The more clearly you can summarise the facts and your goal, the faster the lawyer can tell you whether the matter is straightforward, urgent, or likely to become expensive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are fixed-fee legal services always better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Fixed fees are great when the task is predictable, but they can become misleading if the scope is vague. The better question is whether the lawyer has defined the scope clearly and will get approval before the work moves beyond it."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +192,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Lawyer in Hamilton</a></li><li><a href="#pricing-guide">How Much Do Lawyers Charge in Hamilton? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Hamilton's legal market is broader and more commercially active than many people expect, serving everyone from first-home buyers and family clients to property investors, rural businesses, developers, and owner-managed companies across the Waikato. The best lawyers in Hamilton combine clear communication with practical judgement, whether they are helping you settle a property purchase, restructure a business, resolve an employment issue, or navigate a sensitive family matter. This guide is written for people who want a legal advisor who is responsive, commercially sensible, and easy to deal with rather than simply prestigious on paper. If your matter overlaps with financial or property decisions, also review our Hamilton guides to <a href='/cities/hamilton/services/accountants'>accountants</a> and <a href='/cities/hamilton/services/real-estate-agents'>real estate agents</a>.</p>
@@ -157,7 +216,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Lawyers Charge in Hamilton? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Legal pricing in Hamilton depends heavily on the type of work and whether the scope is predictable. Routine transactional work is more likely to be quoted on a fixed-fee basis, while dispute-heavy or advisory matters are usually billed hourly.</p><p>These ranges are practical planning figures only. Always request a written estimate or engagement letter before committing.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +237,66 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="1">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="245" data-business-name="Tompkins Wake" data-city-slug="hamilton" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/lawyers.png" alt="Tompkins Wake" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (195 reviews)</div>
+                <h3>Tompkins Wake</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Premier Waikato law firm recognised by The Legal 500. Full-service capabilities in commercial, property, employment, and dispute resolution across the region.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 1 Alma Street, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://www.tompkinswake.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-245-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much do lawyers charge in Hamilton?</summary>
                             <p>Simple fixed-fee work like wills or standard conveyancing can be relatively predictable, while disputes, family matters, and commercial negotiations are usually billed hourly. Costs vary widely by complexity, so getting a written scope estimate early is important.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a lawyer to buy a house in Hamilton?</summary>
                             <p>Yes. In New Zealand you generally need a lawyer or conveyancer to complete a property purchase or sale. They review the agreement, investigate title issues, manage settlement funds, and protect your position before the transaction becomes binding.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I use a specialist lawyer or a general practice?</summary>
                             <p>For standard property or private-client work, a strong general practice may be perfectly suitable. For employment disputes, family law, commercial restructuring, or litigation, specialist depth is often worth paying for because the risks and strategy are more complex.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can a Hamilton lawyer help with business structures and shareholder agreements?</summary>
                             <p>Yes. Many commercial lawyers help with company structures, shareholder arrangements, business purchases, lease negotiations, and governance documents. For the best outcome, these matters are often handled in coordination with your accountant.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I bring to an initial legal meeting?</summary>
                             <p>Bring the key documents, a short timeline of the issue, and any deadlines or important emails. The more clearly you can summarise the facts and your goal, the faster the lawyer can tell you whether the matter is straightforward, urgent, or likely to become expensive.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are fixed-fee legal services always better?</summary>
                             <p>Not necessarily. Fixed fees are great when the task is predictable, but they can become misleading if the scope is vague. The better question is whether the lawyer has defined the scope clearly and will get approval before the work moves beyond it.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +367,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +380,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

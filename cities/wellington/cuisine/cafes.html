@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Why is Wellington famous for coffee?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington pioneered New Zealand's specialty coffee movement in the 1990s and remains home to iconic roasters like Flight Coffee, Peoples Coffee, and Havana Coffee. The city's compact size, creative culture, and terrible weather created the perfect conditions for a thriving café scene."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/cuisine/cafes#business-list",
+      "name": "Cafes in Wellington",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Customs by Coffee Supreme",
+            "description": "Flagship joint known for its signature chili cheese melt and expertly roasted coffee.",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "39 Ghuznee St, Te Aro, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://coffeesupreme.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Flight Coffee Hangar",
+            "description": "Dedicated specialty coffee menu with tasting flights and incredible brunch.",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "119 Dixon St, Te Aro, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://flightcoffee.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Prefab",
+            "description": "Modern minimalist design and consistent quality, a Wellington favorite for brunch.",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "14 Jessie St, Te Aro, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://pre-fab.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What are the best café areas in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cuba Street is the spiritual home of Wellington coffee culture, but excellent cafes are found everywhere — Courtenay Place, the Terrace, Thorndon, Petone, and even the train station. Wellington rewards exploration."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/wellington/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Cafes",
+          "item": "https://toprated.nz/cities/wellington/cuisine/cafes"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How much does a coffee cost in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A standard flat white in Wellington costs $5–$6.50, with specialty single-origin pour-overs ranging from $6–$9. Most cafes also serve excellent food, with brunch mains typically $18–$28."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Wellington famous for coffee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington pioneered New Zealand's specialty coffee movement in the 1990s and remains home to iconic roasters like Flight Coffee, Peoples Coffee, and Havana Coffee. The city's compact size, creative culture, and terrible weather created the perfect conditions for a thriving café scene."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best café areas in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cuba Street is the spiritual home of Wellington coffee culture, but excellent cafes are found everywhere — Courtenay Place, the Terrace, Thorndon, Petone, and even the train station. Wellington rewards exploration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a coffee cost in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard flat white in Wellington costs $5–$6.50, with specialty single-origin pour-overs ranging from $6–$9. Most cafes also serve excellent food, with brunch mains typically $18–$28."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington is universally recognised as New Zealand's coffee capital, and its café culture is legendary. From the pioneering roasters of Cuba Street to hidden laneway espresso bars in the CBD, Wellington's top-rated cafes combine world-class coffee with outstanding brunch menus, artisan baking, and a distinctly creative atmosphere. The city's compact layout means you're never more than a block from an exceptional flat white.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="69" data-business-name="Customs by Coffee Supreme" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="cafes" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Customs by Coffee Supreme" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (610 reviews)</div>
+                <h3>Customs by Coffee Supreme</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Flagship joint known for its signature chili cheese melt and expertly roasted coffee.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 39 Ghuznee St, Te Aro, Wellington</span>
+                    <div class="business-contact-links"><a href="https://coffeesupreme.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-69-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="70" data-business-name="Flight Coffee Hangar" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="cafes" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Flight Coffee Hangar" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (750 reviews)</div>
+                <h3>Flight Coffee Hangar</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Dedicated specialty coffee menu with tasting flights and incredible brunch.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 119 Dixon St, Te Aro, Wellington</span>
+                    <div class="business-contact-links"><a href="https://flightcoffee.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-70-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="71" data-business-name="Prefab" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="cafes" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Prefab" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (1200 reviews)</div>
+                <h3>Prefab</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Modern minimalist design and consistent quality, a Wellington favorite for brunch.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 14 Jessie St, Te Aro, Wellington</span>
+                    <div class="business-contact-links"><a href="https://pre-fab.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-71-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Why is Wellington famous for coffee?</summary>
                             <p>Wellington pioneered New Zealand's specialty coffee movement in the 1990s and remains home to iconic roasters like Flight Coffee, Peoples Coffee, and Havana Coffee. The city's compact size, creative culture, and terrible weather created the perfect conditions for a thriving café scene.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What are the best café areas in Wellington?</summary>
                             <p>Cuba Street is the spiritual home of Wellington coffee culture, but excellent cafes are found everywhere — Courtenay Place, the Terrace, Thorndon, Petone, and even the train station. Wellington rewards exploration.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a coffee cost in Wellington?</summary>
                             <p>A standard flat white in Wellington costs $5–$6.50, with specialty single-origin pour-overs ranging from $6–$9. Most cafes also serve excellent food, with brunch mains typically $18–$28.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

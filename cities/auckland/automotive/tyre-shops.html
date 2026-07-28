@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much do new tyres cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland tyre prices range from $80–$150 per tyre for budget brands, $150–$300 for mid-range, and $250–$500+ for premium performance tyres. Prices vary by size — SUV and 4WD tyres typically cost more than standard passenger tyres."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/automotive/tyre-shops#business-list",
+      "name": "Tyre Shops in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tyre World Auckland",
+            "description": "New and quality used tyres for all vehicles. Free fitting, wheel alignment, and puncture repairs.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Penrose, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.tyreworld.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tony's Tyres & Auto Care",
+            "description": "Family-owned tyre specialists serving Auckland since 1985. Competitive pricing on all major brands, same-day fitting, and expert advice. Known for honest service and going the extra mile.",
+            "image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mt Wellington, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.tonystyres.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Beaurepaires Auckland Central",
+            "description": "One of Auckland's most trusted tyre retailers with multiple locations. Stocking Bridgestone, Firestone, and budget brands. Wheel alignments, balancing, and fleet services available.",
+            "image": "/img/generated/tyre-shops.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Greenlane, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.beaurepaires.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How often should I replace my tyres in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most tyres last 40,000–80,000 km depending on driving style and road conditions. In Auckland's wet climate, it's critical to replace tyres before tread depth drops below 1.5mm. The legal minimum in New Zealand is 1.5mm."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/auckland/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Tyre Shops",
+          "item": "https://toprated.nz/cities/auckland/automotive/tyre-shops"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Auckland tyre shops offer wheel alignments?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, most top-rated Auckland tyre shops offer computerised wheel alignment services from $69–$120. Regular alignments extend tyre life and improve fuel efficiency — recommended every 10,000 km or after hitting a pothole."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do new tyres cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland tyre prices range from $80–$150 per tyre for budget brands, $150–$300 for mid-range, and $250–$500+ for premium performance tyres. Prices vary by size — SUV and 4WD tyres typically cost more than standard passenger tyres."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I replace my tyres in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most tyres last 40,000–80,000 km depending on driving style and road conditions. In Auckland's wet climate, it's critical to replace tyres before tread depth drops below 1.5mm. The legal minimum in New Zealand is 1.5mm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Auckland tyre shops offer wheel alignments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, most top-rated Auckland tyre shops offer computerised wheel alignment services from $69–$120. Regular alignments extend tyre life and improve fuel efficiency — recommended every 10,000 km or after hitting a pothole."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Find Auckland's most trusted tyre shops for new tyres, wheel alignments, balancing, and puncture repairs. From budget-friendly options in South Auckland to premium performance tyre specialists on the North Shore, Auckland's top-rated tyre retailers stock all major brands including Bridgestone, Michelin, Continental, and Pirelli. With mobile fitting services and same-day availability, keeping your vehicle safe on Auckland's roads has never been easier.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="198" data-business-name="Tyre World Auckland" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="tyre-shops" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tyre World Auckland" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (560 reviews)</div>
+                <h3>Tyre World Auckland</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Penrose</div>
+                <p class="text-muted">New and quality used tyres for all vehicles. Free fitting, wheel alignment, and puncture repairs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Penrose, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.tyreworld.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-198-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="278" data-business-name="Tony&#39;s Tyres &amp; Auto Care" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="tyre-shops" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tony&#39;s Tyres &amp; Auto Care" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (340 reviews)</div>
+                <h3>Tony&#39;s Tyres &amp; Auto Care</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mt Wellington</div>
+                <p class="text-muted">Family-owned tyre specialists serving Auckland since 1985. Competitive pricing on all major brands, same-day fitting, and expert advice. Known for honest service and going the extra mile.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Mt Wellington, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.tonystyres.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-278-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="277" data-business-name="Beaurepaires Auckland Central" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="tyre-shops" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/tyre-shops.png" alt="Beaurepaires Auckland Central" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (520 reviews)</div>
+                <h3>Beaurepaires Auckland Central</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Greenlane</div>
+                <p class="text-muted">One of Auckland&#39;s most trusted tyre retailers with multiple locations. Stocking Bridgestone, Firestone, and budget brands. Wheel alignments, balancing, and fleet services available.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Greenlane, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.beaurepaires.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-277-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much do new tyres cost in Auckland?</summary>
                             <p>Auckland tyre prices range from $80–$150 per tyre for budget brands, $150–$300 for mid-range, and $250–$500+ for premium performance tyres. Prices vary by size — SUV and 4WD tyres typically cost more than standard passenger tyres.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How often should I replace my tyres in Auckland?</summary>
                             <p>Most tyres last 40,000–80,000 km depending on driving style and road conditions. In Auckland's wet climate, it's critical to replace tyres before tread depth drops below 1.5mm. The legal minimum in New Zealand is 1.5mm.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Auckland tyre shops offer wheel alignments?</summary>
                             <p>Yes, most top-rated Auckland tyre shops offer computerised wheel alignment services from $69–$120. Regular alignments extend tyre life and improve fuel efficiency — recommended every 10,000 km or after hitting a pothole.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

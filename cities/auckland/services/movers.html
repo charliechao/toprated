@@ -45,31 +45,157 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much do movers cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pricing depends on crew size, vehicle size, travel, access, volume, and whether packing is included. Ask for a written estimate that identifies likely extras."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/movers#business-list",
+      "name": "Movers in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Smart Express",
+            "description": "Smart Express provides residential and commercial moving, delivery, and relocation services from Auckland, with local and New Zealand-wide options.",
+            "image": "https://www.smartexpress.co.nz/wp-content/uploads/2025/06/New-Year-New-Beginnings-Make-Your-Next-Move-The-Best-Move-6.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "331A Neilson Street, Penrose, Auckland 1061",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.smartexpress.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Moving Company",
+            "description": "The Moving Company provides domestic and business relocations, professional packing, transport, and storage support for Auckland customers moving within New Zealand or overseas.",
+            "image": "https://www.themovingcompany.co.nz/wp-content/uploads/2024/10/Home-page-rotating-image.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "41 Pavilion Drive, Mangere, Auckland 2022",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.themovingcompany.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Easy Move Furniture Removals",
+            "description": "Easy Move Furniture Removals handles residential and commercial moves across Auckland and the North Island, with packing, unpacking, office moving, and furniture transport services.",
+            "image": "https://easymovefurnitureremovals.co.nz/wp-content/uploads/easy-move-furniture-removals-truck-featured.webp",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "518 Buckland Road, Pukekohe, Auckland 2677",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://easymovefurnitureremovals.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Smooth Mover",
+            "description": "The Smooth Mover is an Albany-based moving company offering packing, residential and commercial furniture removals, secure storage, general freight, and North Island relocations.",
+            "image": "https://thesmoothmover.co.nz/wp-content/uploads/2017/07/moving_truck.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "11 Tarndale Grove, Albany, Auckland 0632",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://thesmoothmover.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Auckland Kiwi Movers",
+            "description": "Auckland Kiwi Movers provides residential and commercial moving services across Auckland, including packing, loading, transport, unpacking, office relocations, and furniture delivery.",
+            "image": "https://aucklandkiwimovers.co.nz/wp-content/uploads/2024/03/ab-01.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I book Auckland movers in advance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Booking early is sensible for weekends, month-end dates, and larger moves, when established moving teams can fill quickly."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Movers",
+          "item": "https://toprated.nz/cities/auckland/services/movers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can movers pack my belongings too?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many moving companies offer full or partial packing. Confirm whether boxes, wrapping materials, packing labour, and unpacking are included in the quote."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do movers cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing depends on crew size, vehicle size, travel, access, volume, and whether packing is included. Ask for a written estimate that identifies likely extras."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I book Auckland movers in advance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Booking early is sensible for weekends, month-end dates, and larger moves, when established moving teams can fill quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can movers pack my belongings too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many moving companies offer full or partial packing. Confirm whether boxes, wrapping materials, packing labour, and unpacking are included in the quote."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,14 +235,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose Movers in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland moves can involve tight access, apartment lifts, motorway timing, and long travel between suburbs. Compare movers by the work they handle, how clearly they quote, and whether packing, furniture protection, transport, and unloading are included.</p>
@@ -139,35 +265,119 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="383" data-business-name="Smart Express" data-city-slug="auckland" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.smartexpress.co.nz/wp-content/uploads/2025/06/New-Year-New-Beginnings-Make-Your-Next-Move-The-Best-Move-6.jpg" alt="Smart Express" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Smart Express</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Penrose</div>
+                <p class="text-muted">Smart Express provides residential and commercial moving, delivery, and relocation services from Auckland, with local and New Zealand-wide options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 331A Neilson Street, Penrose, Auckland 1061</span>
+                    <div class="business-contact-links"><a href="https://www.smartexpress.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-383-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800247377" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 247 377</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="384" data-business-name="The Moving Company" data-city-slug="auckland" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.themovingcompany.co.nz/wp-content/uploads/2024/10/Home-page-rotating-image.jpg" alt="The Moving Company" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>The Moving Company</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mangere</div>
+                <p class="text-muted">The Moving Company provides domestic and business relocations, professional packing, transport, and storage support for Auckland customers moving within New Zealand or overseas.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 41 Pavilion Drive, Mangere, Auckland 2022</span>
+                    <div class="business-contact-links"><a href="https://www.themovingcompany.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-384-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800668464" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 668 464</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="385" data-business-name="Easy Move Furniture Removals" data-city-slug="auckland" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://easymovefurnitureremovals.co.nz/wp-content/uploads/easy-move-furniture-removals-truck-featured.webp" alt="Easy Move Furniture Removals" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Easy Move Furniture Removals</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Pukekohe</div>
+                <p class="text-muted">Easy Move Furniture Removals handles residential and commercial moves across Auckland and the North Island, with packing, unpacking, office moving, and furniture transport services.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 518 Buckland Road, Pukekohe, Auckland 2677</span>
+                    <div class="business-contact-links"><a href="https://easymovefurnitureremovals.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-385-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800432796" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 432 796</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="386" data-business-name="The Smooth Mover" data-city-slug="auckland" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://thesmoothmover.co.nz/wp-content/uploads/2017/07/moving_truck.jpg" alt="The Smooth Mover" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>The Smooth Mover</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Albany</div>
+                <p class="text-muted">The Smooth Mover is an Albany-based moving company offering packing, residential and commercial furniture removals, secure storage, general freight, and North Island relocations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 11 Tarndale Grove, Albany, Auckland 0632</span>
+                    <div class="business-contact-links"><a href="https://thesmoothmover.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-386-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:094154222" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 415 4222</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="382" data-business-name="Auckland Kiwi Movers" data-city-slug="auckland" data-category-slug="services" data-page-slug="movers" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://aucklandkiwimovers.co.nz/wp-content/uploads/2024/03/ab-01.jpg" alt="Auckland Kiwi Movers" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Auckland Kiwi Movers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">Auckland Kiwi Movers provides residential and commercial moving services across Auckland, including packing, loading, transport, unpacking, office relocations, and furniture delivery.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much do movers cost in Auckland?</summary>
                             <p>Pricing depends on crew size, vehicle size, travel, access, volume, and whether packing is included. Ask for a written estimate that identifies likely extras.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I book Auckland movers in advance?</summary>
                             <p>Booking early is sensible for weekends, month-end dates, and larger moves, when established moving teams can fill quickly.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can movers pack my belongings too?</summary>
                             <p>Many moving companies offer full or partial packing. Confirm whether boxes, wrapping materials, packing labour, and unpacking are included in the quote.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -175,7 +385,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,7 +427,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -230,8 +440,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

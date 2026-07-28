@@ -45,47 +45,191 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Which Auckland French restaurant is best for fine dining?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sid at The French Cafe in Eden Terrace and Paris Butter in Herne Bay are the two strongest fine-dining fits on this shortlist. Sid offers seasonal tasting and a la carte dining built around New Zealand ingredients, while Paris Butter is known for a creative chef-led tasting experience with French foundations."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/french-restaurants#business-list",
+      "name": "French Restaurants in Auckland",
+      "numberOfItems": 6,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Sid at The French Cafe",
+            "description": "Sid at The French Cafe is an independently owned Eden Terrace fine-dining restaurant serving seasonal tasting and a la carte menus built around New Zealand ingredients and modern French technique.",
+            "image": "https://static1.squarespace.com/static/682e6fc240c58a6182208aa2/t/684f6c7047cb71004a744931/1750035569063/French+Cafe+Horizontal+%281%29.png?format=1500w",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "210 Symonds Street, Eden Terrace, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://thefrenchcafe.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Origine",
+            "description": "Origine is a French brasserie in Commercial Bay with harbour views, a menu grounded in French cooking, and New Zealand produce across lunch, dinner, drinks, and dessert.",
+            "image": "https://origine.nz/wp-content/uploads/2024/06/hero-image-1024x1024.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Level 2, Commercial Bay, 172 Quay Street, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://origine.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Paris Butter",
+            "description": "Paris Butter is a Herne Bay fine-dining restaurant led by chef Nick Honeyman, pairing French culinary foundations with seasonal New Zealand ingredients in a creative tasting-menu format.",
+            "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "166 Jervois Road, Herne Bay, Auckland 1011",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://parisbutter.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Le Garde-Manger",
+            "description": "Le Garde-Manger is a traditional Queen Street French bistro serving classics such as galettes, crepes, raclette, tartiflette, and other hearty regional dishes in a casual setting.",
+            "image": "https://www.legardemanger.co.nz/wp-content/uploads/2021/09/Home-scaled-1-235x1024.jpeg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "466 Queen Street, Auckland Central, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.legardemanger.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "La Maree",
+            "description": "La Maree at Sofitel Auckland Viaduct Harbour offers French-inspired waterfront dining with a strong focus on New Zealand seafood, local produce, and all-day hotel hospitality.",
+            "image": "https://images.unsplash.com/photo-1516211697506-8360dbcfe9a4?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "21 Viaduct Harbour Avenue, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://sofitel.accor.com/en/hotels/8577/r001.restaurant.html"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bistro Saine",
+            "description": "Bistro Saine is an Auckland CBD bistro combining French and Mediterranean influences across lunch, dinner, wine, and aperitif service in the historic MLC Building.",
+            "image": "https://bistrosaine.co.nz/wp-content/uploads/2025/03/bistro-saine_Cover-1.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Level 1, 51 Albert Street, Auckland Central, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://bistrosaine.co.nz/"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where can I find a casual French bistro in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Le Garde-Manger at 466 Queen Street is the most traditional casual French bistro in this guide, serving dishes such as galettes, crepes, raclette, and tartiflette. Bistro Saine on Albert Street offers a more contemporary French-and-Mediterranean bistro experience."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "French Restaurants",
+          "item": "https://toprated.nz/cities/auckland/cuisine/french-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Which French restaurants in Auckland have waterfront views?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Origine overlooks the harbour from Commercial Bay, while La Maree is inside Sofitel Auckland Viaduct Harbour. Origine is the stronger brasserie choice; La Maree has a French-inspired seafood and hotel-dining focus."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are all six restaurants strictly traditional French?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Le Garde-Manger is the most traditional French bistro in the shortlist. Origine is a contemporary French brasserie, while Sid at The French Cafe, Paris Butter, La Maree, and Bistro Saine combine French technique or influence with New Zealand produce and other culinary ideas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to book French restaurants in Auckland in advance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Booking ahead is sensible for fine dining, waterfront tables, and Friday or Saturday dinner. Tasting-menu restaurants may require reservations or advance notice for dietary needs. Check the restaurant's official booking page for current availability and cancellation terms."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Auckland French restaurant is best for fine dining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sid at The French Cafe in Eden Terrace and Paris Butter in Herne Bay are the two strongest fine-dining fits on this shortlist. Sid offers seasonal tasting and a la carte dining built around New Zealand ingredients, while Paris Butter is known for a creative chef-led tasting experience with French foundations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find a casual French bistro in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le Garde-Manger at 466 Queen Street is the most traditional casual French bistro in this guide, serving dishes such as galettes, crepes, raclette, and tartiflette. Bistro Saine on Albert Street offers a more contemporary French-and-Mediterranean bistro experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which French restaurants in Auckland have waterfront views?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Origine overlooks the harbour from Commercial Bay, while La Maree is inside Sofitel Auckland Viaduct Harbour. Origine is the stronger brasserie choice; La Maree has a French-inspired seafood and hotel-dining focus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all six restaurants strictly traditional French?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Le Garde-Manger is the most traditional French bistro in the shortlist. Origine is a contemporary French brasserie, while Sid at The French Cafe, Paris Butter, La Maree, and Bistro Saine combine French technique or influence with New Zealand produce and other culinary ideas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to book French restaurants in Auckland in advance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Booking ahead is sensible for fine dining, waterfront tables, and Friday or Saturday dinner. Tasting-menu restaurants may require reservations or advance notice for dietary needs. Check the restaurant's official booking page for current availability and cancellation terms."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -125,14 +269,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">Which Auckland French Restaurant Should You Choose?</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">The best French restaurants in Auckland cover several distinct experiences: refined tasting menus at <strong>Sid at The French Cafe</strong> and <strong>Paris Butter</strong>, traditional bistro cooking at <strong>Le Garde-Manger</strong>, harbour-facing brasserie dining at <strong>Origine</strong>, French-inspired seafood at <strong>La Maree</strong>, and an all-day CBD bistro at <strong>Bistro Saine</strong>. This July 2026 shortlist includes six operating venues whose current websites, Auckland locations, and dining concepts we checked directly. Use the comparison below to choose by occasion and area, then confirm the latest menu, hours, and booking availability with the restaurant. For more Auckland dining options, compare our guides to <a href='/cities/auckland/cuisine/italian-restaurants'>Italian restaurants</a>, <a href='/cities/auckland/cuisine/japanese-restaurants'>Japanese restaurants</a>, and <a href='/cities/auckland/cuisine/restaurants'>restaurants across Auckland</a>.</p>
@@ -147,45 +291,146 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="6">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="162" data-business-name="Sid at The French Cafe" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="french-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://static1.squarespace.com/static/682e6fc240c58a6182208aa2/t/684f6c7047cb71004a744931/1750035569063/French+Cafe+Horizontal+%281%29.png?format=1500w" alt="Sid at The French Cafe" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Sid at The French Cafe</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Eden Terrace</div>
+                <p class="text-muted">Sid at The French Cafe is an independently owned Eden Terrace fine-dining restaurant serving seasonal tasting and a la carte menus built around New Zealand ingredients and modern French technique.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 210 Symonds Street, Eden Terrace, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://thefrenchcafe.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-162-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="163" data-business-name="Origine" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="french-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://origine.nz/wp-content/uploads/2024/06/hero-image-1024x1024.png" alt="Origine" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Origine</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Commercial Bay</div>
+                <p class="text-muted">Origine is a French brasserie in Commercial Bay with harbour views, a menu grounded in French cooking, and New Zealand produce across lunch, dinner, drinks, and dessert.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Level 2, Commercial Bay, 172 Quay Street, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://origine.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-163-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="400" data-business-name="Paris Butter" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="french-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Paris Butter" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Paris Butter</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Herne Bay</div>
+                <p class="text-muted">Paris Butter is a Herne Bay fine-dining restaurant led by chef Nick Honeyman, pairing French culinary foundations with seasonal New Zealand ingredients in a creative tasting-menu format.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 166 Jervois Road, Herne Bay, Auckland 1011</span>
+                    <div class="business-contact-links"><a href="https://parisbutter.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-400-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="401" data-business-name="Le Garde-Manger" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="french-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.legardemanger.co.nz/wp-content/uploads/2021/09/Home-scaled-1-235x1024.jpeg" alt="Le Garde-Manger" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Le Garde-Manger</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland CBD</div>
+                <p class="text-muted">Le Garde-Manger is a traditional Queen Street French bistro serving classics such as galettes, crepes, raclette, tartiflette, and other hearty regional dishes in a casual setting.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 466 Queen Street, Auckland Central, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://www.legardemanger.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-401-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="402" data-business-name="La Maree" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="french-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1516211697506-8360dbcfe9a4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="La Maree" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>La Maree</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Viaduct Harbour</div>
+                <p class="text-muted">La Maree at Sofitel Auckland Viaduct Harbour offers French-inspired waterfront dining with a strong focus on New Zealand seafood, local produce, and all-day hotel hospitality.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 21 Viaduct Harbour Avenue, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://sofitel.accor.com/en/hotels/8577/r001.restaurant.html?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-402-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="403" data-business-name="Bistro Saine" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="french-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://bistrosaine.co.nz/wp-content/uploads/2025/03/bistro-saine_Cover-1.png" alt="Bistro Saine" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Bistro Saine</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland CBD</div>
+                <p class="text-muted">Bistro Saine is an Auckland CBD bistro combining French and Mediterranean influences across lunch, dinner, wine, and aperitif service in the historic MLC Building.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Level 1, 51 Albert Street, Auckland Central, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://bistrosaine.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-403-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Auckland French restaurant is best for fine dining?</summary>
                             <p>Sid at The French Cafe in Eden Terrace and Paris Butter in Herne Bay are the two strongest fine-dining fits on this shortlist. Sid offers seasonal tasting and a la carte dining built around New Zealand ingredients, while Paris Butter is known for a creative chef-led tasting experience with French foundations.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find a casual French bistro in Auckland?</summary>
                             <p>Le Garde-Manger at 466 Queen Street is the most traditional casual French bistro in this guide, serving dishes such as galettes, crepes, raclette, and tartiflette. Bistro Saine on Albert Street offers a more contemporary French-and-Mediterranean bistro experience.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which French restaurants in Auckland have waterfront views?</summary>
                             <p>Origine overlooks the harbour from Commercial Bay, while La Maree is inside Sofitel Auckland Viaduct Harbour. Origine is the stronger brasserie choice; La Maree has a French-inspired seafood and hotel-dining focus.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are all six restaurants strictly traditional French?</summary>
                             <p>No. Le Garde-Manger is the most traditional French bistro in the shortlist. Origine is a contemporary French brasserie, while Sid at The French Cafe, Paris Butter, La Maree, and Bistro Saine combine French technique or influence with New Zealand produce and other culinary ideas.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need to book French restaurants in Auckland in advance?</summary>
                             <p>Booking ahead is sensible for fine dining, waterfront tables, and Friday or Saturday dinner. Tasting-menu restaurants may require reservations or advance notice for dietary needs. Check the restaurant's official booking page for current availability and cancellation terms.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -193,7 +438,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -256,7 +501,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -269,8 +514,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

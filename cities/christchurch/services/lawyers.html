@@ -45,55 +45,131 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a lawyer cost in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the type of matter. Conveyancing and wills are usually more predictable, while disputes, commercial work, and complex estate matters can vary significantly."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/services/lawyers#business-list",
+      "name": "Lawyers in Christchurch",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Wynn Williams",
+            "description": "Recognised full-service Christchurch firm ranked by The Legal 500. Expertise in litigation, property, corporate advisory, and post-earthquake insurance claims.",
+            "image": "/img/generated/lawyers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wynn Williams House, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.wynnwilliams.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Duncan Cotterill",
+            "description": "Full-service national firm with strong Christchurch roots. Recognised by The Legal 500 for corporate, employment, and resource management law.",
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch Central",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.duncancotterill.com"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a lawyer when buying or selling property in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In most cases, yes. A lawyer or conveyancer handles the legal transfer, contract review, settlement process, and helps reduce the risk of costly mistakes."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/christchurch/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Lawyers",
+          "item": "https://toprated.nz/cities/christchurch/services/lawyers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I bring to a first legal meeting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bring any relevant contracts, emails, ID, timelines, and documents tied to the matter. Clear records help the lawyer assess the real scope faster."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a lawyer help with small-business issues as well as personal legal work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many firms can, but not always with the same strength in every area. Ask whether the lawyer handling your file works regularly with business clients if that matters to you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I choose a lawyer based on price alone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually not. Clarity, experience, responsiveness, and judgement in the right area often matter more than the cheapest hourly rate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between a lawyer and a conveyancer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A conveyancer focuses mainly on property transactions, while a lawyer can advise across a wider range of legal matters. Straightforward property work may suit either, but complex issues can justify a broader legal adviser."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a lawyer cost in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the type of matter. Conveyancing and wills are usually more predictable, while disputes, commercial work, and complex estate matters can vary significantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a lawyer when buying or selling property in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In most cases, yes. A lawyer or conveyancer handles the legal transfer, contract review, settlement process, and helps reduce the risk of costly mistakes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I bring to a first legal meeting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bring any relevant contracts, emails, ID, timelines, and documents tied to the matter. Clear records help the lawyer assess the real scope faster."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a lawyer help with small-business issues as well as personal legal work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many firms can, but not always with the same strength in every area. Ask whether the lawyer handling your file works regularly with business clients if that matters to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose a lawyer based on price alone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. Clarity, experience, responsiveness, and judgement in the right area often matter more than the cheapest hourly rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a lawyer and a conveyancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A conveyancer focuses mainly on property transactions, while a lawyer can advise across a wider range of legal matters. Straightforward property work may suit either, but complex issues can justify a broader legal adviser."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +209,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Lawyer in Christchurch</a></li><li><a href="#pricing-guide">How Much Do Lawyers Charge in Christchurch? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Christchurch lawyers help with property purchases and sales, business transactions, wills, trusts, relationship matters, disputes, and the legal work behind many major financial decisions. The best firms combine legal accuracy with plain-English advice and practical judgement. This guide is for Christchurch residents, investors, and business owners who want a lawyer that is responsive, commercially sensible, and easy to deal with. If your matter connects with a business or property decision, also see our Christchurch guides to <a href='/cities/christchurch/services/accountants'>accountants</a> and <a href='/cities/christchurch/services/real-estate-agents'>real estate agents</a>.</p>
@@ -157,7 +233,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Lawyers Charge in Christchurch? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Christchurch legal fees vary by matter type, urgency, complexity, and whether the work can be fixed fee. Conveyancing and wills are often more predictable, while disputes and complex commercial matters vary more widely.</p><p>These are general planning figures only. Always ask for a written estimate that separates fees, disbursements, and excluded work.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +254,83 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="243" data-business-name="Wynn Williams" data-city-slug="christchurch" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/lawyers.png" alt="Wynn Williams" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (275 reviews)</div>
+                <h3>Wynn Williams</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Central City</div>
+                <p class="text-muted">Recognised full-service Christchurch firm ranked by The Legal 500. Expertise in litigation, property, corporate advisory, and post-earthquake insurance claims.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wynn Williams House, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://www.wynnwilliams.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-243-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="244" data-business-name="Duncan Cotterill" data-city-slug="christchurch" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Duncan Cotterill" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (230 reviews)</div>
+                <h3>Duncan Cotterill</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Central City</div>
+                <p class="text-muted">Full-service national firm with strong Christchurch roots. Recognised by The Legal 500 for corporate, employment, and resource management law.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch Central</span>
+                    <div class="business-contact-links"><a href="https://www.duncancotterill.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-244-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a lawyer cost in Christchurch?</summary>
                             <p>It depends on the type of matter. Conveyancing and wills are usually more predictable, while disputes, commercial work, and complex estate matters can vary significantly.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a lawyer when buying or selling property in Christchurch?</summary>
                             <p>In most cases, yes. A lawyer or conveyancer handles the legal transfer, contract review, settlement process, and helps reduce the risk of costly mistakes.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I bring to a first legal meeting?</summary>
                             <p>Bring any relevant contracts, emails, ID, timelines, and documents tied to the matter. Clear records help the lawyer assess the real scope faster.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can a lawyer help with small-business issues as well as personal legal work?</summary>
                             <p>Many firms can, but not always with the same strength in every area. Ask whether the lawyer handling your file works regularly with business clients if that matters to you.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose a lawyer based on price alone?</summary>
                             <p>Usually not. Clarity, experience, responsiveness, and judgement in the right area often matter more than the cheapest hourly rate.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the difference between a lawyer and a conveyancer?</summary>
                             <p>A conveyancer focuses mainly on property transactions, while a lawyer can advise across a wider range of legal matters. Straightforward property work may suit either, but complex issues can justify a broader legal adviser.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +338,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/christchurch/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +401,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +414,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

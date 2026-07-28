@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where are the best Thai restaurants in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington's Thai restaurants are spread across the CBD, Cuba Street quarter, Courtenay Place, and suburban hubs like Petone and Karori. The city centre has the highest concentration of quality Thai dining options."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/cuisine/thai-restaurants#business-list",
+      "name": "Thai Restaurants in Wellington",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Thai Chef Restaurant",
+            "description": "Award-winning Thai restaurant on Cuba Street run by Thai-born chef. Authentic green curry, massaman, and pad thai using imported herbs and spices. BYO wine option and generous portions. Wellington's favourite Thai for over 15 years.",
+            "image": "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Cuba Street, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.thaichef.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Monsoon Poon",
+            "description": "Iconic Wellington institution blending Thai, Malaysian, and Southeast Asian flavours in a vibrant Blair Street setting. Legendary lunchtime curries, creative cocktails, and one of the capital's most buzzing atmospheres.",
+            "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Blair Street, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.monsoonpoon.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Aroy Thai Eatery",
+            "description": "Fast, reliable, budget-friendly authentic Thai street food on Cuba Street. Serving since 2008.",
+            "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Cuba Street, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.aroythai.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How much does Thai food cost in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Casual Thai dining in Wellington ranges from $16–$24 for mains, with premium Thai restaurants charging $28–$40. Many offer excellent value lunch specials and takeaway deals."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/wellington/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Thai Restaurants",
+          "item": "https://toprated.nz/cities/wellington/cuisine/thai-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can I get authentic Thai food in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely — Wellington has a thriving Thai community and several restaurants run by Thai-born chefs using imported ingredients. Look for restaurants with Thai staff and menus featuring regional specialities beyond the usual pad thai."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where are the best Thai restaurants in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington's Thai restaurants are spread across the CBD, Cuba Street quarter, Courtenay Place, and suburban hubs like Petone and Karori. The city centre has the highest concentration of quality Thai dining options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Thai food cost in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casual Thai dining in Wellington ranges from $16–$24 for mains, with premium Thai restaurants charging $28–$40. Many offer excellent value lunch specials and takeaway deals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get authentic Thai food in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely — Wellington has a thriving Thai community and several restaurants run by Thai-born chefs using imported ingredients. Look for restaurants with Thai staff and menus featuring regional specialities beyond the usual pad thai."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's Thai restaurant scene offers everything from authentic street-food-style eateries to contemporary Thai fine dining. The capital's Thai chefs bring genuine flavours — fragrant curries, spicy salads, and aromatic stir-fries — using imported ingredients and traditional techniques. Whether you crave a quick pad thai on Cuba Street or an elegant Thai degustation, Wellington's top-rated Thai restaurants deliver consistently outstanding food.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="300" data-business-name="Thai Chef Restaurant" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="thai-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Thai Chef Restaurant" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (410 reviews)</div>
+                <h3>Thai Chef Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Cuba Street</div>
+                <p class="text-muted">Award-winning Thai restaurant on Cuba Street run by Thai-born chef. Authentic green curry, massaman, and pad thai using imported herbs and spices. BYO wine option and generous portions. Wellington&#39;s favourite Thai for over 15 years.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Cuba Street, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.thaichef.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-300-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="301" data-business-name="Monsoon Poon" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="thai-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Monsoon Poon" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (860 reviews)</div>
+                <h3>Monsoon Poon</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Blair Street</div>
+                <p class="text-muted">Iconic Wellington institution blending Thai, Malaysian, and Southeast Asian flavours in a vibrant Blair Street setting. Legendary lunchtime curries, creative cocktails, and one of the capital&#39;s most buzzing atmospheres.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Blair Street, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.monsoonpoon.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-301-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="159" data-business-name="Aroy Thai Eatery" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="thai-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Aroy Thai Eatery" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (520 reviews)</div>
+                <h3>Aroy Thai Eatery</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Fast, reliable, budget-friendly authentic Thai street food on Cuba Street. Serving since 2008.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Cuba Street, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.aroythai.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-159-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where are the best Thai restaurants in Wellington?</summary>
                             <p>Wellington's Thai restaurants are spread across the CBD, Cuba Street quarter, Courtenay Place, and suburban hubs like Petone and Karori. The city centre has the highest concentration of quality Thai dining options.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does Thai food cost in Wellington?</summary>
                             <p>Casual Thai dining in Wellington ranges from $16–$24 for mains, with premium Thai restaurants charging $28–$40. Many offer excellent value lunch specials and takeaway deals.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can I get authentic Thai food in Wellington?</summary>
                             <p>Absolutely — Wellington has a thriving Thai community and several restaurants run by Thai-born chefs using imported ingredients. Look for restaurants with Thai staff and menus featuring regional specialities beyond the usual pad thai.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

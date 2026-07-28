@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a car service cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A basic car service in Auckland costs $150–$250, an intermediate service $250–$400, and a full service $400–$600+. Prices vary by vehicle make — European cars typically cost more to service than Japanese models."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/automotive/mechanics#business-list",
+      "name": "Mechanics in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Auckland Automotive",
+            "description": "Full-service auto repair and WOF inspections. European car specialists with manufacturer-trained technicians.",
+            "image": "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Newmarket, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.aucklandautomotive.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "S&S Auto Electrical & Mechanical",
+            "description": "AA-approved workshop specialising in European and Japanese vehicle servicing, WoF inspections, and complex diagnostics. Transparent pricing, honest advice, and a loyal customer following across Central Auckland.",
+            "image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Grey Lynn, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.ssauto.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Gearbox Motors",
+            "description": "Honest, affordable car servicing and repairs. Specializing in Japanese imports and hybrid vehicles.",
+            "image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mt Wellington, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.gearboxmotors.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How often should I service my car in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most manufacturers recommend servicing every 10,000–15,000 km or every 12 months, whichever comes first. Regular servicing is essential for maintaining your warranty and catching potential issues early."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/auckland/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Mechanics",
+          "item": "https://toprated.nz/cities/auckland/automotive/mechanics"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What's the difference between a WoF and a service?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Warrant of Fitness (WoF) is a government safety inspection checking brakes, tyres, lights, and structural integrity — it's legally required. A service is preventative maintenance including oil changes, filter replacements, and fluid top-ups to keep your car running optimally."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a car service cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A basic car service in Auckland costs $150–$250, an intermediate service $250–$400, and a full service $400–$600+. Prices vary by vehicle make — European cars typically cost more to service than Japanese models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I service my car in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most manufacturers recommend servicing every 10,000–15,000 km or every 12 months, whichever comes first. Regular servicing is essential for maintaining your warranty and catching potential issues early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between a WoF and a service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Warrant of Fitness (WoF) is a government safety inspection checking brakes, tyres, lights, and structural integrity — it's legally required. A service is preventative maintenance including oil changes, filter replacements, and fluid top-ups to keep your car running optimally."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,14 +202,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose a Mechanic in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">The best mechanics in Auckland usually win on three things: clear diagnosis, honest scope, and the ability to explain what actually needs doing before the bill grows. Whether you need a routine service, a WoF-related repair, or help with a harder-to-track issue, this page is built to help Auckland drivers compare local workshops more confidently.</p>
@@ -139,35 +232,85 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="189" data-business-name="Auckland Automotive" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="mechanics" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Auckland Automotive" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (520 reviews)</div>
+                <h3>Auckland Automotive</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">Full-service auto repair and WOF inspections. European car specialists with manufacturer-trained technicians.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Newmarket, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.aucklandautomotive.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-189-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="280" data-business-name="S&amp;S Auto Electrical &amp; Mechanical" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="mechanics" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="S&amp;S Auto Electrical &amp; Mechanical" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (280 reviews)</div>
+                <h3>S&amp;S Auto Electrical &amp; Mechanical</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Grey Lynn</div>
+                <p class="text-muted">AA-approved workshop specialising in European and Japanese vehicle servicing, WoF inspections, and complex diagnostics. Transparent pricing, honest advice, and a loyal customer following across Central Auckland.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Grey Lynn, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.ssauto.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-280-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="190" data-business-name="Gearbox Motors" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="mechanics" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Gearbox Motors" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (380 reviews)</div>
+                <h3>Gearbox Motors</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mt Wellington</div>
+                <p class="text-muted">Honest, affordable car servicing and repairs. Specializing in Japanese imports and hybrid vehicles.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Mt Wellington, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.gearboxmotors.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-190-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a car service cost in Auckland?</summary>
                             <p>A basic car service in Auckland costs $150–$250, an intermediate service $250–$400, and a full service $400–$600+. Prices vary by vehicle make — European cars typically cost more to service than Japanese models.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How often should I service my car in Auckland?</summary>
                             <p>Most manufacturers recommend servicing every 10,000–15,000 km or every 12 months, whichever comes first. Regular servicing is essential for maintaining your warranty and catching potential issues early.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What's the difference between a WoF and a service?</summary>
                             <p>A Warrant of Fitness (WoF) is a government safety inspection checking brakes, tyres, lights, and structural integrity — it's legally required. A service is preventative maintenance including oil changes, filter replacements, and fluid top-ups to keep your car running optimally.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -175,7 +318,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -238,7 +381,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -251,8 +394,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

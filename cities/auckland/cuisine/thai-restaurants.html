@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What are the most popular Thai restaurants in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Saan in Ponsonby is highly rated for its Northern and Northeastern Thai street food. Kiin Thai in Mt Eden and Blue Elephant in Parnell are also local favorites for traditional flavors."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/thai-restaurants#business-list",
+      "name": "Thai Restaurants in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "@Bangkok",
+            "description": "Popular Kingsland neighborhood spot. Famous for massaman curry with 'ugly puffy roti' - a local favorite.",
+            "image": "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Kingsland, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.atbangkok.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Nahm",
+            "description": "Traditional Thai with modern Asian twist. Sharing-style menu designed for groups and authentic flavors.",
+            "image": "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.nahm.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Thai Street",
+            "description": "Vibrant Auckland CBD Thai eatery bringing authentic Bangkok street food flavours to New Zealand. Pad see ew, green curry, and mango sticky rice prepared by Thai-born chefs using imported ingredients.",
+            "image": "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.thaistreet.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where can I find 'actually spicy' Thai food in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many authentic spots like Zap 2 in Dominion Road or the food stalls in the Elliot Stables allow you to request 'Thai Spicy' levels for a truly fiery experience."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Thai Restaurants",
+          "item": "https://toprated.nz/cities/auckland/cuisine/thai-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Does Auckland have Thai fusion or modern Thai dining?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Saan offers a refined, modern take on Thai cuisine, while many contemporary Asian fusion restaurants in the CBD incorporate strong Thai influences into their menus."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the most popular Thai restaurants in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saan in Ponsonby is highly rated for its Northern and Northeastern Thai street food. Kiin Thai in Mt Eden and Blue Elephant in Parnell are also local favorites for traditional flavors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find 'actually spicy' Thai food in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many authentic spots like Zap 2 in Dominion Road or the food stalls in the Elliot Stables allow you to request 'Thai Spicy' levels for a truly fiery experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Auckland have Thai fusion or modern Thai dining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Saan offers a refined, modern take on Thai cuisine, while many contemporary Asian fusion restaurants in the CBD incorporate strong Thai influences into their menus."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Experience the perfect balance of sweet, sour, salty, and spicy at Auckland's premier Thai restaurants. From the aromatic green curries of family-run neighborhood gems to the bold, modern flavors of trendy CBD eateries, Auckland offers an incredible diversity of Thai cuisine that stays true to its fragrant roots while embracing fresh New Zealand produce.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="158" data-business-name="@Bangkok" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="thai-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="@Bangkok" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (890 reviews)</div>
+                <h3>@Bangkok</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Kingsland</div>
+                <p class="text-muted">Popular Kingsland neighborhood spot. Famous for massaman curry with &#39;ugly puffy roti&#39; - a local favorite.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Kingsland, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.atbangkok.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-158-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="157" data-business-name="Nahm" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="thai-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Nahm" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (650 reviews)</div>
+                <h3>Nahm</h3>
+
+                <p class="text-muted">Traditional Thai with modern Asian twist. Sharing-style menu designed for groups and authentic flavors.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.nahm.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-157-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="285" data-business-name="Thai Street" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="thai-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Thai Street" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (380 reviews)</div>
+                <h3>Thai Street</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Vibrant Auckland CBD Thai eatery bringing authentic Bangkok street food flavours to New Zealand. Pad see ew, green curry, and mango sticky rice prepared by Thai-born chefs using imported ingredients.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.thaistreet.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-285-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What are the most popular Thai restaurants in Auckland?</summary>
                             <p>Saan in Ponsonby is highly rated for its Northern and Northeastern Thai street food. Kiin Thai in Mt Eden and Blue Elephant in Parnell are also local favorites for traditional flavors.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find 'actually spicy' Thai food in Auckland?</summary>
                             <p>Many authentic spots like Zap 2 in Dominion Road or the food stalls in the Elliot Stables allow you to request 'Thai Spicy' levels for a truly fiery experience.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Does Auckland have Thai fusion or modern Thai dining?</summary>
                             <p>Yes, Saan offers a refined, modern take on Thai cuisine, while many contemporary Asian fusion restaurants in the CBD incorporate strong Thai influences into their menus.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

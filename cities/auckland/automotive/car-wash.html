@@ -45,31 +45,140 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a car wash cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland car wash prices range from $15–$25 for a basic exterior wash, $35–$60 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including paint correction and ceramic coating."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/automotive/car-wash#business-list",
+      "name": "Car Wash in Auckland",
+      "numberOfItems": 4,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Kleen Car Wash & Detailing",
+            "description": "Premium hand car wash and full detailing service in Newmarket. Eco-friendly products, ceramic coating specialists, and express wash options. Auckland's top-reviewed car care destination.",
+            "image": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Newmarket, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.kleencarwash.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Diamond Hand Car Wash",
+            "description": "Trusted express and premium car wash on the North Shore. Interior detailing, paint correction, and fleet wash services available. Consistently rated Auckland's friendliest car wash team.",
+            "image": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Takapuna, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.diamondcarwash.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Sparkle Car Wash Auckland",
+            "description": "Hand car wash and professional detailing services. Ceramic coating, interior sanitizing, and eco-friendly products.",
+            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Parnell, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.sparklecarwash.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "HERMOSA CAR CARE",
+            "description": "Hermosa Car Care is an Auckland online retailer for premium car care products, including interior care, leather conditioner, ceramic shampoo, and 10H graphene ceramic coating products for New Zealand car owners and detailers.",
+            "image": "https://hermosahq.co.nz/cdn/shop/files/Hermosa_100ml_Sample_Dark-Photoroom-Photoroom.jpg?v=1756090026&width=1080",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "23 Edwin Street, Mt Eden, Auckland 1024",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are Auckland car washes eco-friendly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many top-rated Auckland car washes use biodegradable cleaning products and water recycling systems to minimise environmental impact. Look for operators displaying eco-certification or green business credentials."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/auckland/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Car Wash",
+          "item": "https://toprated.nz/cities/auckland/automotive/car-wash"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How often should I wash my car in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In Auckland's coastal climate, it's recommended to wash your car every 1–2 weeks to prevent salt and pollution buildup. Regular washing protects your paintwork and maintains resale value."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a car wash cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland car wash prices range from $15–$25 for a basic exterior wash, $35–$60 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including paint correction and ceramic coating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Auckland car washes eco-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many top-rated Auckland car washes use biodegradable cleaning products and water recycling systems to minimise environmental impact. Look for operators displaying eco-certification or green business credentials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I wash my car in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Auckland's coastal climate, it's recommended to wash your car every 1–2 weeks to prevent salt and pollution buildup. Regular washing protects your paintwork and maintains resale value."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +218,118 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Keep your vehicle spotless with Auckland's top-rated car wash and detailing services. From express tunnel washes in Newmarket to premium hand detailing in Ponsonby, Auckland's best car wash operators use eco-friendly products, water-recycling systems, and professional techniques to protect your paintwork while delivering a showroom finish. Whether you need a quick exterior wash or a full interior valet, these trusted operators deliver consistent results across the Auckland region.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="4">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="273" data-business-name="Kleen Car Wash &amp; Detailing" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Kleen Car Wash &amp; Detailing" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (320 reviews)</div>
+                <h3>Kleen Car Wash &amp; Detailing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">Premium hand car wash and full detailing service in Newmarket. Eco-friendly products, ceramic coating specialists, and express wash options. Auckland&#39;s top-reviewed car care destination.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Newmarket, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.kleencarwash.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-273-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="274" data-business-name="Diamond Hand Car Wash" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Diamond Hand Car Wash" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (215 reviews)</div>
+                <h3>Diamond Hand Car Wash</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Takapuna</div>
+                <p class="text-muted">Trusted express and premium car wash on the North Shore. Interior detailing, paint correction, and fleet wash services available. Consistently rated Auckland&#39;s friendliest car wash team.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Takapuna, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.diamondcarwash.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-274-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="197" data-business-name="Sparkle Car Wash Auckland" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sparkle Car Wash Auckland" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (890 reviews)</div>
+                <h3>Sparkle Car Wash Auckland</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Parnell</div>
+                <p class="text-muted">Hand car wash and professional detailing services. Ceramic coating, interior sanitizing, and eco-friendly products.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Parnell, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.sparklecarwash.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-197-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="375" data-business-name="HERMOSA CAR CARE" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-wash" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://hermosahq.co.nz/cdn/shop/files/Hermosa_100ml_Sample_Dark-Photoroom-Photoroom.jpg?v=1756090026&amp;width=1080" alt="HERMOSA CAR CARE" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>HERMOSA CAR CARE</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mt Eden</div>
+                <p class="text-muted">Hermosa Car Care is an Auckland online retailer for premium car care products, including interior care, leather conditioner, ceramic shampoo, and 10H graphene ceramic coating products for New Zealand car owners and detailers.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 23 Edwin Street, Mt Eden, Auckland 1024</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a car wash cost in Auckland?</summary>
                             <p>Auckland car wash prices range from $15–$25 for a basic exterior wash, $35–$60 for a full interior and exterior clean, and $150–$400+ for premium detailing packages including paint correction and ceramic coating.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are Auckland car washes eco-friendly?</summary>
                             <p>Many top-rated Auckland car washes use biodegradable cleaning products and water recycling systems to minimise environmental impact. Look for operators displaying eco-certification or green business credentials.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How often should I wash my car in Auckland?</summary>
                             <p>In Auckland's coastal climate, it's recommended to wash your car every 1–2 weeks to prevent salt and pollution buildup. Regular washing protects your paintwork and maintains resale value.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +337,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +400,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

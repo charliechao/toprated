@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much do lawyers charge in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland lawyer fees vary by specialisation: property conveyancing from $800–$2,000, simple wills from $300–$600, employment matters from $300–$500/hour, and commercial litigation from $350–$700/hour. Many firms offer free initial consultations and fixed-fee packages for standard work."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/lawyers#business-list",
+      "name": "Lawyers in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Simpson Grierson",
+            "description": "One of New Zealand's leading full-service law firms. Consistently top-ranked by The Legal 500 and Chambers for corporate, litigation, and commercial law expertise.",
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "88 Shortland Street, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.simpsongrierson.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Chapman Tripp",
+            "description": "Premier commercial law firm with deep expertise in capital markets, M&A, banking, and government advisory. Regularly recognised in global legal rankings.",
+            "image": "/img/generated/lawyers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "23 Albert Street, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.chapmantripp.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bell Gully",
+            "description": "Top-tier national law firm with strengths in banking and finance, litigation, and corporate advisory. Part of the global Bell network with international capabilities.",
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Vero Centre, Shortland Street, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bellgully.com"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How do I choose the right Auckland lawyer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for a lawyer who specialises in your specific area of law, has strong Google reviews, offers a free initial consultation, provides clear fee estimates upfront, and communicates proactively. Check they hold a current practising certificate with the NZ Law Society."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Lawyers",
+          "item": "https://toprated.nz/cities/auckland/services/lawyers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a lawyer to buy a house in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you legally need a lawyer or conveyancer to complete a property purchase in New Zealand. Auckland property lawyers handle title searches, agreement review, settlement, and ensure your interests are protected throughout the transaction."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do lawyers charge in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland lawyer fees vary by specialisation: property conveyancing from $800–$2,000, simple wills from $300–$600, employment matters from $300–$500/hour, and commercial litigation from $350–$700/hour. Many firms offer free initial consultations and fixed-fee packages for standard work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose the right Auckland lawyer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for a lawyer who specialises in your specific area of law, has strong Google reviews, offers a free initial consultation, provides clear fee estimates upfront, and communicates proactively. Check they hold a current practising certificate with the NZ Law Society."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a lawyer to buy a house in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you legally need a lawyer or conveyancer to complete a property purchase in New Zealand. Auckland property lawyers handle title searches, agreement review, settlement, and ensure your interests are protected throughout the transaction."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland is home to New Zealand's largest legal market, from top-tier commercial firms in the CBD to specialist boutique practices across the region. Whether you need property conveyancing in the Eastern Suburbs, employment law advice for your business, family law support, or commercial litigation, Auckland's top-rated lawyers combine deep expertise with client-focused service. Our curated list features practices consistently praised for communication, results, and value.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="238" data-business-name="Simpson Grierson" data-city-slug="auckland" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Simpson Grierson" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (340 reviews)</div>
+                <h3>Simpson Grierson</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">One of New Zealand&#39;s leading full-service law firms. Consistently top-ranked by The Legal 500 and Chambers for corporate, litigation, and commercial law expertise.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 88 Shortland Street, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.simpsongrierson.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-238-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="239" data-business-name="Chapman Tripp" data-city-slug="auckland" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/lawyers.png" alt="Chapman Tripp" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (290 reviews)</div>
+                <h3>Chapman Tripp</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Premier commercial law firm with deep expertise in capital markets, M&amp;A, banking, and government advisory. Regularly recognised in global legal rankings.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 23 Albert Street, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.chapmantripp.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-239-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="240" data-business-name="Bell Gully" data-city-slug="auckland" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bell Gully" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (265 reviews)</div>
+                <h3>Bell Gully</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Top-tier national law firm with strengths in banking and finance, litigation, and corporate advisory. Part of the global Bell network with international capabilities.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Vero Centre, Shortland Street, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.bellgully.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-240-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much do lawyers charge in Auckland?</summary>
                             <p>Auckland lawyer fees vary by specialisation: property conveyancing from $800–$2,000, simple wills from $300–$600, employment matters from $300–$500/hour, and commercial litigation from $350–$700/hour. Many firms offer free initial consultations and fixed-fee packages for standard work.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How do I choose the right Auckland lawyer?</summary>
                             <p>Look for a lawyer who specialises in your specific area of law, has strong Google reviews, offers a free initial consultation, provides clear fee estimates upfront, and communicates proactively. Check they hold a current practising certificate with the NZ Law Society.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a lawyer to buy a house in Auckland?</summary>
                             <p>Yes, you legally need a lawyer or conveyancer to complete a property purchase in New Zealand. Auckland property lawyers handle title searches, agreement review, settlement, and ensure your interests are protected throughout the transaction.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

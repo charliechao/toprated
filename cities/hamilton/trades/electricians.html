@@ -45,55 +45,131 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What does an electrician typically charge in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many Hamilton electricians charge a call-out fee plus labour, with hourly rates often sitting somewhere in the typical regional range for registered electrical work. Larger upgrades such as switchboards, rewires, and EV chargers are usually quoted after inspection."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/trades/electricians#business-list",
+      "name": "Electricians in Hamilton",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Laser Electrical Hamilton",
+            "description": "Total electrical solutions including home automation, solar panel setups, and general repairs.",
+            "image": "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hamilton Central",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://laser-hamilton.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Hamilton Electrical Group",
+            "description": "Waikato's leading electrical contractor for residential, commercial, and rural properties. Solar specialists.",
+            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Frankton, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.hamiltonelectrical.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can I do my own electrical work at home in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most electrical work in New Zealand must be completed by a registered electrician. DIY electrical work can create serious safety risks and may affect insurance or future property transactions."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/hamilton/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Electricians",
+          "item": "https://toprated.nz/cities/hamilton/trades/electricians"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Hamilton electricians install EV chargers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many do, but you should choose one who checks your board capacity, circuit protection, and cable route properly rather than treating it like a simple socket install. EV charging is one of the clearest cases where proper assessment matters."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When should I upgrade my switchboard?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If your home has an old fuse board, limited RCD protection, recurring tripping issues, or not enough capacity for modern appliances, it is worth getting an electrician to assess it. Older boards often become a bottleneck as household electrical demand increases."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it worth replacing halogens with LED lighting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually yes. LED upgrades reduce power use, improve reliability, and often lower maintenance. They can also be a good opportunity to improve insulation compatibility and modernise lighting layout at the same time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What documents should I receive after electrical work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "That depends on the type of work, but prescribed work should come with the relevant compliance paperwork from the registered electrician. If you are unsure, ask before the work starts exactly what certificates or records you will receive at completion."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does an electrician typically charge in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Hamilton electricians charge a call-out fee plus labour, with hourly rates often sitting somewhere in the typical regional range for registered electrical work. Larger upgrades such as switchboards, rewires, and EV chargers are usually quoted after inspection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I do my own electrical work at home in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most electrical work in New Zealand must be completed by a registered electrician. DIY electrical work can create serious safety risks and may affect insurance or future property transactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Hamilton electricians install EV chargers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many do, but you should choose one who checks your board capacity, circuit protection, and cable route properly rather than treating it like a simple socket install. EV charging is one of the clearest cases where proper assessment matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I upgrade my switchboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your home has an old fuse board, limited RCD protection, recurring tripping issues, or not enough capacity for modern appliances, it is worth getting an electrician to assess it. Older boards often become a bottleneck as household electrical demand increases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it worth replacing halogens with LED lighting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes. LED upgrades reduce power use, improve reliability, and often lower maintenance. They can also be a good opportunity to improve insulation compatibility and modernise lighting layout at the same time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What documents should I receive after electrical work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That depends on the type of work, but prescribed work should come with the relevant compliance paperwork from the registered electrician. If you are unsure, ask before the work starts exactly what certificates or records you will receive at completion."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +209,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Electrician in Hamilton</a></li><li><a href="#pricing-guide">How Much Do Electricians Charge in Hamilton? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Hamilton electricians work across a broad mix of older family homes, rental upgrades, new subdivisions, workshops, and growing commercial premises throughout the Waikato. That means the best providers need to be just as comfortable with fault-finding and switchboard upgrades in established suburbs as they are with EV chargers, heat pump circuits, and modern fit-outs in expanding residential areas like Rototuna and Flagstaff. This guide is for Hamilton homeowners, landlords, and businesses who want a safe, registered electrician with good communication and a realistic pricing structure. If your project overlaps with larger renovation or construction work, also see our Hamilton guides to <a href='/cities/hamilton/trades/builders'>builders</a>, <a href='/cities/hamilton/trades/renovation-services'>renovation services</a>, and <a href='/cities/hamilton/trades/plumbers'>plumbers</a>.</p>
@@ -157,7 +233,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Electricians Charge in Hamilton? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Hamilton electrical pricing depends on whether the work is minor maintenance, a larger upgrade, or project-based installation work. Simpler call-outs can be quoted quickly, while switchboard upgrades, rewires, and EV charger installs usually need a site assessment first.</p><p>Use these ranges as planning figures only. Materials, board capacity, access difficulty, and compliance requirements can all change the final cost.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +254,83 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="52" data-business-name="Laser Electrical Hamilton" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="electricians" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Laser Electrical Hamilton" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (210 reviews)</div>
+                <h3>Laser Electrical Hamilton</h3>
+
+                <p class="text-muted">Total electrical solutions including home automation, solar panel setups, and general repairs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hamilton Central</span>
+                    <div class="business-contact-links"><a href="https://laser-hamilton.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-52-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="187" data-business-name="Hamilton Electrical Group" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="electricians" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hamilton Electrical Group" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (145 reviews)</div>
+                <h3>Hamilton Electrical Group</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Frankton</div>
+                <p class="text-muted">Waikato&#39;s leading electrical contractor for residential, commercial, and rural properties. Solar specialists.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Frankton, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://www.hamiltonelectrical.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-187-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What does an electrician typically charge in Hamilton?</summary>
                             <p>Many Hamilton electricians charge a call-out fee plus labour, with hourly rates often sitting somewhere in the typical regional range for registered electrical work. Larger upgrades such as switchboards, rewires, and EV chargers are usually quoted after inspection.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can I do my own electrical work at home in Hamilton?</summary>
                             <p>Most electrical work in New Zealand must be completed by a registered electrician. DIY electrical work can create serious safety risks and may affect insurance or future property transactions.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Hamilton electricians install EV chargers?</summary>
                             <p>Yes. Many do, but you should choose one who checks your board capacity, circuit protection, and cable route properly rather than treating it like a simple socket install. EV charging is one of the clearest cases where proper assessment matters.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>When should I upgrade my switchboard?</summary>
                             <p>If your home has an old fuse board, limited RCD protection, recurring tripping issues, or not enough capacity for modern appliances, it is worth getting an electrician to assess it. Older boards often become a bottleneck as household electrical demand increases.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is it worth replacing halogens with LED lighting?</summary>
                             <p>Usually yes. LED upgrades reduce power use, improve reliability, and often lower maintenance. They can also be a good opportunity to improve insulation compatibility and modernise lighting layout at the same time.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What documents should I receive after electrical work?</summary>
                             <p>That depends on the type of work, but prescribed work should come with the relevant compliance paperwork from the registered electrician. If you are unsure, ask before the work starts exactly what certificates or records you will receive at completion.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +338,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +401,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +414,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

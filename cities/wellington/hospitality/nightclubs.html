@@ -45,47 +45,208 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where are the best nightclubs in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For a late Courtenay Place dance-floor night, look at The Establishment. Cuba Street is stronger for San Fran, Ivy Bar, and S&M's, while Vivian and Edward Streets add Valhalla and Meow to the wider Te Aro circuit. El Barrio is on Dixon Street, a short walk from Courtenay Place."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/hospitality/nightclubs#business-list",
+      "name": "Nightclubs in Wellington",
+      "numberOfItems": 7,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "El Barrio",
+            "description": "El Barrio is a Latino bar, restaurant, and late-night nightclub with live music and DJs through the week, plus Friday and Saturday trading until 4am.",
+            "image": "https://static.wixstatic.com/media/b23bc7_52369b8692cd473c9e92dc459c579423~mv2.jpg/v1/fill/w_800,h_600,fp_0.61_0.55,q_90,enc_avif,quality_auto/b23bc7_52369b8692cd473c9e92dc459c579423~mv2.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Level 2, 35 Dixon Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.elbarrio.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "San Fran",
+            "description": "San Fran is a Cuba Street ticketed music venue with an event calendar spanning local and international artists, themed dance nights, and late-night pop-punk and disco events.",
+            "image": "https://networksites.livenationinternational.com/networksites/5qsc3pr1/trentmoeller-maeve-oconnell-5.jpg?format=webp&width=1200&quality=75",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "171 Cuba Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.sanfran.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Valhalla",
+            "description": "Valhalla is a Vivian Street live-music venue whose programme ranges from metal, punk, alternative, and release shows to electronic, rave, and DJ-led late-night events.",
+            "image": "https://static1.squarespace.com/static/63f596f677f85103b235f1c7/t/656669d4cd64f724cefdc870/1701210585303/Valhalla+Tavern+Logo.jpg?format=1500w",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "154 Vivian Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.valhallatavern.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Meow",
+            "description": "Meow is a Te Aro live-music venue and event space hosting ticketed concerts, club nights, and one-off performances; check the calendar because opening times follow the programme.",
+            "image": "https://static1.squarespace.com/static/5b4ff5893e2d095793d4b3ff/t/68e4c2a06ce2de0f08020ad4/1759822496484/Meow+Logo_FB.jpg?format=1500w",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "9 Edward Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.meow.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Ivy Bar & Cabaret",
+            "description": "Ivy Bar & Cabaret is a Cuba Street drag bar and cabaret venue hosting queer nightlife, shows, cocktails, and late-night celebrations from Wednesday to Saturday.",
+            "image": "https://static.wixstatic.com/media/73f7ac_9049ab5be2f94dd59a2d6d6724496159~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/73f7ac_9049ab5be2f94dd59a2d6d6724496159~mv2.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "63 Cuba Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.ivybar.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Establishment",
+            "description": "The Establishment is a Courtenay Place restaurant and entertainment venue with DJs, karaoke, live bands, themed music nights, and a licence that runs until 4am.",
+            "image": "https://theestablishment.co.nz/sites/theestablishment.co.nz/files/imagecache/headerimage/p14.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Corner of Courtenay Place and Blair Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://theestablishment.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "S&M's Cocktail & Lounge Bar",
+            "description": "S&M's is a Cuba Street cocktail lounge with a downstairs Basement and Dance bar for Bingay, shows, gigs, functions, and late-night weekend drinks until 3am.",
+            "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "176 Cuba Street, Te Aro, Wellington 6011",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.scottyandmals.co.nz/"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where can I find live music and club nights in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "San Fran, Valhalla, and Meow are the strongest event-calendar venues in this guide. San Fran mixes live shows with themed dance nights, Valhalla covers heavy music and electronic events, and Meow hosts ticketed concerts and one-off performances. Check the specific event rather than assuming the same music every night."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hospitality",
+          "item": "https://toprated.nz/cities/wellington/hospitality/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Nightclubs",
+          "item": "https://toprated.nz/cities/wellington/hospitality/nightclubs"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Which Wellington nightlife venues stay open latest?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "El Barrio publishes Friday and Saturday hours until 4am, and The Establishment says it holds a licence until 4am. S&M's publishes Friday and Saturday hours until 3am. Event venues such as San Fran, Valhalla, and Meow can have different finishes depending on the programme."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need tickets for Wellington nightclubs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For touring artists, special DJs, drag shows, and many late-night events, buying a ticket in advance is sensible. San Fran, Valhalla, Meow, and Ivy Bar all run programme-led events. For regular bar nights, venues may offer walk-ins, but entry rules and capacity can change."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I wear to a Wellington nightclub?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Check the venue or event listing first. A live gig, themed dance night, drag show, and Courtenay Place late bar can have different expectations. Wear something comfortable for the event, bring appropriate ID, and follow any conditions of entry published by the venue."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where are the best nightclubs in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a late Courtenay Place dance-floor night, look at The Establishment. Cuba Street is stronger for San Fran, Ivy Bar, and S&M's, while Vivian and Edward Streets add Valhalla and Meow to the wider Te Aro circuit. El Barrio is on Dixon Street, a short walk from Courtenay Place."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find live music and club nights in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "San Fran, Valhalla, and Meow are the strongest event-calendar venues in this guide. San Fran mixes live shows with themed dance nights, Valhalla covers heavy music and electronic events, and Meow hosts ticketed concerts and one-off performances. Check the specific event rather than assuming the same music every night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Wellington nightlife venues stay open latest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El Barrio publishes Friday and Saturday hours until 4am, and The Establishment says it holds a licence until 4am. S&M's publishes Friday and Saturday hours until 3am. Event venues such as San Fran, Valhalla, and Meow can have different finishes depending on the programme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need tickets for Wellington nightclubs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For touring artists, special DJs, drag shows, and many late-night events, buying a ticket in advance is sensible. San Fran, Valhalla, Meow, and Ivy Bar all run programme-led events. For regular bar nights, venues may offer walk-ins, but entry rules and capacity can change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I wear to a Wellington nightclub?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the venue or event listing first. A live gig, themed dance night, drag show, and Courtenay Place late bar can have different expectations. Wear something comfortable for the event, bring appropriate ID, and follow any conditions of entry published by the venue."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -125,14 +286,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">Which Wellington Nightclub or Late-Night Venue Suits Your Night?</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington nightlife is less about one standard nightclub format and more about choosing the right kind of night: a ticketed live gig at <strong>San Fran</strong>, <strong>Meow</strong>, or <strong>Valhalla</strong>; a Latin DJ-led fiesta at <strong>El Barrio</strong>; drag and cabaret at <strong>Ivy Bar</strong>; or a later Courtenay Place dance floor at <strong>The Establishment</strong>. This July 2026 shortlist compares seven operating late-night venues across <strong>Cuba Street, Vivian Street, Dixon Street, and Courtenay Place</strong>. Use the table to choose by music, event format, location, and closing pattern, then check the venue's official calendar before leaving home because Wellington's best nights are often programme-led rather than the same every week.</p>
@@ -147,45 +308,163 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="7">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="215" data-business-name="El Barrio" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://static.wixstatic.com/media/b23bc7_52369b8692cd473c9e92dc459c579423~mv2.jpg/v1/fill/w_800,h_600,fp_0.61_0.55,q_90,enc_avif,quality_auto/b23bc7_52369b8692cd473c9e92dc459c579423~mv2.jpg" alt="El Barrio" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>El Barrio</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">El Barrio is a Latino bar, restaurant, and late-night nightclub with live music and DJs through the week, plus Friday and Saturday trading until 4am.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Level 2, 35 Dixon Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://www.elbarrio.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-215-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:043330261" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 04 333 0261</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="216" data-business-name="San Fran" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://networksites.livenationinternational.com/networksites/5qsc3pr1/trentmoeller-maeve-oconnell-5.jpg?format=webp&amp;width=1200&amp;quality=75" alt="San Fran" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>San Fran</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Cuba Street</div>
+                <p class="text-muted">San Fran is a Cuba Street ticketed music venue with an event calendar spanning local and international artists, themed dance nights, and late-night pop-punk and disco events.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 171 Cuba Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://www.sanfran.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-216-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="305" data-business-name="Valhalla" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://static1.squarespace.com/static/63f596f677f85103b235f1c7/t/656669d4cd64f724cefdc870/1701210585303/Valhalla+Tavern+Logo.jpg?format=1500w" alt="Valhalla" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Valhalla</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Vivian Street</div>
+                <p class="text-muted">Valhalla is a Vivian Street live-music venue whose programme ranges from metal, punk, alternative, and release shows to electronic, rave, and DJ-led late-night events.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 154 Vivian Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://www.valhallatavern.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-305-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="408" data-business-name="Meow" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://static1.squarespace.com/static/5b4ff5893e2d095793d4b3ff/t/68e4c2a06ce2de0f08020ad4/1759822496484/Meow+Logo_FB.jpg?format=1500w" alt="Meow" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Meow</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Aro</div>
+                <p class="text-muted">Meow is a Te Aro live-music venue and event space hosting ticketed concerts, club nights, and one-off performances; check the calendar because opening times follow the programme.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 9 Edward Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://www.meow.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-408-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="409" data-business-name="Ivy Bar &amp; Cabaret" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://static.wixstatic.com/media/73f7ac_9049ab5be2f94dd59a2d6d6724496159~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/73f7ac_9049ab5be2f94dd59a2d6d6724496159~mv2.jpg" alt="Ivy Bar &amp; Cabaret" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Ivy Bar &amp; Cabaret</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Cuba Street</div>
+                <p class="text-muted">Ivy Bar &amp; Cabaret is a Cuba Street drag bar and cabaret venue hosting queer nightlife, shows, cocktails, and late-night celebrations from Wednesday to Saturday.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 63 Cuba Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://www.ivybar.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-409-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0221397179" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 022 139 7179</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="410" data-business-name="The Establishment" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://theestablishment.co.nz/sites/theestablishment.co.nz/files/imagecache/headerimage/p14.jpg" alt="The Establishment" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>The Establishment</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Courtenay Place</div>
+                <p class="text-muted">The Establishment is a Courtenay Place restaurant and entertainment venue with DJs, karaoke, live bands, themed music nights, and a licence that runs until 4am.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Corner of Courtenay Place and Blair Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://theestablishment.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-410-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="411" data-business-name="S&amp;M&#39;s Cocktail &amp; Lounge Bar" data-city-slug="wellington" data-category-slug="hospitality" data-page-slug="nightclubs" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="S&amp;M&#39;s Cocktail &amp; Lounge Bar" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>S&amp;M&#39;s Cocktail &amp; Lounge Bar</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Cuba Street</div>
+                <p class="text-muted">S&amp;M&#39;s is a Cuba Street cocktail lounge with a downstairs Basement and Dance bar for Bingay, shows, gigs, functions, and late-night weekend drinks until 3am.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 176 Cuba Street, Te Aro, Wellington 6011</span>
+                    <div class="business-contact-links"><a href="https://www.scottyandmals.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-411-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:048025335" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 04 802 5335</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where are the best nightclubs in Wellington?</summary>
                             <p>For a late Courtenay Place dance-floor night, look at The Establishment. Cuba Street is stronger for San Fran, Ivy Bar, and S&M's, while Vivian and Edward Streets add Valhalla and Meow to the wider Te Aro circuit. El Barrio is on Dixon Street, a short walk from Courtenay Place.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find live music and club nights in Wellington?</summary>
                             <p>San Fran, Valhalla, and Meow are the strongest event-calendar venues in this guide. San Fran mixes live shows with themed dance nights, Valhalla covers heavy music and electronic events, and Meow hosts ticketed concerts and one-off performances. Check the specific event rather than assuming the same music every night.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Wellington nightlife venues stay open latest?</summary>
                             <p>El Barrio publishes Friday and Saturday hours until 4am, and The Establishment says it holds a licence until 4am. S&M's publishes Friday and Saturday hours until 3am. Event venues such as San Fran, Valhalla, and Meow can have different finishes depending on the programme.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need tickets for Wellington nightclubs?</summary>
                             <p>For touring artists, special DJs, drag shows, and many late-night events, buying a ticket in advance is sensible. San Fran, Valhalla, Meow, and Ivy Bar all run programme-led events. For regular bar nights, venues may offer walk-ins, but entry rules and capacity can change.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I wear to a Wellington nightclub?</summary>
                             <p>Check the venue or event listing first. A live gig, themed dance night, drag show, and Courtenay Place late bar can have different expectations. Wear something comfortable for the event, bring appropriate ID, and follow any conditions of entry published by the venue.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -193,7 +472,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/hospitality/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -249,7 +528,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -262,8 +541,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

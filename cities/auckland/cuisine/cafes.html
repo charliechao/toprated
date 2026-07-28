@@ -45,63 +45,156 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What are the best cafés in Auckland CBD?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chuffed on High Street is a hidden courtyard gem with exceptional specialty coffee. Remedy Coffee on Wellesley Street is known for meticulous pour-over brewing. Federal Delicatessen offers a New York-style diner experience, while Amano in Britomart combines artisan bakery with Italian-inspired café dining. For quick, quality espresso, the Allpress Espresso flagship in Freemans Bay is a short walk from the CBD."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/cafes#business-list",
+      "name": "Cafes in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Chuffed",
+            "description": "A hidden oasis courtyard in the CBD with a relaxed atmosphere and great coffee.",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43 High St, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://chuffedcoffee.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Remedy Coffee",
+            "description": "Meticulous brewing and innovative pour-over methods in the CBD.",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1 Wellesley St W, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://remedycoffee.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Allpress Espresso",
+            "description": "A New Zealand institution known for full-bodied and balanced espresso.",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "8 Drake St, Freemans Bay, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://allpressespresso.com"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where is the best brunch in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ponsonby Road is Auckland's brunch capital, with Dizengoff, Winona Forever, and Orphans Kitchen all offering outstanding weekend menus. In Kingsland, Federal Delicatessen and Fridge & Pantry are local favourites. For waterfront brunch, Ostro in the Britomart precinct and Soul Bar on the Viaduct combine great food with harbour views."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Cafes",
+          "item": "https://toprated.nz/cities/auckland/cuisine/cafes"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Which Auckland cafés roast their own coffee?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Allpress Espresso (Freemans Bay) is Auckland's most famous roaster, with beans served across Australasia. Kokako (Grey Lynn) pioneered certified organic coffee in NZ. Other notable Auckland roasters with their own café spaces include Eighthirty, Ozone Coffee, Atomic Coffee Roasters, and Flight Coffee. Visiting a roastery café gives you the freshest possible cup."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are Auckland cafés dog-friendly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many Auckland cafés welcome dogs in outdoor seating areas. Popular dog-friendly spots include Coco's Cantina on K' Road, The Store in Britomart, and most cafés along Ponsonby Road with pavement seating. Some cafés even provide water bowls. However, dogs are generally not permitted inside due to food safety regulations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a flat white and how is it different from a latte?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The flat white is New Zealand's signature coffee — a double-shot espresso topped with velvety microfoam milk. It's smaller and stronger than a latte, with less milk and a thinner layer of foam, allowing the coffee flavour to shine through. Auckland baristas take their flat whites seriously, and it's the default order for most Kiwi coffee lovers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do Auckland cafés cater for dietary requirements?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — Auckland's café scene is very accommodating. Most cafés offer gluten-free bread and baking options, plant-based milks (oat milk is the most popular alternative), and clearly marked vegan and vegetarian dishes. Many high-end brunch spots now design menus with dietary requirements in mind from the start rather than as an afterthought."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What time do Auckland cafés open and close?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most Auckland cafés open between 6:30am and 7:30am on weekdays, slightly later (7:30-8:30am) on weekends. Closing times vary — CBD cafés often close by 3-4pm, while neighbourhood cafés in Ponsonby and Kingsland may stay open until 4-5pm. Very few Auckland cafés operate as evening destinations. For late-afternoon coffee, look for cafés attached to roasteries."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best cafés in Auckland CBD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chuffed on High Street is a hidden courtyard gem with exceptional specialty coffee. Remedy Coffee on Wellesley Street is known for meticulous pour-over brewing. Federal Delicatessen offers a New York-style diner experience, while Amano in Britomart combines artisan bakery with Italian-inspired café dining. For quick, quality espresso, the Allpress Espresso flagship in Freemans Bay is a short walk from the CBD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the best brunch in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ponsonby Road is Auckland's brunch capital, with Dizengoff, Winona Forever, and Orphans Kitchen all offering outstanding weekend menus. In Kingsland, Federal Delicatessen and Fridge & Pantry are local favourites. For waterfront brunch, Ostro in the Britomart precinct and Soul Bar on the Viaduct combine great food with harbour views."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Auckland cafés roast their own coffee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Allpress Espresso (Freemans Bay) is Auckland's most famous roaster, with beans served across Australasia. Kokako (Grey Lynn) pioneered certified organic coffee in NZ. Other notable Auckland roasters with their own café spaces include Eighthirty, Ozone Coffee, Atomic Coffee Roasters, and Flight Coffee. Visiting a roastery café gives you the freshest possible cup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Auckland cafés dog-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Auckland cafés welcome dogs in outdoor seating areas. Popular dog-friendly spots include Coco's Cantina on K' Road, The Store in Britomart, and most cafés along Ponsonby Road with pavement seating. Some cafés even provide water bowls. However, dogs are generally not permitted inside due to food safety regulations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a flat white and how is it different from a latte?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The flat white is New Zealand's signature coffee — a double-shot espresso topped with velvety microfoam milk. It's smaller and stronger than a latte, with less milk and a thinner layer of foam, allowing the coffee flavour to shine through. Auckland baristas take their flat whites seriously, and it's the default order for most Kiwi coffee lovers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Auckland cafés cater for dietary requirements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Auckland's café scene is very accommodating. Most cafés offer gluten-free bread and baking options, plant-based milks (oat milk is the most popular alternative), and clearly marked vegan and vegetarian dishes. Many high-end brunch spots now design menus with dietary requirements in mind from the start rather than as an afterthought."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What time do Auckland cafés open and close?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Auckland cafés open between 6:30am and 7:30am on weekdays, slightly later (7:30-8:30am) on weekends. Closing times vary — CBD cafés often close by 3-4pm, while neighbourhood cafés in Ponsonby and Kingsland may stay open until 4-5pm. Very few Auckland cafés operate as evening destinations. For late-afternoon coffee, look for cafés attached to roasteries."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -141,14 +234,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">A Guide to Auckland's Café Scene</a></li><li><a href="#pricing-guide">How Much Does Coffee & Brunch Cost in Auckland? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's café culture is among the most dynamic in the Southern Hemisphere, driven by world-class local roasters, a thriving brunch scene, and a city that takes its flat whites very seriously. From the industrial-chic roasteries of Freemans Bay to hidden courtyard gems in the CBD, neighbourhood favourites in Kingsland and Grey Lynn, and waterfront brunch destinations on the Viaduct, Auckland offers a café experience for every mood and moment. The city's best cafés go beyond great coffee — they deliver seasonal, locally sourced menus, expert barista craft, and spaces designed to linger. For other Auckland dining, explore our guides to <a href='/cities/auckland/cuisine/restaurants'>top restaurants</a>, <a href='/cities/auckland/cuisine/chinese-restaurants'>Chinese restaurants</a>, and <a href='/cities/auckland/cuisine/japanese-restaurants'>Japanese restaurants</a>.</p>
@@ -165,7 +258,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Does Coffee & Brunch Cost in Auckland? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Auckland café prices are moderate by international standards, though premium specialty cafés and waterfront locations command higher prices.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -186,55 +279,105 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="68" data-business-name="Chuffed" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="cafes" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chuffed" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (520 reviews)</div>
+                <h3>Chuffed</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">A hidden oasis courtyard in the CBD with a relaxed atmosphere and great coffee.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 43 High St, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://chuffedcoffee.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-68-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="66" data-business-name="Remedy Coffee" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="cafes" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Remedy Coffee" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (450 reviews)</div>
+                <h3>Remedy Coffee</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Meticulous brewing and innovative pour-over methods in the CBD.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 1 Wellesley St W, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://remedycoffee.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-66-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="67" data-business-name="Allpress Espresso" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="cafes" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Allpress Espresso" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (890 reviews)</div>
+                <h3>Allpress Espresso</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Freemans Bay</div>
+                <p class="text-muted">A New Zealand institution known for full-bodied and balanced espresso.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 8 Drake St, Freemans Bay, Auckland</span>
+                    <div class="business-contact-links"><a href="https://allpressespresso.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-67-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What are the best cafés in Auckland CBD?</summary>
                             <p>Chuffed on High Street is a hidden courtyard gem with exceptional specialty coffee. Remedy Coffee on Wellesley Street is known for meticulous pour-over brewing. Federal Delicatessen offers a New York-style diner experience, while Amano in Britomart combines artisan bakery with Italian-inspired café dining. For quick, quality espresso, the Allpress Espresso flagship in Freemans Bay is a short walk from the CBD.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where is the best brunch in Auckland?</summary>
                             <p>Ponsonby Road is Auckland's brunch capital, with Dizengoff, Winona Forever, and Orphans Kitchen all offering outstanding weekend menus. In Kingsland, Federal Delicatessen and Fridge & Pantry are local favourites. For waterfront brunch, Ostro in the Britomart precinct and Soul Bar on the Viaduct combine great food with harbour views.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Auckland cafés roast their own coffee?</summary>
                             <p>Allpress Espresso (Freemans Bay) is Auckland's most famous roaster, with beans served across Australasia. Kokako (Grey Lynn) pioneered certified organic coffee in NZ. Other notable Auckland roasters with their own café spaces include Eighthirty, Ozone Coffee, Atomic Coffee Roasters, and Flight Coffee. Visiting a roastery café gives you the freshest possible cup.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are Auckland cafés dog-friendly?</summary>
                             <p>Many Auckland cafés welcome dogs in outdoor seating areas. Popular dog-friendly spots include Coco's Cantina on K' Road, The Store in Britomart, and most cafés along Ponsonby Road with pavement seating. Some cafés even provide water bowls. However, dogs are generally not permitted inside due to food safety regulations.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is a flat white and how is it different from a latte?</summary>
                             <p>The flat white is New Zealand's signature coffee — a double-shot espresso topped with velvety microfoam milk. It's smaller and stronger than a latte, with less milk and a thinner layer of foam, allowing the coffee flavour to shine through. Auckland baristas take their flat whites seriously, and it's the default order for most Kiwi coffee lovers.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Auckland cafés cater for dietary requirements?</summary>
                             <p>Yes — Auckland's café scene is very accommodating. Most cafés offer gluten-free bread and baking options, plant-based milks (oat milk is the most popular alternative), and clearly marked vegan and vegetarian dishes. Many high-end brunch spots now design menus with dietary requirements in mind from the start rather than as an afterthought.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What time do Auckland cafés open and close?</summary>
                             <p>Most Auckland cafés open between 6:30am and 7:30am on weekdays, slightly later (7:30-8:30am) on weekends. Closing times vary — CBD cafés often close by 3-4pm, while neighbourhood cafés in Ponsonby and Kingsland may stay open until 4-5pm. Very few Auckland cafés operate as evening destinations. For late-afternoon coffee, look for cafés attached to roasteries.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -242,7 +385,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -305,7 +448,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -318,8 +461,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -45,55 +45,131 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does house painting cost in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the home size, condition, access, and whether the work is inside or outside. Exterior projects often cost more once preparation and equipment are factored in."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/trades/painters#business-list",
+      "name": "Painters in Christchurch",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Vision Painters",
+            "description": "Reliable and professional painters in Christchurch with a reputation for excellent communication and high standards.",
+            "image": "https://images.unsplash.com/photo-1595844730298-b960ff98fee0?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://visionpainters.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Dyer Decorating",
+            "description": "Family-run decorating business with over 40 years of experience in providing meticulous finishes across Canterbury.",
+            "image": "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://dyerdecorating.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do painting quotes usually include prep work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They should, but the level of prep included varies a lot. That is why it is important to ask for a clear written scope rather than assuming all quotes cover the same work."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/christchurch/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Painters",
+          "item": "https://toprated.nz/cities/christchurch/trades/painters"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is premium paint worth paying for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Often yes, especially on weather-exposed exteriors and high-use interiors. Better coatings can improve durability, appearance, and maintenance intervals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When is the best time to paint a house exterior in Christchurch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "More settled weather windows are usually better, but a good painter will plan around actual site conditions, product requirements, and cure time instead of giving unrealistic dates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I repaint before renting or selling a property?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sometimes yes. A clean, well-executed repaint can improve presentation and perceived care, but the scope should be matched to the likely return rather than overcapitalised."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do painting prices vary so much?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The main differences are usually prep scope, coating system, access difficulty, and whether repair work is included. Cheap quotes often exclude more than clients realise."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does house painting cost in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the home size, condition, access, and whether the work is inside or outside. Exterior projects often cost more once preparation and equipment are factored in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do painting quotes usually include prep work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They should, but the level of prep included varies a lot. That is why it is important to ask for a clear written scope rather than assuming all quotes cover the same work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is premium paint worth paying for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes, especially on weather-exposed exteriors and high-use interiors. Better coatings can improve durability, appearance, and maintenance intervals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time to paint a house exterior in Christchurch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "More settled weather windows are usually better, but a good painter will plan around actual site conditions, product requirements, and cure time instead of giving unrealistic dates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I repaint before renting or selling a property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes yes. A clean, well-executed repaint can improve presentation and perceived care, but the scope should be matched to the likely return rather than overcapitalised."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do painting prices vary so much?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The main differences are usually prep scope, coating system, access difficulty, and whether repair work is included. Cheap quotes often exclude more than clients realise."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +209,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Painter in Christchurch</a></li><li><a href="#pricing-guide">How Much Do Painters Charge in Christchurch? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Christchurch painters handle a wide mix of post-renovation repaints, rental upgrades, family homes, commercial spaces, and weather-exposed exterior work across the city. The best painting companies do much more than improve appearance. They manage preparation properly, recommend the right system for the job, and keep the project moving without creating avoidable mess or delays. This guide is for Christchurch homeowners, landlords, and businesses who want to compare painters on finish quality, process, and long-term value. If the painting sits inside a wider property project, also see our Christchurch guides to <a href='/cities/christchurch/trades/builders'>builders</a>, <a href='/cities/christchurch/trades/renovation-services'>renovation services</a>, and <a href='/cities/christchurch/trades/plumbers'>plumbers</a>.</p>
@@ -157,7 +233,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Painters Charge in Christchurch? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Christchurch painting costs vary based on size, condition, access, prep level, and whether the project is interior, exterior, or commercial. Exterior jobs often shift more once access equipment or repair work becomes necessary.</p><p>Use these figures as broad planning ranges only. Written quotes and site condition still matter more than any generic guide.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +254,83 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="85" data-business-name="Vision Painters" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="painters" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1595844730298-b960ff98fee0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Vision Painters" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (86 reviews)</div>
+                <h3>Vision Painters</h3>
+
+                <p class="text-muted">Reliable and professional painters in Christchurch with a reputation for excellent communication and high standards.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch</span>
+                    <div class="business-contact-links"><a href="https://visionpainters.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-85-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="86" data-business-name="Dyer Decorating" data-city-slug="christchurch" data-category-slug="trades" data-page-slug="painters" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dyer Decorating" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (64 reviews)</div>
+                <h3>Dyer Decorating</h3>
+
+                <p class="text-muted">Family-run decorating business with over 40 years of experience in providing meticulous finishes across Canterbury.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch</span>
+                    <div class="business-contact-links"><a href="https://dyerdecorating.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-86-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does house painting cost in Christchurch?</summary>
                             <p>It depends on the home size, condition, access, and whether the work is inside or outside. Exterior projects often cost more once preparation and equipment are factored in.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do painting quotes usually include prep work?</summary>
                             <p>They should, but the level of prep included varies a lot. That is why it is important to ask for a clear written scope rather than assuming all quotes cover the same work.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is premium paint worth paying for?</summary>
                             <p>Often yes, especially on weather-exposed exteriors and high-use interiors. Better coatings can improve durability, appearance, and maintenance intervals.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>When is the best time to paint a house exterior in Christchurch?</summary>
                             <p>More settled weather windows are usually better, but a good painter will plan around actual site conditions, product requirements, and cure time instead of giving unrealistic dates.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I repaint before renting or selling a property?</summary>
                             <p>Sometimes yes. A clean, well-executed repaint can improve presentation and perceived care, but the scope should be matched to the likely return rather than overcapitalised.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Why do painting prices vary so much?</summary>
                             <p>The main differences are usually prep scope, coating system, access difficulty, and whether repair work is included. Cheap quotes often exclude more than clients realise.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +338,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/christchurch/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +401,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +414,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

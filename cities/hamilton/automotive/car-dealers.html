@@ -43,7 +43,66 @@
   <link rel="stylesheet" href="/css/styles.css?v=20260728b" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/automotive/car-dealers#business-list",
+      "name": "Car Dealers in Hamilton",
+      "numberOfItems": 1,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Waikato Vehicle Centre",
+            "description": "Hamilton's trusted car dealer offering a wide range of quality used vehicles. Family-owned with transparent pricing, competitive finance, and excellent warranties.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Te Rapa Road, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.waikatovehicles.co.nz"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/hamilton/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Car Dealers",
+          "item": "https://toprated.nz/cities/hamilton/automotive/car-dealers"
+        }
+      ]
+    }
+  ]
+}</script>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -80,16 +139,32 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
-        
+
+
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="1">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="227" data-business-name="Waikato Vehicle Centre" data-city-slug="hamilton" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Waikato Vehicle Centre" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (320 reviews)</div>
+                <h3>Waikato Vehicle Centre</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Rapa</div>
+                <p class="text-muted">Hamilton&#39;s trusted car dealer offering a wide range of quality used vehicles. Family-owned with transparent pricing, competitive finance, and excellent warranties.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Te Rapa Road, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://www.waikatovehicles.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-227-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
-    
+
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -97,7 +172,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -160,9 +235,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

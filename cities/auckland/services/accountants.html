@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does an accountant cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland accountant fees range from $150–$300 per hour for individual tax returns, $1,500–$5,000+ for annual business accounts, and $200–$400 per hour for specialist advisory work. Many firms offer fixed-fee packages for standard services."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/accountants#business-list",
+      "name": "Accountants in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Elite Accounting",
+            "description": "Specialist accountants for small to medium businesses and complex tax situations. Expert Xero advisors with personalised service and proactive tax planning strategies.",
+            "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Newmarket, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.eliteaccounting.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Next Advisory",
+            "description": "Modern accounting firm offering advisory, tax compliance, and business growth services. Cloud-based systems with online courses to help business owners understand their finances.",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Parnell, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.nextadvisory.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Chapmans Chartered Accountants",
+            "description": "One of the largest firms in West Auckland with expertise in business valuations, forecasting, and tax advisory. Flexible, client-focused services for growing businesses.",
+            "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Henderson, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.chapmans.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I look for in an Auckland accountant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for Chartered Accountant (CA) designation from CA ANZ, experience in your industry, proactive tax planning (not just compliance), cloud accounting expertise (Xero, MYOB), and strong client reviews. A good accountant should save you more than they cost."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Accountants",
+          "item": "https://toprated.nz/cities/auckland/services/accountants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "When is tax return season in New Zealand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The New Zealand tax year runs 1 April to 31 March. Individual tax returns are due by 7 July, though extensions are available through tax agents. Top Auckland accountants file returns year-round and help with provisional tax planning."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does an accountant cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland accountant fees range from $150–$300 per hour for individual tax returns, $1,500–$5,000+ for annual business accounts, and $200–$400 per hour for specialist advisory work. Many firms offer fixed-fee packages for standard services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for in an Auckland accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for Chartered Accountant (CA) designation from CA ANZ, experience in your industry, proactive tax planning (not just compliance), cloud accounting expertise (Xero, MYOB), and strong client reviews. A good accountant should save you more than they cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is tax return season in New Zealand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The New Zealand tax year runs 1 April to 31 March. Individual tax returns are due by 7 July, though extensions are available through tax agents. Top Auckland accountants file returns year-round and help with provisional tax planning."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's top-rated accountants provide expert financial guidance for individuals, small businesses, and corporations across New Zealand's largest commercial centre. From tax return specialists in the CBD to boutique advisory firms in Newmarket, Auckland's best accounting practices combine deep technical knowledge with proactive, personalised service. Whether you need GST compliance, annual accounts, business structuring, or strategic growth advice, these chartered accountants deliver measurable results.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="229" data-business-name="Elite Accounting" data-city-slug="auckland" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Elite Accounting" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (195 reviews)</div>
+                <h3>Elite Accounting</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">Specialist accountants for small to medium businesses and complex tax situations. Expert Xero advisors with personalised service and proactive tax planning strategies.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Newmarket, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.eliteaccounting.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-229-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="230" data-business-name="Next Advisory" data-city-slug="auckland" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Next Advisory" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (175 reviews)</div>
+                <h3>Next Advisory</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Parnell</div>
+                <p class="text-muted">Modern accounting firm offering advisory, tax compliance, and business growth services. Cloud-based systems with online courses to help business owners understand their finances.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Parnell, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.nextadvisory.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-230-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="231" data-business-name="Chapmans Chartered Accountants" data-city-slug="auckland" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chapmans Chartered Accountants" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (220 reviews)</div>
+                <h3>Chapmans Chartered Accountants</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Henderson</div>
+                <p class="text-muted">One of the largest firms in West Auckland with expertise in business valuations, forecasting, and tax advisory. Flexible, client-focused services for growing businesses.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Henderson, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.chapmans.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-231-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does an accountant cost in Auckland?</summary>
                             <p>Auckland accountant fees range from $150–$300 per hour for individual tax returns, $1,500–$5,000+ for annual business accounts, and $200–$400 per hour for specialist advisory work. Many firms offer fixed-fee packages for standard services.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I look for in an Auckland accountant?</summary>
                             <p>Look for Chartered Accountant (CA) designation from CA ANZ, experience in your industry, proactive tax planning (not just compliance), cloud accounting expertise (Xero, MYOB), and strong client reviews. A good accountant should save you more than they cost.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>When is tax return season in New Zealand?</summary>
                             <p>The New Zealand tax year runs 1 April to 31 March. Individual tax returns are due by 7 July, though extensions are available through tax agents. Top Auckland accountants file returns year-round and help with provisional tax planning.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -3,9 +3,9 @@
 // Purpose: Dynamically inject breadcrumbs, hub navigation grids, and related content
 // ---------------------------------------------------
 // This script runs on every page (included via the base template).
-// It reads static JSON files (data/cities.json, data/industries.json, data/businesses.json)
-// and builds the UI components on the client side. Keeping the markup in JS
-// makes the HTML files tiny and ensures a modular architecture.
+// It reads static JSON files for hub navigation and optional enhancements.
+// Leaf-page business cards and their schema are generated into the initial HTML
+// so listings remain complete and crawlable when JavaScript is unavailable.
 
 /**
  * Utility: fetch a JSON file and return the parsed object.
@@ -395,72 +395,37 @@ async function renderRelated() {
 }
 
 /**
- * Insert JSON-LD schema for leaf pages and the nationwide page.
+ * Insert JSON-LD schema for the client-rendered nationwide page.
  */
 async function injectSchema() {
     const schemaEl = document.getElementById('schema');
     if (!schemaEl) return;
 
+    if (location.pathname !== '/new-zealand') return;
+
     const businesses = await loadJSON('/data/businesses.json');
     if (!businesses) return;
 
-    if (location.pathname === '/new-zealand') {
-        const nationwideBusinesses = businesses.filter(b => b.coverageScope === 'nationwide');
-        const schema = {
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Nationwide businesses in New Zealand",
-            "itemListElement": nationwideBusinesses.map((biz, idx) => ({
-                "@type": "ListItem",
-                "position": idx + 1,
-                "url": biz.website || biz.url || 'https://toprated.nz/new-zealand',
-                "name": biz.name,
-                "description": biz.description,
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": biz.city || 'New Zealand',
-                    "addressRegion": "NZ"
-                }
-            }))
-        };
-        schemaEl.textContent = JSON.stringify(schema, null, 2);
-        return;
-    }
-
-    const parts = location.pathname.split('/').filter(Boolean);
-    if (parts.length < 4) return;
-
-    const [_, city, category, pageFile] = parts;
-    const pageSlug = pageFile.replace('.html', '');
-    const filtered = businesses.filter(b =>
-        b.citySlug === city && b.categorySlug === category && b.pageSlug === pageSlug
-    );
-
-    const sorted = sortBusinessesForDisplay(filtered);
+    const nationwideBusinesses = businesses.filter(b => b.coverageScope === 'nationwide');
     const schema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": `${city} ${category} ${pageSlug}`,
-        "itemListElement": sorted.map((biz, idx) => {
-            const item = {
-                "@type": "ListItem",
-                "position": idx + 1,
+        "name": "Nationwide businesses in New Zealand",
+        "itemListElement": nationwideBusinesses.map((biz, idx) => ({
+            "@type": "ListItem",
+            "position": idx + 1,
+            "item": {
+                "@type": "LocalBusiness",
                 "name": biz.name,
                 "description": biz.description,
+                "url": biz.website || biz.url || 'https://toprated.nz/new-zealand',
                 "address": {
                     "@type": "PostalAddress",
-                    "addressLocality": biz.city,
-                    "addressRegion": "NZ"
+                    "addressLocality": biz.city || 'New Zealand',
+                    "addressCountry": "NZ"
                 }
-            };
-
-            if (biz.listingTier !== 'basic') {
-                item.url = biz.website || biz.url;
-                if (typeof biz.rating === 'number') item.rating = biz.rating;
             }
-
-            return item;
-        })
+        }))
     };
 
     schemaEl.textContent = JSON.stringify(schema, null, 2);
@@ -472,6 +437,11 @@ async function injectSchema() {
 async function renderBusinessList() {
     const listEl = document.getElementById('business-list');
     if (!listEl) return;
+
+    if (listEl.dataset.rendered === 'static') {
+        trackBusinessListingImpressions(listEl);
+        return;
+    }
 
     const businesses = await loadJSON('/data/businesses.json');
     if (!businesses) return;
@@ -567,21 +537,6 @@ async function renderBusinessList() {
     }
 
     const sorted = sortBusinessesForDisplay(filtered);
-
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": parts.map((part, index) => ({
-            "@type": "ListItem",
-            "position": index + 1,
-            "name": formatSlugLabel(part),
-            "item": `https://toprated.nz${buildSitePath(parts, index)}`
-        }))
-    };
-    const schemaScript = document.createElement('script');
-    schemaScript.type = 'application/ld+json';
-    schemaScript.text = JSON.stringify(breadcrumbSchema);
-    document.head.appendChild(schemaScript);
 
     listEl.innerHTML = sorted.map(business => renderBusinessCard(business)).join('');
     trackBusinessListingImpressions(listEl);

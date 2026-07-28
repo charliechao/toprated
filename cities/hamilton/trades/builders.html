@@ -45,55 +45,148 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does it cost to build a house in Hamilton in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For planning purposes, many standard-spec new builds in Hamilton fall roughly in the $2,800-$4,200+ per square metre range, while higher-spec or architectural homes can be substantially more. Final pricing depends on siteworks, design complexity, and finish selections."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/trades/builders#business-list",
+      "name": "Builders in Hamilton",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Sentinel Homes Waikato",
+            "description": "Waikato's most-awarded builder for 3 consecutive years. Master Builders with 10-year guarantee specialising in custom design homes.",
+            "image": "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hamilton CBD",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.sentinelhomes.co.nz/waikato"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "JCC Build",
+            "description": "Family-owned, award-winning company since 2016. Innovative solutions for new builds, renovations, and extensions with meticulous attention to detail.",
+            "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hamilton Region",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.jccbuild.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "8 Great Homes",
+            "description": "Award-winning Master Builders with House of the Year accolades since 2019. House and land packages, designer homes, and quality renovations.",
+            "image": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Waikato Region",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.8greathomes.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I choose a fixed-price or cost-plus building contract?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many homeowners prefer fixed-price contracts for certainty, but they only work well when plans and specifications are detailed. Cost-plus contracts can be appropriate for complex renovations where hidden conditions are likely, provided the builder gives transparent reporting and clear margin terms."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/hamilton/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Builders",
+          "item": "https://toprated.nz/cities/hamilton/trades/builders"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Hamilton builders handle consents and council inspections?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some builders manage the process end to end, while others work alongside your designer or architect. Always clarify who is responsible for consent documentation, booking inspections, and responding to council requests so there are no delays or gaps in responsibility."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does a typical renovation take in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Small cosmetic projects may take a few weeks, while bathrooms and kitchens often take several weeks to a few months depending on scope and product lead times. Full-home renovations and extensions can run much longer, especially if structural changes or consented work is involved."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I look for in a builder quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for clear inclusions, exclusions, provisional sums, payment stages, and assumptions. A quote that is detailed and easy to understand is usually a better sign than the cheapest number on the page, especially for renovations where costs can move if the scope is vague."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a contingency for a Waikato renovation project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Renovations commonly uncover hidden issues such as moisture damage, structural alterations, or outdated services. A contingency of 10%-20% is a common planning range and helps prevent project delays when unexpected work appears."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to build a house in Hamilton in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For planning purposes, many standard-spec new builds in Hamilton fall roughly in the $2,800-$4,200+ per square metre range, while higher-spec or architectural homes can be substantially more. Final pricing depends on siteworks, design complexity, and finish selections."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose a fixed-price or cost-plus building contract?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many homeowners prefer fixed-price contracts for certainty, but they only work well when plans and specifications are detailed. Cost-plus contracts can be appropriate for complex renovations where hidden conditions are likely, provided the builder gives transparent reporting and clear margin terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Hamilton builders handle consents and council inspections?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some builders manage the process end to end, while others work alongside your designer or architect. Always clarify who is responsible for consent documentation, booking inspections, and responding to council requests so there are no delays or gaps in responsibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical renovation take in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Small cosmetic projects may take a few weeks, while bathrooms and kitchens often take several weeks to a few months depending on scope and product lead times. Full-home renovations and extensions can run much longer, especially if structural changes or consented work is involved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for in a builder quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for clear inclusions, exclusions, provisional sums, payment stages, and assumptions. A quote that is detailed and easy to understand is usually a better sign than the cheapest number on the page, especially for renovations where costs can move if the scope is vague."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a contingency for a Waikato renovation project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Renovations commonly uncover hidden issues such as moisture damage, structural alterations, or outdated services. A contingency of 10%-20% is a common planning range and helps prevent project delays when unexpected work appears."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +226,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Builder in Hamilton</a></li><li><a href="#pricing-guide">How Much Do Builders Charge in Hamilton? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Hamilton's building market is driven by steady growth, new subdivisions across the Waikato, and a constant stream of renovations to older family homes. Whether you are planning a custom new build in Rototuna, an extension in Hillcrest, or a full renovation in Cambridge or Te Awamutu catchments, choosing the right builder is the biggest decision in your project. The best builders in Hamilton combine project management discipline, realistic quoting, and quality subcontractor networks with clear communication from consent through to handover. This guide explains how to compare builders, where costs usually move, and what questions to ask before signing a contract. For connected trades, see our Hamilton guides to <a href='/cities/hamilton/trades/plumbers'>plumbers</a> and <a href='/cities/hamilton/trades/electricians'>electricians</a>.</p>
@@ -157,7 +250,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Builders Charge in Hamilton? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Hamilton building costs vary significantly depending on whether you are building new, renovating, or extending an existing home. Land and siteworks are separate from build contracts in many cases, so compare quotes on a like-for-like basis and check exactly what is included in the contract sum.</p><p>Prices below are broad Waikato ranges for planning purposes only. Architectural complexity, specification choices, and consent requirements can move costs materially, especially on renovation work.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +271,100 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="141" data-business-name="Sentinel Homes Waikato" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sentinel Homes Waikato" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (285 reviews)</div>
+                <h3>Sentinel Homes Waikato</h3>
+
+                <p class="text-muted">Waikato&#39;s most-awarded builder for 3 consecutive years. Master Builders with 10-year guarantee specialising in custom design homes.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hamilton CBD</span>
+                    <div class="business-contact-links"><a href="https://www.sentinelhomes.co.nz/waikato?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-141-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="142" data-business-name="JCC Build" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="JCC Build" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (145 reviews)</div>
+                <h3>JCC Build</h3>
+
+                <p class="text-muted">Family-owned, award-winning company since 2016. Innovative solutions for new builds, renovations, and extensions with meticulous attention to detail.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hamilton Region</span>
+                    <div class="business-contact-links"><a href="https://www.jccbuild.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-142-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="143" data-business-name="8 Great Homes" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="builders" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="8 Great Homes" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (120 reviews)</div>
+                <h3>8 Great Homes</h3>
+
+                <p class="text-muted">Award-winning Master Builders with House of the Year accolades since 2019. House and land packages, designer homes, and quality renovations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Waikato Region</span>
+                    <div class="business-contact-links"><a href="https://www.8greathomes.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-143-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does it cost to build a house in Hamilton in 2026?</summary>
                             <p>For planning purposes, many standard-spec new builds in Hamilton fall roughly in the $2,800-$4,200+ per square metre range, while higher-spec or architectural homes can be substantially more. Final pricing depends on siteworks, design complexity, and finish selections.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose a fixed-price or cost-plus building contract?</summary>
                             <p>Many homeowners prefer fixed-price contracts for certainty, but they only work well when plans and specifications are detailed. Cost-plus contracts can be appropriate for complex renovations where hidden conditions are likely, provided the builder gives transparent reporting and clear margin terms.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Hamilton builders handle consents and council inspections?</summary>
                             <p>Some builders manage the process end to end, while others work alongside your designer or architect. Always clarify who is responsible for consent documentation, booking inspections, and responding to council requests so there are no delays or gaps in responsibility.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How long does a typical renovation take in Hamilton?</summary>
                             <p>Small cosmetic projects may take a few weeks, while bathrooms and kitchens often take several weeks to a few months depending on scope and product lead times. Full-home renovations and extensions can run much longer, especially if structural changes or consented work is involved.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I look for in a builder quote?</summary>
                             <p>Look for clear inclusions, exclusions, provisional sums, payment stages, and assumptions. A quote that is detailed and easy to understand is usually a better sign than the cheapest number on the page, especially for renovations where costs can move if the scope is vague.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a contingency for a Waikato renovation project?</summary>
                             <p>Yes. Renovations commonly uncover hidden issues such as moisture damage, structural alterations, or outdated services. A contingency of 10%-20% is a common planning range and helps prevent project delays when unexpected work appears.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +372,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +435,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +448,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

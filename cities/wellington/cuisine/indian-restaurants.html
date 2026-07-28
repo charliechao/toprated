@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where are the best Indian restaurants in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington's Indian dining is concentrated around Courtenay Place, Cuba Street, Newtown, and the CBD. Each area offers different specialities — from fine dining in the city centre to casual BYO gems in the suburbs."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/cuisine/indian-restaurants#business-list",
+      "name": "Indian Restaurants in Wellington",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Indian Alley Wakefield",
+            "description": "Celebrated dining destination with authentic cuisine and dual styles - fine dining and casual street food under one roof.",
+            "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wakefield Street, Wellington CBD",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.indianalley.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Great India Restaurant",
+            "description": "Wellington's most acclaimed fine-dining Indian restaurant on Courtenay Place. Modern interpretations of North and South Indian cuisine using premium NZ ingredients. Extensive tandoori menu, craft cocktail pairings, and award-winning service.",
+            "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Courtenay Place, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.thegreatindia.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Chaat Street",
+            "description": "Vibrant authentic Indian street food and tapas-style dining. A unique cultural experience with bold flavors.",
+            "image": "/img/generated/indian-restaurants.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wellington CBD",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.chaatstreet.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How much does Indian food cost in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Casual Indian dining in Wellington ranges from $16–$22 for curries, while premium Indian restaurants charge $25–$38 for mains. Many offer excellent value banquet menus for groups and lunch specials."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/wellington/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Indian Restaurants",
+          "item": "https://toprated.nz/cities/wellington/cuisine/indian-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Wellington Indian restaurants cater to dietary requirements?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Indian cuisine is naturally well-suited to vegetarian and vegan diets. Most Wellington Indian restaurants clearly mark dietary options and can adjust spice levels. Many also offer gluten-free and dairy-free alternatives."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where are the best Indian restaurants in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington's Indian dining is concentrated around Courtenay Place, Cuba Street, Newtown, and the CBD. Each area offers different specialities — from fine dining in the city centre to casual BYO gems in the suburbs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Indian food cost in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casual Indian dining in Wellington ranges from $16–$22 for curries, while premium Indian restaurants charge $25–$38 for mains. Many offer excellent value banquet menus for groups and lunch specials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Wellington Indian restaurants cater to dietary requirements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Indian cuisine is naturally well-suited to vegetarian and vegan diets. Most Wellington Indian restaurants clearly mark dietary options and can adjust spice levels. Many also offer gluten-free and dairy-free alternatives."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's Indian dining scene is vibrant and diverse, spanning authentic regional cuisines from the tandoori houses of Courtenay Place to the South Indian dosa specialists of Newtown and the modern Indian fusion restaurants of the CBD. The capital's top-rated Indian restaurants source premium spices, prepare dishes fresh to order, and cater to a wide range of dietary needs including vegetarian, vegan, and gluten-free options.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="149" data-business-name="Indian Alley Wakefield" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Indian Alley Wakefield" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (520 reviews)</div>
+                <h3>Indian Alley Wakefield</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Sandringham</div>
+                <p class="text-muted">Celebrated dining destination with authentic cuisine and dual styles - fine dining and casual street food under one roof.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wakefield Street, Wellington CBD</span>
+                    <div class="business-contact-links"><a href="https://www.indianalley.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-149-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="302" data-business-name="The Great India Restaurant" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="The Great India Restaurant" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (520 reviews)</div>
+                <h3>The Great India Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Courtenay Place</div>
+                <p class="text-muted">Wellington&#39;s most acclaimed fine-dining Indian restaurant on Courtenay Place. Modern interpretations of North and South Indian cuisine using premium NZ ingredients. Extensive tandoori menu, craft cocktail pairings, and award-winning service.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Courtenay Place, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.thegreatindia.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-302-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="150" data-business-name="Chaat Street" data-city-slug="wellington" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/indian-restaurants.png" alt="Chaat Street" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (390 reviews)</div>
+                <h3>Chaat Street</h3>
+
+                <p class="text-muted">Vibrant authentic Indian street food and tapas-style dining. A unique cultural experience with bold flavors.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wellington CBD</span>
+                    <div class="business-contact-links"><a href="https://www.chaatstreet.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-150-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where are the best Indian restaurants in Wellington?</summary>
                             <p>Wellington's Indian dining is concentrated around Courtenay Place, Cuba Street, Newtown, and the CBD. Each area offers different specialities — from fine dining in the city centre to casual BYO gems in the suburbs.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does Indian food cost in Wellington?</summary>
                             <p>Casual Indian dining in Wellington ranges from $16–$22 for curries, while premium Indian restaurants charge $25–$38 for mains. Many offer excellent value banquet menus for groups and lunch specials.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Wellington Indian restaurants cater to dietary requirements?</summary>
                             <p>Yes, Indian cuisine is naturally well-suited to vegetarian and vegan diets. Most Wellington Indian restaurants clearly mark dietary options and can adjust spice levels. Many also offer gluten-free and dairy-free alternatives.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -1495,21 +1495,6 @@
     "neighborhood": "Lower Hutt"
   },
   {
-    "id": 56,
-    "name": "Superior Renovations",
-    "industry": "Renovation Services",
-    "city": "Auckland",
-    "rating": 4.9,
-    "reviews": 158,
-    "description": "Full-service renovation specialists focusing on high-quality kitchen, bathroom, and full-home transformations in Auckland.",
-    "website": "https://superiorrenovations.co.nz",
-    "image": "/img/generated/renovation-services.png",
-    "address": "Auckland Central",
-    "citySlug": "auckland",
-    "categorySlug": "other",
-    "pageSlug": "renovation-services"
-  },
-  {
     "id": 57,
     "name": "Build Makers",
     "industry": "Renovation Services",
@@ -4197,19 +4182,19 @@
   },
   {
     "id": 191,
-    "name": "Capital Auto Wellington",
+    "name": "Capital Auto Electrics",
     "industry": "Mechanics",
     "city": "Wellington",
-    "rating": 4.8,
-    "reviews": 295,
-    "description": "WOF, servicing, and repairs for all makes and models. Eco-friendly workshop with loaner vehicle available.",
+    "description": "Kaiwharawhara workshop providing automotive electrical diagnostics, mechanical repairs and servicing, with a focus on European vehicles.",
     "website": "https://www.capitalauto.co.nz",
-    "address": "Kilbirnie, Wellington",
+    "address": "53 Kaiwharawhara Road, Wellington 6035",
     "image": "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80",
     "citySlug": "wellington",
     "categorySlug": "automotive",
     "pageSlug": "mechanics",
-    "neighborhood": "Kilbirnie"
+    "neighborhood": "Kaiwharawhara",
+    "verifiedAt": "2026-07-27",
+    "verificationSource": "https://www.capitalauto.co.nz/"
   },
   {
     "id": 192,
@@ -6456,22 +6441,6 @@
     "pageSlug": "mechanics",
     "neighborhood": "Miramar",
     "id": 290
-  },
-  {
-    "name": "Capital Automotive",
-    "industry": "Mechanics",
-    "city": "Wellington",
-    "rating": 4.7,
-    "reviews": 265,
-    "description": "MTA-certified mechanics in Petone offering comprehensive vehicle servicing, cam belt replacements, brake repairs, and pre-purchase inspections. Known for honest pricing and clear communication.",
-    "website": "https://www.capitalauto.co.nz",
-    "address": "Petone, Lower Hutt",
-    "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
-    "citySlug": "wellington",
-    "categorySlug": "automotive",
-    "pageSlug": "mechanics",
-    "neighborhood": "Petone",
-    "id": 291
   },
   {
     "name": "Wellington Tyre Centre",

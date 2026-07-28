@@ -45,55 +45,165 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What does a plumber typically charge in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many Tauranga plumbers charge a call-out fee plus an hourly rate, with standard labour often around $95-$135 per hour plus GST depending on the job and provider. Emergency and after-hours work usually costs significantly more."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/trades/plumbers#business-list",
+      "name": "Plumbers in Tauranga",
+      "numberOfItems": 4,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Plumbing Collective",
+            "description": "Honest, professional service specializing in leak detection, gas fitting, and high-quality installations.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga South",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://theplumbingcollective.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Kingfisher Plumbing",
+            "description": "Exceptional customer experience with upfront pricing and quick response for all plumbing emergencies.",
+            "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Papamoa, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://kingfisherplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Smart Plumbing",
+            "description": "Meticulous and tidy plumbers known for informative communication and effective problem-solving.",
+            "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=400&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga Central",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://smartplumbing.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Eco Plumber",
+            "description": "Established experts in solar water heating, gas fitting, and eco-friendly plumbing solutions.",
+            "image": "/img/generated/plumbers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mount Maunganui, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://ecoplumber.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a licensed plumber to replace a hot water cylinder in NZ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, replacement and installation work on hot water systems should be completed by an appropriately licensed professional, and gas systems require the correct gasfitting licence. This helps ensure safety, compliance, and insurance protection."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/tauranga/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Plumbers",
+          "item": "https://toprated.nz/cities/tauranga/trades/plumbers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are coastal homes in Tauranga harder on plumbing systems?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Coastal conditions can increase corrosion risk for certain outdoor fixtures and metal components, particularly in exposed locations like Mount Maunganui and Papamoa. A local plumber can recommend suitable materials, maintenance checks, and installation methods for better durability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I repair or replace an old hot water cylinder?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the cylinder age, condition, and the cost of the fault. If the unit is older and parts are failing repeatedly, replacement is often better value long term. A plumber should explain the options, expected lifespan, and whether an upgrade to mains pressure or continuous flow is practical for your property."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Tauranga plumbers help with renovation projects as well as maintenance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many local plumbers handle both maintenance and renovation work, but not every business specialises in project-based fit-outs. If you are renovating a kitchen or bathroom, ask about scheduling, rough-in and fit-off stages, and coordination with other trades before booking."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I do before the plumber arrives for an urgent leak?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If it is safe to do so, shut off the local isolation valve or your main water supply to reduce damage, move valuables away from the affected area, and take photos for insurance. Then explain the symptoms clearly when booking so the plumber can bring likely parts and tools."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does a plumber typically charge in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Tauranga plumbers charge a call-out fee plus an hourly rate, with standard labour often around $95-$135 per hour plus GST depending on the job and provider. Emergency and after-hours work usually costs significantly more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a licensed plumber to replace a hot water cylinder in NZ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, replacement and installation work on hot water systems should be completed by an appropriately licensed professional, and gas systems require the correct gasfitting licence. This helps ensure safety, compliance, and insurance protection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are coastal homes in Tauranga harder on plumbing systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coastal conditions can increase corrosion risk for certain outdoor fixtures and metal components, particularly in exposed locations like Mount Maunganui and Papamoa. A local plumber can recommend suitable materials, maintenance checks, and installation methods for better durability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I repair or replace an old hot water cylinder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the cylinder age, condition, and the cost of the fault. If the unit is older and parts are failing repeatedly, replacement is often better value long term. A plumber should explain the options, expected lifespan, and whether an upgrade to mains pressure or continuous flow is practical for your property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Tauranga plumbers help with renovation projects as well as maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many local plumbers handle both maintenance and renovation work, but not every business specialises in project-based fit-outs. If you are renovating a kitchen or bathroom, ask about scheduling, rough-in and fit-off stages, and coordination with other trades before booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do before the plumber arrives for an urgent leak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If it is safe to do so, shut off the local isolation valve or your main water supply to reduce damage, move valuables away from the affected area, and take photos for insurance. Then explain the symptoms clearly when booking so the plumber can bring likely parts and tools."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +243,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Plumber in Tauranga</a></li><li><a href="#pricing-guide">How Much Do Plumbers Charge in Tauranga? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Tauranga and the wider Western Bay of Plenty have a fast-moving plumbing market shaped by coastal conditions, rapid residential growth, and strong demand for renovation work in suburbs like Mount Maunganui, Papamoa, and Bethlehem. The best plumbers in Tauranga combine prompt response times with tidy workmanship, clear pricing, and the right qualifications for plumbing, gasfitting, and hot water systems. Whether you are dealing with a leak, planning a bathroom upgrade, or replacing a hot water cylinder, this guide will help you compare plumbers properly and understand typical costs in 2026. If your project involves multiple trades, also see our Tauranga guides to <a href='/cities/tauranga/trades/builders'>builders</a> and <a href='/cities/tauranga/trades/electricians'>electricians</a>.</p>
@@ -157,7 +267,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Plumbers Charge in Tauranga? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Tauranga plumbing costs vary by urgency, travel, and job complexity, but most businesses use a call-out plus labour model for maintenance work and fixed quotes for larger installations. Coastal and growth-area demand can also affect availability during peak periods.</p><p>Ask whether pricing includes GST, materials, disposal, and after-hours surcharges. For hot water and renovation jobs, compare quotes on product specification as well as labour so you are not comparing unlike-for-like options.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +288,117 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="4">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="45" data-business-name="The Plumbing Collective" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="The Plumbing Collective" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (115 reviews)</div>
+                <h3>The Plumbing Collective</h3>
+
+                <p class="text-muted">Honest, professional service specializing in leak detection, gas fitting, and high-quality installations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga South</span>
+                    <div class="business-contact-links"><a href="https://theplumbingcollective.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-45-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="48" data-business-name="Kingfisher Plumbing" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Kingfisher Plumbing" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (230 reviews)</div>
+                <h3>Kingfisher Plumbing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Papamoa</div>
+                <p class="text-muted">Exceptional customer experience with upfront pricing and quick response for all plumbing emergencies.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Papamoa, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://kingfisherplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-48-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="46" data-business-name="Smart Plumbing" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Smart Plumbing" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (70 reviews)</div>
+                <h3>Smart Plumbing</h3>
+
+                <p class="text-muted">Meticulous and tidy plumbers known for informative communication and effective problem-solving.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga Central</span>
+                    <div class="business-contact-links"><a href="https://smartplumbing.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-46-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="47" data-business-name="Eco Plumber" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="plumbers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/plumbers.png" alt="Eco Plumber" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (160 reviews)</div>
+                <h3>Eco Plumber</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mount Maunganui</div>
+                <p class="text-muted">Established experts in solar water heating, gas fitting, and eco-friendly plumbing solutions.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Mount Maunganui, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://ecoplumber.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-47-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What does a plumber typically charge in Tauranga?</summary>
                             <p>Many Tauranga plumbers charge a call-out fee plus an hourly rate, with standard labour often around $95-$135 per hour plus GST depending on the job and provider. Emergency and after-hours work usually costs significantly more.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a licensed plumber to replace a hot water cylinder in NZ?</summary>
                             <p>Yes, replacement and installation work on hot water systems should be completed by an appropriately licensed professional, and gas systems require the correct gasfitting licence. This helps ensure safety, compliance, and insurance protection.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are coastal homes in Tauranga harder on plumbing systems?</summary>
                             <p>Coastal conditions can increase corrosion risk for certain outdoor fixtures and metal components, particularly in exposed locations like Mount Maunganui and Papamoa. A local plumber can recommend suitable materials, maintenance checks, and installation methods for better durability.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I repair or replace an old hot water cylinder?</summary>
                             <p>It depends on the cylinder age, condition, and the cost of the fault. If the unit is older and parts are failing repeatedly, replacement is often better value long term. A plumber should explain the options, expected lifespan, and whether an upgrade to mains pressure or continuous flow is practical for your property.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can Tauranga plumbers help with renovation projects as well as maintenance?</summary>
                             <p>Yes. Many local plumbers handle both maintenance and renovation work, but not every business specialises in project-based fit-outs. If you are renovating a kitchen or bathroom, ask about scheduling, rough-in and fit-off stages, and coordination with other trades before booking.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I do before the plumber arrives for an urgent leak?</summary>
                             <p>If it is safe to do so, shut off the local isolation valve or your main water supply to reduce damage, move valuables away from the affected area, and take photos for insurance. Then explain the symptoms clearly when booking so the plumber can bring likely parts and tools.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +406,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/tauranga/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +469,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +482,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -45,31 +45,157 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What equipment do I need for a basic home gym?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A practical starter setup can include adjustable dumbbells or a barbell, a bench, resistance bands, and enough clear floor space. The ideal mix depends on your goals, budget, and room size."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/fitness-equipment#business-list",
+      "name": "Fitness Equipment in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Elite Fitness Auckland Superstore",
+            "description": "Elite Fitness Auckland Superstore supplies home and commercial fitness equipment, including treadmills, ellipticals, home gyms, functional training machines, servicing, and hire options.",
+            "image": "https://www.elitefitness.co.nz/cdn/shop/files/Commercial_slide3_Impulse.jpg?v=1768364079&width=1200",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "28 Morrin Road, St Johns, Auckland 1072",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.elitefitness.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Gym Equip",
+            "description": "Gym Equip is a North Shore-based supplier of premium home and commercial gym equipment, including REP Fitness cardio equipment, power racks, functional trainers, benches, weights, and custom fit-outs.",
+            "image": "https://gymequip.nz/cdn/shop/collections/AirBike-Detail--294-Edit.jpg?v=1770420384&width=1500",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "North Shore, Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://gymequip.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Industrial Athletic",
+            "description": "Industrial Athletic is an Auckland manufacturer and supplier of strength, conditioning, weightlifting, cardio, gym flooring, racks, rigs, and custom gym fit-outs for home and commercial facilities.",
+            "image": "https://www.industrialathletic.com/cdn/shop/files/Gym-Fit-outs-new-zealand.jpg?v=1653975510&width=2592",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.industrialathletic.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Achieve Fitness",
+            "description": "Achieve Fitness is an Auckland fitness-equipment supplier offering treadmills, bikes, rowers, strength equipment, commercial equipment, rentals, and after-sales servicing.",
+            "image": "https://www.achievefitness.co.nz/media/Home_Banner.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "19a Orbit Drive, Albany, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.achievefitness.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Lee Warehouse",
+            "description": "Lee Warehouse is an Auckland fitness-equipment retailer supplying weights, strength machines, cardio equipment, benches, flooring, and home-gym packages for customers across New Zealand.",
+            "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "104 Central Park Drive, Henderson, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I buy commercial or home-grade gym equipment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Home-grade equipment suits typical personal use, while commercial equipment is built for heavier, more frequent use. Compare expected usage, warranty, space, and budget before choosing."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Fitness Equipment",
+          "item": "https://toprated.nz/cities/auckland/services/fitness-equipment"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do fitness-equipment suppliers offer delivery in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many suppliers offer Auckland delivery, but costs, assembly, and access requirements vary by item. Confirm these details before placing an order, especially for larger machines."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What equipment do I need for a basic home gym?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A practical starter setup can include adjustable dumbbells or a barbell, a bench, resistance bands, and enough clear floor space. The ideal mix depends on your goals, budget, and room size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I buy commercial or home-grade gym equipment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Home-grade equipment suits typical personal use, while commercial equipment is built for heavier, more frequent use. Compare expected usage, warranty, space, and budget before choosing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do fitness-equipment suppliers offer delivery in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many suppliers offer Auckland delivery, but costs, assembly, and access requirements vary by item. Confirm these details before placing an order, especially for larger machines."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,14 +235,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose Fitness Equipment in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland fitness-equipment buyers range from people building compact home gyms to personal trainers, schools, and commercial facilities fitting out a complete training space. Compare suppliers by product suitability, delivery options, warranty support, and whether the equipment matches your available space and training goals.</p>
@@ -139,35 +265,119 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="396" data-business-name="Elite Fitness Auckland Superstore" data-city-slug="auckland" data-category-slug="services" data-page-slug="fitness-equipment" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.elitefitness.co.nz/cdn/shop/files/Commercial_slide3_Impulse.jpg?v=1768364079&amp;width=1200" alt="Elite Fitness Auckland Superstore" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Elite Fitness Auckland Superstore</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> St Johns</div>
+                <p class="text-muted">Elite Fitness Auckland Superstore supplies home and commercial fitness equipment, including treadmills, ellipticals, home gyms, functional training machines, servicing, and hire options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 28 Morrin Road, St Johns, Auckland 1072</span>
+                    <div class="business-contact-links"><a href="https://www.elitefitness.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-396-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:092764654" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 276 4654</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="397" data-business-name="Gym Equip" data-city-slug="auckland" data-category-slug="services" data-page-slug="fitness-equipment" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://gymequip.nz/cdn/shop/collections/AirBike-Detail--294-Edit.jpg?v=1770420384&amp;width=1500" alt="Gym Equip" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Gym Equip</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> North Shore</div>
+                <p class="text-muted">Gym Equip is a North Shore-based supplier of premium home and commercial gym equipment, including REP Fitness cardio equipment, power racks, functional trainers, benches, weights, and custom fit-outs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> North Shore, Auckland, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://gymequip.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-397-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="398" data-business-name="Industrial Athletic" data-city-slug="auckland" data-category-slug="services" data-page-slug="fitness-equipment" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.industrialathletic.com/cdn/shop/files/Gym-Fit-outs-new-zealand.jpg?v=1653975510&amp;width=2592" alt="Industrial Athletic" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Industrial Athletic</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">Industrial Athletic is an Auckland manufacturer and supplier of strength, conditioning, weightlifting, cardio, gym flooring, racks, rigs, and custom gym fit-outs for home and commercial facilities.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.industrialathletic.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-398-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="399" data-business-name="Achieve Fitness" data-city-slug="auckland" data-category-slug="services" data-page-slug="fitness-equipment" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.achievefitness.co.nz/media/Home_Banner.jpg" alt="Achieve Fitness" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Achieve Fitness</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Albany</div>
+                <p class="text-muted">Achieve Fitness is an Auckland fitness-equipment supplier offering treadmills, bikes, rowers, strength equipment, commercial equipment, rentals, and after-sales servicing.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 19a Orbit Drive, Albany, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.achievefitness.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-399-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:08006253349" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 625 3349</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="395" data-business-name="Lee Warehouse" data-city-slug="auckland" data-category-slug="services" data-page-slug="fitness-equipment" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Lee Warehouse" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Lee Warehouse</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Henderson</div>
+                <p class="text-muted">Lee Warehouse is an Auckland fitness-equipment retailer supplying weights, strength machines, cardio equipment, benches, flooring, and home-gym packages for customers across New Zealand.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 104 Central Park Drive, Henderson, Auckland</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What equipment do I need for a basic home gym?</summary>
                             <p>A practical starter setup can include adjustable dumbbells or a barbell, a bench, resistance bands, and enough clear floor space. The ideal mix depends on your goals, budget, and room size.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I buy commercial or home-grade gym equipment?</summary>
                             <p>Home-grade equipment suits typical personal use, while commercial equipment is built for heavier, more frequent use. Compare expected usage, warranty, space, and budget before choosing.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do fitness-equipment suppliers offer delivery in Auckland?</summary>
                             <p>Many suppliers offer Auckland delivery, but costs, assembly, and access requirements vary by item. Confirm these details before placing an order, especially for larger machines.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -175,7 +385,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,7 +427,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -230,8 +440,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

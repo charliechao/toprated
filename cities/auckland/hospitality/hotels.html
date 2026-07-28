@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the best area to stay in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Auckland CBD and Viaduct are ideal for first-time visitors, offering easy access to attractions, restaurants, and harbor views. Ponsonby and Parnell are great for a more residential, boutique experience."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/hospitality/hotels#business-list",
+      "name": "Hotels in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Park Hyatt Auckland",
+            "description": "Auckland's premier luxury waterfront hotel featuring stunning harbor views, world-class dining, and a rooftop pool. Located at the iconic Viaduct Harbour.",
+            "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "99 Halsey Street, Wynyard Quarter, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.hyatt.com/en-US/hotel/new-zealand/park-hyatt-auckland/aklph"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Hotel Britomart",
+            "description": "Boutique luxury in a heritage-listed building. Sustainability-focused design with locally curated interiors and Kingi restaurant serving the best of NZ produce.",
+            "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "29 Galway Street, Britomart, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.thehotelbritomart.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Sofitel Auckland Viaduct Harbour",
+            "description": "French elegance meets New Zealand hospitality. Waterfront luxury with marina views, signature spa treatments, and refined dining at Lava Dining.",
+            "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "21 Viaduct Harbour Avenue, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.sofitel-auckland.com"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Which Auckland hotels have the best harbour views?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Sofitel Auckland Viaduct Harbour, Hilton Auckland, and Park Hyatt Auckland all offer spectacular harbor and city views. The Park Hyatt, in particular, is renowned for its panoramic vistas."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hospitality",
+          "item": "https://toprated.nz/cities/auckland/hospitality/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Hotels",
+          "item": "https://toprated.nz/cities/auckland/hospitality/hotels"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Are there luxury boutique hotels in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Auckland has several excellent boutique options including Hotel DeBrett, The Hotel Britomart, and The Convent Hotel in Ponsonby, each offering unique character and personalized service."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best area to stay in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Auckland CBD and Viaduct are ideal for first-time visitors, offering easy access to attractions, restaurants, and harbor views. Ponsonby and Parnell are great for a more residential, boutique experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Auckland hotels have the best harbour views?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Sofitel Auckland Viaduct Harbour, Hilton Auckland, and Park Hyatt Auckland all offer spectacular harbor and city views. The Park Hyatt, in particular, is renowned for its panoramic vistas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there luxury boutique hotels in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Auckland has several excellent boutique options including Hotel DeBrett, The Hotel Britomart, and The Convent Hotel in Ponsonby, each offering unique character and personalized service."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland offers accommodation for every style and budget, from luxury waterfront hotels to boutique properties in the inner suburbs. Whether you're visiting for business or leisure, the city's top-rated hotels provide exceptional service, prime locations, and world-class amenities. From the iconic SkyCity Grand to boutique gems in Ponsonby and Parnell, Auckland's hotel scene caters to discerning travelers seeking quality and convenience.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="102" data-business-name="Park Hyatt Auckland" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="hotels" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Park Hyatt Auckland" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (1250 reviews)</div>
+                <h3>Park Hyatt Auckland</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Viaduct</div>
+                <p class="text-muted">Auckland&#39;s premier luxury waterfront hotel featuring stunning harbor views, world-class dining, and a rooftop pool. Located at the iconic Viaduct Harbour.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 99 Halsey Street, Wynyard Quarter, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://www.hyatt.com/en-US/hotel/new-zealand/park-hyatt-auckland/aklph?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-102-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="103" data-business-name="The Hotel Britomart" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="hotels" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="The Hotel Britomart" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (890 reviews)</div>
+                <h3>The Hotel Britomart</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Britomart</div>
+                <p class="text-muted">Boutique luxury in a heritage-listed building. Sustainability-focused design with locally curated interiors and Kingi restaurant serving the best of NZ produce.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 29 Galway Street, Britomart, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://www.thehotelbritomart.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-103-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="104" data-business-name="Sofitel Auckland Viaduct Harbour" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="hotels" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sofitel Auckland Viaduct Harbour" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (1580 reviews)</div>
+                <h3>Sofitel Auckland Viaduct Harbour</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Viaduct</div>
+                <p class="text-muted">French elegance meets New Zealand hospitality. Waterfront luxury with marina views, signature spa treatments, and refined dining at Lava Dining.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 21 Viaduct Harbour Avenue, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://www.sofitel-auckland.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-104-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best area to stay in Auckland?</summary>
                             <p>The Auckland CBD and Viaduct are ideal for first-time visitors, offering easy access to attractions, restaurants, and harbor views. Ponsonby and Parnell are great for a more residential, boutique experience.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Auckland hotels have the best harbour views?</summary>
                             <p>The Sofitel Auckland Viaduct Harbour, Hilton Auckland, and Park Hyatt Auckland all offer spectacular harbor and city views. The Park Hyatt, in particular, is renowned for its panoramic vistas.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are there luxury boutique hotels in Auckland?</summary>
                             <p>Yes, Auckland has several excellent boutique options including Hotel DeBrett, The Hotel Britomart, and The Convent Hotel in Ponsonby, each offering unique character and personalized service.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/hospitality/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,9 +360,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

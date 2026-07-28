@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does panel beating cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland panel beating costs vary widely: minor dent repairs start from $150–$300, bumper repairs from $400–$800, and major collision repairs can range from $2,000 to $10,000+. Most reputable shops offer free assessments and work directly with your insurer."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/automotive/panel-beaters#business-list",
+      "name": "Panel Beaters in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Smith & Smith Panel & Paint",
+            "description": "Insurance-approved collision repair specialists with locations across Auckland. Factory-certified for major brands, computerised colour matching, and courtesy cars available. Over 25 years of trusted service.",
+            "image": "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Penrose, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.smithandsmith.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Auckland Panel & Paint",
+            "description": "Insurance-approved panel beaters with lifetime warranty on repairs. Courtesy cars available.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Henderson, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.aucklandpanelpaint.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Collision Repair Associates",
+            "description": "Precision panel and paint specialists on the North Shore. MTA-certified with expertise in European, Japanese, and luxury vehicle repairs. Free assessments and insurance liaison.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Albany, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.collisionrepair.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How long does panel beating take in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minor repairs typically take 1–3 days, while major collision work can take 1–3 weeks depending on parts availability and the extent of damage. Top Auckland panel beaters provide courtesy cars during repairs."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/auckland/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Panel Beaters",
+          "item": "https://toprated.nz/cities/auckland/automotive/panel-beaters"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Will my car look the same after panel beating?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — Auckland's best panel beaters use computerised colour-matching systems and factory-grade paints to ensure an invisible repair. Look for operators with manufacturer certifications for the best results."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does panel beating cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland panel beating costs vary widely: minor dent repairs start from $150–$300, bumper repairs from $400–$800, and major collision repairs can range from $2,000 to $10,000+. Most reputable shops offer free assessments and work directly with your insurer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does panel beating take in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minor repairs typically take 1–3 days, while major collision work can take 1–3 weeks depending on parts availability and the extent of damage. Top Auckland panel beaters provide courtesy cars during repairs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my car look the same after panel beating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Auckland's best panel beaters use computerised colour-matching systems and factory-grade paints to ensure an invisible repair. Look for operators with manufacturer certifications for the best results."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's top-rated panel beaters deliver expert collision repair, dent removal, and paint restoration services across the region. Whether you've had a minor carpark ding in Takapuna or need major structural repair after an accident on the motorway, these certified technicians use state-of-the-art equipment, factory-matched paint systems, and manufacturer-approved repair methods. All top-rated Auckland panel beaters work directly with major insurance companies for hassle-free claims processing.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="275" data-business-name="Smith &amp; Smith Panel &amp; Paint" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="panel-beaters" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Smith &amp; Smith Panel &amp; Paint" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (410 reviews)</div>
+                <h3>Smith &amp; Smith Panel &amp; Paint</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Penrose</div>
+                <p class="text-muted">Insurance-approved collision repair specialists with locations across Auckland. Factory-certified for major brands, computerised colour matching, and courtesy cars available. Over 25 years of trusted service.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Penrose, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.smithandsmith.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-275-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="195" data-business-name="Auckland Panel &amp; Paint" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="panel-beaters" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Auckland Panel &amp; Paint" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (340 reviews)</div>
+                <h3>Auckland Panel &amp; Paint</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Henderson</div>
+                <p class="text-muted">Insurance-approved panel beaters with lifetime warranty on repairs. Courtesy cars available.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Henderson, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.aucklandpanelpaint.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-195-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="276" data-business-name="Collision Repair Associates" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="panel-beaters" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Collision Repair Associates" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (185 reviews)</div>
+                <h3>Collision Repair Associates</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Albany</div>
+                <p class="text-muted">Precision panel and paint specialists on the North Shore. MTA-certified with expertise in European, Japanese, and luxury vehicle repairs. Free assessments and insurance liaison.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Albany, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.collisionrepair.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-276-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does panel beating cost in Auckland?</summary>
                             <p>Auckland panel beating costs vary widely: minor dent repairs start from $150–$300, bumper repairs from $400–$800, and major collision repairs can range from $2,000 to $10,000+. Most reputable shops offer free assessments and work directly with your insurer.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How long does panel beating take in Auckland?</summary>
                             <p>Minor repairs typically take 1–3 days, while major collision work can take 1–3 weeks depending on parts availability and the extent of damage. Top Auckland panel beaters provide courtesy cars during repairs.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Will my car look the same after panel beating?</summary>
                             <p>Yes — Auckland's best panel beaters use computerised colour-matching systems and factory-grade paints to ensure an invisible repair. Look for operators with manufacturer certifications for the best results.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +367,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

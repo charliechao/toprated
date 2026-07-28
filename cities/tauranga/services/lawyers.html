@@ -45,55 +45,114 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a lawyer cost in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the type of matter. Conveyancing and wills are often more predictable, while disputes, commercial issues, and complex estate work can vary significantly in cost."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/services/lawyers#business-list",
+      "name": "Lawyers in Tauranga",
+      "numberOfItems": 1,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Cooney Lees Morgan",
+            "description": "Bay of Plenty's leading full-service law firm with over 100 staff. Expertise in property, commercial, and family law with a strong community focus.",
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Willow Street, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.clm.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a lawyer for buying or selling property in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In most cases, yes. A property lawyer or conveyancer handles the legal transfer, checks the contract, manages settlement, and helps reduce the risk of expensive mistakes."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/tauranga/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Lawyers",
+          "item": "https://toprated.nz/cities/tauranga/services/lawyers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I bring to a first legal meeting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bring any contracts, emails, ID, timelines, and documents relevant to the issue. The clearer your records are, the faster the lawyer can identify the real work involved."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a lawyer help with small-business issues as well as personal legal work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many firms can, but not always with the same depth across every area. Ask whether the lawyer handling your matter regularly works with business clients if that is important to you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I choose a lawyer based on price alone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually not. Clarity, responsiveness, and experience in the right area often matter more than the lowest hourly rate, especially if delays or poor advice create larger downstream costs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between a lawyer and a conveyancer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A conveyancer focuses mainly on property transactions, while a lawyer can advise across a wider range of legal issues. For straightforward property work either may be fine, but more complex issues may justify a broader legal adviser."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a lawyer cost in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the type of matter. Conveyancing and wills are often more predictable, while disputes, commercial issues, and complex estate work can vary significantly in cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a lawyer for buying or selling property in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In most cases, yes. A property lawyer or conveyancer handles the legal transfer, checks the contract, manages settlement, and helps reduce the risk of expensive mistakes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I bring to a first legal meeting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bring any contracts, emails, ID, timelines, and documents relevant to the issue. The clearer your records are, the faster the lawyer can identify the real work involved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a lawyer help with small-business issues as well as personal legal work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many firms can, but not always with the same depth across every area. Ask whether the lawyer handling your matter regularly works with business clients if that is important to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose a lawyer based on price alone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. Clarity, responsiveness, and experience in the right area often matter more than the lowest hourly rate, especially if delays or poor advice create larger downstream costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a lawyer and a conveyancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A conveyancer focuses mainly on property transactions, while a lawyer can advise across a wider range of legal issues. For straightforward property work either may be fine, but more complex issues may justify a broader legal adviser."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +192,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Lawyer in Tauranga</a></li><li><a href="#pricing-guide">How Much Do Lawyers Charge in Tauranga? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Tauranga lawyers help with property transactions, business sales, wills, trusts, disputes, relationship matters, and the legal work that sits behind many major life and business decisions. The best firms combine technical accuracy with clear communication and practical advice. This guide is for Tauranga residents, investors, and business owners who want a lawyer that is responsive, commercially sensible, and able to explain the process without legal theatre. If your matter connects with a property or business transaction, you may also want our Tauranga guides to <a href='/cities/tauranga/services/real-estate-agents'>real estate agents</a> and <a href='/cities/tauranga/services/accountants'>accountants</a>.</p>
@@ -157,7 +216,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Lawyers Charge in Tauranga? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Tauranga legal fees vary based on the type of matter, complexity, urgency, and whether the job can be priced on a fixed-fee basis. Property conveyancing is often more predictable, while disputes, commercial negotiations, and estate matters can vary widely.</p><p>These are planning ranges only. Always ask for a written estimate and clarification on disbursements and excluded work.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +237,66 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="1">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="246" data-business-name="Cooney Lees Morgan" data-city-slug="tauranga" data-category-slug="services" data-page-slug="lawyers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cooney Lees Morgan" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (180 reviews)</div>
+                <h3>Cooney Lees Morgan</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Bay of Plenty&#39;s leading full-service law firm with over 100 staff. Expertise in property, commercial, and family law with a strong community focus.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Willow Street, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://www.clm.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-246-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a lawyer cost in Tauranga?</summary>
                             <p>It depends on the type of matter. Conveyancing and wills are often more predictable, while disputes, commercial issues, and complex estate work can vary significantly in cost.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a lawyer for buying or selling property in Tauranga?</summary>
                             <p>In most cases, yes. A property lawyer or conveyancer handles the legal transfer, checks the contract, manages settlement, and helps reduce the risk of expensive mistakes.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I bring to a first legal meeting?</summary>
                             <p>Bring any contracts, emails, ID, timelines, and documents relevant to the issue. The clearer your records are, the faster the lawyer can identify the real work involved.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can a lawyer help with small-business issues as well as personal legal work?</summary>
                             <p>Many firms can, but not always with the same depth across every area. Ask whether the lawyer handling your matter regularly works with business clients if that is important to you.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose a lawyer based on price alone?</summary>
                             <p>Usually not. Clarity, responsiveness, and experience in the right area often matter more than the lowest hourly rate, especially if delays or poor advice create larger downstream costs.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the difference between a lawyer and a conveyancer?</summary>
                             <p>A conveyancer focuses mainly on property transactions, while a lawyer can advise across a wider range of legal issues. For straightforward property work either may be fine, but more complex issues may justify a broader legal adviser.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/tauranga/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +367,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +380,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

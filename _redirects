@@ -1,1 +1,2 @@
-https://www.toprated.nz/* https://toprated.nz/:splat 301
+# Cloudflare Pages does not support hostname redirects in this file.
+# Configure the www -> apex 301 as a Cloudflare Bulk Redirect.

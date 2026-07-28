@@ -45,39 +45,165 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is a business loan marketplace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is a platform that helps business owners compare funding options from multiple lenders instead of approaching each provider one by one. That can reduce admin and speed up early comparison."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/business-loans#business-list",
+      "name": "Business Loans in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Pioneer Finance",
+            "description": "Pioneer Finance is a Parnell lender offering flexible business loans alongside personal and vehicle finance, with a fast application process, same-day approval positioning, and products designed to support business growth and day-to-day funding needs.",
+            "image": "/img/generated/business-loans.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "106/100 Parnell Road, Parnell, Auckland 1052",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://pioneerfinance.co.nz/business"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Prospa New Zealand",
+            "description": "Prospa New Zealand is a Takapuna-based small-business lender offering unsecured funding from $2,000 to $500,000, with streamlined applications, quick decisions, and funding that can be available within 24 hours for eligible SMEs.",
+            "image": "https://www.prospa.co.nz/wp-content/uploads/og_logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "The Mezzanine Floor, 19-21 Como Street, Takapuna, Auckland 0622",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.prospa.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Loansmart",
+            "description": "Loansmart is a Newmarket finance provider that offers personal and business loans, including unsecured small-business lending, with online applications, same-day payout positioning, and a focus on quick approvals for borrowers who need a faster funding process.",
+            "image": "https://loansmart.co.nz/wp-content/uploads/elementor/thumbs/icons-3-p8ystxdjeep8ycsz1sejwu2vscbf0850fnq4qh2ukc.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "33 Broadway, Newmarket, Auckland 1023",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://loansmart.co.nz/loans/small-business-loans/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Taxi",
+            "description": "Taxi is a Newmarket business-funding provider focused on working-capital support for Kiwi companies, positioning itself as a fast and flexible alternative to traditional bank lending for cashflow gaps, tax obligations, and project bridging.",
+            "image": "https://cdn.prod.website-files.com/652c6f02e4e95fb82f3ccaf9/6791a956454bb2ea9c9058f1_Social-sharing-home.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Floor 5, 5-7 Kingdon Street, Newmarket, Auckland 1023",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.gotaxi.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bizzy",
+            "description": "Bizzy is an Auckland-based business finance marketplace that helps Kiwi SMEs compare multiple loan and funding options through a single online application, with quotes typically returned within 24 to 48 hours and no credit score impact to browse offers.",
+            "image": "https://framerusercontent.com/images/Q8OAPz5soFnJGmSOrMtxlvQhd8.png?height=943&width=1306",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Harbourside Building, Level 7, 152 Quay Street, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How fast can Auckland businesses get loan quotes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "That depends on the lender, the quality of your information, and the funding type, but some marketplaces and non-bank providers can return indicative options within one to two business days."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Business Loans",
+          "item": "https://toprated.nz/cities/auckland/services/business-loans"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I compare besides the interest rate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Compare fees, repayment structure, term length, collateral or guarantee requirements, flexibility, approval speed, and whether the product actually fits your cashflow needs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Bizzy a direct lender?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Based on Bizzy's published positioning, it operates as a marketplace that connects businesses with multiple funding providers through one application rather than acting as a single direct lender."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a business loan marketplace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a platform that helps business owners compare funding options from multiple lenders instead of approaching each provider one by one. That can reduce admin and speed up early comparison."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can Auckland businesses get loan quotes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That depends on the lender, the quality of your information, and the funding type, but some marketplaces and non-bank providers can return indicative options within one to two business days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I compare besides the interest rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare fees, repayment structure, term length, collateral or guarantee requirements, flexibility, approval speed, and whether the product actually fits your cashflow needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Bizzy a direct lender?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Based on Bizzy's published positioning, it operates as a marketplace that connects businesses with multiple funding providers through one application rather than acting as a single direct lender."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -117,14 +243,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose a Business Loan Provider in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland business owners usually do not need more loan options. They need a faster way to compare credible offers without repeating the same application process across multiple lenders. This page focuses on business-loan platforms and finance providers that can help SMEs compare working capital, growth funding, asset finance, and cashflow support more efficiently.</p>
@@ -147,40 +273,124 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="350" data-business-name="Pioneer Finance" data-city-slug="auckland" data-category-slug="services" data-page-slug="business-loans" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/business-loans.png" alt="Pioneer Finance" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (364 reviews)</div>
+                <h3>Pioneer Finance</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Parnell</div>
+                <p class="text-muted">Pioneer Finance is a Parnell lender offering flexible business loans alongside personal and vehicle finance, with a fast application process, same-day approval positioning, and products designed to support business growth and day-to-day funding needs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 106/100 Parnell Road, Parnell, Auckland 1052</span>
+                    <div class="business-contact-links"><a href="https://pioneerfinance.co.nz/business?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-350-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="348" data-business-name="Prospa New Zealand" data-city-slug="auckland" data-category-slug="services" data-page-slug="business-loans" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.prospa.co.nz/wp-content/uploads/og_logo.png" alt="Prospa New Zealand" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (1162 reviews)</div>
+                <h3>Prospa New Zealand</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Takapuna</div>
+                <p class="text-muted">Prospa New Zealand is a Takapuna-based small-business lender offering unsecured funding from $2,000 to $500,000, with streamlined applications, quick decisions, and funding that can be available within 24 hours for eligible SMEs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> The Mezzanine Floor, 19-21 Como Street, Takapuna, Auckland 0622</span>
+                    <div class="business-contact-links"><a href="https://www.prospa.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-348-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="351" data-business-name="Loansmart" data-city-slug="auckland" data-category-slug="services" data-page-slug="business-loans" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://loansmart.co.nz/wp-content/uploads/elementor/thumbs/icons-3-p8ystxdjeep8ycsz1sejwu2vscbf0850fnq4qh2ukc.png" alt="Loansmart" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.5 (39 reviews)</div>
+                <h3>Loansmart</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">Loansmart is a Newmarket finance provider that offers personal and business loans, including unsecured small-business lending, with online applications, same-day payout positioning, and a focus on quick approvals for borrowers who need a faster funding process.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 33 Broadway, Newmarket, Auckland 1023</span>
+                    <div class="business-contact-links"><a href="https://loansmart.co.nz/loans/small-business-loans/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-351-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="349" data-business-name="Taxi" data-city-slug="auckland" data-category-slug="services" data-page-slug="business-loans" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://cdn.prod.website-files.com/652c6f02e4e95fb82f3ccaf9/6791a956454bb2ea9c9058f1_Social-sharing-home.jpg" alt="Taxi" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4 (4 reviews)</div>
+                <h3>Taxi</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">Taxi is a Newmarket business-funding provider focused on working-capital support for Kiwi companies, positioning itself as a fast and flexible alternative to traditional bank lending for cashflow gaps, tax obligations, and project bridging.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Floor 5, 5-7 Kingdon Street, Newmarket, Auckland 1023</span>
+                    <div class="business-contact-links"><a href="https://www.gotaxi.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-349-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="347" data-business-name="Bizzy" data-city-slug="auckland" data-category-slug="services" data-page-slug="business-loans" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://framerusercontent.com/images/Q8OAPz5soFnJGmSOrMtxlvQhd8.png?height=943&amp;width=1306" alt="Bizzy" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4 (3 reviews)</div>
+                <h3>Bizzy</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Bizzy is an Auckland-based business finance marketplace that helps Kiwi SMEs compare multiple loan and funding options through a single online application, with quotes typically returned within 24 to 48 hours and no credit score impact to browse offers.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Harbourside Building, Level 7, 152 Quay Street, Auckland 1010</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is a business loan marketplace?</summary>
                             <p>It is a platform that helps business owners compare funding options from multiple lenders instead of approaching each provider one by one. That can reduce admin and speed up early comparison.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How fast can Auckland businesses get loan quotes?</summary>
                             <p>That depends on the lender, the quality of your information, and the funding type, but some marketplaces and non-bank providers can return indicative options within one to two business days.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I compare besides the interest rate?</summary>
                             <p>Compare fees, repayment structure, term length, collateral or guarantee requirements, flexibility, approval speed, and whether the product actually fits your cashflow needs.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is Bizzy a direct lender?</summary>
                             <p>Based on Bizzy's published positioning, it operates as a marketplace that connects businesses with multiple funding providers through one application rather than acting as a single direct lender.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -188,7 +398,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -230,7 +440,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -243,8 +453,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

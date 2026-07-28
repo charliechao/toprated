@@ -45,55 +45,114 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does an accountant cost in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on your business structure, bookkeeping quality, and how much support you need through the year. Simple sole trader work costs less than company accounts, payroll, advisory, and multi-entity setups."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/services/accountants#business-list",
+      "name": "Accountants in Tauranga",
+      "numberOfItems": 1,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "BOP Accounting Group",
+            "description": "Bay of Plenty's trusted accounting firm for SMEs, property investors, and start-ups. Cloud-based Xero specialists with proactive tax minimisation strategies.",
+            "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Cameron Road, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bopaccounting.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need an accountant if I already use Xero?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually yes. Software makes record-keeping easier, but it does not replace tax planning, year-end adjustments, compliance oversight, or business advice. A good accountant helps you interpret the numbers and avoid mistakes."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/tauranga/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Accountants",
+          "item": "https://toprated.nz/cities/tauranga/services/accountants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can an accountant help improve cash flow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many can help with pricing clarity, tax planning, budgeting, debtor control, and understanding where the business is leaking profit. That is often more valuable than the compliance work alone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between a bookkeeper and an accountant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A bookkeeper usually handles day-to-day transaction coding and admin, while an accountant typically handles tax, structure, reporting, and higher-level advice. Some firms offer both under one roof."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I choose the cheapest accountant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not automatically. Low-cost providers can be fine for straightforward work, but if they are slow, unclear, or reactive, the hidden cost often shows up in missed opportunities, admin stress, or avoidable tax issues."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can my accountant help when I start employing staff?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Most small-business accountants can help set up payroll, explain employer obligations, and guide you through the admin systems needed as the business grows."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does an accountant cost in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your business structure, bookkeeping quality, and how much support you need through the year. Simple sole trader work costs less than company accounts, payroll, advisory, and multi-entity setups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an accountant if I already use Xero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes. Software makes record-keeping easier, but it does not replace tax planning, year-end adjustments, compliance oversight, or business advice. A good accountant helps you interpret the numbers and avoid mistakes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an accountant help improve cash flow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many can help with pricing clarity, tax planning, budgeting, debtor control, and understanding where the business is leaking profit. That is often more valuable than the compliance work alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a bookkeeper and an accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A bookkeeper usually handles day-to-day transaction coding and admin, while an accountant typically handles tax, structure, reporting, and higher-level advice. Some firms offer both under one roof."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose the cheapest accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not automatically. Low-cost providers can be fine for straightforward work, but if they are slow, unclear, or reactive, the hidden cost often shows up in missed opportunities, admin stress, or avoidable tax issues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my accountant help when I start employing staff?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most small-business accountants can help set up payroll, explain employer obligations, and guide you through the admin systems needed as the business grows."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +192,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Accountant in Tauranga</a></li><li><a href="#pricing-guide">How Much Do Accountants Charge in Tauranga? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Tauranga accountants support a broad mix of small businesses, contractors, property investors, and growing owner-operated companies across the Bay of Plenty. The strongest firms do more than year-end accounts. They help clients stay on top of GST, cash flow, tax planning, software setup, and practical decision-making as the business grows. This guide is for Tauranga business owners and self-employed operators who want an accountant that is commercially useful, responsive, and easy to work with. If you also need help with finance decisions around property or business setup, see our Tauranga guides to <a href='/cities/tauranga/services/lawyers'>lawyers</a> and <a href='/cities/tauranga/services/real-estate-agents'>real estate agents</a>.</p>
@@ -157,7 +216,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Accountants Charge in Tauranga? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Tauranga accounting fees depend on business size, transaction volume, software quality, and how much support you need through the year. Sole traders and simple companies usually cost less than businesses with payroll, inventory, multiple entities, or messy books.</p><p>Use these figures as general planning ranges. Monthly support, cleanup work, and advisory sessions can all change the total cost.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +237,66 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="1">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="237" data-business-name="BOP Accounting Group" data-city-slug="tauranga" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="BOP Accounting Group" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (140 reviews)</div>
+                <h3>BOP Accounting Group</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Bay of Plenty&#39;s trusted accounting firm for SMEs, property investors, and start-ups. Cloud-based Xero specialists with proactive tax minimisation strategies.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Cameron Road, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://www.bopaccounting.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-237-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does an accountant cost in Tauranga?</summary>
                             <p>It depends on your business structure, bookkeeping quality, and how much support you need through the year. Simple sole trader work costs less than company accounts, payroll, advisory, and multi-entity setups.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need an accountant if I already use Xero?</summary>
                             <p>Usually yes. Software makes record-keeping easier, but it does not replace tax planning, year-end adjustments, compliance oversight, or business advice. A good accountant helps you interpret the numbers and avoid mistakes.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can an accountant help improve cash flow?</summary>
                             <p>Yes. Many can help with pricing clarity, tax planning, budgeting, debtor control, and understanding where the business is leaking profit. That is often more valuable than the compliance work alone.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the difference between a bookkeeper and an accountant?</summary>
                             <p>A bookkeeper usually handles day-to-day transaction coding and admin, while an accountant typically handles tax, structure, reporting, and higher-level advice. Some firms offer both under one roof.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose the cheapest accountant?</summary>
                             <p>Not automatically. Low-cost providers can be fine for straightforward work, but if they are slow, unclear, or reactive, the hidden cost often shows up in missed opportunities, admin stress, or avoidable tax issues.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can my accountant help when I start employing staff?</summary>
                             <p>Yes. Most small-business accountants can help set up payroll, explain employer obligations, and guide you through the admin systems needed as the business grows.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/tauranga/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +367,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +380,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

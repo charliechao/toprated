@@ -45,31 +45,157 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What does an Auckland air conditioning company usually do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Services often include heat pump and AC installation, commercial HVAC design, repairs, maintenance, filter cleaning, performance checks, and advice on suitable systems."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/air-conditioning#business-list",
+      "name": "Air Conditioning in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Ideal Air",
+            "description": "Ideal Air is a Grey Lynn-based commercial air conditioning company providing system design, installation, reactive service support, and planned maintenance for Auckland businesses.",
+            "image": "https://www.idealair.co.nz/wp-content/uploads/2021/03/Ideal-Air-_MG_4828.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "22 Newton Road, Grey Lynn, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.idealair.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Air Mc",
+            "description": "Air Mc provides commercial air conditioning in Auckland, covering system design, installation, commercial maintenance, heat pump servicing, ventilation, and refrigeration support.",
+            "image": "https://www.airmc.co.nz/wp-content/uploads/2024/05/commercial-image5-slide-768x1024.webp",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1/P Henry Rose Place, Rosedale, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.airmc.co.nz/commercial-air-conditioning/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "ASAER",
+            "description": "ASAER provides commercial air conditioning and refrigeration services across Auckland, including HVAC design, installation, maintenance, repairs, commercial heat pumps, and refrigeration support.",
+            "image": "https://asaer.co.nz/wp-content/uploads/2022/07/ASAER-LOGO.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Unit C - 146 Harris Road, East Tamaki, Auckland 2013",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.asaer.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Chilled Status",
+            "description": "Chilled Status is an Auckland commercial refrigeration, air conditioning, and heat pump company offering maintenance, servicing, commercial air conditioning, refrigeration, and equipment hire support.",
+            "image": "https://chilledstatus.co.nz/wp-content/uploads/2025/01/Chilled-Status-Refrigeration-and-Air-Conditioning-NZ-4-768x1024.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://chilledstatus.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Airperfection",
+            "description": "Airperfection provides commercial air conditioning services in Auckland, including AC installation, preventative maintenance, system upgrades, heat pump support, and air conditioner repairs for business and residential customers.",
+            "image": "https://airperfection.co.nz/wp-content/uploads/2024/06/top-notch-air-conditioning-solution.webp",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How do I compare air conditioning quotes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Compare the system size, brand, installation scope, electrical work, warranty, maintenance options, and any exclusions such as scaffolding, drainage, or access costs."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Air Conditioning",
+          "item": "https://toprated.nz/cities/auckland/services/air-conditioning"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Is regular air conditioning maintenance worth it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes for many homes and businesses. Maintenance helps with efficiency, indoor air quality, early fault detection, and reducing the chance of unexpected breakdowns."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does an Auckland air conditioning company usually do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Services often include heat pump and AC installation, commercial HVAC design, repairs, maintenance, filter cleaning, performance checks, and advice on suitable systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I compare air conditioning quotes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare the system size, brand, installation scope, electrical work, warranty, maintenance options, and any exclusions such as scaffolding, drainage, or access costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is regular air conditioning maintenance worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes for many homes and businesses. Maintenance helps with efficiency, indoor air quality, early fault detection, and reducing the chance of unexpected breakdowns."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,14 +235,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose an Air Conditioning Company in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland air conditioning jobs can range from a single heat pump installation to complex commercial HVAC design, maintenance, and urgent repair work. Compare providers by the type of systems they handle, response times, maintenance capability, and whether they can support both installation and long-term servicing.</p>
@@ -139,35 +265,119 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="388" data-business-name="Ideal Air" data-city-slug="auckland" data-category-slug="services" data-page-slug="air-conditioning" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.idealair.co.nz/wp-content/uploads/2021/03/Ideal-Air-_MG_4828.jpg" alt="Ideal Air" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Ideal Air</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Grey Lynn</div>
+                <p class="text-muted">Ideal Air is a Grey Lynn-based commercial air conditioning company providing system design, installation, reactive service support, and planned maintenance for Auckland businesses.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 22 Newton Road, Grey Lynn, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://www.idealair.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-388-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093768521" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 376 8521</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="389" data-business-name="Air Mc" data-city-slug="auckland" data-category-slug="services" data-page-slug="air-conditioning" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.airmc.co.nz/wp-content/uploads/2024/05/commercial-image5-slide-768x1024.webp" alt="Air Mc" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Air Mc</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Rosedale</div>
+                <p class="text-muted">Air Mc provides commercial air conditioning in Auckland, covering system design, installation, commercial maintenance, heat pump servicing, ventilation, and refrigeration support.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 1/P Henry Rose Place, Rosedale, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.airmc.co.nz/commercial-air-conditioning/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-389-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093936301" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 393 6301</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="390" data-business-name="ASAER" data-city-slug="auckland" data-category-slug="services" data-page-slug="air-conditioning" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://asaer.co.nz/wp-content/uploads/2022/07/ASAER-LOGO.jpg" alt="ASAER" class="business-image business-image--contain" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>ASAER</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> East Tamaki</div>
+                <p class="text-muted">ASAER provides commercial air conditioning and refrigeration services across Auckland, including HVAC design, installation, maintenance, repairs, commercial heat pumps, and refrigeration support.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Unit C - 146 Harris Road, East Tamaki, Auckland 2013</span>
+                    <div class="business-contact-links"><a href="https://www.asaer.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-390-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800272375" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 272 375</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="391" data-business-name="Chilled Status" data-city-slug="auckland" data-category-slug="services" data-page-slug="air-conditioning" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://chilledstatus.co.nz/wp-content/uploads/2025/01/Chilled-Status-Refrigeration-and-Air-Conditioning-NZ-4-768x1024.jpg" alt="Chilled Status" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Chilled Status</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">Chilled Status is an Auckland commercial refrigeration, air conditioning, and heat pump company offering maintenance, servicing, commercial air conditioning, refrigeration, and equipment hire support.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://chilledstatus.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-391-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093022533" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 302 2533</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="387" data-business-name="Airperfection" data-city-slug="auckland" data-category-slug="services" data-page-slug="air-conditioning" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://airperfection.co.nz/wp-content/uploads/2024/06/top-notch-air-conditioning-solution.webp" alt="Airperfection" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Airperfection</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">Airperfection provides commercial air conditioning services in Auckland, including AC installation, preventative maintenance, system upgrades, heat pump support, and air conditioner repairs for business and residential customers.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What does an Auckland air conditioning company usually do?</summary>
                             <p>Services often include heat pump and AC installation, commercial HVAC design, repairs, maintenance, filter cleaning, performance checks, and advice on suitable systems.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How do I compare air conditioning quotes?</summary>
                             <p>Compare the system size, brand, installation scope, electrical work, warranty, maintenance options, and any exclusions such as scaffolding, drainage, or access costs.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is regular air conditioning maintenance worth it?</summary>
                             <p>Yes for many homes and businesses. Maintenance helps with efficiency, indoor air quality, early fault detection, and reducing the chance of unexpected breakdowns.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -175,7 +385,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,7 +427,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -230,8 +440,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

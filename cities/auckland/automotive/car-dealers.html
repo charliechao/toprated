@@ -45,31 +45,140 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What should I look for in an Auckland car dealer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Key indicators of a reputable Auckland car dealer include Motor Trade Association (MTA) membership, transparent pricing, comprehensive pre-purchase inspections, written warranties, and strong Google review ratings. Always check the dealer's history on the Motor Vehicle Disputes Tribunal website."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/automotive/car-dealers#business-list",
+      "name": "Car Dealers in Auckland",
+      "numberOfItems": 4,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Shore Prestige",
+            "description": "Auckland's #1 Rated Dealership (BuyerScore 2025). Specialist in quality used European prestige vehicles with comprehensive pre-purchase inspections and warranties.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "North Shore, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.shoreprestige.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Giltrap Group",
+            "description": "New Zealand's premier luxury car dealer group representing Audi, Porsche, Lamborghini, Bentley, and McLaren. Multiple award-winning showrooms in Newmarket and Grey Lynn with exceptional after-sales service.",
+            "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Newmarket, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.giltrap.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "John Martin Motors",
+            "description": "Trusted Auckland car dealership with decades of experience. Wide selection of quality used cars with competitive finance options and comprehensive vehicle checks.",
+            "image": "/img/generated/car-dealers.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Great South Road, Penrose, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.johnmartinmotors.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Budget Car Sales (Manukau)",
+            "description": "Budget Car Sales is a South Auckland used-car dealership in Manukau, offering a wide selection of used vehicles, online browsing, vehicle finance options, and test drives.",
+            "image": "https://www.budgetcarsales.co.nz/wp-content/uploads/2025/12/finance-aunty-kelly-listening-to-budget-car-sales-customer.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "676 Great South Road, Manukau, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Can I get finance through Auckland car dealers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, most top-rated Auckland car dealers offer competitive finance packages through major lenders. Interest rates typically range from 7.9% to 12.9% depending on the vehicle age and your credit profile. Always compare dealer finance with bank rates."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/auckland/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Car Dealers",
+          "item": "https://toprated.nz/cities/auckland/automotive/car-dealers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Auckland car dealers offer warranties?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Reputable Auckland dealers offer Consumer Guarantees Act protection plus additional mechanical warranties ranging from 3 months to 3 years depending on the vehicle. New car franchises typically include manufacturer warranties of 3–7 years."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What should I look for in an Auckland car dealer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Key indicators of a reputable Auckland car dealer include Motor Trade Association (MTA) membership, transparent pricing, comprehensive pre-purchase inspections, written warranties, and strong Google review ratings. Always check the dealer's history on the Motor Vehicle Disputes Tribunal website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get finance through Auckland car dealers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, most top-rated Auckland car dealers offer competitive finance packages through major lenders. Interest rates typically range from 7.9% to 12.9% depending on the vehicle age and your credit profile. Always compare dealer finance with bank rates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Auckland car dealers offer warranties?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reputable Auckland dealers offer Consumer Guarantees Act protection plus additional mechanical warranties ranging from 3 months to 3 years depending on the vehicle. New car franchises typically include manufacturer warranties of 3–7 years."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +218,118 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland is New Zealand's largest automotive market, home to hundreds of new and used car dealerships across the region. From premium European franchises in Newmarket and Greenlane to trusted independent dealers on Great South Road, Auckland's top-rated car dealers offer competitive pricing, comprehensive vehicle inspections, finance options, and after-sales warranties. Whether you're looking for a family SUV, a fuel-efficient commuter, or a luxury marque, our curated list features only dealers with consistently outstanding customer reviews.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="4">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="221" data-business-name="Shore Prestige" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Shore Prestige" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (680 reviews)</div>
+                <h3>Shore Prestige</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> North Shore</div>
+                <p class="text-muted">Auckland&#39;s #1 Rated Dealership (BuyerScore 2025). Specialist in quality used European prestige vehicles with comprehensive pre-purchase inspections and warranties.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> North Shore, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.shoreprestige.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-221-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="279" data-business-name="Giltrap Group" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Giltrap Group" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (890 reviews)</div>
+                <h3>Giltrap Group</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Newmarket</div>
+                <p class="text-muted">New Zealand&#39;s premier luxury car dealer group representing Audi, Porsche, Lamborghini, Bentley, and McLaren. Multiple award-winning showrooms in Newmarket and Grey Lynn with exceptional after-sales service.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Newmarket, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.giltrap.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-279-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="222" data-business-name="John Martin Motors" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/car-dealers.png" alt="John Martin Motors" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (520 reviews)</div>
+                <h3>John Martin Motors</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Penrose</div>
+                <p class="text-muted">Trusted Auckland car dealership with decades of experience. Wide selection of quality used cars with competitive finance options and comprehensive vehicle checks.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Great South Road, Penrose, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.johnmartinmotors.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-222-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="394" data-business-name="Budget Car Sales (Manukau)" data-city-slug="auckland" data-category-slug="automotive" data-page-slug="car-dealers" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://www.budgetcarsales.co.nz/wp-content/uploads/2025/12/finance-aunty-kelly-listening-to-budget-car-sales-customer.jpg" alt="Budget Car Sales (Manukau)" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Budget Car Sales (Manukau)</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Manukau</div>
+                <p class="text-muted">Budget Car Sales is a South Auckland used-car dealership in Manukau, offering a wide selection of used vehicles, online browsing, vehicle finance options, and test drives.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 676 Great South Road, Manukau, Auckland</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I look for in an Auckland car dealer?</summary>
                             <p>Key indicators of a reputable Auckland car dealer include Motor Trade Association (MTA) membership, transparent pricing, comprehensive pre-purchase inspections, written warranties, and strong Google review ratings. Always check the dealer's history on the Motor Vehicle Disputes Tribunal website.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can I get finance through Auckland car dealers?</summary>
                             <p>Yes, most top-rated Auckland car dealers offer competitive finance packages through major lenders. Interest rates typically range from 7.9% to 12.9% depending on the vehicle age and your credit profile. Always compare dealer finance with bank rates.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Auckland car dealers offer warranties?</summary>
                             <p>Reputable Auckland dealers offer Consumer Guarantees Act protection plus additional mechanical warranties ranging from 3 months to 3 years depending on the vehicle. New car franchises typically include manufacturer warranties of 3–7 years.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +337,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/automotive/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +400,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

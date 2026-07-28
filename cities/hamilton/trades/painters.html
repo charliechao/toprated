@@ -45,55 +45,114 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does house painting cost in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on house size, condition, access, and whether the job is interior or exterior. Interior repainting is generally more predictable, while exteriors often cost more once prep, repairs, or access equipment are factored in."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/trades/painters#business-list",
+      "name": "Painters in Hamilton",
+      "numberOfItems": 1,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Grant Painting Group",
+            "description": "Over 35 years of experience in residential repaints and commercial painting across the Waikato region.",
+            "image": "/img/generated/painters.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://grantpainting.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What is the best time of year to paint a house exterior in Hamilton?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Drier, more settled periods are usually better for exterior work, but timing still depends on the product system and the actual weather window available. Good painters usually plan around temperature, moisture, and cure conditions rather than promising unrealistic dates."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/hamilton/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Painters",
+          "item": "https://toprated.nz/cities/hamilton/trades/painters"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do painters usually include prep work in the quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They should, but the extent of preparation varies widely. That is why asking for a written scope matters. A lower quote can simply mean critical prep work has been omitted or left ambiguous."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is premium paint worth it for a Hamilton home?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Often yes, especially on exteriors and high-wear interiors. Better coatings can improve washability, colour retention, and lifespan, which can make them better value over the full repaint cycle."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can painters work as part of a wider renovation project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, and many do. If your job sits inside a renovation, ask how they schedule around builders, kitchen installers, electricians, and plasterers so the programme stays efficient."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I choose the cheapest painting quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually not without understanding the scope difference. Painting quality is heavily tied to prep, product choice, and finish discipline, so the cheapest quote can become the most expensive if the work fails early or needs extensive touch-ups."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does house painting cost in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on house size, condition, access, and whether the job is interior or exterior. Interior repainting is generally more predictable, while exteriors often cost more once prep, repairs, or access equipment are factored in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best time of year to paint a house exterior in Hamilton?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Drier, more settled periods are usually better for exterior work, but timing still depends on the product system and the actual weather window available. Good painters usually plan around temperature, moisture, and cure conditions rather than promising unrealistic dates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do painters usually include prep work in the quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They should, but the extent of preparation varies widely. That is why asking for a written scope matters. A lower quote can simply mean critical prep work has been omitted or left ambiguous."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is premium paint worth it for a Hamilton home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes, especially on exteriors and high-wear interiors. Better coatings can improve washability, colour retention, and lifespan, which can make them better value over the full repaint cycle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can painters work as part of a wider renovation project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and many do. If your job sits inside a renovation, ask how they schedule around builders, kitchen installers, electricians, and plasterers so the programme stays efficient."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose the cheapest painting quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not without understanding the scope difference. Painting quality is heavily tied to prep, product choice, and finish discipline, so the cheapest quote can become the most expensive if the work fails early or needs extensive touch-ups."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +192,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Painter in Hamilton</a></li><li><a href="#pricing-guide">How Much Do Painters Charge in Hamilton? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Hamilton painters work across everything from rental refreshes and family-home exteriors to commercial repaints, heritage touch-ups, and full interior transformations. The strongest painting teams do much more than roll colour onto a wall. They handle surface prep properly, understand which products suit Waikato conditions, and communicate clearly about access, weather risk, and how long the finish should last. This guide is for Hamilton homeowners, landlords, and businesses that want to compare painters on workmanship, process quality, and real value rather than headline price alone. If your painting work sits inside a larger upgrade, also see our Hamilton guides to <a href='/cities/hamilton/trades/renovation-services'>renovation services</a> and <a href='/cities/hamilton/trades/builders'>builders</a>.</p>
@@ -157,7 +216,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Painters Charge in Hamilton? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Hamilton painting costs vary based on size, access, condition, and how much prep is required. Interior work is usually easier to estimate, while exterior pricing can move significantly if repairs, weather delays, or access gear become part of the job.</p><p>These numbers are broad planning ranges only. Always compare written scopes before choosing a painter.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +237,66 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="1">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="87" data-business-name="Grant Painting Group" data-city-slug="hamilton" data-category-slug="trades" data-page-slug="painters" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/painters.png" alt="Grant Painting Group" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (82 reviews)</div>
+                <h3>Grant Painting Group</h3>
+
+                <p class="text-muted">Over 35 years of experience in residential repaints and commercial painting across the Waikato region.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hamilton</span>
+                    <div class="business-contact-links"><a href="https://grantpainting.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-87-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does house painting cost in Hamilton?</summary>
                             <p>It depends on house size, condition, access, and whether the job is interior or exterior. Interior repainting is generally more predictable, while exteriors often cost more once prep, repairs, or access equipment are factored in.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best time of year to paint a house exterior in Hamilton?</summary>
                             <p>Drier, more settled periods are usually better for exterior work, but timing still depends on the product system and the actual weather window available. Good painters usually plan around temperature, moisture, and cure conditions rather than promising unrealistic dates.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do painters usually include prep work in the quote?</summary>
                             <p>They should, but the extent of preparation varies widely. That is why asking for a written scope matters. A lower quote can simply mean critical prep work has been omitted or left ambiguous.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is premium paint worth it for a Hamilton home?</summary>
                             <p>Often yes, especially on exteriors and high-wear interiors. Better coatings can improve washability, colour retention, and lifespan, which can make them better value over the full repaint cycle.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can painters work as part of a wider renovation project?</summary>
                             <p>Yes, and many do. If your job sits inside a renovation, ask how they schedule around builders, kitchen installers, electricians, and plasterers so the programme stays efficient.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose the cheapest painting quote?</summary>
                             <p>Usually not without understanding the scope difference. Painting quality is heavily tied to prep, product choice, and finish discipline, so the cheapest quote can become the most expensive if the work fails early or needs extensive touch-ups.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +367,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +380,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

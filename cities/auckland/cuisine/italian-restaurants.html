@@ -45,71 +45,283 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the best Italian restaurant in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on what you are looking for. For the full fine dining experience, Spiga in Remuera (led by a Rome-born chef) and BOSSI in the CBD are Auckland's most acclaimed Italian restaurants. For atmosphere and an iconic night out, Prego on Ponsonby Road (open since 1986) is the sentimental favourite. For handmade pasta, Amano in Britomart and Pici on K Road are the city's best pasta specialists. For Neapolitan pizza, Farina in Ponsonby is the benchmark."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/italian-restaurants#business-list",
+      "name": "Italian Restaurants in Auckland",
+      "numberOfItems": 10,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Amano",
+            "description": "Amano is one of Auckland's most acclaimed restaurants — a stunning all-day Italian dining room and bakery set in a heritage building in Britomart, directly opposite the Waitemata Harbour. The pasta is made fresh daily from scratch, the sourdough bread is baked on-site each morning, and the seasonal menu draws on New Zealand's finest produce interpreted through an Italian lens. Consistently rated among Auckland's top 10 restaurants.",
+            "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "66 Tyler Street, Britomart, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.amano.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Prego",
+            "description": "Prego is Auckland's most iconic Italian restaurant — a Ponsonby Road institution open since 1986 that has outlasted trends, chefs, and recessions to remain one of the city's most beloved dining destinations. The fairy-lit courtyard, buzzing atmosphere, and reliably excellent menu of wood-fired pizzas, handmade pasta, and Italian classics have made it the go-to for birthdays, anniversaries, and long Friday lunches for nearly four decades.",
+            "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "226 Ponsonby Road, Ponsonby",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.prego.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Baduzzi",
+            "description": "Baduzzi is a Wynyard Quarter institution — a lively, Italian-inspired waterfront restaurant best known for its extraordinary range of handcrafted meatballs, made from a rotating selection of proteins including Karitane crayfish, grass-fed beef, and seasonal specials. Set in the vibrant North Wharf precinct with outdoor waterfront seating, it combines a retro-chic atmosphere with genuinely excellent Italian-influenced cooking and an outstanding Italian wine list.",
+            "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "North Wharf, Wynyard Quarter, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.baduzzi.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bivacco",
+            "description": "Bivacco is Auckland's most spectacular Italian dining experience for a long, waterfront lunch — an elegant Viaduct Harbour restaurant that has become a go-to destination since opening in late 2022. Known for its viral tableside cheese wheel pasta (cacio e pepe finished inside a giant Parmigiano wheel), stunning harbour views, and a menu of Italian classics done with genuine precision: oysters, carpaccio, slow-roasted porchetta, and exceptional cannoli.",
+            "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Viaduct Harbour, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bivacco.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Spiga",
+            "description": "Spiga is widely regarded as Auckland's most authentically Italian fine dining restaurant — helmed by a Rome-born chef and sommelier who brings an unwavering commitment to regional Italian technique and imported artisanal products. Located in Remuera, it is a destination restaurant drawing diners from across Auckland for its exceptional beef cheek tagliatelle, fried mortadella, and a wine list that is arguably the finest collection of Italian labels in New Zealand.",
+            "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Remuera Road, Remuera, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.spiga.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "BOSSI",
+            "description": "BOSSI is one of Auckland CBD's most acclaimed Italian restaurants — a sleek, intimate dining room where chef-owner Matt Hawkes honours the recipes of his late Italian grandmother (Nonna) with a menu of impeccably executed Italian classics. Fried provolone, a Caprese salad that sets the standard for the city, an iconic layered lasagne, and a limoncello cake that regulars plan return visits around. Everything is made from scratch, with quality Italian imports underpinning every dish.",
+            "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bossirestaurant.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Non Solo Pizza",
+            "description": "Non Solo Pizza is one of Auckland's longest-running Italian restaurants — a Parnell institution that has been serving wood-fired pizza, handmade pasta, and generous Italian classics for over 25 years. The name says it all: yes, the pizza is excellent, but the pasta, the antipasti, and the warm courtyard atmosphere are equally compelling reasons to visit. A reliable, welcoming, and consistently good choice for families, date nights, and group dinners.",
+            "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "290 Parnell Road, Parnell, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.nonsolopizza.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Coco's Cantina",
+            "description": "Coco's Cantina is one of K Road's most beloved institutions — an old-school Italian trattoria with a warm, convivial soul and a menu of honest, hearty Italian comfort food. Spaghetti and meatballs, polenta chips with gorgonzola, slow-cooked ragù, and a list of affordable Italian wines by the glass: Coco's is the kind of place you go when you want feeding, not fine dining. Loud, fun, and utterly unpretentious.",
+            "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Karangahape Road, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.cocoscantina.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Pici",
+            "description": "Pici is K Road's most beloved Italian restaurant — a small, intimate trattoria with a cult following built around exceptional fresh pasta made daily and served in a casual, convivial neighbourhood setting. The cacio e pepe is considered by many Aucklanders to be the best in the country, and the fettuccine vongole (clams, white wine, chilli, and parsley) is a close second. Tiny, counter-focused, and perpetually full — arrive early or wait.",
+            "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Karangahape Road, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.pici.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Andiamo",
+            "description": "Andiamo is one of Auckland's most enduring neighbourhood Italian restaurants — a Herne Bay gem that has been feeding locals with honest, generous Italian cooking for over 30 years. The meatballs are legendary: made from grass-fed beef or cod and Karitane crayfish, served in a rich house-made tomato sauce. It is the kind of place that feels immediately like home, with a warm welcome, a familiar menu, and a glass of Barbera d'Asti that you didn't know you needed.",
+            "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jervois Road, Herne Bay, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.andiamo.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where can I find the best handmade pasta in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Amano in Britomart is widely regarded as Auckland's finest pasta restaurant — the menu changes seasonally and the pasta is made fresh daily in their on-site kitchen. Pici on K Road is another pasta-focused gem, with a cult following for its cacio e pepe and fettuccine vongole. Baduzzi in Wynyard Quarter and Andiamo in Herne Bay also make excellent fresh pasta in-house."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Italian Restaurants",
+          "item": "https://toprated.nz/cities/auckland/cuisine/italian-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Where is the best pizza in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Farina in Ponsonby is Auckland's most respected Neapolitan pizzeria — the dough is fermented for 48+ hours and the results are exceptional. For a more casual neighbourhood pizza, Pici on K Road and Coco's Cantina (also K Road) are excellent choices. Non Solo Pizza in Parnell has been serving wood-fired pizza for 25+ years and is a trusted Parnell institution."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which Auckland Italian restaurants are best for a date night?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Prego in Ponsonby is the classic romantic choice — its fairy-lit courtyard and 38 years of history make it one of Auckland's most beloved date venues. Andiamo in Herne Bay is perfect for an intimate, neighbourhood feel. Bivacco at the Viaduct offers stunning harbour views. For a more upscale option, Spiga in Remuera provides an elegant, candlelit atmosphere."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there Italian restaurants in Auckland with harbour views?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — Bivacco is located at the Viaduct Harbour with outdoor terrace seating overlooking the marina, and is famous for its tableside cheese wheel pasta. Baduzzi at North Wharf also has outdoor waterfront seating in the Wynyard Quarter. Both are excellent choices for a long summer lunch or special occasion dinner with a quintessential Auckland view."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which Auckland Italian restaurants are BYO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many mid-range Auckland Italian restaurants offer BYO, including Andiamo (Herne Bay), Non Solo Pizza (Parnell), and several suburban trattorias. Pici on K Road and Coco's Cantina are also BYO or BYOW. Always call ahead to confirm BYO policy before bringing a bottle — most charge corkage of $5–$15 per bottle. Fine dining restaurants like Spiga, BOSSI, and Amano are typically fully licensed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the best Italian restaurants in Auckland for groups or family dinners?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Baduzzi in Wynyard Quarter is ideal for groups — the sharing-plate format, lively atmosphere, and large format platters work well for 6–12 people. Prego has large tables and a festive atmosphere perfect for family dinners. Coco's Cantina on K Road has a convivial, old-school trattoria energy that suits groups well. For larger private events, Amano and BOSSI both offer private dining rooms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Italian food expensive in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily — Auckland has excellent Italian food at all price points. A generous pasta or pizza at Pici or Coco's Cantina on K Road costs $18–$28. A mid-range à la carte dinner at Andiamo or Non Solo Pizza runs $45–$75 per person with a glass of wine. Fine dining Italian at Spiga or BOSSI is $120–$180+ per person for a full degustation with drinks. BYO restaurants offer the best value for a quality Italian dinner."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best Italian restaurant in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on what you are looking for. For the full fine dining experience, Spiga in Remuera (led by a Rome-born chef) and BOSSI in the CBD are Auckland's most acclaimed Italian restaurants. For atmosphere and an iconic night out, Prego on Ponsonby Road (open since 1986) is the sentimental favourite. For handmade pasta, Amano in Britomart and Pici on K Road are the city's best pasta specialists. For Neapolitan pizza, Farina in Ponsonby is the benchmark."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find the best handmade pasta in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Amano in Britomart is widely regarded as Auckland's finest pasta restaurant — the menu changes seasonally and the pasta is made fresh daily in their on-site kitchen. Pici on K Road is another pasta-focused gem, with a cult following for its cacio e pepe and fettuccine vongole. Baduzzi in Wynyard Quarter and Andiamo in Herne Bay also make excellent fresh pasta in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the best pizza in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Farina in Ponsonby is Auckland's most respected Neapolitan pizzeria — the dough is fermented for 48+ hours and the results are exceptional. For a more casual neighbourhood pizza, Pici on K Road and Coco's Cantina (also K Road) are excellent choices. Non Solo Pizza in Parnell has been serving wood-fired pizza for 25+ years and is a trusted Parnell institution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Auckland Italian restaurants are best for a date night?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prego in Ponsonby is the classic romantic choice — its fairy-lit courtyard and 38 years of history make it one of Auckland's most beloved date venues. Andiamo in Herne Bay is perfect for an intimate, neighbourhood feel. Bivacco at the Viaduct offers stunning harbour views. For a more upscale option, Spiga in Remuera provides an elegant, candlelit atmosphere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there Italian restaurants in Auckland with harbour views?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Bivacco is located at the Viaduct Harbour with outdoor terrace seating overlooking the marina, and is famous for its tableside cheese wheel pasta. Baduzzi at North Wharf also has outdoor waterfront seating in the Wynyard Quarter. Both are excellent choices for a long summer lunch or special occasion dinner with a quintessential Auckland view."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Auckland Italian restaurants are BYO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many mid-range Auckland Italian restaurants offer BYO, including Andiamo (Herne Bay), Non Solo Pizza (Parnell), and several suburban trattorias. Pici on K Road and Coco's Cantina are also BYO or BYOW. Always call ahead to confirm BYO policy before bringing a bottle — most charge corkage of $5–$15 per bottle. Fine dining restaurants like Spiga, BOSSI, and Amano are typically fully licensed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best Italian restaurants in Auckland for groups or family dinners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Baduzzi in Wynyard Quarter is ideal for groups — the sharing-plate format, lively atmosphere, and large format platters work well for 6–12 people. Prego has large tables and a festive atmosphere perfect for family dinners. Coco's Cantina on K Road has a convivial, old-school trattoria energy that suits groups well. For larger private events, Amano and BOSSI both offer private dining rooms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Italian food expensive in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily — Auckland has excellent Italian food at all price points. A generous pasta or pizza at Pici or Coco's Cantina on K Road costs $18–$28. A mid-range à la carte dinner at Andiamo or Non Solo Pizza runs $45–$75 per person with a glass of wine. Fine dining Italian at Spiga or BOSSI is $120–$180+ per person for a full degustation with drinks. BYO restaurants offer the best value for a quality Italian dinner."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -149,14 +361,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Italian Restaurant in Auckland</a></li><li><a href="#pricing-guide">How Much Does Italian Dining Cost in Auckland? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's Italian restaurant scene is one of the city's most diverse and beloved — a vibrant tapestry of neighbourhood trattorias, hand-rolled pasta bars, Neapolitan pizzerias, and grand waterfront dining rooms that collectively demonstrate just how deeply Italian food culture has taken root in New Zealand. From Prego's legendary vine-draped Ponsonby courtyard (open since 1986) to the slick marble interiors of Amano in Britomart, from cult K Road cacio e pepe at Pici to harbour-view pasta at Bivacco in the Viaduct — Auckland's best Italian restaurants more than hold their own against any city in Australia or the UK. What sets them apart is a commitment to New Zealand's world-class produce: house-made pasta dressed with Southland seafood, Neapolitan-certified dough topped with local buffalo mozzarella, and wine lists showcasing the best of both Italy and New Zealand's own exceptional regions. Whether you are planning a romantic date night, a big family dinner, or simply craving a bowl of cacio e pepe on a Tuesday, this guide to Auckland's best Italian restaurants will point you in the right direction. For other cuisines in Auckland, explore our guides to <a href='/cities/auckland/cuisine/french-restaurants'>French restaurants</a>, <a href='/cities/auckland/cuisine/restaurants'>top restaurants</a>, and <a href='/cities/auckland/cuisine/japanese-restaurants'>Japanese restaurants</a>.</p>
@@ -173,7 +385,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Does Italian Dining Cost in Auckland? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Italian food in Auckland spans from a $15 pasta at a casual K Road trattoria to a $150+ multi-course degustation at a Remuera ristorante. Here is a realistic breakdown of what to expect in 2026.</p><p>Many mid-range Auckland Italian restaurants are <strong>BYO</strong> — bring your own wine and pay corkage of $5–$15 per bottle, which significantly reduces the total bill. All prices are GST-inclusive in New Zealand. Most popular restaurants add a <strong>15% surcharge on public holidays</strong>.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -194,60 +406,229 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="10">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="152" data-business-name="Amano" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Amano" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (1250 reviews)</div>
+                <h3>Amano</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Britomart</div>
+                <p class="text-muted">Amano is one of Auckland&#39;s most acclaimed restaurants — a stunning all-day Italian dining room and bakery set in a heritage building in Britomart, directly opposite the Waitemata Harbour. The pasta is made fresh daily from scratch, the sourdough bread is baked on-site each morning, and the seasonal menu draws on New Zealand&#39;s finest produce interpreted through an Italian lens. Consistently rated among Auckland&#39;s top 10 restaurants.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 66 Tyler Street, Britomart, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.amano.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-152-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="284" data-business-name="Prego" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Prego" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (1680 reviews)</div>
+                <h3>Prego</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Ponsonby</div>
+                <p class="text-muted">Prego is Auckland&#39;s most iconic Italian restaurant — a Ponsonby Road institution open since 1986 that has outlasted trends, chefs, and recessions to remain one of the city&#39;s most beloved dining destinations. The fairy-lit courtyard, buzzing atmosphere, and reliably excellent menu of wood-fired pizzas, handmade pasta, and Italian classics have made it the go-to for birthdays, anniversaries, and long Friday lunches for nearly four decades.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 226 Ponsonby Road, Ponsonby</span>
+                    <div class="business-contact-links"><a href="https://www.prego.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-284-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="153" data-business-name="Baduzzi" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Baduzzi" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (920 reviews)</div>
+                <h3>Baduzzi</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Wynyard Quarter</div>
+                <p class="text-muted">Baduzzi is a Wynyard Quarter institution — a lively, Italian-inspired waterfront restaurant best known for its extraordinary range of handcrafted meatballs, made from a rotating selection of proteins including Karitane crayfish, grass-fed beef, and seasonal specials. Set in the vibrant North Wharf precinct with outdoor waterfront seating, it combines a retro-chic atmosphere with genuinely excellent Italian-influenced cooking and an outstanding Italian wine list.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> North Wharf, Wynyard Quarter, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.baduzzi.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-153-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="340" data-business-name="Bivacco" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bivacco" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (510 reviews)</div>
+                <h3>Bivacco</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Viaduct</div>
+                <p class="text-muted">Bivacco is Auckland&#39;s most spectacular Italian dining experience for a long, waterfront lunch — an elegant Viaduct Harbour restaurant that has become a go-to destination since opening in late 2022. Known for its viral tableside cheese wheel pasta (cacio e pepe finished inside a giant Parmigiano wheel), stunning harbour views, and a menu of Italian classics done with genuine precision: oysters, carpaccio, slow-roasted porchetta, and exceptional cannoli.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Viaduct Harbour, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.bivacco.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-340-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="341" data-business-name="Spiga" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Spiga" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (380 reviews)</div>
+                <h3>Spiga</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Remuera</div>
+                <p class="text-muted">Spiga is widely regarded as Auckland&#39;s most authentically Italian fine dining restaurant — helmed by a Rome-born chef and sommelier who brings an unwavering commitment to regional Italian technique and imported artisanal products. Located in Remuera, it is a destination restaurant drawing diners from across Auckland for its exceptional beef cheek tagliatelle, fried mortadella, and a wine list that is arguably the finest collection of Italian labels in New Zealand.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Remuera Road, Remuera, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.spiga.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-341-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="346" data-business-name="BOSSI" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="BOSSI" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (290 reviews)</div>
+                <h3>BOSSI</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">BOSSI is one of Auckland CBD&#39;s most acclaimed Italian restaurants — a sleek, intimate dining room where chef-owner Matt Hawkes honours the recipes of his late Italian grandmother (Nonna) with a menu of impeccably executed Italian classics. Fried provolone, a Caprese salad that sets the standard for the city, an iconic layered lasagne, and a limoncello cake that regulars plan return visits around. Everything is made from scratch, with quality Italian imports underpinning every dish.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.bossirestaurant.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-346-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="344" data-business-name="Non Solo Pizza" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Non Solo Pizza" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (850 reviews)</div>
+                <h3>Non Solo Pizza</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Parnell</div>
+                <p class="text-muted">Non Solo Pizza is one of Auckland&#39;s longest-running Italian restaurants — a Parnell institution that has been serving wood-fired pizza, handmade pasta, and generous Italian classics for over 25 years. The name says it all: yes, the pizza is excellent, but the pasta, the antipasti, and the warm courtyard atmosphere are equally compelling reasons to visit. A reliable, welcoming, and consistently good choice for families, date nights, and group dinners.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 290 Parnell Road, Parnell, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.nonsolopizza.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-344-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="345" data-business-name="Coco&#39;s Cantina" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Coco&#39;s Cantina" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (730 reviews)</div>
+                <h3>Coco&#39;s Cantina</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Karangahape Road</div>
+                <p class="text-muted">Coco&#39;s Cantina is one of K Road&#39;s most beloved institutions — an old-school Italian trattoria with a warm, convivial soul and a menu of honest, hearty Italian comfort food. Spaghetti and meatballs, polenta chips with gorgonzola, slow-cooked ragù, and a list of affordable Italian wines by the glass: Coco&#39;s is the kind of place you go when you want feeding, not fine dining. Loud, fun, and utterly unpretentious.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Karangahape Road, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.cocoscantina.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-345-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="342" data-business-name="Pici" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pici" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (690 reviews)</div>
+                <h3>Pici</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Karangahape Road</div>
+                <p class="text-muted">Pici is K Road&#39;s most beloved Italian restaurant — a small, intimate trattoria with a cult following built around exceptional fresh pasta made daily and served in a casual, convivial neighbourhood setting. The cacio e pepe is considered by many Aucklanders to be the best in the country, and the fettuccine vongole (clams, white wine, chilli, and parsley) is a close second. Tiny, counter-focused, and perpetually full — arrive early or wait.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Karangahape Road, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.pici.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-342-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="343" data-business-name="Andiamo" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="italian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Andiamo" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (620 reviews)</div>
+                <h3>Andiamo</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Herne Bay</div>
+                <p class="text-muted">Andiamo is one of Auckland&#39;s most enduring neighbourhood Italian restaurants — a Herne Bay gem that has been feeding locals with honest, generous Italian cooking for over 30 years. The meatballs are legendary: made from grass-fed beef or cod and Karitane crayfish, served in a rich house-made tomato sauce. It is the kind of place that feels immediately like home, with a warm welcome, a familiar menu, and a glass of Barbera d&#39;Asti that you didn&#39;t know you needed.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Jervois Road, Herne Bay, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.andiamo.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-343-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the best Italian restaurant in Auckland?</summary>
                             <p>It depends on what you are looking for. For the full fine dining experience, Spiga in Remuera (led by a Rome-born chef) and BOSSI in the CBD are Auckland's most acclaimed Italian restaurants. For atmosphere and an iconic night out, Prego on Ponsonby Road (open since 1986) is the sentimental favourite. For handmade pasta, Amano in Britomart and Pici on K Road are the city's best pasta specialists. For Neapolitan pizza, Farina in Ponsonby is the benchmark.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find the best handmade pasta in Auckland?</summary>
                             <p>Amano in Britomart is widely regarded as Auckland's finest pasta restaurant — the menu changes seasonally and the pasta is made fresh daily in their on-site kitchen. Pici on K Road is another pasta-focused gem, with a cult following for its cacio e pepe and fettuccine vongole. Baduzzi in Wynyard Quarter and Andiamo in Herne Bay also make excellent fresh pasta in-house.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where is the best pizza in Auckland?</summary>
                             <p>Farina in Ponsonby is Auckland's most respected Neapolitan pizzeria — the dough is fermented for 48+ hours and the results are exceptional. For a more casual neighbourhood pizza, Pici on K Road and Coco's Cantina (also K Road) are excellent choices. Non Solo Pizza in Parnell has been serving wood-fired pizza for 25+ years and is a trusted Parnell institution.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Auckland Italian restaurants are best for a date night?</summary>
                             <p>Prego in Ponsonby is the classic romantic choice — its fairy-lit courtyard and 38 years of history make it one of Auckland's most beloved date venues. Andiamo in Herne Bay is perfect for an intimate, neighbourhood feel. Bivacco at the Viaduct offers stunning harbour views. For a more upscale option, Spiga in Remuera provides an elegant, candlelit atmosphere.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Are there Italian restaurants in Auckland with harbour views?</summary>
                             <p>Yes — Bivacco is located at the Viaduct Harbour with outdoor terrace seating overlooking the marina, and is famous for its tableside cheese wheel pasta. Baduzzi at North Wharf also has outdoor waterfront seating in the Wynyard Quarter. Both are excellent choices for a long summer lunch or special occasion dinner with a quintessential Auckland view.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Auckland Italian restaurants are BYO?</summary>
                             <p>Many mid-range Auckland Italian restaurants offer BYO, including Andiamo (Herne Bay), Non Solo Pizza (Parnell), and several suburban trattorias. Pici on K Road and Coco's Cantina are also BYO or BYOW. Always call ahead to confirm BYO policy before bringing a bottle — most charge corkage of $5–$15 per bottle. Fine dining restaurants like Spiga, BOSSI, and Amano are typically fully licensed.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What are the best Italian restaurants in Auckland for groups or family dinners?</summary>
                             <p>Baduzzi in Wynyard Quarter is ideal for groups — the sharing-plate format, lively atmosphere, and large format platters work well for 6–12 people. Prego has large tables and a festive atmosphere perfect for family dinners. Coco's Cantina on K Road has a convivial, old-school trattoria energy that suits groups well. For larger private events, Amano and BOSSI both offer private dining rooms.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is Italian food expensive in Auckland?</summary>
                             <p>Not necessarily — Auckland has excellent Italian food at all price points. A generous pasta or pizza at Pici or Coco's Cantina on K Road costs $18–$28. A mid-range à la carte dinner at Andiamo or Non Solo Pizza runs $45–$75 per person with a glass of wine. Fine dining Italian at Spiga or BOSSI is $120–$180+ per person for a full degustation with drinks. BYO restaurants offer the best value for a quality Italian dinner.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -255,7 +636,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -318,7 +699,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -331,8 +712,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

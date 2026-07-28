@@ -45,31 +45,124 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What are the best bar areas in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland's top bar precincts include Ponsonby Road for cocktails and wine bars, Britomart and the Viaduct for waterfront drinks, Karangahape Road (K Road) for alternative and craft scenes, and Commercial Bay for upscale rooftop lounges."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/hospitality/bars#business-list",
+      "name": "Bars in Auckland",
+      "numberOfItems": 3,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Captain's Bar – Park Hyatt",
+            "description": "Sophisticated hotel bar with dark wood interiors, cozy fireplaces, and an impressive collection of over 100 rums. Elevated bar snacks and sharing platters.",
+            "image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "99 Halsey Street, Wynyard Quarter, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.hyatt.com/park-hyatt/aklph/dining"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Apéro",
+            "description": "Quintessential neighbourhood wine bar on K' Road with an extensive by-the-glass list curated by sommelier Mo Koski. Exceptional charcuterie and truffle fries.",
+            "image": "https://images.unsplash.com/photo-1525268323446-0505b6fe7778?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Karangahape Road, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.aperonz.com"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bar Albert",
+            "description": "The highest rooftop bar in New Zealand, perched on the 38th floor of the Voco hotel. Sweeping panoramic views of Auckland city and the Waitematā Harbour.",
+            "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "38th Floor, Voco Hotel, 2 Albert Street, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.baralbert.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What time do bars close in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most Auckland bars close at midnight on weeknights and 3am on Friday and Saturday nights. Some late-night venues on K Road and in the CBD hold special licences for later closing times."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hospitality",
+          "item": "https://toprated.nz/cities/auckland/hospitality/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Bars",
+          "item": "https://toprated.nz/cities/auckland/hospitality/bars"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do Auckland bars serve food?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, many of Auckland's top-rated bars offer substantial food menus ranging from bar snacks and sharing plates to full dining menus. Some operate as bar-restaurants with separate dining areas."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best bar areas in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland's top bar precincts include Ponsonby Road for cocktails and wine bars, Britomart and the Viaduct for waterfront drinks, Karangahape Road (K Road) for alternative and craft scenes, and Commercial Bay for upscale rooftop lounges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What time do bars close in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Auckland bars close at midnight on weeknights and 3am on Friday and Saturday nights. Some late-night venues on K Road and in the CBD hold special licences for later closing times."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Auckland bars serve food?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, many of Auckland's top-rated bars offer substantial food menus ranging from bar snacks and sharing plates to full dining menus. Some operate as bar-restaurants with separate dining areas."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +202,101 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland's bar scene is one of the most vibrant in the Southern Hemisphere, ranging from craft cocktail lounges in Ponsonby to rooftop bars overlooking the Viaduct Harbour. Whether you're after award-winning mixology on Karangahape Road, natural wines in Grey Lynn, or a classic Kiwi pub in Parnell, Auckland's top-rated bars combine exceptional drinks with distinctive atmospheres and welcoming hospitality. Our curated list features the city's most consistently praised establishments.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="3">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="201" data-business-name="Captain&#39;s Bar – Park Hyatt" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="bars" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Captain&#39;s Bar – Park Hyatt" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.9 (480 reviews)</div>
+                <h3>Captain&#39;s Bar – Park Hyatt</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Wynyard Quarter</div>
+                <p class="text-muted">Sophisticated hotel bar with dark wood interiors, cozy fireplaces, and an impressive collection of over 100 rums. Elevated bar snacks and sharing platters.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 99 Halsey Street, Wynyard Quarter, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.hyatt.com/park-hyatt/aklph/dining?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-201-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="202" data-business-name="Apéro" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="bars" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Apéro" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (350 reviews)</div>
+                <h3>Apéro</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> K&#39; Road</div>
+                <p class="text-muted">Quintessential neighbourhood wine bar on K&#39; Road with an extensive by-the-glass list curated by sommelier Mo Koski. Exceptional charcuterie and truffle fries.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Karangahape Road, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.aperonz.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-202-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="203" data-business-name="Bar Albert" data-city-slug="auckland" data-category-slug="hospitality" data-page-slug="bars" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bar Albert" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (290 reviews)</div>
+                <h3>Bar Albert</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">The highest rooftop bar in New Zealand, perched on the 38th floor of the Voco hotel. Sweeping panoramic views of Auckland city and the Waitematā Harbour.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 38th Floor, Voco Hotel, 2 Albert Street, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.baralbert.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-203-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What are the best bar areas in Auckland?</summary>
                             <p>Auckland's top bar precincts include Ponsonby Road for cocktails and wine bars, Britomart and the Viaduct for waterfront drinks, Karangahape Road (K Road) for alternative and craft scenes, and Commercial Bay for upscale rooftop lounges.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What time do bars close in Auckland?</summary>
                             <p>Most Auckland bars close at midnight on weeknights and 3am on Friday and Saturday nights. Some late-night venues on K Road and in the CBD hold special licences for later closing times.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do Auckland bars serve food?</summary>
                             <p>Yes, many of Auckland's top-rated bars offer substantial food menus ranging from bar snacks and sharing plates to full dining menus. Some operate as bar-restaurants with separate dining areas.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/hospitality/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,9 +360,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -45,55 +45,114 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much commission do Tauranga real estate agents charge?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It varies by agency and property type, but commission is commonly charged as a percentage of the sale price plus GST. Marketing is often separate, so compare the full selling cost rather than commission alone."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/services/real-estate-agents#business-list",
+      "name": "Real Estate Agents in Tauranga",
+      "numberOfItems": 1,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Eves Real Estate",
+            "description": "Bay of Plenty's market-leading real estate agency with the region's largest team. Expertise in residential, lifestyle, and coastal property sales across Tauranga.",
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Cameron Road, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.eves.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Should I choose auction or priced sale in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the property, buyer depth, and current market conditions. A good agent should explain why a method suits your property instead of defaulting to the same recommendation every time."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/tauranga/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Real Estate Agents",
+          "item": "https://toprated.nz/cities/tauranga/services/real-estate-agents"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What makes a good real estate agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Strong local knowledge, honest pricing advice, good buyer management, and consistent communication usually matter more than polished branding or a big sales pitch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the cheapest commission always the best deal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily. A weaker strategy or poor negotiation can easily cost more than any commission saving. Compare campaign quality and likely sale execution, not just the fee percentage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an agent help me buy as well as sell?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, many agents can support both sides of the move, but ask how they help beyond sending listings. Good support includes buyer strategy, local market guidance, and timing coordination."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How important is suburb-level knowledge in Tauranga?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Very important. Buyer demand, price expectations, and marketing angles can differ noticeably between Tauranga suburbs and coastal areas, so local sales context matters."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much commission do Tauranga real estate agents charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies by agency and property type, but commission is commonly charged as a percentage of the sale price plus GST. Marketing is often separate, so compare the full selling cost rather than commission alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose auction or priced sale in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the property, buyer depth, and current market conditions. A good agent should explain why a method suits your property instead of defaulting to the same recommendation every time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes a good real estate agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Strong local knowledge, honest pricing advice, good buyer management, and consistent communication usually matter more than polished branding or a big sales pitch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the cheapest commission always the best deal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. A weaker strategy or poor negotiation can easily cost more than any commission saving. Compare campaign quality and likely sale execution, not just the fee percentage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an agent help me buy as well as sell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, many agents can support both sides of the move, but ask how they help beyond sending listings. Good support includes buyer strategy, local market guidance, and timing coordination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How important is suburb-level knowledge in Tauranga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Very important. Buyer demand, price expectations, and marketing angles can differ noticeably between Tauranga suburbs and coastal areas, so local sales context matters."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -133,14 +192,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose the Best Real Estate Agent in Tauranga</a></li><li><a href="#pricing-guide">How Much Do Real Estate Agents Charge in Tauranga? (2026 Guide)</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Tauranga real estate agents work across a market shaped by coastal demand, lifestyle moves, investor activity, and suburb-by-suburb differences from Papamoa and Mount Maunganui through to Bethlehem, Welcome Bay, and the wider Bay of Plenty. The strongest agents are not just good at listing homes. They price accurately, manage campaigns well, qualify buyers properly, and communicate clearly throughout the sale. This guide is for Tauranga homeowners, investors, and buyers who want to compare agents on local knowledge, process quality, and commercial judgement. For connected advice, also see our Tauranga guides to <a href='/cities/tauranga/services/lawyers'>lawyers</a> and <a href='/cities/tauranga/services/accountants'>accountants</a>.</p>
@@ -157,7 +216,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> How Much Do Real Estate Agents Charge in Tauranga? (2026 Guide)</h2>
                     <div class="seo-guide-content"><p>Tauranga agent fees usually depend on the sale method, property value, and agency structure. Commission remains the main cost, but campaign expenses such as photography, staging, and digital promotion also matter.</p><p>These ranges are general only. Always ask for a written estimate of commission and marketing costs before signing an agency agreement.</p></div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -178,50 +237,66 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="1">
+            <div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="255" data-business-name="Eves Real Estate" data-city-slug="tauranga" data-category-slug="services" data-page-slug="real-estate-agents" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Eves Real Estate" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (610 reviews)</div>
+                <h3>Eves Real Estate</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Bay of Plenty&#39;s market-leading real estate agency with the region&#39;s largest team. Expertise in residential, lifestyle, and coastal property sales across Tauranga.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Cameron Road, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://www.eves.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-255-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much commission do Tauranga real estate agents charge?</summary>
                             <p>It varies by agency and property type, but commission is commonly charged as a percentage of the sale price plus GST. Marketing is often separate, so compare the full selling cost rather than commission alone.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I choose auction or priced sale in Tauranga?</summary>
                             <p>It depends on the property, buyer depth, and current market conditions. A good agent should explain why a method suits your property instead of defaulting to the same recommendation every time.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What makes a good real estate agent?</summary>
                             <p>Strong local knowledge, honest pricing advice, good buyer management, and consistent communication usually matter more than polished branding or a big sales pitch.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Is the cheapest commission always the best deal?</summary>
                             <p>Not necessarily. A weaker strategy or poor negotiation can easily cost more than any commission saving. Compare campaign quality and likely sale execution, not just the fee percentage.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Can an agent help me buy as well as sell?</summary>
                             <p>Yes, many agents can support both sides of the move, but ask how they help beyond sending listings. Good support includes buyer strategy, local market guidance, and timing coordination.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How important is suburb-level knowledge in Tauranga?</summary>
                             <p>Very important. Buyer demand, price expectations, and marketing angles can differ noticeably between Tauranga suburbs and coastal areas, so local sales context matters.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -229,7 +304,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/tauranga/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -292,7 +367,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -305,8 +380,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

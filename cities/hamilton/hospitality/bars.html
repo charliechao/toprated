@@ -43,7 +43,83 @@
   <link rel="stylesheet" href="/css/styles.css?v=20260728b" />
 
   <!-- Schema -->
-  
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/hamilton/hospitality/bars#business-list",
+      "name": "Bars in Hamilton",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Good George Brewing",
+            "description": "Award-winning craft brewery and bar housed in a converted heritage church. Wide range of craft beers brewed on-site, plus ciders, cocktails, and hearty pub fare.",
+            "image": "https://images.unsplash.com/photo-1525268323446-0505b6fe7778?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "32 Somerset Street, Frankton, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.goodgeorge.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "The Bavarian",
+            "description": "German-inspired beer hall and restaurant with an extensive imported and local beer selection. Live music on weekends and a welcoming beer garden atmosphere.",
+            "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Victoria Street, Hamilton",
+              "addressLocality": "Hamilton",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.thebavarian.co.nz"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hamilton",
+          "item": "https://toprated.nz/cities/hamilton"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hospitality",
+          "item": "https://toprated.nz/cities/hamilton/hospitality/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Bars",
+          "item": "https://toprated.nz/cities/hamilton/hospitality/bars"
+        }
+      ]
+    }
+  ]
+}</script>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -80,16 +156,49 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
-        
+
+
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="2">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="208" data-business-name="Good George Brewing" data-city-slug="hamilton" data-category-slug="hospitality" data-page-slug="bars" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Good George Brewing" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (560 reviews)</div>
+                <h3>Good George Brewing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Frankton</div>
+                <p class="text-muted">Award-winning craft brewery and bar housed in a converted heritage church. Wide range of craft beers brewed on-site, plus ciders, cocktails, and hearty pub fare.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 32 Somerset Street, Frankton, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://www.goodgeorge.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-208-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="209" data-business-name="The Bavarian" data-city-slug="hamilton" data-category-slug="hospitality" data-page-slug="bars" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="The Bavarian" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.6 (310 reviews)</div>
+                <h3>The Bavarian</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">German-inspired beer hall and restaurant with an extensive imported and local beer selection. Live music on weekends and a welcoming beer garden atmosphere.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Victoria Street, Hamilton</span>
+                    <div class="business-contact-links"><a href="https://www.thebavarian.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-209-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
-    
+
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -97,7 +206,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/hamilton/hospitality/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -153,9 +262,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

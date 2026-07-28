@@ -45,31 +45,157 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does a kitchen renovation cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auckland kitchen renovations range from $25,000 for a basic update to $80,000+ for high-end complete makeovers. Costs depend on cabinetry quality, appliances, benchtops, and structural changes required."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/trades/renovation-services#business-list",
+      "name": "Renovation Services in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Licensed Renovations",
+            "description": "Licensed Renovations is an Auckland-wide residential renovation specialist focused on smarter project planning, seamless delivery, and home upgrades ranging from alterations and additions to full lifestyle-led renovations.",
+            "image": "/img/businesses/licensed-renovations.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Wide",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.licensedrenovations.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Refresh Renovations Auckland Central",
+            "description": "Refresh Renovations Auckland Central provides design-led renovation management across kitchens, laundries, apartment upgrades, layout reconfiguration, loft conversions, and character-home projects throughout central Auckland suburbs.",
+            "image": "https://cdn.prod.website-files.com/62363841fbbb8a37f35b8577/63c70794ddec885a94ae91dc_neaKhMp4I3LJJKRfLpLlv0MzIviwmAhESRvAkJbxbcs.jpeg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland Central",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.refreshrenovations.co.nz/locations-what-we-do/auckland-central"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Smith & Sons Home Renovations",
+            "description": "Smith & Sons is a long-running home renovation builder network serving Auckland homeowners with concept-to-completion renovation support, design-build coordination, and a broad range of structural and lifestyle improvement projects.",
+            "image": "/img/businesses/smith-and-sons.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.smithandsons.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Superior Renovations",
+            "description": "Superior Renovations is an Auckland renovation company focused on kitchens, bathrooms, extensions, and full-house upgrades, with in-house design support, project coordination, and showroom-led planning for homeowners across the region.",
+            "image": "https://superiorrenovations.co.nz/wp-content/uploads/2024/07/DSC07208-1024x682.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "16B Link Drive, Wairau Valley, Auckland 0627",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://superiorrenovations.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Stone Tech",
+            "description": "Stone Tech is an Auckland benchtop specialist focused on zero-silica porcelain surfaces for kitchens and bathrooms, combining custom design, fabrication, installation, and aftercare for renovation-led interior upgrades.",
+            "image": "https://cdn.durable.co/blocks/36CYEdqklubCjXr4RDzkDr4DdPb1GmlOK8YOr8pnMl9fsaD8k4rGFu7pZqXnYKjF.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "147B McLeon Rd, Te Atatu South, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need consent for renovations in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many renovations require building consent from Auckland Council, especially if modifying structure, plumbing, or electrical. Minor cosmetic work often doesn't need consent, but always verify specific requirements with your renovation specialist or the council."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/auckland/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Renovation Services",
+          "item": "https://toprated.nz/cities/auckland/trades/renovation-services"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How long does a typical renovation take in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bathroom renovations typically take 3-6 weeks, kitchens 4-8 weeks, and full house renovations 3-6 months. Factor in 6-12 weeks for council consents before work begins on projects requiring approval."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a kitchen renovation cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auckland kitchen renovations range from $25,000 for a basic update to $80,000+ for high-end complete makeovers. Costs depend on cabinetry quality, appliances, benchtops, and structural changes required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need consent for renovations in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many renovations require building consent from Auckland Council, especially if modifying structure, plumbing, or electrical. Minor cosmetic work often doesn't need consent, but always verify specific requirements with your renovation specialist or the council."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical renovation take in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bathroom renovations typically take 3-6 weeks, kitchens 4-8 weeks, and full house renovations 3-6 months. Factor in 6-12 weeks for council consents before work begins on projects requiring approval."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +235,135 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland renovation specialists transform tired spaces into stunning modern homes, managing every aspect from design to completion. Whether you're updating a kitchen in Mount Eden, adding a bathroom in Remuera, or undertaking a complete house renovation, the city's top renovation companies bring expertise in project management, building consent navigation, and coordinating multiple trades for seamless results.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="357" data-business-name="Licensed Renovations" data-city-slug="auckland" data-category-slug="trades" data-page-slug="renovation-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/licensed-renovations.png" alt="Licensed Renovations" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Licensed Renovations</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Wide</div>
+                <p class="text-muted">Licensed Renovations is an Auckland-wide residential renovation specialist focused on smarter project planning, seamless delivery, and home upgrades ranging from alterations and additions to full lifestyle-led renovations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Wide</span>
+                    <div class="business-contact-links"><a href="https://www.licensedrenovations.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-357-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="358" data-business-name="Refresh Renovations Auckland Central" data-city-slug="auckland" data-category-slug="trades" data-page-slug="renovation-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://cdn.prod.website-files.com/62363841fbbb8a37f35b8577/63c70794ddec885a94ae91dc_neaKhMp4I3LJJKRfLpLlv0MzIviwmAhESRvAkJbxbcs.jpeg" alt="Refresh Renovations Auckland Central" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Refresh Renovations Auckland Central</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Central</div>
+                <p class="text-muted">Refresh Renovations Auckland Central provides design-led renovation management across kitchens, laundries, apartment upgrades, layout reconfiguration, loft conversions, and character-home projects throughout central Auckland suburbs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland Central</span>
+                    <div class="business-contact-links"><a href="https://www.refreshrenovations.co.nz/locations-what-we-do/auckland-central?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-358-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="359" data-business-name="Smith &amp; Sons Home Renovations" data-city-slug="auckland" data-category-slug="trades" data-page-slug="renovation-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/businesses/smith-and-sons.png" alt="Smith &amp; Sons Home Renovations" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Smith &amp; Sons Home Renovations</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">Smith &amp; Sons is a long-running home renovation builder network serving Auckland homeowners with concept-to-completion renovation support, design-build coordination, and a broad range of structural and lifestyle improvement projects.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.smithandsons.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-359-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="360" data-business-name="Superior Renovations" data-city-slug="auckland" data-category-slug="trades" data-page-slug="renovation-services" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://superiorrenovations.co.nz/wp-content/uploads/2024/07/DSC07208-1024x682.jpg" alt="Superior Renovations" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Superior Renovations</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Wairau Valley</div>
+                <p class="text-muted">Superior Renovations is an Auckland renovation company focused on kitchens, bathrooms, extensions, and full-house upgrades, with in-house design support, project coordination, and showroom-led planning for homeowners across the region.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 16B Link Drive, Wairau Valley, Auckland 0627</span>
+                    <div class="business-contact-links"><a href="https://superiorrenovations.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-360-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  premium-border" data-listing-impression="true" data-business-id="353" data-business-name="Stone Tech" data-city-slug="auckland" data-category-slug="trades" data-page-slug="renovation-services" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://cdn.durable.co/blocks/36CYEdqklubCjXr4RDzkDr4DdPb1GmlOK8YOr8pnMl9fsaD8k4rGFu7pZqXnYKjF.jpg" alt="Stone Tech" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 5 (3 reviews)</div>
+                <h3>Stone Tech</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Te Atatu South</div>
+                <p class="text-muted">Stone Tech is an Auckland benchtop specialist focused on zero-silica porcelain surfaces for kitchens and bathrooms, combining custom design, fabrication, installation, and aftercare for renovation-led interior upgrades.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 147B McLeon Rd, Te Atatu South, Auckland</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does a kitchen renovation cost in Auckland?</summary>
                             <p>Auckland kitchen renovations range from $25,000 for a basic update to $80,000+ for high-end complete makeovers. Costs depend on cabinetry quality, appliances, benchtops, and structural changes required.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need consent for renovations in Auckland?</summary>
                             <p>Many renovations require building consent from Auckland Council, especially if modifying structure, plumbing, or electrical. Minor cosmetic work often doesn't need consent, but always verify specific requirements with your renovation specialist or the council.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How long does a typical renovation take in Auckland?</summary>
                             <p>Bathroom renovations typically take 3-6 weeks, kitchens 4-8 weeks, and full house renovations 3-6 months. Factor in 6-12 weeks for council consents before work begins on projects requiring approval.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +371,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/trades/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -203,9 +413,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->

@@ -45,39 +45,217 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Where can I find Indian restaurants in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This shortlist includes options in the CBD, Sandringham, Parnell and Ponsonby. The best suburb depends on whether you want a quick casual meal, takeaway or a longer sit-down dinner."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/cuisine/indian-restaurants#business-list",
+      "name": "Indian Restaurants in Auckland",
+      "numberOfItems": 8,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "1947 Eatery",
+            "description": "A contemporary Indian restaurant on Federal Street in Auckland's CBD, with a menu inspired by Indian street food and regional flavours.",
+            "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.1947eatery.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Satya South Indian Restaurant",
+            "description": "Auckland restaurant serving South Indian dishes including dosa, idli, vada and other vegetarian-friendly options, with central locations.",
+            "image": "/img/generated/indian-restaurants.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Multiple Auckland locations",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.satya.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Paradise Indian Restaurant",
+            "description": "Sandringham restaurant serving Indian curries, kebabs, biryani, tandoori dishes and takeaway.",
+            "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sandringham Road, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.paradiseindianfood.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "KOL",
+            "description": "A Ponsonby Road Indian restaurant and bar serving modern Indian dishes, tandoor cooking and cocktails.",
+            "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Ponsonby Road, Grey Lynn, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://kolauckland.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Oh Calcutta",
+            "description": "Parnell Indian restaurant serving North Indian dishes for lunch and dinner, with dine-in and takeaway options.",
+            "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Parnell Road, Parnell, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.ohcalcutta.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Saravanaa Bhavan",
+            "description": "CBD vegetarian restaurant serving South Indian dishes including dosa, idli, vada, sambar and chutneys.",
+            "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hobson Street, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://saravanabhavan.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Mumbaiwala",
+            "description": "Ponsonby Indian restaurant with a menu inspired by Mumbai street food and regional Indian flavours.",
+            "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Ponsonby Road, Ponsonby, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.mumbaiwala.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Times of India",
+            "description": "Auckland CBD Indian restaurant serving North Indian and Mughlai-style dishes, including tandoor options.",
+            "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Graham Street, Auckland CBD",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.timesofindia.co.nz"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Which Auckland Indian restaurants serve South Indian food?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Satya and Saravanaa Bhavan list South Indian dishes such as dosa, idli and vada. Check each restaurant's current menu for the latest selection and dietary information."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuisine",
+          "item": "https://toprated.nz/cities/auckland/cuisine/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Indian Restaurants",
+          "item": "https://toprated.nz/cities/auckland/cuisine/indian-restaurants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How much does an Indian meal cost in Auckland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A casual main commonly starts around $18, while a sit-down dinner can cost more depending on the venue, dishes and drinks. Confirm current prices from the restaurant's own menu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I book an Auckland Indian restaurant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Booking is sensible for Friday and Saturday evenings, group meals and popular dining rooms. Contact the restaurant directly to confirm current availability."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find Indian restaurants in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This shortlist includes options in the CBD, Sandringham, Parnell and Ponsonby. The best suburb depends on whether you want a quick casual meal, takeaway or a longer sit-down dinner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Auckland Indian restaurants serve South Indian food?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Satya and Saravanaa Bhavan list South Indian dishes such as dosa, idli and vada. Check each restaurant's current menu for the latest selection and dietary information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an Indian meal cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A casual main commonly starts around $18, while a sit-down dinner can cost more depending on the venue, dishes and drinks. Confirm current prices from the restaurant's own menu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I book an Auckland Indian restaurant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Booking is sensible for Friday and Saturday evenings, group meals and popular dining rooms. Contact the restaurant directly to confirm current availability."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -117,14 +295,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to choose an Auckland Indian restaurant</a></li><li><a href="#pricing-guide">Typical Auckland Indian dining costs</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Auckland has Indian restaurants for quick dosa and casual curry nights as well as long lunches and contemporary dining. This shortlist focuses on eight currently verified options across the CBD, Sandringham, Parnell and Ponsonby, so you can compare cuisine style, setting and price before booking or ordering.</p>
@@ -141,7 +319,7 @@
                 <div class="container">
                     <h2><i class="fas fa-dollar-sign"></i> Typical Auckland Indian dining costs</h2>
                     <div class="seo-guide-content">Prices vary by venue, meal format and the dishes you choose. Use the current menu as the final reference, especially for dine-in specials, delivery and group orders.</div>
-                    
+
                 <div class="seo-price-table-wrap">
                     <table class="seo-price-table">
                         <thead><tr><th>Service / Project</th><th>Typical Cost Range</th></tr></thead>
@@ -154,40 +332,175 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="8">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="147" data-business-name="1947 Eatery" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="1947 Eatery" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>1947 Eatery</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">A contemporary Indian restaurant on Federal Street in Auckland&#39;s CBD, with a menu inspired by Indian street food and regional flavours.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.1947eatery.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-147-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="148" data-business-name="Satya South Indian Restaurant" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="/img/generated/indian-restaurants.png" alt="Satya South Indian Restaurant" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Satya South Indian Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Ponsonby</div>
+                <p class="text-muted">Auckland restaurant serving South Indian dishes including dosa, idli, vada and other vegetarian-friendly options, with central locations.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Multiple Auckland locations</span>
+                    <div class="business-contact-links"><a href="https://www.satya.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-148-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="283" data-business-name="Paradise Indian Restaurant" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Paradise Indian Restaurant" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Paradise Indian Restaurant</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Sandringham</div>
+                <p class="text-muted">Sandringham restaurant serving Indian curries, kebabs, biryani, tandoori dishes and takeaway.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Sandringham Road, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.paradiseindianfood.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-283-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="333" data-business-name="KOL" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="KOL" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>KOL</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Grey Lynn</div>
+                <p class="text-muted">A Ponsonby Road Indian restaurant and bar serving modern Indian dishes, tandoor cooking and cocktails.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Ponsonby Road, Grey Lynn, Auckland</span>
+                    <div class="business-contact-links"><a href="https://kolauckland.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-333-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="334" data-business-name="Oh Calcutta" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Oh Calcutta" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Oh Calcutta</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Parnell</div>
+                <p class="text-muted">Parnell Indian restaurant serving North Indian dishes for lunch and dinner, with dine-in and takeaway options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Parnell Road, Parnell, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.ohcalcutta.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-334-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="336" data-business-name="Saravanaa Bhavan" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Saravanaa Bhavan" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Saravanaa Bhavan</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">CBD vegetarian restaurant serving South Indian dishes including dosa, idli, vada, sambar and chutneys.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Hobson Street, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://saravanabhavan.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-336-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="337" data-business-name="Mumbaiwala" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mumbaiwala" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Mumbaiwala</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Ponsonby</div>
+                <p class="text-muted">Ponsonby Indian restaurant with a menu inspired by Mumbai street food and regional Indian flavours.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Ponsonby Road, Ponsonby, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.mumbaiwala.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-337-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="338" data-business-name="Times of India" data-city-slug="auckland" data-category-slug="cuisine" data-page-slug="indian-restaurants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Times of India" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Times of India</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Auckland CBD Indian restaurant serving North Indian and Mughlai-style dishes, including tandoor options.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Graham Street, Auckland CBD</span>
+                    <div class="business-contact-links"><a href="https://www.timesofindia.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-338-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>Where can I find Indian restaurants in Auckland?</summary>
                             <p>This shortlist includes options in the CBD, Sandringham, Parnell and Ponsonby. The best suburb depends on whether you want a quick casual meal, takeaway or a longer sit-down dinner.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Which Auckland Indian restaurants serve South Indian food?</summary>
                             <p>Satya and Saravanaa Bhavan list South Indian dishes such as dosa, idli and vada. Check each restaurant's current menu for the latest selection and dietary information.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does an Indian meal cost in Auckland?</summary>
                             <p>A casual main commonly starts around $18, while a sit-down dinner can cost more depending on the venue, dishes and drinks. Confirm current prices from the restaurant's own menu.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Should I book an Auckland Indian restaurant?</summary>
                             <p>Booking is sensible for Friday and Saturday evenings, group meals and popular dining rooms. Contact the restaurant directly to confirm current availability.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -195,7 +508,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/cuisine/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -258,7 +571,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -266,13 +579,13 @@
                     <div class="seo-trust-text">
                         <strong>Why Trust TopRated?</strong>
                         <p>Our listings are independently curated based on verified Google reviews, industry certifications, and local expertise. We are not pay-to-play — every recommendation is earned. <a href="/about">Learn about our methodology →</a></p>
-                        
+
                     </div>
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

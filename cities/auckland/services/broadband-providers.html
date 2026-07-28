@@ -45,31 +45,157 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the difference between fibre and wireless broadband?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fibre typically offers stronger consistency and higher speeds where available, while wireless broadband can be a useful option in locations without fixed-line access or where faster setup matters."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/broadband-providers#business-list",
+      "name": "Broadband Providers in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "One NZ Broadband",
+            "description": "One NZ Broadband offers fibre, wireless, and Hyperfibre plans for Auckland households that want flexible connectivity options, bundled services, and a major nationwide support network.",
+            "image": "https://vodafone.brightspotcdn.com/dims4/default/ceaba85/2147483647/strip/true/crop/1524x800+678+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fvodafone-nz-dx-brightspot.s3.amazonaws.com%2Fb4%2F08%2F12e1643e405e847bc4588e0ced6a%2Focs02604-be28-smartwifi-onestep-herobanner-desktop-1440x400-2x.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "74 Taharoto Road, Takapuna, Auckland 0622",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://one.nz/broadband/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Slingshot Broadband",
+            "description": "Slingshot Broadband provides fibre and wireless plans for Auckland customers looking for straightforward pricing, home internet bundles, and a long-running New Zealand telco brand.",
+            "image": "https://www.slingshot.co.nz/assets/images/og-image.jpg?version=v2.10.9",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "PO Box 108-109, Auckland 1010",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.slingshot.co.nz/broadband-plans"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Orcon Broadband",
+            "description": "Orcon Broadband offers fibre and wireless internet plans backed by New Zealand-based support, making it a practical option for Auckland homes that want flexible broadband choices from an established provider.",
+            "image": "https://www.orcon.net.nz/orcon-og-image.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "P.O. Box 302362, North Harbour, Auckland",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.orcon.net.nz/broadband"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Voyager Broadband",
+            "description": "Voyager Broadband is a New Zealand-owned provider serving Auckland with simple home internet plans, strong customer support, and communication services for households that want a locally run option.",
+            "image": "https://voyager.nz/uploads/meta.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "11B Piermark Drive, Rosedale, Auckland 0632",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://voyager.nz/home"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Excite Broadband",
+            "description": "Excite Broadband is a Kumeu-based internet provider offering fibre, wireless, and HyperFibre plans for Kiwi homes and businesses, with NZ-based support and open-term connectivity options across New Zealand.",
+            "image": "/img/businesses/excite-broadband.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "PO Box 64, Kumeu 0841, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "When is HyperFibre worth paying for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "HyperFibre makes the most sense for very high-demand households or businesses with heavy concurrent usage, large transfers, advanced streaming needs, or performance-sensitive workflows."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Broadband Providers",
+          "item": "https://toprated.nz/cities/auckland/services/broadband-providers"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I compare besides monthly price?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Compare upload and download speed, support quality, contract flexibility, setup friction, included hardware, and whether the provider's connection type is the right fit for your location."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between fibre and wireless broadband?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fibre typically offers stronger consistency and higher speeds where available, while wireless broadband can be a useful option in locations without fixed-line access or where faster setup matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is HyperFibre worth paying for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HyperFibre makes the most sense for very high-demand households or businesses with heavy concurrent usage, large transfers, advanced streaming needs, or performance-sensitive workflows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I compare besides monthly price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare upload and download speed, support quality, contract flexibility, setup friction, included hardware, and whether the provider's connection type is the right fit for your location."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,14 +235,14 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#buyers-guide">How to Choose a Broadband Provider in Auckland</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Internet plans often look similar until installation timelines, support quality, and network fit start affecting day-to-day work. For Auckland households and businesses, choosing the right broadband provider usually comes down to reliability, plan flexibility, support responsiveness, and whether the provider can match the connection type available at your address.</p>
@@ -139,35 +265,119 @@
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="369" data-business-name="One NZ Broadband" data-city-slug="auckland" data-category-slug="services" data-page-slug="broadband-providers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://vodafone.brightspotcdn.com/dims4/default/ceaba85/2147483647/strip/true/crop/1524x800+678+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fvodafone-nz-dx-brightspot.s3.amazonaws.com%2Fb4%2F08%2F12e1643e405e847bc4588e0ced6a%2Focs02604-be28-smartwifi-onestep-herobanner-desktop-1440x400-2x.png" alt="One NZ Broadband" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>One NZ Broadband</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Takapuna</div>
+                <p class="text-muted">One NZ Broadband offers fibre, wireless, and Hyperfibre plans for Auckland households that want flexible connectivity options, bundled services, and a major nationwide support network.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 74 Taharoto Road, Takapuna, Auckland 0622</span>
+                    <div class="business-contact-links"><a href="https://one.nz/broadband/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-369-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="370" data-business-name="Slingshot Broadband" data-city-slug="auckland" data-category-slug="services" data-page-slug="broadband-providers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.slingshot.co.nz/assets/images/og-image.jpg?version=v2.10.9" alt="Slingshot Broadband" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Slingshot Broadband</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland Central</div>
+                <p class="text-muted">Slingshot Broadband provides fibre and wireless plans for Auckland customers looking for straightforward pricing, home internet bundles, and a long-running New Zealand telco brand.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> PO Box 108-109, Auckland 1010</span>
+                    <div class="business-contact-links"><a href="https://www.slingshot.co.nz/broadband-plans?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-370-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="371" data-business-name="Orcon Broadband" data-city-slug="auckland" data-category-slug="services" data-page-slug="broadband-providers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.orcon.net.nz/orcon-og-image.jpg" alt="Orcon Broadband" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Orcon Broadband</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> North Harbour</div>
+                <p class="text-muted">Orcon Broadband offers fibre and wireless internet plans backed by New Zealand-based support, making it a practical option for Auckland homes that want flexible broadband choices from an established provider.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> P.O. Box 302362, North Harbour, Auckland</span>
+                    <div class="business-contact-links"><a href="https://www.orcon.net.nz/broadband?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-371-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="372" data-business-name="Voyager Broadband" data-city-slug="auckland" data-category-slug="services" data-page-slug="broadband-providers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://voyager.nz/uploads/meta.jpg" alt="Voyager Broadband" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Voyager Broadband</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Rosedale</div>
+                <p class="text-muted">Voyager Broadband is a New Zealand-owned provider serving Auckland with simple home internet plans, strong customer support, and communication services for households that want a locally run option.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 11B Piermark Drive, Rosedale, Auckland 0632</span>
+                    <div class="business-contact-links"><a href="https://voyager.nz/home?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-372-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="356" data-business-name="Excite Broadband" data-city-slug="auckland" data-category-slug="services" data-page-slug="broadband-providers" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="/img/businesses/excite-broadband.png" alt="Excite Broadband" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Excite Broadband</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Kumeu</div>
+                <p class="text-muted">Excite Broadband is a Kumeu-based internet provider offering fibre, wireless, and HyperFibre plans for Kiwi homes and businesses, with NZ-based support and open-term connectivity options across New Zealand.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> PO Box 64, Kumeu 0841, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>What is the difference between fibre and wireless broadband?</summary>
                             <p>Fibre typically offers stronger consistency and higher speeds where available, while wireless broadband can be a useful option in locations without fixed-line access or where faster setup matters.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>When is HyperFibre worth paying for?</summary>
                             <p>HyperFibre makes the most sense for very high-demand households or businesses with heavy concurrent usage, large transfers, advanced streaming needs, or performance-sensitive workflows.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I compare besides monthly price?</summary>
                             <p>Compare upload and download speed, support quality, contract flexibility, setup friction, included hardware, and whether the provider's connection type is the right fit for your location.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -175,7 +385,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/auckland/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -217,7 +427,7 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
+
         <aside class="seo-trust-box">
             <div class="container">
                 <div class="seo-trust-inner">
@@ -230,8 +440,8 @@
                 </div>
             </div>
         </aside>
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
   </main>
 
   <!-- Footer Placeholder -->

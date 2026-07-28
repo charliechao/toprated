@@ -45,31 +45,141 @@
   <!-- Schema -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does an accountant cost in Wellington?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wellington accountant fees range from $150–$280 per hour for individual tax returns, $1,200–$4,500+ for annual business accounts, and $180–$380 per hour for advisory work. Many firms offer fixed-fee packages for standard compliance services."
-      }
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/wellington/services/accountants#business-list",
+      "name": "Accountants in Wellington",
+      "numberOfItems": 4,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "DFK Orb360 O'Halloran",
+            "description": "DFK Orb360 O'Halloran is a chartered accounting and business-advisory firm serving Wellington businesses with accounting and reporting, tax advisory, bookkeeping, payroll, GST and PAYE support, cloud accounting, compliance, and strategic planning.",
+            "image": "/img/businesses/dfk-orb360-ohalloran.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "48 Richmond Street, Petone, Lower Hutt",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://dfkorb360.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Long + Cowan Chartered",
+            "description": "Established Wellington firm with over 75 years of experience. General and business accounting, tax compliance, and strategic business advisory for diverse clients.",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "The Terrace, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.longcowan.co.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "BDO Wellington",
+            "description": "Full-service accounting and advisory firm in the Wellington CBD. Specialists in government contracting, SME advisory, tax planning, and audit services. Proactive, tech-savvy approach with Xero and cloud accounting expertise.",
+            "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lambton Quay, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bdo.nz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Aurora Financials",
+            "description": "Prominent Wellington accounting firm focusing on business growth strategy. Expertise across multiple industries with comprehensive financial planning and advisory services.",
+            "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lambton Quay, Wellington",
+              "addressLocality": "Wellington",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.aurorafinancials.com"
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What should I look for in a Wellington accountant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for Chartered Accountant (CA) status, experience with your industry (especially if government-related), Xero or MYOB certification, proactive communication, and strong Google reviews. A good Wellington accountant should understand the capital's unique business environment."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wellington",
+          "item": "https://toprated.nz/cities/wellington"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/wellington/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Accountants",
+          "item": "https://toprated.nz/cities/wellington/services/accountants"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do I need a local Wellington accountant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While accountants can work remotely, a local Wellington practice offers face-to-face meetings, understanding of regional business conditions, and local network connections that can benefit your business. This is especially valuable for Wellington's government contracting sector."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does an accountant cost in Wellington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wellington accountant fees range from $150–$280 per hour for individual tax returns, $1,200–$4,500+ for annual business accounts, and $180–$380 per hour for advisory work. Many firms offer fixed-fee packages for standard compliance services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for in a Wellington accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for Chartered Accountant (CA) status, experience with your industry (especially if government-related), Xero or MYOB certification, proactive communication, and strong Google reviews. A good Wellington accountant should understand the capital's unique business environment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a local Wellington accountant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While accountants can work remotely, a local Wellington practice offers face-to-face meetings, understanding of regional business conditions, and local network connections that can benefit your business. This is especially valuable for Wellington's government contracting sector."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -109,51 +219,118 @@
         </div>
     </section>
     <div class="container seo-content-wrapper">
-        
+
         <nav class="seo-toc" aria-label="Table of Contents">
             <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
             <ol class="seo-toc__list">
                 <li><a href="#overview">Overview</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
             </ol>
         </nav>
-        
+
             <section class="seo-section" id="overview">
                 <div class="container">
                     <p class="seo-lead">Wellington's top-rated accountants serve the capital's diverse business community — from government contractors and tech startups in the CBD to professional services firms and small businesses across the Hutt Valley. The best Wellington accounting practices combine deep knowledge of public sector and SME requirements with modern cloud accounting tools, proactive tax planning, and a personal approach that bigger city firms often lack.</p>
-                    
+
                 </div>
             </section>
     </div>
     <section class="container section" id="top-rated-listings">
-        <div id="business-list" class="business-list">
-            <p class="loading">Loading top-rated businesses...</p>
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="4">
+            <div class="glass-card business-card-horizontal  featured-provider-card " data-listing-impression="true" data-business-id="393" data-business-name="DFK Orb360 O&#39;Halloran" data-city-slug="wellington" data-category-slug="services" data-page-slug="accountants" data-listing-tier="featured">
+            <div class="business-image-container">
+                <img src="/img/businesses/dfk-orb360-ohalloran.png" alt="DFK Orb360 O&#39;Halloran" class="business-image business-image--contain" loading="lazy">
+                <div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>DFK Orb360 O&#39;Halloran</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Petone</div>
+                <p class="text-muted">DFK Orb360 O&#39;Halloran is a chartered accounting and business-advisory firm serving Wellington businesses with accounting and reporting, tax advisory, bookkeeping, payroll, GST and PAYE support, cloud accounting, compliance, and strategic planning.</p>
+                <div class="business-services"><span>Main services</span><div class="business-service-tags"><span>Chartered Accounting</span><span>Tax Planning &amp; Compliance</span><span>Business Advisory</span><span>GST &amp; PAYE Services</span><span>Bookkeeping &amp; Payroll</span><span>Financial Reporting</span><span>Cloud Accounting (Xero)</span><span>Business Valuations</span><span>Outsourced CFO Services</span><span>Succession Planning</span><span>IRD Compliance &amp; Tax Support</span></div></div>
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 48 Richmond Street, Petone, Lower Hutt</span>
+                    <div class="business-contact-links"><a href="https://dfkorb360.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-393-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="https://wa.me/6445550401?text=Hi+DFK+Orb360%2C+I%27d+like+to+book+a+free+15-minute+consultation.+Please+let+me+know+your+availability.+Thank+you%21&amp;utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-393-booking" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="booking"><i class="fas fa-calendar-check"></i> Book a consultation</a><a href="tel:+6493774238" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> +64 9 377 4238</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="232" data-business-name="Long + Cowan Chartered" data-city-slug="wellington" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Long + Cowan Chartered" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (240 reviews)</div>
+                <h3>Long + Cowan Chartered</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> CBD</div>
+                <p class="text-muted">Established Wellington firm with over 75 years of experience. General and business accounting, tax compliance, and strategic business advisory for diverse clients.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> The Terrace, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.longcowan.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-232-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   premium-border" data-listing-impression="true" data-business-id="306" data-business-name="BDO Wellington" data-city-slug="wellington" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="BDO Wellington" class="business-image" loading="lazy">
+                <div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.8 (180 reviews)</div>
+                <h3>BDO Wellington</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Lambton Quay</div>
+                <p class="text-muted">Full-service accounting and advisory firm in the Wellington CBD. Specialists in government contracting, SME advisory, tax planning, and audit services. Proactive, tech-savvy approach with Xero and cloud accounting expertise.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Lambton Quay, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.bdo.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-306-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="233" data-business-name="Aurora Financials" data-city-slug="wellington" data-category-slug="services" data-page-slug="accountants" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Aurora Financials" class="business-image" loading="lazy">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-star"></i> 4.7 (180 reviews)</div>
+                <h3>Aurora Financials</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Lambton Quay</div>
+                <p class="text-muted">Prominent Wellington accounting firm focusing on business growth strategy. Expertise across multiple industries with comprehensive financial planning and advisory services.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Lambton Quay, Wellington</span>
+                    <div class="business-contact-links"><a href="https://www.aurorafinancials.com/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-233-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    
+
         <section class="seo-section seo-section--faq" id="faqs">
             <div class="container">
                 <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
                 <div class="seo-faq-grid">
-                    
+
                         <details class="seo-faq-item">
                             <summary>How much does an accountant cost in Wellington?</summary>
                             <p>Wellington accountant fees range from $150–$280 per hour for individual tax returns, $1,200–$4,500+ for annual business accounts, and $180–$380 per hour for advisory work. Many firms offer fixed-fee packages for standard compliance services.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>What should I look for in a Wellington accountant?</summary>
                             <p>Look for Chartered Accountant (CA) status, experience with your industry (especially if government-related), Xero or MYOB certification, proactive communication, and strong Google reviews. A good Wellington accountant should understand the capital's unique business environment.</p>
                         </details>
-                    
+
                         <details class="seo-faq-item">
                             <summary>Do I need a local Wellington accountant?</summary>
                             <p>While accountants can work remotely, a local Wellington practice offers face-to-face meetings, understanding of regional business conditions, and local network connections that can benefit your business. This is especially valuable for Wellington's government contracting sector.</p>
                         </details>
-                    
+
                 </div>
             </div>
         </section>
-    
+
     <section class="container section internal-link-section" aria-labelledby="internal-link-title">
         <div class="related-section internal-link-panel">
             <div class="internal-link-header">
@@ -161,7 +338,7 @@
                 <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
             </div>
             <div class="related-grid internal-link-grid">
-                
+
         <a href="/cities/wellington/services/" class="related-card internal-link-card">
             <i class="fas fa-table-cells-large"></i>
             <div>
@@ -224,9 +401,9 @@
     <section class="container section">
         <div id="related"></div>
     </section>
-    
-    <script id="schema" type="application/ld+json"></script>
-    
+
+
+
   </main>
 
   <!-- Footer Placeholder -->
