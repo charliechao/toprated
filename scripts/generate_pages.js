@@ -8,9 +8,12 @@ const businesses = JSON.parse(fs.readFileSync('data/businesses.json', 'utf8'));
 const cities = JSON.parse(fs.readFileSync('data/cities.json', 'utf8'));
 const industries = JSON.parse(fs.readFileSync('data/industries.json', 'utf8'));
 const seoContent = fs.existsSync('data/seo_content.json') ? JSON.parse(fs.readFileSync('data/seo_content.json', 'utf8')) : {};
+const leafContentProfiles = JSON.parse(fs.readFileSync('data/leaf_content_profiles.json', 'utf8'));
 const templatePath = path.resolve(__dirname, '..', 'templates', 'template-page.html');
 const baseTemplate = fs.readFileSync(templatePath, 'utf8');
 const BASE_URL = 'https://toprated.nz';
+const CONTENT_UPDATED_LABEL = 'July 2026';
+const CONTENT_UPDATED_ISO = '2026-07-28';
 
 // Hero Images Mapping
 const cityHeros = {
@@ -100,6 +103,61 @@ const categoryHubConfigs = {
             'renovation-services': 'project coordination for kitchens, bathrooms, and wider upgrades',
             'painters': 'interior, exterior, presentation, and repaint work'
         }
+    },
+    automotive: {
+        heroLabel: 'Automotive',
+        descriptionPrefix: 'Compare local automotive businesses',
+        browseLabel: 'Automotive Categories',
+        subCategories: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
+        subCategoryDescriptions: {
+            'mechanics': 'servicing, WoF repairs, diagnostics, brakes, and general mechanical work',
+            'car-dealers': 'new and used vehicles, trade-ins, finance, and after-sales support',
+            'tyre-shops': 'tyre replacement, puncture repair, wheel alignment, and fitment advice',
+            'panel-beaters': 'collision repair, panel work, paint matching, and insurance repairs',
+            'car-wash': 'hand washing, detailing, interior cleaning, and paint-care services'
+        },
+        intro: 'Use this hub to move from a broad automotive search into the exact type of workshop, retailer, or vehicle-care business you need.',
+        cityContextType: 'service',
+        compareIntro: 'Automotive decisions are easier when you separate urgent repairs, planned maintenance, vehicle purchases, tyres, body repairs, and cosmetic care.',
+        comparisonPoints: 'Compare relevant experience, diagnostic or inspection process, written scope, warranties, timing, parts or product choices, and the full expected cost.',
+        caution: 'For repair work, ask what has been confirmed, what is still diagnostic, and whether approval is required before extra work begins.'
+    },
+    cuisine: {
+        heroLabel: 'Cuisine',
+        descriptionPrefix: 'Compare local restaurants and cafes',
+        browseLabel: 'Cuisine Categories',
+        subCategories: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants', 'italian-restaurants', 'thai-restaurants', 'french-restaurants'],
+        subCategoryDescriptions: {
+            'restaurants': 'all-round dining choices for different budgets, groups, and occasions',
+            'cafes': 'coffee, brunch, cabinet food, casual meetings, and local daytime dining',
+            'japanese-restaurants': 'sushi, sashimi, ramen, izakaya dishes, and Japanese dining',
+            'chinese-restaurants': 'regional Chinese dishes, shared meals, dumplings, and banquets',
+            'indian-restaurants': 'curries, tandoor dishes, vegetarian choices, and regional Indian food',
+            'italian-restaurants': 'pasta, pizza, regional dishes, wine, and occasion dining',
+            'thai-restaurants': 'curries, stir-fries, noodles, spice choices, and shared meals',
+            'french-restaurants': 'bistro classics, tasting menus, wine, and special-occasion dining'
+        },
+        intro: 'Use this hub to choose the dining style that matches your occasion, budget, location, dietary needs, and preferred atmosphere.',
+        cityContextType: 'venue',
+        compareIntro: 'A useful dining shortlist starts with the occasion: quick coffee, casual meal, group booking, business dinner, or a special night out.',
+        comparisonPoints: 'Compare menu fit, price range, location, opening hours, booking requirements, dietary options, atmosphere, and recent customer feedback.',
+        caution: 'Menus, hours, availability, and surcharges can change, so confirm time-sensitive details directly before travelling or booking.'
+    },
+    hospitality: {
+        heroLabel: 'Hospitality',
+        descriptionPrefix: 'Compare local hotels, bars, and nightclubs',
+        browseLabel: 'Hospitality Categories',
+        subCategories: ['hotels', 'bars', 'nightclubs'],
+        subCategoryDescriptions: {
+            'hotels': 'accommodation, facilities, location, parking, and booking conditions',
+            'bars': 'drinks, food, atmosphere, group bookings, and evening venues',
+            'nightclubs': 'music, late-night entertainment, entry policies, and event nights'
+        },
+        intro: 'Use this hub to compare accommodation and nightlife pages according to the experience, location, budget, and timing you have in mind.',
+        cityContextType: 'venue',
+        compareIntro: 'Hotels, bars, and nightclubs solve very different needs, so begin with the experience you want rather than a general popularity claim.',
+        comparisonPoints: 'Compare location, current opening or check-in times, facilities, atmosphere, accessibility, booking or entry conditions, total cost, and recent feedback.',
+        caution: 'Event schedules, entry rules, room availability, pricing, and operating hours can change; check the venue’s current information before making plans.'
     }
 };
 
@@ -289,6 +347,149 @@ function getLeafMetaDescription(city, pageName, specificSeo = null) {
     return `Compare ${pageName.toLowerCase()} in ${city.name}. Read reviews, check local fit, and shortlist the best ${pageName.toLowerCase()} for your next decision.`;
 }
 
+function stripHtml(value = '') {
+    return String(value)
+        .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+        .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&[a-z0-9#]+;/gi, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function countWords(value = '') {
+    return (stripHtml(value).match(/[\p{L}\p{N}][\p{L}\p{N}'’&-]*/gu) || []).length;
+}
+
+function getSeoSourceDepth(specificSeo = null) {
+    if (!specificSeo) return 0;
+
+    return countWords([
+        specificSeo.introText,
+        specificSeo.buyersGuide?.content,
+        specificSeo.pricingGuide?.content,
+        ...(specificSeo.questionsToAsk || []),
+        ...(specificSeo.faqs || []).flatMap(faq => [faq.question, faq.answer])
+    ].filter(Boolean).join(' '));
+}
+
+function getLeafProfile(categorySlug, pageSlug) {
+    const profile = leafContentProfiles.categories[pageSlug];
+    if (profile) return profile;
+
+    const categoryName = getCategoryName(categorySlug).toLowerCase();
+    return {
+        summary: `These ${categoryName} providers differ in service scope, local experience, availability, communication, pricing, and the evidence they provide before a customer commits.`,
+        bestFor: 'comparing service fit, local coverage, process, and total value',
+        criteria: [
+            { name: 'Relevant experience', advice: 'Ask for evidence of recent work or customers with needs similar to yours.' },
+            { name: 'Scope and process', advice: 'Compare what is included, who handles the work, timing, communication, and what could change.' },
+            { name: 'Price and terms', advice: 'Review the full cost, exclusions, payment timing, cancellation, warranties, and support after the work.' }
+        ]
+    };
+}
+
+function getLeafAreaSummary(city, pageBusinesses) {
+    const areas = [...new Set(pageBusinesses
+        .map(business => business.neighborhood)
+        .filter(Boolean))]
+        .slice(0, 5);
+
+    if (areas.length === 0) {
+        return 'The listing cards show the current addresses held in the TopRated directory; confirm exact coverage or travel requirements directly with each business.';
+    }
+
+    const areaText = areas.length === 1
+        ? areas[0]
+        : `${areas.slice(0, -1).join(', ')} and ${areas[areas.length - 1]}`;
+    return `Current listing locations include ${areaText}. Location does not always equal service coverage, so confirm whether the business serves your exact address.`;
+}
+
+function buildGeneratedLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses) {
+    const profile = getLeafProfile(categorySlug, pageSlug);
+    const providerLabel = pageName.toLowerCase();
+    const businessCount = pageBusinesses.length;
+    const venueCategory = categorySlug === 'cuisine' || categorySlug === 'hospitality';
+    const localContext = leafContentProfiles.cities[city.slug]?.[venueCategory ? 'venue' : 'service']
+        || cityProfiles[city.slug]?.marketLine
+        || '';
+    const areaSummary = getLeafAreaSummary(city, pageBusinesses);
+    const criterionNames = profile.criteria.map(criterion => criterion.name.toLowerCase());
+    const criteriaSummary = criterionNames.length > 1
+        ? `${criterionNames.slice(0, -1).join(', ')}, and ${criterionNames[criterionNames.length - 1]}`
+        : criterionNames[0];
+    const practicalQuestion = venueCategory
+        ? 'What should I know about bookings, current availability, changes, and any extra charges?'
+        : 'What is included in your quote or fee, what is excluded, and what could change the final cost?';
+    const verificationDetails = venueCategory
+        ? 'availability, pricing, menus or facilities, and booking terms'
+        : 'availability, pricing, qualifications, and terms';
+    const choiceLabel = venueCategory ? 'option' : 'provider';
+    const criterionQuestion = criterion => venueCategory
+        ? `How should I compare ${criterion.name.toLowerCase()}, and what should I know before booking or visiting?`
+        : `How do you handle ${criterion.name.toLowerCase()}, and what should I expect before I commit?`;
+
+    return {
+        metaDescription: `Compare ${businessCount} ${providerLabel} in ${city.name}. Check services, local fit, decision criteria, questions to ask, and current business details.`,
+        introText: `This guide compares ${businessCount} ${providerLabel} in ${city.name}. ${profile.summary} ${localContext} Use the current listings and decision guide below to build a shortlist, then verify ${verificationDetails} directly with the business before committing.`,
+        lastUpdated: CONTENT_UPDATED_LABEL,
+        author: 'TopRated Editorial Team',
+        snapshot: {
+            title: `${pageName} in ${city.name}: Quick Answer`,
+            answer: `The best choice depends on the outcome you need, the current information each business provides, and whether its location, availability, process, and terms fit your situation. This page is designed for ${profile.bestFor}.`,
+            rows: [
+                { label: 'Businesses compared', value: `${businessCount} current TopRated listings` },
+                { label: 'Main decision', value: profile.bestFor },
+                { label: 'Location context', value: areaSummary }
+            ]
+        },
+        buyersGuide: {
+            title: `How to Choose ${pageName} in ${city.name}`,
+            content: `<p><strong>Start with fit, not the first name in the list.</strong> ${profile.summary} Write down the result you need, your timing, location, constraints, and the questions that would change your decision. That makes it easier to compare businesses on the same basis.</p><p>${localContext} Shortlist two or three plausible options, check their current information, and ask for comparable answers before choosing. A strong ${choiceLabel} should explain what is included, what is uncertain, and what you need to do next without relying on vague claims.</p>`
+        },
+        comparisonGuide: {
+            title: 'What to Compare Before Choosing',
+            intro: `Compare ${criteriaSummary} before you decide. These checks are more useful than choosing from a headline rating, a single price, or a broad promise alone.`,
+            rows: profile.criteria
+        },
+        questionsToAsk: [
+            ...profile.criteria.map(criterionQuestion),
+            practicalQuestion
+        ],
+        faqs: [
+            {
+                question: `What should I compare when choosing ${providerLabel} in ${city.name}?`,
+                answer: `Start with ${criteriaSummary}. Then compare location or service coverage, availability, communication, full costs, exclusions, and the evidence each business provides for its claims.`
+            },
+            {
+                question: `How many ${providerLabel} are compared on this page?`,
+                answer: `This page currently compares ${businessCount} TopRated listings in ${city.name}. ${areaSummary}`
+            },
+            {
+                question: `How current is this ${city.name} comparison?`,
+                answer: `The page was updated in ${CONTENT_UPDATED_LABEL} from the current TopRated directory records. Business services, staff, prices, hours, and availability can change, so use each business's own contact details as the final check.`
+            }
+        ]
+    };
+}
+
+function resolveLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses, specificSeo = null) {
+    const generated = buildGeneratedLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses);
+    const sourceDepth = getSeoSourceDepth(specificSeo);
+
+    return {
+        ...generated,
+        ...(specificSeo || {}),
+        lastUpdated: CONTENT_UPDATED_LABEL,
+        author: specificSeo?.author || generated.author,
+        snapshot: generated.snapshot,
+        buyersGuide: specificSeo?.buyersGuide || generated.buyersGuide,
+        comparisonGuide: specificSeo?.comparisonGuide || (sourceDepth < 420 ? generated.comparisonGuide : null),
+        questionsToAsk: specificSeo?.questionsToAsk?.length ? specificSeo.questionsToAsk : generated.questionsToAsk,
+        faqs: specificSeo?.faqs?.length ? specificSeo.faqs : generated.faqs
+    };
+}
+
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
         services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents'],
@@ -424,12 +625,21 @@ function buildTrustBox(author) {
     </aside>`;
 }
 
-function buildHubSchema(title, description, faqs = []) {
+function buildHubSchema(title, description, faqs = [], pagePath = '/') {
+    const pageUrl = toAbsoluteUrl(pagePath);
     const graph = [
         {
             "@type": "CollectionPage",
+            "@id": `${pageUrl}#webpage`,
+            "url": pageUrl,
             "name": title,
-            "description": description
+            "description": description,
+            "dateModified": CONTENT_UPDATED_ISO,
+            "author": {
+                "@type": "Organization",
+                "name": "TopRated NZ",
+                "url": BASE_URL
+            }
         }
     ];
 
@@ -469,7 +679,7 @@ function buildFaqSchema(faqs = []) {
     };
 }
 
-function buildLeafSchema(city, categorySlug, pageSlug, pageName, pageBusinesses, faqs = []) {
+function buildLeafSchema(city, categorySlug, pageSlug, pageName, pageBusinesses, leafSeo = null) {
     const pageUrl = toAbsoluteUrl(`/cities/${city.slug}/${categorySlug}/${pageSlug}`);
     const itemList = {
         "@type": "ItemList",
@@ -511,7 +721,22 @@ function buildLeafSchema(city, categorySlug, pageSlug, pageName, pageBusinesses,
             { "@type": "ListItem", "position": 4, "name": pageName, "item": pageUrl }
         ]
     };
-    const graph = [itemList, breadcrumbList];
+    const collectionPage = {
+        "@type": "CollectionPage",
+        "@id": `${pageUrl}#webpage`,
+        "url": pageUrl,
+        "name": `${pageName} in ${city.name}`,
+        "description": leafSeo?.metaDescription,
+        "dateModified": CONTENT_UPDATED_ISO,
+        "mainEntity": { "@id": `${pageUrl}#business-list` },
+        "author": {
+            "@type": "Organization",
+            "name": "TopRated NZ",
+            "url": BASE_URL
+        }
+    };
+    const graph = [collectionPage, itemList, breadcrumbList];
+    const faqs = leafSeo?.faqs || [];
 
     if (faqs.length > 0) {
         graph.push({
@@ -592,6 +817,70 @@ function getCategoryHubSeo(city, categorySlug) {
     const availableSubcategories = getAvailableSubcategories(city.slug, categorySlug, config.subCategories);
     const linkList = buildHubLinkList(city.slug, categorySlug, availableSubcategories, config.subCategoryDescriptions);
 
+    if (!['services', 'trades'].includes(categorySlug)) {
+        const titleByCategory = {
+            automotive: `Best Automotive Businesses in ${city.name} | TopRated NZ`,
+            cuisine: `Best Restaurants & Cafes in ${city.name} | TopRated NZ`,
+            hospitality: `Best Hotels, Bars & Nightlife in ${city.name} | TopRated NZ`
+        };
+        const metaByCategory = {
+            automotive: `Compare mechanics, car dealers, tyre shops, panel beaters, and car washes in ${city.name}. Browse focused local automotive guides.`,
+            cuisine: `Compare restaurants and cafes in ${city.name} by dining style, occasion, location, and practical fit. Browse focused local food guides.`,
+            hospitality: `Compare hotels, bars, and nightclubs in ${city.name}. Browse local accommodation and nightlife guides for your plans and budget.`
+        };
+        const localContext = leafContentProfiles.cities[city.slug]?.[config.cityContextType]
+            || profile.marketLine;
+        const categoryLabel = config.heroLabel.toLowerCase();
+
+        return {
+            pageTitle: titleByCategory[categorySlug],
+            metaDescription: metaByCategory[categorySlug],
+            heroTitle: `${config.heroLabel} <br><span class="text-primary">in ${city.name}</span>`,
+            heroSubtitle: `${config.descriptionPrefix} in ${city.name}.`,
+            introText: `This ${city.name} ${categoryLabel} hub connects ${availableSubcategories.length} focused comparison guides. ${config.intro} ${localContext}`,
+            lastUpdated: CONTENT_UPDATED_LABEL,
+            author: 'TopRated Editorial Team',
+            sections: [
+                {
+                    id: `${categorySlug}-categories`,
+                    title: `${config.browseLabel} in ${city.name}`,
+                    icon: categorySlug === 'automotive' ? 'fa-car' : 'fa-map-location-dot',
+                    content: `<p>Choose the closest category first. Each link opens a dedicated ${city.name} page with current directory listings, a direct comparison summary, decision criteria, and practical questions.</p>${linkList}`
+                },
+                {
+                    id: 'how-to-compare',
+                    title: `How to Compare ${config.heroLabel} Options`,
+                    icon: 'fa-scale-balanced',
+                    content: `<p>${config.compareIntro}</p><p>${config.comparisonPoints}</p><p>${config.caution}</p>`
+                },
+                {
+                    id: 'local-context',
+                    title: `What Matters in ${city.name}`,
+                    icon: 'fa-location-dot',
+                    content: `<p>${localContext}</p><p>Use the category pages to create a shortlist, then check the details that can change: current availability, location or coverage, pricing, opening hours, inclusions, and booking or service terms. The directory is a starting point for comparison, while the business remains the final source for time-sensitive details.</p>`
+                }
+            ],
+            faqs: [
+                {
+                    question: `What does the ${city.name} ${categoryLabel} hub cover?`,
+                    answer: `It links to ${availableSubcategories.length} focused local guides: ${availableSubcategories.map(formatSlugLabel).join(', ')}. Each guide is designed around a more specific customer decision than the broad hub page.`
+                },
+                {
+                    question: `Where should I start comparing ${categoryLabel} options?`,
+                    answer: `Start with the category that most closely matches what you need, then compare two or three plausible listings on the same criteria. Check current details directly before making a booking, purchase, or service decision.`
+                },
+                {
+                    question: `Are the listings on this page current?`,
+                    answer: `The hub and its category links were reviewed in ${CONTENT_UPDATED_LABEL}. Business availability, services, menus, stock, hours, pricing, and terms can change, so confirm time-sensitive details with the business.`
+                },
+                {
+                    question: `How does TopRated organise these ${city.name} guides?`,
+                    answer: `TopRated groups businesses by city and customer need, then links the broad hub to dedicated category pages. This makes it easier to move from exploration to a practical local shortlist.`
+                }
+            ]
+        };
+    }
+
     if (categorySlug === 'services') {
         return {
             pageTitle: `Best Services in ${city.name} | TopRated NZ`,
@@ -631,8 +920,8 @@ function getCategoryHubSeo(city, categorySlug) {
                     answer: `Start with the category closest to the actual decision you need to make. If the issue affects money, tax, legal risk, or property, go to the most specific leaf page rather than staying on the hub.`
                 },
                 {
-                    question: `Why are service hub pages useful for SEO and GEO?`,
-                    answer: `They create a clear category summary page with internal links into the most important local service pages, which makes the site easier for both users and search systems to understand.`
+                    question: `How does this hub make service research easier?`,
+                    answer: `It groups the main ${city.name} service decisions in one place and links to focused local comparisons, so you can move from a broad need to a practical shortlist without searching unrelated categories.`
                 },
                 {
                     question: `Should I compare providers on price alone?`,
@@ -680,8 +969,8 @@ function getCategoryHubSeo(city, categorySlug) {
                 answer: `Start with the page that matches the actual job. If the work overlaps several trades, begin with the lead trade or the renovation-services page and work outward from there.`
             },
             {
-                question: `Why are trade hub pages useful for SEO and GEO?`,
-                answer: `They create a clearer internal-link structure into the main high-intent trade categories, which helps both users and search systems understand the city-level trade coverage.`
+                question: `How does this hub make trade research easier?`,
+                answer: `It groups the main ${city.name} trade categories and links to focused local comparisons, so you can start with the actual job and compare relevant businesses without searching unrelated categories.`
             },
             {
                 question: `Should I choose the cheapest trade quote?`,
@@ -696,7 +985,9 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
     let tocItems = [];
     if (specificSeo) {
         if (specificSeo.introText) tocItems.push({ id: 'overview', label: 'Overview' });
+        if (specificSeo.snapshot) tocItems.push({ id: 'quick-answer', label: 'Quick Answer' });
         if (specificSeo.buyersGuide) tocItems.push({ id: 'buyers-guide', label: specificSeo.buyersGuide.title || 'How to Choose' });
+        if (specificSeo.comparisonGuide) tocItems.push({ id: 'comparison-guide', label: 'What to Compare' });
         if (specificSeo.pricingGuide) tocItems.push({ id: 'pricing-guide', label: specificSeo.pricingGuide.title || 'Pricing Guide' });
         if (specificSeo.questionsToAsk) tocItems.push({ id: 'questions-to-ask', label: 'Questions to Ask' });
         tocItems.push({ id: 'top-rated-listings', label: 'Top-Rated Listings' });
@@ -729,6 +1020,24 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
             </section>`;
         }
 
+        // Direct answer and page-specific facts
+        if (specificSeo.snapshot) {
+            editorialContent += `
+            <section class="seo-section seo-section--snapshot" id="quick-answer">
+                <div class="container">
+                    <h2><i class="fas fa-bolt"></i> ${specificSeo.snapshot.title}</h2>
+                    <p class="seo-quick-answer"><strong>Quick answer:</strong> ${specificSeo.snapshot.answer}</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table seo-fact-table">
+                            <tbody>
+                                ${specificSeo.snapshot.rows.map(row => `<tr><th scope="row">${row.label}</th><td>${row.value}</td></tr>`).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>`;
+        }
+
         // Buyer's Guide
         if (specificSeo.buyersGuide) {
             editorialContent += `
@@ -736,6 +1045,25 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
                 <div class="container">
                     <h2><i class="fas fa-clipboard-check"></i> ${specificSeo.buyersGuide.title}</h2>
                     <div class="seo-guide-content">${specificSeo.buyersGuide.content}</div>
+                </div>
+            </section>`;
+        }
+
+        // Comparison criteria
+        if (specificSeo.comparisonGuide) {
+            editorialContent += `
+            <section class="seo-section seo-section--comparison" id="comparison-guide">
+                <div class="container">
+                    <h2><i class="fas fa-scale-balanced"></i> ${specificSeo.comparisonGuide.title}</h2>
+                    <p>${specificSeo.comparisonGuide.intro}</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table">
+                            <thead><tr><th>Comparison point</th><th>What to check</th></tr></thead>
+                            <tbody>
+                                ${specificSeo.comparisonGuide.rows.map(row => `<tr><td><strong>${row.name}</strong></td><td>${row.advice}</td></tr>`).join('')}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>`;
         }
@@ -807,7 +1135,7 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
                     <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
                     <div class="seo-trust-text">
                         <strong>Why Trust TopRated?</strong>
-                        <p>Our listings are independently curated based on verified Google reviews, industry certifications, and local expertise. We are not pay-to-play — every recommendation is earned. <a href="/about.html">Learn about our methodology →</a></p>
+                        <p>TopRated combines editorial research, public business information, and clearly labelled owner-supplied profiles. Featured placements are labelled. Business details can change, so verify current pricing, availability, qualifications, and terms directly before deciding. <a href="/about.html">Learn how TopRated works →</a></p>
                         ${specificSeo.author ? `<p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: ${specificSeo.author}</p>` : ''}
                     </div>
                 </div>
@@ -839,7 +1167,7 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auck
         <div id="related"></div>
     </section>
     ${trustHtml}
-    ${Array.isArray(pageBusinesses) ? '' : '<script id="schema" type="application/ld+json"></script>'}
+    ${Array.isArray(pageBusinesses) ? '' : '<script id="schema" type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Nationwide businesses in New Zealand","itemListElement":[]}</script>'}
     `.replace(/^[ \t]+$/gm, '');
 }
 
@@ -936,7 +1264,7 @@ function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null, lin
     ${buildInternalLinkSection(linkContext)}
     ${faqHtml}
     ${trustHtml}
-    `;
+    `.replace(/^[ \t]+$/gm, '');
 }
 
 // ---------------------------------------------------
@@ -964,7 +1292,7 @@ cities.forEach(city => {
         hubSeo.metaDescription,
         `/cities/${city.slug}`,
         generateHubContent(hubSeo.heroTitle, hubSeo.heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo, { type: 'city', city }),
-        buildHubSchema(hubSeo.pageTitle, hubSeo.metaDescription, hubSeo.faqs)
+        buildHubSchema(hubSeo.pageTitle, hubSeo.metaDescription, hubSeo.faqs, `/cities/${city.slug}`)
     );
     fs.writeFileSync(`cities/${city.slug}.html`, html);
 });
@@ -992,7 +1320,7 @@ cities.forEach(city => {
             metaDescription,
             `/cities/${city.slug}/${cat}/`,
             generateHubContent(heroTitle, heroSubtitle, cityHeros[city.slug] || cityHeros['auckland'], hubSeo, { type: 'category', city, categorySlug: cat }),
-            buildHubSchema(pageTitle, metaDescription, hubSeo?.faqs || [])
+            buildHubSchema(pageTitle, metaDescription, hubSeo?.faqs || [], `/cities/${city.slug}/${cat}/`)
         );
         fs.writeFileSync(path.join(dir, 'index.html'), html);
     });
@@ -1057,17 +1385,17 @@ cities.forEach(city => {
             }
 
             const pageKey = `${city.slug}/${map.cat}/${sc}`;
-            const specificSeo = seoContent[pageKey] || null;
+            const pageBusinesses = getLeafBusinesses(city.slug, map.cat, sc);
+            const specificSeo = resolveLeafSeo(city, map.cat, sc, map.name, pageBusinesses, seoContent[pageKey] || null);
             const pageTitle = getLeafPageTitle(city, map.name, specificSeo);
             const metaDescription = getLeafMetaDescription(city, map.name, specificSeo);
-            const pageBusinesses = getLeafBusinesses(city.slug, map.cat, sc);
 
             const html = getBaseTemplate(
                 pageTitle,
                 metaDescription,
                 `/cities/${city.slug}/${map.cat}/${sc}`,
                 generateLeafContent(`${map.name} <br><span class="text-primary">in ${city.name}</span>`, specificSeo, cityHeros[city.slug] || cityHeros['auckland'], { type: 'leaf', city, categorySlug: map.cat, pageSlug: sc, pageName: map.name }, pageBusinesses),
-                buildLeafSchema(city, map.cat, sc, map.name, pageBusinesses, specificSeo?.faqs || [])
+                buildLeafSchema(city, map.cat, sc, map.name, pageBusinesses, specificSeo)
             );
             fs.writeFileSync(pagePath, html);
         });

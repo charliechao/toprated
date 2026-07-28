@@ -1,0 +1,377 @@
+{
+  "cities": {
+    "auckland": {
+      "venue": "Auckland's size makes location, travel time, parking, and booking availability practical parts of the decision.",
+      "service": "Because Auckland is spread across a wide urban area, confirm suburb coverage, travel charges, response times, and whether the provider regularly works in your part of the city."
+    },
+    "wellington": {
+      "venue": "In Wellington, the choice often comes down to CBD convenience, suburb location, transport, and whether the venue suits the weather and occasion.",
+      "service": "Wellington's hills, weather exposure, access constraints, and older building stock can affect many property and mobile services, so local experience and clear scoping matter."
+    },
+    "christchurch": {
+      "venue": "Christchurch options are spread between the central city and suburban centres, making location, parking, travel time, and opening hours worth checking.",
+      "service": "Greater Christchurch coverage can extend well beyond the central city, so confirm service boundaries, call-out costs, scheduling, and experience with the type of property or project involved."
+    },
+    "hamilton": {
+      "venue": "Hamilton choices often serve both city residents and visitors from the wider Waikato, so location, parking, timing, and advance booking can affect the best fit.",
+      "service": "Some Hamilton providers also cover the wider Waikato while others stay within the city, so confirm travel boundaries, response times, and any regional call-out costs."
+    },
+    "tauranga": {
+      "venue": "Tauranga, Mount Maunganui, and Papamoa create distinct location and travel considerations, especially at busy times and during summer.",
+      "service": "Coverage can vary across Tauranga, Mount Maunganui, Papamoa, and the wider Bay of Plenty, so check service areas, travel charges, and realistic scheduling before committing."
+    }
+  },
+  "categories": {
+    "restaurants": {
+      "summary": "Restaurants can differ significantly in cuisine, service style, dietary support, atmosphere, price, and suitability for groups or special occasions.",
+      "bestFor": "comparing dining style, occasion, location, and booking needs",
+      "criteria": [
+        { "name": "Dining style", "advice": "Match the menu and service format to the occasion, whether that is a quick meal, family dinner, group booking, or celebration." },
+        { "name": "Dietary fit", "advice": "Check current menus and contact the restaurant directly when allergies, vegetarian options, or other dietary requirements are important." },
+        { "name": "Booking details", "advice": "Compare opening days, reservation policies, group limits, deposits, and cancellation terms before making plans." }
+      ]
+    },
+    "japanese-restaurants": {
+      "summary": "Japanese restaurants may specialise in sushi, sashimi, ramen, yakitori, teppanyaki, izakaya dining, or modern Japanese tasting menus.",
+      "bestFor": "matching a specific Japanese dining style to budget and occasion",
+      "criteria": [
+        { "name": "Speciality", "advice": "Choose a venue whose main strength matches what you want rather than assuming every Japanese restaurant offers the same experience." },
+        { "name": "Freshness and preparation", "advice": "For raw seafood or chef-led menus, review current offerings and ask how dietary needs and ingredient availability are handled." },
+        { "name": "Service format", "advice": "Compare casual counter dining, table service, set menus, sharing plates, and booking requirements." }
+      ]
+    },
+    "chinese-restaurants": {
+      "summary": "Chinese restaurants can focus on Cantonese, Sichuan, northern Chinese, regional specialities, yum cha, seafood, noodles, or banquet dining.",
+      "bestFor": "choosing the right regional style, group format, and spice level",
+      "criteria": [
+        { "name": "Regional cuisine", "advice": "Look for the restaurant's stated regional focus because menus, flavours, cooking methods, and signature dishes vary widely." },
+        { "name": "Group suitability", "advice": "Check table sizes, banquet menus, yum cha timing, minimum spends, and reservation requirements for larger groups." },
+        { "name": "Dietary communication", "advice": "Ask directly about allergens, vegetarian preparation, and spice levels when these affect the meal." }
+      ]
+    },
+    "indian-restaurants": {
+      "summary": "Indian restaurants may emphasise northern or southern regional cooking, vegetarian menus, tandoor dishes, street food, curries, or contemporary tasting experiences.",
+      "bestFor": "comparing regional style, spice preference, dietary fit, and dining format",
+      "criteria": [
+        { "name": "Regional focus", "advice": "Compare the restaurant's stated style and signature dishes instead of treating Indian cuisine as one uniform menu." },
+        { "name": "Dietary options", "advice": "Confirm vegan, vegetarian, gluten-aware, and allergy requirements directly because recipes and kitchen practices vary." },
+        { "name": "Heat and flavour", "advice": "Ask whether spice levels can be adjusted without changing the intended balance of the dish." }
+      ]
+    },
+    "italian-restaurants": {
+      "summary": "Italian restaurants range from neighbourhood pizzerias and pasta bars to regional trattorias, wine-focused venues, and formal destination dining.",
+      "bestFor": "matching menu style, atmosphere, and price to the occasion",
+      "criteria": [
+        { "name": "Menu focus", "advice": "Decide whether pizza, handmade pasta, regional dishes, seafood, or a broader modern Italian menu is the priority." },
+        { "name": "Occasion and atmosphere", "advice": "Compare casual family dining, date-night ambience, group space, and special-occasion service." },
+        { "name": "Bookings and dietary needs", "advice": "Check reservations, set-menu requirements, and current gluten-free or vegetarian options before visiting." }
+      ]
+    },
+    "thai-restaurants": {
+      "summary": "Thai restaurants may focus on regional dishes, street-food classics, shared dining, modern presentations, takeaway convenience, or a broad family-style menu.",
+      "bestFor": "comparing flavour style, heat level, dietary support, and dining format",
+      "criteria": [
+        { "name": "Menu style", "advice": "Look for regional specialities and signature dishes that distinguish the restaurant from a generic takeaway menu." },
+        { "name": "Spice preference", "advice": "Ask how heat levels are handled and whether milder versions preserve the intended flavour balance." },
+        { "name": "Dietary handling", "advice": "Confirm fish sauce, shellfish, nuts, gluten, vegan, and vegetarian requirements directly with the restaurant." }
+      ]
+    },
+    "french-restaurants": {
+      "summary": "French dining can range from traditional bistros and brasseries to tasting menus, patisserie-led cafes, and New Zealand cuisine built on French technique.",
+      "bestFor": "choosing between casual bistro dining, a special occasion, and chef-led fine dining",
+      "criteria": [
+        { "name": "Dining format", "advice": "Compare a la carte, set-menu, tasting-menu, all-day bistro, and brasserie formats before booking." },
+        { "name": "Occasion", "advice": "Match service style, atmosphere, waterfront or city location, and expected meal length to the event." },
+        { "name": "Current menu", "advice": "Seasonal menus can change frequently, so confirm dishes, dietary support, pricing, and booking terms on the official website." }
+      ]
+    },
+    "cafes": {
+      "summary": "Cafes differ in coffee programme, breakfast and lunch menus, cabinet food, dietary options, seating, workspace suitability, and weekend demand.",
+      "bestFor": "comparing coffee, food, atmosphere, access, and timing",
+      "criteria": [
+        { "name": "Food and coffee", "advice": "Check whether the cafe's strengths match your priority, such as specialty coffee, brunch, quick takeaway, or cabinet food." },
+        { "name": "Space and access", "advice": "Compare seating, parking, accessibility, outdoor tables, and whether the venue suits children, meetings, or laptop work." },
+        { "name": "Peak-time practicality", "advice": "Weekend queues, kitchen closing times, and table policies can change the experience, so check before travelling." }
+      ]
+    },
+    "hotels": {
+      "summary": "Hotels vary by location, room type, parking, facilities, check-in flexibility, cancellation terms, and suitability for business, families, or events.",
+      "bestFor": "matching location and facilities to the purpose of the stay",
+      "criteria": [
+        { "name": "Location", "advice": "Compare the actual address with the places you need to reach, including transport, parking, and late-night access." },
+        { "name": "Room and facilities", "advice": "Check room configuration, accessibility, breakfast, workspace, laundry, gym, pool, and family requirements." },
+        { "name": "Booking conditions", "advice": "Review the final rate, payment timing, cancellation policy, deposits, and check-in or check-out limits." }
+      ]
+    },
+    "bars": {
+      "summary": "Bars can specialise in cocktails, wine, craft beer, live music, sports viewing, food, rooftop settings, or late-night social occasions.",
+      "bestFor": "matching drinks, atmosphere, group needs, and opening hours",
+      "criteria": [
+        { "name": "Atmosphere", "advice": "Choose between quiet conversation, live entertainment, sports, dancing, or a food-led experience." },
+        { "name": "Drinks and food", "advice": "Check the current drinks list, kitchen hours, non-alcoholic options, and any minimum spend for groups." },
+        { "name": "Entry and bookings", "advice": "Confirm age restrictions, dress expectations, event tickets, reservations, and late-night transport." }
+      ]
+    },
+    "nightclubs": {
+      "summary": "Nightclubs differ by music programme, crowd, entry policy, event schedule, closing time, security, and proximity to safe late-night transport.",
+      "bestFor": "comparing music, events, entry conditions, and late-night practicality",
+      "criteria": [
+        { "name": "Music and events", "advice": "Check the specific event and performer rather than relying on the venue's general genre description." },
+        { "name": "Entry conditions", "advice": "Confirm ticketing, door charges, age limits, identification, dress expectations, and re-entry rules." },
+        { "name": "Late-night planning", "advice": "Consider closing time, coat storage, group safety, transport, and where rideshare pickup is practical." }
+      ]
+    },
+    "builders": {
+      "summary": "Builders may specialise in new homes, renovations, extensions, structural work, repairs, project management, or a particular construction system.",
+      "bestFor": "matching proven project experience to scope, budget, and delivery risk",
+      "criteria": [
+        { "name": "Relevant experience", "advice": "Ask for recent examples that match the size, building type, complexity, and consent requirements of your project." },
+        { "name": "Scope and pricing", "advice": "Compare detailed inclusions, exclusions, allowances, variations, payment stages, and who coordinates subcontractors." },
+        { "name": "Licensing and process", "advice": "Verify the people doing restricted building work, insurance, contracts, communication, programme, and defect handling." }
+      ]
+    },
+    "electricians": {
+      "summary": "Electricians can cover urgent faults, rewiring, switchboards, lighting, heat pumps, EV charging, data work, and commercial maintenance.",
+      "bestFor": "matching registration, response time, and technical capability to the job",
+      "criteria": [
+        { "name": "Registration and certification", "advice": "Verify who will perform the work and what electrical certificate or record of work should be supplied." },
+        { "name": "Job capability", "advice": "Confirm experience with the exact system, building type, fault, upgrade, or installation required." },
+        { "name": "Call-out and scope", "advice": "Compare response time, minimum charges, materials, access assumptions, exclusions, and after-hours rates." }
+      ]
+    },
+    "plumbers": {
+      "summary": "Plumbers may handle leaks, hot water, blocked drains, bathrooms, gas work, maintenance, renovations, and urgent after-hours call-outs.",
+      "bestFor": "matching licensing, response time, equipment, and scope to the plumbing problem",
+      "criteria": [
+        { "name": "Trade capability", "advice": "Check whether the job needs a plumber, gasfitter, drainlayer, specialist equipment, or coordination with other trades." },
+        { "name": "Urgency and access", "advice": "Confirm response time, after-hours pricing, site access, isolation steps, and what information to provide before arrival." },
+        { "name": "Quote detail", "advice": "Compare labour, call-out charges, parts, investigation time, reinstatement, warranties, and likely variations." }
+      ]
+    },
+    "renovation-services": {
+      "summary": "Renovation companies can manage design, consenting, kitchens, bathrooms, extensions, interior work, trade coordination, and complete home upgrades.",
+      "bestFor": "comparing project leadership, design capability, scope control, and relevant renovation experience",
+      "criteria": [
+        { "name": "Delivery model", "advice": "Clarify whether the company provides design-and-build, construction only, project management, or selected trade packages." },
+        { "name": "Comparable projects", "advice": "Review recent work with a similar property type, budget, consent complexity, and level of finish." },
+        { "name": "Budget and variations", "advice": "Compare allowances, exclusions, decision deadlines, change control, payment stages, and how hidden conditions are handled." }
+      ]
+    },
+    "painters": {
+      "summary": "Painters may specialise in interiors, exteriors, roofs, commercial work, heritage surfaces, preparation, repairs, spraying, or decorative finishes.",
+      "bestFor": "comparing preparation standards, coating systems, access, and finish expectations",
+      "criteria": [
+        { "name": "Surface preparation", "advice": "Ask exactly how washing, sanding, filling, repairs, priming, masking, and lead-paint risks will be managed." },
+        { "name": "Paint system", "advice": "Compare specified products, number of coats, colour process, finish level, and suitability for the surface and exposure." },
+        { "name": "Site management", "advice": "Confirm access equipment, protection, cleanup, weather planning, programme, warranty, and what is excluded." }
+      ]
+    },
+    "mechanics": {
+      "summary": "Mechanics may provide scheduled servicing, WOF repairs, diagnostics, brakes, suspension, electrical work, tyres, transmission work, or marque-specific expertise.",
+      "bestFor": "matching workshop capability, diagnosis, communication, and parts policy to the vehicle",
+      "criteria": [
+        { "name": "Vehicle expertise", "advice": "Confirm experience with the make, model, age, fuel type, and specific fault or maintenance requirement." },
+        { "name": "Diagnostic process", "advice": "Ask how faults are tested, when approval is requested, and how diagnostic time is charged." },
+        { "name": "Estimate and parts", "advice": "Compare labour, genuine or aftermarket parts, warranties, priority repairs, courtesy transport, and completion timing." }
+      ]
+    },
+    "car-dealers": {
+      "summary": "Car dealers differ in vehicle mix, inspection standards, finance, trade-ins, warranties, after-sales support, and experience with imported or electric vehicles.",
+      "bestFor": "comparing vehicle condition, total cost, dealer obligations, and after-sales support",
+      "criteria": [
+        { "name": "Vehicle evidence", "advice": "Review history, ownership, odometer documentation, inspection results, service records, safety features, and any known damage." },
+        { "name": "Total purchase cost", "advice": "Compare on-road costs, finance, interest, fees, trade-in value, insurance add-ons, and warranty terms." },
+        { "name": "Independent checks", "advice": "Use a pre-purchase inspection and verify registration, money owing, Consumer Information Notice details, and charging needs for EVs." }
+      ]
+    },
+    "panel-beaters": {
+      "summary": "Panel beaters may handle insurance repairs, accident damage, paint matching, chassis alignment, rust, dent removal, and vehicle restoration.",
+      "bestFor": "matching repair capability, insurer process, equipment, and finish quality to the damage",
+      "criteria": [
+        { "name": "Repair capability", "advice": "Confirm experience with the vehicle construction, material, paint system, sensors, cameras, and structural work involved." },
+        { "name": "Insurance process", "advice": "Ask who handles assessment, insurer approval, supplements, excess, loan vehicles, and updates." },
+        { "name": "Finish and warranty", "advice": "Compare repair method, paint matching, calibration, quality checks, completion estimates, and workmanship warranty." }
+      ]
+    },
+    "car-wash": {
+      "summary": "Car-wash options range from automatic and self-service bays to hand washing, mobile valeting, interior cleaning, paint correction, and full detailing.",
+      "bestFor": "matching cleaning depth, paint safety, location, and time to the vehicle's condition",
+      "criteria": [
+        { "name": "Service depth", "advice": "Choose between a maintenance wash, interior clean, valet, decontamination, polish, correction, or protective coating." },
+        { "name": "Vehicle and paint care", "advice": "Ask about wash methods, products, drying, wheel treatment, delicate finishes, and how existing damage is recorded." },
+        { "name": "Time and access", "advice": "Compare booking, queue time, mobile requirements, water or power access, weather policy, and collection arrangements." }
+      ]
+    },
+    "tyre-shops": {
+      "summary": "Tyre shops can supply tyres, puncture repairs, balancing, wheel alignment, rotations, fleet service, and advice for EVs, 4WDs, and commercial vehicles.",
+      "bestFor": "matching tyre specification, safety, value, and fitting capability to the vehicle",
+      "criteria": [
+        { "name": "Correct specification", "advice": "Compare size, load and speed rating, vehicle use, manufacturer guidance, EV needs, and replacement-pair strategy." },
+        { "name": "Fitted price", "advice": "Check whether quotes include fitting, balancing, valves, disposal, alignment checks, GST, and warranty support." },
+        { "name": "Diagnosis and safety", "advice": "Ask about uneven wear, suspension issues, puncture repair limits, wheel damage, rotations, and alignment." }
+      ]
+    },
+    "cleaning-services": {
+      "summary": "Cleaning companies may focus on regular homes, offices, end-of-tenancy work, deep cleans, windows, carpets, construction cleanup, or specialised hygiene services.",
+      "bestFor": "matching scope, frequency, staffing, products, and quality control to the property",
+      "criteria": [
+        { "name": "Written scope", "advice": "Compare exactly which rooms, surfaces, tasks, products, equipment, and exclusions are included." },
+        { "name": "People and security", "advice": "Ask about employee screening, supervision, keys, alarms, insurance, access, and whether the same cleaners return." },
+        { "name": "Quality and pricing", "advice": "Confirm frequency, minimum hours, supplies, GST, issue resolution, cancellation terms, and how quality is checked." }
+      ]
+    },
+    "hypnotherapists": {
+      "summary": "Hypnotherapists may work with habits, anxiety, confidence, sleep, performance, pain support, or broader coaching approaches using different training backgrounds.",
+      "bestFor": "matching practitioner training, scope, approach, and expectations to the goal",
+      "criteria": [
+        { "name": "Training and scope", "advice": "Review relevant qualifications, professional memberships, continuing education, and whether the issue sits within the practitioner's scope." },
+        { "name": "Approach and expectations", "advice": "Ask how sessions work, what evidence or limitations are discussed, and how progress is reviewed without guaranteed outcomes." },
+        { "name": "Safety and referral", "advice": "Clarify confidentiality, informed consent, health considerations, and when the practitioner refers to a registered health professional." }
+      ]
+    },
+    "accountants": {
+      "summary": "Accountants can support tax compliance, annual accounts, GST, payroll, management reporting, cash flow, structures, succession, and business advice.",
+      "bestFor": "matching industry experience, service depth, communication, and systems to the business",
+      "criteria": [
+        { "name": "Relevant experience", "advice": "Ask about clients with a similar size, industry, structure, growth stage, and reporting needs." },
+        { "name": "Service model", "advice": "Compare compliance-only support with forecasting, management reporting, systems advice, meetings, and proactive planning." },
+        { "name": "Fees and responsiveness", "advice": "Clarify fixed or hourly fees, software costs, turnaround, contact people, response standards, and work outside scope." }
+      ]
+    },
+    "financial-advisers": {
+      "summary": "Financial advisers may focus on investments, retirement, insurance, cash flow, debt, estate considerations, or comprehensive financial planning.",
+      "bestFor": "matching licensed advice scope, investment philosophy, fees, and ongoing service to the goal",
+      "criteria": [
+        { "name": "Licensed scope", "advice": "Check the Financial Service Providers Register, the provider's disclosure, and whether the adviser can cover the advice you need." },
+        { "name": "Advice process", "advice": "Ask how goals, risk, alternatives, conflicts, product selection, records, and recommendations are documented." },
+        { "name": "Fees and ongoing service", "advice": "Compare fees, commissions, implementation costs, review frequency, reporting, and what happens when circumstances change." }
+      ]
+    },
+    "kiwisaver-advisers": {
+      "summary": "KiwiSaver advisers can help with fund choice, risk settings, contributions, first-home withdrawals, retirement planning, and understanding provider differences.",
+      "bestFor": "matching regulated advice, risk tolerance, fees, and contribution strategy to the member",
+      "criteria": [
+        { "name": "Advice scope", "advice": "Confirm whether the adviser compares multiple providers and how their licence, disclosure, and product relationships affect recommendations." },
+        { "name": "Risk and timeframe", "advice": "Check how goals, withdrawal timing, market risk, contribution rate, and capacity for loss are assessed." },
+        { "name": "Fees and follow-up", "advice": "Compare adviser fees, provider fees, commissions, review service, switching process, and ongoing communication." }
+      ]
+    },
+    "lawyers": {
+      "summary": "Law firms may specialise in property, commercial work, disputes, family matters, employment, trusts, estates, immigration, or criminal law.",
+      "bestFor": "matching legal expertise, conflict checks, communication, and fee structure to the matter",
+      "criteria": [
+        { "name": "Relevant expertise", "advice": "Ask who will handle the matter and what recent experience they have with similar facts, complexity, and urgency." },
+        { "name": "Strategy and communication", "advice": "Compare the proposed next steps, risks, realistic outcomes, response standards, and who makes day-to-day decisions." },
+        { "name": "Fees and scope", "advice": "Request a clear engagement letter covering estimates, retainers, disbursements, GST, exclusions, and how changes are approved." }
+      ]
+    },
+    "real-estate-agents": {
+      "summary": "Real-estate agents differ in local sales record, appraisal evidence, campaign strategy, buyer database, communication, fees, and auction or negotiation skill.",
+      "bestFor": "matching recent local evidence and campaign execution to the property",
+      "criteria": [
+        { "name": "Comparable sales", "advice": "Ask for recent nearby results involving a similar property type, price bracket, condition, and buyer audience." },
+        { "name": "Campaign plan", "advice": "Compare pricing method, preparation, photography, advertising, open homes, buyer follow-up, reporting, and negotiation." },
+        { "name": "Fees and agreement", "advice": "Review commission, marketing costs, agency term, cancellation, expenses, disclosures, and what happens if the property does not sell." }
+      ]
+    },
+    "insurance-brokers": {
+      "summary": "Insurance brokers may advise on business, liability, property, vehicle, marine, professional, cyber, life, or personal risk cover.",
+      "bestFor": "matching advice scope, insurer access, disclosure, and claims support to the risks involved",
+      "criteria": [
+        { "name": "Risk assessment", "advice": "Check how the broker identifies material risks, sums insured, exclusions, excesses, and gaps rather than comparing premium alone." },
+        { "name": "Market access and conflicts", "advice": "Ask which insurers are considered, how recommendations are made, and how commissions, fees, or relationships are disclosed." },
+        { "name": "Claims and review", "advice": "Compare claims advocacy, annual review, documentation, response times, and support when circumstances change." }
+      ]
+    },
+    "mortgage-brokers": {
+      "summary": "Mortgage brokers can help with first-home lending, refinancing, investment property, construction finance, self-employed applications, and loan restructuring.",
+      "bestFor": "matching lender access, borrower experience, structure advice, and process support to the application",
+      "criteria": [
+        { "name": "Borrower experience", "advice": "Choose a broker who regularly handles your situation, such as first-home, self-employed, investor, refinance, or construction lending." },
+        { "name": "Lender comparison", "advice": "Ask which lenders are considered, what is excluded, and how rate, fees, servicing policy, incentives, and approval risk are weighed." },
+        { "name": "Loan structure and support", "advice": "Compare advice on repayments, fixed terms, split loans, flexibility, documentation, deadlines, and help through settlement." }
+      ]
+    },
+    "business-loans": {
+      "summary": "Business-finance providers may offer overdrafts, term loans, asset finance, invoice funding, working capital, property-backed lending, or marketplace comparisons.",
+      "bestFor": "matching purpose, cash flow, security, total cost, and repayment structure to the business",
+      "criteria": [
+        { "name": "Funding fit", "advice": "Match the facility term and repayment pattern to the asset, working-capital need, project, or revenue cycle being funded." },
+        { "name": "Total cost", "advice": "Compare interest, establishment and broker fees, early repayment, default costs, personal guarantees, security, and GST treatment." },
+        { "name": "Process and risk", "advice": "Ask about required financials, approval timing, covenants, reporting, renewal risk, and the impact of missed repayments." }
+      ]
+    },
+    "creative-agencies": {
+      "summary": "Creative agencies may combine brand strategy, naming, design, websites, content, campaigns, video, digital products, and ongoing marketing support.",
+      "bestFor": "matching specialist capability, strategic thinking, delivery team, and commercial outcomes to the brief",
+      "criteria": [
+        { "name": "Relevant work", "advice": "Review case studies with comparable audience, complexity, channel mix, budget, and measurable business problem." },
+        { "name": "Team and process", "advice": "Clarify who leads strategy, design, development, content, production, project management, and day-to-day communication." },
+        { "name": "Scope and ownership", "advice": "Compare deliverables, rounds, timelines, dependencies, third-party costs, source files, intellectual property, and support after launch." }
+      ]
+    },
+    "broadband-providers": {
+      "summary": "Broadband providers differ by fibre or wireless availability, speed, congestion, data policy, router, support, contract, installation, and business features.",
+      "bestFor": "matching real address availability, performance, support, and contract terms to the household or business",
+      "criteria": [
+        { "name": "Address availability", "advice": "Check the exact address and technology because advertised plans may not be available or perform the same everywhere." },
+        { "name": "Performance needs", "advice": "Compare download and upload use, household size, video calls, gaming, cloud backups, Wi-Fi coverage, and peak-time expectations." },
+        { "name": "Terms and support", "advice": "Review installation, router ownership, contract length, notice, price changes, support hours, static IP, and outage handling." }
+      ]
+    },
+    "computer-repairs": {
+      "summary": "Computer-repair providers may handle diagnostics, hardware, operating systems, data recovery, malware, upgrades, custom PCs, networks, and on-site business support.",
+      "bestFor": "matching technical capability, data handling, turnaround, and repair economics to the device",
+      "criteria": [
+        { "name": "Diagnostic scope", "advice": "Explain the symptoms and ask how diagnosis is charged, what tests are run, and when repair approval is requested." },
+        { "name": "Data and privacy", "advice": "Confirm backup responsibility, access to personal data, security, password handling, data-recovery risk, and disposal." },
+        { "name": "Repair value", "advice": "Compare parts, labour, warranty, turnaround, loan options, data transfer, and whether replacement is more economical." }
+      ]
+    },
+    "travel-agencies": {
+      "summary": "Travel agencies may specialise in complex airfares, cruises, tours, corporate travel, groups, luxury trips, family holidays, or destination expertise.",
+      "bestFor": "matching itinerary complexity, destination knowledge, support, and booking terms to the trip",
+      "criteria": [
+        { "name": "Relevant expertise", "advice": "Choose an adviser with current experience in the destination, trip style, fare type, accessibility, or group needs involved." },
+        { "name": "Support model", "advice": "Ask who helps with changes, disruptions, emergencies, supplier problems, time zones, and travel while you are away." },
+        { "name": "Fees and conditions", "advice": "Compare planning or booking fees, markups, deposits, cancellation, supplier terms, insurance, and refund handling." }
+      ]
+    },
+    "movers": {
+      "summary": "Moving companies may provide local or intercity transport, packing, storage, office relocations, apartment access, fragile-item handling, and furniture delivery.",
+      "bestFor": "matching capacity, access planning, protection, timing, and liability terms to the move",
+      "criteria": [
+        { "name": "Detailed inventory", "advice": "Give an accurate item list, stairs, lifts, parking, access, heavy items, dismantling, packing, and storage requirements." },
+        { "name": "Quote structure", "advice": "Compare hourly or fixed pricing, travel, minimums, extra staff, materials, delays, waiting time, GST, and likely variations." },
+        { "name": "Protection and timing", "advice": "Ask about insurance or liability, blankets and wrapping, fragile items, arrival windows, cancellations, and damage claims." }
+      ]
+    },
+    "air-conditioning": {
+      "summary": "Air-conditioning and heat-pump providers may design, install, service, clean, diagnose, and repair residential or commercial systems.",
+      "bestFor": "matching system design, installer capability, efficiency, placement, and after-sales support to the building",
+      "criteria": [
+        { "name": "System design", "advice": "Ask how room size, insulation, sun, layout, airflow, noise, moisture, use pattern, and future needs affect sizing." },
+        { "name": "Installation scope", "advice": "Compare equipment, electrical work, drainage, pipe routes, penetrations, access, permits, commissioning, and cleanup." },
+        { "name": "Running cost and support", "advice": "Review efficiency, controls, filters, maintenance, parts, warranties, servicing, and who handles future faults." }
+      ]
+    },
+    "fitness-equipment": {
+      "summary": "Fitness-equipment suppliers may provide cardio machines, racks, weights, functional training gear, flooring, home gyms, commercial fit-outs, delivery, and servicing.",
+      "bestFor": "matching equipment quality, space, user needs, delivery, warranty, and maintenance to the setup",
+      "criteria": [
+        { "name": "Use and specification", "advice": "Match load rating, dimensions, adjustability, biomechanics, noise, power, floor strength, and user range to the intended use." },
+        { "name": "Space and delivery", "advice": "Measure access, stairs, doors, ceiling height, safety clearances, flooring, assembly, placement, and future relocation." },
+        { "name": "Support and value", "advice": "Compare warranty, parts, servicing, software subscriptions, installation, training, resale, and total ownership cost." }
+      ]
+    },
+    "gyms": {
+      "summary": "Gyms differ in equipment, classes, coaching, crowd levels, opening hours, parking, accessibility, culture, contract terms, and specialist training facilities.",
+      "bestFor": "matching facilities, support, location, schedule, and membership terms to a sustainable routine",
+      "criteria": [
+        { "name": "Training fit", "advice": "Check the equipment, classes, coaching, recovery areas, accessibility, and specialist facilities needed for your programme." },
+        { "name": "Practical routine", "advice": "Visit at the time you would train to assess travel, parking, crowding, cleanliness, safety, and staff availability." },
+        { "name": "Membership terms", "advice": "Compare joining fees, minimum term, notice, freezes, cancellation, class costs, guest access, and personal-training charges." }
+      ]
+    }
+  }
+}
