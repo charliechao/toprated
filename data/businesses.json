@@ -7171,20 +7171,6 @@
     "id": 374
   },
   {
-    "name": "HERMOSA CAR CARE",
-    "industry": "Car Care Products",
-    "city": "Auckland",
-    "description": "Hermosa Car Care is an Auckland online retailer for premium car care products, including interior care, leather conditioner, ceramic shampoo, and 10H graphene ceramic coating products for New Zealand car owners and detailers.",
-    "website": "https://hermosahq.co.nz",
-    "address": "23 Edwin Street, Mt Eden, Auckland 1024",
-    "image": "https://hermosahq.co.nz/cdn/shop/files/Hermosa_100ml_Sample_Dark-Photoroom-Photoroom.jpg?v=1756090026&width=1080",
-    "citySlug": "auckland",
-    "categorySlug": "automotive",
-    "pageSlug": "car-wash",
-    "neighborhood": "Mt Eden",
-    "id": 375
-  },
-  {
     "name": "Koru Therapies",
     "industry": "Hypnotherapists",
     "city": "Christchurch",
@@ -7198,21 +7184,6 @@
     "neighborhood": "Mt Pleasant",
     "phone": "0273320214",
     "id": 376
-  },
-  {
-    "name": "Urban Care Domestic Cleaning Wellington",
-    "industry": "Cleaning Services",
-    "city": "Wellington",
-    "description": "Urban Care provides domestic and commercial cleaning services for Wellington customers, including house cleaning, deep cleaning, end-of-tenancy cleaning, carpet cleaning, and office cleaning.",
-    "website": "https://urbancare.co.nz/domestic-cleaning-wellington/",
-    "address": "Wellington",
-    "image": "/img/generated/cleaning-services.png",
-    "citySlug": "wellington",
-    "categorySlug": "services",
-    "pageSlug": "cleaning-services",
-    "neighborhood": "Wellington",
-    "phone": "09 242 0740",
-    "id": 377
   },
   {
     "name": "Christchurch Hypnotherapy",
@@ -7275,21 +7246,6 @@
     "id": 381
   },
   {
-    "name": "Auckland Kiwi Movers",
-    "industry": "Movers",
-    "city": "Auckland",
-    "description": "Auckland Kiwi Movers provides residential and commercial moving services across Auckland, including packing, loading, transport, unpacking, office relocations, and furniture delivery.",
-    "website": "https://aucklandkiwimovers.co.nz/",
-    "address": "Auckland, New Zealand",
-    "image": "https://aucklandkiwimovers.co.nz/wp-content/uploads/2024/03/ab-01.jpg",
-    "citySlug": "auckland",
-    "categorySlug": "services",
-    "pageSlug": "movers",
-    "neighborhood": "Auckland",
-    "phone": "022 400 5991",
-    "id": 382
-  },
-  {
     "name": "Smart Express",
     "industry": "Movers",
     "city": "Auckland",
@@ -7348,21 +7304,6 @@
     "neighborhood": "Albany",
     "phone": "09 415 4222",
     "id": 386
-  },
-  {
-    "name": "Airperfection",
-    "industry": "Air Conditioning",
-    "city": "Auckland",
-    "description": "Airperfection provides commercial air conditioning services in Auckland, including AC installation, preventative maintenance, system upgrades, heat pump support, and air conditioner repairs for business and residential customers.",
-    "website": "https://airperfection.co.nz/services/ac-installation-and-repair-service-nz/",
-    "address": "Auckland, New Zealand",
-    "image": "https://airperfection.co.nz/wp-content/uploads/2024/06/top-notch-air-conditioning-solution.webp",
-    "citySlug": "auckland",
-    "categorySlug": "services",
-    "pageSlug": "air-conditioning",
-    "neighborhood": "Auckland",
-    "phone": "027 340 0693",
-    "id": 387
   },
   {
     "name": "Ideal Air",
@@ -7470,36 +7411,6 @@
       "IRD Compliance & Tax Support"
     ],
     "id": 393
-  },
-  {
-    "name": "Budget Car Sales (Manukau)",
-    "industry": "Car Dealers",
-    "city": "Auckland",
-    "description": "Budget Car Sales is a South Auckland used-car dealership in Manukau, offering a wide selection of used vehicles, online browsing, vehicle finance options, and test drives.",
-    "website": "https://www.budgetcarsales.co.nz/",
-    "address": "676 Great South Road, Manukau, Auckland",
-    "image": "https://www.budgetcarsales.co.nz/wp-content/uploads/2025/12/finance-aunty-kelly-listening-to-budget-car-sales-customer.jpg",
-    "citySlug": "auckland",
-    "categorySlug": "automotive",
-    "pageSlug": "car-dealers",
-    "neighborhood": "Manukau",
-    "phone": "09 263 1001",
-    "id": 394
-  },
-  {
-    "name": "Lee Warehouse",
-    "industry": "Fitness Equipment",
-    "city": "Auckland",
-    "description": "Lee Warehouse is an Auckland fitness-equipment retailer supplying weights, strength machines, cardio equipment, benches, flooring, and home-gym packages for customers across New Zealand.",
-    "website": "https://leewarehouse.co.nz/",
-    "address": "104 Central Park Drive, Henderson, Auckland",
-    "image": "https://leewarehouse.co.nz/wp-content/uploads/2024/05/Benchpress-lifestyle.webp",
-    "citySlug": "auckland",
-    "categorySlug": "services",
-    "pageSlug": "fitness-equipment",
-    "neighborhood": "Henderson",
-    "phone": "0800 688 333",
-    "id": 395
   },
   {
     "name": "Elite Fitness Auckland Superstore",
