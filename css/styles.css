@@ -1089,38 +1089,6 @@ footer {
     font-size: 1.8rem;
 }
 
-.basic-listing-card {
-    grid-template-columns: minmax(0, 1fr);
-}
-
-.basic-listing-card .business-info {
-    padding: 1.75rem 2rem;
-}
-
-.basic-listing-card .business-info h3 {
-    margin-bottom: 0.65rem;
-    font-size: 1.35rem;
-}
-
-.basic-listing-card .business-info p {
-    margin: 0;
-}
-
-.basic-listing-region {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    width: fit-content;
-    margin-bottom: 0.9rem;
-    color: var(--color-text-muted);
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.basic-listing-region i {
-    color: var(--color-primary);
-}
-
 .rating-badge {
     display: inline-flex;
     align-items: center;

@@ -85,18 +85,6 @@ function renderBusinessCard(business, options = {}) {
     const isPremium = hasRating && business.rating >= 4.8;
     const listingTier = isFeatured ? 'featured' : (isBasic ? 'basic' : 'standard');
 
-    if (isBasic) {
-        return `
-            <div class="glass-card business-card-horizontal basic-listing-card" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${listingTier}">
-                <div class="business-info">
-                    <h3>${business.name}</h3>
-                    <div class="basic-listing-region"><i class="fas fa-map-marker-alt"></i> ${business.city}</div>
-                    <p class="text-muted">${business.description}</p>
-                </div>
-            </div>
-        `;
-    }
-
     const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
     const ratingBadge = hasRating
         ? `<div class="rating-badge"><i class="fas fa-star"></i> ${business.rating} (${business.reviews} reviews)</div>`
@@ -109,13 +97,13 @@ function renderBusinessCard(business, options = {}) {
         : '';
     const phoneHref = business.phone ? business.phone.replace(/[^+\d]/g, '') : '';
     const contactLinks = [
-        `<a href="${getTrackedOutboundUrl(business.website, business, 'website')}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a>`,
-        business.bookingUrl ? `<a href="${getTrackedOutboundUrl(business.bookingUrl, business, 'booking')}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="booking"><i class="fas fa-calendar-check"></i> Book a consultation</a>` : '',
-        business.phone ? `<a href="tel:${phoneHref}" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> ${business.phone}</a>` : ''
+        !isBasic && business.website ? `<a href="${getTrackedOutboundUrl(business.website, business, 'website')}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a>` : '',
+        !isBasic && business.bookingUrl ? `<a href="${getTrackedOutboundUrl(business.bookingUrl, business, 'booking')}" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="booking"><i class="fas fa-calendar-check"></i> Book a consultation</a>` : '',
+        !isBasic && business.phone ? `<a href="tel:${phoneHref}" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> ${business.phone}</a>` : ''
     ].filter(Boolean).join('');
 
     return `
-        <div class="glass-card business-card-horizontal ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${listingTier}">
+        <div class="glass-card business-card-horizontal ${isBasic ? 'basic-listing-card' : ''} ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${listingTier}">
             <div class="business-image-container">
                 <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}">
                 ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}

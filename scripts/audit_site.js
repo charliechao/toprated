@@ -69,7 +69,7 @@ allHtmlFiles.forEach(file => {
         }
 
         // Clean href
-        let target = href.split('#')[0]; // remove fragment
+        let target = href.split(/[?#]/)[0]; // remove cache-busting query strings and fragments
         if (!target) continue;
 
         // Resolve absolute and relative paths
