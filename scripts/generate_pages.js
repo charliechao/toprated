@@ -1404,6 +1404,35 @@ cities.forEach(city => {
     });
 });
 
+function updateHomepageStats() {
+    const homepagePath = 'index.html';
+    if (!fs.existsSync(homepagePath)) return;
+
+    const guideCount = cities.reduce((total, city) => total + industries.reduce(
+        (cityTotal, industry) => cityTotal + industry.subCategories.filter(subcategory => {
+            const map = subCatsMapping[subcategory];
+            return map && hasLocalBusinesses(city.slug, subcategory, map.cat);
+        }).length,
+        0
+    ), 0);
+
+    const stats = {
+        guides: guideCount,
+        businesses: businesses.length,
+        cities: cities.length,
+        categories: industries.length
+    };
+
+    let homepage = fs.readFileSync(homepagePath, 'utf8');
+    for (const [name, value] of Object.entries(stats)) {
+        const pattern = new RegExp(`(<div class="home-stat-card__value" data-home-stat="${name}">)\\d+(</div>)`);
+        homepage = homepage.replace(pattern, `$1${value}$2`);
+    }
+    fs.writeFileSync(homepagePath, homepage);
+}
+
+updateHomepageStats();
+
 // 3.5 Global Subcategory Pages — DISABLED (city-first architecture)
 // industries.forEach(ind => {
 //     ind.subCategories.forEach(sc => {
