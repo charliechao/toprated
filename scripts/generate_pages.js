@@ -259,8 +259,10 @@ function renderBusinessCard(business) {
     const isPremium = hasRating && business.rating >= 4.8;
     const listingTier = isFeatured ? 'featured' : (isBasic ? 'basic' : 'standard');
     const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
+    const ratingValue = business.reviewSource && Number.isInteger(business.rating) ? business.rating.toFixed(1) : business.rating;
+    const ratingSource = business.reviewSource ? ` ${escapeHtml(business.reviewSource)} rating` : '';
     const ratingBadge = hasRating
-        ? `<div class="rating-badge"><i class="fas fa-star"></i> ${escapeHtml(business.rating)} (${escapeHtml(business.reviews)} reviews)</div>`
+        ? `<div class="rating-badge"><i class="fas fa-star"></i> ${escapeHtml(ratingValue)}${ratingSource} (${escapeHtml(business.reviews)} reviews)</div>`
         : '<div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>';
     const serviceHighlights = isFeatured && Array.isArray(business.highlightedServices) && business.highlightedServices.length
         ? `<div class="business-services"><span>Main services</span><div class="business-service-tags">${business.highlightedServices.map(service => `<span>${escapeHtml(service)}</span>`).join('')}</div></div>`
