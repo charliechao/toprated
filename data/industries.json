@@ -2,7 +2,7 @@
     {
         "name": "Cuisine",
         "slug": "cuisine",
-        "thumbnail": "/img/industries/hospitality.png",
+        "thumbnail": "/img/industries/hospitality.jpg",
         "subCategories": [
             "restaurants",
             "japanese-restaurants",
@@ -14,35 +14,35 @@
             "cafes"
         ],
         "subCategoryThumbnails": {
-            "restaurants": "/img/industries/hospitality.png",
-            "japanese-restaurants": "/img/industries/auckland-japanese.jpg",
+            "restaurants": "/img/industries/hospitality.jpg",
+            "japanese-restaurants": "/img/industries/auckland-japanese-card.jpg",
             "chinese-restaurants": "/img/generated/chinese-restaurants.png",
             "indian-restaurants": "/img/generated/indian-restaurants.png",
             "italian-restaurants": "/img/generated/italian-restaurants.png",
-            "thai-restaurants": "/img/industries/hospitality.png",
-            "french-restaurants": "/img/industries/hospitality.png",
-            "cafes": "/img/industries/hospitality.png"
+            "thai-restaurants": "/img/industries/hospitality.jpg",
+            "french-restaurants": "/img/industries/hospitality.jpg",
+            "cafes": "/img/industries/hospitality.jpg"
         }
     },
     {
         "name": "Hospitality",
         "slug": "hospitality",
-        "thumbnail": "/img/industries/hospitality.png",
+        "thumbnail": "/img/industries/hospitality.jpg",
         "subCategories": [
             "hotels",
             "bars",
             "nightclubs"
         ],
         "subCategoryThumbnails": {
-            "hotels": "/img/industries/hospitality.png",
-            "bars": "/img/industries/hospitality.png",
-            "nightclubs": "/img/industries/hospitality.png"
+            "hotels": "/img/industries/hospitality.jpg",
+            "bars": "/img/industries/hospitality.jpg",
+            "nightclubs": "/img/industries/hospitality.jpg"
         }
     },
     {
         "name": "Trades",
         "slug": "trades",
-        "thumbnail": "/img/industries/construction.png",
+        "thumbnail": "/img/industries/construction.jpg",
         "subCategories": [
             "builders",
             "electricians",
@@ -80,7 +80,7 @@
     {
         "name": "Services",
         "slug": "services",
-        "thumbnail": "/img/industries/professional-services.png",
+        "thumbnail": "/img/industries/professional-services.jpg",
         "subCategories": [
             "cleaning-services",
             "hypnotherapists",
@@ -105,19 +105,19 @@
             "cleaning-services": "/img/generated/cleaning-services.png",
             "hypnotherapists": "/img/industries/healthcare.png",
             "accountants": "/img/businesses/dfk-orb360-ohalloran.png",
-            "financial-advisers": "/img/industries/professional-services.png",
-            "kiwisaver-advisers": "/img/industries/professional-services.png",
+            "financial-advisers": "/img/industries/professional-services.jpg",
+            "kiwisaver-advisers": "/img/industries/professional-services.jpg",
             "lawyers": "/img/generated/lawyers.png",
-            "real-estate-agents": "/img/industries/professional-services.png",
-            "insurance-brokers": "/img/industries/professional-services.png",
-            "mortgage-brokers": "/img/industries/professional-services.png",
+            "real-estate-agents": "/img/industries/professional-services.jpg",
+            "insurance-brokers": "/img/industries/professional-services.jpg",
+            "mortgage-brokers": "/img/industries/professional-services.jpg",
             "business-loans": "/img/generated/business-loans.png",
             "creative-agencies": "/img/businesses/lance-gunn-design-co.png",
             "broadband-providers": "/img/businesses/excite-broadband.png",
             "computer-repairs": "/img/industries/retail.png",
-            "travel-agencies": "/img/industries/hospitality.png",
-            "movers": "/img/industries/construction.png",
-            "air-conditioning": "/img/industries/construction.png",
+            "travel-agencies": "/img/industries/hospitality.jpg",
+            "movers": "/img/industries/construction.jpg",
+            "air-conditioning": "/img/industries/construction.jpg",
             "fitness-equipment": "/img/industries/retail.png",
             "gyms": "/img/industries/healthcare.png"
         }

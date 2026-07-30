@@ -138,7 +138,7 @@ function renderBusinessCard(business, options = {}) {
     return `
         <div class="glass-card business-card-horizontal ${isBasic ? 'basic-listing-card' : ''} ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${business.id}" data-business-name="${business.name}" data-city-slug="${business.citySlug || ''}" data-category-slug="${business.categorySlug || ''}" data-page-slug="${business.pageSlug || ''}" data-listing-tier="${listingTier}">
             <div class="business-image-container">
-                <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}">
+                <img src="${business.image}" alt="${business.name}" class="business-image${imageFitClass}" loading="lazy" decoding="async">
                 ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}
             </div>
             <div class="business-info">
@@ -434,6 +434,24 @@ async function renderRelated() {
     `;
 }
 
+function renderRelatedWhenNearViewport() {
+    const relatedEl = document.getElementById('related');
+    if (!relatedEl) return;
+
+    if (!window.IntersectionObserver) {
+        renderRelated();
+        return;
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        observer.disconnect();
+        renderRelated();
+    }, { rootMargin: '800px 0px' });
+
+    observer.observe(relatedEl);
+}
+
 /**
  * Insert JSON-LD schema for the client-rendered nationwide page.
  */
@@ -587,6 +605,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     buildBreadcrumb();
     await renderHubGrid();
     await renderBusinessList();
-    await renderRelated();
+    renderRelatedWhenNearViewport();
     await injectSchema();
 });

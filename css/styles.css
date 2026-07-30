@@ -528,9 +528,31 @@ header {
     flex-direction: column;
     justify-content: space-between;
     color: white;
-    background-size: cover;
-    background-position: center;
+    position: relative;
     overflow: hidden;
+}
+
+.city-card__image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.city-card:not(.city-card--nationwide)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(rgba(9, 20, 32, 0.42), rgba(9, 20, 32, 0.78));
+    pointer-events: none;
+}
+
+.city-card > :not(.city-card__image) {
+    position: relative;
+    z-index: 1;
 }
 
 .city-card__top,
@@ -587,6 +609,73 @@ header {
 
 .city-card--nationwide {
     background: linear-gradient(135deg, rgba(15, 118, 110, 0.96), rgba(8, 47, 73, 0.96));
+}
+
+.home-city-card {
+    position: relative;
+    display: flex;
+    align-items: end;
+    min-height: 200px;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+
+.home-city-card__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-city-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+}
+
+.home-city-card h3 {
+    position: relative;
+    z-index: 1;
+}
+
+.home-guide-card__media {
+    position: relative;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.home-guide-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-guide-card__media > :not(.home-guide-card__image) {
+    position: relative;
+    z-index: 1;
+}
+
+.home-guide-card__media--featured::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(15, 23, 42, 0.34), rgba(15, 23, 42, 0.76));
+    pointer-events: none;
+}
+
+.home-guide-card__feature-content {
+    position: absolute !important;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.25rem;
 }
 
 .city-directory-proof {
@@ -656,7 +745,7 @@ footer {
     min-height: 44vh;
     background:
         linear-gradient(rgba(9, 14, 26, 0.56), rgba(9, 14, 26, 0.8)),
-        url('/img/auckland-hero.jpg');
+        url('/img/city-heroes/auckland.jpg');
     background-size: cover;
     background-position: center;
 }

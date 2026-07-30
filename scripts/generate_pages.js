@@ -17,11 +17,11 @@ const CONTENT_UPDATED_ISO = '2026-07-28';
 
 // Hero Images Mapping
 const cityHeros = {
-    'auckland': '/img/auckland-hero.jpg',
-    'wellington': '/img/wellington-hero.jpg',
-    'christchurch': '/img/christchurch-hero.jpg',
-    'hamilton': '/img/hamilton-hero.jpg',
-    'tauranga': '/img/tauranga-hero.jpg'
+    'auckland': '/img/city-heroes/auckland.jpg',
+    'wellington': '/img/city-heroes/wellington.jpg',
+    'christchurch': '/img/city-heroes/christchurch.jpg',
+    'hamilton': '/img/city-heroes/hamilton.jpg',
+    'tauranga': '/img/city-heroes/tauranga.jpg'
 };
 
 const indHeros = {
@@ -277,7 +277,7 @@ function renderBusinessCard(business) {
     return `
         <div class="glass-card business-card-horizontal ${isBasic ? 'basic-listing-card' : ''} ${isFeatured ? 'featured-provider-card' : ''} ${isPremium ? 'premium-border' : ''}" data-listing-impression="true" data-business-id="${escapeHtml(business.id)}" data-business-name="${escapeHtml(business.name)}" data-city-slug="${escapeHtml(business.citySlug || '')}" data-category-slug="${escapeHtml(business.categorySlug || '')}" data-page-slug="${escapeHtml(business.pageSlug || '')}" data-listing-tier="${listingTier}">
             <div class="business-image-container">
-                <img src="${escapeHtml(business.image || '/img/default-business.jpg')}" alt="${escapeHtml(business.name)}" class="business-image${imageFitClass}" loading="lazy">
+                <img src="${escapeHtml(business.image || '/img/default-business.jpg')}" alt="${escapeHtml(business.name)}" class="business-image${imageFitClass}" loading="lazy" decoding="async">
                 ${isFeatured ? '<div class="featured-provider-badge"><i class="fas fa-star"></i> FEATURED PROVIDER</div>' : (isPremium ? '<div class="premium-badge"><i class="fas fa-crown"></i> TOP RATED</div>' : '')}
             </div>
             <div class="business-info">
@@ -982,7 +982,7 @@ function getCategoryHubSeo(city, categorySlug) {
     };
 }
 
-function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/auckland-hero.jpg', linkContext = null, pageBusinesses = null) {
+function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/city-heroes/auckland.jpg', linkContext = null, pageBusinesses = null) {
     // --- Build Table of Contents ---
     let tocItems = [];
     if (specificSeo) {
