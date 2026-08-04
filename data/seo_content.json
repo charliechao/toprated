@@ -4700,5 +4700,50 @@
       {"question": "Should I buy commercial or home-grade gym equipment?", "answer": "Home-grade equipment suits typical personal use, while commercial equipment is built for heavier, more frequent use. Compare expected usage, warranty, space, and budget before choosing."},
       {"question": "Do fitness-equipment suppliers offer delivery in Auckland?", "answer": "Many suppliers offer Auckland delivery, but costs, assembly, and access requirements vary by item. Confirm these details before placing an order, especially for larger machines."}
     ]
+  },
+  "auckland/trades/arborists": {
+    "pageTitle": "Best Arborists in Auckland | Tree Removal & Pruning | TopRated NZ",
+    "metaDescription": "Compare Auckland arborists for tree removal, pruning, hedge care, stump work, and property tree maintenance.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "August 2026",
+    "introText": "Auckland arborist work can involve tight access, neighbouring properties, mature trees, and a need to protect buildings and services. Compare providers by their assessment process, safety planning, equipment, cleanup, and experience with work like yours.",
+    "questionsToAsk": ["How will you assess tree health and site risks?", "What access equipment or traffic management is needed?", "Will waste be removed, mulched, or left on site?", "What is included in the quote and cleanup?"],
+    "faqs": [{"question": "When should I call an arborist?", "answer": "Call an arborist when a tree is damaged, overgrown, close to a structure, showing signs of disease, or needs careful pruning or removal."}]
+  },
+  "wellington/trades/arborists": {
+    "pageTitle": "Best Arborists in Wellington | Tree Removal & Pruning | TopRated NZ",
+    "metaDescription": "Compare Wellington arborists for tree removal, pruning, hedge care, stump work, and property tree maintenance.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "August 2026",
+    "introText": "Wellington tree work often needs careful planning around wind exposure, slopes, restricted access, and nearby homes. Compare arborists by their safety approach, site assessment, equipment, cleanup, and clear explanation of the work proposed.",
+    "questionsToAsk": ["How will wind and site access affect the work?", "What tree-care option best suits the condition of the tree?", "How will nearby property and services be protected?", "What will happen to the resulting green waste?"],
+    "faqs": [{"question": "Can an arborist help with a tree near a house?", "answer": "Yes. An arborist can assess the tree, access, and nearby structures, then recommend an appropriate pruning or removal approach."}]
+  },
+  "christchurch/trades/arborists": {
+    "pageTitle": "Best Arborists in Christchurch | Tree Removal & Pruning | TopRated NZ",
+    "metaDescription": "Compare Christchurch arborists for tree removal, pruning, hedge care, stump work, and property tree maintenance.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "August 2026",
+    "introText": "Christchurch homeowners and property managers often need practical tree maintenance, pruning, removal, and storm-damage support. Compare arborists by scope clarity, safety procedures, equipment, waste handling, and how they plan around your property.",
+    "questionsToAsk": ["What work is necessary and what can be preserved?", "How will access and safety be managed?", "Does the quote include stump work or debris removal?", "How long is the work likely to take?"],
+    "faqs": [{"question": "What should an arborist quote include?", "answer": "A useful quote should explain the proposed work, access or equipment needs, debris handling, likely timing, and anything excluded."}]
+  },
+  "hamilton/trades/arborists": {
+    "pageTitle": "Best Arborists in Hamilton | Tree Removal & Pruning | TopRated NZ",
+    "metaDescription": "Compare Hamilton arborists for tree removal, pruning, hedge care, stump work, and property tree maintenance.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "August 2026",
+    "introText": "Hamilton arborists help households, lifestyle properties, and commercial sites manage tree health, safety, clearance, and planned maintenance. Compare providers by their site assessment, proposed method, cleanup approach, and communication before work begins.",
+    "questionsToAsk": ["Do you recommend pruning, reduction, or removal?", "What equipment and access will the job require?", "How will green waste be managed?", "Are there any site constraints I should prepare for?"],
+    "faqs": [{"question": "Can an arborist improve a tree without removing it?", "answer": "Often yes. Appropriate pruning can address damaged or overgrown branches while supporting the tree's health and structure."}]
+  },
+  "tauranga/trades/arborists": {
+    "pageTitle": "Best Arborists in Tauranga | Tree Removal & Pruning | TopRated NZ",
+    "metaDescription": "Compare Tauranga arborists for tree removal, pruning, hedge care, stump work, and property tree maintenance.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "August 2026",
+    "introText": "Tauranga and Bay of Plenty properties can need careful tree work around coastal conditions, mature planting, orchards, access constraints, and nearby homes. Compare arborists by their site assessment, safety planning, equipment, cleanup, and whether the proposed work suits the tree and property.",
+    "questionsToAsk": ["Can the tree be pruned rather than removed?", "How will you manage tight access or nearby structures?", "What safety planning and cleanup are included?", "Will green waste be removed, mulched, or left for firewood?"],
+    "faqs": [{"question": "What services do Tauranga arborists commonly provide?", "answer": "Common services include tree pruning, removal, hedge trimming, stump work, green-waste handling, and advice on tree health and property safety."}]
   }
 }

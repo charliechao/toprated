@@ -48,14 +48,16 @@
             "electricians",
             "plumbers",
             "renovation-services",
-            "painters"
+            "painters",
+            "arborists"
         ],
         "subCategoryThumbnails": {
             "builders": "/img/generated/builders.png",
             "electricians": "/img/generated/electricians.png",
             "plumbers": "/img/generated/plumbers.png",
             "renovation-services": "/img/generated/renovation-services.png",
-            "painters": "/img/generated/painters.png"
+            "painters": "/img/generated/painters.png",
+            "arborists": "/img/businesses/better-trees-bay-of-plenty.jpg"
         }
     },
     {
