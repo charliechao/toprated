@@ -3950,36 +3950,6 @@
     ]
   },
   {
-    "id": 313,
-    "name": "Aotea Electric Auckland",
-    "industry": "Electricians",
-    "city": "Auckland",
-    "rating": 4.9,
-    "reviews": 410,
-    "description": "One of New Zealand's largest and most respected electrical service providers, Aotea Electric Auckland offers a comprehensive range of electrical, communications, and security services. Their large team of master electricians handles everything from urgent 24/7 residential repairs to multi-million dollar commercial projects and high-end architectural builds.",
-    "website": "https://aoteaelectric.co.nz",
-    "image": "https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&w=800&q=80",
-    "address": "Auckland Wide",
-    "citySlug": "auckland",
-    "categorySlug": "trades",
-    "pageSlug": "electricians",
-    "neighborhood": "Auckland Wide",
-    "phone": "09 573 1475",
-    "highlights": [
-      "Large, highly skilled team of Registered Master Electricians",
-      "Comprehensive 24/7 emergency electrical support",
-      "End-to-end design and construct services",
-      "Specialists in security systems and communications integration",
-      "Trusted partner for major Auckland infrastructure projects"
-    ],
-    "specialties": [
-      "Commercial Electrical",
-      "Industrial",
-      "Architectural Builds",
-      "Security Systems"
-    ]
-  },
-  {
     "id": 314,
     "name": "Silverlake Electrical",
     "industry": "Electricians",
@@ -8035,5 +8005,34 @@
     "pageSlug": "arborists",
     "neighborhood": "Tauranga",
     "phone": "020 4162 1601"
+  },
+  {
+    "id": 313,
+    "name": "Aotea Electric Auckland",
+    "industry": "Electricians",
+    "city": "Auckland",
+    "listingTier": "basic",
+    "description": "One of New Zealand's largest and most respected electrical service providers, Aotea Electric Auckland offers a comprehensive range of electrical, communications, and security services. Their large team of master electricians handles everything from urgent 24/7 residential repairs to multi-million dollar commercial projects and high-end architectural builds.",
+    "website": "https://aoteaelectricauckland.co.nz/",
+    "image": "https://images.unsplash.com/photo-1558486012-817176f84c6d?auto=format&fit=crop&w=800&q=80",
+    "address": "Auckland Wide",
+    "citySlug": "auckland",
+    "categorySlug": "trades",
+    "pageSlug": "electricians",
+    "neighborhood": "Auckland Wide",
+    "phone": "09 415 2074",
+    "highlights": [
+      "Large, highly skilled team of Registered Master Electricians",
+      "Comprehensive 24/7 emergency electrical support",
+      "End-to-end design and construct services",
+      "Specialists in security systems and communications integration",
+      "Trusted partner for major Auckland infrastructure projects"
+    ],
+    "specialties": [
+      "Commercial Electrical",
+      "Industrial",
+      "Architectural Builds",
+      "Security Systems"
+    ]
   }
 ]
