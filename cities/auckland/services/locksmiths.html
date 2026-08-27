@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Locksmiths in Auckland | Emergency Lockouts & Keys | TopRated NZ</title>
+  <meta name="description" content="Compare Auckland locksmiths for emergency lockouts, keys, lock repairs, rekeying, automotive locks, and security upgrades." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Best Locksmiths in Auckland | Emergency Lockouts & Keys | TopRated NZ" />
+  <meta property="og:description" content="Compare Auckland locksmiths for emergency lockouts, keys, lock repairs, rekeying, automotive locks, and security upgrades." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toprated.nz/cities/auckland/services/locksmiths" />
+  <link rel="canonical" href="https://toprated.nz/cities/auckland/services/locksmiths" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css?v=20260730a" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://toprated.nz/cities/auckland/services/locksmiths#webpage",
+      "url": "https://toprated.nz/cities/auckland/services/locksmiths",
+      "name": "Locksmiths in Auckland",
+      "description": "Compare Auckland locksmiths for emergency lockouts, keys, lock repairs, rekeying, automotive locks, and security upgrades.",
+      "dateModified": "2026-07-28",
+      "mainEntity": {
+        "@id": "https://toprated.nz/cities/auckland/services/locksmiths#business-list"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TopRated NZ",
+        "url": "https://toprated.nz"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/auckland/services/locksmiths#business-list",
+      "name": "Locksmiths in Auckland",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "LockSmart",
+            "description": "LockSmart is an Auckland mobile locksmith service for residential, commercial, and automotive lockouts, keys, and security work.",
+            "image": "https://www.locksmart.co.nz/i/images/slideshow/locksmith.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.locksmart.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Auckland Mobile Locksmiths",
+            "description": "Auckland Mobile Locksmiths provides residential, commercial, and automotive locksmith services across greater Auckland, including keys, lock repairs, and security work.",
+            "image": "https://images.unsplash.com/photo-1605648916361-9bc12ad6a87b?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Green Bay, Auckland 0604",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://amll.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Sail City Locks",
+            "description": "Sail City Locks is a 24/7 Auckland mobile locksmith service covering residential, commercial, automotive, rekeying, key-cutting, and lock repair work.",
+            "image": "https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.sailcitylocks.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Eastern Bays Mobile Locksmiths",
+            "description": "Eastern Bays Mobile Locksmiths provides Auckland lock, key, and security services, including emergency after-hours support and mobile callouts.",
+            "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wai O Taiki Bay, Auckland 1072",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            },
+            "url": "https://ebml.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Locks Key NZ",
+            "description": "Locks Key NZ, trading online as LostKey, provides Auckland locksmith services for emergency lockouts, lost keys, lock repairs, and replacements.",
+            "image": "https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Auckland, New Zealand",
+              "addressLocality": "Auckland",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Auckland",
+          "item": "https://toprated.nz/cities/auckland"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/auckland/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Locksmiths",
+          "item": "https://toprated.nz/cities/auckland/services/locksmiths"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a locksmith help if I am locked out of my home or car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Auckland locksmiths provide emergency home, business, and vehicle lockout support. Confirm availability, response time, and the information they need before dispatching a technician."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between rekeying and replacing a lock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rekeying changes the internal key combination so existing keys no longer work, while replacement installs new hardware. The right option depends on the lock condition, security requirements, and compatibility."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1851714285531074');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.net/tr?id=1851714285531074&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
+
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/city-heroes/auckland.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="container">
+            <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
+            <h1>Locksmiths <br><span class="text-primary">in Auckland</span></h1>
+        </div>
+    </section>
+    <div class="container seo-content-wrapper">
+
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#quick-answer">Quick Answer</a></li><li><a href="#buyers-guide">How to Choose a Locksmith in Auckland</a></li><li><a href="#comparison-guide">What to Compare</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Auckland locksmith needs are often urgent, but the right provider should still be clear about the job, response expectations, and security options. Compare locksmiths by their service area, emergency availability, experience with residential, commercial, or automotive work, and the scope of any repair or upgrade proposed.</p>
+                    <p class="seo-updated"><i class="fas fa-calendar-check"></i> Last updated: July 2026</p>
+                </div>
+            </section>
+            <section class="seo-section seo-section--snapshot" id="quick-answer">
+                <div class="container">
+                    <h2><i class="fas fa-bolt"></i> Locksmiths in Auckland: Quick Answer</h2>
+                    <p class="seo-quick-answer"><strong>Quick answer:</strong> The best choice depends on the outcome you need, the current information each business provides, and whether its location, availability, process, and terms fit your situation. This page is designed for comparing service fit, local coverage, process, and total value.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table seo-fact-table">
+                            <tbody>
+                                <tr><th scope="row">Businesses compared</th><td>5 current TopRated listings</td></tr><tr><th scope="row">Main decision</th><td>comparing service fit, local coverage, process, and total value</td></tr><tr><th scope="row">Location context</th><td>Current listing locations include Auckland, Green Bay, Auckland CBD and Wai O Taiki Bay. Location does not always equal service coverage, so confirm whether the business serves your exact address.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--guide" id="buyers-guide">
+                <div class="container">
+                    <h2><i class="fas fa-clipboard-check"></i> How to Choose a Locksmith in Auckland</h2>
+                    <div class="seo-guide-content"><p>Whether you are locked out, replacing keys, repairing a damaged lock, or upgrading security, clear communication matters as much as speed.</p><h3>1. Confirm the Service Type</h3><p>Ask whether the locksmith handles your specific situation, such as a home lockout, car key, commercial access, safe, lock repair, or rekeying work.</p><h3>2. Check Availability and Coverage</h3><p>For urgent work, confirm the expected response window, after-hours availability, and whether the provider covers your Auckland suburb.</p><h3>3. Understand the Proposed Solution</h3><p>A useful locksmith should explain whether the lock can be repaired, rekeyed, or needs replacement, including the likely implications for keys and access.</p><h3>4. Get the Scope in Writing</h3><p>Before non-urgent work begins, confirm callout, parts, labour, and any security hardware costs so the quote is clear.</p></div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--comparison" id="comparison-guide">
+                <div class="container">
+                    <h2><i class="fas fa-scale-balanced"></i> What to Compare Before Choosing</h2>
+                    <p>Compare relevant experience, scope and process, and price and terms before you decide. These checks are more useful than choosing from a headline rating, a single price, or a broad promise alone.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table">
+                            <thead><tr><th>Comparison point</th><th>What to check</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Relevant experience</strong></td><td>Ask for evidence of recent work or customers with needs similar to yours.</td></tr><tr><td><strong>Scope and process</strong></td><td>Compare what is included, who handles the work, timing, communication, and what could change.</td></tr><tr><td><strong>Price and terms</strong></td><td>Review the full cost, exclusions, payment timing, cancellation, warranties, and support after the work.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--questions" id="questions-to-ask">
+                <div class="container">
+                    <h2><i class="fas fa-comments"></i> Questions to Ask Before Hiring</h2>
+                    <ul class="seo-questions-list">
+                        <li><i class="fas fa-circle-question"></i> <span>Do you handle this type of lock, key, vehicle, or access system?</span></li><li><i class="fas fa-circle-question"></i> <span>What response time can I expect at my Auckland location?</span></li><li><i class="fas fa-circle-question"></i> <span>Can the lock be repaired or rekeyed rather than replaced?</span></li><li><i class="fas fa-circle-question"></i> <span>What callout, labour, and parts costs apply?</span></li><li><i class="fas fa-circle-question"></i> <span>Do you provide after-hours emergency service?</span></li>
+                    </ul>
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="442" data-business-name="LockSmart" data-city-slug="auckland" data-category-slug="services" data-page-slug="locksmiths" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://www.locksmart.co.nz/i/images/slideshow/locksmith.jpg" alt="LockSmart" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>LockSmart</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">LockSmart is an Auckland mobile locksmith service for residential, commercial, and automotive lockouts, keys, and security work.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.locksmart.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-442-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800334122" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 334 122</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="443" data-business-name="Auckland Mobile Locksmiths" data-city-slug="auckland" data-category-slug="services" data-page-slug="locksmiths" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a87b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Auckland Mobile Locksmiths" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Auckland Mobile Locksmiths</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Green Bay</div>
+                <p class="text-muted">Auckland Mobile Locksmiths provides residential, commercial, and automotive locksmith services across greater Auckland, including keys, lock repairs, and security work.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Green Bay, Auckland 0604</span>
+                    <div class="business-contact-links"><a href="https://amll.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-443-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800539626" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 539 626</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="444" data-business-name="Sail City Locks" data-city-slug="auckland" data-category-slug="services" data-page-slug="locksmiths" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sail City Locks" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Sail City Locks</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland CBD</div>
+                <p class="text-muted">Sail City Locks is a 24/7 Auckland mobile locksmith service covering residential, commercial, automotive, rekeying, key-cutting, and lock repair work.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.sailcitylocks.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-444-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:093034011" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 09 303 4011</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="445" data-business-name="Eastern Bays Mobile Locksmiths" data-city-slug="auckland" data-category-slug="services" data-page-slug="locksmiths" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Eastern Bays Mobile Locksmiths" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Eastern Bays Mobile Locksmiths</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Wai O Taiki Bay</div>
+                <p class="text-muted">Eastern Bays Mobile Locksmiths provides Auckland lock, key, and security services, including emergency after-hours support and mobile callouts.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Wai O Taiki Bay, Auckland 1072</span>
+                    <div class="business-contact-links"><a href="https://ebml.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-445-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800502340" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 502 340</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="439" data-business-name="Locks Key NZ" data-city-slug="auckland" data-category-slug="services" data-page-slug="locksmiths" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Locks Key NZ" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Locks Key NZ</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Auckland</div>
+                <p class="text-muted">Locks Key NZ, trading online as LostKey, provides Auckland locksmith services for emergency lockouts, lost keys, lock repairs, and replacements.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+
+                        <details class="seo-faq-item">
+                            <summary>Can a locksmith help if I am locked out of my home or car?</summary>
+                            <p>Many Auckland locksmiths provide emergency home, business, and vehicle lockout support. Confirm availability, response time, and the information they need before dispatching a technician.</p>
+                        </details>
+
+                        <details class="seo-faq-item">
+                            <summary>What is the difference between rekeying and replacing a lock?</summary>
+                            <p>Rekeying changes the internal key combination so existing keys no longer work, while replacement installs new hardware. The right option depends on the lock condition, security requirements, and compatibility.</p>
+                        </details>
+
+                </div>
+            </div>
+        </section>
+
+    <section class="container section internal-link-section" aria-labelledby="internal-link-title">
+        <div class="related-section internal-link-panel">
+            <div class="internal-link-header">
+                <h2 id="internal-link-title" class="section-title">More Ways to Compare Locksmiths</h2>
+                <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
+            </div>
+            <div class="related-grid internal-link-grid">
+
+        <a href="/cities/auckland/services/" class="related-card internal-link-card">
+            <i class="fas fa-table-cells-large"></i>
+            <div>
+                <strong>Services Hub in Auckland</strong>
+                <span>Browse every services guide for Auckland.</span>
+            </div>
+        </a>
+        <a href="/cities/auckland" class="related-card internal-link-card">
+            <i class="fas fa-location-dot"></i>
+            <div>
+                <strong>Auckland Directory</strong>
+                <span>Return to all TopRated categories in Auckland.</span>
+            </div>
+        </a>
+        <a href="/cities/auckland/services/cleaning-services" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Cleaning Services in Auckland</strong>
+                <span>Compare another services shortlist in Auckland.</span>
+            </div>
+        </a>
+        <a href="/cities/auckland/services/accountants" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Accountants in Auckland</strong>
+                <span>Compare another services shortlist in Auckland.</span>
+            </div>
+        </a>
+        <a href="/cities/auckland/services/lawyers" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Lawyers in Auckland</strong>
+                <span>Compare another services shortlist in Auckland.</span>
+            </div>
+        </a>
+            </div>
+        </div>
+    </section>
+    <section class="container section">
+        <div id="related"></div>
+    </section>
+
+        <aside class="seo-trust-box">
+            <div class="container">
+                <div class="seo-trust-inner">
+                    <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="seo-trust-text">
+                        <strong>Why Trust TopRated?</strong>
+                        <p>TopRated combines editorial research, public business information, and clearly labelled owner-supplied profiles. Featured placements are labelled. Business details can change, so verify current pricing, availability, qualifications, and terms directly before deciding. <a href="/about">Learn how TopRated works →</a></p>
+                        <p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: TopRated Editorial Team</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/include.js?v=20260726"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js?v=20260730a"></script>
+</body>
+
+</html>

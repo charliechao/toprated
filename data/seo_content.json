@@ -4745,5 +4745,21 @@
     "introText": "Tauranga and Bay of Plenty properties can need careful tree work around coastal conditions, mature planting, orchards, access constraints, and nearby homes. Compare arborists by their site assessment, safety planning, equipment, cleanup, and whether the proposed work suits the tree and property.",
     "questionsToAsk": ["Can the tree be pruned rather than removed?", "How will you manage tight access or nearby structures?", "What safety planning and cleanup are included?", "Will green waste be removed, mulched, or left for firewood?"],
     "faqs": [{"question": "What services do Tauranga arborists commonly provide?", "answer": "Common services include tree pruning, removal, hedge trimming, stump work, green-waste handling, and advice on tree health and property safety."}]
+  },
+  "auckland/services/locksmiths": {
+    "pageTitle": "Best Locksmiths in Auckland | Emergency Lockouts & Keys | TopRated NZ",
+    "metaDescription": "Compare Auckland locksmiths for emergency lockouts, keys, lock repairs, rekeying, automotive locks, and security upgrades.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "August 2026",
+    "introText": "Auckland locksmith needs are often urgent, but the right provider should still be clear about the job, response expectations, and security options. Compare locksmiths by their service area, emergency availability, experience with residential, commercial, or automotive work, and the scope of any repair or upgrade proposed.",
+    "buyersGuide": {
+      "title": "How to Choose a Locksmith in Auckland",
+      "content": "<p>Whether you are locked out, replacing keys, repairing a damaged lock, or upgrading security, clear communication matters as much as speed.</p><h3>1. Confirm the Service Type</h3><p>Ask whether the locksmith handles your specific situation, such as a home lockout, car key, commercial access, safe, lock repair, or rekeying work.</p><h3>2. Check Availability and Coverage</h3><p>For urgent work, confirm the expected response window, after-hours availability, and whether the provider covers your Auckland suburb.</p><h3>3. Understand the Proposed Solution</h3><p>A useful locksmith should explain whether the lock can be repaired, rekeyed, or needs replacement, including the likely implications for keys and access.</p><h3>4. Get the Scope in Writing</h3><p>Before non-urgent work begins, confirm callout, parts, labour, and any security hardware costs so the quote is clear.</p>"
+    },
+    "questionsToAsk": ["Do you handle this type of lock, key, vehicle, or access system?", "What response time can I expect at my Auckland location?", "Can the lock be repaired or rekeyed rather than replaced?", "What callout, labour, and parts costs apply?", "Do you provide after-hours emergency service?"],
+    "faqs": [
+      {"question": "Can a locksmith help if I am locked out of my home or car?", "answer": "Many Auckland locksmiths provide emergency home, business, and vehicle lockout support. Confirm availability, response time, and the information they need before dispatching a technician."},
+      {"question": "What is the difference between rekeying and replacing a lock?", "answer": "Rekeying changes the internal key combination so existing keys no longer work, while replacement installs new hardware. The right option depends on the lock condition, security requirements, and compatibility."}
+    ]
   }
 }

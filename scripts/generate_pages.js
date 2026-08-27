@@ -73,7 +73,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'air-conditioning': 'commercial AC, heat pumps, installation, servicing, and repairs',
@@ -89,6 +89,7 @@ const categoryHubConfigs = {
             'insurance-brokers': 'cover comparisons, business risk advice, claims support, and policy structuring',
             'kiwisaver-advisers': 'fund selection, contribution strategy, first-home support, and retirement planning',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
+            'locksmiths': 'emergency lockouts, key cutting, lock repairs, rekeying, and security upgrades',
             'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
             'movers': 'house moves, office relocations, packing, transport, and furniture delivery',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance',
@@ -503,7 +504,7 @@ function resolveLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses, 
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -1383,6 +1384,7 @@ const subCatsMapping = {
     'insurance-brokers': { cat: 'services', name: 'Insurance Brokers' },
     'kiwisaver-advisers': { cat: 'services', name: 'KiwiSaver Advisers' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
+    'locksmiths': { cat: 'services', name: 'Locksmiths' },
     'mortgage-brokers': { cat: 'services', name: 'Mortgage Brokers' },
     'movers': { cat: 'services', name: 'Movers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },

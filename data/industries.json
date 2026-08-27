@@ -101,7 +101,8 @@
             "movers",
             "air-conditioning",
             "fitness-equipment",
-            "gyms"
+            "gyms",
+            "locksmiths"
         ],
         "subCategoryThumbnails": {
             "cleaning-services": "/img/generated/cleaning-services.png",
@@ -121,7 +122,8 @@
             "movers": "/img/industries/construction.jpg",
             "air-conditioning": "/img/industries/construction.jpg",
             "fitness-equipment": "/img/industries/retail.png",
-            "gyms": "/img/industries/healthcare.png"
+            "gyms": "/img/industries/healthcare.png",
+            "locksmiths": "/img/industries/construction.jpg"
         }
     }
 ]
