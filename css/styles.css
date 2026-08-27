@@ -2230,6 +2230,31 @@ footer {
     margin-right: 0.3rem;
 }
 
+.preferred-source-prompt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(20, 184, 166, 0.18);
+}
+
+.preferred-source-prompt__title {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem !important;
+}
+
+.preferred-source-prompt__title i {
+    color: var(--color-secondary);
+    margin-right: 0.35rem;
+}
+
+.preferred-source-prompt p {
+    margin: 0;
+    max-width: 440px;
+}
+
 /* Responsive adjustments for SEO sections */
 @media (max-width: 768px) {
     .hub-feature-card {
@@ -2258,6 +2283,11 @@ footer {
     }
 
     .seo-trust-inner {
+        flex-direction: column;
+    }
+
+    .preferred-source-prompt {
+        align-items: flex-start;
         flex-direction: column;
     }
 

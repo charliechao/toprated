@@ -14,6 +14,10 @@ const baseTemplate = fs.readFileSync(templatePath, 'utf8');
 const BASE_URL = 'https://toprated.nz';
 const CONTENT_UPDATED_LABEL = 'July 2026';
 const CONTENT_UPDATED_ISO = '2026-07-28';
+const PREFERRED_SOURCE_PAGE_PATHS = new Set([
+    '/cities/auckland/cuisine/japanese-restaurants',
+    '/cities/wellington/cuisine/japanese-restaurants'
+]);
 
 // Hero Images Mapping
 const cityHeros = {
@@ -194,12 +198,16 @@ function normalizeInternalLinks(html = '') {
 function getBaseTemplate(title, description, pagePath, content, schema = null) {
     const schemaScript = schema ? `<script type="application/ld+json">${serializeJsonLd(schema)}</script>` : '';
     const pageUrl = toAbsoluteUrl(pagePath);
+    const preferredSourceScript = PREFERRED_SOURCE_PAGE_PATHS.has(toPublicPath(pagePath))
+        ? '  <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>\n'
+        : '';
     return baseTemplate
         .replace(/<!-- PAGE_TITLE_PLACEHOLDER -->/g, title)
         .replace(/<!-- PAGE_DESCRIPTION_PLACEHOLDER -->/g, description)
         .replace(/<!-- PAGE_URL_PLACEHOLDER -->/g, pageUrl)
         .replace('<!-- PAGE_CONTENT_PLACEHOLDER -->', normalizeInternalLinks(content))
-        .replace('<!-- SCHEMA_PLACEHOLDER -->', schemaScript);
+        .replace('<!-- SCHEMA_PLACEHOLDER -->', schemaScript)
+        .replace('<!-- PREFERRED_SOURCE_SCRIPT_PLACEHOLDER -->', preferredSourceScript);
 }
 
 function serializeJsonLd(value) {
@@ -984,6 +992,11 @@ function getCategoryHubSeo(city, categorySlug) {
 }
 
 function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/city-heroes/auckland.jpg', linkContext = null, pageBusinesses = null) {
+    const pagePath = linkContext?.type === 'leaf'
+        ? `/cities/${linkContext.city.slug}/${linkContext.categorySlug}/${linkContext.pageSlug}`
+        : '';
+    const hasPreferredSourceButton = PREFERRED_SOURCE_PAGE_PATHS.has(pagePath);
+
     // --- Build Table of Contents ---
     let tocItems = [];
     if (specificSeo) {
@@ -1128,6 +1141,15 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/city
         </section>`;
     }
 
+    const preferredSourceHtml = hasPreferredSourceButton ? `                        <div class="preferred-source-prompt">
+                            <div>
+                                <strong class="preferred-source-prompt__title"><i class="fas fa-newspaper"></i> Follow future TopRated guides on Google</strong>
+                                <p>Make TopRated a preferred source to spot our fresh local guides more easily in Google Search.</p>
+                            </div>
+                            <div google-add-preferred-source-btn data-theme="light"></div>
+                        </div>
+` : '';
+
     // --- Author / Trust Section ---
     let trustHtml = '';
     if (specificSeo && (specificSeo.author || specificSeo.lastUpdated)) {
@@ -1140,7 +1162,7 @@ function generateLeafContent(titleLine, specificSeo = null, heroImg = '/img/city
                         <strong>Why Trust TopRated?</strong>
                         <p>TopRated combines editorial research, public business information, and clearly labelled owner-supplied profiles. Featured placements are labelled. Business details can change, so verify current pricing, availability, qualifications, and terms directly before deciding. <a href="/about.html">Learn how TopRated works →</a></p>
                         ${specificSeo.author ? `<p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: ${specificSeo.author}</p>` : ''}
-                    </div>
+${preferredSourceHtml}                    </div>
                 </div>
             </div>
         </aside>`;
