@@ -4761,5 +4761,32 @@
       {"question": "Can a locksmith help if I am locked out of my home or car?", "answer": "Many Auckland locksmiths provide emergency home, business, and vehicle lockout support. Confirm availability, response time, and the information they need before dispatching a technician."},
       {"question": "What is the difference between rekeying and replacing a lock?", "answer": "Rekeying changes the internal key combination so existing keys no longer work, while replacement installs new hardware. The right option depends on the lock condition, security requirements, and compatibility."}
     ]
+  },
+  "auckland/services/beauty-salons": {
+    "pageTitle": "Best Beauty Salons in Auckland | Lashes, Brows & Beauty Care | TopRated NZ",
+    "metaDescription": "Compare Auckland beauty salons for lashes, brows, nail care, facials, and personalised beauty treatments.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "September 2026",
+    "introText": "Auckland beauty appointments range from a quick brow tidy to a fuller lash, nail, or skincare routine. Compare salons by the treatments they specialise in, hygiene practices, consultation style, and how clearly they explain aftercare.",
+    "buyersGuide": {
+      "title": "How to Choose a Beauty Salon in Auckland",
+      "content": "<p>The right salon should make it easy to understand the treatment, expected result, and aftercare before you book.</p><h3>1. Match the Salon to the Treatment</h3><p>Lash extensions, brow shaping, nail services, facials, and skin treatments need different skills and products. Check that the salon regularly provides the service you want.</p><h3>2. Ask About Consultation and Hygiene</h3><p>For treatments around the eyes or skin, ask how the appointment starts, what products are used, and what hygiene practices apply.</p><h3>3. Confirm Maintenance and Aftercare</h3><p>Find out how long the result usually lasts, when to rebook, and what to avoid immediately after treatment.</p>"
+    },
+    "questionsToAsk": [
+      "Which treatment best suits the result I want?",
+      "What consultation, patch test, or preparation is recommended?",
+      "How should I care for the treatment afterwards?",
+      "When should I book a maintenance appointment?"
+    ],
+    "faqs": [
+      {
+        "question": "What should I ask before a lash or brow appointment?",
+        "answer": "Ask about the specific treatment, product suitability, preparation, expected maintenance, and aftercare so the appointment suits your preferences and routine."
+      },
+      {
+        "question": "How often do beauty treatments need maintenance?",
+        "answer": "It depends on the service. Ask the salon about the typical maintenance schedule for your treatment and the factors that can affect how long results last."
+      }
+    ]
   }
 }

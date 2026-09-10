@@ -73,10 +73,11 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths', 'beauty-salons'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'air-conditioning': 'commercial AC, heat pumps, installation, servicing, and repairs',
+            'beauty-salons': 'lashes, brows, facials, nail care, and personalised beauty treatments',
             'business-loans': 'funding marketplaces, lenders, and finance options for SMEs',
             'broadband-providers': 'fibre, wireless, and business internet options for better connectivity',
             'cleaning-services': 'home, office, move-out, and one-off cleaning jobs',
@@ -504,7 +505,7 @@ function resolveLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses, 
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths', 'beauty-salons'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -1370,6 +1371,7 @@ const subCatsMapping = {
     'plumbers': { cat: 'trades', name: 'Plumbers' },
     'renovation-services': { cat: 'trades', name: 'Renovation Services' },
     'painters': { cat: 'trades', name: 'Painters' },
+    'beauty-salons': { cat: 'services', name: 'Beauty Salons' },
     'cleaning-services': { cat: 'services', name: 'Cleaning Services' },
     'accountants': { cat: 'services', name: 'Accountants' },
     'air-conditioning': { cat: 'services', name: 'Air Conditioning' },
