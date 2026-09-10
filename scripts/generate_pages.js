@@ -73,7 +73,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths', 'beauty-salons'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths', 'beauty-salons', 'gardeners'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'air-conditioning': 'commercial AC, heat pumps, installation, servicing, and repairs',
@@ -84,6 +84,7 @@ const categoryHubConfigs = {
             'computer-repairs': 'laptop, desktop, gaming PC, parts, and repair support',
             'creative-agencies': 'branding, websites, design systems, and digital creative support',
             'financial-advisers': 'investment planning, retirement advice, risk strategy, and long-term wealth guidance',
+            'gardeners': 'garden maintenance, lawn care, hedge trimming, pruning, and tidy-ups',
             'fitness-equipment': 'weights, cardio machines, strength equipment, and home-gym setups',
             'gyms': '24/7 access, strength and cardio equipment, group classes, and personal training',
             'hypnotherapists': 'clinical hypnotherapy, NLP, anxiety support, and nervous-system reset work',
@@ -115,10 +116,11 @@ const categoryHubConfigs = {
         heroLabel: 'Automotive',
         descriptionPrefix: 'Compare local automotive businesses',
         browseLabel: 'Automotive Categories',
-        subCategories: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
+        subCategories: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash', 'car-wreckers'],
         subCategoryDescriptions: {
             'mechanics': 'servicing, WoF repairs, diagnostics, brakes, and general mechanical work',
             'car-dealers': 'new and used vehicles, trade-ins, finance, and after-sales support',
+            'car-wreckers': 'cash for cars, vehicle removal, dismantling, recycled parts, and responsible recycling',
             'tyre-shops': 'tyre replacement, puncture repair, wheel alignment, and fitment advice',
             'panel-beaters': 'collision repair, panel work, paint matching, and insurance repairs',
             'car-wash': 'hand washing, detailing, interior cleaning, and paint-care services'
@@ -505,9 +507,9 @@ function resolveLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses, 
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths', 'beauty-salons'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths', 'beauty-salons', 'gardeners'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists'],
-        automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash'],
+        automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash', 'car-wreckers'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
         hospitality: ['hotels', 'bars', 'nightclubs']
     };
@@ -1372,6 +1374,7 @@ const subCatsMapping = {
     'renovation-services': { cat: 'trades', name: 'Renovation Services' },
     'painters': { cat: 'trades', name: 'Painters' },
     'beauty-salons': { cat: 'services', name: 'Beauty Salons' },
+    'gardeners': { cat: 'services', name: 'Gardeners' },
     'cleaning-services': { cat: 'services', name: 'Cleaning Services' },
     'accountants': { cat: 'services', name: 'Accountants' },
     'air-conditioning': { cat: 'services', name: 'Air Conditioning' },
@@ -1396,6 +1399,7 @@ const subCatsMapping = {
     'car-dealers': { cat: 'automotive', name: 'Car Dealers' },
     'panel-beaters': { cat: 'automotive', name: 'Panel Beaters' },
     'car-wash': { cat: 'automotive', name: 'Car Wash' },
+    'car-wreckers': { cat: 'automotive', name: 'Car Wreckers' },
     'tyre-shops': { cat: 'automotive', name: 'Tyre Shops' }
 };
 

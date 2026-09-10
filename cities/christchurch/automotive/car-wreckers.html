@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Car Wreckers in Christchurch | Cash for Cars & Vehicle Removal | TopRated NZ</title>
+  <meta name="description" content="Compare Christchurch car wreckers for cash for cars, vehicle removal, dismantling, recycled parts, and responsible recycling." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Best Car Wreckers in Christchurch | Cash for Cars & Vehicle Removal | TopRated NZ" />
+  <meta property="og:description" content="Compare Christchurch car wreckers for cash for cars, vehicle removal, dismantling, recycled parts, and responsible recycling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toprated.nz/cities/christchurch/automotive/car-wreckers" />
+  <link rel="canonical" href="https://toprated.nz/cities/christchurch/automotive/car-wreckers" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css?v=20260730a" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://toprated.nz/cities/christchurch/automotive/car-wreckers#webpage",
+      "url": "https://toprated.nz/cities/christchurch/automotive/car-wreckers",
+      "name": "Car Wreckers in Christchurch",
+      "description": "Compare Christchurch car wreckers for cash for cars, vehicle removal, dismantling, recycled parts, and responsible recycling.",
+      "dateModified": "2026-07-28",
+      "mainEntity": {
+        "@id": "https://toprated.nz/cities/christchurch/automotive/car-wreckers#business-list"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TopRated NZ",
+        "url": "https://toprated.nz"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/christchurch/automotive/car-wreckers#business-list",
+      "name": "Car Wreckers in Christchurch",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Christchurch Wreckers",
+            "description": "Christchurch Wreckers buys unwanted vehicles, provides free vehicle removal, and supplies recycled auto parts across Christchurch and Canterbury.",
+            "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "94 Shortland Street, Wainoni, Christchurch 8051",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.christchurchwreckers.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "American & Aussie Specialist Dismantlers",
+            "description": "American & Aussie Specialist Dismantlers is a Christchurch vehicle dismantler specialising in used parts for American and Australian vehicles.",
+            "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "41A Shands Road, Christchurch",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.aasd.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Canterbury Auto Wreckers",
+            "description": "Canterbury Auto Wreckers provides Christchurch cash-for-cars, vehicle removal, dismantling, and recycled auto parts services across Canterbury.",
+            "image": "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "176 Hendersons Road, Hoon Hay, Christchurch 8025",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://canterburyautowreckers.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Car Wreckers Christchurch",
+            "description": "Car Wreckers Christchurch provides cash-for-cars quotes, vehicle wrecking, and free removal across Christchurch and Canterbury.",
+            "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch, New Zealand",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            },
+            "url": "https://carwreckerschristchurch.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Kiwi Auto Wrecker",
+            "description": "Kiwi Auto Wrecker provides Christchurch vehicle buying, scrap-car removal, and recycling services for unwanted, damaged, and deregistered vehicles.",
+            "image": "https://images.unsplash.com/photo-1597766353939-89d99b5283f3?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Christchurch, New Zealand",
+              "addressLocality": "Christchurch",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Christchurch",
+          "item": "https://toprated.nz/cities/christchurch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Automotive",
+          "item": "https://toprated.nz/cities/christchurch/automotive/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Car Wreckers",
+          "item": "https://toprated.nz/cities/christchurch/automotive/car-wreckers"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a car wrecker collect a non-running vehicle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Christchurch wreckers collect unwanted and non-running vehicles, but you should confirm the collection area, vehicle details, quote process, and ownership paperwork before booking."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1851714285531074');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.net/tr?id=1851714285531074&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
+
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/city-heroes/christchurch.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="container">
+            <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
+            <h1>Car Wreckers <br><span class="text-primary">in Christchurch</span></h1>
+        </div>
+    </section>
+    <div class="container seo-content-wrapper">
+
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#quick-answer">Quick Answer</a></li><li><a href="#buyers-guide">How to Choose Car Wreckers in Christchurch</a></li><li><a href="#comparison-guide">What to Compare</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Christchurch car wreckers can buy unwanted vehicles, arrange removal, and recover reusable parts. Compare providers by the vehicle types they accept, how they handle ownership paperwork, collection areas, and whether you need parts as well as removal.</p>
+                    <p class="seo-updated"><i class="fas fa-calendar-check"></i> Last updated: July 2026</p>
+                </div>
+            </section>
+            <section class="seo-section seo-section--snapshot" id="quick-answer">
+                <div class="container">
+                    <h2><i class="fas fa-bolt"></i> Car Wreckers in Christchurch: Quick Answer</h2>
+                    <p class="seo-quick-answer"><strong>Quick answer:</strong> The best choice depends on the outcome you need, the current information each business provides, and whether its location, availability, process, and terms fit your situation. This page is designed for comparing service fit, local coverage, process, and total value.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table seo-fact-table">
+                            <tbody>
+                                <tr><th scope="row">Businesses compared</th><td>5 current TopRated listings</td></tr><tr><th scope="row">Main decision</th><td>comparing service fit, local coverage, process, and total value</td></tr><tr><th scope="row">Location context</th><td>Current listing locations include Wainoni, Hornby, Hoon Hay and Christchurch. Location does not always equal service coverage, so confirm whether the business serves your exact address.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--guide" id="buyers-guide">
+                <div class="container">
+                    <h2><i class="fas fa-clipboard-check"></i> How to Choose Car Wreckers in Christchurch</h2>
+                    <div class="seo-guide-content"><p><strong>Start with fit, not the first name in the list.</strong> These automotive providers differ in service scope, local experience, availability, communication, pricing, and the evidence they provide before a customer commits. Write down the result you need, your timing, location, constraints, and the questions that would change your decision. That makes it easier to compare businesses on the same basis.</p><p>Greater Christchurch coverage can extend well beyond the central city, so confirm service boundaries, call-out costs, scheduling, and experience with the type of property or project involved. Shortlist two or three plausible options, check their current information, and ask for comparable answers before choosing. A strong provider should explain what is included, what is uncertain, and what you need to do next without relying on vague claims.</p></div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--comparison" id="comparison-guide">
+                <div class="container">
+                    <h2><i class="fas fa-scale-balanced"></i> What to Compare Before Choosing</h2>
+                    <p>Compare relevant experience, scope and process, and price and terms before you decide. These checks are more useful than choosing from a headline rating, a single price, or a broad promise alone.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table">
+                            <thead><tr><th>Comparison point</th><th>What to check</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Relevant experience</strong></td><td>Ask for evidence of recent work or customers with needs similar to yours.</td></tr><tr><td><strong>Scope and process</strong></td><td>Compare what is included, who handles the work, timing, communication, and what could change.</td></tr><tr><td><strong>Price and terms</strong></td><td>Review the full cost, exclusions, payment timing, cancellation, warranties, and support after the work.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--questions" id="questions-to-ask">
+                <div class="container">
+                    <h2><i class="fas fa-comments"></i> Questions to Ask Before Hiring</h2>
+                    <ul class="seo-questions-list">
+                        <li><i class="fas fa-circle-question"></i> <span>Do you accept my vehicle's make, model, and condition?</span></li><li><i class="fas fa-circle-question"></i> <span>Is collection included at my Christchurch address?</span></li><li><i class="fas fa-circle-question"></i> <span>What paperwork should I complete before handover?</span></li><li><i class="fas fa-circle-question"></i> <span>Do you sell recycled parts for my vehicle type?</span></li>
+                    </ul>
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="468" data-business-name="Christchurch Wreckers" data-city-slug="christchurch" data-category-slug="automotive" data-page-slug="car-wreckers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Christchurch Wreckers" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Christchurch Wreckers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Wainoni</div>
+                <p class="text-muted">Christchurch Wreckers buys unwanted vehicles, provides free vehicle removal, and supplies recycled auto parts across Christchurch and Canterbury.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 94 Shortland Street, Wainoni, Christchurch 8051</span>
+                    <div class="business-contact-links"><a href="https://www.christchurchwreckers.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-468-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:033820324" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 03 382 0324</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="469" data-business-name="American &amp; Aussie Specialist Dismantlers" data-city-slug="christchurch" data-category-slug="automotive" data-page-slug="car-wreckers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="American &amp; Aussie Specialist Dismantlers" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>American &amp; Aussie Specialist Dismantlers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Hornby</div>
+                <p class="text-muted">American &amp; Aussie Specialist Dismantlers is a Christchurch vehicle dismantler specialising in used parts for American and Australian vehicles.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 41A Shands Road, Christchurch</span>
+                    <div class="business-contact-links"><a href="https://www.aasd.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-469-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:033440067" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 03 344 0067</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="470" data-business-name="Canterbury Auto Wreckers" data-city-slug="christchurch" data-category-slug="automotive" data-page-slug="car-wreckers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Canterbury Auto Wreckers" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Canterbury Auto Wreckers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Hoon Hay</div>
+                <p class="text-muted">Canterbury Auto Wreckers provides Christchurch cash-for-cars, vehicle removal, dismantling, and recycled auto parts services across Canterbury.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 176 Hendersons Road, Hoon Hay, Christchurch 8025</span>
+                    <div class="business-contact-links"><a href="https://canterburyautowreckers.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-470-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0223508312" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 022 350 8312</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="471" data-business-name="Car Wreckers Christchurch" data-city-slug="christchurch" data-category-slug="automotive" data-page-slug="car-wreckers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Car Wreckers Christchurch" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Car Wreckers Christchurch</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Christchurch</div>
+                <p class="text-muted">Car Wreckers Christchurch provides cash-for-cars quotes, vehicle wrecking, and free removal across Christchurch and Canterbury.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://carwreckerschristchurch.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-471-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800450521" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 450 521</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="467" data-business-name="Kiwi Auto Wrecker" data-city-slug="christchurch" data-category-slug="automotive" data-page-slug="car-wreckers" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1597766353939-89d99b5283f3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Kiwi Auto Wrecker" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Kiwi Auto Wrecker</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Christchurch</div>
+                <p class="text-muted">Kiwi Auto Wrecker provides Christchurch vehicle buying, scrap-car removal, and recycling services for unwanted, damaged, and deregistered vehicles.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Christchurch, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+
+                        <details class="seo-faq-item">
+                            <summary>Can a car wrecker collect a non-running vehicle?</summary>
+                            <p>Many Christchurch wreckers collect unwanted and non-running vehicles, but you should confirm the collection area, vehicle details, quote process, and ownership paperwork before booking.</p>
+                        </details>
+
+                </div>
+            </div>
+        </section>
+
+    <section class="container section internal-link-section" aria-labelledby="internal-link-title">
+        <div class="related-section internal-link-panel">
+            <div class="internal-link-header">
+                <h2 id="internal-link-title" class="section-title">More Ways to Compare Car Wreckers</h2>
+                <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
+            </div>
+            <div class="related-grid internal-link-grid">
+
+        <a href="/cities/christchurch/automotive/" class="related-card internal-link-card">
+            <i class="fas fa-table-cells-large"></i>
+            <div>
+                <strong>Automotive Hub in Christchurch</strong>
+                <span>Browse every automotive guide for Christchurch.</span>
+            </div>
+        </a>
+        <a href="/cities/christchurch" class="related-card internal-link-card">
+            <i class="fas fa-location-dot"></i>
+            <div>
+                <strong>Christchurch Directory</strong>
+                <span>Return to all TopRated categories in Christchurch.</span>
+            </div>
+        </a>
+        <a href="/cities/christchurch/automotive/mechanics" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Mechanics in Christchurch</strong>
+                <span>Compare another automotive shortlist in Christchurch.</span>
+            </div>
+        </a>
+        <a href="/cities/christchurch/automotive/car-dealers" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Car Dealers in Christchurch</strong>
+                <span>Compare another automotive shortlist in Christchurch.</span>
+            </div>
+        </a>
+        <a href="/cities/christchurch/automotive/panel-beaters" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Panel Beaters in Christchurch</strong>
+                <span>Compare another automotive shortlist in Christchurch.</span>
+            </div>
+        </a>
+            </div>
+        </div>
+    </section>
+    <section class="container section">
+        <div id="related"></div>
+    </section>
+
+        <aside class="seo-trust-box">
+            <div class="container">
+                <div class="seo-trust-inner">
+                    <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="seo-trust-text">
+                        <strong>Why Trust TopRated?</strong>
+                        <p>TopRated combines editorial research, public business information, and clearly labelled owner-supplied profiles. Featured placements are labelled. Business details can change, so verify current pricing, availability, qualifications, and terms directly before deciding. <a href="/about">Learn how TopRated works →</a></p>
+                        <p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: TopRated Editorial Team</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/include.js?v=20260726"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js?v=20260730a"></script>
+</body>
+
+</html>

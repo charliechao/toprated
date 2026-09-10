@@ -187,6 +187,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://toprated.nz/cities/auckland/services/gardeners</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://toprated.nz/cities/auckland/services/gyms</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -290,6 +296,12 @@
   </url>
   <url>
     <loc>https://toprated.nz/cities/christchurch/automotive/car-wash</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://toprated.nz/cities/christchurch/automotive/car-wreckers</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -428,6 +440,12 @@
   </url>
   <url>
     <loc>https://toprated.nz/cities/christchurch/services/lawyers</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://toprated.nz/cities/christchurch/services/movers</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

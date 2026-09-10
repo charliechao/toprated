@@ -4788,5 +4788,43 @@
         "answer": "It depends on the service. Ask the salon about the typical maintenance schedule for your treatment and the factors that can affect how long results last."
       }
     ]
+  },
+  "auckland/services/gardeners": {
+    "pageTitle": "Best Gardeners in Auckland | Garden Maintenance & Lawn Care | TopRated NZ",
+    "metaDescription": "Compare Auckland gardeners for regular garden maintenance, lawn care, pruning, hedge trimming, planting, and tidy-ups.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "September 2026",
+    "introText": "Auckland garden maintenance can range from a one-off tidy-up to regular lawn, hedge, planting, and weeding work. Compare providers by service coverage, visit frequency, green-waste handling, and whether the work suits your property.",
+    "questionsToAsk": [
+      "Do you offer one-off work, regular maintenance, or both?",
+      "What garden waste removal is included?",
+      "Which tasks are included in each visit?",
+      "How often do you recommend visits for this property?"
+    ],
+    "faqs": [
+      {
+        "question": "What does regular garden maintenance usually include?",
+        "answer": "The scope varies, but can include lawn mowing, weeding, hedge trimming, pruning, planting, and green-waste removal. Confirm the exact work and visit frequency before booking."
+      }
+    ]
+  },
+  "christchurch/automotive/car-wreckers": {
+    "pageTitle": "Best Car Wreckers in Christchurch | Cash for Cars & Vehicle Removal | TopRated NZ",
+    "metaDescription": "Compare Christchurch car wreckers for cash for cars, vehicle removal, dismantling, recycled parts, and responsible recycling.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "September 2026",
+    "introText": "Christchurch car wreckers can buy unwanted vehicles, arrange removal, and recover reusable parts. Compare providers by the vehicle types they accept, how they handle ownership paperwork, collection areas, and whether you need parts as well as removal.",
+    "questionsToAsk": [
+      "Do you accept my vehicle's make, model, and condition?",
+      "Is collection included at my Christchurch address?",
+      "What paperwork should I complete before handover?",
+      "Do you sell recycled parts for my vehicle type?"
+    ],
+    "faqs": [
+      {
+        "question": "Can a car wrecker collect a non-running vehicle?",
+        "answer": "Many Christchurch wreckers collect unwanted and non-running vehicles, but you should confirm the collection area, vehicle details, quote process, and ownership paperwork before booking."
+      }
+    ]
   }
 }

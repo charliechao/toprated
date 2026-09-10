@@ -69,14 +69,16 @@
             "car-dealers",
             "panel-beaters",
             "car-wash",
-            "tyre-shops"
+            "tyre-shops",
+            "car-wreckers"
         ],
         "subCategoryThumbnails": {
             "mechanics": "/img/industries/automotive.png",
             "car-dealers": "/img/generated/car-dealers.png",
             "panel-beaters": "/img/industries/automotive.png",
             "car-wash": "/img/industries/automotive.png",
-            "tyre-shops": "/img/generated/tyre-shops.png"
+            "tyre-shops": "/img/generated/tyre-shops.png",
+            "car-wreckers": "/img/industries/automotive.png"
         }
     },
     {
@@ -103,7 +105,8 @@
             "fitness-equipment",
             "gyms",
             "locksmiths",
-            "beauty-salons"
+            "beauty-salons",
+            "gardeners"
         ],
         "subCategoryThumbnails": {
             "cleaning-services": "/img/generated/cleaning-services.png",
@@ -125,7 +128,8 @@
             "fitness-equipment": "/img/industries/retail.png",
             "gyms": "/img/industries/healthcare.png",
             "locksmiths": "/img/industries/construction.jpg",
-            "beauty-salons": "/img/industries/healthcare.png"
+            "beauty-salons": "/img/industries/healthcare.png",
+            "gardeners": "/img/industries/professional-services.jpg"
         }
     }
 ]
