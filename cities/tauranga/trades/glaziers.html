@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Glaziers in Tauranga | Glass Repairs & Double Glazing | TopRated NZ</title>
+  <meta name="description" content="Compare Tauranga glaziers for glass repairs, double glazing, windows, doors, splashbacks, showers, and safety glass." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Best Glaziers in Tauranga | Glass Repairs & Double Glazing | TopRated NZ" />
+  <meta property="og:description" content="Compare Tauranga glaziers for glass repairs, double glazing, windows, doors, splashbacks, showers, and safety glass." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toprated.nz/cities/tauranga/trades/glaziers" />
+  <link rel="canonical" href="https://toprated.nz/cities/tauranga/trades/glaziers" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css?v=20260730a" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://toprated.nz/cities/tauranga/trades/glaziers#webpage",
+      "url": "https://toprated.nz/cities/tauranga/trades/glaziers",
+      "name": "Glaziers in Tauranga",
+      "description": "Compare Tauranga glaziers for glass repairs, double glazing, windows, doors, splashbacks, showers, and safety glass.",
+      "dateModified": "2026-07-28",
+      "mainEntity": {
+        "@id": "https://toprated.nz/cities/tauranga/trades/glaziers#business-list"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TopRated NZ",
+        "url": "https://toprated.nz"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/trades/glaziers#business-list",
+      "name": "Glaziers in Tauranga",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Tauranga Glass",
+            "description": "Tauranga Glass provides glass repairs, pet doors, splashbacks, showers, balustrades, mirrors, and custom glass work across Tauranga and the Bay of Plenty.",
+            "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "295 Fraser Street, Parkvale, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://taurangaglass.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "First Glass Solutions",
+            "description": "First Glass Solutions provides Tauranga glass repairs, replacement glazing, shower screens, pool fencing, mirrors, balustrades, and emergency glass repairs.",
+            "image": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.firstglasssolutions.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bay Glass & Glazing",
+            "description": "Bay Glass & Glazing provides residential and commercial glass installation, repairs, double glazing, splashbacks, and custom glazing solutions across Tauranga and the Bay of Plenty.",
+            "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bayglaze.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Mount Glass & Glazing",
+            "description": "Mount Glass & Glazing provides Tauranga, Mount Maunganui, and Papamoa glass repairs, replacement glazing, splashbacks, showers, balustrades, and custom glass work.",
+            "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "134 Newton Street, Mount Maunganui, Tauranga",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.mountglass.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "OnCall Repairs",
+            "description": "OnCall Repairs provides Tauranga glass repairs, double-glazing repairs, window and door joinery repairs, lock repairs, and pet-door services.",
+            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trades",
+          "item": "https://toprated.nz/cities/tauranga/trades/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Glaziers",
+          "item": "https://toprated.nz/cities/tauranga/trades/glaziers"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a glazier repair a broken window or door glass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Tauranga glaziers handle broken-window repairs and replacement glass. Confirm the glass type, urgency, site access, and whether temporary securing is needed before booking."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1851714285531074');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.net/tr?id=1851714285531074&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
+
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/city-heroes/tauranga.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="container">
+            <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
+            <h1>Glaziers <br><span class="text-primary">in Tauranga</span></h1>
+        </div>
+    </section>
+    <div class="container seo-content-wrapper">
+
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#quick-answer">Quick Answer</a></li><li><a href="#buyers-guide">How to Choose Glaziers in Tauranga</a></li><li><a href="#comparison-guide">What to Compare</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Tauranga glazing work can range from an urgent broken window to planned double glazing, shower screens, splashbacks, and safety glass. Compare glaziers by the type of work they handle, response expectations, product options, and how clearly the scope is explained.</p>
+                    <p class="seo-updated"><i class="fas fa-calendar-check"></i> Last updated: July 2026</p>
+                </div>
+            </section>
+            <section class="seo-section seo-section--snapshot" id="quick-answer">
+                <div class="container">
+                    <h2><i class="fas fa-bolt"></i> Glaziers in Tauranga: Quick Answer</h2>
+                    <p class="seo-quick-answer"><strong>Quick answer:</strong> The best choice depends on the outcome you need, the current information each business provides, and whether its location, availability, process, and terms fit your situation. This page is designed for comparing service fit, local coverage, process, and total value.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table seo-fact-table">
+                            <tbody>
+                                <tr><th scope="row">Businesses compared</th><td>5 current TopRated listings</td></tr><tr><th scope="row">Main decision</th><td>comparing service fit, local coverage, process, and total value</td></tr><tr><th scope="row">Location context</th><td>Current listing locations include Parkvale, Tauranga and Mount Maunganui. Location does not always equal service coverage, so confirm whether the business serves your exact address.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--guide" id="buyers-guide">
+                <div class="container">
+                    <h2><i class="fas fa-clipboard-check"></i> How to Choose Glaziers in Tauranga</h2>
+                    <div class="seo-guide-content"><p><strong>Start with fit, not the first name in the list.</strong> These trades providers differ in service scope, local experience, availability, communication, pricing, and the evidence they provide before a customer commits. Write down the result you need, your timing, location, constraints, and the questions that would change your decision. That makes it easier to compare businesses on the same basis.</p><p>Coverage can vary across Tauranga, Mount Maunganui, Papamoa, and the wider Bay of Plenty, so check service areas, travel charges, and realistic scheduling before committing. Shortlist two or three plausible options, check their current information, and ask for comparable answers before choosing. A strong provider should explain what is included, what is uncertain, and what you need to do next without relying on vague claims.</p></div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--comparison" id="comparison-guide">
+                <div class="container">
+                    <h2><i class="fas fa-scale-balanced"></i> What to Compare Before Choosing</h2>
+                    <p>Compare relevant experience, scope and process, and price and terms before you decide. These checks are more useful than choosing from a headline rating, a single price, or a broad promise alone.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table">
+                            <thead><tr><th>Comparison point</th><th>What to check</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Relevant experience</strong></td><td>Ask for evidence of recent work or customers with needs similar to yours.</td></tr><tr><td><strong>Scope and process</strong></td><td>Compare what is included, who handles the work, timing, communication, and what could change.</td></tr><tr><td><strong>Price and terms</strong></td><td>Review the full cost, exclusions, payment timing, cancellation, warranties, and support after the work.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--questions" id="questions-to-ask">
+                <div class="container">
+                    <h2><i class="fas fa-comments"></i> Questions to Ask Before Hiring</h2>
+                    <ul class="seo-questions-list">
+                        <li><i class="fas fa-circle-question"></i> <span>Do you handle this repair, replacement, or installation type?</span></li><li><i class="fas fa-circle-question"></i> <span>What glass type and safety requirements apply?</span></li><li><i class="fas fa-circle-question"></i> <span>Can you provide an expected response or installation timeframe?</span></li><li><i class="fas fa-circle-question"></i> <span>Does the quote include removal, disposal, and any joinery work?</span></li>
+                    </ul>
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="478" data-business-name="Tauranga Glass" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="glaziers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tauranga Glass" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Tauranga Glass</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Parkvale</div>
+                <p class="text-muted">Tauranga Glass provides glass repairs, pet doors, splashbacks, showers, balustrades, mirrors, and custom glass work across Tauranga and the Bay of Plenty.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 295 Fraser Street, Parkvale, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://taurangaglass.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-478-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:075713324" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 07 571 3324</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="479" data-business-name="First Glass Solutions" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="glaziers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="First Glass Solutions" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>First Glass Solutions</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Tauranga</div>
+                <p class="text-muted">First Glass Solutions provides Tauranga glass repairs, replacement glazing, shower screens, pool fencing, mirrors, balustrades, and emergency glass repairs.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.firstglasssolutions.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-479-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:075711336" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 07 571 1336</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="480" data-business-name="Bay Glass &amp; Glazing" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="glaziers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bay Glass &amp; Glazing" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Bay Glass &amp; Glazing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Tauranga</div>
+                <p class="text-muted">Bay Glass &amp; Glazing provides residential and commercial glass installation, repairs, double glazing, splashbacks, and custom glazing solutions across Tauranga and the Bay of Plenty.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.bayglaze.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-480-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:075433361" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 07 543 3361</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="481" data-business-name="Mount Glass &amp; Glazing" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="glaziers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mount Glass &amp; Glazing" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Mount Glass &amp; Glazing</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mount Maunganui</div>
+                <p class="text-muted">Mount Glass &amp; Glazing provides Tauranga, Mount Maunganui, and Papamoa glass repairs, replacement glazing, splashbacks, showers, balustrades, and custom glass work.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 134 Newton Street, Mount Maunganui, Tauranga</span>
+                    <div class="business-contact-links"><a href="https://www.mountglass.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-481-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800255452" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 255 452</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="477" data-business-name="OnCall Repairs" data-city-slug="tauranga" data-category-slug="trades" data-page-slug="glaziers" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="OnCall Repairs" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>OnCall Repairs</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Tauranga</div>
+                <p class="text-muted">OnCall Repairs provides Tauranga glass repairs, double-glazing repairs, window and door joinery repairs, lock repairs, and pet-door services.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+
+                        <details class="seo-faq-item">
+                            <summary>Can a glazier repair a broken window or door glass?</summary>
+                            <p>Many Tauranga glaziers handle broken-window repairs and replacement glass. Confirm the glass type, urgency, site access, and whether temporary securing is needed before booking.</p>
+                        </details>
+
+                </div>
+            </div>
+        </section>
+
+    <section class="container section internal-link-section" aria-labelledby="internal-link-title">
+        <div class="related-section internal-link-panel">
+            <div class="internal-link-header">
+                <h2 id="internal-link-title" class="section-title">More Ways to Compare Glaziers</h2>
+                <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
+            </div>
+            <div class="related-grid internal-link-grid">
+
+        <a href="/cities/tauranga/trades/" class="related-card internal-link-card">
+            <i class="fas fa-table-cells-large"></i>
+            <div>
+                <strong>Trades Hub in Tauranga</strong>
+                <span>Browse every trades guide for Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga" class="related-card internal-link-card">
+            <i class="fas fa-location-dot"></i>
+            <div>
+                <strong>Tauranga Directory</strong>
+                <span>Return to all TopRated categories in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga/trades/builders" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Builders in Tauranga</strong>
+                <span>Compare another trades shortlist in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga/trades/electricians" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Electricians in Tauranga</strong>
+                <span>Compare another trades shortlist in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga/trades/plumbers" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Plumbers in Tauranga</strong>
+                <span>Compare another trades shortlist in Tauranga.</span>
+            </div>
+        </a>
+            </div>
+        </div>
+    </section>
+    <section class="container section">
+        <div id="related"></div>
+    </section>
+
+        <aside class="seo-trust-box">
+            <div class="container">
+                <div class="seo-trust-inner">
+                    <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="seo-trust-text">
+                        <strong>Why Trust TopRated?</strong>
+                        <p>TopRated combines editorial research, public business information, and clearly labelled owner-supplied profiles. Featured placements are labelled. Business details can change, so verify current pricing, availability, qualifications, and terms directly before deciding. <a href="/about">Learn how TopRated works →</a></p>
+                        <p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: TopRated Editorial Team</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/include.js?v=20260726"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js?v=20260730a"></script>
+</body>
+
+</html>

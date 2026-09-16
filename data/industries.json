@@ -49,7 +49,9 @@
             "plumbers",
             "renovation-services",
             "painters",
-            "arborists"
+            "arborists",
+            "glaziers",
+            "solar-services"
         ],
         "subCategoryThumbnails": {
             "builders": "/img/generated/builders.png",
@@ -57,7 +59,9 @@
             "plumbers": "/img/generated/plumbers.png",
             "renovation-services": "/img/generated/renovation-services.png",
             "painters": "/img/generated/painters.png",
-            "arborists": "/img/businesses/better-trees-bay-of-plenty.jpg"
+            "arborists": "/img/businesses/better-trees-bay-of-plenty.jpg",
+            "glaziers": "/img/industries/construction.jpg",
+            "solar-services": "/img/industries/construction.jpg"
         }
     },
     {

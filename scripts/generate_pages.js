@@ -102,14 +102,16 @@ const categoryHubConfigs = {
         heroLabel: 'Trades',
         descriptionPrefix: 'Compare top-rated local trades',
         browseLabel: 'Trade Categories',
-        subCategories: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists'],
+        subCategories: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists', 'glaziers', 'solar-services'],
         subCategoryDescriptions: {
             'builders': 'renovations, extensions, repairs, and structural project work',
             'electricians': 'maintenance, upgrades, safety, and installation work',
             'plumbers': 'repairs, drainage, hot water, and renovation plumbing',
             'renovation-services': 'project coordination for kitchens, bathrooms, and wider upgrades',
             'painters': 'interior, exterior, presentation, and repaint work',
-            'arborists': 'tree removal, pruning, hedge trimming, stump work, and property tree care'
+            'arborists': 'tree removal, pruning, hedge trimming, stump work, and property tree care',
+            'glaziers': 'glass repairs, double glazing, windows, doors, splashbacks, and safety glass',
+            'solar-services': 'solar panels, batteries, system design, installation, and quote comparisons'
         }
     },
     automotive: {
@@ -508,7 +510,7 @@ function resolveLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses, 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
         services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths', 'beauty-salons', 'gardeners'],
-        trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists'],
+        trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists', 'glaziers', 'solar-services'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash', 'car-wreckers'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
         hospitality: ['hotels', 'bars', 'nightclubs']
@@ -1394,6 +1396,8 @@ const subCatsMapping = {
     'movers': { cat: 'services', name: 'Movers' },
     'real-estate-agents': { cat: 'services', name: 'Real Estate Agents' },
     'arborists': { cat: 'trades', name: 'Arborists' },
+    'glaziers': { cat: 'trades', name: 'Glaziers' },
+    'solar-services': { cat: 'trades', name: 'Solar Services' },
     'travel-agencies': { cat: 'services', name: 'Travel Agencies' },
     'mechanics': { cat: 'automotive', name: 'Mechanics' },
     'car-dealers': { cat: 'automotive', name: 'Car Dealers' },

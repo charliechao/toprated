@@ -4808,6 +4808,44 @@
       }
     ]
   },
+  "tauranga/trades/glaziers": {
+    "pageTitle": "Best Glaziers in Tauranga | Glass Repairs & Double Glazing | TopRated NZ",
+    "metaDescription": "Compare Tauranga glaziers for glass repairs, double glazing, windows, doors, splashbacks, showers, and safety glass.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "September 2026",
+    "introText": "Tauranga glazing work can range from an urgent broken window to planned double glazing, shower screens, splashbacks, and safety glass. Compare glaziers by the type of work they handle, response expectations, product options, and how clearly the scope is explained.",
+    "questionsToAsk": [
+      "Do you handle this repair, replacement, or installation type?",
+      "What glass type and safety requirements apply?",
+      "Can you provide an expected response or installation timeframe?",
+      "Does the quote include removal, disposal, and any joinery work?"
+    ],
+    "faqs": [
+      {
+        "question": "Can a glazier repair a broken window or door glass?",
+        "answer": "Many Tauranga glaziers handle broken-window repairs and replacement glass. Confirm the glass type, urgency, site access, and whether temporary securing is needed before booking."
+      }
+    ]
+  },
+  "auckland/trades/solar-services": {
+    "pageTitle": "Best Solar Services in Auckland | Solar Panels & Batteries | TopRated NZ",
+    "metaDescription": "Compare Auckland solar services for solar panels, batteries, system design, installation, and independent quote comparisons.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "September 2026",
+    "introText": "Auckland solar decisions involve your roof, electricity use, system design, finance, installation, and long-term support. Compare providers and comparison services by their assessment process, product options, installation scope, and how clearly they explain expected performance.",
+    "questionsToAsk": [
+      "Do you assess my roof, power use, and goals before recommending a system?",
+      "Which panels, inverter, battery, and monitoring options are included?",
+      "Who completes the design, installation, electrical work, and grid connection?",
+      "What warranty, maintenance, and after-installation support applies?"
+    ],
+    "faqs": [
+      {
+        "question": "What should I compare when choosing an Auckland solar provider?",
+        "answer": "Compare the assessment process, proposed system design, equipment, installation scope, warranties, grid-connection support, and expected ongoing service. A quote should make the included work and assumptions clear."
+      }
+    ]
+  },
   "christchurch/automotive/car-wreckers": {
     "pageTitle": "Best Car Wreckers in Christchurch | Cash for Cars & Vehicle Removal | TopRated NZ",
     "metaDescription": "Compare Christchurch car wreckers for cash for cars, vehicle removal, dismantling, recycled parts, and responsible recycling.",
