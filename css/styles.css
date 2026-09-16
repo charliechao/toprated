@@ -732,12 +732,55 @@ footer {
     color: var(--color-primary);
 }
 
+.footer-preferred-source {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.footer-preferred-source__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    color: var(--color-text-main);
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.footer-preferred-source__badge:hover {
+    border-color: rgba(20, 184, 166, 0.4);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+.footer-preferred-source__badge svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    flex: 0 0 auto;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     color: rgba(0, 0, 0, 0.4);
     font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .footer-preferred-source__badge {
+        width: 100%;
+    }
 }
 
 /* Trust Pages */
