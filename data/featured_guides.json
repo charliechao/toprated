@@ -15,6 +15,14 @@
       "href": "/cities/auckland/services/seo-agencies",
       "cta": "Compare the top 5",
       "icon": "fa-magnifying-glass-chart"
+    },
+    {
+      "eyebrow": "New Editorial Guide",
+      "title": "Top 7 Google Ads Agencies in Auckland (2026 Guide)",
+      "description": "A practical Auckland comparison for businesses assessing paid-search specialists, conversion tracking, account ownership, and campaign support.",
+      "href": "/cities/auckland/services/google-ads-agencies",
+      "cta": "Explore the shortlist",
+      "icon": "fa-bullhorn"
     }
   ],
   "cities/auckland/services": [
@@ -33,6 +41,14 @@
       "href": "/cities/auckland/services/seo-agencies",
       "cta": "See the SEO shortlist",
       "icon": "fa-magnifying-glass-chart"
+    },
+    {
+      "eyebrow": "New Editorial Guide",
+      "title": "Top 7 Google Ads Agencies in Auckland",
+      "description": "Built for Auckland businesses comparing paid-search scope, conversion tracking, account access, and campaign-management support.",
+      "href": "/cities/auckland/services/google-ads-agencies",
+      "cta": "Explore the shortlist",
+      "icon": "fa-bullhorn"
     }
   ]
 }
