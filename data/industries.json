@@ -92,6 +92,7 @@
         "subCategories": [
             "cleaning-services",
             "hypnotherapists",
+            "massage-therapists",
             "accountants",
             "financial-advisers",
             "kiwisaver-advisers",
@@ -115,6 +116,7 @@
         "subCategoryThumbnails": {
             "cleaning-services": "/img/generated/cleaning-services.png",
             "hypnotherapists": "/img/industries/healthcare.png",
+            "massage-therapists": "/img/industries/healthcare.png",
             "accountants": "/img/businesses/dfk-orb360-ohalloran.png",
             "financial-advisers": "/img/industries/professional-services.jpg",
             "kiwisaver-advisers": "/img/industries/professional-services.jpg",

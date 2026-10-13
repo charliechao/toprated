@@ -4864,5 +4864,28 @@
         "answer": "Many Christchurch wreckers collect unwanted and non-running vehicles, but you should confirm the collection area, vehicle details, quote process, and ownership paperwork before booking."
       }
     ]
+  },
+  "christchurch/services/massage-therapists": {
+    "pageTitle": "Best Massage Therapists in Christchurch | Therapeutic & Sports Massage | TopRated NZ",
+    "metaDescription": "Compare Christchurch massage therapists for therapeutic, sports, deep-tissue, relaxation, recovery, and lymphatic massage services.",
+    "author": "TopRated Editorial Team",
+    "lastUpdated": "October 2026",
+    "introText": "Christchurch massage therapists offer different approaches, from relaxation and therapeutic massage to sports recovery, deep-tissue work, and lymphatic support. Compare providers by the type of massage they offer, their location, appointment availability, and whether their approach suits your goals.",
+    "questionsToAsk": [
+      "What massage styles do you offer and which may suit my needs?",
+      "What happens during a first appointment?",
+      "How long are appointments and what should I do before arriving?",
+      "Are there any health considerations I should discuss before booking?"
+    ],
+    "faqs": [
+      {
+        "question": "How do I choose a massage therapist in Christchurch?",
+        "answer": "Start with the outcome you want, such as relaxation, sports recovery, muscle tension, or a specific therapeutic approach. Then compare each provider's stated services, location, appointment availability, and any health information they ask you to share before booking."
+      },
+      {
+        "question": "What should I tell a massage therapist before an appointment?",
+        "answer": "Tell the therapist about the areas you want to focus on, pressure preferences, recent injuries, medical conditions, and any advice from your health professional. Contact the provider directly if you are unsure whether a treatment is suitable."
+      }
+    ]
   }
 }

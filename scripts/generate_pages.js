@@ -73,7 +73,7 @@ const categoryHubConfigs = {
         heroLabel: 'Services',
         descriptionPrefix: 'Compare top-rated local service providers',
         browseLabel: 'Service Categories',
-        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths', 'beauty-salons', 'gardeners'],
+        subCategories: ['accountants', 'cleaning-services', 'hypnotherapists', 'massage-therapists', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'real-estate-agents', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'creative-agencies', 'broadband-providers', 'computer-repairs', 'travel-agencies', 'movers', 'air-conditioning', 'fitness-equipment', 'gyms', 'locksmiths', 'beauty-salons', 'gardeners'],
         subCategoryDescriptions: {
             'accountants': 'tax, reporting, cash flow, and practical small-business support',
             'air-conditioning': 'commercial AC, heat pumps, installation, servicing, and repairs',
@@ -92,6 +92,7 @@ const categoryHubConfigs = {
             'kiwisaver-advisers': 'fund selection, contribution strategy, first-home support, and retirement planning',
             'lawyers': 'property, commercial, wills, trusts, and legal support',
             'locksmiths': 'emergency lockouts, key cutting, lock repairs, rekeying, and security upgrades',
+            'massage-therapists': 'therapeutic, sports, deep-tissue, relaxation, and recovery massage',
             'mortgage-brokers': 'home-loan advice, lender comparisons, pre-approvals, and refinance support',
             'movers': 'house moves, office relocations, packing, transport, and furniture delivery',
             'real-estate-agents': 'selling, buying, pricing, and local campaign guidance',
@@ -276,9 +277,9 @@ function renderBusinessCard(business) {
     const imageFitClass = business.imageFit === 'contain' ? ' business-image--contain' : '';
     const ratingValue = business.reviewSource && Number.isInteger(business.rating) ? business.rating.toFixed(1) : business.rating;
     const ratingSource = business.reviewSource ? ` ${escapeHtml(business.reviewSource)} rating` : '';
-    const ratingBadge = hasRating
+    const ratingBadge = isBasic ? '' : (hasRating
         ? `<div class="rating-badge"><i class="fas fa-star"></i> ${escapeHtml(ratingValue)}${ratingSource} (${escapeHtml(business.reviews)} reviews)</div>`
-        : '<div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>';
+        : '<div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>');
     const serviceHighlights = isFeatured && Array.isArray(business.highlightedServices) && business.highlightedServices.length
         ? `<div class="business-services"><span>Main services</span><div class="business-service-tags">${business.highlightedServices.map(service => `<span>${escapeHtml(service)}</span>`).join('')}</div></div>`
         : '';
@@ -307,7 +308,7 @@ function renderBusinessCard(business) {
                 </div>
             </div>
         </div>
-    `.replace(/^[ \t]+$/gm, '').trim();
+    `.replace(/^[ \t\r]+$/gm, '').trim();
 }
 
 function formatSlugLabel(value) {
@@ -509,7 +510,7 @@ function resolveLeafSeo(city, categorySlug, pageSlug, pageName, pageBusinesses, 
 
 function getFeaturedSubcategories(categorySlug) {
     const priority = {
-        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths', 'beauty-salons', 'gardeners'],
+        services: ['accountants', 'financial-advisers', 'kiwisaver-advisers', 'lawyers', 'hypnotherapists', 'massage-therapists', 'insurance-brokers', 'mortgage-brokers', 'business-loans', 'broadband-providers', 'computer-repairs', 'fitness-equipment', 'gyms', 'travel-agencies', 'movers', 'air-conditioning', 'creative-agencies', 'real-estate-agents', 'locksmiths', 'beauty-salons', 'gardeners'],
         trades: ['builders', 'electricians', 'plumbers', 'renovation-services', 'painters', 'arborists', 'glaziers', 'solar-services'],
         automotive: ['mechanics', 'car-dealers', 'tyre-shops', 'panel-beaters', 'car-wash', 'car-wreckers'],
         cuisine: ['restaurants', 'cafes', 'japanese-restaurants', 'chinese-restaurants', 'indian-restaurants'],
@@ -1199,7 +1200,7 @@ ${preferredSourceHtml}                    </div>
     </section>
     ${trustHtml}
     ${Array.isArray(pageBusinesses) ? '' : '<script id="schema" type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Nationwide businesses in New Zealand","itemListElement":[]}</script>'}
-    `.replace(/^[ \t]+$/gm, '');
+    `.replace(/^[ \t\r]+$/gm, '');
 }
 
 function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null, linkContext = null) {
@@ -1295,7 +1296,7 @@ function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null, lin
     ${buildInternalLinkSection(linkContext)}
     ${faqHtml}
     ${trustHtml}
-    `.replace(/^[ \t]+$/gm, '');
+    `.replace(/^[ \t\r]+$/gm, '');
 }
 
 // ---------------------------------------------------
@@ -1388,6 +1389,7 @@ const subCatsMapping = {
     'fitness-equipment': { cat: 'services', name: 'Fitness Equipment' },
     'gyms': { cat: 'services', name: 'Gyms' },
     'hypnotherapists': { cat: 'services', name: 'Hypnotherapists' },
+    'massage-therapists': { cat: 'services', name: 'Massage Therapists' },
     'insurance-brokers': { cat: 'services', name: 'Insurance Brokers' },
     'kiwisaver-advisers': { cat: 'services', name: 'KiwiSaver Advisers' },
     'lawyers': { cat: 'services', name: 'Lawyers' },
