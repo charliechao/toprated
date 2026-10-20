@@ -8887,5 +8887,21 @@
     "pageSlug": "massage-therapists",
     "neighborhood": "Christchurch",
     "phone": "022 044 0939"
+  },
+  {
+    "id": 493,
+    "name": "Evergreen Garden Services",
+    "industry": "Gardeners",
+    "city": "Auckland",
+    "description": "Evergreen Garden Services provides regular garden maintenance, one-off clean-ups, hedge trimming, lawn mowing, planting, and commercial garden care across Auckland.",
+    "website": "https://www.evergreengardenservice.co.nz/",
+    "address": "Mount Roskill, Auckland, New Zealand",
+    "image": "https://www.evergreengardenservice.co.nz/images/auckland-garden-1170.webp",
+    "citySlug": "auckland",
+    "categorySlug": "services",
+    "pageSlug": "gardeners",
+    "neighborhood": "Mount Roskill",
+    "phone": "020 4023 3070",
+    "listingTier": "basic"
   }
 ]
