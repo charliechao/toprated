@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    ---------------------------------------------------
+    Purpose: Base HTML template for all generated pages.
+    ---------------------------------------------------
+    Why we use a template:
+    * Guarantees consistent meta tags (SEO) across the site.
+    * Central place for breadcrumb placeholder – navigation.js will inject the actual markup.
+    * Includes JSON‑LD schema block that can be populated with data at runtime.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Movers in Tauranga | Compare Moving Companies | TopRated NZ</title>
+  <meta name="description" content="Compare Tauranga movers for house moves, office relocations, packing, furniture transport, and Bay of Plenty moves." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Best Movers in Tauranga | Compare Moving Companies | TopRated NZ" />
+  <meta property="og:description" content="Compare Tauranga movers for house moves, office relocations, packing, furniture transport, and Bay of Plenty moves." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toprated.nz/cities/tauranga/services/movers" />
+  <link rel="canonical" href="https://toprated.nz/cities/tauranga/services/movers" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css?v=20260730a" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://toprated.nz/cities/tauranga/services/movers#webpage",
+      "url": "https://toprated.nz/cities/tauranga/services/movers",
+      "name": "Movers in Tauranga",
+      "description": "Compare Tauranga movers for house moves, office relocations, packing, furniture transport, and Bay of Plenty moves.",
+      "dateModified": "2026-07-28",
+      "mainEntity": {
+        "@id": "https://toprated.nz/cities/tauranga/services/movers#business-list"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TopRated NZ",
+        "url": "https://toprated.nz"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://toprated.nz/cities/tauranga/services/movers#business-list",
+      "name": "Movers in Tauranga",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Conroy Removals Tauranga",
+            "description": "Conroy Removals Tauranga provides local, nationwide, Trans-Tasman, and international moves, with packing, storage, and office-relocation support.",
+            "image": "https://images.unsplash.com/photo-1586864387789-628af9feed72?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "14 Rerewai Place, Mount Maunganui, Tauranga 3116",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://conroy.co.nz/locations/our-tauranga-movers/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "U-Pak Removals",
+            "description": "U-Pak Removals is a Tauranga-based business providing household and office moving, packing, unpacking, and moving-materials support across New Zealand.",
+            "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.upak.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "2 Men and a Truck Tauranga Movers",
+            "description": "2 Men and a Truck Tauranga Movers provides local furniture removals, packing, office moves, and intercity relocations from its Judea base.",
+            "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Judea, Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.2menandatrucktaurangamovers.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Bay of Plenty Movers",
+            "description": "Bay of Plenty Movers offers furniture removals, packing, moving, and storage services for homes, flats, businesses, and long-distance moves from Tauranga.",
+            "image": "https://images.unsplash.com/photo-1600518464441-45c83b62f7a2?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            },
+            "url": "https://www.bopmovers.co.nz/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "Lift & Shift Movers",
+            "description": "Lift & Shift Movers is a Tauranga moving company offering house and furniture moves, commercial deliveries, packing services, crane services, and moving-truck rentals.",
+            "image": "https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=800&q=80",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tauranga, New Zealand",
+              "addressLocality": "Tauranga",
+              "addressCountry": "NZ"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toprated.nz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tauranga",
+          "item": "https://toprated.nz/cities/tauranga"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://toprated.nz/cities/tauranga/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Movers",
+          "item": "https://toprated.nz/cities/tauranga/services/movers"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How early should I book Tauranga movers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book as early as practical for weekends, month-end, and peak summer dates, especially for larger homes or regional moves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can movers transport only one large item?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some companies offer single-item or furniture delivery services. Ask about minimum charges and whether another job may be combined with yours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a moving company store my belongings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some movers offer short- or long-term storage directly or through a partner. Confirm access, security, insurance, and handling fees."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1851714285531074');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.net/tr?id=1851714285531074&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <header id="site-header"></header>
+
+  <!-- Main content area – each page will inject its own heading and list -->
+  <main id="content">
+
+    <section class="industry-hero" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/city-heroes/tauranga.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="container">
+            <nav id="breadcrumb" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;"></nav>
+            <h1>Movers <br><span class="text-primary">in Tauranga</span></h1>
+        </div>
+    </section>
+    <div class="container seo-content-wrapper">
+
+        <nav class="seo-toc" aria-label="Table of Contents">
+            <h2 class="seo-toc__title"><i class="fas fa-list"></i> In This Guide</h2>
+            <ol class="seo-toc__list">
+                <li><a href="#overview">Overview</a></li><li><a href="#quick-answer">Quick Answer</a></li><li><a href="#buyers-guide">How to Choose Movers in Tauranga</a></li><li><a href="#comparison-guide">What to Compare</a></li><li><a href="#questions-to-ask">Questions to Ask</a></li><li><a href="#top-rated-listings">Top-Rated Listings</a></li><li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+
+            <section class="seo-section" id="overview">
+                <div class="container">
+                    <p class="seo-lead">Tauranga moving companies handle local relocations around the city, Mount Maunganui, Papamoa, and the wider Bay of Plenty. Compare movers by availability, travel pricing, property access, packing support, and the care taken with furniture and fragile belongings.</p>
+                    <p class="seo-updated"><i class="fas fa-calendar-check"></i> Last updated: July 2026</p>
+                </div>
+            </section>
+            <section class="seo-section seo-section--snapshot" id="quick-answer">
+                <div class="container">
+                    <h2><i class="fas fa-bolt"></i> Movers in Tauranga: Quick Answer</h2>
+                    <p class="seo-quick-answer"><strong>Quick answer:</strong> The best choice depends on the outcome you need, the current information each business provides, and whether its location, availability, process, and terms fit your situation. This page is designed for matching capacity, access planning, protection, timing, and liability terms to the move.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table seo-fact-table">
+                            <tbody>
+                                <tr><th scope="row">Businesses compared</th><td>5 current TopRated listings</td></tr><tr><th scope="row">Main decision</th><td>matching capacity, access planning, protection, timing, and liability terms to the move</td></tr><tr><th scope="row">Location context</th><td>Current listing locations include Mount Maunganui, Tauranga and Judea. Location does not always equal service coverage, so confirm whether the business serves your exact address.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--guide" id="buyers-guide">
+                <div class="container">
+                    <h2><i class="fas fa-clipboard-check"></i> How to Choose Movers in Tauranga</h2>
+                    <div class="seo-guide-content"><p>Busy moving dates and travel around the Bay of Plenty make early planning worthwhile.</p><h3>1. Confirm the Route</h3><p>Check whether the company covers both addresses and how travel outside central Tauranga is charged.</p><h3>2. Describe Access Clearly</h3><p>Tell the mover about apartment rules, parking, stairs, long paths, gates, and large items.</p><h3>3. Compare the Full Service</h3><p>Look beyond the truck rate to packing, materials, dismantling, extra crew, and storage if needed.</p><h3>4. Check Item Protection</h3><p>Ask how furniture is wrapped and secured and what damage process applies.</p></div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--comparison" id="comparison-guide">
+                <div class="container">
+                    <h2><i class="fas fa-scale-balanced"></i> What to Compare Before Choosing</h2>
+                    <p>Compare detailed inventory, quote structure, and protection and timing before you decide. These checks are more useful than choosing from a headline rating, a single price, or a broad promise alone.</p>
+                    <div class="seo-price-table-wrap">
+                        <table class="seo-price-table">
+                            <thead><tr><th>Comparison point</th><th>What to check</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Detailed inventory</strong></td><td>Give an accurate item list, stairs, lifts, parking, access, heavy items, dismantling, packing, and storage requirements.</td></tr><tr><td><strong>Quote structure</strong></td><td>Compare hourly or fixed pricing, travel, minimums, extra staff, materials, delays, waiting time, GST, and likely variations.</td></tr><tr><td><strong>Protection and timing</strong></td><td>Ask about insurance or liability, blankets and wrapping, fragile items, arrival windows, cancellations, and damage claims.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="seo-section seo-section--questions" id="questions-to-ask">
+                <div class="container">
+                    <h2><i class="fas fa-comments"></i> Questions to Ask Before Hiring</h2>
+                    <ul class="seo-questions-list">
+                        <li><i class="fas fa-circle-question"></i> <span>Which Bay of Plenty areas do you cover?</span></li><li><i class="fas fa-circle-question"></i> <span>Are travel and fuel included?</span></li><li><i class="fas fa-circle-question"></i> <span>What packing services do you offer?</span></li><li><i class="fas fa-circle-question"></i> <span>How do you protect fragile items?</span></li><li><i class="fas fa-circle-question"></i> <span>What happens if the move takes longer than estimated?</span></li>
+                    </ul>
+                </div>
+            </section>
+    </div>
+    <section class="container section" id="top-rated-listings">
+        <div id="business-list" class="business-list" data-rendered="static" data-business-count="5">
+            <div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="500" data-business-name="Conroy Removals Tauranga" data-city-slug="tauranga" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1586864387789-628af9feed72?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Conroy Removals Tauranga" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Conroy Removals Tauranga</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Mount Maunganui</div>
+                <p class="text-muted">Conroy Removals Tauranga provides local, nationwide, Trans-Tasman, and international moves, with packing, storage, and office-relocation support.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> 14 Rerewai Place, Mount Maunganui, Tauranga 3116</span>
+                    <div class="business-contact-links"><a href="https://conroy.co.nz/locations/our-tauranga-movers/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-500-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:075474088" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 07 547 4088</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="501" data-business-name="U-Pak Removals" data-city-slug="tauranga" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="U-Pak Removals" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>U-Pak Removals</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Tauranga</div>
+                <p class="text-muted">U-Pak Removals is a Tauranga-based business providing household and office moving, packing, unpacking, and moving-materials support across New Zealand.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.upak.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-501-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="502" data-business-name="2 Men and a Truck Tauranga Movers" data-city-slug="tauranga" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="2 Men and a Truck Tauranga Movers" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>2 Men and a Truck Tauranga Movers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Judea</div>
+                <p class="text-muted">2 Men and a Truck Tauranga Movers provides local furniture removals, packing, office moves, and intercity relocations from its Judea base.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Judea, Tauranga, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.2menandatrucktaurangamovers.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-502-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0223812423" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 022 381 2423</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal   " data-listing-impression="true" data-business-id="503" data-business-name="Bay of Plenty Movers" data-city-slug="tauranga" data-category-slug="services" data-page-slug="movers" data-listing-tier="standard">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600518464441-45c83b62f7a2?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bay of Plenty Movers" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+                <div class="rating-badge"><i class="fas fa-sparkles"></i> New listing</div>
+                <h3>Bay of Plenty Movers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Tauranga</div>
+                <p class="text-muted">Bay of Plenty Movers offers furniture removals, packing, moving, and storage services for homes, flats, businesses, and long-distance moves from Tauranga.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga, New Zealand</span>
+                    <div class="business-contact-links"><a href="https://www.bopmovers.co.nz/?utm_source=toprated.nz&amp;utm_medium=referral&amp;utm_campaign=business_listing&amp;utm_content=business-503-website" target="_blank" rel="noopener" class="text-primary" data-tracked-referral="website"><i class="fas fa-external-link-alt"></i> Website</a><a href="tel:0800222120" class="text-primary" data-tracked-referral="phone"><i class="fas fa-phone"></i> 0800 222 120</a></div>
+                </div>
+            </div>
+        </div>
+<div class="glass-card business-card-horizontal basic-listing-card  " data-listing-impression="true" data-business-id="495" data-business-name="Lift &amp; Shift Movers" data-city-slug="tauranga" data-category-slug="services" data-page-slug="movers" data-listing-tier="basic">
+            <div class="business-image-container">
+                <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Lift &amp; Shift Movers" class="business-image" loading="lazy" decoding="async">
+
+            </div>
+            <div class="business-info">
+
+                <h3>Lift &amp; Shift Movers</h3>
+                <div class="neighborhood-tag"><i class="fas fa-map-pin"></i> Tauranga</div>
+                <p class="text-muted">Lift &amp; Shift Movers is a Tauranga moving company offering house and furniture moves, commercial deliveries, packing services, crane services, and moving-truck rentals.</p>
+
+                <div class="business-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tauranga, New Zealand</span>
+                    <div class="business-contact-links"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <section class="seo-section seo-section--faq" id="faqs">
+            <div class="container">
+                <h2><i class="fas fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="seo-faq-grid">
+
+                        <details class="seo-faq-item">
+                            <summary>How early should I book Tauranga movers?</summary>
+                            <p>Book as early as practical for weekends, month-end, and peak summer dates, especially for larger homes or regional moves.</p>
+                        </details>
+
+                        <details class="seo-faq-item">
+                            <summary>Can movers transport only one large item?</summary>
+                            <p>Some companies offer single-item or furniture delivery services. Ask about minimum charges and whether another job may be combined with yours.</p>
+                        </details>
+
+                        <details class="seo-faq-item">
+                            <summary>Can a moving company store my belongings?</summary>
+                            <p>Some movers offer short- or long-term storage directly or through a partner. Confirm access, security, insurance, and handling fees.</p>
+                        </details>
+
+                </div>
+            </div>
+        </section>
+
+    <section class="container section internal-link-section" aria-labelledby="internal-link-title">
+        <div class="related-section internal-link-panel">
+            <div class="internal-link-header">
+                <h2 id="internal-link-title" class="section-title">More Ways to Compare Movers</h2>
+                <p class="text-muted">Use these internal links to move between close alternatives, the parent hub, and the same guide in other cities.</p>
+            </div>
+            <div class="related-grid internal-link-grid">
+
+        <a href="/cities/tauranga/services/" class="related-card internal-link-card">
+            <i class="fas fa-table-cells-large"></i>
+            <div>
+                <strong>Services Hub in Tauranga</strong>
+                <span>Browse every services guide for Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga" class="related-card internal-link-card">
+            <i class="fas fa-location-dot"></i>
+            <div>
+                <strong>Tauranga Directory</strong>
+                <span>Return to all TopRated categories in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga/services/cleaning-services" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Cleaning Services in Tauranga</strong>
+                <span>Compare another services shortlist in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga/services/accountants" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Accountants in Tauranga</strong>
+                <span>Compare another services shortlist in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/tauranga/services/lawyers" class="related-card internal-link-card">
+            <i class="fas fa-layer-group"></i>
+            <div>
+                <strong>Lawyers in Tauranga</strong>
+                <span>Compare another services shortlist in Tauranga.</span>
+            </div>
+        </a>
+        <a href="/cities/auckland/services/movers" class="related-card internal-link-card">
+            <i class="fas fa-city"></i>
+            <div>
+                <strong>Movers in Auckland</strong>
+                <span>See the Auckland version of this guide.</span>
+            </div>
+        </a>
+        <a href="/cities/christchurch/services/movers" class="related-card internal-link-card">
+            <i class="fas fa-city"></i>
+            <div>
+                <strong>Movers in Christchurch</strong>
+                <span>See the Christchurch version of this guide.</span>
+            </div>
+        </a>
+            </div>
+        </div>
+    </section>
+    <section class="container section">
+        <div id="related"></div>
+    </section>
+
+        <aside class="seo-trust-box">
+            <div class="container">
+                <div class="seo-trust-inner">
+                    <div class="seo-trust-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="seo-trust-text">
+                        <strong>Why Trust TopRated?</strong>
+                        <p>TopRated combines editorial research, public business information, and clearly labelled owner-supplied profiles. Featured placements are labelled. Business details can change, so verify current pricing, availability, qualifications, and terms directly before deciding. <a href="/about">Learn how TopRated works →</a></p>
+                        <p class="seo-trust-author"><i class="fas fa-user-pen"></i> Researched by: TopRated Editorial Team</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/include.js?v=20260726"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js?v=20260730a"></script>
+</body>
+
+</html>
