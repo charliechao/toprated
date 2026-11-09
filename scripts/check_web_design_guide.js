@@ -11,9 +11,12 @@ const faq = schemas.find(item => item['@type'] === 'FAQPage');
 assert.equal(schemas.length, 4);
 assert.equal(article.dateModified, '2026-11-09');
 assert.equal(article.author.name, 'TopRated NZ editorial team');
-assert.equal(list.itemListOrder, 'https://schema.org/ItemListUnordered');
-assert.deepEqual(list.itemListElement.map(item => item.item.name), ['Impact Websites', 'Kiwi Web Design', 'numero', 'Small Business Web Designs', 'The Web Guys', 'Ultimate Web Designs', 'Zesty Design']);
+assert.equal(list.itemListOrder, 'https://schema.org/ItemListOrderAscending');
+assert.deepEqual(list.itemListElement.map(item => item.item.name), ['Kiwi Web Design', 'Impact Websites', 'numero', 'Small Business Web Designs', 'The Web Guys', 'Ultimate Web Designs', 'Zesty Design']);
 assert.equal(list.numberOfItems, 7);
+assert(html.includes('Top 7 for 2027'));
+assert(html.includes('#1 <a href="https://www.kiwiwebdesign.co.nz/">Kiwi Web Design</a>'));
+assert(!html.includes('What this comparison can—and cannot—tell you'));
 assert.equal((html.match(/class="agency-card"/g) || []).length, 7);
 assert.equal((html.match(/<h1[ >]/g) || []).length, 1);
 assert(!/Skyline Commerce|Urban Hive|BrightPixel|Northside Performance|Why it ranks first/.test(html));
@@ -39,7 +42,7 @@ assert(article.citation.length >= 15);
 for (const url of article.citation) assert(html.includes(`href="${url}"`));
 const data = JSON.parse(fs.readFileSync('data/featured_guides.json', 'utf8'));
 for (const [key, hubFile] of [['cities/auckland', 'cities/auckland.html'], ['cities/auckland/services', 'cities/auckland/services/index.html']]) {
-    const hub = fs.readFileSync(hubFile, 'utf8');
+    const hub = fs.readFileSync(hubFile, 'utf8').replace(/\r\n/g, '\n');
     assert(hub.includes(renderFeaturedGuides(key, data)), `Generated featured links stale: ${hubFile}`);
     assert(hub.includes('href="/cities/auckland/services/web-design-agencies"'));
 }
