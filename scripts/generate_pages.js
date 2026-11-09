@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { featuredGuidesForContext } = require('./lib/featured_guides');
 
 // ---------------------------------------------------
 // 1. Configuration & Data
@@ -1281,7 +1282,7 @@ function generateHubContent(heroTitle, heroSubtitle, heroImg, hubSeo = null, lin
         ${editorialHtml}
     </div>
     <section class="container section hub-discovery-section" id="hub-discovery">
-        <div id="hub-featured-guides"></div>
+        <div id="hub-featured-guides">${featuredGuidesForContext(linkContext)}</div>
         <div class="hub-grid-shell">
             <div class="hub-grid-header">
                 <span class="hub-grid-header__eyebrow">Browse</span>
